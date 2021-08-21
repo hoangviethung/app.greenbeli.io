@@ -1,0 +1,37 @@
+#confirm_liquidity_popup.confirm_liquidity_popup(style="display:none")
+	.popup_wrapper
+		.popup__header
+			h2.popup__title You will receive
+		.popup__body
+			.confirm_liquidity__item
+				.pool_token__information
+					b.pool_token__price.pool_token__price--2xl.txt-primary 0.20511
+					img.token__icon.token__icon--lg(src="./images/FIWA.png", alt="FIWA")
+					img.token__icon.token__icon--lg(src="./images/BTCB.png", alt="BTCB")
+			.confirm_liquidity__item
+				.pool_token__information
+					span.pool_token__name.pool_token__name--lg CAKE/BUSD Pool Tokens
+			.confirm_liquidity__item
+				p.fs-0x77rem Output is estimated. If the price changes by more than 0.5% your transaction will revert.
+			.confirm_liquidity__item
+				.flex-between-alc
+					span CAKE Deposited
+					.token__information
+						img.token__icon(src="./images/FIWA.png", alt="FIWA")
+						span.token__price 0.0696463
+				.flex-between-alc
+					span BUSD Deposited
+					.token__information
+						img.token__icon(src="./images/BTCB.png", alt="BTCB")
+						span.token__price 1.0098
+				.flex-between-alc
+					span Rates
+					div
+						p 1 REM = 14.36 BUSD
+						p 1 CAKE = 14.36 BUSD
+				.flex-between-alc
+					span Share of Pool:
+					span 0.000005406%
+		.popup__footer
+			button.bt.bt-lg.bt-block.primary(popup-to="confirm_liquidity_loading_popup" href="javascript:;") Confirm Supply (Loading)
+			button.bt.bt-lg.bt-block.primary(popup-to="confirm_liquidity_reject_popup" href="javascript:;") Confirm Supply (Reject)

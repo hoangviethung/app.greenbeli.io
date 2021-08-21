@@ -1,75 +1,291 @@
 .bt {
 	display: inline-flex;
+	align-items: center;
+	position: relative;
+	text-align: center;
 	justify-content: center;
-	padding: 0.44rem 1.22rem;
-	border-radius: 1.22rem;
-	transition: map-get($map: $theme-transition, $key: all-3s);
+	font-weight: 600;
+	transition: map-get($map: $theme-transition, $key: all);
+	height: 36px;
+	border-radius: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 0;
+	padding-bottom: 0;
 	span {
-		font-weight: 600;
-		display: inline-block;
-		position: relative;
+		~ i {
+			margin-left: 8px;
+		}
 	}
-	&--primary {
+	i {
+		font-size: 1rem;
+		line-height: 1;
+		transition: map-get($map: $theme-transition, $key: all);
+		~ span {
+			margin-left: 8px;
+		}
+	}
+	&.cl-primary {
+		color: map-get($map: $theme-colors, $key: primary);
+		&:hover {
+			color: darken(
+				$color: map-get($map: $theme-colors, $key: primary),
+				$amount: 10%
+			);
+		}
+	}
+	&.cl-secondary {
+		color: map-get($map: $theme-colors, $key: secondary);
+		&:hover {
+			color: darken(
+				$color: map-get($map: $theme-colors, $key: secondary),
+				$amount: 10%
+			);
+		}
+	}
+	&.cl-white {
+		color: map-get($map: $theme-colors, $key: neutral-white);
+	}
+	&.primary {
 		color: map-get($map: $theme-colors, $key: neutral-white);
 		background-color: map-get($map: $theme-colors, $key: primary);
-		&.bt--shadow {
-			box-shadow: 0 6px
-				darken(
-					$color: map-get($map: $theme-colors, $key: primary),
-					$amount: 5%
-				);
-			&:active {
-				box-shadow: 0 4px
-					darken(
-						$color: map-get($map: $theme-colors, $key: primary),
-						$amount: 10%
-					);
-			}
+		box-shadow: inset 0px -4px 4px darken($color:
+					map-get($map: $theme-colors, $key: primary), $amount: 10%);
+		&:hover {
+			background-color: darken(
+				$color: map-get($map: $theme-colors, $key: primary),
+				$amount: 10%
+			);
+			box-shadow: inset 0px -4px 4px darken($color:
+						map-get($map: $theme-colors, $key: primary), $amount:
+						20%);
 		}
 	}
-	&--secondary {
-		color: map-get($map: $theme-colors, $key: neutral-white);
+	&.secondary {
+		color: map-get($map: $theme-colors, $key: neutral-black);
 		background-color: map-get($map: $theme-colors, $key: secondary);
-		&.bt--shadow {
-			box-shadow: 0 6px
-				darken(
-					$color: map-get($map: $theme-colors, $key: secondary),
-					$amount: 5%
-				);
-			&:active {
-				box-shadow: 0 4px
-					darken(
-						$color: map-get($map: $theme-colors, $key: secondary),
-						$amount: 10%
-					);
+		box-shadow: inset 0px -4px 4px darken($color:
+					map-get($map: $theme-colors, $key: secondary), $amount: 20%);
+		&:hover {
+			background-color: darken(
+				$color: map-get($map: $theme-colors, $key: secondary),
+				$amount: 10%
+			);
+			box-shadow: inset 0px -4px 4px darken($color:
+						map-get($map: $theme-colors, $key: secondary), $amount:
+						30%);
+		}
+	}
+	&.neutral-background {
+		color: map-get($map: $theme-colors, $key: neutral-white);
+		background-color: map-get(
+			$map: $theme-colors,
+			$key: neutral-background
+		);
+		box-shadow: inset 0px -4px 4px darken($color:
+					map-get($map: $theme-colors, $key: neutral-background), $amount:
+					10%);
+		&:hover {
+			background-color: darken(
+				$color: map-get($map: $theme-colors, $key: neutral-background),
+				$amount: 5%
+			);
+			box-shadow: inset 0px -4px 4px darken($color:
+						map-get($map: $theme-colors, $key: neutral-background), $amount:
+						20%);
+		}
+	}
+	&.neutral-background-dark {
+		color: map-get($map: $theme-colors, $key: neutral-white);
+		background-color: map-get(
+			$map: $theme-colors,
+			$key: neutral-background-dark
+		);
+		box-shadow: inset 0px -4px 4px darken($color:
+					map-get($map: $theme-colors, $key: neutral-background-dark), $amount:
+					2%);
+		&:hover {
+			background-color: darken(
+				$color:
+					map-get($map: $theme-colors, $key: neutral-background-dark),
+				$amount: 5%
+			);
+			box-shadow: inset 0px -4px 4px darken($color:
+						map-get(
+							$map: $theme-colors,
+							$key: neutral-background-dark
+						), $amount: 10%);
+		}
+	}
+	&.bt-lg {
+		height: 48px;
+		padding-left: 24px;
+		padding-right: 24px;
+		border-radius: 24px;
+		span {
+			~ i {
+				margin-left: 16px;
 			}
 		}
 	}
-	&--shadow {
-		&:active {
-			transform: translateY(4px);
+	&.bt-block {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	&.bt-outline {
+		background-color: transparent;
+		border: 2px solid transparent;
+		&.primary {
+			color: map-get($map: $theme-colors, $key: primary);
+			border-color: map-get($map: $theme-colors, $key: primary);
+			box-shadow: unset;
+			&:hover {
+				background-color: transparent;
+				color: lighten(
+					$color: map-get($map: $theme-colors, $key: primary),
+					$amount: 10%
+				);
+				border-color: lighten(
+					$color: map-get($map: $theme-colors, $key: primary),
+					$amount: 10%
+				);
+				box-shadow: unset;
+			}
+		}
+		&.secondary {
+			color: map-get($map: $theme-colors, $key: secondary);
+			border-color: map-get($map: $theme-colors, $key: secondary);
+			box-shadow: unset;
+			&:hover {
+				background-color: transparent;
+				color: lighten(
+					$color: map-get($map: $theme-colors, $key: secondary),
+					$amount: 10%
+				);
+				border-color: lighten(
+					$color: map-get($map: $theme-colors, $key: secondary),
+					$amount: 10%
+				);
+				box-shadow: unset;
+			}
 		}
 	}
-	&--md {
-		font-size: 1rem;
-		padding: 0.88rem 1.88rem;
-		@media (max-width: 575.98px) {
-			font-size: 1rem;
-			padding: 1rem 1.4rem;
+	&[disable] {
+		cursor: not-allowed;
+		color: map-get($map: $theme-colors, $key: disable);
+		background-color: darken(
+			$color: map-get($map: $theme-colors, $key: disable),
+			$amount: 25%
+		);
+		box-shadow: inset 0px -4px 4px darken($color:
+					map-get($map: $theme-colors, $key: disable), $amount: 30%);
+		&:hover {
+			color: map-get($map: $theme-colors, $key: disable);
+			background-color: darken(
+				$color: map-get($map: $theme-colors, $key: disable),
+				$amount: 25%
+			);
+			box-shadow: inset 0px -4px 4px darken($color:
+						map-get($map: $theme-colors, $key: disable), $amount:
+						30%);
 		}
-		@media (max-width: 320.98px) {
-			font-size: 0.875rem;
+	}
+	&:active {
+		&:not([disabled]) {
+			opacity: 0.85;
+			transform: translateY(2px);
+			box-shadow: none;
+		}
+	}
+}
+
+.bt-group {
+	.bt {
+		border-radius: 0;
+		&:first-child {
+			border-top-left-radius: 16px;
+			border-bottom-left-radius: 16px;
+		}
+		&:last-child {
+			border-top-right-radius: 16px;
+			border-bottom-right-radius: 16px;
+		}
+		&.bt-lg {
+			&:first-child {
+				border-top-left-radius: 24px;
+				border-bottom-left-radius: 24px;
+			}
+			&:last-child {
+				border-top-right-radius: 24px;
+				border-bottom-right-radius: 24px;
+			}
+		}
+	}
+}
+
+.bt-circle {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1rem;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
+	transition: map-get($map: $theme-transition, $key: all);
+	&.primary {
+		color: map-get($map: $theme-colors, $key: neutral-white);
+		background-color: map-get($map: $theme-colors, $key: primary);
+		box-shadow: inset 0px -4px 4px darken($color:
+					map-get($map: $theme-colors, $key: primary), $amount: 10%);
+		&:hover {
+			background-color: darken(
+				$color: map-get($map: $theme-colors, $key: primary),
+				$amount: 10%
+			);
+			box-shadow: inset 0px -4px 4px darken($color:
+						map-get($map: $theme-colors, $key: primary), $amount:
+						20%);
+		}
+	}
+	&.secondary {
+		color: map-get($map: $theme-colors, $key: neutral-black);
+		background-color: map-get($map: $theme-colors, $key: secondary);
+		box-shadow: inset 0px -4px 4px darken($color:
+					map-get($map: $theme-colors, $key: secondary), $amount: 10%);
+		&:hover {
+			color: map-get($map: $theme-colors, $key: neutral-black);
+			background-color: darken(
+				$color: map-get($map: $theme-colors, $key: secondary),
+				$amount: 10%
+			);
+			box-shadow: inset 0px -4px 4px darken($color:
+						map-get($map: $theme-colors, $key: secondary), $amount:
+						20%);
 		}
 	}
 	&--lg {
-		font-size: 1.125rem;
-		padding: 1.2rem 2rem;
-		@media (max-width: 575.98px) {
-			font-size: 1rem;
-			padding: 1rem 1.4rem;
+		font-size: 1.4rem;
+	}
+	&:active {
+		&:not([disabled]) {
+			opacity: 0.85;
+			transform: translateY(2px);
+			box-shadow: none;
 		}
-		@media (max-width: 320.98px) {
-			font-size: 0.875rem;
+	}
+}
+
+.bt-choose-language {
+	font-size: 1rem;
+	color: map-get($map: $theme-colors, $key: neutral-white);
+	padding: 0;
+	> i {
+		~ span {
+			margin-left: 8px;
 		}
 	}
 }

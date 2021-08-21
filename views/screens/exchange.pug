@@ -1,0 +1,348 @@
+extends ../layouts/layout
+
+block var
+	- pageTitle = "Exchange | Defi x NFT"
+block library-css
+block css
+	link(rel="stylesheet", href="./css/exchange.css")
+block library-js
+block js
+block main
+	section.trade.exchange
+		.tabs.neutral-background-lighter
+			.tabs__nav
+				a.tabs__link.active(href="exchange.html")
+					.tabs__icon
+						i.fad.fa-sync
+					.tabs__text Swap
+				a.tabs__link(href="liquidity.html")
+					.tabs__icon
+						i.fad.fa-dollar-sign
+					.tabs__text Liquidity Pool
+			.tabs__content
+				.tabs__content__header.trade__header
+					.box-left
+						h2.trade__title Exchange
+						p.trade__desc Trade tokens in an instant
+					.box-right
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="settings_popup" href="javascript:;")
+							i.fad.fa-sliders-h
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="recent_transactions_popup" href="javascript:;")
+							i.fad.fa-history
+				.tabs__content__body.trade__body
+					.exchange__item
+						label.flex-between-alc
+							span.fw-600 From
+						.input-group
+							input.form-control(type="number" placeholder="0.00")
+							.input-group-append
+								a.token__item.primary(popup-to="select_token_popup" href="javascript:;")
+									.token__information
+										img.token__icon(src="./images/BTCB.png", alt="BTCB")
+										span.token__name BTCB
+									i.fad.fa-chevron-down
+					.exchange__item
+						.flex-jcc
+							button.bt.cl-secondary
+								i.fad.fa-sort-alt
+					.exchange__item
+						label.flex-between-alc
+							span.fw-600 To
+						.input-group
+							input.form-control(type="number" placeholder="0.00")
+							.input-group-append
+								a.token__item.primary(popup-to="select_token_popup" href="javascript:;")
+									.token__information
+										img.token__icon(src="./images/BTCB.png", alt="BTCB")
+										span.token__name BTCB
+									i.fad.fa-chevron-down
+				.tabs__content__footer.trade__footer
+					button.bt.bt-lg.bt-block.primary(popup-to="wallet_connect_popup" href="javascript:;") Connect Wallet
+	section.trade.exchange
+		.tabs.neutral-background-lighter
+			.tabs__nav
+				a.tabs__link.active(href="exchange.html")
+					.tabs__icon
+						i.fad.fa-sync
+					.tabs__text Swap
+				a.tabs__link(href="liquidity.html")
+					.tabs__icon
+						i.fad.fa-dollar-sign
+					.tabs__text Liquidity Pool
+			.tabs__content
+				.tabs__content__header.trade__header
+					.box-left
+						h2.trade__title Exchange
+						p.trade__desc Trade tokens in an instant
+					.box-right
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="settings_popup" href="javascript:;")
+							i.fad.fa-sliders-h
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="recent_transactions_popup" href="javascript:;")
+							i.fad.fa-history
+				.tabs__content__body.trade__body
+					.exchange__item
+						label.flex-between-alc
+							span.fw-600 From
+						.input-group
+							input.form-control(type="number" placeholder="0.00")
+							.input-group-append
+								button.bt.secondary Max
+							.input-group-append
+								a.token__item.primary(popup-to="select_token_popup" href="javascript:;")
+									.token__information
+										img.token__icon(src="./images/BTCB.png", alt="BTCB")
+										span.token__name BTCB
+									i.fad.fa-chevron-down
+					.exchange__item
+						.flex-jcc
+							button.bt.cl-secondary
+								i.fad.fa-sort-alt
+					.exchange__item
+						label.flex-between-alc
+							span.fw-600 To
+						.input-group
+							input.form-control(type="number" placeholder="0.00")
+							.input-group-append
+								a.token__item.primary(popup-to="select_token_popup" href="javascript:;")
+									.token__information
+										span.token__label_select Select a currency
+									i.fad.fa-chevron-down
+				.tabs__content__footer.trade__footer
+					button.bt.bt-lg.bt-block.primary(disable) Enter an amount
+	section.trade.exchange
+		.tabs.neutral-background-lighter
+			.tabs__nav
+				a.tabs__link.active(href="exchange.html")
+					.tabs__icon
+						i.fad.fa-sync
+					.tabs__text Swap
+				a.tabs__link(href="liquidity.html")
+					.tabs__icon
+						i.fad.fa-dollar-sign
+					.tabs__text Liquidity Pool
+			.tabs__content
+				.tabs__content__header.trade__header
+					.box-left
+						h2.trade__title Exchange
+						p.trade__desc Trade tokens in an instant
+					.box-right
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="settings_popup" href="javascript:;")
+							i.fad.fa-sliders-h
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="recent_transactions_popup" href="javascript:;")
+							i.fad.fa-history
+				.tabs__content__body.trade__body
+					.exchange__item
+						label.flex-between-alc
+							span.fw-600 From
+							span.fw-600 Balance: 0.093436
+						.input-group
+							input.form-control(type="number" placeholder="0.00" value="0.083436025518163143")
+							.input-group-append
+								a.token__item.primary(popup-to="select_token_popup" href="javascript:;")
+									.token__information
+										img.token__icon(src="./images/FIWA.png", alt="FIWA")
+										span.token__name FIWA
+									i.fad.fa-chevron-down
+					.exchange__item
+						.flex-jcc
+							button.bt.cl-secondary
+								i.fad.fa-sort-alt
+					.exchange__item
+						label.flex-between-alc
+							span.fw-600 To (estimated)
+							span.fw-600 Balance: 1.0098
+						.input-group
+							input.form-control(type="number" placeholder="0.00" value="27.7179")
+							.input-group-append
+								a.token__item.primary(popup-to="select_token_popup" href="javascript:;")
+									.token__information
+										img.token__icon(src="./images/BTCB.png", alt="BTCB")
+										span.token__name BTCB
+									i.fad.fa-chevron-down
+					.exchange__item
+						.exchange__total
+							.exchange__total__item
+								.flex-between-alc
+									b.txt-primary Price
+									.flex-between-alc
+										b.fs-1rem 329.109 BUSD per BNB
+										button.bt-circle.txt-secondary.ml-0x5rem
+											i.fal.fa-repeat
+							.exchange__total__item
+								.flex-between-alc
+									b.txt-primary Slippage Tolerance
+									.flex-between-alc
+										b.fs-1rem 0.8%
+				.tabs__content__footer.trade__footer
+					button.bt.bt-lg.bt-block.primary(href="javascript:;" disable) Insuffiicient liquidity for this state
+		.exchange__final
+			.exchange_final__item
+				.flex-between-alc
+					span Minimum received
+					span 45.81 ALPACA
+			.exchange_final__item
+				.flex-between-alc
+					span Price Impact
+					span.txt-secondary <0.01%
+			.exchange_final__item
+				.flex-between-alc
+					span Liquidity Provider Fee
+					span 0.0002085 BNB
+	section.trade.exchange
+		.tabs.neutral-background-lighter
+			.tabs__nav
+				a.tabs__link.active(href="exchange.html")
+					.tabs__icon
+						i.fad.fa-sync
+					.tabs__text Swap
+				a.tabs__link(href="liquidity.html")
+					.tabs__icon
+						i.fad.fa-dollar-sign
+					.tabs__text Liquidity Pool
+			.tabs__content
+				.tabs__content__header.trade__header
+					.box-left
+						h2.trade__title Exchange
+						p.trade__desc Trade tokens in an instant
+					.box-right
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="settings_popup" href="javascript:;")
+							i.fad.fa-sliders-h
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="recent_transactions_popup" href="javascript:;")
+							i.fad.fa-history
+				.tabs__content__body.trade__body
+					.exchange__item
+						label.flex-between-alc
+							span.fw-600 From
+							span.fw-600 Balance: 0.093436
+						.input-group
+							input.form-control(type="number" placeholder="0.00" value="0.083436025518163143")
+							.input-group-append
+								a.token__item.primary(popup-to="select_token_popup" href="javascript:;")
+									.token__information
+										img.token__icon(src="./images/FIWA.png", alt="FIWA")
+										span.token__name FIWA
+									i.fad.fa-chevron-down
+					.exchange__item
+						.flex-jcc
+							button.bt.cl-secondary
+								i.fad.fa-sort-alt
+					.exchange__item
+						label.flex-between-alc
+							span.fw-600 To (estimated)
+							span.fw-600 Balance: 1.0098
+						.input-group
+							input.form-control(type="number" placeholder="0.00" value="27.7179")
+							.input-group-append
+								a.token__item.primary(popup-to="select_token_popup" href="javascript:;")
+									.token__information
+										img.token__icon(src="./images/BTCB.png", alt="BTCB")
+										span.token__name BTCB
+									i.fad.fa-chevron-down
+					.exchange__item
+						.exchange__total
+							.exchange__total__item
+								.flex-between-alc
+									b.txt-primary Price
+									.flex-between-alc
+										b.fs-1rem 329.109 BUSD per BNB
+										button.bt-circle.txt-secondary.ml-0x5rem
+											i.fal.fa-repeat
+							.exchange__total__item
+								.flex-between-alc
+									b.txt-primary Slippage Tolerance
+									.flex-between-alc
+										b.fs-1rem 0.8%
+				.tabs__content__footer.trade__footer
+					button.bt.bt-lg.bt-block.primary(href="javascript:;" disable) Insufiicient WBNB balance
+		.exchange__final
+			.exchange_final__item
+				.flex-between-alc
+					span Minimum received
+					span 45.81 ALPACA
+			.exchange_final__item
+				.flex-between-alc
+					span Price Impact
+					span.txt-secondary <0.01%
+			.exchange_final__item
+				.flex-between-alc
+					span Liquidity Provider Fee
+					span 0.0002085 BNB
+	section.trade.exchange
+		.tabs.neutral-background-lighter
+			.tabs__nav
+				a.tabs__link.active(href="exchange.html")
+					.tabs__icon
+						i.fad.fa-sync
+					.tabs__text Swap
+				a.tabs__link(href="liquidity.html")
+					.tabs__icon
+						i.fad.fa-dollar-sign
+					.tabs__text Liquidity Pool
+			.tabs__content
+				.tabs__content__header.trade__header
+					.box-left
+						h2.trade__title Exchange
+						p.trade__desc Trade tokens in an instant
+					.box-right
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="settings_popup" href="javascript:;")
+							i.fad.fa-sliders-h
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="recent_transactions_popup" href="javascript:;")
+							i.fad.fa-history
+				.tabs__content__body.trade__body
+					.exchange__item
+						label.flex-between-alc
+							span.fw-600 From
+							span.fw-600 Balance: 0.093436
+						.input-group
+							input.form-control(type="number" placeholder="0.00" value="0.083436025518163143")
+							.input-group-append
+								a.token__item.primary(popup-to="select_token_popup" href="javascript:;")
+									.token__information
+										img.token__icon(src="./images/FIWA.png", alt="FIWA")
+										span.token__name FIWA
+									i.fad.fa-chevron-down
+					.exchange__item
+						.flex-jcc
+							button.bt.cl-secondary
+								i.fad.fa-sort-alt
+					.exchange__item
+						label.flex-between-alc
+							span.fw-600 To (estimated)
+							span.fw-600 Balance: 1.0098
+						.input-group
+							input.form-control(type="number" placeholder="0.00" value="27.7179")
+							.input-group-append
+								a.token__item.primary(popup-to="select_token_popup" href="javascript:;")
+									.token__information
+										img.token__icon(src="./images/BTCB.png", alt="BTCB")
+										span.token__name BTCB
+									i.fad.fa-chevron-down
+					.exchange__item
+						.exchange__total
+							.exchange__total__item
+								.flex-between-alc
+									b.txt-primary Price
+									.flex-between-alc
+										b.fs-1rem 329.109 BUSD per BNB
+										button.bt-circle.txt-secondary.ml-0x5rem
+											i.fal.fa-repeat
+							.exchange__total__item
+								.flex-between-alc
+									b.txt-primary Slippage Tolerance
+									.flex-between-alc
+										b.fs-1rem 0.8%
+				.tabs__content__footer.trade__footer
+					button.bt.bt-lg.bt-block.primary(popup-to="confirm_swap_popup" href="javascript:;") Swap
+		.exchange__final
+			.exchange_final__item
+				.flex-between-alc
+					span Minimum received
+					span 45.81 ALPACA
+			.exchange_final__item
+				.flex-between-alc
+					span Price Impact
+					span.txt-secondary <0.01%
+			.exchange_final__item
+				.flex-between-alc
+					span Liquidity Provider Fee
+					span 0.0002085 BNB

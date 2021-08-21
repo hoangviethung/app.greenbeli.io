@@ -1,0 +1,173 @@
+extends ../layouts/layout
+
+block var
+	- pageTitle = "Buy Warrior | Defi x NFT"
+block library-css
+block css
+	link(rel="stylesheet", href="./css/buy_warrior.css")
+block library-js
+block js
+block main
+	section.trade.buy_warrior
+		.tabs.neutral-background-lighter
+			.tabs__nav
+				a.tabs__link.active(href="buy_warrior.html")
+					.tabs__icon
+						i.fad.fa-hammer-war
+					.tabs__text Buy Warrior
+				a.tabs__link(href="buy_gem.html")
+					.tabs__icon
+						i.fad.fa-shopping-cart
+					.tabs__text Buy Gem
+			.tabs__content
+				.tabs__content__header.trade__header
+					.box-left
+						h2.trade__title Buy Warrior
+						p.trade__desc Buy Warrior with a token pair
+					.box-right
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="settings_popup" href="javascript:;")
+							i.fad.fa-sliders-h
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="recent_transactions_popup" href="javascript:;")
+							i.fad.fa-history
+				.tabs__content__body.trade__body
+					.buy_warrior__item
+						a.token__item.token__item--block.primary(popup-to="select_liquidity_popup" href="javascript:;")
+							.token__information
+								span.token__label_select Select Pair Token
+							i.fad.fa-chevron-down
+					.buy_warrior__item
+						.buy_warrior__character
+							img(src="./images/character_buy.png", alt="CHARACTER")
+						p.ta-c.fs-0x77rem By adding liquidity you’ll get a warrior. Different type of pair tokens will mint different warriors. Warriors can do farming automatically, and user now can use warriors to play the game.
+	section.trade.buy_warrior
+		.tabs.neutral-background-lighter
+			.tabs__nav
+				a.tabs__link.active(href="buy_warrior.html")
+					.tabs__icon
+						i.fad.fa-hammer-war
+					.tabs__text Buy Warrior
+				a.tabs__link(href="buy_gem.html")
+					.tabs__icon
+						i.fad.fa-shopping-cart
+					.tabs__text Buy Gem
+			.tabs__content
+				.tabs__content__header.trade__header
+					.box-left
+						h2.trade__title Buy Warrior
+						p.trade__desc Buy Warrior with a token pair
+					.box-right
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="settings_popup" href="javascript:;")
+							i.fad.fa-sliders-h
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="recent_transactions_popup" href="javascript:;")
+							i.fad.fa-history
+				.tabs__content__body.trade__body
+					.buy_warrior__item
+						a.token__item.token__item--block.primary(popup-to="select_liquidity_popup" href="javascript:;")
+							.token__information
+								img.token__icon(src="./images/FIWA.png", alt="FIWA")
+								img.token__icon(src="./images/BTCB.png", alt="BTCB")
+								span.token__name FIWA-BTCB
+							i.fad.fa-chevron-down
+					.buy_warrior__item
+						.token__item.token__item--block
+							.token__information
+								img.token__icon(src="./images/FIWA.png", alt="FIWA")
+								span.token__name FIWA
+							.token__price 0.003
+					.buy_warrior__item
+						.token__item.token__item--block
+							.token__information
+								img.token__icon(src="./images/BTCB.png", alt="BTCB")
+								span.token__name BTCB
+							.token__price 0.003
+					.buy_warrior__item
+						.buy_warrior__character
+							img(src="./images/character_buy.png", alt="CHARACTER")
+						p.ta-c.fs-0x77rem By adding liquidity you’ll get a warrior. Different type of pair tokens will mint different warriors. Warriors can do farming automatically, and user now can use warriors to play the game.
+				.tabs__content__footer.trade__footer
+					button.bt.bt-lg.bt-block.secondary Buy Warrior
+	section.trade.buy_warrior
+		.tabs.neutral-background-lighter
+			.tabs__nav
+				a.tabs__link.active(href="buy_warrior.html")
+					.tabs__icon
+						i.fad.fa-hammer-war
+					.tabs__text Buy Warrior
+				a.tabs__link(href="buy_gem.html")
+					.tabs__icon
+						i.fad.fa-shopping-cart
+					.tabs__text Buy Gem
+			.tabs__content
+				.tabs__content__navigation.trade__navigation
+					.bt-circle.bt-circle--lg.txt-secondary
+						i.fad.fa-arrow-left
+				.tabs__content__header.trade__header
+					.box-left
+						h2.trade__title Buy Warrior
+						p.trade__desc Buy Warrior with a token pair
+					.box-right
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="settings_popup" href="javascript:;")
+							i.fad.fa-sliders-h
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="recent_transactions_popup" href="javascript:;")
+							i.fad.fa-history
+				.tabs__content__body.trade__body
+					.buy_warrior__item
+						.token__information.jc-c
+							img.token__icon.token__icon--lg(src="./images/FIWA.png", alt="FIWA")
+							img.token__icon.token__icon--lg(src="./images/BTCB.png", alt="BTCB")
+							span.token__name.token__name--lg FIWA-BTCB
+					.buy_warrior__item
+						.flex-jcc
+							.txt-secondary
+								i.fal.fa-arrow-down
+					.buy_warrior__item
+						.buy_warrior__character
+							img(src="./images/character_buy.png", alt="CHARACTER")
+						h4.fs-1x4rem.ta-c.mb-1rem  BTC #20210623
+						p.ta-c.fs-0x77rem  BTC #20210623 will be minted after adding liquidity FIWA will be burned. Player cannot clear liquidity to get token back
+				.tabs__content__footer.trade__footer
+					.grid-auto-auto-gap-24.mb-1rem
+						button.bt.bt-lg.bt-block.primary Approve FIWA
+						button.bt.bt-lg.bt-block.primary Approve BTCB
+					button.bt.bt-lg.bt-block.primary(href="javascript:;" disable) Supply
+	section.trade.buy_warrior
+		.tabs.neutral-background-lighter
+			.tabs__nav
+				a.tabs__link.active(href="buy_warrior.html")
+					.tabs__icon
+						i.fad.fa-hammer-war
+					.tabs__text Buy Warrior
+				a.tabs__link(href="buy_gem.html")
+					.tabs__icon
+						i.fad.fa-shopping-cart
+					.tabs__text Buy Gem
+			.tabs__content
+				.tabs__content__navigation.trade__navigation
+					.bt-circle.bt-circle--lg.txt-secondary
+						i.fad.fa-arrow-left
+				.tabs__content__header.trade__header
+					.box-left
+						h2.trade__title Buy Warrior
+						p.trade__desc Buy Warrior with a token pair
+					.box-right
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="settings_popup" href="javascript:;")
+							i.fad.fa-sliders-h
+						a.bt-circle.bt-circle--lg.txt-secondary(popup-to="recent_transactions_popup" href="javascript:;")
+							i.fad.fa-history
+				.tabs__content__body.trade__body
+					.buy_warrior__item
+						.token__information.jc-c
+							img.token__icon.token__icon--lg(src="./images/FIWA.png", alt="FIWA")
+							img.token__icon.token__icon--lg(src="./images/BTCB.png", alt="BTCB")
+							span.token__name.token__name--lg FIWA-BTCB
+					.buy_warrior__item
+						.flex-jcc
+							.txt-secondary
+								i.fal.fa-arrow-down
+					.buy_warrior__item
+						.buy_warrior__character
+							img(src="./images/character_buy.png", alt="CHARACTER")
+						h4.fs-1x4rem.ta-c.mb-1rem  BTC #20210623
+						p.ta-c.fs-0x77rem  BTC #20210623 will be minted after adding liquidity FIWA will be burned. Player cannot clear liquidity to get token back
+				.tabs__content__footer.trade__footer
+					button.bt.bt-lg.bt-block.primary(popup-to="confirm_buy_warrior_popup" href="javascript:;") Supply

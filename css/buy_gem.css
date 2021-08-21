@@ -1,0 +1,100 @@
+.trade {
+  max-width: 628px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 64px;
+  padding-left: 64px; }
+  .trade .tabs__link {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  @media (max-width: 767.98px) {
+    .trade {
+      padding-right: 16px;
+      padding-left: 16px; } }
+
+.trade__navigation {
+  padding: 24px 24px 0 24px; }
+
+.trade__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px; }
+  .trade__header .box-left {
+    max-width: 70%; }
+    @media (max-width: 575.98px) {
+      .trade__header .box-left {
+        max-width: 60%; } }
+  .trade__header .box-right > a + a {
+    margin-left: 16px; }
+  @media (max-width: 767.98px) {
+    .trade__header {
+      padding: 16px; } }
+
+.trade__title {
+  font-size: 1.2rem; }
+
+.trade__desc {
+  color: #9da5a0;
+  font-size: 0.77rem;
+  margin-top: 8px; }
+
+.trade__body {
+  padding: 24px; }
+  @media (max-width: 767.98px) {
+    .trade__body {
+      padding: 16px; } }
+
+.trade__footer {
+  padding: 24px; }
+  @media (max-width: 767.98px) {
+    .trade__footer {
+      padding: 16px; } }
+
+.buy_gem__item label {
+  margin-bottom: 16px; }
+
+.buy_gem__item + .buy_gem__item {
+  margin-top: 16px; }
+
+.buy_gem__total {
+  padding: 16px;
+  background-color: rgba(67, 220, 128, 0.1);
+  border-radius: 16px; }
+  @media (max-width: 767.98px) {
+    .buy_gem__total {
+      flex-direction: column; }
+      .buy_gem__total .flex-between-alc {
+        margin-top: 8px; }
+        .buy_gem__total .flex-between-alc .fs-1rem {
+          font-size: 0.875rem; } }
+
+.buy_gem__total__item + .buy_gem__total__item {
+  margin-top: 24px; }
+
+@media (max-width: 767.98px) {
+  .buy_gem__total__item > .flex-between-alc {
+    flex-direction: column; } }
+
+.buy_gem__final {
+  padding: 24px;
+  margin: 24px;
+  border-radius: 16px;
+  background-color: rgba(67, 220, 128, 0.2);
+  box-shadow: inset 0px -4px 4px rgba(67, 220, 128, 0.2); }
+  @media (max-width: 767.98px) {
+    .buy_gem__final {
+      margin: 16px 0 0 0;
+      padding: 16px; } }
+
+.buy_gem_final__item span {
+  font-weight: 600; }
+
+.buy_gem_final__item + .buy_gem_final__item {
+  margin-top: 8px; }
+
+@media (max-width: 767.98px) {
+  .buy_gem_final__item > .flex-between-alc {
+    flex-direction: column; } }

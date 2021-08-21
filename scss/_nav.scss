@@ -1,0 +1,81 @@
+.navigation {
+	position: relative;
+	height: $height-nav;
+	background-color: map-get($map: $theme-colors, $key: neutral-background);
+	border-bottom: 1px solid map-get($map: $theme-colors, $key: gray-border);
+	z-index: 500;
+	.box__right {
+		margin-left: auto;
+	}
+	@media (max-width: 1024.98px) {
+		height: $height-nav-mobile;
+	}
+}
+
+.navigation__row {
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.navigation__user {
+	display: grid;
+	grid-template-columns: 1fr 48px;
+	align-items: center;
+	margin-left: auto;
+	grid-gap: 16px;
+	@media (max-width: 767.98px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.navigation__avatar {
+	width: 48px;
+	height: 48px;
+	img {
+		width: 100%;
+		min-height: 100%;
+		border-radius: 50%;
+	}
+	@media (max-width: 1024.98px) {
+		display: none;
+	}
+}
+
+.js-collapse-aside-menu-mobile {
+	display: none;
+	font-size: 1.2rem;
+	margin-right: 24px;
+	transition: map-get($map: $theme-transition, $key: all);
+	@media (max-width: 1024.98px) {
+		display: block;
+	}
+}
+
+.navigation__logo {
+	display: none;
+	max-width: 120px;
+	@media (max-width: 1024.98px) {
+		display: block;
+	}
+}
+
+.your_wallet {
+	display: flex;
+	align-items: center;
+	color: map-get($map: $theme-colors, $key: neutral-white);
+	padding: 0 16px;
+	height: 48px;
+	border-radius: 24px;
+	background-color: rgba(
+		$color: map-get($map: $theme-colors, $key: primary),
+		$alpha: 0.2
+	);
+	max-width: 150px;
+	span {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		font-weight: 600;
+	}
+}

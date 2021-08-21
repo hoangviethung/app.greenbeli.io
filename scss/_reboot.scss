@@ -8,12 +8,25 @@ body {
 	margin: 0;
 	font-family: map-get($map: $theme-fonts, $key: font-body);
 	font-size: 0.875rem;
-	font-weight: 400;
+	font-weight: 300;
 	color: map-get($map: $theme-colors, $key: txt-body);
-	background-color: map-get($map: $theme-colors, $key: neutral-white);
+	background-color: map-get($map: $theme-colors, $key: neutral-background);
 	overflow-x: hidden;
 	&.no-scroll {
 		overflow-y: hidden;
+	}
+}
+
+main {
+	padding-top: 32px;
+}
+
+section {
+	+ section {
+		margin-top: 56px;
+		@media (max-width: 767.98px) {
+			margin-top: 16px;
+		}
 	}
 }
 
@@ -125,7 +138,13 @@ sup {
 }
 
 a {
+	color: map-get($map: $theme-colors, $key: primary);
 	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+:focus-visible {
+	outline: 0;
 }
 
 a:not([href]):not([class]) {
@@ -188,12 +207,13 @@ label {
 }
 
 button {
+	border: 0;
 	border-radius: 0;
+	background-color: transparent;
 }
 
 button:focus {
-	outline: 1px dotted;
-	outline: 5px auto -webkit-focus-ring-color;
+	outline: none;
 }
 
 input,
@@ -211,6 +231,18 @@ textarea {
 button,
 input {
 	overflow: visible;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
 }
 
 button,

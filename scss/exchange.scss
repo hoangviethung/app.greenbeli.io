@@ -1,0 +1,71 @@
+@import "_variable";
+@import "_trade";
+
+.exchange__item {
+	label {
+		margin-bottom: 16px;
+	}
+	+ .exchange__item {
+		margin-top: 16px;
+	}
+}
+
+.exchange__total {
+	padding: 16px;
+	background-color: rgba(
+		$color: map-get($map: $theme-colors, $key: primary),
+		$alpha: 0.1
+	);
+	border-radius: 16px;
+	@media (max-width: 767.98px) {
+		flex-direction: column;
+		.flex-between-alc {
+			margin-top: 8px;
+			.fs-1rem {
+				font-size: 0.875rem;
+			}
+		}
+	}
+}
+
+.exchange__total__item {
+	+ .exchange__total__item {
+		margin-top: 24px;
+	}
+	> .flex-between-alc {
+		@media (max-width: 767.98px) {
+			flex-direction: column;
+		}
+	}
+}
+
+.exchange__final {
+	padding: 24px;
+	margin: 24px;
+	border-radius: 16px;
+	background-color: rgba(
+		$color: map-get($map: $theme-colors, $key: primary),
+		$alpha: 0.2
+	);
+	box-shadow: inset 0px -4px 4px rgba($color:
+				map-get($map: $theme-colors, $key: primary), $alpha: 0.2);
+	@media (max-width: 767.98px) {
+		margin: 16px 0 0 0;
+		padding: 16px;
+	}
+}
+
+.exchange_final__item {
+	span {
+		font-weight: 600;
+	}
+	+ .exchange_final__item {
+		margin-top: 8px;
+	}
+
+	@media (max-width: 767.98px) {
+		> .flex-between-alc {
+			flex-direction: column;
+		}
+	}
+}

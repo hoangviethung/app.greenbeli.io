@@ -1,0 +1,88 @@
+@import "_variable";
+@import "_trade";
+
+.liquidity__note {
+	text-align: center;
+	padding: 32px 16px;
+	border-radius: 8px;
+	background-color: rgba(
+		$color: map-get($map: $theme-colors, $key: primary),
+		$alpha: 0.2
+	);
+	p {
+		+ p {
+			margin-top: 8;
+		}
+	}
+}
+
+.liquidity__item {
+	label {
+		font-weight: 600;
+		margin-bottom: 16px;
+	}
+	+ .liquidity__item {
+		margin-top: 16px;
+	}
+}
+
+.liquidity__total {
+	padding: 16px;
+	background-color: rgba(
+		$color: map-get($map: $theme-colors, $key: primary),
+		$alpha: 0.1
+	);
+	border-radius: 16px;
+	margin-top: 24px;
+}
+
+.liquidity__total__item {
+	+ .liquidity__total__item {
+		margin-top: 24px;
+		@media (max-width: 767.98px) {
+			margin-top: 16px;
+		}
+	}
+	.flex-between-alc {
+		> div {
+			p {
+				+ p {
+					margin-top: 8px;
+				}
+			}
+		}
+		@media (max-width: 767.98px) {
+			flex-direction: column;
+			> div {
+				+ div {
+					margin-top: 16px;
+				}
+			}
+		}
+		+ .flex-between-alc {
+			margin-top: 16px;
+		}
+	}
+}
+
+.liquidity__final {
+	padding: 24px;
+	margin: 24px;
+	border-radius: 16px;
+	background-color: rgba(
+		$color: map-get($map: $theme-colors, $key: primary),
+		$alpha: 0.2
+	);
+	box-shadow: inset 0px -4px 4px rgba($color:
+				map-get($map: $theme-colors, $key: primary), $alpha: 0.2);
+	@media (max-width: 767.98px) {
+		margin: 16px 0 0 0;
+		padding: 16px;
+	}
+}
+
+.liquidity_final__item {
+	+ .liquidity_final__item {
+		margin-top: 16px;
+	}
+}

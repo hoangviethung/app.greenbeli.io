@@ -1,0 +1,24 @@
+#unstake_lp_tokens_popup.stake_lp_tokens_popup(style="display:none")
+	.popup_wrapper
+		.popup__header
+			h2.popup__title Unstake LP tokens
+		.popup__body
+			.stake_lp_tokens__form
+				.form__item.flex-between-alc
+					span Unstake
+					span Balance: 0
+				.form__item.grid-auto-auto-gap-16
+					input.form-control.is-invalid(type="text" placeholder="Enter your token")
+					div.d-f.al-e
+						button.bt.bt-lg.secondary Max
+						b.stake_lp_tokens__name GEM-BNB LP
+				.form__item.flex-between-alc
+					.invalid-feedback No tokens to stake: Get GEM-BNB LP
+		.popup__footer
+			.grid-auto-auto-gap-24
+				button.bt.bt-lg.bt-block.bt-outline.primary(data-fancybox-close) Cancel
+				button.bt.bt-lg.bt-block.primary(disable) Confirm
+			.d-f.jc-c
+				a.get-totken-to-stake(href="liquidity.html" target="_blank" rel="noreferrer noopener")
+					span Get GEM-BTC LP
+					i.fad.fa-external-link-alt

@@ -1,0 +1,35 @@
+$theme-colors: (
+	"primary": #43dc80,
+	"secondary": #ffc44d,
+	"gray-border": #40475d,
+	"gray-text": #b3b3b3,
+	"txt-body": #ffffff,
+	"neutral-white": #ffffff,
+	"neutral-black": #111111,
+	"neutral-background": #24292d,
+	"neutral-background-lighter": #2f363e,
+	"neutral-background-dark": #191b20,
+	"disable": #9da5a0,
+	"success": #7fba7a,
+	"danger": #ff754c,
+);
+
+$theme-fonts: (
+	"font-body": "Inter",
+	"font-icons": "Font Awesome 5 Pro",
+);
+
+$theme-transition: (
+	"all": all 0.3s linear,
+	"all-1s": all 0.1s linear,
+);
+
+$height-nav: 100px;
+$height-nav-mobile: 80px;
+$width-sidebar: 256px;
+$width-sidebar-sm: 56px;
+$height-sidebar-top: 100px;
+$height-sidebar-top-sm: 48px;
+$height-sidebar-bottom: 120px;
+$height-sidebar-bottom-sm: 48px;
+$height-sidebar-bottom-mobile: 100px;

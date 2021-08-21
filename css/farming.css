@@ -1,0 +1,87 @@
+.farms [class*="col-"] {
+  margin-bottom: 36px; }
+  @media (max-width: 767.98px) {
+    .farms [class*="col-"] {
+      margin-bottom: 16px; } }
+
+.farm__item {
+  position: relative;
+  padding: 24px;
+  border-radius: 24px;
+  background-color: #2f363e;
+  background-size: cover;
+  transition: all 0.3s linear;
+  min-height: 510px; }
+  @media (max-width: 767.98px) {
+    .farm__item {
+      padding: 16px;
+      border-radius: 16px; } }
+
+.farm__header {
+  display: flex;
+  justify-content: space-between; }
+
+.farm__character {
+  width: 64px;
+  height: 64px;
+  overflow: hidden; }
+  @media (max-width: 350.98px) {
+    .farm__character {
+      -ms-flex: 0 0 64px;
+      flex: 0 0 64px;
+      max-width: 64px; } }
+
+.character__name {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right; }
+  @media (max-width: 350.98px) {
+    .character__name {
+      text-align: left; } }
+
+.character__information {
+  max-width: calc(100% - 64px); }
+  .character__information ul {
+    text-align: right; }
+    .character__information ul li + li {
+      margin-left: 4px; }
+
+.farm__body > .flex-between-alc {
+  margin-top: 16px; }
+  .farm__body > .flex-between-alc + .flex-between-alc {
+    margin-top: 8px; }
+
+.farm__action {
+  margin-top: 16px; }
+  .farm__action > .flex-between-alc {
+    margin-top: 8px;
+    margin-bottom: 8px; }
+  .farm__action .action_buttons {
+    margin-top: 24px; }
+  .farm__action .bt-circle + .bt-circle {
+    margin-left: 8px; }
+
+.farm__footer {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(67, 220, 128, 0.2); }
+  .farm__footer.active .farm__detail {
+    display: block;
+    opacity: 1;
+    animation: slide-down 0.5s ease-out; }
+  .farm__footer.active .js-show-farm-detail > i {
+    transform: rotate(180deg); }
+
+.farm__detail {
+  display: none;
+  margin-top: 16px;
+  display: none;
+  opacity: 0; }
+  .farm__detail > .flex-between-alc + .flex-between-alc {
+    margin-top: 16px; }
+  .farm__detail > .flex-between-alc > a span ~ i {
+    margin-left: 4px; }

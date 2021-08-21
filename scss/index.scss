@@ -1,0 +1,19 @@
+@import "_variable";
+
+.play_game {
+	padding: 0 32px;
+	.card-box {
+		position: relative;
+	}
+	.block-image {
+		display: flex;
+		justify-content: center;
+		height: calc(100vh - 200px);
+		align-items: center;
+	}
+	.bt-play {
+		position: absolute;
+		bottom: 24px;
+		right: 24px;
+	}
+}

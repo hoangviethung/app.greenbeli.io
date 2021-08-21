@@ -1,0 +1,39 @@
+#settings_popup.settings_popup(style="display:none")
+	.popup_wrapper
+		.popup__header
+			h2.popup__title Settings
+		.popup__body
+			.setting__item
+				h4.setting__title Transaction Settings
+				.setting__content
+					span.fw-600 Slippage Tolerance
+					.input-group
+						input.form-control(type="number" placeholder="0.00" value="0.10")
+						.input-group-append
+							button.bt.bt-lg.primary 0.1%
+							button.bt.bt-lg.primary(disable) 0.5%
+							button.bt.bt-lg.primary(disable) 1%
+				.setting__content
+					span.fw-600 Transaction deadline
+					.input-group
+						input.form-control(type="number" placeholder="5" value="20")
+						.input-group-append
+							span minutes
+			.setting__item
+				h4.setting__title Interface Settings
+				.setting__content
+					.flex-between-alc
+						span.fw-600 Toggle Expert Mode
+						label.checkbox-switch
+							input(type='checkbox')
+							.slider.round
+					.flex-between-alc
+						span.fw-600 Disable Multihops
+						label.checkbox-switch
+							input(type='checkbox')
+							.slider.round
+					.flex-between-alc
+						span.fw-600 Audio
+						label.checkbox-switch
+							input(type='checkbox')
+							.slider.round
