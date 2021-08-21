@@ -1,0 +1,163 @@
+{
+	"get-color": {
+		"scope": "css,less,scss",
+		"prefix": "va",
+		"body": ["var(--$0)"]
+	},
+	"media-up": {
+		"scope": "css,less,scss",
+		"prefix": "mdu",
+		"body": ["@media (min-width: $1) {", "\t$0", "}"]
+	},
+	"media-upsm": {
+		"scope": "css,less,scss",
+		"prefix": "mdusm",
+		"body": ["@media (min-width: 576px) {", "\t$0", "}"]
+	},
+	"media-upmd": {
+		"scope": "css,less,scss",
+		"prefix": "mdumd",
+		"body": ["@media (min-width: 768px) {", "\t$0", "}"]
+	},
+	"media-uplg": {
+		"scope": "css,less,scss",
+		"prefix": "mdulg",
+		"body": ["@media (min-width: 1025px) {", "\t$0", "}"]
+	},
+	"media-upxl": {
+		"scope": "css,less,scss",
+		"prefix": "mduxl",
+		"body": ["@media (min-width: 1200px) {", "\t$0", "}"]
+	},
+	"media-upxxl": {
+		"scope": "css,less,scss",
+		"prefix": "mdu2xl",
+		"body": ["@media (min-width: 1440px) {", "\t$0", "}"]
+	},
+	"media-upxxxl": {
+		"scope": "css,less,scss",
+		"prefix": "mdu3xl",
+		"body": ["@media (min-width: 1600px) {", "\t$0", "}"]
+	},
+	"media-upxxxxl": {
+		"scope": "css,less,scss",
+		"prefix": "mdu4xl",
+		"body": ["@media (min-width: 1720px) {", "\t$0", "}"]
+	},
+	"media-down": {
+		"scope": "css,less,scss",
+		"prefix": "mdd",
+		"body": ["@media (max-width: $1) {", "\t$0", "}"]
+	},
+	"media-downsm": {
+		"scope": "css,less,scss",
+		"prefix": "mddsm",
+		"body": ["@media (max-width: 575.98px) {", "\t$0", "}"]
+	},
+	"media-downmd": {
+		"scope": "css,less,scss",
+		"prefix": "mddmd",
+		"body": ["@media (max-width: 767.98px) {", "\t$0", "}"]
+	},
+	"media-downlg": {
+		"scope": "css,less,scss",
+		"prefix": "mddlg",
+		"body": ["@media (max-width: 1024.98px) {", "\t$0", "}"]
+	},
+	"media-downxl": {
+		"scope": "css,less,scss",
+		"prefix": "mddxl",
+		"body": ["@media (max-width: 1199.98px) {", "\t$0", "}"]
+	},
+	"media-downxxl": {
+		"scope": "css,less,scss",
+		"prefix": "mdd2xl",
+		"body": ["@media (max-width: 1439.98px) {", "\t$0", "}"]
+	},
+	"media-downxxxl": {
+		"scope": "css,less,scss",
+		"prefix": "mdd3xl",
+		"body": ["@media (max-width: 1599.98px) {", "\t$0", "}"]
+	},
+	"media-downxxxxl": {
+		"scope": "css,less,scss",
+		"prefix": "mdd4xl",
+		"body": ["@media (max-width: 1719.98px) {", "\t$0", "}"]
+	},
+	"typography": {
+		"scope": "css,less,scss",
+		"prefix": "f",
+		"body": ["font-size: $1;", "font-weight: $2;", "color: $3;", "$0"]
+	},
+	"translateX": {
+		"scope": "css,less,scss",
+		"prefix": "trlx",
+		"body": ["transform: translateX($1);", "$0"]
+	},
+	"translateY": {
+		"scope": "css,less,scss",
+		"prefix": "trly",
+		"body": ["transform: translateY($1);", "$0"]
+	},
+	"translate": {
+		"scope": "css,less,scss",
+		"prefix": "trlc",
+		"body": ["transform: translate($1);", "$0"]
+	},
+	"flex-center": {
+		"scope": "css,less,scss",
+		"prefix": "fcc",
+		"body": [
+			"display: flex;",
+			"justify-content: center;",
+			"align-items: center;"
+		]
+	},
+	"uppercase": {
+		"scope": "css,less,scss",
+		"prefix": "ttu",
+		"body": ["text-transform: uppercase;"]
+	},
+	"transition": {
+		"scope": "css,less,scss",
+		"prefix": "tsa",
+		"body": ["transition: all .3s ease;"]
+	},
+	"line-clamp": {
+		"scope": "css,less,scss",
+		"prefix": "lcl",
+		"body": [
+			"overflow: hidden;",
+			"text-overflow: ellipsis;",
+			"display: -webkit-box;",
+			"-webkit-box-orient: vertical;",
+			"-webkit-line-clamp: $1;"
+		]
+	},
+	"col-auto": {
+		"scope": "css,less,scss",
+		"prefix": "colat",
+		"body": [
+			"-ms-flex: 0 0 auto;",
+			"flex: 0 0 auto;",
+			"width: auto;",
+			"max-width: 100%;"
+		]
+	},
+	"col": {
+		"scope": "css,less,scss",
+		"prefix": "col",
+		"body": [
+			"-ms-flex-preferred-size: 0;",
+			"flex-basis: 0;",
+			"-ms-flex-positive: 1;",
+			"flex-grow: 1;",
+			"max-width: 100%;"
+		]
+	},
+	"col-d": {
+		"scope": "css,less,scss",
+		"prefix": "cold",
+		"body": ["-ms-flex: 0 0 $1;", "flex: 0 0 $1;", "max-width: $1;$0"]
+	}
+}

@@ -1,0 +1,34 @@
+block var
+
+<!DOCTYPE html>
+html(lang="en")
+	head
+		// *** META *** //
+		include meta
+		// *** VENDORS CSS *** //
+		block library-css
+		// *** CSS *** //
+		include css
+		block css
+		// *** FAVICON *** //
+		link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+		// *** TITLE *** //
+		title #{pageTitle}
+	body
+		.wrapper(class=`${bodyClass}`)
+			// *** HEADER *** //
+			block header
+				include header
+			// *** MAIN *** //
+			main
+				block main
+			// *** OVERLAY *** //
+			.overlay
+			// *** FOOTER *** //
+			block footer
+				include footer
+			// *** VENDORS JS *** //
+			block library-js
+			// *** JS *** //
+			block js
+			include js

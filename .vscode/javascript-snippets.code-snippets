@@ -1,0 +1,21 @@
+{
+	"arrow-function": {
+		"scope": "javascript,typescript",
+		"prefix": "afnc",
+		"body": ["($1) => {", "\t$0", "}"]
+	},
+	"function": {
+		"scope": "javascript,typescript",
+		"prefix": "fnc",
+		"body": ["function $1($2) {", "\t$0", "}"]
+	},
+	"DOMContentLoaded": {
+		"scope": "javascript,typescript",
+		"prefix": "ready",
+		"body": [
+			"document.addEventListener(\"DOMContentLoaded\", () => {",
+			"\t$0",
+			"});"
+		]
+	}
+}

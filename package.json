@@ -1,0 +1,33 @@
+{
+	"name": "nft_tree_landingpage",
+	"version": "1.0.0",
+	"description": "nft_tree_landingpage by hoangviethung",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"pug": "pug -w ./views/screens -o ./ -P",
+		"sass": "node-sass --watch ./scss -o ./css",
+		"server": "http-server ./",
+		"dev": "concurrently --kill-others \"npm run pug\" \"npm run sass\" \"npm run server\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hoangviethung/nft_tree"
+	},
+	"keywords": [
+		"nft_tree_landingpage"
+	],
+	"author": "hoangviethung",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/hoangviethung/nft_tree/issues"
+	},
+	"homepage": "https://github.com/hoangviethung/nft_tree#readme",
+	"dependencies": {
+		"animate.css": "^4.1.1",
+		"concurrently": "^6.2.0",
+		"node-sass": "^6.0.1",
+		"swiper": "^6.8.1",
+		"wow.js": "^1.2.2"
+	}
+}

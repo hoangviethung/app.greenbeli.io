@@ -1,0 +1,7 @@
+.wrapper {
+	padding-top: $height-header - 70px;
+	&.no-scroll {
+		height: 100vh;
+		overflow-y: hidden;
+	}
+}
