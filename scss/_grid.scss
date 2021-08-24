@@ -1,6 +1,6 @@
-.container {
+.container,
+.container-fluid {
 	position: relative;
-	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
 	padding-left: 64px;
@@ -9,6 +9,10 @@
 		padding-left: 16px;
 		padding-right: 16px;
 	}
+}
+
+.container {
+	max-width: 1200px;
 }
 
 .row {

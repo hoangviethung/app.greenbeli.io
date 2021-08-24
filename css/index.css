@@ -1,13 +1,7 @@
-.play_game {
-  padding: 0 32px; }
-  .play_game .card-box {
-    position: relative; }
-  .play_game .block-image {
-    display: flex;
-    justify-content: center;
-    height: calc(100vh - 200px);
-    align-items: center; }
-  .play_game .bt-play {
-    position: absolute;
-    bottom: 24px;
-    right: 24px; }
+.banner {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 100px; }

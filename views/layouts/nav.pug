@@ -1,15 +1,11 @@
 nav.navigation
-	.container.h-100
+	.container-fluid.h-100
 		.row.no-gutters.al-c.h-100
 			.js-collapse-aside-menu-mobile
 				i.fad.fa-indent
 			a(href="index.html").navigation__logo
 				img(src="./images/logo.png", alt="defi-logo")
-			.navigation__user
+			.navigation__info
 				a.bt.secondary(popup-to="wallet_connect_popup" href="javascript:;")
 					span.front Connect Wallet
 				a.your_wallet(popup-to="your_wallet_popup" href="javascript:;" style="display:none")
-					span 0xb3a3c602d1654393ab22ef598868f3bf
-				.navigation__avatar
-					// Radio Image: 48x48
-					img(src="./images/avatar_default.png", alt="USER")

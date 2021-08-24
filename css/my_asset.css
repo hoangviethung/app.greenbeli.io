@@ -116,7 +116,7 @@
   border-radius: 16px;
   overflow: hidden;
   height: 100%;
-  background-color: #24292d; }
+  background-color: #ffffff; }
   .warrior__item:hover .warrior__character:after {
     opacity: 1;
     top: -30%;
