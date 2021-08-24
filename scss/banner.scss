@@ -1,0 +1,116 @@
+@import "_variable";
+
+.banner {
+	height: 312px;
+	background-image: url("../images/background_banner.svg");
+	background-size: cover;
+	background-position: 50%;
+	@media (max-width: 767.98px) {
+		height: unset;
+	}
+}
+
+.banner_section__wrapper {
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 767.98px) {
+		flex-direction: column;
+	}
+}
+
+.banner_section__content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 312px;
+	h2 {
+		font-size: 2rem;
+		font-weight: 700;
+		margin-bottom: 8px;
+		@media (max-width: 1024.98px) {
+			max-width: 288px;
+		}
+		@media (max-width: 767.98px) {
+			font-size: 1.5rem;
+			margin-bottom: 12px;
+		}
+	}
+	p {
+		font-size: 1rem;
+		font-weight: 500;
+		width: 650px;
+		@media (max-width: 1024.98px) {
+			width: 500px;
+		}
+		@media (max-width: 767.98px) {
+			width: unset;
+			font-size: 14px;
+			margin-bottom: 0;
+		}
+	}
+	@media (max-width: 767.98px) {
+		height: unset;
+		padding: 36px 0;
+	}
+}
+
+.banner_section__info {
+	margin-top: 36px;
+	display: flex;
+	@media (max-width: 575.98px) {
+		flex-direction: column;
+	}
+}
+
+.banner_section_info__item {
+	color: map-get($map: $theme-colors, $key: neutral-white);
+	background: linear-gradient(
+		180deg,
+		lighten($color: map-get($theme-colors, primary), $amount: 10%),
+		map-get($theme-colors, primary)
+	);
+	border-radius: 24px;
+	position: relative;
+	width: 262px;
+	height: 88px;
+	padding: 16px 24px;
+	h4 {
+		font-weight: 400;
+		margin-bottom: 0;
+	}
+	+ .banner_section_info__item {
+		margin-left: 32px;
+		@media (max-width: 575.98px) {
+			margin-left: 0;
+			margin-top: 12px;
+		}
+	}
+	.amount {
+		.value {
+			font-size: 1.5rem;
+			font-weight: 700;
+			margin-right: 8px;
+		}
+		.usd-value {
+			color: rgba(
+				$color: map-get($map: $theme-colors, $key: neutral-white),
+				$alpha: 0.8
+			);
+			font-size: 12px;
+			font-weight: 500;
+		}
+	}
+	@media (max-width: 575.98px) {
+		width: 100%;
+	}
+}
+
+.banner_section__image {
+	height: 312px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	@media (max-width: 1024.98px) {
+		display: none;
+	}
+}

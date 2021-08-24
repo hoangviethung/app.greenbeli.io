@@ -125,3 +125,78 @@
 		}
 	}
 }
+
+.select__custom {
+	position: relative;
+	select {
+		color: map-get($map: $theme-colors, $key: text-body);
+		cursor: pointer;
+		padding: 0 32px 0 16px;
+		height: 36px;
+		min-width: 180px;
+		border: 1px solid map-get($map: $theme-colors, $key: gray-border);
+		border-radius: 8px;
+		appearance: none;
+	}
+	&:after {
+		font-size: 1rem;
+		content: "\f107";
+		font-family: map-get($map: $theme-fonts, $key: icons);
+		position: absolute;
+		right: 16px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.checkbox__custom {
+	position: relative;
+	height: 24px;
+	width: 24px;
+	label {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	input {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		font-size: 1rem;
+		appearance: none;
+		border: 2px solid
+			rgba(
+				$color: map-get($map: $theme-colors, $key: primary),
+				$alpha: 0.5
+			);
+		border-radius: 0.4rem;
+		outline: none;
+		transition-duration: 0.3s;
+		cursor: pointer;
+		&:active {
+			transform: scale(1.05);
+			border-radius: 1rem;
+		}
+		&:after {
+			content: "\2713";
+			position: absolute;
+			width: 50%;
+			height: 50%;
+			transform: translate(-50%, -50%);
+			top: 14%;
+			left: 50%;
+			pointer-events: none;
+			opacity: 0;
+			color: map-get($map: $theme-colors, $key: neutral-white);
+			transition: opacity 0.3s ease-in-out;
+		}
+	}
+	input:checked {
+		background-color: map-get($map: $theme-colors, $key: primary);
+		&:after {
+			opacity: 1;
+		}
+	}
+}

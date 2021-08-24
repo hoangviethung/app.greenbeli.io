@@ -9,7 +9,7 @@
     max-width: 250px;
     width: 50%;
     padding: 0px 12px 0px 24px;
-    border: 1px solid rgba(67, 220, 128, 0.5);
+    border: 1px solid rgba(102, 141, 46, 0.5);
     background-color: transparent;
     border-radius: 20px;
     line-height: 50px; }
@@ -28,7 +28,7 @@
   .my_asset__currency .currency__current__block {
     display: flex;
     align-items: center;
-    background-color: rgba(67, 220, 128, 0.5);
+    background-color: rgba(102, 141, 46, 0.5);
     height: 40px;
     border-radius: 50px;
     padding: 0px 10px;
@@ -56,7 +56,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: #40475d; }
+      background-color: #d9d9d9; }
   .my_asset__tab .tab__content {
     min-height: 500px;
     padding: 32px; }
@@ -79,7 +79,7 @@
       height: 2px;
       bottom: 0;
       width: 0;
-      background-color: rgba(67, 220, 128, 0.5);
+      background-color: rgba(102, 141, 46, 0.5);
       z-index: 10;
       left: 50%;
       transform: translateX(-50%);
@@ -146,7 +146,7 @@
     transition-timing-function: ease; }
 
 .warrior__information {
-  border-top: 1px solid rgba(67, 220, 128, 0.2);
+  border-top: 1px solid rgba(102, 141, 46, 0.2);
   padding: 16px 24px; }
   .warrior__information .box-row {
     display: flex;
@@ -188,7 +188,7 @@
 
 .warrior__actions {
   padding: 16px 24px;
-  border-top: 1px solid rgba(67, 220, 128, 0.2); }
+  border-top: 1px solid rgba(102, 141, 46, 0.2); }
   @media (max-width: 767.98px) {
     .warrior__actions {
       padding: 16px; } }

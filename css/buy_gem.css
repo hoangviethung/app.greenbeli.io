@@ -61,7 +61,7 @@
 
 .buy_gem__total {
   padding: 16px;
-  background-color: rgba(67, 220, 128, 0.1);
+  background-color: rgba(102, 141, 46, 0.1);
   border-radius: 16px; }
   @media (max-width: 767.98px) {
     .buy_gem__total {
@@ -82,8 +82,8 @@
   padding: 24px;
   margin: 24px;
   border-radius: 16px;
-  background-color: rgba(67, 220, 128, 0.2);
-  box-shadow: inset 0px -4px 4px rgba(67, 220, 128, 0.2); }
+  background-color: rgba(102, 141, 46, 0.2);
+  box-shadow: inset 0px -4px 4px rgba(102, 141, 46, 0.2); }
   @media (max-width: 767.98px) {
     .buy_gem__final {
       margin: 16px 0 0 0;

@@ -6,7 +6,7 @@
 
 body {
 	margin: 0;
-	font-family: map-get($map: $theme-fonts, $key: font-body);
+	font-family: map-get($map: $theme-fonts, $key: body);
 	font-size: 0.875rem;
 	font-weight: 300;
 	color: map-get($map: $theme-colors, $key: txt-body);
@@ -15,6 +15,10 @@ body {
 	&.no-scroll {
 		overflow-y: hidden;
 	}
+}
+
+main {
+	padding-top: 56px;
 }
 
 section {

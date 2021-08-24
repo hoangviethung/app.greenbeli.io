@@ -27,128 +27,128 @@
 	}
 }
 
-.tabs {
-	.tabs__link {
-		&.active {
-			color: map-get($map: $theme-colors, $key: primary);
-			background-color: rgba(
-				$color: map-get($map: $theme-colors, $key: primary),
-				$alpha: 0.1
-			);
-		}
-	}
-	&.primary {
-		.tabs__content {
-			background-color: map-get($map: $theme-colors, $key: primary);
-			box-shadow: inset 0px -4px 4px rgba($color:
-						lighten(
-							$color: map-get($map: $theme-colors, $key: primary),
-							$amount: 10%
-						), $alpha: 0.2);
-		}
-		.tabs__content__header {
-			border-bottom: 2px solid
-				rgba(
-					$color:
-						lighten(
-							$color: map-get($map: $theme-colors, $key: primary),
-							$amount: 10%
-						),
-					$alpha: 0.2
-				);
-		}
-	}
-	&.secondary {
-		.tabs__content {
-			background-color: map-get($map: $theme-colors, $key: secondary);
-			box-shadow: inset 0px -4px 4px rgba($color:
-						lighten(
-							$color:
-								map-get($map: $theme-colors, $key: secondary),
-							$amount: 10%
-						), $alpha: 0.8);
-		}
-		.tabs__content__header {
-			border-bottom: 2px solid
-				rgba(
-					$color:
-						lighten(
-							$color:
-								map-get($map: $theme-colors, $key: secondary),
-							$amount: 10%
-						),
-					$alpha: 0.5
-				);
-		}
-	}
-	&.neutral-background-lighter {
-		.tabs__content {
-			background-color: map-get(
-				$map: $theme-colors,
-				$key: neutral-background-lighter
-			);
-			box-shadow: inset 0px -4px 4px rgba($color:
-						lighten(
-							$color:
-								map-get(
-									$map: $theme-colors,
-									$key: neutral-background-lighter
-								),
-							$amount: 10%
-						), $alpha: 0.8);
-		}
-		.tabs__content__header {
-			border-bottom: 2px solid
-				rgba(
-					$color:
-						lighten(
-							$color:
-								map-get(
-									$map: $theme-colors,
-									$key: neutral-background-lighter
-								),
-							$amount: 10%
-						),
-					$alpha: 0.5
-				);
-		}
-	}
-}
+// .tabs {
+// 	.tabs__link {
+// 		&.active {
+// 			color: map-get($map: $theme-colors, $key: primary);
+// 			background-color: rgba(
+// 				$color: map-get($map: $theme-colors, $key: primary),
+// 				$alpha: 0.1
+// 			);
+// 		}
+// 	}
+// 	&.primary {
+// 		.tabs__content {
+// 			background-color: map-get($map: $theme-colors, $key: primary);
+// 			box-shadow: inset 0px -4px 4px rgba($color:
+// 						lighten(
+// 							$color: map-get($map: $theme-colors, $key: primary),
+// 							$amount: 10%
+// 						), $alpha: 0.2);
+// 		}
+// 		.tabs__content__header {
+// 			border-bottom: 2px solid
+// 				rgba(
+// 					$color:
+// 						lighten(
+// 							$color: map-get($map: $theme-colors, $key: primary),
+// 							$amount: 10%
+// 						),
+// 					$alpha: 0.2
+// 				);
+// 		}
+// 	}
+// 	&.secondary {
+// 		.tabs__content {
+// 			background-color: map-get($map: $theme-colors, $key: secondary);
+// 			box-shadow: inset 0px -4px 4px rgba($color:
+// 						lighten(
+// 							$color:
+// 								map-get($map: $theme-colors, $key: secondary),
+// 							$amount: 10%
+// 						), $alpha: 0.8);
+// 		}
+// 		.tabs__content__header {
+// 			border-bottom: 2px solid
+// 				rgba(
+// 					$color:
+// 						lighten(
+// 							$color:
+// 								map-get($map: $theme-colors, $key: secondary),
+// 							$amount: 10%
+// 						),
+// 					$alpha: 0.5
+// 				);
+// 		}
+// 	}
+// 	&.neutral-background-lighter {
+// 		.tabs__content {
+// 			background-color: map-get(
+// 				$map: $theme-colors,
+// 				$key: neutral-background-lighter
+// 			);
+// 			box-shadow: inset 0px -4px 4px rgba($color:
+// 						lighten(
+// 							$color:
+// 								map-get(
+// 									$map: $theme-colors,
+// 									$key: neutral-background-lighter
+// 								),
+// 							$amount: 10%
+// 						), $alpha: 0.8);
+// 		}
+// 		.tabs__content__header {
+// 			border-bottom: 2px solid
+// 				rgba(
+// 					$color:
+// 						lighten(
+// 							$color:
+// 								map-get(
+// 									$map: $theme-colors,
+// 									$key: neutral-background-lighter
+// 								),
+// 							$amount: 10%
+// 						),
+// 					$alpha: 0.5
+// 				);
+// 		}
+// 	}
+// }
 
-.tabs__nav {
-	display: flex;
-	padding: 8px;
-	border-radius: 16px;
-	border: 2px solid map-get($map: $theme-colors, $key: gray-border);
-}
+// .tabs__nav {
+// 	display: flex;
+// 	padding: 8px;
+// 	border-radius: 16px;
+// 	border: 2px solid map-get($map: $theme-colors, $key: gray-border);
+// }
 
-.tabs__link {
-	padding: 8px;
-	border-radius: 8px;
-	font-weight: 500;
-	color: map-get($map: $theme-colors, $key: disable);
-	transition: map-get($map: $theme-transition, $key: all);
-	text-align: center;
-	&:hover {
-		color: map-get($map: $theme-colors, $key: neutral-white);
-	}
-}
+// .tabs__link {
+// 	padding: 8px;
+// 	border-radius: 8px;
+// 	font-weight: 500;
+// 	color: map-get($map: $theme-colors, $key: disable);
+// 	transition: map-get($map: $theme-transition, $key: all);
+// 	text-align: center;
+// 	&:hover {
+// 		color: map-get($map: $theme-colors, $key: neutral-white);
+// 	}
+// }
 
-.tabs__content {
-	margin-top: 24px;
-	border-radius: 24px;
-}
+// .tabs__content {
+// 	margin-top: 24px;
+// 	border-radius: 24px;
+// }
 
-.tabs__icon {
-	font-size: 1.2rem;
-}
+// .tabs__icon {
+// 	font-size: 1.2rem;
+// }
 
-.tabs__text {
-	margin-top: 8px;
-	@media (max-width: 575.98px) {
-		display: none;
-	}
-}
+// .tabs__text {
+// 	margin-top: 8px;
+// 	@media (max-width: 575.98px) {
+// 		display: none;
+// 	}
+// }
 
 .badge {
 	font-size: 80%;

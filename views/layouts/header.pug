@@ -1,0 +1,32 @@
+header.header
+    .container-fluid.h-100
+        .header__wrapper
+            a(href="index.html").header__logo
+                img(src="./images/logo.png", alt="GREEN-BELI")
+            .header__menu
+                ul
+                    li.header_menu__item
+                        a(href="/") Home
+                    li.header_menu__item
+                        a(href="/") Farming
+                    li.header_menu__item
+                        a(href="/") Gaming
+                    li.header_menu__item.active
+                        a(href="shop.html") NFT Market
+                    li.header_menu__item
+                        a(href="/") Yout Assets
+                    li.header_menu__item
+                        a(href="/" target="_blank" rel="noreferrer") Documentations
+            .header__info
+                .header_info__items
+                    .header_info__item
+                        span TVL:
+                        span $12,717,432
+                    .header_info__item
+                        a(href="#" target="_blank" rel="noreferrer")
+                            span GGBE:
+                            span $4.3158
+                a.bt.bt--secondary.bt--shadow(href="#")
+                    span.front Play Now
+                a.bt.bt--primary.bt--shadow(popup-to="wallet_connect_popup" href="javascript:;")
+                    span.front Connect Wallet

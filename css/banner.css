@@ -1,0 +1,93 @@
+.banner {
+  height: 312px;
+  background-image: url("../images/background_banner.svg");
+  background-size: cover;
+  background-position: 50%; }
+  @media (max-width: 767.98px) {
+    .banner {
+      height: unset; } }
+
+.banner_section__wrapper {
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 767.98px) {
+    .banner_section__wrapper {
+      flex-direction: column; } }
+
+.banner_section__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 312px; }
+  .banner_section__content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px; }
+    @media (max-width: 1024.98px) {
+      .banner_section__content h2 {
+        max-width: 288px; } }
+    @media (max-width: 767.98px) {
+      .banner_section__content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 12px; } }
+  .banner_section__content p {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 650px; }
+    @media (max-width: 1024.98px) {
+      .banner_section__content p {
+        width: 500px; } }
+    @media (max-width: 767.98px) {
+      .banner_section__content p {
+        width: unset;
+        font-size: 14px;
+        margin-bottom: 0; } }
+  @media (max-width: 767.98px) {
+    .banner_section__content {
+      height: unset;
+      padding: 36px 0; } }
+
+.banner_section__info {
+  margin-top: 36px;
+  display: flex; }
+  @media (max-width: 575.98px) {
+    .banner_section__info {
+      flex-direction: column; } }
+
+.banner_section_info__item {
+  color: #ffffff;
+  background: linear-gradient(180deg, #82b33b, #668d2e);
+  border-radius: 24px;
+  position: relative;
+  width: 262px;
+  height: 88px;
+  padding: 16px 24px; }
+  .banner_section_info__item h4 {
+    font-weight: 400;
+    margin-bottom: 0; }
+  .banner_section_info__item + .banner_section_info__item {
+    margin-left: 32px; }
+    @media (max-width: 575.98px) {
+      .banner_section_info__item + .banner_section_info__item {
+        margin-left: 0;
+        margin-top: 12px; } }
+  .banner_section_info__item .amount .value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 8px; }
+  .banner_section_info__item .amount .usd-value {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-weight: 500; }
+  @media (max-width: 575.98px) {
+    .banner_section_info__item {
+      width: 100%; } }
+
+.banner_section__image {
+  height: 312px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  @media (max-width: 1024.98px) {
+    .banner_section__image {
+      display: none; } }

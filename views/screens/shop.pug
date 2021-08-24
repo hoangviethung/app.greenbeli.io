@@ -1,0 +1,420 @@
+extends ../layouts/layout
+
+block var
+    - pageTitle = "Liquidity | Green Beli"
+block library-css
+block css
+    link(rel="stylesheet", href="./css/banner.css")
+    link(rel="stylesheet", href="./css/shop.css")
+block library-js
+block js
+block main
+    // *** BANNER *** //
+    include ../components/banner
+    section.shop_section
+        .container
+            .shop__wrapper
+                aside.shop__fiter_left
+                    .title Filter
+                    .shop__filter_tabs_nav
+                        .bt.tab_item.active Meeb
+                        .bt.tab_item Body parts
+                    .shop__filter_tabs_content
+                        .filter_block
+                            h4.filter_block__title Attribute
+                            .filter_block__wrapper
+                                .filter_block__item
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                    img(src="./icons/water.svg", alt="WATER")
+                                    span Water
+                                .filter_block__item
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                    img(src="./icons/light.svg", alt="LIGHT")
+                                    span Light
+                                .filter_block__item
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                    img(src="./icons/fire.svg", alt="FIRE")
+                                    span Fire
+                                .filter_block__item
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                    img(src="./icons/dark.svg", alt="DARK")
+                                    span Dark
+                                .filter_block__item
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                    img(src="./icons/grass.svg", alt="GRASS")
+                                    span Grass
+                                .filter_block__item
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                    img(src="./icons/neutral.svg", alt="NEUTRAL")
+                                    span Neutral
+                                .filter_block__item
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                    img(src="./icons/electric.svg", alt="ELECTRIC")
+                                    span Electric
+                        .filter_block
+                            h4.filter_block__title Role
+                            .filter_block__wrapper
+                                .filter_block__item
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                    img(src="./icons/tanker.svg", alt="TANKER")
+                                    span Tanker
+                                .filter_block__item
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                    img(src="./icons/hunter.svg", alt="HUNTER")
+                                    span Hunter
+                                .filter_block__item
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                    img(src="./icons/mage.svg", alt="MAGE")
+                                    span Mage
+                                .filter_block__item
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                    img(src="./icons/fighter.svg", alt="FIGHTER")
+                                    span Fighter
+                                .filter_block__item
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                    img(src="./icons/supporter.svg", alt="SUPPORTER")
+                                    span Supporter
+                                .filter_block__item
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                    img(src="./icons/conjurer.svg", alt="CONJURER")
+                                    span Conjurer
+                                .filter_block__item
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                    img(src="./icons/assassin.svg", alt="ASSASSIN")
+                                    span Assassin
+                .shop__main_content
+                    .total_rgbe
+                        span 1106 RGBE
+                    .shop__filter_top
+                        .left_partial
+                            .tabs_row
+                                button.bt.bt-tab-name
+                                    span All
+                                button.bt.bt-tab-name.active
+                                    span For sale
+                                button.bt.bt-tab-name
+                                    span Sold
+                                button.bt.bt-tab-name
+                                    span Blacklisted
+                        .right-partial
+                            .select__custom
+                                select
+                                    option Lowest Price
+                                    option Highest Price
+                                    option Lowest Productivity Price
+                                    option Highest Productivity Price
+                    .list_products
+                        .list_products__item_wrapper
+                            .list_products__item.list_products__item--water
+                                .passive
+                                    span
+                                        img(src="./icons/passivetanker.svg", alt="TANKER")
+                                .power
+                                    i.fas.fa-fire-alt
+                                    span.value 4%
+                                .list_products__thumbnail
+                                    .lazyload-wrapper
+                                        img(src="./images/item_product_01.png", alt="CHARACTER")
+                                .list_products__info
+                                    .name GRBE#95203
+                                    .detail
+                                        .code ID: 433...203
+                                        .rating
+                                            i.fas.fa-star
+                                    .price
+                                        img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
+                                        span.value 14.99
+                                        span.usd-value ~$61.81
+                        .list_products__item_wrapper
+                            .list_products__item.list_products__item--light
+                                .passive
+                                    span
+                                        img(src="./icons/passivehunter.svg", alt="HUNTER")
+                                .power
+                                    i.fas.fa-fire-alt
+                                    span.value 4%
+                                .list_products__thumbnail
+                                    .lazyload-wrapper
+                                        img(src="./images/item_product_02.png", alt="CHARACTER")
+                                .list_products__info
+                                    .name GRBE#95203
+                                    .detail
+                                        .code ID: 433...203
+                                        .rating
+                                            i.fas.fa-star
+                                    .price
+                                        img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
+                                        span.value 14.99
+                                        span.usd-value ~$61.81
+                        .list_products__item_wrapper
+                            .list_products__item.list_products__item--fire
+                                .passive
+                                    span
+                                        img(src="./icons/passivemage.svg", alt="MAGE")
+                                .power
+                                    i.fas.fa-fire-alt
+                                    span.value 4%
+                                .list_products__thumbnail
+                                    .lazyload-wrapper
+                                        img(src="./images/item_product_03.png", alt="CHARACTER")
+                                .list_products__info
+                                    .name GRBE#95203
+                                    .detail
+                                        .code ID: 433...203
+                                        .rating
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                    .price
+                                        img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
+                                        span.value 14.99
+                                        span.usd-value ~$61.81
+                        .list_products__item_wrapper
+                            .list_products__item.list_products__item--dark
+                                .passive
+                                    span
+                                        img(src="./icons/passivefighter.svg", alt="FIGHTER")
+                                .power
+                                    i.fas.fa-fire-alt
+                                    span.value 4%
+                                .list_products__thumbnail
+                                    .lazyload-wrapper
+                                        img(src="./images/item_product_04.png", alt="CHARACTER")
+                                .list_products__info
+                                    .name GRBE#95203
+                                    .detail
+                                        .code ID: 433...203
+                                        .rating
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                    .price
+                                        img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
+                                        span.value 14.99
+                                        span.usd-value ~$61.81
+                        .list_products__item_wrapper
+                            .list_products__item.list_products__item--grass
+                                .passive
+                                    span
+                                        img(src="./icons/passivesupporter.svg", alt="SUPPORT")
+                                .power
+                                    i.fas.fa-fire-alt
+                                    span.value 4%
+                                .list_products__thumbnail
+                                    .lazyload-wrapper
+                                        img(src="./images/item_product_05.png", alt="CHARACTER")
+                                .list_products__info
+                                    .name GRBE#95203
+                                    .detail
+                                        .code ID: 433...203
+                                        .rating
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                    .price
+                                        img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
+                                        span.value 14.99
+                                        span.usd-value ~$61.81
+                        .list_products__item_wrapper
+                            .list_products__item.list_products__item--dark
+                                .passive
+                                    span
+                                        img(src="./icons/passiveassassin.svg", alt="ASSASSIN")
+                                .power
+                                    i.fas.fa-fire-alt
+                                    span.value 4%
+                                .list_products__thumbnail
+                                    .lazyload-wrapper
+                                        img(src="./images/item_product_06.png", alt="CHARACTER")
+                                .list_products__info
+                                    .name GRBE#95203
+                                    .detail
+                                        .code ID: 433...203
+                                        .rating
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                    .price
+                                        img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
+                                        span.value 14.99
+                                        span.usd-value ~$61.81
+                        .list_products__item_wrapper
+                            .list_products__item.list_products__item--water
+                                .passive
+                                    span
+                                        img(src="./icons/passivetanker.svg", alt="TANKER")
+                                .power
+                                    i.fas.fa-fire-alt
+                                    span.value 4%
+                                .list_products__thumbnail
+                                    .lazyload-wrapper
+                                        img(src="./images/item_product_07.png", alt="CHARACTER")
+                                .list_products__info
+                                    .name GRBE#95203
+                                    .detail
+                                        .code ID: 433...203
+                                        .rating
+                                            i.fas.fa-star
+                                    .price
+                                        img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
+                                        span.value 14.99
+                                        span.usd-value ~$61.81
+                        .list_products__item_wrapper
+                            .list_products__item.list_products__item--light
+                                .passive
+                                    span
+                                        img(src="./icons/passivehunter.svg", alt="HUNTER")
+                                .power
+                                    i.fas.fa-fire-alt
+                                    span.value 4%
+                                .list_products__thumbnail
+                                    .lazyload-wrapper
+                                        img(src="./images/item_product_08.png", alt="CHARACTER")
+                                .list_products__info
+                                    .name GRBE#95203
+                                    .detail
+                                        .code ID: 433...203
+                                        .rating
+                                            i.fas.fa-star
+                                    .price
+                                        img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
+                                        span.value 14.99
+                                        span.usd-value ~$61.81
+                        .list_products__item_wrapper
+                            .list_products__item.list_products__item--grass
+                                .passive
+                                    span
+                                        img(src="./icons/passivesupporter.svg", alt="SUPPORT")
+                                .power
+                                    i.fas.fa-fire-alt
+                                    span.value 4%
+                                .list_products__thumbnail
+                                    .lazyload-wrapper
+                                        img(src="./images/item_product_01.png", alt="CHARACTER")
+                                .list_products__info
+                                    .name GRBE#95203
+                                    .detail
+                                        .code ID: 433...203
+                                        .rating
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                    .price
+                                        img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
+                                        span.value 14.99
+                                        span.usd-value ~$61.81
+                        .list_products__item_wrapper
+                            .list_products__item.list_products__item--dark
+                                .passive
+                                    span
+                                        img(src="./icons/passiveassassin.svg", alt="ASSASSIN")
+                                .power
+                                    i.fas.fa-fire-alt
+                                    span.value 4%
+                                .list_products__thumbnail
+                                    .lazyload-wrapper
+                                        img(src="./images/item_product_01.png", alt="CHARACTER")
+                                .list_products__info
+                                    .name GRBE#95203
+                                    .detail
+                                        .code ID: 433...203
+                                        .rating
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                    .price
+                                        img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
+                                        span.value 14.99
+                                        span.usd-value ~$61.81
+                        .list_products__item_wrapper
+                            .list_products__item.list_products__item--grass
+                                .passive
+                                    span
+                                        img(src="./icons/passivesupporter.svg", alt="SUPPORT")
+                                .power
+                                    i.fas.fa-fire-alt
+                                    span.value 4%
+                                .list_products__thumbnail
+                                    .lazyload-wrapper
+                                        img(src="./images/item_product_01.png", alt="CHARACTER")
+                                .list_products__info
+                                    .name GRBE#95203
+                                    .detail
+                                        .code ID: 433...203
+                                        .rating
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                    .price
+                                        img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
+                                        span.value 14.99
+                                        span.usd-value ~$61.81
+                        .list_products__item_wrapper
+                            .list_products__item.list_products__item--dark
+                                .passive
+                                    span
+                                        img(src="./icons/passiveassassin.svg", alt="ASSASSIN")
+                                .power
+                                    i.fas.fa-fire-alt
+                                    span.value 4%
+                                .list_products__thumbnail
+                                    .lazyload-wrapper
+                                        img(src="./images/item_product_01.png", alt="CHARACTER")
+                                .list_products__info
+                                    .name GRBE#95203
+                                    .detail
+                                        .code ID: 433...203
+                                        .rating
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                    .price
+                                        img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
+                                        span.value 14.99
+                                        span.usd-value ~$61.81
+                    .shop__pagination
+                        ul.pagination
+                            li.pagination-item.disable
+                                a(href="#")
+                                    i.fal.fa-chevron-left
+                            li.pagination-item.active
+                                a(href="#") 1
+                            li.pagination-item
+                                a(href="#") 2
+                            li.pagination-item
+                                a(href="#") 3
+                            li.pagination-item
+                                a(href="#") 4
+                            li.pagination-item
+                                a(href="#") 5
+                            li.pagination-item
+                                a(href="#")
+                                    i.far.fa-ellipsis-h
+                            li.pagination-item
+                                a(href="#") 1424
+                            li.pagination-item
+                                a(href="#")
+                                    i.fal.fa-chevron-right

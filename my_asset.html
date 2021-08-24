@@ -17,910 +17,922 @@
   </head>
   <body>
     <div class="page">
-      <div class="page__content">
-        <!-- *** NAV *** //-->
-        <nav class="navigation">
-          <div class="container-fluid h-100">
-            <div class="row no-gutters al-c h-100">
-              <div class="js-collapse-aside-menu-mobile"><i class="fad fa-indent"></i></div><a class="navigation__logo" href="index.html"><img src="./images/logo.png" alt="defi-logo"/></a>
-              <div class="navigation__info"><a class="bt secondary" popup-to="wallet_connect_popup" href="javascript:;"><span class="front">Connect Wallet</span></a><a class="your_wallet" popup-to="your_wallet_popup" href="javascript:;" style="display:none"></a></div>
+      <!-- *** HEADER *** //-->
+      <header class="header">
+        <div class="container-fluid h-100">
+          <div class="header__wrapper"><a class="header__logo" href="index.html"><img src="./images/logo.png" alt="GREEN-BELI"/></a>
+            <div class="header__menu">
+              <ul>
+                <li class="header_menu__item"><a href="/">Home</a></li>
+                <li class="header_menu__item"><a href="/">Farming</a></li>
+                <li class="header_menu__item"><a href="/">Gaming</a></li>
+                <li class="header_menu__item active"><a href="shop.html">NFT Market</a></li>
+                <li class="header_menu__item"><a href="/">Yout Assets</a></li>
+                <li class="header_menu__item"><a href="/" target="_blank" rel="noreferrer">Documentations</a></li>
+              </ul>
+            </div>
+            <div class="header__info">
+              <div class="header_info__items">
+                <div class="header_info__item"><span>TVL:</span><span>$12,717,432</span></div>
+                <div class="header_info__item"><a href="#" target="_blank" rel="noreferrer"><span>GGBE:</span><span>$4.3158</span></a></div>
+              </div><a class="bt bt--secondary bt--shadow" href="#"><span class="front">Play Now</span></a><a class="bt bt--primary bt--shadow" popup-to="wallet_connect_popup" href="javascript:;"><span class="front">Connect Wallet</span></a>
             </div>
           </div>
-        </nav>
-        <!-- *** MAIN *** //-->
-        <main>
-          <!-- *** SECTION WALLET & ASSET *** //-->
-          <section class="my_asset">
-            <div class="container">
-              <div class="my_asset__currency">
-                <div class="currency__current">
-                  <p>0.000</p>
-                  <div class="currency__current__block"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span>FIWA</span></div>
-                </div>
-                <div class="currency__current">
-                  <p>0.000</p>
-                  <div class="currency__current__block"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span>FIWA</span></div>
-                </div>
+        </div>
+      </header>
+      <!-- *** MAIN *** //-->
+      <main>
+        <!-- *** SECTION WALLET & ASSET *** //-->
+        <section class="my_asset">
+          <div class="container">
+            <div class="my_asset__currency">
+              <div class="currency__current">
+                <p>0.000</p>
+                <div class="currency__current__block"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span>FIWA</span></div>
               </div>
-              <div class="my_asset__tab">
-                <div class="tab_container">
-                  <div class="tab__header">
-                    <div class="tab__menuItem" toggle-for="my-warrior"><i class="fas fa-sword"></i><span>My Warrior</span></div>
-                    <div class="tab__menuItem" toggle-for="lands"><i class="fas fa-globe-europe"></i><span>Lands</span></div>
-                    <div class="tab__menuItem" toggle-for="bodyparts"><i class="fas fa-sword"></i><span>Bodyparts</span></div>
-                    <div class="tab__menuItem" toggle-for="items"><i class="fas fa-axe"></i><span>Items</span></div>
-                  </div>
-                  <div class="tab__content">
-                    <div class="tab__contentItem" toggle-id="my-warrior">
-                      <div class="warriors">
-                        <div class="warrior__item">
-                          <div class="warrior__character">
-                            <!-- Radio Images: 250x300--><img src="./images/bch_character.png" alt="CHARACTER"/>
-                          </div>
-                          <div class="warrior__information">
-                            <div class="box-row">
-                              <div class="box-left">
-                                <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+              <div class="currency__current">
+                <p>0.000</p>
+                <div class="currency__current__block"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span>FIWA</span></div>
+              </div>
+            </div>
+            <div class="my_asset__tab">
+              <div class="tab_container">
+                <div class="tab__header">
+                  <div class="tab__menuItem" toggle-for="my-warrior"><i class="fas fa-sword"></i><span>My Warrior</span></div>
+                  <div class="tab__menuItem" toggle-for="lands"><i class="fas fa-globe-europe"></i><span>Lands</span></div>
+                  <div class="tab__menuItem" toggle-for="bodyparts"><i class="fas fa-sword"></i><span>Bodyparts</span></div>
+                  <div class="tab__menuItem" toggle-for="items"><i class="fas fa-axe"></i><span>Items</span></div>
+                </div>
+                <div class="tab__content">
+                  <div class="tab__contentItem" toggle-id="my-warrior">
+                    <div class="warriors">
+                      <div class="warrior__item">
+                        <div class="warrior__character">
+                          <!-- Radio Images: 250x300--><img src="./images/bch_character.png" alt="CHARACTER"/>
+                        </div>
+                        <div class="warrior__information">
+                          <div class="box-row">
+                            <div class="box-left">
+                              <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                            </div>
+                            <div class="box-right">
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Single battle:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
-                              <div class="box-right">
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Single battle:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Championship:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Championship:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
                             </div>
-                          </div>
-                          <div class="warrior__actions">
-                            <button class="bt bt-lg bt-block primary">PvP</button>
                           </div>
                         </div>
-                        <div class="warrior__item">
-                          <div class="warrior__character">
-                            <!-- Radio Images: 250x300--><img src="./images/bch_character.png" alt="CHARACTER"/>
-                          </div>
-                          <div class="warrior__information">
-                            <div class="box-row">
-                              <div class="box-left">
-                                <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                        <div class="warrior__actions">
+                          <button class="bt bt-lg bt-block primary">PvP</button>
+                        </div>
+                      </div>
+                      <div class="warrior__item">
+                        <div class="warrior__character">
+                          <!-- Radio Images: 250x300--><img src="./images/bch_character.png" alt="CHARACTER"/>
+                        </div>
+                        <div class="warrior__information">
+                          <div class="box-row">
+                            <div class="box-left">
+                              <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                            </div>
+                            <div class="box-right">
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Single battle:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
-                              <div class="box-right">
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Single battle:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Championship:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Championship:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
                             </div>
-                          </div>
-                          <div class="warrior__actions">
-                            <button class="bt bt-lg bt-block primary">PvP</button>
                           </div>
                         </div>
-                        <div class="warrior__item">
-                          <div class="warrior__character">
-                            <!-- Radio Images: 250x300--><img src="./images/bch_character.png" alt="CHARACTER"/>
-                          </div>
-                          <div class="warrior__information">
-                            <div class="box-row">
-                              <div class="box-left">
-                                <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                        <div class="warrior__actions">
+                          <button class="bt bt-lg bt-block primary">PvP</button>
+                        </div>
+                      </div>
+                      <div class="warrior__item">
+                        <div class="warrior__character">
+                          <!-- Radio Images: 250x300--><img src="./images/bch_character.png" alt="CHARACTER"/>
+                        </div>
+                        <div class="warrior__information">
+                          <div class="box-row">
+                            <div class="box-left">
+                              <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                            </div>
+                            <div class="box-right">
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Single battle:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
-                              <div class="box-right">
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Single battle:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Championship:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Championship:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
                             </div>
-                          </div>
-                          <div class="warrior__actions">
-                            <button class="bt bt-lg bt-block primary">PvP</button>
                           </div>
                         </div>
-                        <div class="warrior__item">
-                          <div class="warrior__character">
-                            <!-- Radio Images: 250x300--><img src="./images/bch_character.png" alt="CHARACTER"/>
-                          </div>
-                          <div class="warrior__information">
-                            <div class="box-row">
-                              <div class="box-left">
-                                <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                        <div class="warrior__actions">
+                          <button class="bt bt-lg bt-block primary">PvP</button>
+                        </div>
+                      </div>
+                      <div class="warrior__item">
+                        <div class="warrior__character">
+                          <!-- Radio Images: 250x300--><img src="./images/bch_character.png" alt="CHARACTER"/>
+                        </div>
+                        <div class="warrior__information">
+                          <div class="box-row">
+                            <div class="box-left">
+                              <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                            </div>
+                            <div class="box-right">
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Single battle:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
-                              <div class="box-right">
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Single battle:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Championship:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Championship:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
                             </div>
-                          </div>
-                          <div class="warrior__actions">
-                            <button class="bt bt-lg bt-block primary">PvP</button>
                           </div>
                         </div>
-                        <div class="warrior__item">
-                          <div class="warrior__character">
-                            <!-- Radio Images: 250x300--><img src="./images/btc_character.png" alt="CHARACTER"/>
-                          </div>
-                          <div class="warrior__information">
-                            <div class="box-row">
-                              <div class="box-left">
-                                <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                        <div class="warrior__actions">
+                          <button class="bt bt-lg bt-block primary">PvP</button>
+                        </div>
+                      </div>
+                      <div class="warrior__item">
+                        <div class="warrior__character">
+                          <!-- Radio Images: 250x300--><img src="./images/btc_character.png" alt="CHARACTER"/>
+                        </div>
+                        <div class="warrior__information">
+                          <div class="box-row">
+                            <div class="box-left">
+                              <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                            </div>
+                            <div class="box-right">
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Single battle:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
-                              <div class="box-right">
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Single battle:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Championship:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Championship:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
                             </div>
-                          </div>
-                          <div class="warrior__actions">
-                            <button class="bt bt-lg bt-block primary">PvP</button>
                           </div>
                         </div>
-                        <div class="warrior__item">
-                          <div class="warrior__character">
-                            <!-- Radio Images: 250x300--><img src="./images/btc_character.png" alt="CHARACTER"/>
-                          </div>
-                          <div class="warrior__information">
-                            <div class="box-row">
-                              <div class="box-left">
-                                <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                        <div class="warrior__actions">
+                          <button class="bt bt-lg bt-block primary">PvP</button>
+                        </div>
+                      </div>
+                      <div class="warrior__item">
+                        <div class="warrior__character">
+                          <!-- Radio Images: 250x300--><img src="./images/btc_character.png" alt="CHARACTER"/>
+                        </div>
+                        <div class="warrior__information">
+                          <div class="box-row">
+                            <div class="box-left">
+                              <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                            </div>
+                            <div class="box-right">
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Single battle:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
-                              <div class="box-right">
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Single battle:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Championship:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Championship:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
                             </div>
-                          </div>
-                          <div class="warrior__actions">
-                            <button class="bt bt-lg bt-block primary">PvP</button>
                           </div>
                         </div>
-                        <div class="warrior__item">
-                          <div class="warrior__character">
-                            <!-- Radio Images: 250x300--><img src="./images/btc_character.png" alt="CHARACTER"/>
-                          </div>
-                          <div class="warrior__information">
-                            <div class="box-row">
-                              <div class="box-left">
-                                <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                        <div class="warrior__actions">
+                          <button class="bt bt-lg bt-block primary">PvP</button>
+                        </div>
+                      </div>
+                      <div class="warrior__item">
+                        <div class="warrior__character">
+                          <!-- Radio Images: 250x300--><img src="./images/btc_character.png" alt="CHARACTER"/>
+                        </div>
+                        <div class="warrior__information">
+                          <div class="box-row">
+                            <div class="box-left">
+                              <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                            </div>
+                            <div class="box-right">
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Single battle:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
-                              <div class="box-right">
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Single battle:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Championship:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Championship:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
                             </div>
-                          </div>
-                          <div class="warrior__actions">
-                            <button class="bt bt-lg bt-block primary">PvP</button>
                           </div>
                         </div>
-                        <div class="warrior__item">
-                          <div class="warrior__character">
-                            <!-- Radio Images: 250x300--><img src="./images/btc_character.png" alt="CHARACTER"/>
-                          </div>
-                          <div class="warrior__information">
-                            <div class="box-row">
-                              <div class="box-left">
-                                <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                        <div class="warrior__actions">
+                          <button class="bt bt-lg bt-block primary">PvP</button>
+                        </div>
+                      </div>
+                      <div class="warrior__item">
+                        <div class="warrior__character">
+                          <!-- Radio Images: 250x300--><img src="./images/btc_character.png" alt="CHARACTER"/>
+                        </div>
+                        <div class="warrior__information">
+                          <div class="box-row">
+                            <div class="box-left">
+                              <h4 class="warrior__name">Bitcoin</h4><span class="warrior__id">#B12000</span>
+                            </div>
+                            <div class="box-right">
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Single battle:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
-                              <div class="box-right">
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Single battle:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
-                                <div class="flex-between-alc">
-                                  <div class="block"><span>Championship:</span></div>
-                                  <div class="block"><span>15</span></div>
-                                </div>
+                              <div class="flex-between-alc">
+                                <div class="block"><span>Championship:</span></div>
+                                <div class="block"><span>15</span></div>
                               </div>
                             </div>
                           </div>
-                          <div class="warrior__actions">
-                            <button class="bt bt-lg bt-block primary">PvP</button>
-                          </div>
+                        </div>
+                        <div class="warrior__actions">
+                          <button class="bt bt-lg bt-block primary">PvP</button>
                         </div>
                       </div>
                     </div>
-                    <div class="tab__contentItem" toggle-id="lands">
-                      <div class="not_content"><img src="./images/not_content.png" alt="NOT-CONTENT"/></div>
-                    </div>
-                    <div class="tab__contentItem" toggle-id="bodyparts">
-                      <div class="not_content"><img src="./images/not_content.png" alt="NOT-CONTENT"/></div>
-                    </div>
-                    <div class="tab__contentItem" toggle-id="items">
-                      <div class="not_content"><img src="./images/not_content.png" alt="NOT-CONTENT"/></div>
-                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- *** POPUP WALLET CONNECT POPOP *** //-->
-          <div class="wallet_connect_popup" id="wallet_connect_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Connect to a wallet</h2>
-              </div>
-              <div class="popup__body">
-                <ul class="list_option_wallet_connect">
-                  <li class="item_option_wallet_connect">
-                    <button class="bt bt-block bt-lg"><img src="./icons/metamask.svg" alt="Metamask"/>
-                      <p><span>Metamask</span></p>
-                    </button>
-                  </li>
-                  <li class="item_option_wallet_connect" disable="disable">
-                    <button class="bt bt-block bt-lg"><img src="./icons/trustwallet.svg" alt="TrustWallet"/>
-                      <p><span>TrustWallet</span></p>
-                    </button>
-                  </li>
-                  <li class="item_option_wallet_connect" disable="disable">
-                    <button class="bt bt-block bt-lg"><img src="./icons/mathwallet.svg" alt="Metamask"/>
-                      <p><span>MathWallet</span></p>
-                    </button>
-                  </li>
-                  <li class="item_option_wallet_connect" disable="disable">
-                    <button class="bt bt-block bt-lg"><img src="./icons/tokenpocket.svg" alt="TokenPocket"/>
-                      <p><span>TokenPocket</span></p>
-                    </button>
-                  </li>
-                  <li class="item_option_wallet_connect" disable="disable">
-                    <button class="bt bt-block bt-lg"><img src="./icons/walletconnect.svg" alt="WalletConnect"/>
-                      <p><span>WalletConnect</span></p>
-                    </button>
-                  </li>
-                  <li class="item_option_wallet_connect" disable="disable">
-                    <button class="bt bt-block bt-lg"><img src="./icons/binancechainwallet.svg" alt="BinanceChainWallet"/>
-                      <p><span>Binance Chain Wallet</span></p>
-                    </button>
-                  </li>
-                  <li class="item_option_wallet_connect" disable="disable">
-                    <button class="bt bt-block bt-lg"><img src="./icons/safepalwallet.svg" alt="SafePalWallet"/>
-                      <p><span>SafePal Wallet</span></p>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <div class="popup__footer">
-                <div class="d-f jc-c"><a class="support-document" href="https://bap-software.net/vi/" target="_blank" rel="noreferrer noopener"><i class="fad fa-question-circle"></i><span>Learn how to connect</span></a></div>
-              </div>
-            </div>
-          </div>
-          <!-- *** POPUP YOUR WALLET POPOP *** //-->
-          <div class="your_wallet_popup" id="your_wallet_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Your Wallet</h2>
-              </div>
-              <div class="popup__body">
-                <div class="your_wallet__item">
-                  <h4 class="your_wallet__token">0x515f1B949306843B286f40239e04B760E3c65434</h4>
-                </div>
-                <div class="your_wallet__item">
-                  <div class="flex-between-alc"><a class="bt cl-primary" href="https://bscscan.com/address/0x515f1B949306843B286f40239e04B760E3c65434" target="_blank" rel="noreferrer noopener"><span>View on BscScan</span><i class="fad fa-external-link-alt"></i></a>
-                    <button class="bt cl-primary"><span>Copy Address</span><i class="fad fa-copy"></i></button>
+                  <div class="tab__contentItem" toggle-id="lands">
+                    <div class="not_content"><img src="./images/not_content.png" alt="NOT-CONTENT"/></div>
                   </div>
-                </div>
-              </div>
-              <div class="popup__footer">
-                <div class="d-f jc-c">
-                  <button class="bt bt-lg bt-outline primary">Logouts</button>
+                  <div class="tab__contentItem" toggle-id="bodyparts">
+                    <div class="not_content"><img src="./images/not_content.png" alt="NOT-CONTENT"/></div>
+                  </div>
+                  <div class="tab__contentItem" toggle-id="items">
+                    <div class="not_content"><img src="./images/not_content.png" alt="NOT-CONTENT"/></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- *** POPUP STAKE LP TOKENS *** //-->
-          <div class="stake_lp_tokens_popup" id="stake_lp_tokens_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Stake LP tokens</h2>
+        </section>
+        <!-- *** POPUP WALLET CONNECT POPOP *** //-->
+        <div class="wallet_connect_popup" id="wallet_connect_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Connect to a wallet</h2>
+            </div>
+            <div class="popup__body">
+              <ul class="list_option_wallet_connect">
+                <li class="item_option_wallet_connect">
+                  <button class="bt bt-block bt-lg"><img src="./icons/metamask.svg" alt="Metamask"/>
+                    <p><span>Metamask</span></p>
+                  </button>
+                </li>
+                <li class="item_option_wallet_connect" disable="disable">
+                  <button class="bt bt-block bt-lg"><img src="./icons/trustwallet.svg" alt="TrustWallet"/>
+                    <p><span>TrustWallet</span></p>
+                  </button>
+                </li>
+                <li class="item_option_wallet_connect" disable="disable">
+                  <button class="bt bt-block bt-lg"><img src="./icons/mathwallet.svg" alt="Metamask"/>
+                    <p><span>MathWallet</span></p>
+                  </button>
+                </li>
+                <li class="item_option_wallet_connect" disable="disable">
+                  <button class="bt bt-block bt-lg"><img src="./icons/tokenpocket.svg" alt="TokenPocket"/>
+                    <p><span>TokenPocket</span></p>
+                  </button>
+                </li>
+                <li class="item_option_wallet_connect" disable="disable">
+                  <button class="bt bt-block bt-lg"><img src="./icons/walletconnect.svg" alt="WalletConnect"/>
+                    <p><span>WalletConnect</span></p>
+                  </button>
+                </li>
+                <li class="item_option_wallet_connect" disable="disable">
+                  <button class="bt bt-block bt-lg"><img src="./icons/binancechainwallet.svg" alt="BinanceChainWallet"/>
+                    <p><span>Binance Chain Wallet</span></p>
+                  </button>
+                </li>
+                <li class="item_option_wallet_connect" disable="disable">
+                  <button class="bt bt-block bt-lg"><img src="./icons/safepalwallet.svg" alt="SafePalWallet"/>
+                    <p><span>SafePal Wallet</span></p>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="popup__footer">
+              <div class="d-f jc-c"><a class="support-document" href="https://bap-software.net/vi/" target="_blank" rel="noreferrer noopener"><i class="fad fa-question-circle"></i><span>Learn how to connect</span></a></div>
+            </div>
+          </div>
+        </div>
+        <!-- *** POPUP YOUR WALLET POPOP *** //-->
+        <div class="your_wallet_popup" id="your_wallet_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Your Wallet</h2>
+            </div>
+            <div class="popup__body">
+              <div class="your_wallet__item">
+                <h4 class="your_wallet__token">0x515f1B949306843B286f40239e04B760E3c65434</h4>
               </div>
-              <div class="popup__body">
-                <div class="stake_lp_tokens__form">
-                  <div class="form__item flex-between-alc"><span>Stake</span><span>Balance: 0</span></div>
-                  <div class="form__item grid-auto-auto-gap-16">
-                    <input class="form-control is-invalid" type="text" placeholder="Enter your token"/>
-                    <div class="d-f al-e">
-                      <button class="bt bt-lg secondary">Max</button><b class="stake_lp_tokens__name">GEM-BNB LP</b>
-                    </div>
-                  </div>
-                  <div class="form__item flex-between-alc">
-                    <div class="invalid-feedback">No tokens to stake: Get GEM-BNB LP</div>
-                  </div>
+              <div class="your_wallet__item">
+                <div class="flex-between-alc"><a class="bt cl-primary" href="https://bscscan.com/address/0x515f1B949306843B286f40239e04B760E3c65434" target="_blank" rel="noreferrer noopener"><span>View on BscScan</span><i class="fad fa-external-link-alt"></i></a>
+                  <button class="bt cl-primary"><span>Copy Address</span><i class="fad fa-copy"></i></button>
                 </div>
               </div>
-              <div class="popup__footer">
-                <div class="grid-auto-auto-gap-24">
-                  <button class="bt bt-lg bt-block bt-outline primary" data-fancybox-close="data-fancybox-close">Cancel</button>
-                  <button class="bt bt-lg bt-block primary" disable="disable">Confirm</button>
-                </div>
-                <div class="d-f jc-c"><a class="get-totken-to-stake" href="liquidity.html" target="_blank" rel="noreferrer noopener"><span>Get GEM-BTC LP</span><i class="fad fa-external-link-alt"></i></a></div>
+            </div>
+            <div class="popup__footer">
+              <div class="d-f jc-c">
+                <button class="bt bt-lg bt-outline primary">Logouts</button>
               </div>
             </div>
           </div>
-          <!-- *** POPUP UNSTAKE LP TOKENS *** //-->
-          <div class="stake_lp_tokens_popup" id="unstake_lp_tokens_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Unstake LP tokens</h2>
-              </div>
-              <div class="popup__body">
-                <div class="stake_lp_tokens__form">
-                  <div class="form__item flex-between-alc"><span>Unstake</span><span>Balance: 0</span></div>
-                  <div class="form__item grid-auto-auto-gap-16">
-                    <input class="form-control is-invalid" type="text" placeholder="Enter your token"/>
-                    <div class="d-f al-e">
-                      <button class="bt bt-lg secondary">Max</button><b class="stake_lp_tokens__name">GEM-BNB LP</b>
-                    </div>
-                  </div>
-                  <div class="form__item flex-between-alc">
-                    <div class="invalid-feedback">No tokens to stake: Get GEM-BNB LP</div>
+        </div>
+        <!-- *** POPUP STAKE LP TOKENS *** //-->
+        <div class="stake_lp_tokens_popup" id="stake_lp_tokens_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Stake LP tokens</h2>
+            </div>
+            <div class="popup__body">
+              <div class="stake_lp_tokens__form">
+                <div class="form__item flex-between-alc"><span>Stake</span><span>Balance: 0</span></div>
+                <div class="form__item grid-auto-auto-gap-16">
+                  <input class="form-control is-invalid" type="text" placeholder="Enter your token"/>
+                  <div class="d-f al-e">
+                    <button class="bt bt-lg secondary">Max</button><b class="stake_lp_tokens__name">GEM-BNB LP</b>
                   </div>
                 </div>
-              </div>
-              <div class="popup__footer">
-                <div class="grid-auto-auto-gap-24">
-                  <button class="bt bt-lg bt-block bt-outline primary" data-fancybox-close="data-fancybox-close">Cancel</button>
-                  <button class="bt bt-lg bt-block primary" disable="disable">Confirm</button>
+                <div class="form__item flex-between-alc">
+                  <div class="invalid-feedback">No tokens to stake: Get GEM-BNB LP</div>
                 </div>
-                <div class="d-f jc-c"><a class="get-totken-to-stake" href="liquidity.html" target="_blank" rel="noreferrer noopener"><span>Get GEM-BTC LP</span><i class="fad fa-external-link-alt"></i></a></div>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <div class="grid-auto-auto-gap-24">
+                <button class="bt bt-lg bt-block bt-outline primary" data-fancybox-close="data-fancybox-close">Cancel</button>
+                <button class="bt bt-lg bt-block primary" disable="disable">Confirm</button>
+              </div>
+              <div class="d-f jc-c"><a class="get-totken-to-stake" href="liquidity.html" target="_blank" rel="noreferrer noopener"><span>Get GEM-BTC LP</span><i class="fad fa-external-link-alt"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <!-- *** POPUP UNSTAKE LP TOKENS *** //-->
+        <div class="stake_lp_tokens_popup" id="unstake_lp_tokens_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Unstake LP tokens</h2>
+            </div>
+            <div class="popup__body">
+              <div class="stake_lp_tokens__form">
+                <div class="form__item flex-between-alc"><span>Unstake</span><span>Balance: 0</span></div>
+                <div class="form__item grid-auto-auto-gap-16">
+                  <input class="form-control is-invalid" type="text" placeholder="Enter your token"/>
+                  <div class="d-f al-e">
+                    <button class="bt bt-lg secondary">Max</button><b class="stake_lp_tokens__name">GEM-BNB LP</b>
+                  </div>
+                </div>
+                <div class="form__item flex-between-alc">
+                  <div class="invalid-feedback">No tokens to stake: Get GEM-BNB LP</div>
+                </div>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <div class="grid-auto-auto-gap-24">
+                <button class="bt bt-lg bt-block bt-outline primary" data-fancybox-close="data-fancybox-close">Cancel</button>
+                <button class="bt bt-lg bt-block primary" disable="disable">Confirm</button>
+              </div>
+              <div class="d-f jc-c"><a class="get-totken-to-stake" href="liquidity.html" target="_blank" rel="noreferrer noopener"><span>Get GEM-BTC LP</span><i class="fad fa-external-link-alt"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <!-- *** POPUP SELECT A TOKEN *** //-->
+        <div class="select_token_popup" id="select_token_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Select a Token</h2>
+            </div>
+            <div class="popup__body">
+              <div class="select_token__search">
+                <input class="form-control" type="text" placeholder="Search name or paste address"/>
+              </div>
+              <div class="select_token__list"><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">BTCB</p>
+                    <p class="select_token__note">BTCB Token</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">BTCB</p>
+                    <p class="select_token__note">BTCB Token</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">BTCB</p>
+                    <p class="select_token__note">BTCB Token</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">BTCB</p>
+                    <p class="select_token__note">BTCB Token</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">BTCB</p>
+                    <p class="select_token__note">BTCB Token</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">BTCB</p>
+                    <p class="select_token__note">BTCB Token</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">BTCB</p>
+                    <p class="select_token__note">BTCB Token</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">BTCB</p>
+                    <p class="select_token__note">BTCB Token</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">BTCB</p>
+                    <p class="select_token__note">BTCB Token</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">BTCB</p>
+                    <p class="select_token__note">BTCB Token</p>
+                  </div></a>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <div class="d-f jc-c"><a class="cl-primary fw-600" href="https://bap-software.net/vi/" target="_blank" rel="noreferrer noopener"><span>Manage Tokens</span></a></div>
+            </div>
+          </div>
+        </div>
+        <!-- *** POPUP SELECT A LIQUIDITY *** //-->
+        <div class="select_token_popup" id="select_liquidity_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Select a Liquidity</h2>
+            </div>
+            <div class="popup__body">
+              <div class="select_token__search">
+                <input class="form-control" type="text" placeholder="Search name or paste address"/>
+              </div>
+              <div class="select_token__list"><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">FIWA - BTCB</p>
+                    <p class="select_token__note">0.05313</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">FIWA - BTCB</p>
+                    <p class="select_token__note">0.05313</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">FIWA - BTCB</p>
+                    <p class="select_token__note">0.05313</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">FIWA - BTCB</p>
+                    <p class="select_token__note">0.05313</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">FIWA - BTCB</p>
+                    <p class="select_token__note">0.05313</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">FIWA - BTCB</p>
+                    <p class="select_token__note">0.05313</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">FIWA - BTCB</p>
+                    <p class="select_token__note">0.05313</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">FIWA - BTCB</p>
+                    <p class="select_token__note">0.05313</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">FIWA - BTCB</p>
+                    <p class="select_token__note">0.05313</p>
+                  </div></a><a class="select_token__item" href="#">
+                  <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
+                  <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
+                  <div class="select_token__information">
+                    <p class="select_token__name">FIWA - BTCB</p>
+                    <p class="select_token__note">0.05313</p>
+                  </div></a>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <div class="d-f jc-c"><a class="cl-primary fw-600" href="liquidity.html" target="_blank" rel="noreferrer noopener"><span>Manage Liquidities</span></a></div>
+            </div>
+          </div>
+        </div>
+        <!-- *** POPUP CONFIRM LIQUIDITY *** //-->
+        <div class="confirm_liquidity_popup" id="confirm_liquidity_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">You will receive</h2>
+            </div>
+            <div class="popup__body">
+              <div class="confirm_liquidity__item">
+                <div class="pool_token__information"><b class="pool_token__price pool_token__price--2xl txt-primary">0.20511</b><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/></div>
+              </div>
+              <div class="confirm_liquidity__item">
+                <div class="pool_token__information"><span class="pool_token__name pool_token__name--lg">CAKE/BUSD Pool Tokens</span></div>
+              </div>
+              <div class="confirm_liquidity__item">
+                <p class="fs-0x77rem">Output is estimated. If the price changes by more than 0.5% your transaction will revert.</p>
+              </div>
+              <div class="confirm_liquidity__item">
+                <div class="flex-between-alc"><span>CAKE Deposited</span>
+                  <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__price">0.0696463</span></div>
+                </div>
+                <div class="flex-between-alc"><span>BUSD Deposited</span>
+                  <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__price">1.0098</span></div>
+                </div>
+                <div class="flex-between-alc"><span>Rates</span>
+                  <div>
+                    <p>1 REM = 14.36 BUSD</p>
+                    <p>1 CAKE = 14.36 BUSD</p>
+                  </div>
+                </div>
+                <div class="flex-between-alc"><span>Share of Pool:</span><span>0.000005406%</span></div>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <button class="bt bt-lg bt-block primary" popup-to="confirm_liquidity_loading_popup" href="javascript:;">Confirm Supply (Loading)</button>
+              <button class="bt bt-lg bt-block primary" popup-to="confirm_liquidity_reject_popup" href="javascript:;">Confirm Supply (Reject)</button>
+            </div>
+          </div>
+        </div>
+        <!-- *** POPUP SELECT A LIQUIDITY LOADING *** //-->
+        <div class="loading_popup" id="confirm_liquidity_loading_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">You Will Receive</h2>
+            </div>
+            <div class="popup__body">
+              <div class="loading__image"><img src="./images/loading_popup.png" alt="LOADING"/></div>
+              <div class="loading__content ta-c">
+                <h2 class="txt-primary">Waiting For Confirmation</h2>
+                <h4>Supplying 0.0981461 and 27.3899 BUSD</h4>
+                <p>Confirm this transaciion in your wallet</p>
               </div>
             </div>
           </div>
-          <!-- *** POPUP SELECT A TOKEN *** //-->
-          <div class="select_token_popup" id="select_token_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Select a Token</h2>
-              </div>
-              <div class="popup__body">
-                <div class="select_token__search">
-                  <input class="form-control" type="text" placeholder="Search name or paste address"/>
-                </div>
-                <div class="select_token__list"><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">BTCB</p>
-                      <p class="select_token__note">BTCB Token</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">BTCB</p>
-                      <p class="select_token__note">BTCB Token</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">BTCB</p>
-                      <p class="select_token__note">BTCB Token</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">BTCB</p>
-                      <p class="select_token__note">BTCB Token</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">BTCB</p>
-                      <p class="select_token__note">BTCB Token</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">BTCB</p>
-                      <p class="select_token__note">BTCB Token</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">BTCB</p>
-                      <p class="select_token__note">BTCB Token</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">BTCB</p>
-                      <p class="select_token__note">BTCB Token</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">BTCB</p>
-                      <p class="select_token__note">BTCB Token</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">BTCB</p>
-                      <p class="select_token__note">BTCB Token</p>
-                    </div></a>
-                </div>
-              </div>
-              <div class="popup__footer">
-                <div class="d-f jc-c"><a class="cl-primary fw-600" href="https://bap-software.net/vi/" target="_blank" rel="noreferrer noopener"><span>Manage Tokens</span></a></div>
+        </div>
+        <!-- *** POPUP SELECT A LIQUIDITY REJECT *** //-->
+        <div class="reject_popup" id="confirm_liquidity_reject_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Confirm Supply</h2>
+            </div>
+            <div class="popup__body">
+              <div class="reject__content txt-danger ta-c"><i class="fal fa-exclamation-circle"></i>
+                <h4>Transaction rejected</h4>
               </div>
             </div>
-          </div>
-          <!-- *** POPUP SELECT A LIQUIDITY *** //-->
-          <div class="select_token_popup" id="select_liquidity_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Select a Liquidity</h2>
-              </div>
-              <div class="popup__body">
-                <div class="select_token__search">
-                  <input class="form-control" type="text" placeholder="Search name or paste address"/>
-                </div>
-                <div class="select_token__list"><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">FIWA - BTCB</p>
-                      <p class="select_token__note">0.05313</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">FIWA - BTCB</p>
-                      <p class="select_token__note">0.05313</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">FIWA - BTCB</p>
-                      <p class="select_token__note">0.05313</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">FIWA - BTCB</p>
-                      <p class="select_token__note">0.05313</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">FIWA - BTCB</p>
-                      <p class="select_token__note">0.05313</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">FIWA - BTCB</p>
-                      <p class="select_token__note">0.05313</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">FIWA - BTCB</p>
-                      <p class="select_token__note">0.05313</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">FIWA - BTCB</p>
-                      <p class="select_token__note">0.05313</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">FIWA - BTCB</p>
-                      <p class="select_token__note">0.05313</p>
-                    </div></a><a class="select_token__item" href="#">
-                    <div class="select_token__logo"><img src="./images/FIWA.png" alt="FIWA"/></div>
-                    <div class="select_token__logo"><img src="./images/BTCB.png" alt="BTCB"/></div>
-                    <div class="select_token__information">
-                      <p class="select_token__name">FIWA - BTCB</p>
-                      <p class="select_token__note">0.05313</p>
-                    </div></a>
-                </div>
-              </div>
-              <div class="popup__footer">
-                <div class="d-f jc-c"><a class="cl-primary fw-600" href="liquidity.html" target="_blank" rel="noreferrer noopener"><span>Manage Liquidities</span></a></div>
-              </div>
+            <div class="popup__footer">
+              <button class="bt bt-lg bt-block primary" data-fancybox-close="data-fancybox-close">Dismiss</button>
             </div>
           </div>
-          <!-- *** POPUP CONFIRM LIQUIDITY *** //-->
-          <div class="confirm_liquidity_popup" id="confirm_liquidity_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">You will receive</h2>
+        </div>
+        <!-- *** POPUP CONFIRM SWAP *** //-->
+        <div class="confirm_swap_popup" id="confirm_swap_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Confirm Swap</h2>
+            </div>
+            <div class="popup__body">
+              <div class="confirm_swap__item">
+                <div class="flex-between-alc">
+                  <div class="token__information"><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><span class="token__price token__price--lg">0.083436</span></div><span class="token__name token__name--lg token__name--mr-0">FIWA</span>
+                </div>
               </div>
-              <div class="popup__body">
-                <div class="confirm_liquidity__item">
-                  <div class="pool_token__information"><b class="pool_token__price pool_token__price--2xl txt-primary">0.20511</b><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/></div>
+              <div class="confirm_swap__item">
+                <button class="bt cl-secondary"><i class="fad fa-long-arrow-down"></i></button>
+              </div>
+              <div class="confirm_swap__item">
+                <div class="flex-between-alc">
+                  <div class="token__information"><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/><span class="token__price token__price--lg txt-primary">0.083436</span></div>
+                  <div class="box-right"><span class="token__name token__name--lg token__name--mr-0">BTCB</span></div>
                 </div>
-                <div class="confirm_liquidity__item">
-                  <div class="pool_token__information"><span class="pool_token__name pool_token__name--lg">CAKE/BUSD Pool Tokens</span></div>
-                </div>
-                <div class="confirm_liquidity__item">
-                  <p class="fs-0x77rem">Output is estimated. If the price changes by more than 0.5% your transaction will revert.</p>
-                </div>
-                <div class="confirm_liquidity__item">
-                  <div class="flex-between-alc"><span>CAKE Deposited</span>
-                    <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__price">0.0696463</span></div>
-                  </div>
-                  <div class="flex-between-alc"><span>BUSD Deposited</span>
-                    <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__price">1.0098</span></div>
-                  </div>
-                  <div class="flex-between-alc"><span>Rates</span>
+              </div>
+              <div class="confirm_swap__item">
+                <div class="confirm_swap__action">
+                  <div class="flex-between-alc">
                     <div>
-                      <p>1 REM = 14.36 BUSD</p>
-                      <p>1 CAKE = 14.36 BUSD</p>
+                      <div class="flex-alc"><i class="fs-1rem fal fa-exclamation-circle"></i><b class="fs-1rem ml-0x5rem">Price Updated</b></div>
                     </div>
-                  </div>
-                  <div class="flex-between-alc"><span>Share of Pool:</span><span>0.000005406%</span></div>
-                </div>
-              </div>
-              <div class="popup__footer">
-                <button class="bt bt-lg bt-block primary" popup-to="confirm_liquidity_loading_popup" href="javascript:;">Confirm Supply (Loading)</button>
-                <button class="bt bt-lg bt-block primary" popup-to="confirm_liquidity_reject_popup" href="javascript:;">Confirm Supply (Reject)</button>
-              </div>
-            </div>
-          </div>
-          <!-- *** POPUP SELECT A LIQUIDITY LOADING *** //-->
-          <div class="loading_popup" id="confirm_liquidity_loading_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">You Will Receive</h2>
-              </div>
-              <div class="popup__body">
-                <div class="loading__image"><img src="./images/loading_popup.png" alt="LOADING"/></div>
-                <div class="loading__content ta-c">
-                  <h2 class="txt-primary">Waiting For Confirmation</h2>
-                  <h4>Supplying 0.0981461 and 27.3899 BUSD</h4>
-                  <p>Confirm this transaciion in your wallet</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- *** POPUP SELECT A LIQUIDITY REJECT *** //-->
-          <div class="reject_popup" id="confirm_liquidity_reject_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Confirm Supply</h2>
-              </div>
-              <div class="popup__body">
-                <div class="reject__content txt-danger ta-c"><i class="fal fa-exclamation-circle"></i>
-                  <h4>Transaction rejected</h4>
-                </div>
-              </div>
-              <div class="popup__footer">
-                <button class="bt bt-lg bt-block primary" data-fancybox-close="data-fancybox-close">Dismiss</button>
-              </div>
-            </div>
-          </div>
-          <!-- *** POPUP CONFIRM SWAP *** //-->
-          <div class="confirm_swap_popup" id="confirm_swap_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Confirm Swap</h2>
-              </div>
-              <div class="popup__body">
-                <div class="confirm_swap__item">
-                  <div class="flex-between-alc">
-                    <div class="token__information"><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><span class="token__price token__price--lg">0.083436</span></div><span class="token__name token__name--lg token__name--mr-0">FIWA</span>
-                  </div>
-                </div>
-                <div class="confirm_swap__item">
-                  <button class="bt cl-secondary"><i class="fad fa-long-arrow-down"></i></button>
-                </div>
-                <div class="confirm_swap__item">
-                  <div class="flex-between-alc">
-                    <div class="token__information"><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/><span class="token__price token__price--lg txt-primary">0.083436</span></div>
-                    <div class="box-right"><span class="token__name token__name--lg token__name--mr-0">BTCB</span></div>
-                  </div>
-                </div>
-                <div class="confirm_swap__item">
-                  <div class="confirm_swap__action">
-                    <div class="flex-between-alc">
-                      <div>
-                        <div class="flex-alc"><i class="fs-1rem fal fa-exclamation-circle"></i><b class="fs-1rem ml-0x5rem">Price Updated</b></div>
-                      </div>
-                      <div>
-                        <button class="bt bt-lg primary">Accept</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="confirm_swap__item">
-                  <p class="fs-0x77rem">Output is estimated. You will receive at least 26.8277 BUSD or the transaction will revert.</p>
-                </div>
-                <div class="confirm_swap__item">
-                  <div class="confirm_swap__final">
-                    <div class="confirm_swap__item">
-                      <div class="flex-between-alc"><span class="fw-600">Price</span><span class="fw-600">322.045 BUSD / BNB</span></div>
-                    </div>
-                    <div class="confirm_swap__item">
-                      <div class="flex-between-alc"><span class="fw-600">Minimum received</span><span class="fw-600">26.72 BUSD</span></div>
-                    </div>
-                    <div class="confirm_swap__item">
-                      <div class="flex-between-alc"><span class="fw-600">Price Impact</span><span class="fw-600 txt-secondary"><0.01%</span></div>
-                    </div>
-                    <div class="confirm_swap__item">
-                      <div class="flex-between-alc"><span class="fw-600">Liquidity Provider Fee</span><span class="fw-600">0.00020859 BNB</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="popup__footer">
-                <button class="bt bt-lg bt-block primary" disable="disable">Confirm Swap (Disable)</button>
-                <button class="bt bt-lg bt-block primary" popup-to="confirm_swap_loading_popup" href="javascript:;">Confirm Swap (Loading)</button>
-                <button class="bt bt-lg bt-block primary" popup-to="confirm_swap_reject_popup" href="javascript:;">Confirm Swap (Reject)</button>
-              </div>
-            </div>
-          </div>
-          <!-- *** POPUP CONFIRM SWAP LOADING *** //-->
-          <div class="loading_popup" id="confirm_swap_loading_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Confirm Swap</h2>
-              </div>
-              <div class="popup__body">
-                <div class="loading__image"><img src="./images/loading_popup.png" alt="LOADING"/></div>
-                <div class="loading__content ta-c">
-                  <h2 class="txt-primary">Waiting For Confirmation</h2>
-                  <h4>Swapping 0.0981461 for 27.3899 BUSD</h4>
-                  <p>Confirm this transaciion in your wallet</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- *** POPUP CONFIRM SWAP REJECT *** //-->
-          <div class="reject_popup" id="confirm_swap_reject_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Confirm Swap</h2>
-              </div>
-              <div class="popup__body">
-                <div class="reject__content txt-danger ta-c"><i class="fal fa-exclamation-circle"></i>
-                  <h4>Transaction rejected</h4>
-                </div>
-              </div>
-              <div class="popup__footer">
-                <button class="bt bt-lg bt-block primary" data-fancybox-close="data-fancybox-close">Dismiss</button>
-              </div>
-            </div>
-          </div>
-          <!-- *** POPUP CONFIRM BUY GEM *** //-->
-          <div class="confirm_swap_popup" id="confirm_buy_gem_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Confirm Buy GRBE</h2>
-              </div>
-              <div class="popup__body">
-                <div class="confirm_swap__item">
-                  <div class="flex-between-alc">
-                    <div class="token__information"><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><span class="token__price token__price--lg">0.083436</span></div><span class="token__name token__name--lg token__name--mr-0">FIWA</span>
-                  </div>
-                </div>
-                <div class="confirm_swap__item">
-                  <button class="bt cl-secondary"><i class="fad fa-long-arrow-down"></i></button>
-                </div>
-                <div class="confirm_swap__item">
-                  <div class="flex-between-alc">
-                    <div class="token__information"><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/><span class="token__price token__price--lg txt-primary">0.083436</span></div>
-                    <div class="box-right"><span class="token__name token__name--lg token__name--mr-0">BTCB</span></div>
-                  </div>
-                </div>
-                <div class="confirm_swap__item">
-                  <div class="confirm_swap__action">
-                    <div class="flex-between-alc">
-                      <div>
-                        <div class="flex-alc"><i class="fs-1rem fal fa-exclamation-circle"></i><b class="fs-1rem ml-0x5rem">Price Updated</b></div>
-                      </div>
-                      <div>
-                        <button class="bt bt-lg primary">Accept</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="confirm_swap__item">
-                  <p class="fs-0x77rem">Output is estimated. You will receive at least 26.8277 BUSD or the transaction will revert.</p>
-                </div>
-                <div class="confirm_swap__item">
-                  <div class="confirm_swap__final">
-                    <div class="confirm_swap__item">
-                      <div class="flex-between-alc"><span class="fw-600">Price</span><span class="fw-600">322.045 BUSD / BNB</span></div>
-                    </div>
-                    <div class="confirm_swap__item">
-                      <div class="flex-between-alc"><span class="fw-600">Minimum received</span><span class="fw-600">26.72 BUSD</span></div>
-                    </div>
-                    <div class="confirm_swap__item">
-                      <div class="flex-between-alc"><span class="fw-600">Price Impact</span><span class="fw-600 txt-secondary"><0.01%</span></div>
-                    </div>
-                    <div class="confirm_swap__item">
-                      <div class="flex-between-alc"><span class="fw-600">Liquidity Provider Fee</span><span class="fw-600">0.00020859 BNB</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="popup__footer">
-                <button class="bt bt-lg bt-block primary" disable="disable">Confirm Buy GRBE</button>
-              </div>
-            </div>
-          </div>
-          <!-- *** POPUP CONFIRM BUY WARRIOR *** //-->
-          <div class="confirm_liquidity_popup" id="confirm_buy_warrior_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">You will receive</h2>
-              </div>
-              <div class="popup__body">
-                <div class="confirm_liquidity__item">
-                  <div class="confirm_warrior__character"><img src="./images/character_buy.png" alt="CHARACTER"/></div>
-                  <h4 class="fs-1x4rem ta-c mb-1rem"> BTC #20210623</h4>
-                  <p class="ta-c">Warriors will be minted after adding liquidityFIWA will be burned. Player cannot clear liquidity to get token back</p>
-                </div>
-                <div class="confirm_liquidity__item">
-                  <div class="flex-between-alc"><span>CAKE Deposited</span>
-                    <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__price">0.0696463</span></div>
-                  </div>
-                  <div class="flex-between-alc"><span>BUSD Deposited</span>
-                    <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__price">1.0098</span></div>
-                  </div>
-                  <div class="flex-between-alc"><span>Rates</span>
                     <div>
-                      <p>1 REM = 14.36 BUSD</p>
-                      <p>1 CAKE = 14.36 BUSD</p>
-                    </div>
-                  </div>
-                  <div class="flex-between-alc"><span>Share of Pool:</span><span>0.000005406%</span></div>
-                </div>
-              </div>
-              <div class="popup__footer">
-                <button class="bt bt-lg bt-block primary" popup-to="confirm_buy_warrior_loading_popup" href="javascript:;">Confirm Supply (Loading)</button>
-                <button class="bt bt-lg bt-block primary" popup-to="confirm_buy_warrior_accept_popup" href="javascript:;">Confirm Supply (Accept)</button>
-                <button class="bt bt-lg bt-block primary" popup-to="confirm_buy_warrior_reject_popup" href="javascript:;">Confirm Supply (Reject)</button>
-              </div>
-            </div>
-          </div>
-          <!-- *** POPUP CONFIRM BUY WARRIOR LOADING *** //-->
-          <div class="loading_popup" id="confirm_buy_warrior_loading_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Confirm Buy Warrior</h2>
-              </div>
-              <div class="popup__body">
-                <div class="loading__image"><img src="./images/loading_popup.png" alt="LOADING"/></div>
-                <div class="loading__content ta-c">
-                  <h2 class="txt-primary">Waiting For Confirmation</h2>
-                  <p>Confirm this transaciion in your wallet</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- *** POPUP CONFIRM BUY WARRIOR ACCEPT *** //-->
-          <div class="accept_popup" id="confirm_buy_warrior_accept_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Your warrior has bees created successfully</h2>
-              </div>
-              <div class="popup__body">
-                <div class="accept__content">
-                  <div class="warrior__character"><img src="./images/character_buy.png" alt="CHARACTER"/></div>
-                  <h4 class="fs-1x4rem ta-c mb-1rem"> BTC #20210623</h4>
-                </div>
-              </div>
-              <div class="popup__footer">
-                <div class="grid-auto-auto-gap-24 mb-1rem"><a class="bt bt-lg bt-block primary" href="buy_warrior.html">Continute buying</a><a class="bt bt-lg bt-block primary" href="index.html">Go to playing</a></div>
-              </div>
-            </div>
-          </div>
-          <!-- *** POPUP CONFIRM BUY WARRIOR REJECT *** //-->
-          <div class="reject_popup" id="confirm_buy_warrior_reject_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">You will receive</h2>
-              </div>
-              <div class="popup__body">
-                <div class="reject__content txt-danger ta-c"><i class="fal fa-exclamation-circle"></i>
-                  <h4>Transaction rejected</h4>
-                </div>
-              </div>
-              <div class="popup__footer">
-                <button class="bt bt-lg bt-block primary" data-fancybox-close="data-fancybox-close">Dismiss</button>
-              </div>
-            </div>
-          </div>
-          <!-- *** POPUP CONFIRM SETTINGS *** //-->
-          <div class="settings_popup" id="settings_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Settings</h2>
-              </div>
-              <div class="popup__body">
-                <div class="setting__item">
-                  <h4 class="setting__title">Transaction Settings</h4>
-                  <div class="setting__content"><span class="fw-600">Slippage Tolerance</span>
-                    <div class="input-group">
-                      <input class="form-control" type="number" placeholder="0.00" value="0.10"/>
-                      <div class="input-group-append">
-                        <button class="bt bt-lg primary">0.1%</button>
-                        <button class="bt bt-lg primary" disable="disable">0.5%</button>
-                        <button class="bt bt-lg primary" disable="disable">1%</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="setting__content"><span class="fw-600">Transaction deadline</span>
-                    <div class="input-group">
-                      <input class="form-control" type="number" placeholder="5" value="20"/>
-                      <div class="input-group-append"><span>minutes</span></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="setting__item">
-                  <h4 class="setting__title">Interface Settings</h4>
-                  <div class="setting__content">
-                    <div class="flex-between-alc"><span class="fw-600">Toggle Expert Mode</span>
-                      <label class="checkbox-switch">
-                        <input type="checkbox"/>
-                        <div class="slider round"></div>
-                      </label>
-                    </div>
-                    <div class="flex-between-alc"><span class="fw-600">Disable Multihops</span>
-                      <label class="checkbox-switch">
-                        <input type="checkbox"/>
-                        <div class="slider round"></div>
-                      </label>
-                    </div>
-                    <div class="flex-between-alc"><span class="fw-600">Audio</span>
-                      <label class="checkbox-switch">
-                        <input type="checkbox"/>
-                        <div class="slider round"></div>
-                      </label>
+                      <button class="bt bt-lg primary">Accept</button>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- *** POPUP RECENT TRANSACTION *** //-->
-          <div class="recent_transactions_popup" id="recent_transactions_popup" style="display:none">
-            <div class="popup_wrapper">
-              <div class="popup__header">
-                <h2 class="popup__title">Recent Transactions</h2>
+              <div class="confirm_swap__item">
+                <p class="fs-0x77rem">Output is estimated. You will receive at least 26.8277 BUSD or the transaction will revert.</p>
               </div>
-              <div class="popup__body">
-                <div class="recent_transaction__item">
-                  <div class="flex-between-alc"><span class="fw-600">Recent Transactions</span>
-                    <button class="bt secondary">Clear All</button>
+              <div class="confirm_swap__item">
+                <div class="confirm_swap__final">
+                  <div class="confirm_swap__item">
+                    <div class="flex-between-alc"><span class="fw-600">Price</span><span class="fw-600">322.045 BUSD / BNB</span></div>
+                  </div>
+                  <div class="confirm_swap__item">
+                    <div class="flex-between-alc"><span class="fw-600">Minimum received</span><span class="fw-600">26.72 BUSD</span></div>
+                  </div>
+                  <div class="confirm_swap__item">
+                    <div class="flex-between-alc"><span class="fw-600">Price Impact</span><span class="fw-600 txt-secondary"><0.01%</span></div>
+                  </div>
+                  <div class="confirm_swap__item">
+                    <div class="flex-between-alc"><span class="fw-600">Liquidity Provider Fee</span><span class="fw-600">0.00020859 BNB</span></div>
                   </div>
                 </div>
-                <div class="recent_transaction__item"><a class="txt-primary fw-600" href="https://bscscan.com/tx/0xd005f30733a8f3b473a1d6629b03e84ce2c76fc88a562d2318be3ed71dc8bc24" target="_blank"><span class="mr-0x5rem">Swap 0.0001 CAKE for 0.00147 BUSD</span><i class="fad fa-external-link-alt"></i></a></div>
-                <div class="recent_transaction__item"><a class="txt-primary fw-600" href="https://bscscan.com/tx/0xd005f30733a8f3b473a1d6629b03e84ce2c76fc88a562d2318be3ed71dc8bc24" target="_blank"><span class="mr-0x5rem">Swap 0.0001 CAKE for 0.00147 BUSD</span><i class="fad fa-external-link-alt"></i></a></div>
-                <div class="recent_transaction__item"><a class="txt-primary fw-600" href="https://bscscan.com/tx/0xd005f30733a8f3b473a1d6629b03e84ce2c76fc88a562d2318be3ed71dc8bc24" target="_blank"><span class="mr-0x5rem">Swap 0.0001 CAKE for 0.00147 BUSD</span><i class="fad fa-external-link-alt"></i></a></div>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <button class="bt bt-lg bt-block primary" disable="disable">Confirm Swap (Disable)</button>
+              <button class="bt bt-lg bt-block primary" popup-to="confirm_swap_loading_popup" href="javascript:;">Confirm Swap (Loading)</button>
+              <button class="bt bt-lg bt-block primary" popup-to="confirm_swap_reject_popup" href="javascript:;">Confirm Swap (Reject)</button>
+            </div>
+          </div>
+        </div>
+        <!-- *** POPUP CONFIRM SWAP LOADING *** //-->
+        <div class="loading_popup" id="confirm_swap_loading_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Confirm Swap</h2>
+            </div>
+            <div class="popup__body">
+              <div class="loading__image"><img src="./images/loading_popup.png" alt="LOADING"/></div>
+              <div class="loading__content ta-c">
+                <h2 class="txt-primary">Waiting For Confirmation</h2>
+                <h4>Swapping 0.0981461 for 27.3899 BUSD</h4>
+                <p>Confirm this transaciion in your wallet</p>
               </div>
             </div>
           </div>
-        </main>
-      </div>
+        </div>
+        <!-- *** POPUP CONFIRM SWAP REJECT *** //-->
+        <div class="reject_popup" id="confirm_swap_reject_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Confirm Swap</h2>
+            </div>
+            <div class="popup__body">
+              <div class="reject__content txt-danger ta-c"><i class="fal fa-exclamation-circle"></i>
+                <h4>Transaction rejected</h4>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <button class="bt bt-lg bt-block primary" data-fancybox-close="data-fancybox-close">Dismiss</button>
+            </div>
+          </div>
+        </div>
+        <!-- *** POPUP CONFIRM BUY GEM *** //-->
+        <div class="confirm_swap_popup" id="confirm_buy_gem_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Confirm Buy GRBE</h2>
+            </div>
+            <div class="popup__body">
+              <div class="confirm_swap__item">
+                <div class="flex-between-alc">
+                  <div class="token__information"><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><span class="token__price token__price--lg">0.083436</span></div><span class="token__name token__name--lg token__name--mr-0">FIWA</span>
+                </div>
+              </div>
+              <div class="confirm_swap__item">
+                <button class="bt cl-secondary"><i class="fad fa-long-arrow-down"></i></button>
+              </div>
+              <div class="confirm_swap__item">
+                <div class="flex-between-alc">
+                  <div class="token__information"><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/><span class="token__price token__price--lg txt-primary">0.083436</span></div>
+                  <div class="box-right"><span class="token__name token__name--lg token__name--mr-0">BTCB</span></div>
+                </div>
+              </div>
+              <div class="confirm_swap__item">
+                <div class="confirm_swap__action">
+                  <div class="flex-between-alc">
+                    <div>
+                      <div class="flex-alc"><i class="fs-1rem fal fa-exclamation-circle"></i><b class="fs-1rem ml-0x5rem">Price Updated</b></div>
+                    </div>
+                    <div>
+                      <button class="bt bt-lg primary">Accept</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="confirm_swap__item">
+                <p class="fs-0x77rem">Output is estimated. You will receive at least 26.8277 BUSD or the transaction will revert.</p>
+              </div>
+              <div class="confirm_swap__item">
+                <div class="confirm_swap__final">
+                  <div class="confirm_swap__item">
+                    <div class="flex-between-alc"><span class="fw-600">Price</span><span class="fw-600">322.045 BUSD / BNB</span></div>
+                  </div>
+                  <div class="confirm_swap__item">
+                    <div class="flex-between-alc"><span class="fw-600">Minimum received</span><span class="fw-600">26.72 BUSD</span></div>
+                  </div>
+                  <div class="confirm_swap__item">
+                    <div class="flex-between-alc"><span class="fw-600">Price Impact</span><span class="fw-600 txt-secondary"><0.01%</span></div>
+                  </div>
+                  <div class="confirm_swap__item">
+                    <div class="flex-between-alc"><span class="fw-600">Liquidity Provider Fee</span><span class="fw-600">0.00020859 BNB</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <button class="bt bt-lg bt-block primary" disable="disable">Confirm Buy GRBE</button>
+            </div>
+          </div>
+        </div>
+        <!-- *** POPUP CONFIRM BUY WARRIOR *** //-->
+        <div class="confirm_liquidity_popup" id="confirm_buy_warrior_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">You will receive</h2>
+            </div>
+            <div class="popup__body">
+              <div class="confirm_liquidity__item">
+                <div class="confirm_warrior__character"><img src="./images/character_buy.png" alt="CHARACTER"/></div>
+                <h4 class="fs-1x4rem ta-c mb-1rem"> BTC #20210623</h4>
+                <p class="ta-c">Warriors will be minted after adding liquidityFIWA will be burned. Player cannot clear liquidity to get token back</p>
+              </div>
+              <div class="confirm_liquidity__item">
+                <div class="flex-between-alc"><span>CAKE Deposited</span>
+                  <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__price">0.0696463</span></div>
+                </div>
+                <div class="flex-between-alc"><span>BUSD Deposited</span>
+                  <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__price">1.0098</span></div>
+                </div>
+                <div class="flex-between-alc"><span>Rates</span>
+                  <div>
+                    <p>1 REM = 14.36 BUSD</p>
+                    <p>1 CAKE = 14.36 BUSD</p>
+                  </div>
+                </div>
+                <div class="flex-between-alc"><span>Share of Pool:</span><span>0.000005406%</span></div>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <button class="bt bt-lg bt-block primary" popup-to="confirm_buy_warrior_loading_popup" href="javascript:;">Confirm Supply (Loading)</button>
+              <button class="bt bt-lg bt-block primary" popup-to="confirm_buy_warrior_accept_popup" href="javascript:;">Confirm Supply (Accept)</button>
+              <button class="bt bt-lg bt-block primary" popup-to="confirm_buy_warrior_reject_popup" href="javascript:;">Confirm Supply (Reject)</button>
+            </div>
+          </div>
+        </div>
+        <!-- *** POPUP CONFIRM BUY WARRIOR LOADING *** //-->
+        <div class="loading_popup" id="confirm_buy_warrior_loading_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Confirm Buy Warrior</h2>
+            </div>
+            <div class="popup__body">
+              <div class="loading__image"><img src="./images/loading_popup.png" alt="LOADING"/></div>
+              <div class="loading__content ta-c">
+                <h2 class="txt-primary">Waiting For Confirmation</h2>
+                <p>Confirm this transaciion in your wallet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *** POPUP CONFIRM BUY WARRIOR ACCEPT *** //-->
+        <div class="accept_popup" id="confirm_buy_warrior_accept_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Your warrior has bees created successfully</h2>
+            </div>
+            <div class="popup__body">
+              <div class="accept__content">
+                <div class="warrior__character"><img src="./images/character_buy.png" alt="CHARACTER"/></div>
+                <h4 class="fs-1x4rem ta-c mb-1rem"> BTC #20210623</h4>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <div class="grid-auto-auto-gap-24 mb-1rem"><a class="bt bt-lg bt-block primary" href="buy_warrior.html">Continute buying</a><a class="bt bt-lg bt-block primary" href="index.html">Go to playing</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- *** POPUP CONFIRM BUY WARRIOR REJECT *** //-->
+        <div class="reject_popup" id="confirm_buy_warrior_reject_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">You will receive</h2>
+            </div>
+            <div class="popup__body">
+              <div class="reject__content txt-danger ta-c"><i class="fal fa-exclamation-circle"></i>
+                <h4>Transaction rejected</h4>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <button class="bt bt-lg bt-block primary" data-fancybox-close="data-fancybox-close">Dismiss</button>
+            </div>
+          </div>
+        </div>
+        <!-- *** POPUP CONFIRM SETTINGS *** //-->
+        <div class="settings_popup" id="settings_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Settings</h2>
+            </div>
+            <div class="popup__body">
+              <div class="setting__item">
+                <h4 class="setting__title">Transaction Settings</h4>
+                <div class="setting__content"><span class="fw-600">Slippage Tolerance</span>
+                  <div class="input-group">
+                    <input class="form-control" type="number" placeholder="0.00" value="0.10"/>
+                    <div class="input-group-append">
+                      <button class="bt bt-lg primary">0.1%</button>
+                      <button class="bt bt-lg primary" disable="disable">0.5%</button>
+                      <button class="bt bt-lg primary" disable="disable">1%</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="setting__content"><span class="fw-600">Transaction deadline</span>
+                  <div class="input-group">
+                    <input class="form-control" type="number" placeholder="5" value="20"/>
+                    <div class="input-group-append"><span>minutes</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="setting__item">
+                <h4 class="setting__title">Interface Settings</h4>
+                <div class="setting__content">
+                  <div class="flex-between-alc"><span class="fw-600">Toggle Expert Mode</span>
+                    <label class="checkbox-switch">
+                      <input type="checkbox"/>
+                      <div class="slider round"></div>
+                    </label>
+                  </div>
+                  <div class="flex-between-alc"><span class="fw-600">Disable Multihops</span>
+                    <label class="checkbox-switch">
+                      <input type="checkbox"/>
+                      <div class="slider round"></div>
+                    </label>
+                  </div>
+                  <div class="flex-between-alc"><span class="fw-600">Audio</span>
+                    <label class="checkbox-switch">
+                      <input type="checkbox"/>
+                      <div class="slider round"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *** POPUP RECENT TRANSACTION *** //-->
+        <div class="recent_transactions_popup" id="recent_transactions_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Recent Transactions</h2>
+            </div>
+            <div class="popup__body">
+              <div class="recent_transaction__item">
+                <div class="flex-between-alc"><span class="fw-600">Recent Transactions</span>
+                  <button class="bt secondary">Clear All</button>
+                </div>
+              </div>
+              <div class="recent_transaction__item"><a class="txt-primary fw-600" href="https://bscscan.com/tx/0xd005f30733a8f3b473a1d6629b03e84ce2c76fc88a562d2318be3ed71dc8bc24" target="_blank"><span class="mr-0x5rem">Swap 0.0001 CAKE for 0.00147 BUSD</span><i class="fad fa-external-link-alt"></i></a></div>
+              <div class="recent_transaction__item"><a class="txt-primary fw-600" href="https://bscscan.com/tx/0xd005f30733a8f3b473a1d6629b03e84ce2c76fc88a562d2318be3ed71dc8bc24" target="_blank"><span class="mr-0x5rem">Swap 0.0001 CAKE for 0.00147 BUSD</span><i class="fad fa-external-link-alt"></i></a></div>
+              <div class="recent_transaction__item"><a class="txt-primary fw-600" href="https://bscscan.com/tx/0xd005f30733a8f3b473a1d6629b03e84ce2c76fc88a562d2318be3ed71dc8bc24" target="_blank"><span class="mr-0x5rem">Swap 0.0001 CAKE for 0.00147 BUSD</span><i class="fad fa-external-link-alt"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
     <!-- *** OVERLAY *** //-->
     <div class="overlay"></div>

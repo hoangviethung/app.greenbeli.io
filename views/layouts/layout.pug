@@ -2,75 +2,74 @@ block var
 
 <!DOCTYPE html>
 html(lang="en")
-	head
-		// *** META *** //
-		include meta
-		// *** VENDORS CSS *** //
-		link(rel="stylesheet", href="./vendors/fancybox/jquery.fancybox.css")
-		block library-css
-		// *** CSS *** //
-		include css
-		block css
-		// *** FAVICON *** //
-		link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
-		// *** TITLE *** //
-		title #{pageTitle}
-	body
-		.page
-			.page__content
-				// *** NAV *** //
-				block nav
-					include nav
-				// *** MAIN *** //
-				main
-					block main
-					// *** POPUP WALLET CONNECT POPOP *** //
-					include ../components/wallet_connect_popup
-					// *** POPUP YOUR WALLET POPOP *** //
-					include ../components/your_wallet_popup
-					// *** POPUP STAKE LP TOKENS *** //
-					include ../components/stake_lp_tokens_popup
-					// *** POPUP UNSTAKE LP TOKENS *** //
-					include ../components/unstake_lp_tokens_popup
-					// *** POPUP SELECT A TOKEN *** //
-					include ../components/select_token_popup
-					// *** POPUP SELECT A LIQUIDITY *** //
-					include ../components/select_liquidity_popup
-					// *** POPUP CONFIRM LIQUIDITY *** //
-					include ../components/confirm_liquidity_popup
-					// *** POPUP SELECT A LIQUIDITY LOADING *** //
-					include ../components/confirm_liquidity_loading_popup
-					// *** POPUP SELECT A LIQUIDITY REJECT *** //
-					include ../components/confirm_liquidity_reject_popup
-					// *** POPUP CONFIRM SWAP *** //
-					include ../components/confirm_swap_popup
-					// *** POPUP CONFIRM SWAP LOADING *** //
-					include ../components/confirm_swap_loading_popup
-					// *** POPUP CONFIRM SWAP REJECT *** //
-					include ../components/confirm_swap_reject_popup
-					// *** POPUP CONFIRM BUY GEM *** //
-					include ../components/confirm_buy_gem_popup
-					// *** POPUP CONFIRM BUY WARRIOR *** //
-					include ../components/confirm_buy_warrior_popup
-					// *** POPUP CONFIRM BUY WARRIOR LOADING *** //
-					include ../components/confirm_buy_warrior_loading_popup
-					// *** POPUP CONFIRM BUY WARRIOR ACCEPT *** //
-					include ../components/confirm_buy_warrior_accept_popup
-					// *** POPUP CONFIRM BUY WARRIOR REJECT *** //
-					include ../components/confirm_buy_warrior_reject_popup
-					// *** POPUP CONFIRM SETTINGS *** //
-					include ../components/settings_popup
-					// *** POPUP RECENT TRANSACTION *** //
-					include ../components/recent_transactions_popup
-		// *** OVERLAY *** //
-		.overlay
-		// *** FOOTER *** //
-		block footer
-			include footer
-		// *** VENDORS JS *** //
-		script(src="./vendors/jquery/jquery.js")
-		script(src="./vendors/fancybox/jquery.fancybox.js")
-		block library-js
-		// *** JS *** //
-		block js
-		include js
+    head
+        // *** META *** //
+        include meta
+        // *** VENDORS CSS *** //
+        link(rel="stylesheet", href="./vendors/fancybox/jquery.fancybox.css")
+        block library-css
+        // *** CSS *** //
+        include css
+        block css
+        // *** FAVICON *** //
+        link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+        // *** TITLE *** //
+        title #{pageTitle}
+    body
+        .page
+            // *** HEADER *** //
+            block header
+                include header
+            // *** MAIN *** //
+            main
+                block main
+                // *** POPUP WALLET CONNECT POPOP *** //
+                include ../components/wallet_connect_popup
+                // *** POPUP YOUR WALLET POPOP *** //
+                include ../components/your_wallet_popup
+                // *** POPUP STAKE LP TOKENS *** //
+                include ../components/stake_lp_tokens_popup
+                // *** POPUP UNSTAKE LP TOKENS *** //
+                include ../components/unstake_lp_tokens_popup
+                // *** POPUP SELECT A TOKEN *** //
+                include ../components/select_token_popup
+                // *** POPUP SELECT A LIQUIDITY *** //
+                include ../components/select_liquidity_popup
+                // *** POPUP CONFIRM LIQUIDITY *** //
+                include ../components/confirm_liquidity_popup
+                // *** POPUP SELECT A LIQUIDITY LOADING *** //
+                include ../components/confirm_liquidity_loading_popup
+                // *** POPUP SELECT A LIQUIDITY REJECT *** //
+                include ../components/confirm_liquidity_reject_popup
+                // *** POPUP CONFIRM SWAP *** //
+                include ../components/confirm_swap_popup
+                // *** POPUP CONFIRM SWAP LOADING *** //
+                include ../components/confirm_swap_loading_popup
+                // *** POPUP CONFIRM SWAP REJECT *** //
+                include ../components/confirm_swap_reject_popup
+                // *** POPUP CONFIRM BUY GEM *** //
+                include ../components/confirm_buy_gem_popup
+                // *** POPUP CONFIRM BUY WARRIOR *** //
+                include ../components/confirm_buy_warrior_popup
+                // *** POPUP CONFIRM BUY WARRIOR LOADING *** //
+                include ../components/confirm_buy_warrior_loading_popup
+                // *** POPUP CONFIRM BUY WARRIOR ACCEPT *** //
+                include ../components/confirm_buy_warrior_accept_popup
+                // *** POPUP CONFIRM BUY WARRIOR REJECT *** //
+                include ../components/confirm_buy_warrior_reject_popup
+                // *** POPUP CONFIRM SETTINGS *** //
+                include ../components/settings_popup
+                // *** POPUP RECENT TRANSACTION *** //
+                include ../components/recent_transactions_popup
+        // *** OVERLAY *** //
+        .overlay
+        // *** FOOTER *** //
+        block footer
+            include footer
+        // *** VENDORS JS *** //
+        script(src="./vendors/jquery/jquery.js")
+        script(src="./vendors/fancybox/jquery.fancybox.js")
+        block library-js
+        // *** JS *** //
+        block js
+        include js
