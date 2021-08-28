@@ -1,10 +1,10 @@
-.banner {
+.banner_section {
   height: 312px;
   background-image: url("../images/background_banner.svg");
   background-size: cover;
   background-position: 50%; }
   @media (max-width: 767.98px) {
-    .banner {
+    .banner_section {
       height: unset; } }
 
 .banner_section__wrapper {

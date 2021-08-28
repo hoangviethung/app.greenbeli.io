@@ -21,15 +21,6 @@ main {
 	padding-top: 56px;
 }
 
-section {
-	+ section {
-		margin-top: 56px;
-		@media (max-width: 767.98px) {
-			margin-top: 16px;
-		}
-	}
-}
-
 figure {
 	position: relative;
 	img {

@@ -1,20 +1,24 @@
 header.header
     .container-fluid.h-100
         .header__wrapper
+            .bt-burger
+                i.fal.fa-align-right
             a(href="index.html").header__logo
                 img(src="./images/logo.png", alt="GREEN-BELI")
             .header__menu
+                .bt-close
+                    i.fal.fa-times
                 ul
                     li.header_menu__item
                         a(href="/") Home
                     li.header_menu__item
-                        a(href="/") Farming
+                        a(href="farming.html") Farming
                     li.header_menu__item
                         a(href="/") Gaming
                     li.header_menu__item.active
                         a(href="shop.html") NFT Market
                     li.header_menu__item
-                        a(href="/") Yout Assets
+                        a(href="your_asset.html") Your Assets
                     li.header_menu__item
                         a(href="/" target="_blank" rel="noreferrer") Documentations
             .header__info
@@ -29,4 +33,4 @@ header.header
                 a.bt.bt--secondary.bt--shadow(href="#")
                     span.front Play Now
                 a.bt.bt--primary.bt--shadow(popup-to="wallet_connect_popup" href="javascript:;")
-                    span.front Connect Wallet
+                    span.front Unlock Wallet

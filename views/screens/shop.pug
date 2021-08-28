@@ -8,9 +8,11 @@ block css
     link(rel="stylesheet", href="./css/shop.css")
 block library-js
 block js
+    script(src="./js/shop.js") 
 block main
     // *** BANNER *** //
-    include ../components/banner
+    include ../components/banner_shop
+    // *** SHOP *** //
     section.shop_section
         .container
             .shop__wrapper
@@ -132,7 +134,7 @@ block main
                                     option Lowest Productivity Price
                                     option Highest Productivity Price
                     .list_products
-                        .list_products__item_wrapper
+                        a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
                             .list_products__item.list_products__item--water
                                 .passive
                                     span
@@ -153,7 +155,7 @@ block main
                                         img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
                                         span.value 14.99
                                         span.usd-value ~$61.81
-                        .list_products__item_wrapper
+                        a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
                             .list_products__item.list_products__item--light
                                 .passive
                                     span
@@ -174,7 +176,7 @@ block main
                                         img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
                                         span.value 14.99
                                         span.usd-value ~$61.81
-                        .list_products__item_wrapper
+                        a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
                             .list_products__item.list_products__item--fire
                                 .passive
                                     span
@@ -196,7 +198,7 @@ block main
                                         img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
                                         span.value 14.99
                                         span.usd-value ~$61.81
-                        .list_products__item_wrapper
+                        a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
                             .list_products__item.list_products__item--dark
                                 .passive
                                     span
@@ -218,7 +220,7 @@ block main
                                         img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
                                         span.value 14.99
                                         span.usd-value ~$61.81
-                        .list_products__item_wrapper
+                        a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
                             .list_products__item.list_products__item--grass
                                 .passive
                                     span
@@ -241,7 +243,7 @@ block main
                                         img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
                                         span.value 14.99
                                         span.usd-value ~$61.81
-                        .list_products__item_wrapper
+                        a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
                             .list_products__item.list_products__item--dark
                                 .passive
                                     span
@@ -263,7 +265,7 @@ block main
                                         img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
                                         span.value 14.99
                                         span.usd-value ~$61.81
-                        .list_products__item_wrapper
+                        a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
                             .list_products__item.list_products__item--water
                                 .passive
                                     span
@@ -284,7 +286,7 @@ block main
                                         img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
                                         span.value 14.99
                                         span.usd-value ~$61.81
-                        .list_products__item_wrapper
+                        a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
                             .list_products__item.list_products__item--light
                                 .passive
                                     span
@@ -305,7 +307,7 @@ block main
                                         img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
                                         span.value 14.99
                                         span.usd-value ~$61.81
-                        .list_products__item_wrapper
+                        a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
                             .list_products__item.list_products__item--grass
                                 .passive
                                     span
@@ -328,7 +330,7 @@ block main
                                         img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
                                         span.value 14.99
                                         span.usd-value ~$61.81
-                        .list_products__item_wrapper
+                        a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
                             .list_products__item.list_products__item--dark
                                 .passive
                                     span
@@ -350,7 +352,7 @@ block main
                                         img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
                                         span.value 14.99
                                         span.usd-value ~$61.81
-                        .list_products__item_wrapper
+                        a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
                             .list_products__item.list_products__item--grass
                                 .passive
                                     span
@@ -373,7 +375,7 @@ block main
                                         img(src="./icons/grbetoken.svg", alt="GRBE-TOKEN")
                                         span.value 14.99
                                         span.usd-value ~$61.81
-                        .list_products__item_wrapper
+                        a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
                             .list_products__item.list_products__item--dark
                                 .passive
                                     span
@@ -418,3 +420,5 @@ block main
                             li.pagination-item
                                 a(href="#")
                                     i.fal.fa-chevron-right
+    // *** CHARACTER DETAIL POPUP *** //
+    include ../components/character_detail_popup

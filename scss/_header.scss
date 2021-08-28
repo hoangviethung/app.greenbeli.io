@@ -1,6 +1,5 @@
 .header {
 	position: fixed;
-	background: transparent;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -8,6 +7,11 @@
 	height: 56px;
 	box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
 	background-color: map-get($map: $theme-colors, $key: neutral-white);
+	@media (max-width: 1439.98px) {
+		display: flex;
+		flex-direction: column;
+		height: unset;
+	}
 }
 
 .header__wrapper {
@@ -15,6 +19,9 @@
 	justify-content: space-between;
 	height: 100%;
 	align-items: center;
+	@media (max-width: 1439.98px) {
+		padding: 8px 0;
+	}
 }
 
 .header__logo {
@@ -24,6 +31,35 @@
 .header__menu {
 	display: flex;
 	flex-wrap: wrap;
+	.bt-close {
+		cursor: pointer;
+		font-size: 1.125rem;
+		position: absolute;
+		right: 16px;
+		top: 16px;
+		@media (min-width: 1440px) {
+			display: none;
+		}
+	}
+	@media (max-width: 1439.98px) {
+		position: fixed;
+		left: -100%;
+		top: 0;
+		max-width: 300px;
+		width: 100%;
+		height: 100%;
+		background-color: map-get($map: $theme-colors, $key: neutral-white);
+		padding: 2.5em 1.5em 0;
+		overflow-y: auto;
+		transition: left 0.3s ease-in-out;
+		ul {
+			display: flex;
+			flex-direction: column;
+		}
+		&.show {
+			left: 0;
+		}
+	}
 }
 
 .header_menu__item {
@@ -35,7 +71,7 @@
 		position: relative;
 		color: map-get($map: $theme-colors, $key: txt-body);
 		padding: 18px 16px;
-		transition: color 0.3s all ease-in-out;
+		transition: color 0.3s ease-in-out;
 		&:after {
 			content: "";
 			position: absolute;
@@ -49,6 +85,9 @@
 		&:hover {
 			color: map-get($map: $theme-colors, $key: primary);
 		}
+		@media (max-width: 1439.98px) {
+			padding: 0 0 8px 0;
+		}
 	}
 
 	&.active {
@@ -57,6 +96,9 @@
 				opacity: 1;
 			}
 		}
+	}
+	@media (max-width: 1439.98px) {
+		padding: 18px 16px;
 	}
 }
 
@@ -69,12 +111,23 @@
 			margin-left: 8px;
 		}
 	}
+	@media (max-width: 1439.98px) {
+		margin-left: auto;
+	}
 }
 
 .header_info__items {
 	display: flex;
 	flex-wrap: wrap;
 	margin-right: 24px;
+	@media (max-width: 1439.98px) {
+		margin-right: 0;
+		padding: 8px 24px;
+		background-color: darken(
+			$color: map-get($map: $theme-colors, $key: primary),
+			$amount: 30%
+		);
+	}
 }
 
 .header_info__item {
@@ -82,7 +135,6 @@
 	border: 1px solid map-get($theme-colors, primary);
 	border-radius: 100px;
 	padding: 8px 20px;
-	margin-left: 8px;
 	height: 36px;
 	font-weight: 500;
 	span {
@@ -91,18 +143,20 @@
 			margin-left: 4px;
 			color: map-get($theme-colors, primary);
 		}
+		@media (max-width: 1439.98px) {
+			color: map-get($map: $theme-colors, $key: neutral-white);
+		}
 	}
 	+ .header_info__item {
 		margin-left: 8px;
 	}
 }
 
-.js-collapse-aside-menu-mobile {
-	display: none;
-	font-size: 1.2rem;
-	margin-right: 24px;
-	transition: map-get($map: $theme-transition, $key: all);
-	@media (max-width: 1024.98px) {
-		display: block;
+.bt-burger {
+	cursor: pointer;
+	font-size: 1rem;
+	margin-right: 16px;
+	@media (min-width: 1440px) {
+		display: none;
 	}
 }

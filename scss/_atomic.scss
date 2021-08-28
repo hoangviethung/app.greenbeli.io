@@ -12,33 +12,33 @@
 }
 .txt-body {
 	color: map-get($map: $theme-colors, $key: txt-body);
-	&:hover {
-		color: lighten(
-			$color: map-get($map: $theme-colors, $key: txt-body),
-			$amount: 30%
-		);
-	}
 }
 .txt-light {
 	color: map-get($map: $theme-colors, $key: neutral-white);
 }
 .txt-disable {
-	color: map-get($map: $theme-colors, $key: disable) !important;
+	color: map-get($map: $theme-colors, $key: disable);
 }
 .txt-danger {
 	color: map-get($map: $theme-colors, $key: danger);
 }
-.fs-0x66rem {
-	font-size: 0.66rem;
+.txt-green {
+	color: map-get($map: $theme-colors, $key: additional-green);
 }
-.fs-0x77rem {
-	font-size: 0.77rem;
+.txt-yellow {
+	color: map-get($map: $theme-colors, $key: additional-yellow);
 }
-.fs-1rem {
-	font-size: 1rem;
+.txt-red {
+	color: map-get($map: $theme-colors, $key: additional-red);
 }
-.fs-1x4rem {
-	font-size: 1.4rem;
+.txt-blue {
+	color: map-get($map: $theme-colors, $key: additional-blue);
+}
+.txt-orange {
+	color: map-get($map: $theme-colors, $key: additional-orange);
+}
+.txt-pink {
+	color: map-get($map: $theme-colors, $key: additional-pink);
 }
 .clearfix:after {
 	display: table;
@@ -140,29 +140,11 @@
 	width: 100%;
 	height: 100%;
 }
-.mt-1rem {
-	margin-top: 1rem;
-}
-.mb-1rem {
-	margin-bottom: 1rem;
-}
-.ml-0x3rem {
-	margin-left: 0.3rem;
-}
-.ml-0x5rem {
-	margin-left: 0.5rem;
+.mr-at {
+	margin-right: auto;
 }
 .ml-at {
 	margin-left: auto;
-}
-.mr-0x3rem {
-	margin-right: 0.3rem;
-}
-.mr-0x5rem {
-	margin-right: 0.5rem;
-}
-.mr-at {
-	margin-right: auto;
 }
 .mx-at {
 	@extend .ml-at;
@@ -230,23 +212,4 @@
 	@extend.d-f;
 	@extend .al-c;
 	@extend .jc-b;
-}
-.grid-auto-auto-gap-16 {
-	@extend .d-g;
-	@extend .grid-gap-16;
-	grid-template-columns: auto auto;
-}
-.grid-auto-auto-gap-24 {
-	@extend .d-g;
-	@extend .grid-gap-24;
-	grid-template-columns: auto auto;
-}
-.w-50 {
-	width: 50%;
-}
-.w-at {
-	width: auto;
-}
-.opacity-0 {
-	opacity: 0;
 }

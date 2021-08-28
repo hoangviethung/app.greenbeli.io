@@ -12,24 +12,15 @@ $theme-colors: (
 	"disable": #9da5a0,
 	"success": #91b247,
 	"danger": #ff754c,
+	"additional-green": #25b503,
+	"additional-red": #e70e0e,
+	"additional-blue": #00c6e3,
+	"additional-yellow": #e5b300,
+	"additional-orange": #e47900,
+	"additional-pink": #bc44e5,
 );
 
 $theme-fonts: (
 	"body": "Poppins",
 	"icons": "Font Awesome 5 Pro",
 );
-
-$theme-transition: (
-	"all": all 0.3s linear,
-	"all-1s": all 0.1s linear,
-);
-
-$height-nav: 100px;
-$height-nav-mobile: 80px;
-$width-sidebar: 256px;
-$width-sidebar-sm: 56px;
-$height-sidebar-top: 100px;
-$height-sidebar-top-sm: 48px;
-$height-sidebar-bottom: 120px;
-$height-sidebar-bottom-sm: 48px;
-$height-sidebar-bottom-mobile: 100px;
