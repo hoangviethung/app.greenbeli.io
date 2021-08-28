@@ -1054,6 +1054,11 @@
     display: flex;
     justify-content: center;
     width: 100%; }
+  .bt[disable] {
+    cursor: not-allowed;
+    background-color: #9da5a0; }
+    .bt[disable].bt--shadow {
+      box-shadow: 0 6px #909993; }
 
 .fancybox-content {
   background-color: #ffffff;

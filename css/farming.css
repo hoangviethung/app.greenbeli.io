@@ -26,3 +26,45 @@
       align-items: center; }
     .farm_info_section__item.deposited .harvest__action {
       margin-left: 16px; }
+  .farm_info_section__item.wallet .wallet__title {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    height: fit-content; }
+    .farm_info_section__item.wallet .wallet__title h4 {
+      font-weight: 500;
+      margin-right: 8px; }
+    .farm_info_section__item.wallet .wallet__title > a {
+      font-size: 1rem;
+      color: #ffffff; }
+    .farm_info_section__item.wallet .wallet__title .add-metamask {
+      cursor: pointer;
+      margin-left: 16px; }
+  .farm_info_section__item.wallet .wallet__balance {
+    display: flex;
+    align-items: center; }
+    .farm_info_section__item.wallet .wallet__balance span {
+      font-size: 1.5rem;
+      font-weight: 700; }
+      .farm_info_section__item.wallet .wallet__balance span.usd-value {
+        font-size: 0.75rem;
+        opacity: 0.7;
+        font-weight: 500;
+        margin-left: 8px; }
+    .farm_info_section__item.wallet .wallet__balance .buy_grbe {
+      margin-left: 24px; }
+
+.farm_filter_section {
+  margin-top: 32px; }
+
+.filter_section__wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.filter_section__left_partial {
+  display: flex;
+  align-items: center; }
+  .filter_section__left_partial .tabs_row {
+    background: #d2e2ee;
+    border-radius: 100px;
+    margin-right: 24px; }

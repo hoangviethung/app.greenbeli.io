@@ -78,4 +78,15 @@
 		justify-content: center;
 		width: 100%;
 	}
+	&[disable] {
+		cursor: not-allowed;
+		background-color: map-get($map: $theme-colors, $key: disable);
+		&.bt--shadow {
+			box-shadow: 0 6px
+				darken(
+					$color: map-get($map: $theme-colors, $key: disable),
+					$amount: 5%
+				);
+		}
+	}
 }

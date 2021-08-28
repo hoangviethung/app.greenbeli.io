@@ -19,7 +19,7 @@ block main
                 .farm_info_section__item.deposited
                     .deposited__item
                         h4 You deposited
-                        span $ 0.0
+                        span $0.0
                     .deposited__item
                         h4 Pending to harvest
                         .harvest
@@ -27,12 +27,23 @@ block main
                             .harvest__action
                                 button(disable).bt.bt--secondary.bt--shadow Harvest All
                 .farm_info_section__item.wallet
-                    .wallet__item
-                        h4 You wallet
-                        span $0.0
-                    .wallet__item
-                        h4 Pending to harvest
-                        .harvest
-                            span 0
-                            .harvest__action.harvest__action--disable
-                                button.bt.bt--secondary.bt--shadow Harvest All
+                    .wallet__title
+                        h4 GRBE in wallet
+                        a(href="https://polygonscan.com/address/null/transactions" target rel="noreferrer")
+                            i.fal.fa-external-link-square
+                        span.add-metamask
+                            img(src="./images/add_metamask.svg", alt="METAMASK")
+                    .wallet__balance
+                        span 0
+                        span.usd-value ~$0
+                        .buy_grbe
+                            a.bt.bt--secondary.bt--shadow(href="https://exchange.polydex.fi/swap?inputCurrency=0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174&outputCurrency=0x64aFDF9e28946419E325d801Fb3053d8B8FFdC23" target="_blank" rel="noreferrer") Buy MEEB
+    section.farm_filter_section
+        .container
+            .filter_section__wrapper
+                .filter_section__left_partial
+                    .tabs_row
+                        button.bt.tabname-btn.tab-active
+                            span Live
+                        button.bt.tabname-btn.tab-active
+                            span Finished
