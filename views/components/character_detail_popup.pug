@@ -1,4 +1,4 @@
-#character_detail_popup.character_detail_popup(style="display:none")
+#character_detail_popup.character_detail_popup
     .popup_wrapper
         .popup__header
             h2.popup__title Character Detail
@@ -6,22 +6,40 @@
             .character_detail__wrapper
                 .left_detail
                     .list_products__item_wrapper
-                        .list_products__item.list_products__item--water
+                        .list_products__item.list_products__item--fire
                             .passive
                                 span
-                                    img(src="./icons/passivetanker.svg", alt="TANKER")
+                                    img(src="./icons/fire.png", alt="Fire")
                             .list_products__thumbnail
                                 .lazyload-wrapper
-                                    img(src="./images/item_product_01.png", alt="CHARACTER")
+                                    img(src="./images/item_product_fire.png", alt="CHARACTER")
                     .block_action
                         div
-                            .title Current price
+                            .title Current Price
                             .price
-                                img(src="./icons/meebtoken.svg", alt="MEEB-TOKEN")
+                                img(src="./icons/grbe.png", alt="MEEB-TOKEN")
                                 .txt 14.99
                                     span ~$68.24
                         div
                             button.bt.bt--primary.bt--shadow Approve
+                    .block_action
+                        div
+                            .title Current Price
+                            .price
+                                img(src="./icons/grbe.png", alt="MEEB-TOKEN")
+                                .txt 0
+                                    span ~$0.00
+                        div
+                            button.bt.bt--primary.bt--shadow(disable) Sold
+                    .block_action
+                        div
+                            .title Fast Purchase
+                            .price
+                                img(src="./icons/grbe.png", alt="MEEB-TOKEN")
+                                .txt 29.99
+                                    span ~$154.24
+                        div
+                            button.bt.bt--primary.bt--shadow Buy
                 .right_detail
                     .name RGBE#45793
                     .address ID: 144964015431745793
@@ -30,115 +48,81 @@
                     .title_block Information
                     .block_information.information_character
                         .information__item
-                            .info_title Attribute
+                            .info_title Class
                             .info_type
-                                img(src="./icons/grassitemdetail.svg", alt="TANKER")
-                                span Grass
+                                img(src="./icons/fire.png", alt="Fire")
+                                span Fire
                         .information__item
-                            .info_title Role
+                            .info_title Power
                             .info_type
-                                img(src="./icons/supporteritemdetail.svg", alt="TANKER")
-                                span Supporter
+                                i.fas.fa-fist-raised
+                                span 10%
                         .information__item
-                            .info_title Purity
+                            .info_title Rating
                             .info_type
                                 i.fas.fa-star
                                 i.fas.fa-star
-                        .information__item
-                            .info_title Fusion count
-                            .info_type
-                                span ---
                     .title_block Stats
                     .block_information.stats
-                        .stats__item
-                            img(src="./icons/heartgreen.svg", alt="HP")
+                        .stats__item.txt-green
+                            i.fas.fa-heart
                             div
-                                p.txt-green HP
-                                p 550
-                        .stats__item
-                            img(src="./icons/atk.svg", alt="ATK")
+                                p HEALTH
+                                p 48
+                        .stats__item.txt-yellow
+                            i.fas.fa-bolt
                             div
-                                p.txt-red Atk
-                                p 120
-                        .stats__item
-                            img(src="./icons/satk.svg", alt="SATK")
+                                p SPEED
+                                p 48
+                        .stats__item.txt-orange
+                            i.fas.fa-star
                             div
-                                p.txt-green S.Atk
-                                p 330
-                        .stats__item
-                            img(src="./icons/energry.svg", alt="ENERGY")
+                                p SKILL
+                                p 31
+                        .stats__item.txt-green
+                            i.fas.fa-tree-alt
                             div
-                                p.txt-blue Energy
-                                p 20
-                        .stats__item
-                            img(src="./icons/speed.svg", alt="SPEED")
-                            div
-                                p.txt-yellow Speed
-                                p 125
-                        .stats__item
-                            img(src="./icons/crit.svg", alt="CRIT")
-                            div
-                                p.txt-orange Crit
-                                p 5.80%
-                        .stats__item
-                            img(src="./icons/critdmg.svg", alt="CRIT-DMG")
-                            div
-                                p.txt-orange Crit Dmg
-                                p 60.00%
-                        .stats__item
-                            img(src="./icons/afk.svg", alt="AFK")
-                            div
-                                p.txt-pink AFK
-                                p 13
-                        .stats__item
-                            img(src="./icons/lucky.svg", alt="LUCKY")
-                            div
-                                p.txt-green Luck
-                                p 130
-                        .stats__item
-                            img(src="./icons/productivity.svg", alt="LUCKY")
-                            div
-                                p.txt-yellow Productivity
-                                p 120
+                                p LUCK
+                                p 31
                     .title_block Body parts
                     .block_information.skin_character
                         .skin__item
-                            img(src="./icons/skingreenhouse.svg", alt="GREENHOUSE")
+                            img(src="./icons/skingreenhouse.svg", alt="SKIN-ITEM")
                             div
                                 p Greenhouse
                                 p Level 1
                         .skin__item
-                            img(src="./icons/skinwater.svg", alt="WATER")
+                            img(src="./icons/skinwater.svg", alt="SKIN-ITEM")
                             div
                                 p Water
                                 p Level 1
                         .skin__item
-                            img(src="./icons/skinlight.svg", alt="LIGHT")
+                            img(src="./icons/skinlight.svg", alt="SKIN-ITEM")
                             div
                                 p Light
                                 p Level 1
                         .skin__item
-                            img(src="./icons/skinlightt.svg", alt="LIGHT")
+                            img(src="./icons/skinlightt.svg", alt="SKIN-ITEM")
                             div
                                 p Light
                                 p Level 1
                         .skin__item
-                            img(src="./icons/skinsunbear.svg", alt="SUN-BEAR")
+                            img(src="./icons/skinsunbear.svg", alt="SKIN-ITEM")
                             div
                                 p Sun Bear
                                 p Level 1
                         .skin__item
-                            img(src="./icons/skindark.svg", alt="DARK")
+                            img(src="./icons/skindark.svg", alt="SKIN-ITEM")
                             div
                                 p Dark
                                 p Level 1
                         .skin__item
-                            img(src="./icons/skinelectric.svg", alt="DARK")
+                            img(src="./icons/skinelectric.svg", alt="SKIN-ITEM")
                             div
                                 p Electric
                                 p Level 1
                         .skin__item
-                            img(src="./icons/skinlighttt.svg", alt="LIGHT")
+                            img(src="./icons/skinlighttt.svg", alt="SKIN-ITEM")
                             div
                                 p Light
                                 p Level 1

@@ -897,7 +897,7 @@
   width: 1%;
   margin-bottom: 0; }
 
-.input-group {
+.input_group {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -908,50 +908,16 @@
   .input-group-append .bt-circle + .bt-circle {
     margin-left: 8px; }
 
-.checkbox-switch {
-  display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px; }
-  .checkbox-switch input {
-    display: none; }
-    .checkbox-switch input:checked + .slider {
-      background-color: #668d2e; }
-      .checkbox-switch input:checked + .slider:before {
-        transform: translateX(26px); }
-  .checkbox-switch .slider {
-    background-color: #9da5a0;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: 0.4s; }
-    .checkbox-switch .slider:before {
-      background-color: #ffffff;
-      bottom: 4px;
-      content: "";
-      height: 26px;
-      left: 4px;
-      position: absolute;
-      transition: 0.4s;
-      width: 26px; }
-    .checkbox-switch .slider.round {
-      border-radius: 34px; }
-      .checkbox-switch .slider.round:before {
-        border-radius: 50%; }
-
 .select__custom {
   position: relative; }
   .select__custom select {
     cursor: pointer;
     padding: 0 32px 0 16px;
     height: 36px;
-    min-width: 180px;
     border: 1px solid #d9d9d9;
     border-radius: 8px;
-    appearance: none; }
+    appearance: none;
+    width: 100%; }
   .select__custom:after {
     font-size: 1rem;
     content: "\f107";
@@ -1001,6 +967,40 @@
     background-color: #668d2e; }
     .checkbox__custom input:checked:after {
       opacity: 1; }
+
+.checkbox__switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px; }
+  .checkbox__switch input {
+    display: none; }
+    .checkbox__switch input:checked + .slider {
+      background-color: #668d2e; }
+      .checkbox__switch input:checked + .slider:before {
+        transform: translateX(26px); }
+  .checkbox__switch .slider {
+    background-color: #9da5a0;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s; }
+    .checkbox__switch .slider:before {
+      background-color: #ffffff;
+      bottom: 4px;
+      content: "";
+      height: 26px;
+      left: 4px;
+      position: absolute;
+      transition: 0.4s;
+      width: 26px; }
+    .checkbox__switch .slider.round {
+      border-radius: 34px; }
+      .checkbox__switch .slider.round:before {
+        border-radius: 50%; }
 
 .bt {
   display: inline-flex;
@@ -1169,11 +1169,20 @@
           height: 24px; } }
   .character_detail_popup .list_products__item:after {
     z-index: 1; }
+  .character_detail_popup .list_products__item--metal .list_products__thumbnail {
+    background-color: white; }
+  .character_detail_popup .list_products__item--wood .list_products__thumbnail {
+    background-color: #efffeb; }
+  .character_detail_popup .list_products__item--water .list_products__thumbnail {
+    background-color: #e3fbff; }
+  .character_detail_popup .list_products__item--fire .list_products__thumbnail {
+    background-color: #fef7f6; }
+  .character_detail_popup .list_products__item--earth .list_products__thumbnail {
+    background-color: #f6f2f0; }
   .character_detail_popup .list_products__thumbnail {
     position: relative;
     height: 308px;
     padding: 16px;
-    background: #f7fbf2;
     z-index: 2;
     border-radius: 14px; }
     .character_detail_popup .list_products__thumbnail .lazyload-wrapper img {
@@ -1257,27 +1266,27 @@
       color: #666666;
       margin-bottom: 4px; }
     .character_detail_popup .right_detail .information_character .info_type {
+      min-height: 24px;
       display: flex;
       align-items: center; }
-      .character_detail_popup .right_detail .information_character .info_type img,
-      .character_detail_popup .right_detail .information_character .info_type i {
+      .character_detail_popup .right_detail .information_character .info_type img {
+        margin-right: 8px;
         width: 24px;
         height: 24px; }
-      .character_detail_popup .right_detail .information_character .info_type img {
-        margin-right: 8px; }
       .character_detail_popup .right_detail .information_character .info_type i {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.2rem; }
+        font-size: 1rem; }
         .character_detail_popup .right_detail .information_character .info_type i.fas.fa-star {
           color: #ffc700; }
+        .character_detail_popup .right_detail .information_character .info_type i.fas.fa-fist-raised {
+          color: #666666;
+          margin-right: 8px; }
         .character_detail_popup .right_detail .information_character .info_type i + i {
           margin-left: 4px; }
       .character_detail_popup .right_detail .information_character .info_type span {
         text-overflow: ellipsis;
         overflow: hidden;
-        max-width: 90px; }
+        max-width: 90px;
+        font-weight: 500; }
     @media (max-width: 1024.98px) {
       .character_detail_popup .right_detail .information_character {
         grid-template-columns: repeat(3, 1fr);
@@ -1287,11 +1296,14 @@
         grid-template-columns: repeat(2, 1fr); } }
   .character_detail_popup .right_detail .stats {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 8px; }
     .character_detail_popup .right_detail .stats .stats__item {
       display: flex;
       align-items: flex-start; }
+      .character_detail_popup .right_detail .stats .stats__item > i {
+        font-size: 1.2rem;
+        margin-top: 4px; }
       .character_detail_popup .right_detail .stats .stats__item > div {
         margin-left: 8px; }
         .character_detail_popup .right_detail .stats .stats__item > div p {
@@ -13717,10 +13729,10 @@ progress {
   color: #25b503; }
 
 .txt-yellow {
-  color: #e5b300; }
+  color: #ffc700; }
 
 .txt-red {
-  color: #e70e0e; }
+  color: #e7270e; }
 
 .txt-blue {
   color: #00c6e3; }

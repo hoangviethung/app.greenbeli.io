@@ -157,15 +157,52 @@
 		&:after {
 			z-index: 1;
 		}
+		&--metal {
+			.list_products__thumbnail {
+				background-color: lighten(
+					$color:
+						map-get($map: $theme-colors, $key: additional-yellow),
+					$amount: 50%
+				);
+			}
+		}
+		&--wood {
+			.list_products__thumbnail {
+				background-color: lighten(
+					$color: map-get($map: $theme-colors, $key: additional-green),
+					$amount: 60%
+				);
+			}
+		}
+		&--water {
+			.list_products__thumbnail {
+				background-color: lighten(
+					$color: map-get($theme-colors, additional-blue),
+					$amount: 50%
+				);
+			}
+		}
+		&--fire {
+			.list_products__thumbnail {
+				background-color: lighten(
+					$color: map-get($map: $theme-colors, $key: additional-red),
+					$amount: 50%
+				);
+			}
+		}
+		&--earth {
+			.list_products__thumbnail {
+				background-color: lighten(
+					$color: map-get($theme-colors, additional-brown),
+					$amount: 50%
+				);
+			}
+		}
 	}
 	.list_products__thumbnail {
 		position: relative;
 		height: 308px;
 		padding: 16px;
-		background: lighten(
-			$color: map-get($theme-colors, primary),
-			$amount: 60%
-		);
 		z-index: 2;
 		border-radius: 14px;
 		.lazyload-wrapper {
@@ -273,23 +310,25 @@
 				margin-bottom: 4px;
 			}
 			.info_type {
+				min-height: 24px;
 				display: flex;
 				align-items: center;
-				img,
-				i {
+				img {
+					margin-right: 8px;
 					width: 24px;
 					height: 24px;
 				}
-				img {
-					margin-right: 8px;
-				}
 				i {
-					display: inline-flex;
-					align-items: center;
-					justify-content: center;
-					font-size: 1.2rem;
+					font-size: 1rem;
 					&.fas.fa-star {
-						color: #ffc700;
+						color: map-get(
+							$map: $theme-colors,
+							$key: additional-yellow
+						);
+					}
+					&.fas.fa-fist-raised {
+						color: map-get($map: $theme-colors, $key: gray-text);
+						margin-right: 8px;
 					}
 					+ i {
 						margin-left: 4px;
@@ -299,6 +338,7 @@
 					text-overflow: ellipsis;
 					overflow: hidden;
 					max-width: 90px;
+					font-weight: 500;
 				}
 			}
 			@media (max-width: 1024.98px) {
@@ -311,11 +351,15 @@
 		}
 		.stats {
 			display: grid;
-			grid-template-columns: repeat(5, 1fr);
+			grid-template-columns: repeat(4, 1fr);
 			grid-gap: 8px;
 			.stats__item {
 				display: flex;
 				align-items: flex-start;
+				> i {
+					font-size: 1.2rem;
+					margin-top: 4px;
+				}
 				> div {
 					margin-left: 8px;
 					p {

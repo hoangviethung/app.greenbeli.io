@@ -52,6 +52,19 @@
 			margin-bottom: 16px;
 		}
 	}
+	.right_partial {
+		display: flex;
+		align-items: center;
+		.input_group {
+			> span {
+				font-weight: 500;
+				margin-right: 8px;
+			}
+		}
+		.select__custom {
+			margin-left: 16px;
+		}
+	}
 	@media (max-width: 1024.98px) {
 		flex-direction: column;
 		align-items: flex-start;
@@ -108,12 +121,15 @@
 		}
 		img {
 			margin-right: 4px;
+			width: 24px;
+			height: 24px;
 		}
 		span {
 			display: inline-block;
 			text-overflow: ellipsis;
 			max-width: 60px;
 			overflow: hidden;
+			font-weight: 400;
 		}
 	}
 }
@@ -144,7 +160,6 @@
 }
 
 .list_products__item {
-	background: lighten($color: map-get($theme-colors, primary), $amount: 60%);
 	background-clip: padding-box;
 	border-radius: 16px;
 	border: 2px solid transparent;
@@ -158,9 +173,13 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			width: 24px;
-			height: 24px;
+			width: 30px;
+			height: 30px;
 			border-radius: 50%;
+			background-color: map-get(
+				$map: $theme-colors,
+				$key: neutral-background-dark
+			);
 			img {
 				width: 75%;
 			}
@@ -170,9 +189,10 @@
 		position: absolute;
 		top: 8px;
 		right: 8px;
-		width: 47px;
+		min-width: 48px;
 		height: 24px;
 		display: flex;
+		padding: 0 8px;
 		align-items: center;
 		justify-content: center;
 		background: #f56a42;
@@ -187,54 +207,88 @@
 			color: map-get($map: $theme-colors, $key: neutral-white);
 		}
 	}
-	&--water {
-		.passive {
-			span {
-				background-color: #00baff;
-			}
-		}
+	&--metal {
+		background-color: lighten(
+			$color: map-get($map: $theme-colors, $key: additional-yellow),
+			$amount: 45%
+		);
 		&:after {
-			background: linear-gradient(180deg, #00f0ff, #00baff);
+			background: linear-gradient(
+				180deg,
+				lighten(
+					$color:
+						map-get($map: $theme-colors, $key: additional-yellow),
+					$amount: 30%
+				),
+				map-get($map: $theme-colors, $key: additional-yellow)
+			);
 		}
 	}
-	&--light {
-		.passive {
-			span {
-				background-color: #eab232;
-			}
-		}
+	&--wood {
+		background-color: lighten(
+			$color: map-get($map: $theme-colors, $key: additional-green),
+			$amount: 60%
+		);
 		&:after {
-			background: linear-gradient(180deg, #fccda1, #e0a381);
+			background: linear-gradient(
+				180deg,
+				lighten(
+					$color: map-get($map: $theme-colors, $key: additional-green),
+					$amount: 30%
+				),
+				map-get($map: $theme-colors, $key: additional-green)
+			);
+		}
+	}
+	&--water {
+		background-color: lighten(
+			$color: map-get($theme-colors, additional-blue),
+			$amount: 50%
+		);
+		&:after {
+			background: linear-gradient(
+				180deg,
+				lighten(
+					$color: map-get($theme-colors, additional-blue),
+					$amount: 30%
+				),
+				map-get($theme-colors, additional-blue)
+			);
 		}
 	}
 	&--fire {
-		.passive {
-			span {
-				background-color: #ff561e;
-			}
-		}
+		background-color: lighten(
+			$color: map-get($map: $theme-colors, $key: additional-red),
+			$amount: 50%
+		);
 		&:after {
-			background: linear-gradient(180deg, #ffb660, #ff561e);
+			background: linear-gradient(
+				180deg,
+				lighten(
+					$color: map-get($theme-colors, additional-red),
+					$amount: 30%
+				),
+				lighten(
+					$color: map-get($theme-colors, additional-red),
+					$amount: 20%
+				)
+			);
 		}
 	}
-	&--dark {
-		.passive {
-			span {
-				background-color: #b829ff;
-			}
-		}
+	&--earth {
+		background-color: lighten(
+			$color: map-get($theme-colors, additional-brown),
+			$amount: 50%
+		);
 		&:after {
-			background: linear-gradient(180deg, #ca8dff, #a96fee);
-		}
-	}
-	&--grass {
-		.passive {
-			span {
-				background-color: #4ddf23;
-			}
-		}
-		&:after {
-			background: linear-gradient(180deg, #4ddf23, #43d51a);
+			background: linear-gradient(
+				180deg,
+				lighten(
+					$color: map-get($theme-colors, additional-brown),
+					$amount: 20%
+				),
+				map-get($theme-colors, additional-brown)
+			);
 		}
 	}
 	&:after {
@@ -263,6 +317,7 @@
 }
 
 .list_products__info {
+	color: map-get($map: $theme-colors, $key: txt-body);
 	padding: 12px 16px 16px;
 	.name {
 		font-weight: 500;
@@ -278,9 +333,10 @@
 		margin-bottom: 12px;
 		.code {
 			font-size: 0.75rem;
+			font-weight: 400;
 		}
 		.rating {
-			color: #ffc700;
+			color: map-get($map: $theme-colors, $key: additional-yellow);
 			i + i {
 				margin-left: 4px;
 			}
@@ -290,7 +346,7 @@
 		display: flex;
 		align-items: center;
 		img {
-			width: 20px;
+			width: 32px;
 			margin-right: 4px;
 		}
 		.value {

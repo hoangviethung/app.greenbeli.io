@@ -66,7 +66,7 @@
 	margin-bottom: 0;
 }
 
-.input-group {
+.input_group {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -82,50 +82,6 @@
 	}
 }
 
-.checkbox-switch {
-	display: inline-block;
-	height: 34px;
-	position: relative;
-	width: 60px;
-	input {
-		display: none;
-		&:checked {
-			+ .slider {
-				background-color: map-get($map: $theme-colors, $key: primary);
-				&:before {
-					transform: translateX(26px);
-				}
-			}
-		}
-	}
-	.slider {
-		background-color: map-get($map: $theme-colors, $key: disable);
-		bottom: 0;
-		cursor: pointer;
-		left: 0;
-		position: absolute;
-		right: 0;
-		top: 0;
-		transition: 0.4s;
-		&:before {
-			background-color: map-get($map: $theme-colors, $key: neutral-white);
-			bottom: 4px;
-			content: "";
-			height: 26px;
-			left: 4px;
-			position: absolute;
-			transition: 0.4s;
-			width: 26px;
-		}
-		&.round {
-			border-radius: 34px;
-			&:before {
-				border-radius: 50%;
-			}
-		}
-	}
-}
-
 .select__custom {
 	position: relative;
 	select {
@@ -133,10 +89,10 @@
 		cursor: pointer;
 		padding: 0 32px 0 16px;
 		height: 36px;
-		min-width: 180px;
 		border: 1px solid map-get($map: $theme-colors, $key: gray-border);
 		border-radius: 8px;
 		appearance: none;
+		width: 100%;
 	}
 	&:after {
 		font-size: 1rem;
@@ -197,6 +153,50 @@
 		background-color: map-get($map: $theme-colors, $key: primary);
 		&:after {
 			opacity: 1;
+		}
+	}
+}
+
+.checkbox__switch {
+	display: inline-block;
+	height: 34px;
+	position: relative;
+	width: 60px;
+	input {
+		display: none;
+		&:checked {
+			+ .slider {
+				background-color: map-get($map: $theme-colors, $key: primary);
+				&:before {
+					transform: translateX(26px);
+				}
+			}
+		}
+	}
+	.slider {
+		background-color: map-get($map: $theme-colors, $key: disable);
+		bottom: 0;
+		cursor: pointer;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: 0.4s;
+		&:before {
+			background-color: map-get($map: $theme-colors, $key: neutral-white);
+			bottom: 4px;
+			content: "";
+			height: 26px;
+			left: 4px;
+			position: absolute;
+			transition: 0.4s;
+			width: 26px;
+		}
+		&.round {
+			border-radius: 34px;
+			&:before {
+				border-radius: 50%;
+			}
 		}
 	}
 }
