@@ -9,7 +9,7 @@
 .farm_info_section__item {
   display: grid;
   color: #ffffff;
-  background: linear-gradient(180deg, #82b33b, #668d2e);
+  background: linear-gradient(180deg, #668d2e, #82b33b);
   border-radius: 24px;
   padding: 24px; }
   .farm_info_section__item.deposited {
@@ -57,14 +57,134 @@
 .farm_filter_section {
   margin-top: 32px; }
 
-.filter_section__wrapper {
+.farm_filter_section__wrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between; }
 
 .filter_section__left_partial {
   display: flex;
   align-items: center; }
   .filter_section__left_partial .tabs_row {
-    background: #d2e2ee;
+    background-color: rgba(102, 141, 46, 0.2);
     border-radius: 100px;
     margin-right: 24px; }
+    .filter_section__left_partial .tabs_row .tab-active {
+      color: #ffffff;
+      background-color: #668d2e; }
+  .filter_section__left_partial .staked .input_group > span {
+    font-weight: 500;
+    margin-left: 8px; }
+
+.filter_section__right_partial .search_block {
+  position: relative; }
+  .filter_section__right_partial .search_block .form-control {
+    padding-left: 36px; }
+  .filter_section__right_partial .search_block > i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px; }
+
+.farming_section {
+  padding-top: 16px; }
+
+.farming__item {
+  border: 1px solid rgba(102, 141, 46, 0.2);
+  background: #e0eecc;
+  border-radius: 32px; }
+  .farming__item + .farming__item {
+    margin-top: 32px; }
+  .farming__item .collapse_header {
+    position: relative;
+    cursor: pointer; }
+  .farming__item .panel__header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 110px 16px 40px; }
+  .farming__item .panel_header__multiplier,
+  .farming__item .panel_header__expand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+  .farming__item .panel_header__multiplier {
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    background: linear-gradient(180deg, #7b4425, #a25a31);
+    font-weight: 700;
+    left: -20px;
+    border-radius: 12px; }
+  .farming__item .panel_header__logos {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-right: 16px; }
+    .farming__item .panel_header__logos .panel_header__logo--left {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .farming__item .panel_header__logos .panel_header__logo--right {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.16)); }
+    .farming__item .panel_header__logos img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #ffffff; }
+  .farming__item .panel_header__content--left {
+    display: flex;
+    align-items: center; }
+  .farming__item .panel_header__token_info,
+  .farming__item .wrapper {
+    display: flex;
+    flex-direction: column; }
+  .farming__item .wrapper span {
+    font-weight: 400; }
+    .farming__item .wrapper span + span {
+      margin-top: 4px; }
+  .farming__item .panel_header__token_name {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center; }
+  .farming__item .panel_header__content--right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px; }
+  .farming__item .panel_header__info_item {
+    width: 20%; }
+    .farming__item .panel_header__info_item label {
+      display: block;
+      font-weight: 400;
+      margin-bottom: 4px; }
+    .farming__item .panel_header__info_item span {
+      font-size: 1rem;
+      font-weight: 700; }
+      .farming__item .panel_header__info_item span.usd-value {
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #666666;
+        margin-left: 4px; }
+      .farming__item .panel_header__info_item span.fire, .farming__item .panel_header__info_item span.txt-orange {
+        font-size: 0.875rem; }
+      .farming__item .panel_header__info_item span + span {
+        margin-left: 8px; }
+    .farming__item .panel_header__info_item .values {
+      display: flex;
+      align-items: center; }
+  .farming__item .panel_header__expand {
+    right: 40px;
+    width: 24px;
+    height: 24px;
+    color: #668d2e;
+    background: rgba(102, 141, 46, 0.2);
+    border-radius: 5px; }

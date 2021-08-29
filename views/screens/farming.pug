@@ -38,12 +38,75 @@ block main
                         span.usd-value ~$0
                         .buy_grbe
                             a.bt.bt--secondary.bt--shadow(href="https://exchange.polydex.fi/swap?inputCurrency=0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174&outputCurrency=0x64aFDF9e28946419E325d801Fb3053d8B8FFdC23" target="_blank" rel="noreferrer") Buy MEEB
+    // *** FARM FILTER *** //
     section.farm_filter_section
         .container
-            .filter_section__wrapper
+            .farm_filter_section__wrapper
                 .filter_section__left_partial
                     .tabs_row
                         button.bt.tabname-btn.tab-active
                             span Live
-                        button.bt.tabname-btn.tab-active
+                        button.bt.tabname-btn
                             span Finished
+                    .staked
+                        .input_group
+                            label.checkbox__switch
+                                input(type='checkbox')
+                                .slider.round
+                            span Staked only
+                .filter_section__right_partial
+                    .search_block
+                        i.fal.fa-search
+                        input.form-control(placeholder="Search farms")
+    // *** FARMING *** //
+    section.farming_section
+        .container
+            .farming__list
+                -for(i=0;i<9;i++)
+                    .farming__item
+                        .collapse_header
+                            .panel__header
+                                .panel_header__multiplier 20X
+                                .panel_header__content--left
+                                    .panel_header__logos
+                                        span.panel_header__logo--left
+                                            img(src="./icons/grbe.png", alt="RGBE")
+                                        span.panel_header__logo--right
+                                            img(src="./icons/grbe.png", alt="RGBE")
+                                    .panel_header__token_info
+                                        h4.panel_header__token_name
+                                            span MEEB/USDC PLP
+                                        .wrapper
+                                            span Earn MEEB
+                                            span Deposit Fee 0%
+                                .panel_header__content--right
+                                    .panel_header__info_item
+                                        label Earned
+                                        .values
+                                            span.txt-primary 0.000
+                                            span.usd-value ~$0.00
+                                    .panel_header__info_item
+                                        label Deposited LP
+                                        .values
+                                            span.txt-primary 0.000
+                                            span.usd-value ~$0.00
+                                    .panel_header__info_item
+                                        label Meeb boosted
+                                        .values
+                                            span.nft
+                                                img(src="./icons/nftsmall.svg", alt="NFT-SMALL")
+                                            span.fire.txt-orange
+                                                i.fas.fa-fist-raised
+                                            span.txt-orange 0%
+                                    .panel_header__info_item
+                                        label Total APR
+                                        .values
+                                            span.txt-primary 361.11%
+                                            span.txt-primary
+                                                i.fas.fa-exclamation-circle
+                                    .panel_header__info_item
+                                        label TVL
+                                        .values
+                                            span.txt-primary $2.03M
+                                .panel_header__expand
+                                    i.fal.fa-chevron-down
