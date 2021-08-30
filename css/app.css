@@ -1114,9 +1114,13 @@
   padding: 24px; }
 
 .popup__footer {
-  padding: 24px; }
+  background-color: rgba(102, 141, 46, 0.1);
+  border-top: 1px solid rgba(102, 141, 46, 0.2);
+  padding: 24px;
+  display: flex;
+  justify-content: flex-end; }
   .popup__footer > .bt + .bt {
-    margin-top: 16px; }
+    margin-left: 16px; }
 
 .wallet_connect_popup {
   max-width: 400px;
@@ -1167,8 +1171,7 @@
 
 .character_detail_popup {
   max-width: 945px;
-  width: 100%;
-  margin: 0 auto; }
+  width: 100%; }
   .character_detail_popup .character_detail__wrapper {
     display: grid;
     grid-template-columns: 312px auto;
@@ -1364,6 +1367,33 @@
     @media (max-width: 767.98px) {
       .character_detail_popup .right_detail .skin_character {
         grid-template-columns: repeat(2, 1fr); } }
+
+.stake_your_rgbe_popup {
+  max-width: 636px;
+  width: 100%;
+  margin: 0 auto; }
+  .stake_your_rgbe_popup .your_rgbe__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px; }
+  .stake_your_rgbe_popup .your_rgbe__item {
+    cursor: pointer; }
+    .stake_your_rgbe_popup .your_rgbe__item .item__img {
+      border: 2px solid #d9d9d9;
+      border-radius: 16px; }
+    .stake_your_rgbe_popup .your_rgbe__item .item__id {
+      font-weight: 500;
+      color: #666666;
+      text-align: center;
+      margin-top: 8px; }
+    .stake_your_rgbe_popup .your_rgbe__item .item__power {
+      color: #e47900;
+      text-align: center;
+      margin-top: 4px; }
+      .stake_your_rgbe_popup .your_rgbe__item .item__power > i {
+        margin-right: 4px; }
+      .stake_your_rgbe_popup .your_rgbe__item .item__power span {
+        font-weight: 700; }
 
 *,
 *::before,
@@ -13966,6 +13996,9 @@ progress {
         flex-direction: column; }
       .header__menu.show {
         left: 0; } }
+  @media (max-width: 575.98px) {
+    .header__menu {
+      flex-direction: column; } }
 
 .header_menu__item {
   display: inline-block;
@@ -14016,6 +14049,9 @@ progress {
       margin-right: 0;
       padding: 8px 24px;
       background-color: #131a08; } }
+  @media (max-width: 1024.98px) {
+    .header_info__items {
+      padding: 8px 16px; } }
 
 .header_info__item {
   background: rgba(102, 141, 46, 0.1);

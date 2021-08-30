@@ -42,10 +42,18 @@
 }
 
 .popup__footer {
+	background-color: rgba(
+		$color: map-get($map: $theme-colors, $key: primary),
+		$alpha: 0.1
+	);
+	border-top: 1px solid
+		rgba($color: map-get($map: $theme-colors, $key: primary), $alpha: 0.2);
 	padding: 24px;
+	display: flex;
+	justify-content: flex-end;
 	> .bt {
 		+ .bt {
-			margin-top: 16px;
+			margin-left: 16px;
 		}
 	}
 }
@@ -125,7 +133,6 @@
 .character_detail_popup {
 	max-width: 945px;
 	width: 100%;
-	margin: 0 auto;
 	.character_detail__wrapper {
 		display: grid;
 		grid-template-columns: 312px auto;
@@ -401,6 +408,41 @@
 			}
 			@media (max-width: 767.98px) {
 				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+	}
+}
+
+.stake_your_rgbe_popup {
+	max-width: 636px;
+	width: 100%;
+	margin: 0 auto;
+	.your_rgbe__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 16px;
+	}
+	.your_rgbe__item {
+		cursor: pointer;
+		.item__img {
+			border: 2px solid map-get($map: $theme-colors, $key: gray-border);
+			border-radius: 16px;
+		}
+		.item__id {
+			font-weight: 500;
+			color: map-get($map: $theme-colors, $key: gray-text);
+			text-align: center;
+			margin-top: 8px;
+		}
+		.item__power {
+			color: map-get($map: $theme-colors, $key: additional-orange);
+			text-align: center;
+			margin-top: 4px;
+			> i {
+				margin-right: 4px;
+			}
+			span {
+				font-weight: 700;
 			}
 		}
 	}

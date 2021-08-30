@@ -17,7 +17,7 @@
     <title>Farms | Green Beli</title>
   </head>
   <body>
-    <div class="page">
+    <div class="page farmer_page">
       <!-- *** HEADER *** //-->
       <header class="header">
         <div class="container-fluid h-100">
@@ -209,7 +209,7 @@
                             <div class="thumbnail"><img src="./images/monsterplaceholder.svg" alt=""/></div>
                             <div class="info">
                               <p><i class="fas fa-fist-raised"></i><span>Boosted: ---</span></p>
-                              <button class="bt bt--primary bt--outline">Stake</button>
+                              <button class="bt bt--primary bt--outline" popup-to="stake_your_rgbe_popup" href="javascript:;">Stake</button>
                             </div>
                           </div>
                         </div>
@@ -319,7 +319,7 @@
                             <div class="thumbnail"><img src="./images/monsterplaceholder.svg" alt=""/></div>
                             <div class="info">
                               <p><i class="fas fa-fist-raised"></i><span>Boosted: ---</span></p>
-                              <button class="bt bt--primary bt--outline">Stake</button>
+                              <button class="bt bt--primary bt--outline" popup-to="stake_your_rgbe_popup" href="javascript:;">Stake</button>
                             </div>
                           </div>
                         </div>
@@ -428,7 +428,7 @@
                             <div class="thumbnail"><img src="./images/monsterplaceholder.svg" alt=""/></div>
                             <div class="info">
                               <p><i class="fas fa-fist-raised"></i><span>Boosted: ---</span></p>
-                              <button class="bt bt--primary bt--outline">Stake</button>
+                              <button class="bt bt--primary bt--outline" popup-to="stake_your_rgbe_popup" href="javascript:;">Stake</button>
                             </div>
                           </div>
                         </div>
@@ -537,7 +537,7 @@
                             <div class="thumbnail"><img src="./images/monsterplaceholder.svg" alt=""/></div>
                             <div class="info">
                               <p><i class="fas fa-fist-raised"></i><span>Boosted: ---</span></p>
-                              <button class="bt bt--primary bt--outline">Stake</button>
+                              <button class="bt bt--primary bt--outline" popup-to="stake_your_rgbe_popup" href="javascript:;">Stake</button>
                             </div>
                           </div>
                         </div>
@@ -556,6 +556,47 @@
             </div>
           </div>
         </section>
+        <!-- *** STAKE YOUR MEEB POPUP *** //-->
+        <div class="stake_your_rgbe_popup" id="stake_your_rgbe_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Stake your meeb</h2>
+            </div>
+            <div class="popup__body">
+              <div class="your_rgbe__list">
+                <div class="your_rgbe__item">
+                  <div class="item__img"><img src="./images/itemproductearth.png" alt="RGBE"/></div>
+                  <div class="item__id">#2312399012</div>
+                  <div class="item__power"><i class="fas fa-fist-raised"></i><span class="value">50%</span></div>
+                </div>
+                <div class="your_rgbe__item">
+                  <div class="item__img"><img src="./images/itemproductfire.png" alt="RGBE"/></div>
+                  <div class="item__id">#2312399012</div>
+                  <div class="item__power"><i class="fas fa-fist-raised"></i><span class="value">50%</span></div>
+                </div>
+                <div class="your_rgbe__item">
+                  <div class="item__img"><img src="./images/itemproductmetal.png" alt="RGBE"/></div>
+                  <div class="item__id">#2312399012</div>
+                  <div class="item__power"><i class="fas fa-fist-raised"></i><span class="value">50%</span></div>
+                </div>
+                <div class="your_rgbe__item">
+                  <div class="item__img"><img src="./images/itemproductwater.png" alt="RGBE"/></div>
+                  <div class="item__id">#2312399012</div>
+                  <div class="item__power"><i class="fas fa-fist-raised"></i><span class="value">50%</span></div>
+                </div>
+                <div class="your_rgbe__item">
+                  <div class="item__img"><img src="./images/itemproductwood.png" alt="RGBE"/></div>
+                  <div class="item__id">#2312399012</div>
+                  <div class="item__power"><i class="fas fa-fist-raised"></i><span class="value">50%</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <button class="bt bt--primary bt--outline" data-fancybox-close="data-fancybox-close">Cancel</button>
+              <button class="bt bt--primary">Stake</button>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
     <!-- *** FOOTER *** //-->
@@ -565,6 +606,6 @@
     <script src="./vendors/fancybox/jquery.fancybox.js"></script>
     <!-- *** JS *** //-->
     <script src="./js/app.js"></script>
-    <script src="./js/farming.js"> </script>
+    <script src="./js/farming.js"></script>
   </body>
 </html>

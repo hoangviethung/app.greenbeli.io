@@ -2,13 +2,14 @@ extends ../layouts/layout
 
 block var
     - pageTitle = "Farms | Green Beli"
+    - pageName = "farmer_page"
 block library-css
 block css
     link(rel="stylesheet", href="./css/banner.css")
     link(rel="stylesheet", href="./css/farming.css")
 block library-js
 block js
-    script(src="./js/farming.js") 
+    script(src="./js/farming.js")
 block main
     // *** BANNER *** //
     include ../components/banner_farming
@@ -169,7 +170,7 @@ block main
                                                 p
                                                     i.fas.fa-fist-raised
                                                     span Boosted: ---
-                                                button.bt.bt--primary.bt--outline Stake
+                                                button(popup-to="stake_your_rgbe_popup" href="javascript:;").bt.bt--primary.bt--outline Stake
                                 .expand_details__right_partial
                                     label Earned
                                     p.amount
@@ -282,7 +283,7 @@ block main
                                                 p
                                                     i.fas.fa-fist-raised
                                                     span Boosted: ---
-                                                button.bt.bt--primary.bt--outline Stake
+                                                button(popup-to="stake_your_rgbe_popup" href="javascript:;").bt.bt--primary.bt--outline Stake
                                 .expand_details__right_partial
                                     label Earned
                                     p.amount
@@ -390,7 +391,7 @@ block main
                                                 p
                                                     i.fas.fa-fist-raised
                                                     span Boosted: ---
-                                                button.bt.bt--primary.bt--outline Stake
+                                                button(popup-to="stake_your_rgbe_popup" href="javascript:;").bt.bt--primary.bt--outline Stake
                                 .expand_details__right_partial
                                     label Earned
                                     p.amount
@@ -498,7 +499,7 @@ block main
                                                 p
                                                     i.fas.fa-fist-raised
                                                     span Boosted: ---
-                                                button.bt.bt--primary.bt--outline Stake
+                                                button(popup-to="stake_your_rgbe_popup" href="javascript:;").bt.bt--primary.bt--outline Stake
                                 .expand_details__right_partial
                                     label Earned
                                     p.amount
@@ -507,3 +508,5 @@ block main
                                     span.usd-value ~$0.00
                                     .harvest
                                         button.bt.bt--primary.bt--shadow(disable) Harvest
+    // *** STAKE YOUR MEEB POPUP *** //
+    include ../components/stake_your_rgbe_popup
