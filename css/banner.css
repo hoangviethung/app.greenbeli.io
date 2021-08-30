@@ -1,6 +1,6 @@
 .banner_section {
   height: 312px;
-  background-image: url("../images/background_banner.svg");
+  background-image: url("../images/backgroundbanner.svg");
   background-size: cover;
   background-position: 50%; }
   @media (max-width: 767.98px) {

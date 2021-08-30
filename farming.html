@@ -52,7 +52,7 @@
                 <h2>GRBE Farming</h2>
                 <p>Earn extra GRBE with the add-on farming feature. The amount of GRBE gained from Farming depends on each GRBE’s Farming stats.</p>
               </div>
-              <div class="banner_section__image"><img src="./images/farming_banner.svg" alt="NFT-MARKET"/></div>
+              <div class="banner_section__image"><img src="./images/farmingbanner.svg" alt="NFT-MARKET"/></div>
             </div>
           </div>
         </section>
@@ -75,7 +75,7 @@
               </div>
               <div class="farm_info_section__item wallet">
                 <div class="wallet__title">
-                  <h4>GRBE in wallet</h4><a href="https://polygonscan.com/address/null/transactions" target="target" rel="noreferrer"><i class="fal fa-external-link-square"></i></a><span class="add-metamask"><img src="./images/add_metamask.svg" alt="METAMASK"/></span>
+                  <h4>GRBE in wallet</h4><a href="https://polygonscan.com/address/null/transactions" target="target" rel="noreferrer"><i class="fal fa-external-link-square"></i></a><span class="add-metamask"><img src="./images/addmetamask.svg" alt="METAMASK"/></span>
                 </div>
                 <div class="wallet__balance"><span>0</span><span class="usd-value">~$0</span>
                   <div class="buy_grbe"><a class="bt bt--secondary bt--shadow" href="https://exchange.polydex.fi/swap?inputCurrency=0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174&amp;outputCurrency=0x64aFDF9e28946419E325d801Fb3053d8B8FFdC23" target="_blank" rel="noreferrer">Buy MEEB</a></div>
@@ -119,9 +119,9 @@
                   <div class="panel__header">
                     <div class="panel_header__multiplier">20X</div>
                     <div class="panel_header__content--left">
-                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span><span class="panel_header__logo--right"><img src="./icons/grbe.png" alt="RGBE"/></span></div>
+                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span><span class="panel_header__logo--right"><img src="./icons/eth.png" alt="ETH"/></span></div>
                       <div class="panel_header__token_info">
-                        <h4 class="panel_header__token_name"><span>MEEB/USDC PLP</span></h4>
+                        <h4 class="panel_header__token_name"><span>GRBE/ETH PLP</span></h4>
                         <div class="wrapper"><span>Earn MEEB</span><span>Deposit Fee 0%</span></div>
                       </div>
                     </div>
@@ -150,15 +150,89 @@
                     <div class="panel_header__expand"><i class="fal fa-chevron-down"></i></div>
                   </div>
                 </div>
+                <div class="collapse_content">
+                  <div class="collapse_content__wrapper">
+                    <div class="expand_details">
+                      <div class="expand_details__left_partial">
+                        <div class="expand_details__actions">
+                          <div class="expand_details__actions_wrapper">
+                            <div class="tabs_container">
+                              <div class="tabs_nav">
+                                <div class="tabs_nav__item active">
+                                  <div class="tabs_nav__bt">Deposit</div>
+                                </div>
+                                <div class="tabs_nav__item">
+                                  <div class="tabs_nav__bt">Withdraw</div>
+                                </div>
+                              </div>
+                              <div class="tabs_content_holder">
+                                <div class="tabs_content tabs_content_top">
+                                  <div class="tabs_tabpane tabs_tabpane__active">
+                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
+                                      <div class="form_wrapper">
+                                        <div class="input_group">
+                                          <input class="form-control" type="number" placeholder="Amount"/><span>LP</span>
+                                        </div>
+                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+                                        <div class="submit">
+                                          <button class="bt bt--primary bt--shadow bt--block">Approve</button>
+                                        </div>
+                                      </div>
+                                      <div class="liquidity"><a target="_blank" rel="noreferrer" href="https://exchange.polydex.fi/add/0x606A082820aEAEfD267d0e41955B79fAE18c9DE2">Add liquidity</a><a class="txt-danger" target="_blank" rel="noreferrer" href="https://exchange.polydex.fi/remove/0x606A082820aEAEfD267d0e41955B79fAE18c9DE2">Remove liquidity</a></div>
+                                    </div>
+                                  </div>
+                                  <!-- TAB HIDDEN => IF DIV HAS CLASS ".tabs_tabpane__active" WILL SHOW-->
+                                  <div class="tabs_tabpane">
+                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
+                                      <div class="form_wrapper">
+                                        <div class="input_group">
+                                          <input class="form-control" type="number" placeholder="Amount"/><span>LP</span>
+                                        </div>
+                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+                                        <div class="actions">
+                                          <button class="bt bt--primary bt--outline">Approve</button>
+                                          <button class="bt bt--primary bt--outline">Approve</button>
+                                        </div>
+                                      </div>
+                                      <div class="liquidity"><a target="_blank" rel="noreferrer" href="https://exchange.polydex.fi/add/0x606A082820aEAEfD267d0e41955B79fAE18c9DE2">Add liquidity</a><a class="txt-danger" target="_blank" rel="noreferrer" href="https://exchange.polydex.fi/remove/0x606A082820aEAEfD267d0e41955B79fAE18c9DE2">Remove liquidity</a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="expand_details__stake_meeb">
+                          <label>Your RGBE</label>
+                          <p class="description">Stake RGBE to boost your farm</p>
+                          <div class="select_rgbe">
+                            <div class="thumbnail"><img src="./images/monsterplaceholder.svg" alt=""/></div>
+                            <div class="info">
+                              <p><i class="fas fa-fist-raised"></i><span>Boosted: ---</span></p>
+                              <button class="bt bt--primary bt--outline">Stake</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="expand_details__right_partial">
+                        <label>Earned</label>
+                        <p class="amount"><span>0.000</span><img src="./icons/grbe.png" alt="GRBE"/></p><span class="usd-value">~$0.00</span>
+                        <div class="harvest">
+                          <button class="bt bt--primary bt--shadow" disable="disable">Harvest</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="farming__item">
                 <div class="collapse_header">
                   <div class="panel__header">
                     <div class="panel_header__multiplier">20X</div>
                     <div class="panel_header__content--left">
-                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span><span class="panel_header__logo--right"><img src="./icons/grbe.png" alt="RGBE"/></span></div>
+                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span><span class="panel_header__logo--right"><img src="./icons/eth.png" alt="ETH"/></span></div>
                       <div class="panel_header__token_info">
-                        <h4 class="panel_header__token_name"><span>MEEB/USDC PLP</span></h4>
+                        <h4 class="panel_header__token_name"><span>GRBE/ETH PLP</span></h4>
                         <div class="wrapper"><span>Earn MEEB</span><span>Deposit Fee 0%</span></div>
                       </div>
                     </div>
@@ -187,16 +261,89 @@
                     <div class="panel_header__expand"><i class="fal fa-chevron-down"></i></div>
                   </div>
                 </div>
+                <div class="collapse_content">
+                  <div class="collapse_content__wrapper">
+                    <div class="expand_details">
+                      <div class="expand_details__left_partial">
+                        <div class="expand_details__actions">
+                          <div class="expand_details__actions_wrapper">
+                            <div class="tabs_container">
+                              <div class="tabs_nav">
+                                <div class="tabs_nav__item">
+                                  <div class="tabs_nav__bt">Deposit</div>
+                                </div>
+                                <div class="tabs_nav__item active">
+                                  <div class="tabs_nav__bt">Withdraw</div>
+                                </div>
+                              </div>
+                              <div class="tabs_content_holder">
+                                <div class="tabs_content tabs_content_top">
+                                  <!-- TAB HIDDEN => IF DIV HAS CLASS ".tabs_tabpane__active" WILL SHOW-->
+                                  <div class="tabs_tabpane">
+                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
+                                      <div class="form_wrapper">
+                                        <div class="input_group">
+                                          <input class="form-control" type="number" placeholder="Amount"/><span>LP</span>
+                                        </div>
+                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+                                        <div class="submit">
+                                          <button class="bt bt--primary bt--shadow bt--block">Approve</button>
+                                        </div>
+                                      </div>
+                                      <div class="liquidity"><a target="_blank" rel="noreferrer" href="https://exchange.polydex.fi/add/0x606A082820aEAEfD267d0e41955B79fAE18c9DE2">Add liquidity</a><a class="txt-danger" target="_blank" rel="noreferrer" href="https://exchange.polydex.fi/remove/0x606A082820aEAEfD267d0e41955B79fAE18c9DE2">Remove liquidity</a></div>
+                                    </div>
+                                  </div>
+                                  <div class="tabs_tabpane tabs_tabpane__active">
+                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
+                                      <div class="form_wrapper">
+                                        <div class="input_group">
+                                          <input class="form-control" type="number" placeholder="Amount"/><span>LP</span>
+                                        </div>
+                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+                                        <div class="actions">
+                                          <button class="bt bt--red bt--outline bt--block">Settle & Exit</button>
+                                          <button class="bt bt--orange bt--outline bt--block">Withdraw</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="expand_details__stake_meeb">
+                          <label>Your RGBE</label>
+                          <p class="description">Stake RGBE to boost your farm</p>
+                          <div class="select_rgbe">
+                            <div class="thumbnail"><img src="./images/monsterplaceholder.svg" alt=""/></div>
+                            <div class="info">
+                              <p><i class="fas fa-fist-raised"></i><span>Boosted: ---</span></p>
+                              <button class="bt bt--primary bt--outline">Stake</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="expand_details__right_partial">
+                        <label>Earned</label>
+                        <p class="amount"><span>0.000</span><img src="./icons/grbe.png" alt="GRBE"/></p><span class="usd-value">~$0.00</span>
+                        <div class="harvest">
+                          <button class="bt bt--primary bt--shadow" disable="disable">Harvest</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="farming__item">
                 <div class="collapse_header">
                   <div class="panel__header">
                     <div class="panel_header__multiplier">20X</div>
                     <div class="panel_header__content--left">
-                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span><span class="panel_header__logo--right"><img src="./icons/grbe.png" alt="RGBE"/></span></div>
+                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span></div>
                       <div class="panel_header__token_info">
-                        <h4 class="panel_header__token_name"><span>MEEB/USDC PLP</span></h4>
-                        <div class="wrapper"><span>Earn MEEB</span><span>Deposit Fee 0%</span></div>
+                        <h4 class="panel_header__token_name"><span>GRBE</span></h4>
+                        <div class="wrapper"><span>Earn GRBE</span><span>Deposit Fee 0%</span></div>
                       </div>
                     </div>
                     <div class="panel_header__content--right">
@@ -224,16 +371,88 @@
                     <div class="panel_header__expand"><i class="fal fa-chevron-down"></i></div>
                   </div>
                 </div>
+                <div class="collapse_content">
+                  <div class="collapse_content__wrapper">
+                    <div class="expand_details">
+                      <div class="expand_details__left_partial">
+                        <div class="expand_details__actions">
+                          <div class="expand_details__actions_wrapper">
+                            <div class="tabs_container">
+                              <div class="tabs_nav">
+                                <div class="tabs_nav__item active">
+                                  <div class="tabs_nav__bt">Deposit</div>
+                                </div>
+                                <div class="tabs_nav__item">
+                                  <div class="tabs_nav__bt">Withdraw</div>
+                                </div>
+                              </div>
+                              <div class="tabs_content_holder">
+                                <div class="tabs_content tabs_content_top">
+                                  <div class="tabs_tabpane tabs_tabpane__active">
+                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
+                                      <div class="form_wrapper">
+                                        <div class="input_group">
+                                          <input class="form-control" type="number" placeholder="Amount"/><span>RGBE</span>
+                                        </div>
+                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+                                        <div class="submit">
+                                          <button class="bt bt--primary bt--shadow bt--block">Approve</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- TAB HIDDEN => IF DIV HAS CLASS ".tabs_tabpane__active" WILL SHOW-->
+                                  <div class="tabs_tabpane">
+                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
+                                      <div class="form_wrapper">
+                                        <div class="input_group">
+                                          <input class="form-control" type="number" placeholder="Amount"/><span>LP</span>
+                                        </div>
+                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+                                        <div class="actions">
+                                          <button class="bt bt--red bt--outline bt--block">Settle & Exit</button>
+                                          <button class="bt bt--orange bt--outline bt--block">Withdraw</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="expand_details__stake_meeb">
+                          <label>Your RGBE</label>
+                          <p class="description">Stake RGBE to boost your farm</p>
+                          <div class="select_rgbe">
+                            <div class="thumbnail"><img src="./images/monsterplaceholder.svg" alt=""/></div>
+                            <div class="info">
+                              <p><i class="fas fa-fist-raised"></i><span>Boosted: ---</span></p>
+                              <button class="bt bt--primary bt--outline">Stake</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="expand_details__right_partial">
+                        <label>Earned</label>
+                        <p class="amount"><span>0.000</span><img src="./icons/grbe.png" alt="GRBE"/></p><span class="usd-value">~$0.00</span>
+                        <div class="harvest">
+                          <button class="bt bt--primary bt--shadow" disable="disable">Harvest</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="farming__item">
                 <div class="collapse_header">
                   <div class="panel__header">
                     <div class="panel_header__multiplier">20X</div>
                     <div class="panel_header__content--left">
-                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span><span class="panel_header__logo--right"><img src="./icons/grbe.png" alt="RGBE"/></span></div>
+                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span></div>
                       <div class="panel_header__token_info">
-                        <h4 class="panel_header__token_name"><span>MEEB/USDC PLP</span></h4>
-                        <div class="wrapper"><span>Earn MEEB</span><span>Deposit Fee 0%</span></div>
+                        <h4 class="panel_header__token_name"><span>GRBE</span></h4>
+                        <div class="wrapper"><span>Earn GRBE</span><span>Deposit Fee 0%</span></div>
                       </div>
                     </div>
                     <div class="panel_header__content--right">
@@ -261,189 +480,76 @@
                     <div class="panel_header__expand"><i class="fal fa-chevron-down"></i></div>
                   </div>
                 </div>
-              </div>
-              <div class="farming__item">
-                <div class="collapse_header">
-                  <div class="panel__header">
-                    <div class="panel_header__multiplier">20X</div>
-                    <div class="panel_header__content--left">
-                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span><span class="panel_header__logo--right"><img src="./icons/grbe.png" alt="RGBE"/></span></div>
-                      <div class="panel_header__token_info">
-                        <h4 class="panel_header__token_name"><span>MEEB/USDC PLP</span></h4>
-                        <div class="wrapper"><span>Earn MEEB</span><span>Deposit Fee 0%</span></div>
+                <div class="collapse_content">
+                  <div class="collapse_content__wrapper">
+                    <div class="expand_details">
+                      <div class="expand_details__left_partial">
+                        <div class="expand_details__actions">
+                          <div class="expand_details__actions_wrapper">
+                            <div class="tabs_container">
+                              <div class="tabs_nav">
+                                <div class="tabs_nav__item">
+                                  <div class="tabs_nav__bt">Deposit</div>
+                                </div>
+                                <div class="tabs_nav__item active">
+                                  <div class="tabs_nav__bt">Withdraw</div>
+                                </div>
+                              </div>
+                              <div class="tabs_content_holder">
+                                <div class="tabs_content tabs_content_top">
+                                  <!-- TAB HIDDEN => IF DIV HAS CLASS ".tabs_tabpane__active" WILL SHOW-->
+                                  <div class="tabs_tabpane">
+                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
+                                      <div class="form_wrapper">
+                                        <div class="input_group">
+                                          <input class="form-control" type="number" placeholder="Amount"/><span>RGBE</span>
+                                        </div>
+                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+                                        <div class="submit">
+                                          <button class="bt bt--primary bt--shadow bt--block">Approve</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tabs_tabpane tabs_tabpane__active">
+                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
+                                      <div class="form_wrapper">
+                                        <div class="input_group">
+                                          <input class="form-control" type="number" placeholder="Amount"/><span>LP</span>
+                                        </div>
+                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+                                        <div class="actions">
+                                          <button class="bt bt--red bt--outline bt--block">Settle & Exit</button>
+                                          <button class="bt bt--orange bt--outline bt--block">Withdraw</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="expand_details__stake_meeb">
+                          <label>Your RGBE</label>
+                          <p class="description">Stake RGBE to boost your farm</p>
+                          <div class="select_rgbe">
+                            <div class="thumbnail"><img src="./images/monsterplaceholder.svg" alt=""/></div>
+                            <div class="info">
+                              <p><i class="fas fa-fist-raised"></i><span>Boosted: ---</span></p>
+                              <button class="bt bt--primary bt--outline">Stake</button>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="panel_header__content--right">
-                      <div class="panel_header__info_item">
+                      <div class="expand_details__right_partial">
                         <label>Earned</label>
-                        <div class="values"><span class="txt-primary">0.000</span><span class="usd-value">~$0.00</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Deposited LP</label>
-                        <div class="values"><span class="txt-primary">0.000</span><span class="usd-value">~$0.00</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Meeb boosted</label>
-                        <div class="values"><span class="nft"><img src="./icons/nftsmall.svg" alt="NFT-SMALL"/></span><span class="fire txt-orange"><i class="fas fa-fist-raised"></i></span><span class="txt-orange">0%</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Total APR</label>
-                        <div class="values"><span class="txt-primary">361.11%</span><span class="txt-primary"><i class="fas fa-exclamation-circle"></i></span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>TVL</label>
-                        <div class="values"><span class="txt-primary">$2.03M</span></div>
+                        <p class="amount"><span>0.000</span><img src="./icons/grbe.png" alt="GRBE"/></p><span class="usd-value">~$0.00</span>
+                        <div class="harvest">
+                          <button class="bt bt--primary bt--shadow" disable="disable">Harvest</button>
+                        </div>
                       </div>
                     </div>
-                    <div class="panel_header__expand"><i class="fal fa-chevron-down"></i></div>
-                  </div>
-                </div>
-              </div>
-              <div class="farming__item">
-                <div class="collapse_header">
-                  <div class="panel__header">
-                    <div class="panel_header__multiplier">20X</div>
-                    <div class="panel_header__content--left">
-                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span><span class="panel_header__logo--right"><img src="./icons/grbe.png" alt="RGBE"/></span></div>
-                      <div class="panel_header__token_info">
-                        <h4 class="panel_header__token_name"><span>MEEB/USDC PLP</span></h4>
-                        <div class="wrapper"><span>Earn MEEB</span><span>Deposit Fee 0%</span></div>
-                      </div>
-                    </div>
-                    <div class="panel_header__content--right">
-                      <div class="panel_header__info_item">
-                        <label>Earned</label>
-                        <div class="values"><span class="txt-primary">0.000</span><span class="usd-value">~$0.00</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Deposited LP</label>
-                        <div class="values"><span class="txt-primary">0.000</span><span class="usd-value">~$0.00</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Meeb boosted</label>
-                        <div class="values"><span class="nft"><img src="./icons/nftsmall.svg" alt="NFT-SMALL"/></span><span class="fire txt-orange"><i class="fas fa-fist-raised"></i></span><span class="txt-orange">0%</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Total APR</label>
-                        <div class="values"><span class="txt-primary">361.11%</span><span class="txt-primary"><i class="fas fa-exclamation-circle"></i></span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>TVL</label>
-                        <div class="values"><span class="txt-primary">$2.03M</span></div>
-                      </div>
-                    </div>
-                    <div class="panel_header__expand"><i class="fal fa-chevron-down"></i></div>
-                  </div>
-                </div>
-              </div>
-              <div class="farming__item">
-                <div class="collapse_header">
-                  <div class="panel__header">
-                    <div class="panel_header__multiplier">20X</div>
-                    <div class="panel_header__content--left">
-                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span><span class="panel_header__logo--right"><img src="./icons/grbe.png" alt="RGBE"/></span></div>
-                      <div class="panel_header__token_info">
-                        <h4 class="panel_header__token_name"><span>MEEB/USDC PLP</span></h4>
-                        <div class="wrapper"><span>Earn MEEB</span><span>Deposit Fee 0%</span></div>
-                      </div>
-                    </div>
-                    <div class="panel_header__content--right">
-                      <div class="panel_header__info_item">
-                        <label>Earned</label>
-                        <div class="values"><span class="txt-primary">0.000</span><span class="usd-value">~$0.00</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Deposited LP</label>
-                        <div class="values"><span class="txt-primary">0.000</span><span class="usd-value">~$0.00</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Meeb boosted</label>
-                        <div class="values"><span class="nft"><img src="./icons/nftsmall.svg" alt="NFT-SMALL"/></span><span class="fire txt-orange"><i class="fas fa-fist-raised"></i></span><span class="txt-orange">0%</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Total APR</label>
-                        <div class="values"><span class="txt-primary">361.11%</span><span class="txt-primary"><i class="fas fa-exclamation-circle"></i></span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>TVL</label>
-                        <div class="values"><span class="txt-primary">$2.03M</span></div>
-                      </div>
-                    </div>
-                    <div class="panel_header__expand"><i class="fal fa-chevron-down"></i></div>
-                  </div>
-                </div>
-              </div>
-              <div class="farming__item">
-                <div class="collapse_header">
-                  <div class="panel__header">
-                    <div class="panel_header__multiplier">20X</div>
-                    <div class="panel_header__content--left">
-                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span><span class="panel_header__logo--right"><img src="./icons/grbe.png" alt="RGBE"/></span></div>
-                      <div class="panel_header__token_info">
-                        <h4 class="panel_header__token_name"><span>MEEB/USDC PLP</span></h4>
-                        <div class="wrapper"><span>Earn MEEB</span><span>Deposit Fee 0%</span></div>
-                      </div>
-                    </div>
-                    <div class="panel_header__content--right">
-                      <div class="panel_header__info_item">
-                        <label>Earned</label>
-                        <div class="values"><span class="txt-primary">0.000</span><span class="usd-value">~$0.00</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Deposited LP</label>
-                        <div class="values"><span class="txt-primary">0.000</span><span class="usd-value">~$0.00</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Meeb boosted</label>
-                        <div class="values"><span class="nft"><img src="./icons/nftsmall.svg" alt="NFT-SMALL"/></span><span class="fire txt-orange"><i class="fas fa-fist-raised"></i></span><span class="txt-orange">0%</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Total APR</label>
-                        <div class="values"><span class="txt-primary">361.11%</span><span class="txt-primary"><i class="fas fa-exclamation-circle"></i></span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>TVL</label>
-                        <div class="values"><span class="txt-primary">$2.03M</span></div>
-                      </div>
-                    </div>
-                    <div class="panel_header__expand"><i class="fal fa-chevron-down"></i></div>
-                  </div>
-                </div>
-              </div>
-              <div class="farming__item">
-                <div class="collapse_header">
-                  <div class="panel__header">
-                    <div class="panel_header__multiplier">20X</div>
-                    <div class="panel_header__content--left">
-                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span><span class="panel_header__logo--right"><img src="./icons/grbe.png" alt="RGBE"/></span></div>
-                      <div class="panel_header__token_info">
-                        <h4 class="panel_header__token_name"><span>MEEB/USDC PLP</span></h4>
-                        <div class="wrapper"><span>Earn MEEB</span><span>Deposit Fee 0%</span></div>
-                      </div>
-                    </div>
-                    <div class="panel_header__content--right">
-                      <div class="panel_header__info_item">
-                        <label>Earned</label>
-                        <div class="values"><span class="txt-primary">0.000</span><span class="usd-value">~$0.00</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Deposited LP</label>
-                        <div class="values"><span class="txt-primary">0.000</span><span class="usd-value">~$0.00</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Meeb boosted</label>
-                        <div class="values"><span class="nft"><img src="./icons/nftsmall.svg" alt="NFT-SMALL"/></span><span class="fire txt-orange"><i class="fas fa-fist-raised"></i></span><span class="txt-orange">0%</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Total APR</label>
-                        <div class="values"><span class="txt-primary">361.11%</span><span class="txt-primary"><i class="fas fa-exclamation-circle"></i></span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>TVL</label>
-                        <div class="values"><span class="txt-primary">$2.03M</span></div>
-                      </div>
-                    </div>
-                    <div class="panel_header__expand"><i class="fal fa-chevron-down"></i></div>
                   </div>
                 </div>
               </div>

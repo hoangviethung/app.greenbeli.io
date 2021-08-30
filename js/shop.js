@@ -1,8 +1,9 @@
-const fancyboxCharacterDetail = () => {
-	document
-		.querySelectorAll("[popup-to='character_detail_popup']")
-		.forEach((item) => {
-			item.addEventListener("click", (e) => {
+function fancyboxCharacterDetail() {
+	$.each(
+		$("[popup-to='character_detail_popup']"),
+		function (indexInArray, valueOfElement) {
+			$(valueOfElement).click(function (e) {
+				e.preventDefault();
 				$.fancybox.open({
 					src: "#character_detail_popup",
 					type: "inline",
@@ -11,9 +12,10 @@ const fancyboxCharacterDetail = () => {
 					closeExisting: true,
 				});
 			});
-		});
-};
+		},
+	);
+}
 
-window.addEventListener("load", (e) => {
+$(document).ready(function () {
 	fancyboxCharacterDetail();
 });

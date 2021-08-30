@@ -1017,6 +1017,9 @@
       box-shadow: 0 6px #587a28; }
       .bt--primary.bt--shadow:active {
         box-shadow: 0 4px #4a6721; }
+    .bt--primary.bt--outline {
+      color: #668d2e;
+      border: 1px solid #668d2e; }
   .bt--secondary {
     color: #ffffff;
     background-color: #7b4425; }
@@ -1024,6 +1027,29 @@
       box-shadow: 0 6px #67391f; }
       .bt--secondary.bt--shadow:active {
         box-shadow: 0 4px #542e19; }
+    .bt--secondary.bt--outline {
+      color: #7b4425;
+      border: 1px solid #7b4425; }
+  .bt--red {
+    color: #ffffff;
+    background-color: #e7270e; }
+    .bt--red.bt--shadow {
+      box-shadow: 0 6px #cf230d; }
+      .bt--red.bt--shadow:active {
+        box-shadow: 0 4px #b71f0b; }
+    .bt--red.bt--outline {
+      color: #e7270e;
+      border: 1px solid #e7270e; }
+  .bt--orange {
+    color: #ffffff;
+    background-color: #e47900; }
+    .bt--orange.bt--shadow {
+      box-shadow: 0 6px #cb6b00; }
+      .bt--orange.bt--shadow:active {
+        box-shadow: 0 4px #b15e00; }
+    .bt--orange.bt--outline {
+      color: #e47900;
+      border: 1px solid #e47900; }
   .bt--shadow {
     margin-bottom: 6px; }
     .bt--shadow:active {
@@ -1052,6 +1078,8 @@
     display: flex;
     justify-content: center;
     width: 100%; }
+  .bt--outline {
+    background-color: transparent; }
   .bt[disable] {
     cursor: not-allowed;
     background-color: #9da5a0; }
