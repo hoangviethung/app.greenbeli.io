@@ -1327,6 +1327,9 @@
         .character_detail_popup .right_detail .information_character .info_type i.fas.fa-fist-raised {
           color: #666666;
           margin-right: 8px; }
+        .character_detail_popup .right_detail .information_character .info_type i.fas.fa-dna {
+          color: #00c6e3;
+          margin-right: 8px; }
         .character_detail_popup .right_detail .information_character .info_type i + i {
           margin-left: 4px; }
       .character_detail_popup .right_detail .information_character .info_type span {
@@ -1380,6 +1383,7 @@
           text-overflow: ellipsis;
           overflow: hidden; }
           .character_detail_popup .right_detail .skin_character .skin__item > div p + p {
+            color: #212121;
             font-weight: 400; }
       .character_detail_popup .right_detail .skin_character .skin__item[rarity="common"] {
         color: #8e8e8e; }

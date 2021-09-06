@@ -337,6 +337,10 @@
                         color: map-get($map: $theme-colors, $key: gray-text);
                         margin-right: 8px;
                     }
+                    &.fas.fa-dna{
+                        color: map-get($map: $theme-colors, $key: additional-blue);
+                        margin-right: 8px;
+                    }
                     + i {
                         margin-left: 4px;
                     }
@@ -400,6 +404,7 @@
                         text-overflow: ellipsis;
                         overflow: hidden;
                         + p {
+                            color: map-get($map: $theme-colors, $key: txt-body);
                             font-weight: 400;
                         }
                     }

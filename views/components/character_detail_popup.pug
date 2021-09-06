@@ -21,7 +21,7 @@
                                 .txt 14.99
                                     span ~$68.24
                         div
-                            button.bt.bt--primary.bt--shadow Approve
+                            button.bt.bt--primary Approve
                     .block_action
                         div
                             .title Current Price
@@ -30,7 +30,7 @@
                                 .txt 0
                                     span ~$0.00
                         div
-                            button.bt.bt--primary.bt--shadow(disable) Sold
+                            button.bt.bt--primary(disable) Sold
                 .right_detail
                     .name RGBE#45793
                     .address ID: 144964015431745793
@@ -49,38 +49,48 @@
                                 i.fas.fa-fist-raised
                                 span 10%
                         .information__item
-                            .info_title Stars
+                            .info_title Star
                             .info_type
                                 i.fas.fa-star
                                 i.fas.fa-star
+                        .information__item
+                            .info_title Genes
+                            .info_type
+                                i.fas.fa-dna
+                                span 10%
                     .title_block Stats
                     .block_information.stats
-                        .stats__item.txt-red
+                        .stats__item
                             i.fad.fa-axe
                             div
                                 p Intel
                                 p 48
-                        .stats__item.txt-green
+                        .stats__item
                             i.fas.fa-burn
                             div
                                 p Growth
                                 p 48
-                        .stats__item.txt-pink
+                        .stats__item
                             i.fas.fa-star
                             div
                                 p Base Dmg
                                 p 31
-                        .stats__item.txt-orange
+                        .stats__item
                             i.fas.fa-bolt
                             div
                                 p Crit Dmg
+                                p 31
+                        .stats__item
+                            i.fab.fa-slack
+                            div
+                                p Crit Rate
                                 p 31
                     .title_block Body parts
                     .block_information.skin_character
                         .skin__item(rarity="common")
                             img(src="./icons/face.svg", alt="SKIN-ITEM")
                             div
-                                p Crit Rate
+                                p Face
                                 p Level 1
                         .skin__item(rarity="uncommon")
                             img(src="./icons/hair.svg", alt="SKIN-ITEM")
