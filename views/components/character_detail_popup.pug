@@ -31,15 +31,6 @@
                                     span ~$0.00
                         div
                             button.bt.bt--primary.bt--shadow(disable) Sold
-                    .block_action
-                        div
-                            .title Fast Purchase
-                            .price
-                                img(src="./icons/grbe.png", alt="MEEB-TOKEN")
-                                .txt 29.99
-                                    span ~$154.24
-                        div
-                            button.bt.bt--primary.bt--shadow Buy
                 .right_detail
                     .name RGBE#45793
                     .address ID: 144964015431745793
@@ -58,71 +49,61 @@
                                 i.fas.fa-fist-raised
                                 span 10%
                         .information__item
-                            .info_title Rating
+                            .info_title Stars
                             .info_type
                                 i.fas.fa-star
                                 i.fas.fa-star
                     .title_block Stats
                     .block_information.stats
+                        .stats__item.txt-red
+                            i.fad.fa-axe
+                            div
+                                p Intel
+                                p 48
                         .stats__item.txt-green
-                            i.fas.fa-heart
+                            i.fas.fa-burn
                             div
-                                p HEALTH
+                                p Growth
                                 p 48
-                        .stats__item.txt-yellow
-                            i.fas.fa-bolt
-                            div
-                                p SPEED
-                                p 48
-                        .stats__item.txt-orange
+                        .stats__item.txt-pink
                             i.fas.fa-star
                             div
-                                p SKILL
+                                p Base Dmg
                                 p 31
-                        .stats__item.txt-green
-                            i.fas.fa-tree-alt
+                        .stats__item.txt-orange
+                            i.fas.fa-bolt
                             div
-                                p LUCK
+                                p Crit Dmg
                                 p 31
                     .title_block Body parts
                     .block_information.skin_character
-                        .skin__item
-                            img(src="./icons/skingreenhouse.svg", alt="SKIN-ITEM")
+                        .skin__item(rarity="common")
+                            img(src="./icons/face.svg", alt="SKIN-ITEM")
                             div
-                                p Greenhouse
+                                p Crit Rate
                                 p Level 1
-                        .skin__item
-                            img(src="./icons/skinwater.svg", alt="SKIN-ITEM")
+                        .skin__item(rarity="uncommon")
+                            img(src="./icons/hair.svg", alt="SKIN-ITEM")
                             div
-                                p Water
+                                p Hair
                                 p Level 1
-                        .skin__item
-                            img(src="./icons/skinlight.svg", alt="SKIN-ITEM")
+                        .skin__item(rarity="rare")
+                            img(src="./icons/body.svg", alt="SKIN-ITEM")
                             div
-                                p Light
+                                p Body
                                 p Level 1
-                        .skin__item
-                            img(src="./icons/skinlightt.svg", alt="SKIN-ITEM")
+                        .skin__item(rarity="epic")
+                            img(src="./icons/hand.svg", alt="SKIN-ITEM")
                             div
-                                p Light
+                                p Hand
                                 p Level 1
-                        .skin__item
-                            img(src="./icons/skinsunbear.svg", alt="SKIN-ITEM")
+                        .skin__item(rarity="legendary")
+                            img(src="./icons/leg.svg", alt="SKIN-ITEM")
                             div
-                                p Sun Bear
+                                p Leg
                                 p Level 1
-                        .skin__item
-                            img(src="./icons/skindark.svg", alt="SKIN-ITEM")
+                        .skin__item(rarity="mythical")
+                            img(src="./icons/deco.svg", alt="SKIN-ITEM")
                             div
-                                p Dark
-                                p Level 1
-                        .skin__item
-                            img(src="./icons/skinelectric.svg", alt="SKIN-ITEM")
-                            div
-                                p Electric
-                                p Level 1
-                        .skin__item
-                            img(src="./icons/skinlighttt.svg", alt="SKIN-ITEM")
-                            div
-                                p Light
+                                p Deco
                                 p Level 1

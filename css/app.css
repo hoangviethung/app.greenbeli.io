@@ -1000,6 +1000,24 @@
       .checkbox__switch .slider.round:before {
         border-radius: 50%; }
 
+.input-range-stars {
+  width: 100%; }
+  .input-range-stars .stars {
+    display: flex;
+    justify-content: space-between; }
+    .input-range-stars .stars p {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500; }
+      .input-range-stars .stars p:after {
+        content: "\f005";
+        font-weight: 900;
+        color: #ffc700;
+        font-family: "Font Awesome 5 Pro";
+        margin-left: 4px; }
+
 .bt {
   display: inline-flex;
   justify-content: center;
@@ -1325,7 +1343,7 @@
         grid-template-columns: repeat(2, 1fr); } }
   .character_detail_popup .right_detail .stats {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 8px; }
     .character_detail_popup .right_detail .stats .stats__item {
       display: flex;
@@ -1337,7 +1355,7 @@
         margin-left: 8px; }
         .character_detail_popup .right_detail .stats .stats__item > div p {
           font-weight: 500;
-          max-width: 68px;
+          max-width: 124px;
           text-overflow: ellipsis;
           overflow: hidden; }
     @media (max-width: 1024.98px) {
@@ -1362,8 +1380,19 @@
           text-overflow: ellipsis;
           overflow: hidden; }
           .character_detail_popup .right_detail .skin_character .skin__item > div p + p {
-            font-weight: 400;
-            color: #668d2e; }
+            font-weight: 400; }
+      .character_detail_popup .right_detail .skin_character .skin__item[rarity="common"] {
+        color: #8e8e8e; }
+      .character_detail_popup .right_detail .skin_character .skin__item[rarity="uncommon"] {
+        color: #25b503; }
+      .character_detail_popup .right_detail .skin_character .skin__item[rarity="rare"] {
+        color: #3c78d8; }
+      .character_detail_popup .right_detail .skin_character .skin__item[rarity="epic"] {
+        color: #9900ff; }
+      .character_detail_popup .right_detail .skin_character .skin__item[rarity="legendary"] {
+        color: #ff0000; }
+      .character_detail_popup .right_detail .skin_character .skin__item[rarity="mythical"] {
+        color: #e69138; }
     @media (max-width: 767.98px) {
       .character_detail_popup .right_detail .skin_character {
         grid-template-columns: repeat(2, 1fr); } }

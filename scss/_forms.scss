@@ -1,201 +1,223 @@
 .form-control {
-	box-shadow: unset;
-	border: 2px solid map-get($map: $theme-colors, $key: gray-border);
-	padding: 0 16px;
-	height: 48px;
-	width: 100%;
-	border-radius: 24px;
-	transition: 0.3s all ease-in-out;
-	&:focus {
-		box-shadow: map-get($map: $theme-colors, $key: gray-border) 0px 0px 0px
-				1px,
-			rgba(
-					$color: map-get($map: $theme-colors, $key: gray-border),
-					$alpha: 0.4
-				)
-				0px 0px 0px 4px;
-	}
+    box-shadow: unset;
+    border: 2px solid map-get($map: $theme-colors, $key: gray-border);
+    padding: 0 16px;
+    height: 48px;
+    width: 100%;
+    border-radius: 24px;
+    transition: 0.3s all ease-in-out;
+    &:focus {
+        box-shadow: map-get($map: $theme-colors, $key: gray-border) 0px 0px 0px
+                1px,
+            rgba(
+                    $color: map-get($map: $theme-colors, $key: gray-border),
+                    $alpha: 0.4
+                )
+                0px 0px 0px 4px;
+    }
 }
 
 .form-control.is-invalid,
 .was-validated .form-control:invalid {
-	color: map-get($map: $theme-colors, $key: danger);
-	border-color: map-get($map: $theme-colors, $key: danger);
-	&::placeholder {
-		color: map-get($map: $theme-colors, $key: danger);
-	}
-	&:focus {
-		box-shadow: map-get($map: $theme-colors, $key: danger) 0px 0px 0px 1px,
-			rgba(
-					$color: map-get($map: $theme-colors, $key: danger),
-					$alpha: 0.4
-				)
-				0px 0px 0px 4px;
-	}
+    color: map-get($map: $theme-colors, $key: danger);
+    border-color: map-get($map: $theme-colors, $key: danger);
+    &::placeholder {
+        color: map-get($map: $theme-colors, $key: danger);
+    }
+    &:focus {
+        box-shadow: map-get($map: $theme-colors, $key: danger) 0px 0px 0px 1px,
+            rgba(
+                    $color: map-get($map: $theme-colors, $key: danger),
+                    $alpha: 0.4
+                )
+                0px 0px 0px 4px;
+    }
 }
 
 .form-control.is-valid,
 .was-validated .form-control:valid {
-	color: map-get($map: $theme-colors, $key: success);
-	border-color: map-get($map: $theme-colors, $key: success);
-	&::placeholder {
-		color: map-get($map: $theme-colors, $key: success);
-	}
-	&:focus {
-		box-shadow: map-get($map: $theme-colors, $key: success) 0px 0px 0px 1px,
-			rgba(
-					$color: map-get($map: $theme-colors, $key: success),
-					$alpha: 0.4
-				)
-				0px 0px 0px 4px;
-	}
+    color: map-get($map: $theme-colors, $key: success);
+    border-color: map-get($map: $theme-colors, $key: success);
+    &::placeholder {
+        color: map-get($map: $theme-colors, $key: success);
+    }
+    &:focus {
+        box-shadow: map-get($map: $theme-colors, $key: success) 0px 0px 0px 1px,
+            rgba(
+                    $color: map-get($map: $theme-colors, $key: success),
+                    $alpha: 0.4
+                )
+                0px 0px 0px 4px;
+    }
 }
 
 .invalid-feedback {
-	color: map-get($map: $theme-colors, $key: danger);
-	font-weight: 600;
+    color: map-get($map: $theme-colors, $key: danger);
+    font-weight: 600;
 }
 
 .input-group > .custom-file,
 .input-group > .custom-select,
 .input-group > .form-control {
-	position: relative;
-	flex: 1 1 auto;
-	width: 1%;
-	margin-bottom: 0;
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
 }
 
 .input_group {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
 }
 
 .input-group-append {
-	padding-left: 8px;
-	.bt-circle {
-		+ .bt-circle {
-			margin-left: 8px;
-		}
-	}
+    padding-left: 8px;
+    .bt-circle {
+        + .bt-circle {
+            margin-left: 8px;
+        }
+    }
 }
 
 .select__custom {
-	position: relative;
-	select {
-		color: map-get($map: $theme-colors, $key: text-body);
-		cursor: pointer;
-		padding: 0 32px 0 16px;
-		height: 36px;
-		border: 1px solid map-get($map: $theme-colors, $key: gray-border);
-		border-radius: 8px;
-		appearance: none;
-		width: 100%;
-	}
-	&:after {
-		font-size: 1rem;
-		content: "\f107";
-		font-family: map-get($map: $theme-fonts, $key: icons);
-		position: absolute;
-		right: 16px;
-		top: 50%;
-		transform: translateY(-50%);
-	}
+    position: relative;
+    select {
+        color: map-get($map: $theme-colors, $key: text-body);
+        cursor: pointer;
+        padding: 0 32px 0 16px;
+        height: 36px;
+        border: 1px solid map-get($map: $theme-colors, $key: gray-border);
+        border-radius: 8px;
+        appearance: none;
+        width: 100%;
+    }
+    &:after {
+        font-size: 1rem;
+        content: "\f107";
+        font-family: map-get($map: $theme-fonts, $key: icons);
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 .checkbox__custom {
-	position: relative;
-	height: 24px;
-	width: 24px;
-	label {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-	}
-	input {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		font-size: 1rem;
-		appearance: none;
-		border: 2px solid
-			rgba(
-				$color: map-get($map: $theme-colors, $key: primary),
-				$alpha: 0.5
-			);
-		border-radius: 0.4rem;
-		outline: none;
-		transition-duration: 0.3s;
-		cursor: pointer;
-		&:active {
-			transform: scale(1.05);
-			border-radius: 1rem;
-		}
-		&:after {
-			content: "\2713";
-			position: absolute;
-			width: 50%;
-			height: 50%;
-			transform: translate(-50%, -50%);
-			top: 14%;
-			left: 50%;
-			pointer-events: none;
-			opacity: 0;
-			color: map-get($map: $theme-colors, $key: neutral-white);
-			transition: opacity 0.3s ease-in-out;
-		}
-	}
-	input:checked {
-		background-color: map-get($map: $theme-colors, $key: primary);
-		&:after {
-			opacity: 1;
-		}
-	}
+    position: relative;
+    height: 24px;
+    width: 24px;
+    label {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+        appearance: none;
+        border: 2px solid
+            rgba(
+                $color: map-get($map: $theme-colors, $key: primary),
+                $alpha: 0.5
+            );
+        border-radius: 0.4rem;
+        outline: none;
+        transition-duration: 0.3s;
+        cursor: pointer;
+        &:active {
+            transform: scale(1.05);
+            border-radius: 1rem;
+        }
+        &:after {
+            content: "\2713";
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            transform: translate(-50%, -50%);
+            top: 14%;
+            left: 50%;
+            pointer-events: none;
+            opacity: 0;
+            color: map-get($map: $theme-colors, $key: neutral-white);
+            transition: opacity 0.3s ease-in-out;
+        }
+    }
+    input:checked {
+        background-color: map-get($map: $theme-colors, $key: primary);
+        &:after {
+            opacity: 1;
+        }
+    }
 }
 
 .checkbox__switch {
-	display: inline-block;
-	height: 34px;
-	position: relative;
-	width: 60px;
-	input {
-		display: none;
-		&:checked {
-			+ .slider {
-				background-color: map-get($map: $theme-colors, $key: primary);
-				&:before {
-					transform: translateX(26px);
-				}
-			}
-		}
-	}
-	.slider {
-		background-color: map-get($map: $theme-colors, $key: disable);
-		bottom: 0;
-		cursor: pointer;
-		left: 0;
-		position: absolute;
-		right: 0;
-		top: 0;
-		transition: 0.4s;
-		&:before {
-			background-color: map-get($map: $theme-colors, $key: neutral-white);
-			bottom: 4px;
-			content: "";
-			height: 26px;
-			left: 4px;
-			position: absolute;
-			transition: 0.4s;
-			width: 26px;
-		}
-		&.round {
-			border-radius: 34px;
-			&:before {
-				border-radius: 50%;
-			}
-		}
-	}
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+    input {
+        display: none;
+        &:checked {
+            + .slider {
+                background-color: map-get($map: $theme-colors, $key: primary);
+                &:before {
+                    transform: translateX(26px);
+                }
+            }
+        }
+    }
+    .slider {
+        background-color: map-get($map: $theme-colors, $key: disable);
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 0.4s;
+        &:before {
+            background-color: map-get($map: $theme-colors, $key: neutral-white);
+            bottom: 4px;
+            content: "";
+            height: 26px;
+            left: 4px;
+            position: absolute;
+            transition: 0.4s;
+            width: 26px;
+        }
+        &.round {
+            border-radius: 34px;
+            &:before {
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.input-range-stars {
+    width: 100%;
+    .stars {
+        display: flex;
+        justify-content: space-between;
+        p {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            &:after {
+                content: "\f005";
+                font-weight: 900;
+                color: map-get($map: $theme-colors, $key: additional-yellow);
+                font-family: map-get($map: $theme-fonts, $key: icons);
+                margin-left: 4px;
+            }
+        }
+    }
 }

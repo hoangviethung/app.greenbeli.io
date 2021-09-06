@@ -19,9 +19,8 @@ block main
             .shop__wrapper
                 aside.shop__fiter_left
                     .title Filter
-                    .shop__filter_tabs_nav
-                        .bt.tab_item.active General
-                        .bt.tab_item Advanced
+                    //- .shop__filter_tabs_nav
+                    //-     .bt.tab_item.active General
                     .shop__filter_tabs_content
                         .filter_block
                             h4.filter_block__title Sort By
@@ -65,7 +64,7 @@ block main
                                     img(src="./icons/earth.png", alt="Earth")
                                     span Earth
                         .filter_block
-                            h4.filter_block__title Part type
+                            h4.filter_block__title Body Part
                             .filter_block__wrapper
                                 .filter_block__item
                                     label
@@ -106,7 +105,15 @@ block main
                         .filter_block
                             h4.filter_block__title Star
                             .filter_block__item
-                                input(type="range" min="1" max="6" value="1" style="width:100%")
+                                .input-range-stars
+                                    input(type="range" min="1" max="6" value="1" style="width:100%")
+                                    .stars
+                                        p 1
+                                        p 2
+                                        p 3
+                                        p 4
+                                        p 5
+                                        p 6
                 .shop__main_content
                     .total_rgbe
                         span 1106 Items

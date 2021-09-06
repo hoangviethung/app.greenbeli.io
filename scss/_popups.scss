@@ -1,449 +1,466 @@
 @import "./variable";
 
 .fancybox-content {
-	background-color: map-get($map: $theme-colors, $key: neutral-background);
-	border-radius: 24px;
-	padding: 0;
-	background-size: cover;
+    background-color: map-get($map: $theme-colors, $key: neutral-background);
+    border-radius: 24px;
+    padding: 0;
+    background-size: cover;
 }
 
 .fancybox-slide--html {
-	.fancybox-close-small {
-		top: 12px;
-		right: 12px;
-		border-radius: 50%;
-		transition: 0.3s all ease-in-out;
-	}
+    .fancybox-close-small {
+        top: 12px;
+        right: 12px;
+        border-radius: 50%;
+        transition: 0.3s all ease-in-out;
+    }
 }
 
 .fancybox-close-small {
-	&:hover {
-		color: map-get($map: $theme-colors, $key: neutral-white);
-		background-color: map-get($map: $theme-colors, $key: primary);
-		box-shadow: 0 5px 20px
-			rgba(
-				$color: map-get($map: $theme-colors, $key: primary),
-				$alpha: 0.3
-			);
-	}
+    &:hover {
+        color: map-get($map: $theme-colors, $key: neutral-white);
+        background-color: map-get($map: $theme-colors, $key: primary);
+        box-shadow: 0 5px 20px
+            rgba(
+                $color: map-get($map: $theme-colors, $key: primary),
+                $alpha: 0.3
+            );
+    }
 }
 
 .popup__header {
-	border-bottom: 1px solid map-get($map: $theme-colors, $key: gray-border);
-	padding: 24px 120px 24px 24px;
+    border-bottom: 1px solid map-get($map: $theme-colors, $key: gray-border);
+    padding: 24px 120px 24px 24px;
 }
 
 .popup__title {
-	font-size: 1.4rem;
+    font-size: 1.4rem;
 }
 
 .popup__body {
-	padding: 24px;
+    padding: 24px;
 }
 
 .popup__footer {
-	background-color: rgba(
-		$color: map-get($map: $theme-colors, $key: primary),
-		$alpha: 0.1
-	);
-	border-top: 1px solid
-		rgba($color: map-get($map: $theme-colors, $key: primary), $alpha: 0.2);
-	padding: 24px;
-	display: flex;
-	justify-content: flex-end;
-	> .bt {
-		+ .bt {
-			margin-left: 16px;
-		}
-	}
+    background-color: rgba(
+        $color: map-get($map: $theme-colors, $key: primary),
+        $alpha: 0.1
+    );
+    border-top: 1px solid
+        rgba($color: map-get($map: $theme-colors, $key: primary), $alpha: 0.2);
+    padding: 24px;
+    display: flex;
+    justify-content: flex-end;
+    > .bt {
+        + .bt {
+            margin-left: 16px;
+        }
+    }
 }
 
 .wallet_connect_popup {
-	max-width: 400px;
-	width: 100%;
-	.list_option_wallet_connect {
-		display: flex;
-		flex-wrap: wrap;
-		margin-right: -8px;
-		margin-left: -8px;
-	}
-	.item_option_wallet_connect {
-		-ms-flex: 0 0 50%;
-		flex: 0 0 50%;
-		max-width: 50%;
-		padding-right: 8px;
-		padding-left: 8px;
-		margin-bottom: 16px;
-		.bt {
-			cursor: not-allowed;
-			border-radius: 8px;
-			align-items: center;
-			flex-direction: column;
-			height: 100px;
-			background-color: rgba(
-				$color: map-get($map: $theme-colors, $key: primary),
-				$alpha: 1
-			);
-			color: map-get($map: $theme-colors, $key: neutral-white);
-			transition: background-color 0.3s ease-in-out;
-			opacity: 0.5;
-			&:hover {
-				background-color: rgba(
-					$color: map-get($map: $theme-colors, $key: primary),
-					$alpha: 0.8
-				);
-			}
-		}
-		img {
-			width: 32px;
-			height: 32px;
-			border-radius: 50%;
-			overflow: hidden;
-			margin-bottom: 8px;
-		}
-		&:not([disable]) {
-			.bt {
-				opacity: 1;
-				cursor: pointer;
-				sup {
-					display: none;
-				}
-			}
-		}
-	}
-	.support-document {
-		color: rgba(
-			$color: map-get($map: $theme-colors, $key: secondary),
-			$alpha: 0.8
-		);
-		font-weight: 600;
-		transition: 0.3s all ease-in-out;
-		> i {
-			margin-right: 8px;
-		}
-		&:hover {
-			color: rgba(
-				$color: map-get($map: $theme-colors, $key: secondary),
-				$alpha: 1
-			);
-		}
-	}
+    max-width: 400px;
+    width: 100%;
+    .list_option_wallet_connect {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -8px;
+        margin-left: -8px;
+    }
+    .item_option_wallet_connect {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 8px;
+        padding-left: 8px;
+        margin-bottom: 16px;
+        .bt {
+            cursor: not-allowed;
+            border-radius: 8px;
+            align-items: center;
+            flex-direction: column;
+            height: 100px;
+            background-color: rgba(
+                $color: map-get($map: $theme-colors, $key: primary),
+                $alpha: 1
+            );
+            color: map-get($map: $theme-colors, $key: neutral-white);
+            transition: background-color 0.3s ease-in-out;
+            opacity: 0.5;
+            &:hover {
+                background-color: rgba(
+                    $color: map-get($map: $theme-colors, $key: primary),
+                    $alpha: 0.8
+                );
+            }
+        }
+        img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+        &:not([disable]) {
+            .bt {
+                opacity: 1;
+                cursor: pointer;
+                sup {
+                    display: none;
+                }
+            }
+        }
+    }
+    .support-document {
+        color: rgba(
+            $color: map-get($map: $theme-colors, $key: secondary),
+            $alpha: 0.8
+        );
+        font-weight: 600;
+        transition: 0.3s all ease-in-out;
+        > i {
+            margin-right: 8px;
+        }
+        &:hover {
+            color: rgba(
+                $color: map-get($map: $theme-colors, $key: secondary),
+                $alpha: 1
+            );
+        }
+    }
 }
 
 .character_detail_popup {
-	max-width: 945px;
-	width: 100%;
-	.character_detail__wrapper {
-		display: grid;
-		grid-template-columns: 312px auto;
-		grid-column-gap: 24px;
-		@media (max-width: 1024.98px) {
-			grid-template-columns: 250px auto;
-		}
-		@media (max-width: 669.98px) {
-			grid-template-columns: 200px auto;
-		}
-		@media (max-width: 575.98px) {
-			grid-template-columns: 1fr;
-		}
-	}
-	.list_products__item {
-		.passive {
-			top: 16px;
-			left: 16px;
-			z-index: 3;
-			span {
-				width: 36px;
-				height: 36px;
-				@media (max-width: 669.98px) {
-					width: 24px;
-					height: 24px;
-				}
-			}
-		}
-		&:after {
-			z-index: 1;
-		}
-		&--metal {
-			.list_products__thumbnail {
-				background-color: lighten(
-					$color:
-						map-get($map: $theme-colors, $key: additional-yellow),
-					$amount: 50%
-				);
-			}
-		}
-		&--wood {
-			.list_products__thumbnail {
-				background-color: lighten(
-					$color: map-get($map: $theme-colors, $key: additional-green),
-					$amount: 60%
-				);
-			}
-		}
-		&--water {
-			.list_products__thumbnail {
-				background-color: lighten(
-					$color: map-get($theme-colors, additional-blue),
-					$amount: 50%
-				);
-			}
-		}
-		&--fire {
-			.list_products__thumbnail {
-				background-color: lighten(
-					$color: map-get($map: $theme-colors, $key: additional-red),
-					$amount: 50%
-				);
-			}
-		}
-		&--earth {
-			.list_products__thumbnail {
-				background-color: lighten(
-					$color: map-get($theme-colors, additional-brown),
-					$amount: 50%
-				);
-			}
-		}
-	}
-	.list_products__thumbnail {
-		position: relative;
-		height: 308px;
-		padding: 16px;
-		z-index: 2;
-		border-radius: 14px;
-		.lazyload-wrapper {
-			img {
-				max-height: unset;
-			}
-		}
-		@media (max-width: 1024.98px) {
-			height: 246px;
-		}
-		@media (max-width: 669.98px) {
-			height: 196px;
-		}
-		@media (max-width: 575.98px) {
-			height: 308px;
-		}
-	}
-	.left_detail {
-		.block_action {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			border: 1px solid map-get($map: $theme-colors, $key: gray-border);
-			box-sizing: border-box;
-			border-radius: 16px;
-			margin-top: 12px;
-			padding: 16px;
-			.title {
-				margin-bottom: 12px;
-				font-weight: 400;
-			}
-			.price {
-				display: flex;
-				align-items: center;
-				img {
-					width: 32px;
-					height: 32px;
-					flex-basis: 15%;
-					max-width: 32px;
-				}
-				.txt {
-					font-size: 1.25rem;
-					color: map-get($map: $theme-colors, $key: primary);
-					font-weight: 700;
-					margin-left: 8px;
-					span {
-						font-size: 12px;
-						color: map-get($map: $theme-colors, $key: gray-text);
-						margin-left: 8px;
-						font-weight: 500;
-					}
-				}
-			}
-			@media (max-width: 1024.98px) {
-				display: block;
-				.price {
-					margin-bottom: 24px;
-				}
-			}
-		}
-	}
-	.right_detail {
-		.name {
-			font-size: 1.5rem;
-			font-weight: 700;
-			margin-bottom: 8px;
-		}
-		.address {
-			color: map-get($map: $theme-colors, $key: primary);
-			display: flex;
-			align-items: center;
-			.copy {
-				font-size: 1rem;
-				margin-left: 12px;
-				cursor: pointer;
-				display: block;
-				transition: transform 0.3s ease-in-out;
-				&:active {
-					transform: translateY(4px);
-				}
-			}
-		}
-		.title_block {
-			color: rgba(
-				$color: map-get($map: $theme-colors, $key: gray-text),
-				$alpha: 0.6
-			);
-			font-size: 1rem;
-			margin-bottom: 8px;
-			font-weight: 700;
-			margin-top: 24px;
-		}
-		.block_information {
-			border: 1px solid map-get($map: $theme-colors, $key: gray-border);
-			border-radius: 16px;
-			padding: 16px;
-		}
-		.information_character {
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			grid-gap: 8px;
-			.info_title {
-				font-weight: 400;
-				color: map-get($map: $theme-colors, $key: gray-text);
-				margin-bottom: 4px;
-			}
-			.info_type {
-				min-height: 24px;
-				display: flex;
-				align-items: center;
-				img {
-					margin-right: 8px;
-					width: 24px;
-					height: 24px;
-				}
-				i {
-					font-size: 1rem;
-					&.fas.fa-star {
-						color: map-get(
-							$map: $theme-colors,
-							$key: additional-yellow
-						);
-					}
-					&.fas.fa-fist-raised {
-						color: map-get($map: $theme-colors, $key: gray-text);
-						margin-right: 8px;
-					}
-					+ i {
-						margin-left: 4px;
-					}
-				}
-				span {
-					text-overflow: ellipsis;
-					overflow: hidden;
-					max-width: 90px;
-					font-weight: 500;
-				}
-			}
-			@media (max-width: 1024.98px) {
-				grid-template-columns: repeat(3, 1fr);
-				grid-gap: 16px;
-			}
-			@media (max-width: 767.98px) {
-				grid-template-columns: repeat(2, 1fr);
-			}
-		}
-		.stats {
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			grid-gap: 8px;
-			.stats__item {
-				display: flex;
-				align-items: flex-start;
-				> i {
-					font-size: 1.2rem;
-					margin-top: 4px;
-				}
-				> div {
-					margin-left: 8px;
-					p {
-						font-weight: 500;
-						max-width: 68px;
-						text-overflow: ellipsis;
-						overflow: hidden;
-					}
-				}
-			}
-			@media (max-width: 1024.98px) {
-				grid-template-columns: repeat(3, 1fr);
-				grid-gap: 16px;
-			}
-			@media (max-width: 767.98px) {
-				grid-template-columns: repeat(2, 1fr);
-			}
-		}
-		.skin_character {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			grid-gap: 16px;
-			.skin__item {
-				display: flex;
-				align-items: flex-start;
-				> div {
-					margin-left: 8px;
-					p {
-						font-weight: 500;
-						max-width: 124px;
-						text-overflow: ellipsis;
-						overflow: hidden;
-						+ p {
-							font-weight: 400;
-							color: map-get($map: $theme-colors, $key: primary);
-						}
-					}
-				}
-			}
-			@media (max-width: 767.98px) {
-				grid-template-columns: repeat(2, 1fr);
-			}
-		}
-	}
+    max-width: 945px;
+    width: 100%;
+    .character_detail__wrapper {
+        display: grid;
+        grid-template-columns: 312px auto;
+        grid-column-gap: 24px;
+        @media (max-width: 1024.98px) {
+            grid-template-columns: 250px auto;
+        }
+        @media (max-width: 669.98px) {
+            grid-template-columns: 200px auto;
+        }
+        @media (max-width: 575.98px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .list_products__item {
+        .passive {
+            top: 16px;
+            left: 16px;
+            z-index: 3;
+            span {
+                width: 36px;
+                height: 36px;
+                @media (max-width: 669.98px) {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+        &:after {
+            z-index: 1;
+        }
+        &--metal {
+            .list_products__thumbnail {
+                background-color: lighten(
+                    $color:
+                        map-get($map: $theme-colors, $key: additional-yellow),
+                    $amount: 50%
+                );
+            }
+        }
+        &--wood {
+            .list_products__thumbnail {
+                background-color: lighten(
+                    $color: map-get($map: $theme-colors, $key: additional-green),
+                    $amount: 60%
+                );
+            }
+        }
+        &--water {
+            .list_products__thumbnail {
+                background-color: lighten(
+                    $color: map-get($theme-colors, additional-blue),
+                    $amount: 50%
+                );
+            }
+        }
+        &--fire {
+            .list_products__thumbnail {
+                background-color: lighten(
+                    $color: map-get($map: $theme-colors, $key: additional-red),
+                    $amount: 50%
+                );
+            }
+        }
+        &--earth {
+            .list_products__thumbnail {
+                background-color: lighten(
+                    $color: map-get($theme-colors, additional-brown),
+                    $amount: 50%
+                );
+            }
+        }
+    }
+    .list_products__thumbnail {
+        position: relative;
+        height: 308px;
+        padding: 16px;
+        z-index: 2;
+        border-radius: 14px;
+        .lazyload-wrapper {
+            img {
+                max-height: unset;
+            }
+        }
+        @media (max-width: 1024.98px) {
+            height: 246px;
+        }
+        @media (max-width: 669.98px) {
+            height: 196px;
+        }
+        @media (max-width: 575.98px) {
+            height: 308px;
+        }
+    }
+    .left_detail {
+        .block_action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid map-get($map: $theme-colors, $key: gray-border);
+            box-sizing: border-box;
+            border-radius: 16px;
+            margin-top: 12px;
+            padding: 16px;
+            .title {
+                margin-bottom: 12px;
+                font-weight: 400;
+            }
+            .price {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 32px;
+                    height: 32px;
+                    flex-basis: 15%;
+                    max-width: 32px;
+                }
+                .txt {
+                    font-size: 1.25rem;
+                    color: map-get($map: $theme-colors, $key: primary);
+                    font-weight: 700;
+                    margin-left: 8px;
+                    span {
+                        font-size: 12px;
+                        color: map-get($map: $theme-colors, $key: gray-text);
+                        margin-left: 8px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            @media (max-width: 1024.98px) {
+                display: block;
+                .price {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+    .right_detail {
+        .name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .address {
+            color: map-get($map: $theme-colors, $key: primary);
+            display: flex;
+            align-items: center;
+            .copy {
+                font-size: 1rem;
+                margin-left: 12px;
+                cursor: pointer;
+                display: block;
+                transition: transform 0.3s ease-in-out;
+                &:active {
+                    transform: translateY(4px);
+                }
+            }
+        }
+        .title_block {
+            color: rgba(
+                $color: map-get($map: $theme-colors, $key: gray-text),
+                $alpha: 0.6
+            );
+            font-size: 1rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+            margin-top: 24px;
+        }
+        .block_information {
+            border: 1px solid map-get($map: $theme-colors, $key: gray-border);
+            border-radius: 16px;
+            padding: 16px;
+        }
+        .information_character {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 8px;
+            .info_title {
+                font-weight: 400;
+                color: map-get($map: $theme-colors, $key: gray-text);
+                margin-bottom: 4px;
+            }
+            .info_type {
+                min-height: 24px;
+                display: flex;
+                align-items: center;
+                img {
+                    margin-right: 8px;
+                    width: 24px;
+                    height: 24px;
+                }
+                i {
+                    font-size: 1rem;
+                    &.fas.fa-star {
+                        color: map-get(
+                            $map: $theme-colors,
+                            $key: additional-yellow
+                        );
+                    }
+                    &.fas.fa-fist-raised {
+                        color: map-get($map: $theme-colors, $key: gray-text);
+                        margin-right: 8px;
+                    }
+                    + i {
+                        margin-left: 4px;
+                    }
+                }
+                span {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    max-width: 90px;
+                    font-weight: 500;
+                }
+            }
+            @media (max-width: 1024.98px) {
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 16px;
+            }
+            @media (max-width: 767.98px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 8px;
+            .stats__item {
+                display: flex;
+                align-items: flex-start;
+                > i {
+                    font-size: 1.2rem;
+                    margin-top: 4px;
+                }
+                > div {
+                    margin-left: 8px;
+                    p {
+                        font-weight: 500;
+                        max-width: 124px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                }
+            }
+            @media (max-width: 1024.98px) {
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 16px;
+            }
+            @media (max-width: 767.98px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .skin_character {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 16px;
+            .skin__item {
+                display: flex;
+                align-items: flex-start;
+                > div {
+                    margin-left: 8px;
+                    p {
+                        font-weight: 500;
+                        max-width: 124px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        + p {
+                            font-weight: 400;
+                        }
+                    }
+                }
+                &[rarity="common"] {
+                    color: map-get($map: $theme-colors, $key: rarity-common);
+                }
+                &[rarity="uncommon"] {
+                    color: map-get($map: $theme-colors, $key: rarity-uncommon);
+                }
+                &[rarity="rare"] {
+                    color: map-get($map: $theme-colors, $key: rarity-rare);
+                }
+                &[rarity="epic"] {
+                    color: map-get($map: $theme-colors, $key: rarity-epic);
+                }
+                &[rarity="legendary"] {
+                    color: map-get($map: $theme-colors, $key: rarity-legendary);
+                }
+                &[rarity="mythical"] {
+                    color: map-get($map: $theme-colors, $key: rarity-mythical);
+                }
+            }
+            @media (max-width: 767.98px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
 }
 
 .stake_your_rgbe_popup {
-	max-width: 636px;
-	width: 100%;
-	margin: 0 auto;
-	.your_rgbe__list {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 16px;
-	}
-	.your_rgbe__item {
-		cursor: pointer;
-		.item__img {
-			border: 2px solid map-get($map: $theme-colors, $key: gray-border);
-			border-radius: 16px;
-		}
-		.item__id {
-			font-weight: 500;
-			color: map-get($map: $theme-colors, $key: gray-text);
-			text-align: center;
-			margin-top: 8px;
-		}
-		.item__power {
-			color: map-get($map: $theme-colors, $key: additional-orange);
-			text-align: center;
-			margin-top: 4px;
-			> i {
-				margin-right: 4px;
-			}
-			span {
-				font-weight: 700;
-			}
-		}
-	}
+    max-width: 636px;
+    width: 100%;
+    margin: 0 auto;
+    .your_rgbe__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 16px;
+    }
+    .your_rgbe__item {
+        cursor: pointer;
+        .item__img {
+            border: 2px solid map-get($map: $theme-colors, $key: gray-border);
+            border-radius: 16px;
+        }
+        .item__id {
+            font-weight: 500;
+            color: map-get($map: $theme-colors, $key: gray-text);
+            text-align: center;
+            margin-top: 8px;
+        }
+        .item__power {
+            color: map-get($map: $theme-colors, $key: additional-orange);
+            text-align: center;
+            margin-top: 4px;
+            > i {
+                margin-right: 4px;
+            }
+            span {
+                font-weight: 700;
+            }
+        }
+    }
 }

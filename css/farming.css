@@ -59,7 +59,10 @@
         font-weight: 500;
         margin-left: 8px; }
     .farm_info_section__item.wallet .wallet__balance .buy_grbe {
-      margin-left: 24px; }
+      margin-left: 150px; }
+      @media (max-width: 1024.98px) {
+        .farm_info_section__item.wallet .wallet__balance .buy_grbe {
+          margin-left: 100px; } }
 
 .farm_filter_section {
   margin-top: 32px; }

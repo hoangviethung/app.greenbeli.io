@@ -22,7 +22,7 @@
       <header class="header">
         <div class="container-fluid h-100">
           <div class="header__wrapper">
-            <div class="bt-burger"><i class="fal fa-align-right"></i></div><a class="header__logo" href="index.html"><img src="./images/logo.png" alt="GREEN-BELI"/></a>
+            <div class="bt-burger"><i class="fas fa-align-left"></i></div><a class="header__logo" href="index.html"><img src="./images/logo.png" alt="GREEN-BELI"/></a>
             <div class="header__menu">
               <div class="bt-close"><i class="fal fa-times"></i></div>
               <ul>
@@ -72,10 +72,6 @@
             <div class="shop__wrapper">
               <aside class="shop__fiter_left">
                 <div class="title">Filter</div>
-                <div class="shop__filter_tabs_nav">
-                  <div class="bt tab_item active">General</div>
-                  <div class="bt tab_item">Advanced</div>
-                </div>
                 <div class="shop__filter_tabs_content">
                   <div class="filter_block">
                     <h4 class="filter_block__title">Sort By</h4>
@@ -129,7 +125,7 @@
                     </div>
                   </div>
                   <div class="filter_block">
-                    <h4 class="filter_block__title">Part type</h4>
+                    <h4 class="filter_block__title">Body Part</h4>
                     <div class="filter_block__wrapper">
                       <div class="filter_block__item">
                         <label>
@@ -178,7 +174,17 @@
                   <div class="filter_block">
                     <h4 class="filter_block__title">Star</h4>
                     <div class="filter_block__item">
-                      <input type="range" min="1" max="6" value="1" style="width:100%"/>
+                      <div class="input-range-stars">
+                        <input type="range" min="1" max="6" value="1" style="width:100%"/>
+                        <div class="stars">
+                          <p>1</p>
+                          <p>2</p>
+                          <p>3</p>
+                          <p>4</p>
+                          <p>5</p>
+                          <p>6</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -335,17 +341,6 @@
                       <button class="bt bt--primary bt--shadow" disable="disable">Sold</button>
                     </div>
                   </div>
-                  <div class="block_action">
-                    <div>
-                      <div class="title">Fast Purchase</div>
-                      <div class="price"><img src="./icons/grbe.png" alt="MEEB-TOKEN"/>
-                        <div class="txt">29.99<span>~$154.24</span></div>
-                      </div>
-                    </div>
-                    <div>
-                      <button class="bt bt--primary bt--shadow">Buy</button>
-                    </div>
-                  </div>
                 </div>
                 <div class="right_detail">
                   <div class="name">RGBE#45793</div>
@@ -361,84 +356,72 @@
                       <div class="info_type"><i class="fas fa-fist-raised"></i><span>10%</span></div>
                     </div>
                     <div class="information__item">
-                      <div class="info_title">Rating</div>
+                      <div class="info_title">Stars</div>
                       <div class="info_type"><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                     </div>
                   </div>
                   <div class="title_block">Stats</div>
                   <div class="block_information stats">
-                    <div class="stats__item txt-green"><i class="fas fa-heart"></i>
+                    <div class="stats__item txt-red"><i class="fad fa-axe"></i>
                       <div>
-                        <p>HEALTH</p>
+                        <p>Intel</p>
                         <p>48</p>
                       </div>
                     </div>
-                    <div class="stats__item txt-yellow"><i class="fas fa-bolt"></i>
+                    <div class="stats__item txt-green"><i class="fas fa-burn"></i>
                       <div>
-                        <p>SPEED</p>
+                        <p>Growth</p>
                         <p>48</p>
                       </div>
                     </div>
-                    <div class="stats__item txt-orange"><i class="fas fa-star"></i>
+                    <div class="stats__item txt-pink"><i class="fas fa-star"></i>
                       <div>
-                        <p>SKILL</p>
+                        <p>Base Dmg</p>
                         <p>31</p>
                       </div>
                     </div>
-                    <div class="stats__item txt-green"><i class="fas fa-tree-alt"></i>
+                    <div class="stats__item txt-orange"><i class="fas fa-bolt"></i>
                       <div>
-                        <p>LUCK</p>
+                        <p>Crit Dmg</p>
                         <p>31</p>
                       </div>
                     </div>
                   </div>
                   <div class="title_block">Body parts</div>
                   <div class="block_information skin_character">
-                    <div class="skin__item"><img src="./icons/skingreenhouse.svg" alt="SKIN-ITEM"/>
+                    <div class="skin__item" rarity="common"><img src="./icons/face.svg" alt="SKIN-ITEM"/>
                       <div>
-                        <p>Greenhouse</p>
+                        <p>Crit Rate</p>
                         <p>Level 1</p>
                       </div>
                     </div>
-                    <div class="skin__item"><img src="./icons/skinwater.svg" alt="SKIN-ITEM"/>
+                    <div class="skin__item" rarity="uncommon"><img src="./icons/hair.svg" alt="SKIN-ITEM"/>
                       <div>
-                        <p>Water</p>
+                        <p>Hair</p>
                         <p>Level 1</p>
                       </div>
                     </div>
-                    <div class="skin__item"><img src="./icons/skinlight.svg" alt="SKIN-ITEM"/>
+                    <div class="skin__item" rarity="rare"><img src="./icons/body.svg" alt="SKIN-ITEM"/>
                       <div>
-                        <p>Light</p>
+                        <p>Body</p>
                         <p>Level 1</p>
                       </div>
                     </div>
-                    <div class="skin__item"><img src="./icons/skinlightt.svg" alt="SKIN-ITEM"/>
+                    <div class="skin__item" rarity="epic"><img src="./icons/hand.svg" alt="SKIN-ITEM"/>
                       <div>
-                        <p>Light</p>
+                        <p>Hand</p>
                         <p>Level 1</p>
                       </div>
                     </div>
-                    <div class="skin__item"><img src="./icons/skinsunbear.svg" alt="SKIN-ITEM"/>
+                    <div class="skin__item" rarity="legendary"><img src="./icons/leg.svg" alt="SKIN-ITEM"/>
                       <div>
-                        <p>Sun Bear</p>
+                        <p>Leg</p>
                         <p>Level 1</p>
                       </div>
                     </div>
-                    <div class="skin__item"><img src="./icons/skindark.svg" alt="SKIN-ITEM"/>
+                    <div class="skin__item" rarity="mythical"><img src="./icons/deco.svg" alt="SKIN-ITEM"/>
                       <div>
-                        <p>Dark</p>
-                        <p>Level 1</p>
-                      </div>
-                    </div>
-                    <div class="skin__item"><img src="./icons/skinelectric.svg" alt="SKIN-ITEM"/>
-                      <div>
-                        <p>Electric</p>
-                        <p>Level 1</p>
-                      </div>
-                    </div>
-                    <div class="skin__item"><img src="./icons/skinlighttt.svg" alt="SKIN-ITEM"/>
-                      <div>
-                        <p>Light</p>
+                        <p>Deco</p>
                         <p>Level 1</p>
                       </div>
                     </div>
