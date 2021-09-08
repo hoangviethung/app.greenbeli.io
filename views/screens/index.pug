@@ -2,6 +2,7 @@ extends ../layouts/layout
 
 block var
     - pageTitle = "Home | Green Beli"
+    - pageName = "nft_home_page"
 block library-css
 block css
     link(rel="stylesheet", href="./css/banner.css")
@@ -9,4 +10,87 @@ block css
 block library-js
 block js
 block main
-    // *** SECTION PLAY GAME *** //
+    // *** BANNER *** //
+    include ../components/banner_home
+    .statistics_section
+        .container
+            .statistics_section__wrapper
+                .statistics_section__item_partial.left
+                    .statistics_section__supply
+                        .icon
+                            img(src="./icons/grbe.png", alt="GRBE")
+                        .details
+                            .details__header
+                                .external-link
+                                    span RGBE
+                                    a(href="#", target="_blank", rel="noopener noreferrer")
+                                        i.far.fa-external-link
+                                .price-box
+                                    label Price
+                                    span.price $4.3589
+                                    a.bt.bt--primary(href="#", target="_blank", rel="noopener noreferrer") Buy
+                            .details__item_wrapper
+                                .details__item
+                                    span.title Cir.Supply
+                                    span.amount 3,508,157
+                                .details__item
+                                    span.title Total Supply
+                                    span.amount 3,989,081
+                                .details__item
+                                    span.title Market Cap
+                                    span.amount $15,291,589
+                    .statistics_section__my_grbe
+                        .statistics_section__wallet
+                            .statistics_section__grbe_in_wallet
+                                .icon
+                                    img(src="./icons/grbe.png", alt="GRBE")
+                                .detail
+                                    .title GRBE in wallet
+                                    .value
+                                        .amount 0
+                                        .usd-value $0
+                            .statistics_section__grbe_in_wallet
+                                .icon
+                                    img(src="./icons/grbe.png", alt="GRBE")
+                                .detail
+                                    .title GRBE in wallet
+                                    .value
+                                        .amount 0
+                                        .usd-value $0
+                        .statistics_section__wallet
+                            .statistics_section__grbe_in_wallet
+                                .icon
+                                    img(src="./icons/grbe.png", alt="GRBE")
+                                .detail
+                                    .title MEEB to harvest
+                                    .value
+                                        .amount 0
+                                        .usd-value $0
+                            .statistics_section__harvest_action
+                                button.bt.bt--primary.bt--block Harvest All
+                .statistics_section__item_partial.right
+    .top_farm_section
+        .container
+            .top_farm_section__wrapper
+                .top_farm_section__header
+                    .top_farm_section__heading Top farms
+                    .top_farm_section__see_all_farm
+                        a(href="#") See all farms
+                .top_farm_section__main_content
+                    -for(i=0;i<3;i++)
+                        .top_farm_section__item
+                            .top_farm_section__content_top_item
+                                .top_farm_section__item_logos
+                                    .top_farm_section__item_logo_left
+                                        img(src="./icons/grbe.png", alt="GRBE")
+                                    .top_farm_section__item_logo_right
+                                        img(src="./icons/eth.png", alt="ETH")
+                                .top_farm_section__item_details
+                                    .token-name SDS/USDC QLP
+                                    .tvl TVL: $192,834
+                                .top_farm_section__item_multiplier 2X
+                            .top_farm_section__content_bottom_item
+                                .apr
+                                    label Current APR
+                                    .amount 380.16%
+                                a.bt.bt--primary(href="#") Farm

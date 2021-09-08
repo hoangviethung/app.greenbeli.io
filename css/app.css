@@ -1446,6 +1446,9 @@ body {
 
 main {
   padding-top: 56px; }
+  @media (max-width: 1439.98px) {
+    main {
+      padding-top: 108px; } }
 
 figure {
   position: relative; }
@@ -13973,7 +13976,7 @@ progress {
   top: 0;
   left: 0; }
 
-.header {
+header.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -13983,7 +13986,7 @@ progress {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   background-color: #ffffff; }
   @media (max-width: 1439.98px) {
-    .header {
+    header.header {
       display: flex;
       flex-direction: column;
       height: unset; } }
@@ -13995,6 +13998,7 @@ progress {
   align-items: center; }
   @media (max-width: 1439.98px) {
     .header__wrapper {
+      height: 56px;
       padding: 8px 0; } }
 
 .header__logo {

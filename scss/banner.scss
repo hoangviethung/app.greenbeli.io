@@ -1,116 +1,246 @@
 @import "_variable";
 
+.page {
+    &.nft_market_page,
+    &.farmer_page {
+        .banner_section__wrapper {
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 767.98px) {
+                flex-direction: column;
+            }
+        }
+        .banner_section {
+            height: 312px;
+            @media (max-width: 767.98px) {
+                height: unset;
+            }
+        }
+        .banner_section__content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 312px;
+            h1 {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 8px;
+                @media (max-width: 1024.98px) {
+                    max-width: 288px;
+                }
+                @media (max-width: 767.98px) {
+                    font-size: 1.5rem;
+                    margin-bottom: 12px;
+                }
+            }
+            p {
+                font-size: 1rem;
+                font-weight: 500;
+                width: 650px;
+                @media (max-width: 1024.98px) {
+                    width: 500px;
+                }
+                @media (max-width: 767.98px) {
+                    width: unset;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                }
+            }
+            @media (max-width: 767.98px) {
+                height: unset;
+                padding: 36px 0;
+            }
+        }
+    }
+    &.nft_home_page {
+        .banner_section {
+            height: 322px;
+            @media (max-width: 767.98px) {
+                height: unset;
+                padding-bottom: 24px;
+            }
+        }
+        .banner_section__wrapper {
+            height: 322px;
+            position: relative;
+            @media (max-width: 767.98px) {
+                height: unset;
+            }
+        }
+
+        .banner_section__content {
+            height: 250px;
+            background: linear-gradient(
+                270deg,
+                map-get($theme-colors, primary),
+                lighten($color: map-get($theme-colors, primary), $amount: 10%)
+                    52.6%,
+                map-get($theme-colors, primary)
+            );
+            border-radius: 0 0 32px 32px;
+            padding: 48px 0 84px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            h1 {
+                font-size: 1.25rem;
+                color: map-get($map: $theme-colors, $key: neutral-white);
+                margin-bottom: 16px;
+                font-weight: 400;
+            }
+            p {
+                font-size: 4rem;
+                line-height: 72px;
+                color: map-get($map: $theme-colors, $key: neutral-white);
+                text-shadow: 2px 2px 0 rgba($color: #000000, $alpha: 0.2);
+                font-weight: 700;
+                @media (max-width: 575.98px) {
+                    font-size: 3rem;
+                }
+            }
+            @media (max-width: 767.98px) {
+                border-radius: 0;
+                height: unset;
+                padding: 32px 0;
+            }
+        }
+        .banner_section__information {
+            width: 556px;
+            height: 88px;
+            position: absolute;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(
+                180deg,
+                lighten($color: map-get($theme-colors, primary), $amount: 20%),
+                lighten($color: map-get($theme-colors, primary), $amount: 5%)
+            );
+            border: 2px solid
+                lighten($color: map-get($theme-colors, primary), $amount: 30%);
+            border-radius: 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 16px;
+            align-items: center;
+            padding: 0 24px;
+            color: map-get($map: $theme-colors, $key: neutral-white);
+            .banner_section__info_icon {
+                font-size: 1.125rem;
+                width: 48px;
+                height: 48px;
+                background: linear-gradient(
+                    180deg,
+                    lighten(
+                        $color: map-get($theme-colors, secondary),
+                        $amount: 10%
+                    ),
+                    map-get($theme-colors, secondary)
+                );
+                border-radius: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 8px;
+            }
+            .banner_section__info_item {
+                display: flex;
+                align-items: center;
+            }
+            .banner_section__info_title {
+                margin-bottom: 4px;
+            }
+            .banner_section__info_value {
+                .amount {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    margin-right: 8px;
+                }
+                .usd-value {
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                    opacity: 0.7;
+                }
+            }
+            @media (max-width: 767.98px) {
+                position: static;
+                transform: unset;
+                width: 100%;
+                border-radius: 0 0 24px 24px;
+            }
+            @media (max-width: 575.98px) {
+                grid-template-columns: 1fr;
+                height: unset;
+                padding: 24px;
+            }
+        }
+    }
+}
+
 .banner_section {
-	height: 312px;
-	background-image: url("../images/backgroundbanner.svg");
-	background-size: cover;
-	background-position: 50%;
-	@media (max-width: 767.98px) {
-		height: unset;
-	}
-}
-
-.banner_section__wrapper {
-	display: flex;
-	justify-content: space-between;
-	@media (max-width: 767.98px) {
-		flex-direction: column;
-	}
-}
-
-.banner_section__content {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	height: 312px;
-	h2 {
-		font-size: 2rem;
-		font-weight: 700;
-		margin-bottom: 8px;
-		@media (max-width: 1024.98px) {
-			max-width: 288px;
-		}
-		@media (max-width: 767.98px) {
-			font-size: 1.5rem;
-			margin-bottom: 12px;
-		}
-	}
-	p {
-		font-size: 1rem;
-		font-weight: 500;
-		width: 650px;
-		@media (max-width: 1024.98px) {
-			width: 500px;
-		}
-		@media (max-width: 767.98px) {
-			width: unset;
-			font-size: 14px;
-			margin-bottom: 0;
-		}
-	}
-	@media (max-width: 767.98px) {
-		height: unset;
-		padding: 36px 0;
-	}
+    background-image: url("../images/backgroundbanner.svg");
+    background-size: cover;
+    background-position: 50%;
 }
 
 .banner_section__info {
-	margin-top: 36px;
-	display: flex;
-	@media (max-width: 575.98px) {
-		flex-direction: column;
-	}
+    margin-top: 36px;
+    display: flex;
+    @media (max-width: 575.98px) {
+        flex-direction: column;
+    }
 }
 
 .banner_section_info__item {
-	color: map-get($map: $theme-colors, $key: neutral-white);
-	background: linear-gradient(
-		180deg,
-		lighten($color: map-get($theme-colors, primary), $amount: 10%),
-		map-get($theme-colors, primary)
-	);
-	border-radius: 24px;
-	position: relative;
-	width: 262px;
-	height: 88px;
-	padding: 16px 24px;
-	h4 {
-		font-weight: 400;
-		margin-bottom: 0;
-	}
-	+ .banner_section_info__item {
-		margin-left: 32px;
-		@media (max-width: 575.98px) {
-			margin-left: 0;
-			margin-top: 12px;
-		}
-	}
-	.amount {
-		.value {
-			font-size: 1.5rem;
-			font-weight: 700;
-			margin-right: 8px;
-		}
-		.usd-value {
-			color: rgba(
-				$color: map-get($map: $theme-colors, $key: neutral-white),
-				$alpha: 0.8
-			);
-			font-size: 12px;
-			font-weight: 500;
-		}
-	}
-	@media (max-width: 575.98px) {
-		width: 100%;
-	}
+    color: map-get($map: $theme-colors, $key: neutral-white);
+    background: linear-gradient(
+        180deg,
+        lighten($color: map-get($theme-colors, primary), $amount: 10%),
+        map-get($theme-colors, primary)
+    );
+    border-radius: 24px;
+    position: relative;
+    width: 262px;
+    height: 88px;
+    padding: 16px 24px;
+    h4 {
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    + .banner_section_info__item {
+        margin-left: 32px;
+        @media (max-width: 575.98px) {
+            margin-left: 0;
+            margin-top: 12px;
+        }
+    }
+    .amount {
+        .value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .usd-value {
+            color: rgba(
+                $color: map-get($map: $theme-colors, $key: neutral-white),
+                $alpha: 0.8
+            );
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+    @media (max-width: 575.98px) {
+        width: 100%;
+    }
 }
 
 .banner_section__image {
-	height: 312px;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	@media (max-width: 1024.98px) {
-		display: none;
-	}
+    height: 312px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: 1024.98px) {
+        display: none;
+    }
 }
