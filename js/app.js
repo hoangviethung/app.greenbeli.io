@@ -41,10 +41,17 @@ function toggleMenuMobile(e) {
     });
 }
 
+function unlockWallet() {
+    $(".unlock-wallet").on("click", function () {
+        $(this).find("span").text("0x3F...ADFD");
+    });
+}
+
 $(function () {
     moveButtonPlayNow(window.matchMedia("(max-width: 575.98px)"));
     reponsiveMenuHeader(window.matchMedia("(max-width: 1440px)"));
     toggleMenuMobile();
+    unlockWallet();
     window
         .matchMedia("(max-width: 1440px)")
         .addEventListener("change", reponsiveMenuHeader);

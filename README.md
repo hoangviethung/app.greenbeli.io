@@ -1,7 +1,7 @@
-[![Build Status](http://runbot.odoo.com/runbot/badge/flat/1/master.svg)](https://greenbeli.io/)
-[![Tech Doc](http://img.shields.io/badge/master-docs-875A7B.svg?style=flat&colorA=8F8F8F)](https://greenbeli.io/)
-[![Help](http://img.shields.io/badge/master-help-875A7B.svg?style=flat&colorA=8F8F8F)](https://greenbeli.io/)
-[![Nightly Builds](http://img.shields.io/badge/master-nightly-875A7B.svg?style=flat&colorA=8F8F8F)](https://greenbeli.io/)
+[![Build Status](http://runbot.odoo.com/runbot/badge/flat/1/master.svg)](https://app.greenbeli.io/)
+[![Tech Doc](http://img.shields.io/badge/master-docs-875A7B.svg?style=flat&colorA=8F8F8F)](https://app.greenbeli.io/)
+[![Help](http://img.shields.io/badge/master-help-875A7B.svg?style=flat&colorA=8F8F8F)](https://app.greenbeli.io/)
+[![Nightly Builds](http://img.shields.io/badge/master-nightly-875A7B.svg?style=flat&colorA=8F8F8F)](https://app.greenbeli.io/)
 
 App GreenBeli.io
 ----
@@ -18,5 +18,5 @@ Green Beli takes great pride in successfully building a community of thousands o
 
 Getting started with Greenbeli
 -------------------------
-For a standard installation please follow the <a href="https://greenbeli.io/">Setup Template</a>
+For a standard installation please follow the <a href="https://app.greenbeli.io/">Setup Template</a>
 from the documentation.

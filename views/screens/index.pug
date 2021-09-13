@@ -9,6 +9,7 @@ block css
     link(rel="stylesheet", href="./css/index.css")
 block library-js
 block js
+    script(src="./js/index.js")
 block main
     // *** BANNER *** //
     include ../components/banner_home
@@ -69,6 +70,9 @@ block main
                             .statistics_section__harvest_action
                                 button.bt.bt--primary.bt--block Harvest All
                 .statistics_section__item_partial.right
+                    .statistics_section__unbox
+                        a(popup-to="unbox_popup" href="javascript:;")
+                            img(src="./images/chest.png", alt="CHEST")
     .top_farm_section
         .container
             .top_farm_section__wrapper
@@ -94,3 +98,5 @@ block main
                                     label Current APR
                                     .amount 380.16%
                                 a.bt.bt--primary(href="#") Farm
+    // *** POPUP UNBOX *** //
+    include ../components/unbox_popup

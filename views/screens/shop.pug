@@ -106,7 +106,8 @@ block main
                             h4.filter_block__title Star
                             .filter_block__item
                                 .input-range-stars
-                                    input(type="range" min="1" max="6" value="1" style="width:100%")
+                                    .input-range
+                                        input(type="range" min="1" max="6" value="1" style="width:100%")
                                     .stars
                                         p 1
                                         p 2
@@ -115,19 +116,19 @@ block main
                                         p 5
                                         p 6
                 .shop__main_content
-                    .total_rgbe
-                        span 1106 Items
                     .shop__filter_top
                         .left_partial
-                            .tabs_row
-                                button.bt.bt-tab-name
-                                    span All
-                                button.bt.bt-tab-name.active
-                                    span For sale
-                                button.bt.bt-tab-name
-                                    span Sold
-                                button.bt.bt-tab-name
-                                    span Blacklisted
+                            .total_rgbe
+                                span 1106 Items
+                            //- .tabs_row
+                            //-     button.bt.bt-tab-name
+                            //-         span All
+                            //-     button.bt.bt-tab-name.active
+                            //-         span For sale
+                            //-     button.bt.bt-tab-name
+                            //-         span Sold
+                            //-     button.bt.bt-tab-name
+                            //-         span Blacklisted
                         .right_partial
                             .input_group
                                 span Owned

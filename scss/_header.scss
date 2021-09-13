@@ -110,6 +110,7 @@ header.header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
     .bt {
         + .bt {
             margin-left: 8px;

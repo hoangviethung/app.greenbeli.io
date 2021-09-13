@@ -74,7 +74,7 @@
       .statistics_section__supply .details__header .price-box .price {
         font-size: 1rem;
         font-weight: 700;
-        color: #7b4425;
+        color: #bf7f53;
         margin-right: 16px; }
   .statistics_section__supply .details__item_wrapper .details__item {
     display: flex;
@@ -88,12 +88,18 @@
       margin-top: 12px; }
 
 .statistics_section__item_partial.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 24px;
   background: #f7fbf2;
   border: 1px solid rgba(102, 141, 46, 0.2);
   border-radius: 32px;
   padding: 24px;
   min-height: 350px; }
+
+.statistics_section__unbox {
+  max-width: 200px; }
 
 .statistics_section__my_grbe {
   display: grid;
@@ -221,7 +227,7 @@
   width: 40px;
   height: 40px;
   color: #ffffff;
-  background: linear-gradient(180deg, #7b4425, #a25a31);
+  background: linear-gradient(180deg, #bf7f53, #cd9b78);
   font-weight: 700;
   border-radius: 12px; }
   @media (max-width: 1199.98px) {

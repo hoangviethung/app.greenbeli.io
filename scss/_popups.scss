@@ -31,6 +31,9 @@
 .popup__header {
     border-bottom: 1px solid map-get($map: $theme-colors, $key: gray-border);
     padding: 24px 120px 24px 24px;
+    &.center {
+        padding: 24px;
+    }
 }
 
 .popup__title {
@@ -55,6 +58,12 @@
         + .bt {
             margin-left: 16px;
         }
+    }
+    &.center {
+        justify-content: center;
+    }
+    &.left {
+        justify-content: flex-start;
     }
 }
 
@@ -337,8 +346,11 @@
                         color: map-get($map: $theme-colors, $key: gray-text);
                         margin-right: 8px;
                     }
-                    &.fas.fa-dna{
-                        color: map-get($map: $theme-colors, $key: additional-blue);
+                    &.fas.fa-dna {
+                        color: map-get(
+                            $map: $theme-colors,
+                            $key: additional-blue
+                        );
                         margin-right: 8px;
                     }
                     + i {
@@ -449,6 +461,7 @@
         .item__img {
             border: 2px solid map-get($map: $theme-colors, $key: gray-border);
             border-radius: 16px;
+            transition: 0.3s all ease-in-out;
         }
         .item__id {
             font-weight: 500;
@@ -466,6 +479,91 @@
             span {
                 font-weight: 700;
             }
+        }
+        &.checked {
+            .item__img {
+                border-color: map-get($map: $theme-colors, $key: primary);
+            }
+        }
+    }
+}
+
+.unbox_popup {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: lighten(
+        $color: map-get($map: $theme-colors, $key: primary),
+        $amount: 50%
+    );
+    .popup__header {
+        border-bottom: 1px solid
+            rgba(
+                $color: map-get($map: $theme-colors, $key: primary),
+                $alpha: 0.2
+            );
+    }
+    .unbox_popup__desc {
+        margin-bottom: 16px;
+        p {
+            text-align: center;
+            font-size: 1rem;
+            @media (max-width: 575.98px) {
+                font-size: 0.875rem;
+            }
+        }
+    }
+    .unbox_popup__input {
+        h4 {
+            font-size: 1.125rem;
+            text-align: center;
+            margin-bottom: 16px;
+            @media (max-width: 575.98px) {
+                font-size: 1rem;
+            }
+        }
+        .input-main {
+            input {
+                font-size: 1.375rem;
+                width: 100%;
+                text-align: center;
+                line-height: 36px;
+                border: 0;
+                border-radius: 8px;
+            }
+        }
+        .input-percent {
+            margin-top: 24px;
+            .percent {
+                display: flex;
+                justify-content: space-between;
+                p {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    @media (max-width: 575.98px) {
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+        .result {
+            text-align: center;
+            margin-top: 32px;
+        }
+    }
+    .token-name {
+        margin: 8px 0;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        background-color: lighten(
+            $color: map-get($map: $theme-colors, $key: primary),
+            $amount: 30%
+        );
+        padding: 8px;
+        border-radius: 8px;
+        &:not(.show) {
+            display: none;
         }
     }
 }

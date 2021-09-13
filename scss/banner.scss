@@ -133,10 +133,10 @@
                 background: linear-gradient(
                     180deg,
                     lighten(
-                        $color: map-get($theme-colors, secondary),
+                        $color: map-get($theme-colors, primary-2-light),
                         $amount: 10%
                     ),
-                    map-get($theme-colors, secondary)
+                    map-get($theme-colors, primary-2-light)
                 );
                 border-radius: 100px;
                 display: flex;
