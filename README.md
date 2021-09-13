@@ -18,5 +18,5 @@ Green Beli takes great pride in successfully building a community of thousands o
 
 Getting started with Greenbeli
 -------------------------
-For a standard installation please follow the <a href="https://greenbeli.io/">Setup Tempalte</a>
+For a standard installation please follow the <a href="https://greenbeli.io/">Setup Template</a>
 from the documentation.
