@@ -1,5 +1,2 @@
-# INFORMATION
-
--   files build không cần quan tâm:
-    -   /views
-    -   /scss
+# App Greenbeli.io
+Template App Greenbeli by PUG - SASS
