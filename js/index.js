@@ -30,6 +30,7 @@ function showTokenNameUnbox() {
             input.removeClass("is-invalid");
             input.siblings(".invalid-feedback").removeClass("is-invalid");
             $(".unbox_popup .token-name").addClass("show");
+            $(".unbox_popup .successful-content").removeClass("show");
             $(".unbox_popup .loading").addClass("show");
             setTimeout(() => {
                 $(".unbox_popup .loading").removeClass("show");
