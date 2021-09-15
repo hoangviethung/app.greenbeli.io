@@ -70,9 +70,7 @@ block main
                             .statistics_section__harvest_action
                                 button.bt.bt--primary.bt--block Harvest All
                 .statistics_section__item_partial.right
-                    .statistics_section__unbox
-                        a(popup-to="unbox_popup" href="javascript:;")
-                            img(src="./images/chest.png", alt="CHEST")
+                    a.twitter-timeline(data-height='100%' data-widht="100%" href='://twitter.com/Green_Beli?ref_src=twsrc%5Etfw') Tweets by TwitterDev
     .top_farm_section
         .container
             .top_farm_section__wrapper
@@ -98,5 +96,6 @@ block main
                                     label Current APR
                                     .amount 380.16%
                                 a.bt.bt--primary(href="#") Farm
+    
     // *** POPUP UNBOX *** //
     include ../components/unbox_popup

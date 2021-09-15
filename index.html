@@ -69,6 +69,7 @@
                   </div>
                 </div>
               </div>
+              <div class="section__unbox"><a popup-to="unbox_popup" href="javascript:;"><img src="./images/chest.png" alt="CHEST"/></a></div>
             </div>
           </div>
         </section>
@@ -132,9 +133,7 @@
                   </div>
                 </div>
               </div>
-              <div class="statistics_section__item_partial right">
-                <div class="statistics_section__unbox"><a popup-to="unbox_popup" href="javascript:;"><img src="./images/chest.png" alt="CHEST"/></a></div>
-              </div>
+              <div class="statistics_section__item_partial right"><a class="twitter-timeline" data-height="100%" data-widht="100%" href="://twitter.com/Green_Beli?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a></div>
             </div>
           </div>
         </div>
@@ -221,7 +220,8 @@
               <div class="unbox_popup__input">
                 <h4>HOW MANT HEROS DO YOU WANT YO SUMMON?</h4>
                 <div class="input-main">
-                  <input type="number" value="0"/>
+                  <input class="form-control" type="number" value="0"/>
+                  <div class="invalid-feedback ta-c"></div>
                 </div>
                 <div class="input-percent">
                   <div class="input-range">
@@ -240,6 +240,8 @@
                 </div>
               </div>
               <div class="token-name">0x4e64bd2d3c...Odf21dfd6868</div>
+              <div class="loading"><i class="fas fa-circle-notch fa-spin"></i></div>
+              <div class="successful-content">Congratulations, you have successfully summoned 10 Heros</div>
             </div>
             <div class="popup__footer center">
               <button class="bt bt--shadow bt--md bt--primary">CHECKOUT</button>
@@ -253,6 +255,7 @@
     <!-- *** VENDORS JS *** //-->
     <script src="./vendors/jquery/jquery.js"></script>
     <script src="./vendors/fancybox/jquery.fancybox.js"></script>
+    <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <!-- *** JS *** //-->
     <script src="./js/app.js"></script>
     <script src="./js/index.js"></script>

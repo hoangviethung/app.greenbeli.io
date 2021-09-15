@@ -54,6 +54,10 @@
 .invalid-feedback {
     color: map-get($map: $theme-colors, $key: danger);
     font-weight: 600;
+    margin-top: 4px;
+    &:not(.is-invalid) {
+        display: none;
+    }
 }
 
 .input-group > .custom-file,

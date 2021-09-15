@@ -54,14 +54,12 @@
     }
     &.nft_home_page {
         .banner_section {
-            height: 322px;
+            padding-bottom: 24px;
             @media (max-width: 767.98px) {
-                height: unset;
-                padding-bottom: 24px;
+                padding-bottom: 16px;
             }
         }
         .banner_section__wrapper {
-            height: 322px;
             position: relative;
             @media (max-width: 767.98px) {
                 height: unset;
@@ -106,12 +104,12 @@
             }
         }
         .banner_section__information {
+            position: relative;
             width: 556px;
             height: 88px;
-            position: absolute;
-            bottom: 24px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin: 0 auto;
+            margin-top: -44px;
+            z-index: 100;
             background: linear-gradient(
                 180deg,
                 lighten($color: map-get($theme-colors, primary), $amount: 20%),
@@ -164,10 +162,9 @@
                 }
             }
             @media (max-width: 767.98px) {
-                position: static;
-                transform: unset;
                 width: 100%;
                 border-radius: 0 0 24px 24px;
+                margin-top: 0;
             }
             @media (max-width: 575.98px) {
                 grid-template-columns: 1fr;

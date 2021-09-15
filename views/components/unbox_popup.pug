@@ -12,7 +12,8 @@
             .unbox_popup__input
                 h4 HOW MANT HEROS DO YOU WANT YO SUMMON?
                 .input-main
-                    input(type="number" value="0")
+                    input.form-control(type="number" value="0")
+                    .invalid-feedback.ta-c
                 .input-percent
                     .input-range
                         input(type="range" min="1" max="5" value="1" style="width:100%")
@@ -28,5 +29,8 @@
                         | HEROES WITH 
                         b 0.20 BNB
             .token-name 0x4e64bd2d3c...Odf21dfd6868
+            .loading
+                i.fas.fa-circle-notch.fa-spin
+            .successful-content Congratulations, you have successfully summoned 10 Heros
         .popup__footer.center
             button.bt.bt--shadow.bt--md.bt--primary CHECKOUT

@@ -111,9 +111,6 @@
 
 .statistics_section__item_partial {
     &.right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 24px;
         background: lighten(
             $color: map-get($theme-colors, primary),
@@ -127,8 +124,10 @@
     }
 }
 
-.statistics_section__unbox {
-    max-width: 200px;
+.section__unbox {
+    max-width: 150px;
+    margin: 0 auto;
+    margin-top: 24px;
 }
 
 .statistics_section__my_grbe {

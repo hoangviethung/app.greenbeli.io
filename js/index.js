@@ -17,7 +17,25 @@ function fancyboxUnbox() {
 
 function showTokenNameUnbox() {
     $(".unbox_popup .popup__footer .bt--primary").on("click", function () {
-        $(".unbox_popup .token-name").addClass("show");
+        const input = $(".unbox_popup__input .input-main input");
+        if (input.val() <= 0) {
+            input.addClass("is-invalid");
+            input
+                .siblings(".invalid-feedback")
+                .addClass("is-invalid")
+                .text("Vui lòng nhập số lượng");
+            $(".unbox_popup .token-name").removeClass("show");
+            $(".unbox_popup .successful-content").removeClass("show");
+        } else {
+            input.removeClass("is-invalid");
+            input.siblings(".invalid-feedback").removeClass("is-invalid");
+            $(".unbox_popup .token-name").addClass("show");
+            $(".unbox_popup .loading").addClass("show");
+            setTimeout(() => {
+                $(".unbox_popup .loading").removeClass("show");
+                $(".unbox_popup .successful-content").addClass("show");
+            }, 3000);
+        }
     });
 }
 
