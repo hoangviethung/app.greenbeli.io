@@ -9,6 +9,140 @@ block css
     link(rel="stylesheet", href="./css/your-tree.css")
 block library-js
 block js
-    //- script(src="./js/index.js")
+    script(src="./js/your-tree.js")
 block main
     // *** BANNER *** //
+    include ../components/banner_your_tree
+    // *** YOUR MEEB *** //
+    section.your_tree_section
+        .container
+            .your_tree__filter_top
+                .left_partial
+                    .total_rgbe
+                        span 1106 Items
+                .right_partial
+                    .select__custom
+                        select
+                            option All status
+                            option Free
+                            option Farming
+                            option Selling
+            .list_products
+                a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
+                    .list_products__item.list_products__item--metal
+                        .passive
+                            span
+                                img(src="./icons/metal.png", alt="Metal")
+                        .power
+                            i.fas.fa-fist-raised
+                            span.value 4%
+                        .list_products__thumbnail
+                            .lazyload-wrapper
+                                img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
+                        .list_products__info
+                            .name GRBE#95203
+                            .detail
+                                .code ID: 433...203
+                                .rating
+                                    i.fas.fa-star
+                            .detail
+                                .status Farming
+                        .list_products__action
+                            button.bt.bt--block.bt--primary-2-light Unstake
+                a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
+                    .list_products__item.list_products__item--wood
+                        .passive
+                            span
+                                img(src="./icons/wood.png", alt="Wood")
+                        .power
+                            i.fas.fa-fist-raised
+                            span.value 10%
+                        .list_products__thumbnail
+                            .lazyload-wrapper
+                                img(src="./images/itemproductwood.png", alt="CHARACTER-WOOD")
+                        .list_products__info
+                            .name GRBE#95203
+                            .detail
+                                .code ID: 433...203
+                                .rating
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                            .detail
+                                .status Free
+                        .list_products__action
+                            button.bt.bt--block.bt--primary-2-light Breeding
+                a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
+                    .list_products__item.list_products__item--water
+                        .passive
+                            span
+                                img(src="./icons/water.png", alt="Water")
+                        .power
+                            i.fas.fa-fist-raised
+                            span.value 50%
+                        .list_products__thumbnail
+                            .lazyload-wrapper
+                                img(src="./images/itemproductwater.png", alt="CHARACTER-WATER")
+                        .list_products__info
+                            .name GRBE#95203
+                            .detail
+                                .code ID: 433...203
+                                .rating
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                            .detail
+                                .status Farming
+                        .list_products__action
+                            button.bt.bt--block.bt--primary-2-light Unstake
+                a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
+                    .list_products__item.list_products__item--fire
+                        .passive
+                            span
+                                img(src="./icons/fire.png", alt="Fire")
+                        .power
+                            i.fas.fa-fist-raised
+                            span.value 50%
+                        .list_products__thumbnail
+                            .lazyload-wrapper
+                                img(src="./images/itemproductfire.png", alt="CHARACTER-FIRE")
+                        .list_products__info
+                            .name GRBE#95203
+                            .detail
+                                .code ID: 433...203
+                                .rating
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                            .detail
+                                .status Selling
+                        .list_products__action
+                            button.bt.bt--block.bt--primary-2-light Unstake
+                a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
+                    .list_products__item.list_products__item--earth
+                        .passive
+                            span
+                                img(src="./icons/earth.png", alt="Earth")
+                        .power
+                            i.fas.fa-fist-raised
+                            span.value 50%
+                        .list_products__thumbnail
+                            .lazyload-wrapper
+                                img(src="./images/itemproductearth.png", alt="CHARACTER-EARTH")
+                        .list_products__info
+                            .name GRBE#95203
+                            .detail
+                                .code ID: 433...203
+                                .rating
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                            .detail
+                                .status Free
+                        .list_products__action
+                            button.bt.bt--block.bt--primary-2-light Breeding
+    // *** CHARACTER DETAIL POPUP *** //
+    include ../components/character_detail_your_tree_popup
