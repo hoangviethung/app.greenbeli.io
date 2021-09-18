@@ -1,20 +1,30 @@
-.overlay {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(
-		$color: map-get($map: $theme-colors, $key: neutral-black),
-		$alpha: 0.8
-	);
-	opacity: 0;
-	visibility: hidden;
-	z-index: 300;
-	transition: 0.3s all ease-in-out;
-	&.active {
-		opacity: 1;
-		visibility: visible;
-	}
+.page {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(
+            $color: map-get($map: $theme-colors, $key: neutral-black),
+            $alpha: 0.5
+        );
+        z-index: 400;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s all ease-in-out;
+    }
 }
 
+body {
+    &[style="overflow-y: hidden"] {
+        .page {
+            &:before{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

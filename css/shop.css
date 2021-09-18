@@ -91,8 +91,7 @@
   .list_products__info .detail {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px; }
+    align-items: center; }
     .list_products__info .detail .code {
       font-size: 0.75rem;
       font-weight: 400; }
@@ -100,9 +99,14 @@
       color: #ffc700; }
       .list_products__info .detail .rating i + i {
         margin-left: 4px; }
+    .list_products__info .detail .status {
+      font-weight: 500; }
+    .list_products__info .detail + .detail {
+      margin-top: 12px; }
   .list_products__info .price {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-top: 12px; }
     .list_products__info .price img {
       width: 32px;
       margin-right: 4px; }
@@ -114,6 +118,9 @@
       font-size: 0.75rem;
       font-weight: 500;
       color: #666666; }
+
+.list_products__action {
+  padding: 0 16px 16px; }
 
 .shop_section {
   padding-top: 48px;

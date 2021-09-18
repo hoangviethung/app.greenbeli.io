@@ -100,7 +100,6 @@
       .list_products__info .detail .rating i + i {
         margin-left: 4px; }
     .list_products__info .detail .status {
-      color: #3397e2;
       font-weight: 500; }
     .list_products__info .detail + .detail {
       margin-top: 12px; }

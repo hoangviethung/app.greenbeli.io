@@ -1,0 +1,53 @@
+extends ../layouts/layout
+
+block var
+    - pageTitle = "Compensation | Green Beli"
+    - pageName = "nft_compensation_page"
+block library-css
+block css
+    link(rel="stylesheet", href="./css/banner.css")
+    link(rel="stylesheet", href="./css/compensation.css")
+block library-js
+block js
+block main
+    // *** BANNER *** //
+    include ../components/banner_compensation
+    // *** COMPENSATION *** //
+    section.compensation_section
+        .container
+            .compensation_block
+                .block_head
+                    h2 COMPENSATION CLAIM
+                .block_content.claim
+                    b Compensation will be gradually release from: 
+                        span April 3rd 2021, 8:00AM UTC 
+                        | to 
+                        span  May 29th 2021, 8:00AM UTC
+                    ul
+                        li
+                            span Total compensation:
+                            span 10.0000.0000
+                        li
+                            span You have claimed:
+                            span 5.000.000
+                        li
+                            span Remaining:
+                            span 5.000.000
+                        li
+                            span Claimable:
+                            span 2.000.000
+            .compensation_block
+                .block_head
+                    h2 ESTIMATED LOSSES & COMPENSATIONS
+                .block_content.estimated
+                    ul
+                        li
+                            span Losses were calculated base on the snapshot taken at block height:
+                            span 10.0000.0000
+                        li
+                            span The calculation of the compensastion amount was exlained in the following
+                            span
+                                a(href="/", target="_blank", rel="noopener noreferrer") 5727634
+                                i.fal.fa-external-link
+                    b
+                        span Please connect to your wallet

@@ -1,44 +1,45 @@
-.page.nft_market_page .banner_section__wrapper, .page.nft_farmer_page .banner_section__wrapper, .page.nft_your_tree_page .banner_section__wrapper {
+.page.nft_market_page .banner_section__wrapper, .page.nft_farmer_page .banner_section__wrapper, .page.nft_your_tree_page .banner_section__wrapper, .page.nft_compensation_page .banner_section__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between; }
   @media (max-width: 767.98px) {
-    .page.nft_market_page .banner_section__wrapper, .page.nft_farmer_page .banner_section__wrapper, .page.nft_your_tree_page .banner_section__wrapper {
+    .page.nft_market_page .banner_section__wrapper, .page.nft_farmer_page .banner_section__wrapper, .page.nft_your_tree_page .banner_section__wrapper, .page.nft_compensation_page .banner_section__wrapper {
       align-items: flex-start;
       flex-direction: column; } }
 
 @media (max-width: 767.98px) {
-  .page.nft_market_page .banner_section, .page.nft_farmer_page .banner_section, .page.nft_your_tree_page .banner_section {
+  .page.nft_market_page .banner_section, .page.nft_farmer_page .banner_section, .page.nft_your_tree_page .banner_section, .page.nft_compensation_page .banner_section {
     height: unset; } }
 
-.page.nft_market_page .banner_section__content, .page.nft_farmer_page .banner_section__content, .page.nft_your_tree_page .banner_section__content {
+.page.nft_market_page .banner_section__content, .page.nft_farmer_page .banner_section__content, .page.nft_your_tree_page .banner_section__content, .page.nft_compensation_page .banner_section__content {
   display: flex;
   justify-content: center;
   flex-direction: column; }
-  .page.nft_market_page .banner_section__content h1, .page.nft_farmer_page .banner_section__content h1, .page.nft_your_tree_page .banner_section__content h1 {
+  .page.nft_market_page .banner_section__content h1, .page.nft_farmer_page .banner_section__content h1, .page.nft_your_tree_page .banner_section__content h1, .page.nft_compensation_page .banner_section__content h1 {
+    color: #00332c;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 8px; }
     @media (max-width: 1024.98px) {
-      .page.nft_market_page .banner_section__content h1, .page.nft_farmer_page .banner_section__content h1, .page.nft_your_tree_page .banner_section__content h1 {
+      .page.nft_market_page .banner_section__content h1, .page.nft_farmer_page .banner_section__content h1, .page.nft_your_tree_page .banner_section__content h1, .page.nft_compensation_page .banner_section__content h1 {
         max-width: 288px; } }
     @media (max-width: 767.98px) {
-      .page.nft_market_page .banner_section__content h1, .page.nft_farmer_page .banner_section__content h1, .page.nft_your_tree_page .banner_section__content h1 {
+      .page.nft_market_page .banner_section__content h1, .page.nft_farmer_page .banner_section__content h1, .page.nft_your_tree_page .banner_section__content h1, .page.nft_compensation_page .banner_section__content h1 {
         font-size: 1.5rem;
         margin-bottom: 12px; } }
-  .page.nft_market_page .banner_section__content p, .page.nft_farmer_page .banner_section__content p, .page.nft_your_tree_page .banner_section__content p {
+  .page.nft_market_page .banner_section__content p, .page.nft_farmer_page .banner_section__content p, .page.nft_your_tree_page .banner_section__content p, .page.nft_compensation_page .banner_section__content p {
     font-size: 1rem;
     font-weight: 500; }
     @media (max-width: 767.98px) {
-      .page.nft_market_page .banner_section__content p, .page.nft_farmer_page .banner_section__content p, .page.nft_your_tree_page .banner_section__content p {
+      .page.nft_market_page .banner_section__content p, .page.nft_farmer_page .banner_section__content p, .page.nft_your_tree_page .banner_section__content p, .page.nft_compensation_page .banner_section__content p {
         width: unset;
         font-size: 14px;
         margin-bottom: 0; } }
   @media (max-width: 767.98px) {
-    .page.nft_market_page .banner_section__content, .page.nft_farmer_page .banner_section__content, .page.nft_your_tree_page .banner_section__content {
+    .page.nft_market_page .banner_section__content, .page.nft_farmer_page .banner_section__content, .page.nft_your_tree_page .banner_section__content, .page.nft_compensation_page .banner_section__content {
       padding: 36px 0; } }
   @media (max-width: 575.98px) {
-    .page.nft_market_page .banner_section__content, .page.nft_farmer_page .banner_section__content, .page.nft_your_tree_page .banner_section__content {
+    .page.nft_market_page .banner_section__content, .page.nft_farmer_page .banner_section__content, .page.nft_your_tree_page .banner_section__content, .page.nft_compensation_page .banner_section__content {
       padding: 16px 0; } }
 
 .page.nft_market_page .banner_section, .page.nft_farmer_page .banner_section {
@@ -69,7 +70,7 @@
 
 .page.nft_home_page .banner_section__content {
   height: 250px;
-  background: linear-gradient(270deg, #668d2e, #82b33b 52.6%, #668d2e);
+  background: linear-gradient(270deg, #00332c, #006658 52.6%, #00332c);
   border-radius: 0 0 32px 32px;
   padding: 48px 0 84px;
   display: flex;
@@ -103,8 +104,8 @@
   margin: 0 auto;
   margin-top: -44px;
   z-index: 100;
-  background: linear-gradient(180deg, #9bc958, #74a034);
-  border: 2px solid #b2d57f;
+  background: linear-gradient(180deg, #009984, #004d42);
+  border: 2px solid #00ccb0;
   border-radius: 24px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -226,6 +227,7 @@
 
 .banner_section__image {
   height: 312px;
+  max-width: 250px;
   display: flex;
   justify-content: center;
   flex-direction: column; }

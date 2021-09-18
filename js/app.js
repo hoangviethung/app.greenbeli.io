@@ -49,11 +49,11 @@ function unlockWallet() {
 
 $(function () {
     moveButtonPlayNow(window.matchMedia("(max-width: 575.98px)"));
-    reponsiveMenuHeader(window.matchMedia("(max-width: 1440px)"));
+    reponsiveMenuHeader(window.matchMedia("(max-width: 1599.98px)"));
     toggleMenuMobile();
     unlockWallet();
     window
-        .matchMedia("(max-width: 1440px)")
+        .matchMedia("(max-width: 1599.98px)")
         .addEventListener("change", reponsiveMenuHeader);
     window
         .matchMedia("(max-width: 575.98px)")

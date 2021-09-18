@@ -13,7 +13,7 @@
 .farm_info_section__item {
   display: grid;
   color: #ffffff;
-  background: linear-gradient(180deg, #668d2e, #82b33b);
+  background: linear-gradient(180deg, #00332c, #006658);
   border-radius: 24px;
   padding: 24px; }
   .farm_info_section__item.deposited {
@@ -136,11 +136,23 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 16px 110px 16px 40px; }
+    padding: 16px 110px 8px 40px; }
     @media (max-width: 1199.98px) {
       .farming__item .panel__header {
         flex-direction: column;
         padding: 16px; } }
+  .farming__item .panel_information_lock {
+    padding: 0 110px 16px 40px;
+    margin-left: 76px; }
+    .farming__item .panel_information_lock h3 {
+      font-size: 0.875rem;
+      font-weight: 500; }
+      .farming__item .panel_information_lock h3 span {
+        font-weight: 700;
+        color: #668d2e; }
+    .farming__item .panel_information_lock p span {
+      font-weight: 700;
+      color: #668d2e; }
   .farming__item .panel_header__multiplier,
   .farming__item .panel_header__expand {
     display: flex;

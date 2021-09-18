@@ -19,8 +19,8 @@
     color: map-get($theme-colors, $key: neutral-white);
     background: linear-gradient(
         180deg,
-        map-get($theme-colors, primary),
-        lighten($color: map-get($theme-colors, primary), $amount: 10%)
+        map-get($theme-colors, primary-dark),
+        lighten($color: map-get($theme-colors, primary-dark), $amount: 10%)
     );
     border-radius: 24px;
     padding: 24px;
@@ -194,10 +194,28 @@
         height: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 16px 110px 16px 40px;
+        padding: 16px 110px 8px 40px;
         @media (max-width: 1199.98px) {
             flex-direction: column;
             padding: 16px;
+        }
+    }
+    .panel_information_lock {
+        padding: 0 110px 16px 40px;
+        margin-left: 76px;
+        h3 {
+            font-size: 0.875rem;
+            font-weight: 500;
+            span {
+                font-weight: 700;
+                color: map-get($map: $theme-colors, $key: primary);
+            }
+        }
+        p{
+            span {
+                font-weight: 700;
+                color: map-get($map: $theme-colors, $key: primary);
+            }
         }
     }
     .panel_header__multiplier,

@@ -1,0 +1,93 @@
+@import "_variable";
+
+.compensation_section {
+    padding: 44px 0;
+    @media (max-width: 767.98px) {
+        padding: 16px 0;
+    }
+}
+
+.compensation_block {
+    background: lighten($color: map-get($theme-colors, primary), $amount: 60%);
+    border: 1px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
+    border-radius: 32px;
+    .block_head {
+        padding: 24px;
+        position: relative;
+        border-bottom: 1px solid
+            rgba($color: map-get($theme-colors, primary), $alpha: 0.1);
+        h2 {
+            font-size: 1.125rem;
+            @media (max-width: 575.98px) {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 575.98px) {
+            padding: 16px;
+        }
+    }
+    .block_content {
+        padding: 24px;
+        li {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            span {
+                display: inline-block;
+                + span {
+                    color: map-get($map: $theme-colors, $key: primary-light);
+                    margin-left: 8px;
+                    font-weight: 500;
+                }
+                a {
+                    color: inherit;
+                    text-decoration: underline;
+                    ~ i {
+                        margin-left: 4px;
+                    }
+                }
+            }
+            + li {
+                margin-top: 8px;
+            }
+        }
+        b {
+            font-weight: 600;
+            span {
+                color: map-get($map: $theme-colors, $key: secondary);
+            }
+        }
+        &.claim {
+            ul {
+                margin-top: 16px;
+            }
+            li {
+                span {
+                    &:first-child {
+                        flex: 0 0 150px;
+                        max-width: 150px;
+                    }
+                    &:last-child {
+                        flex-basis: 0;
+                        flex-grow: 1;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        &.estimated {
+            ul {
+                margin-bottom: 16px;
+            }
+        }
+        @media (max-width: 575.98px) {
+            padding: 16px;
+        }
+    }
+    + .compensation_block {
+        margin-top: 24px;
+    }
+    @media (max-width: 575.98px) {
+        border-radius: 16px;
+    }
+}

@@ -184,7 +184,7 @@
             }
         }
         .status {
-            color: map-get($map: $theme-colors, $key: primary-2-light);
+            color: map-get($map: $theme-colors, $key: primary-light);
             font-weight: 500;
         }
         + .detail {

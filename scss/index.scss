@@ -107,6 +107,10 @@
             }
         }
     }
+    @media (max-width: 575.98px) {
+        padding: 16px;
+        border-radius: 24px;
+    }
 }
 
 .statistics_section__item_partial {
@@ -121,13 +125,30 @@
         border-radius: 32px;
         padding: 24px;
         min-height: 350px;
+        @media (max-width: 575.98px) {
+            padding: 16px;
+            border-radius: 24px;
+        }
     }
 }
 
 .section__unbox {
-    max-width: 150px;
+    max-width: 250px;
     margin: 0 auto;
     margin-top: 24px;
+    padding: 24px 48px;
+    background-color: rgba(
+        $color: map-get($map: $theme-colors, $key: neutral-black),
+        $alpha: 0.1
+    );
+    border-radius: 24px;
+    p {
+        color: map-get($theme-colors, secondary);
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 8px;
+    }
 }
 
 .statistics_section__my_grbe {
@@ -143,6 +164,10 @@
             rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
         border-radius: 32px;
         padding: 24px;
+        @media (max-width: 575.98px) {
+            padding: 16px;
+            border-radius: 24px;
+        }
     }
     .statistics_section__grbe_in_wallet {
         display: flex;
@@ -235,6 +260,9 @@
     border: 1px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
     box-sizing: border-box;
     border-radius: 32px;
+    @media (max-width: 575.98px) {
+        border-radius: 24px;
+    }
 }
 
 .top_farm_section__content_top_item {
@@ -244,6 +272,9 @@
     position: relative;
     border-bottom: 1px solid
         rgba($color: map-get($theme-colors, primary), $alpha: 0.1);
+    @media (max-width: 575.98px) {
+        padding: 16px;
+    }
 }
 
 .top_farm_section__item_logos {
