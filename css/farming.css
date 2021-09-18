@@ -413,24 +413,24 @@
       font-weight: 500; }
       .farming__item .liquidity > a + a {
         margin-left: 24px; }
-  .farming__item .expand_details__stake_meeb {
+  .farming__item .expand_details__stake_grbe {
     padding: 20px 30px; }
-    .farming__item .expand_details__stake_meeb label {
+    .farming__item .expand_details__stake_grbe label {
       font-size: 1rem;
       font-weight: 500;
       margin-bottom: 16px;
       display: block; }
       @media (max-width: 767.98px) {
-        .farming__item .expand_details__stake_meeb label {
+        .farming__item .expand_details__stake_grbe label {
           margin-bottom: 8px; } }
-    .farming__item .expand_details__stake_meeb .description {
+    .farming__item .expand_details__stake_grbe .description {
       opacity: 0.7;
       margin-bottom: 16px;
       font-weight: 400; }
       @media (max-width: 767.98px) {
-        .farming__item .expand_details__stake_meeb .description {
+        .farming__item .expand_details__stake_grbe .description {
           margin-bottom: 8px; } }
-    .farming__item .expand_details__stake_meeb .thumbnail {
+    .farming__item .expand_details__stake_grbe .thumbnail {
       width: 130px;
       height: 130px;
       background: rgba(61, 62, 64, 0.1);
@@ -440,28 +440,28 @@
       justify-content: center;
       align-items: center;
       margin-right: 20px; }
-      .farming__item .expand_details__stake_meeb .thumbnail img {
+      .farming__item .expand_details__stake_grbe .thumbnail img {
         filter: grayscale(1); }
       @media (max-width: 360px) {
-        .farming__item .expand_details__stake_meeb .thumbnail {
+        .farming__item .expand_details__stake_grbe .thumbnail {
           margin-right: 0;
           margin-bottom: 20px; } }
-    .farming__item .expand_details__stake_meeb .select_rgbe {
+    .farming__item .expand_details__stake_grbe .select_rgbe {
       display: flex;
       align-items: center; }
-      .farming__item .expand_details__stake_meeb .select_rgbe .info p {
+      .farming__item .expand_details__stake_grbe .select_rgbe .info p {
         color: #e47900;
         display: flex;
         align-items: center;
         font-weight: 500;
         margin-bottom: 20px; }
-        .farming__item .expand_details__stake_meeb .select_rgbe .info p > i {
+        .farming__item .expand_details__stake_grbe .select_rgbe .info p > i {
           margin-right: 8px; }
       @media (max-width: 360px) {
-        .farming__item .expand_details__stake_meeb .select_rgbe {
+        .farming__item .expand_details__stake_grbe .select_rgbe {
           flex-direction: column; } }
     @media (max-width: 767.98px) {
-      .farming__item .expand_details__stake_meeb {
+      .farming__item .expand_details__stake_grbe {
         padding: 12px 16px 20px; } }
   .farming__item .expand_details__right_partial {
     width: 222px;
