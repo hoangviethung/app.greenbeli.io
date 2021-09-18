@@ -44,7 +44,8 @@
       .compensation_block .block_content b span {
         color: #bf7f53; }
     .compensation_block .block_content.claim ul {
-      margin-top: 16px; }
+      margin-top: 16px;
+      margin-bottom: 16px; }
     .compensation_block .block_content.claim li span:first-child {
       flex: 0 0 150px;
       max-width: 150px; }
