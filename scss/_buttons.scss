@@ -32,6 +32,28 @@
             border: 1px solid map-get($map: $theme-colors, $key: primary);
         }
     }
+    &--primary-dark {
+        color: map-get($map: $theme-colors, $key: neutral-white);
+        background-color: map-get($map: $theme-colors, $key: primary-dark);
+        &.bt--shadow {
+            box-shadow: 0 6px
+                darken(
+                    $color: map-get($map: $theme-colors, $key: primary-dark),
+                    $amount: 5%
+                );
+            &:active {
+                box-shadow: 0 4px
+                    darken(
+                        $color: map-get($map: $theme-colors, $key: primary-dark),
+                        $amount: 10%
+                    );
+            }
+        }
+        &.bt--outline {
+            color: map-get($map: $theme-colors, $key: primary-dark);
+            border: 1px solid map-get($map: $theme-colors, $key: primary-dark);
+        }
+    }
     &--primary-light {
         color: map-get($map: $theme-colors, $key: neutral-white);
         background-color: map-get($map: $theme-colors, $key: primary-light);

@@ -1133,6 +1133,16 @@ body[style="overflow-y: hidden"] .page:before {
     .bt--primary.bt--outline {
       color: #668d2e;
       border: 1px solid #668d2e; }
+  .bt--primary-dark {
+    color: #ffffff;
+    background-color: #00332c; }
+    .bt--primary-dark.bt--shadow {
+      box-shadow: 0 6px #001a16; }
+      .bt--primary-dark.bt--shadow:active {
+        box-shadow: 0 4px black; }
+    .bt--primary-dark.bt--outline {
+      color: #00332c;
+      border: 1px solid #00332c; }
   .bt--primary-light {
     color: #ffffff;
     background-color: #3397e2; }

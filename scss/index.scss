@@ -1,9 +1,9 @@
 @import "_variable";
 
 .statistics_section {
-    padding-top: 44px;
+    padding: 44px 0;
     @media (max-width: 767.98px) {
-        padding-top: 16px;
+        padding: 16px 0;
     }
 }
 
@@ -153,7 +153,7 @@
 
 .statistics_section__my_grbe {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 16px;
     .statistics_section__wallet {
         background: lighten(
