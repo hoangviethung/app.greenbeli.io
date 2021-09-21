@@ -34,8 +34,16 @@ function checkedStakeYourRGBE() {
     });
 }
 
+function activePercent() {
+    $(".farming__item .select-percent span").on("click", function () {
+        $(this).parents(".farming__item").find("span").removeClass("active");
+        $(this).addClass("active");
+    });
+}
+
 $(function () {
     showFarmingItemDetail();
     fancyboxStakeYourRGBE();
     checkedStakeYourRGBE();
+    activePercent();
 });

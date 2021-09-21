@@ -1,0 +1,29 @@
+extends ../layouts/layout
+
+block var
+    - pageTitle = "Home | Green Beli"
+    - pageName = "nft_home_page"
+block library-css
+block css
+    link(rel="stylesheet", href="./css/comming-soon.css")
+block library-js
+block js
+block main
+    section.comming-soon
+        .background
+            img(src="./images/comming-soon.png", alt="COMING-SOON")
+        .block-content
+            h1.title-comming-soon COUNTDOWN TO FARM
+            .count-down
+                .item
+                    span days
+                    p 06
+                .item
+                    span hours
+                    p 24
+                .item
+                    span minutes
+                    p 23
+                .item
+                    span secons
+                    p 45

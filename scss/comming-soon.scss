@@ -1,0 +1,86 @@
+@import "_variable";
+
+.comming-soon {
+    position: relative;
+    height: calc(100vh - 56px - 189px);
+    overflow: hidden;
+    .background {
+        height: 100%;
+        width: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+    .block-content {
+        position: absolute;
+        left: 10%;
+        top: 30%;
+        transform: translateY(-50%);
+        @media (max-width: 767.98px) {
+            top: 20%;
+            background-color: rgba(
+                $color: map-get($map: $theme-colors, $key: neutral-black),
+                $alpha: 0.5
+            );
+            padding: 24px;
+            border-radius: 16px;
+        }
+        @media (max-width: 575.98px) {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+        }
+    }
+    .title-comming-soon {
+        color: map-get($map: $theme-colors, $key: primary-dark);
+        font-size: 2.75rem;
+        margin-bottom: 16px;
+        @media (max-width: 767.98px) {
+            font-size: 2rem;
+            color: map-get($map: $theme-colors, $key: neutral-white);
+        }
+        @media (max-width: 575.98px) {
+            font-size: 1.125rem;
+            text-align: center;
+        }
+    }
+    .count-down {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -16px;
+        .item {
+            padding: 0 16px;
+            text-align: center;
+            span {
+                font-size: 1.125rem;
+                @media (max-width: 767.98px) {
+                    font-size: 1rem;
+                }
+            }
+            p {
+                font-size: 2.75rem;
+                font-weight: 600;
+                @media (max-width: 767.98px) {
+                    font-size: 2rem;
+                }
+                @media (max-width: 575.98px) {
+                    font-size: 1.125rem;
+                }
+            }
+            @media (max-width: 767.98px) {
+                color: map-get($map: $theme-colors, $key: neutral-white);
+            }
+            @media (max-width: 575.98px) {
+                padding: 0 8px;
+            }
+        }
+        @media (max-width: 575.98px) {
+            margin: 0 -8px;
+            justify-content: center;
+        }
+    }
+}
