@@ -28,6 +28,7 @@ function moveButtonPlayNow(e) {
     } else {
         prependTo($(".header__menu .bt--secondary"), $(".header__info"));
     }
+    setVariableStyleNavMobile();
 }
 
 function toggleMenuMobile(e) {
@@ -47,6 +48,13 @@ function unlockWallet() {
     });
 }
 
+function setVariableStyleNavMobile() {
+    $(".header__menu").attr("style", `--height-header: ${getHeightHeader()}px`);
+}
+function getHeightHeader() {
+    return $("header.header").outerHeight();
+}
+
 $(function () {
     moveButtonPlayNow(window.matchMedia("(max-width: 575.98px)"));
     reponsiveMenuHeader(window.matchMedia("(max-width: 1599.98px)"));
@@ -58,4 +66,7 @@ $(function () {
     window
         .matchMedia("(max-width: 575.98px)")
         .addEventListener("change", moveButtonPlayNow);
+    $(window).on("load", function () {
+        setVariableStyleNavMobile();
+    });
 });
