@@ -68,6 +68,9 @@
                 @media (max-width: 1024.98px) {
                     width: 500px;
                 }
+                @media (max-width: 575.98px) {
+                    width: unset;
+                }
             }
             @media (max-width: 767.98px) {
                 height: unset;

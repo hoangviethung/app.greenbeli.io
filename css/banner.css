@@ -55,6 +55,9 @@
     @media (max-width: 1024.98px) {
       .page.nft_market_page .banner_section__content p, .page.nft_farmer_page .banner_section__content p {
         width: 500px; } }
+    @media (max-width: 575.98px) {
+      .page.nft_market_page .banner_section__content p, .page.nft_farmer_page .banner_section__content p {
+        width: unset; } }
   @media (max-width: 767.98px) {
     .page.nft_market_page .banner_section__content, .page.nft_farmer_page .banner_section__content {
       height: unset; } }
