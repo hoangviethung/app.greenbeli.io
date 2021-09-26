@@ -102,7 +102,7 @@
   align-items: center; }
   .filter_section__left_partial .tabs_row {
     background-color: rgba(102, 141, 46, 0.2);
-    border-radius: 100px;
+    border-radius: 0.22rem;
     margin-right: 24px; }
     .filter_section__left_partial .tabs_row .tab-active {
       color: #ffffff;
@@ -143,7 +143,7 @@
 .farming__item {
   border: 1px solid rgba(102, 141, 46, 0.2);
   background: #f7fbf2;
-  border-radius: 32px; }
+  border-radius: 8px; }
   .farming__item.active .panel_header__expand {
     transform: translateY(-50%) rotate(180deg); }
     @media (max-width: 1199.98px) {
@@ -175,7 +175,8 @@
     align-items: center;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    z-index: 100; }
   .farming__item .panel_header__multiplier {
     width: 40px;
     height: 40px;
@@ -183,7 +184,7 @@
     background: linear-gradient(180deg, #bf7f53, #cd9b78);
     font-weight: 700;
     left: -20px;
-    border-radius: 12px; }
+    border-radius: 0.22rem; }
     @media (max-width: 1199.98px) {
       .farming__item .panel_header__multiplier {
         top: 24px;
@@ -281,7 +282,7 @@
     height: 24px;
     color: #ffffff;
     background: rgba(102, 141, 46, 0.5);
-    border-radius: 5px;
+    border-radius: 0.22rem;
     transition: transform 0.3s ease-in-out; }
     @media (max-width: 1199.98px) {
       .farming__item .panel_header__expand {
@@ -337,7 +338,7 @@
     display: flex;
     background: #ffffff;
     box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.16);
-    border-radius: 24px; }
+    border-radius: 0.22rem; }
   .farming__item .expand_details__left_partial {
     width: 808px; }
     @media (max-width: 1199.98px) {
@@ -364,7 +365,7 @@
     display: inline-flex;
     align-items: center;
     padding: 8px 16px;
-    border-radius: 16px 16px 0 0; }
+    border-radius: 0.22rem 0.22rem 0 0; }
     .farming__item .tabs_nav__item.active {
       background-color: rgba(102, 141, 46, 0.2); }
   .farming__item .tabs_content {
@@ -413,7 +414,7 @@
       .farming__item .form_wrapper > .select-percent > span {
         height: 36px;
         background-color: rgba(102, 141, 46, 0.1);
-        border-radius: 12px;
+        border-radius: 0.22rem;
         font-weight: 500;
         display: flex;
         justify-content: center;

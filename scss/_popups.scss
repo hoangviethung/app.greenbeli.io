@@ -455,6 +455,9 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 16px;
+        @media (max-width: 575.98px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
     .your_rgbe__item {
         cursor: pointer;

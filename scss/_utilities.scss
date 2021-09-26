@@ -21,7 +21,7 @@
 body {
     &[style="overflow-y: hidden"] {
         .page {
-            &:before{
+            &:before {
                 opacity: 1;
                 visibility: visible;
             }
