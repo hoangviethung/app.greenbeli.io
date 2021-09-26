@@ -1,3 +1,66 @@
+class Tab {
+    constructor(selector) {
+        this.selector = document.querySelector(selector);
+        if (this.selector) {
+            this.navigationItems = Array.from(
+                this.selector.querySelectorAll("[toggle-for]"),
+            );
+            this.contentList = Array.from(
+                this.selector.querySelectorAll("[toggle-id]"),
+            );
+            this.init();
+        }
+    }
+
+    changeTabWhenClicked() {
+        this.navigationItems.forEach((element, index) => {
+            element.addEventListener("click", (e) => {
+                e.preventDefault();
+                const tabTarget = element.attributes["toggle-for"].value;
+                const targetDOM = Array.from(
+                    this.selector.querySelectorAll(
+                        `[toggle-id='${tabTarget}']`,
+                    ),
+                );
+                this.navigationItems.forEach((eleClicked, eleClickedIndex) => {
+                    if (eleClickedIndex != index) {
+                        eleClicked.classList.remove("active");
+                    }
+                });
+                this.contentList.forEach((tabContentElement) => {
+                    if (
+                        tabContentElement.attributes["toggle-id"].value !=
+                        tabTarget
+                    ) {
+                        tabContentElement.style.display = "none";
+                        tabContentElement.classList.remove("show");
+                    }
+                });
+                element.classList.add("active");
+                targetDOM.forEach((item) => {
+                    item.style.display = "block";
+                });
+                setTimeout(() => {
+                    targetDOM.forEach((item) => {
+                        item.classList.add("show");
+                    });
+                }, 50);
+            });
+        });
+    }
+
+    activeFirstTab() {
+        if (this.navigationItems.length > 0) {
+            this.navigationItems[0].click();
+        }
+    }
+
+    init() {
+        this.changeTabWhenClicked();
+        this.activeFirstTab();
+    }
+}
+
 function showFarmingItemDetail() {
     $(".farming__item .collapse_header").on("click", function (e) {
         e.preventDefault();
@@ -46,4 +109,6 @@ $(function () {
     fancyboxStakeYourRGBE();
     checkedStakeYourRGBE();
     activePercent();
+    const TabLiquidityEx1 = new Tab(".item__liquidity[ex-1] .tabs_container");
+    const TabLiquidityEx2 = new Tab(".item__liquidity[ex-2] .tabs_container");
 });

@@ -72,24 +72,24 @@
           <div class="container">
             <div class="farm_info_section__wrapper">
               <div class="farm_info_section__item deposited">
-                <div class="deposited__item">
+                <div class="block">
                   <h4>You deposited</h4><span>$0.0</span>
                 </div>
-                <div class="deposited__item">
+                <div class="block">
                   <h4>Pending to harvest</h4>
-                  <div class="harvest"><span>0</span>
-                    <div class="harvest__action">
-                      <button class="bt bt--secondary" disable="disable">Harvest All</button>
-                    </div>
+                  <div class="action"><span>0</span>
+                    <button class="bt bt--secondary" disable="disable">Harvest All</button>
                   </div>
                 </div>
               </div>
-              <div class="farm_info_section__item wallet">
-                <div class="wallet__title">
-                  <h4>GRBE in wallet</h4><a href="https://polygonscan.com/address/null/transactions" target="target" rel="noreferrer"><i class="fal fa-external-link-square"></i></a><span class="add-metamask"><img src="./images/addmetamask.svg" alt="METAMASK"/></span>
+              <div class="farm_info_section__item">
+                <div class="block">
+                  <h4>GRBE in wallet</h4>
+                  <div class="wallet-value"><span>0</span><span class="usd-value">~$0</span></div>
                 </div>
-                <div class="wallet__balance"><span>0</span><span class="usd-value">~$0</span>
-                  <div class="buy_grbe"><a class="bt bt--secondary" href="https://exchange.polydex.fi/swap?inputCurrency=0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174&amp;outputCurrency=0x64aFDF9e28946419E325d801Fb3053d8B8FFdC23" target="_blank" rel="noreferrer">Buy GRBE</a></div>
+                <div class="block">
+                  <h4>Click to harvest</h4>
+                  <div class="action"><a class="bt bt--secondary" href="#" target="_blank" rel="noreferrer">Buy GRBE</a></div>
                 </div>
               </div>
             </div>
@@ -135,32 +135,37 @@
               <div class="farming__item">
                 <div class="collapse_header">
                   <div class="panel__header">
-                    <div class="panel_header__multiplier">20X</div>
-                    <div class="panel_header__content--left">
-                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span><span class="panel_header__logo--right"><img src="./icons/busd.png" alt="busd"/></span></div>
-                      <div class="panel_header__token_info">
-                        <h4 class="panel_header__token_name"><span>GRBE/busd PLP</span></h4>
-                        <div class="wrapper"><span>Earn GRBE</span><span>Deposit Fee 0%</span></div>
+                    <div class="panel_header__content--top">
+                      <div class="content--top__infomation">
+                        <div class="infomation__logos"><span class="logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span><span class="logo--right"><img src="./icons/busd.png" alt="busd"/></span></div>
+                        <div class="infomation__content">
+                          <h4><span>GRBE-BUSD</span></h4>
+                          <div>
+                            <p>Earn GRBE</p>
+                            <p>Deposit Fee 0%</p>
+                          </div>
+                        </div>
                       </div>
+                      <div class="content--top__multiplier">20X</div>
                     </div>
-                    <div class="panel_header__content--right">
-                      <div class="panel_header__info_item">
+                    <div class="panel_header__content--bottom">
+                      <div class="content--bottom__item">
                         <label>Earned</label>
                         <div class="values"><span>0.000</span><span class="usd-value">~$0.00</span></div>
                       </div>
-                      <div class="panel_header__info_item">
+                      <div class="content--bottom__item">
                         <label>Deposited</label>
                         <div class="values"><span>0.000</span><span class="usd-value">~$0.00</span></div>
                       </div>
-                      <div class="panel_header__info_item">
+                      <div class="content--bottom__item">
                         <label>GRBE boosted</label>
                         <div class="values"><span class="nft"><img src="./icons/boot.png" alt="NFT-SMALL"/></span><span class="fire txt-orange"><i class="fas fa-fist-raised"></i></span><span class="txt-orange">0%</span></div>
                       </div>
-                      <div class="panel_header__info_item">
+                      <div class="content--bottom__item">
                         <label>Total APR</label>
                         <div class="values"><span>361.11%</span><span><i class="fas fa-exclamation-circle"></i></span></div>
                       </div>
-                      <div class="panel_header__info_item">
+                      <div class="content--bottom__item">
                         <label>TVL</label>
                         <div class="values"><span>$2.03M</span></div>
                       </div>
@@ -171,72 +176,67 @@
                 <div class="collapse_content">
                   <div class="collapse_content__wrapper">
                     <div class="expand_details">
-                      <div class="expand_details__left_partial">
-                        <div class="expand_details__actions">
-                          <div class="expand_details__actions_wrapper">
-                            <div class="tabs_container">
-                              <div class="tabs_nav">
-                                <div class="tabs_nav__item active">
-                                  <div class="tabs_nav__bt">Deposit</div>
-                                </div>
-                                <div class="tabs_nav__item">
-                                  <div class="tabs_nav__bt">Withdraw</div>
-                                </div>
+                      <div class="expand_details__item">
+                        <div class="item__liquidity" ex-1="ex-1">
+                          <div class="tabs_container">
+                            <div class="tabs_nav">
+                              <div class="tabs_nav__item" toggle-for="deposit">
+                                <div class="tabs_nav__bt">Deposit</div>
                               </div>
-                              <div class="tabs_content_holder">
-                                <div class="tabs_content tabs_content_top">
-                                  <div class="tabs_tabpane tabs_tabpane__active">
-                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
-                                      <div class="form_wrapper">
-                                        <div class="input_group">
-                                          <input class="form-control" value="1000" type="number" placeholder="Amount"/><span>LP</span>
-                                        </div>
-                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
-                                        <div class="submit">
-                                          <button class="bt bt--primary bt--block">Approve</button>
-                                        </div>
-                                      </div>
-                                      <div class="liquidity"><a target="_blank" rel="noreferrer" href="https://exchange.polydex.fi/add/0x606A082820aEAEfD267d0e41955B79fAE18c9DE2">Add liquidity</a><a class="txt-danger" target="_blank" rel="noreferrer" href="https://exchange.polydex.fi/remove/0x606A082820aEAEfD267d0e41955B79fAE18c9DE2">Remove liquidity</a></div>
-                                    </div>
-                                  </div>
-                                  <!-- TAB HIDDEN => IF DIV HAS CLASS ".tabs_tabpane__active" WILL SHOW-->
-                                  <div class="tabs_tabpane">
-                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
-                                      <div class="form_wrapper">
-                                        <div class="input_group">
-                                          <input class="form-control" value="1000" type="number" placeholder="Amount"/><span>LP</span>
-                                        </div>
-                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
-                                        <div class="actions">
-                                          <button class="bt bt--primary bt--outline">Approve</button>
-                                          <button class="bt bt--primary bt--outline">Approve</button>
-                                        </div>
-                                      </div>
-                                      <div class="liquidity"><a target="_blank" rel="noreferrer" href="https://exchange.polydex.fi/add/0x606A082820aEAEfD267d0e41955B79fAE18c9DE2">Add liquidity</a><a class="txt-danger" target="_blank" rel="noreferrer" href="https://exchange.polydex.fi/remove/0x606A082820aEAEfD267d0e41955B79fAE18c9DE2">Remove liquidity</a></div>
-                                    </div>
-                                  </div>
-                                </div>
+                              <div class="tabs_nav__item" toggle-for="withdraw">
+                                <div class="tabs_nav__bt">Withdraw</div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="expand_details__stake_grbe">
-                          <label>Your RGBE</label>
-                          <p class="description">Stake RGBE to boost your farm</p>
-                          <div class="select_rgbe">
-                            <div class="thumbnail"><img src="./images/monsterplaceholder.svg" alt=""/></div>
-                            <div class="info">
-                              <p><i class="fas fa-fist-raised"></i><span>Boosted: ---</span></p>
-                              <button class="bt bt--primary bt--outline" popup-to="stake_your_rgbe_popup" href="javascript:;">Stake</button>
+                            <div class="tabs_content_holder">
+                              <div class="tabs_content tabs_content_top">
+                                <div class="tabs_tabpane" toggle-id="deposit">
+                                  <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
+                                    <div class="form_wrapper">
+                                      <div class="input_group">
+                                        <input class="form-control" value="1000" type="number" placeholder="Amount"/><span>LP</span>
+                                      </div>
+                                      <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+                                      <div class="submit">
+                                        <button class="bt bt--primary bt--block">Approve</button>
+                                      </div>
+                                    </div>
+                                    <div class="liquidity"><a target="_blank" rel="noreferrer" href="#">Add liquidity</a><a class="txt-danger" target="_blank" rel="noreferrer" href="#">Remove liquidity</a></div>
+                                  </div>
+                                </div>
+                                <div class="tabs_tabpane" toggle-id="withdraw">
+                                  <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
+                                    <div class="form_wrapper">
+                                      <div class="input_group">
+                                        <input class="form-control" value="1000" type="number" placeholder="Amount"/><span>LP</span>
+                                      </div>
+                                      <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+                                      <div class="actions">
+                                        <button class="bt bt--orange bt--outline bt--block">Withdraw</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="expand_details__right_partial">
-                        <label>Earned</label>
-                        <p class="amount"><span>0.000</span><img src="./icons/grbe.png" alt="GRBE"/></p><span class="usd-value">~$0.00</span>
-                        <div class="harvest">
-                          <button class="bt bt--primary" disable="disable">Harvest</button>
+                      <div class="expand_details__item">
+                        <div class="item__stake_grbe">
+                          <label>Your RGBE</label>
+                          <p class="description">Stake GRBE to boost your farm</p>
+                          <div class="select_rgbe">
+                            <div class="thumbnail" popup-to="stake_your_rgbe_popup" href="javascript:;"><img src="./images/greenbieplaceholder.png" alt=""/>
+                              <p>Click to Stake</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item__earned">
+                          <label>Earned</label>
+                          <p class="amount"><span>0.000</span><span class="usd-value">~$0.00</span><img src="./icons/grbe.png" alt="GRBE"/></p>
+                          <div class="actions">
+                            <button class="bt bt--primary" disable="disable">Harvest</button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -246,32 +246,37 @@
               <div class="farming__item">
                 <div class="collapse_header">
                   <div class="panel__header">
-                    <div class="panel_header__multiplier">20X</div>
-                    <div class="panel_header__content--left">
-                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span><span class="panel_header__logo--right"><img src="./icons/busd.png" alt="busd"/></span></div>
-                      <div class="panel_header__token_info">
-                        <h4 class="panel_header__token_name"><span>GRBE/busd PLP</span></h4>
-                        <div class="wrapper"><span>Earn GRBE</span><span>Deposit Fee 0%</span></div>
+                    <div class="panel_header__content--top">
+                      <div class="content--top__infomation">
+                        <div class="infomation__logos"><span class="logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span></div>
+                        <div class="infomation__content">
+                          <h4><span>GRBE-BUSD</span></h4>
+                          <div>
+                            <p>Earn GRBE</p>
+                            <p>Deposit Fee 0%</p>
+                          </div>
+                        </div>
                       </div>
+                      <div class="content--top__multiplier">20X</div>
                     </div>
-                    <div class="panel_header__content--right">
-                      <div class="panel_header__info_item">
+                    <div class="panel_header__content--bottom">
+                      <div class="content--bottom__item">
                         <label>Earned</label>
                         <div class="values"><span>0.000</span><span class="usd-value">~$0.00</span></div>
                       </div>
-                      <div class="panel_header__info_item">
+                      <div class="content--bottom__item">
                         <label>Deposited</label>
                         <div class="values"><span>0.000</span><span class="usd-value">~$0.00</span></div>
                       </div>
-                      <div class="panel_header__info_item">
+                      <div class="content--bottom__item">
                         <label>GRBE boosted</label>
                         <div class="values"><span class="nft"><img src="./icons/boot.png" alt="NFT-SMALL"/></span><span class="fire txt-orange"><i class="fas fa-fist-raised"></i></span><span class="txt-orange">0%</span></div>
                       </div>
-                      <div class="panel_header__info_item">
+                      <div class="content--bottom__item">
                         <label>Total APR</label>
                         <div class="values"><span>361.11%</span><span><i class="fas fa-exclamation-circle"></i></span></div>
                       </div>
-                      <div class="panel_header__info_item">
+                      <div class="content--bottom__item">
                         <label>TVL</label>
                         <div class="values"><span>$2.03M</span></div>
                       </div>
@@ -282,46 +287,41 @@
                 <div class="collapse_content">
                   <div class="collapse_content__wrapper">
                     <div class="expand_details">
-                      <div class="expand_details__left_partial">
-                        <div class="expand_details__actions">
-                          <div class="expand_details__actions_wrapper">
-                            <div class="tabs_container">
-                              <div class="tabs_nav">
-                                <div class="tabs_nav__item">
-                                  <div class="tabs_nav__bt">Deposit</div>
-                                </div>
-                                <div class="tabs_nav__item active">
-                                  <div class="tabs_nav__bt">Withdraw</div>
-                                </div>
+                      <div class="expand_details__item">
+                        <div class="item__liquidity" ex-2="ex-2">
+                          <div class="tabs_container">
+                            <div class="tabs_nav">
+                              <div class="tabs_nav__item" toggle-for="deposit">
+                                <div class="tabs_nav__bt">Deposit</div>
                               </div>
-                              <div class="tabs_content_holder">
-                                <div class="tabs_content tabs_content_top">
-                                  <!-- TAB HIDDEN => IF DIV HAS CLASS ".tabs_tabpane__active" WILL SHOW-->
-                                  <div class="tabs_tabpane">
-                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
-                                      <div class="form_wrapper">
-                                        <div class="input_group">
-                                          <input class="form-control" value="1000" type="number" placeholder="Amount"/><span>LP</span>
-                                        </div>
-                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
-                                        <div class="submit">
-                                          <button class="bt bt--primary bt--block">Approve</button>
-                                        </div>
+                              <div class="tabs_nav__item" toggle-for="withdraw">
+                                <div class="tabs_nav__bt">Withdraw</div>
+                              </div>
+                            </div>
+                            <div class="tabs_content_holder">
+                              <div class="tabs_content tabs_content_top">
+                                <div class="tabs_tabpane" toggle-id="deposit">
+                                  <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
+                                    <div class="form_wrapper">
+                                      <div class="input_group">
+                                        <input class="form-control" value="1000" type="number" placeholder="Amount"/><span>LP</span>
                                       </div>
-                                      <div class="liquidity"><a target="_blank" rel="noreferrer" href="https://exchange.polydex.fi/add/0x606A082820aEAEfD267d0e41955B79fAE18c9DE2">Add liquidity</a><a class="txt-danger" target="_blank" rel="noreferrer" href="https://exchange.polydex.fi/remove/0x606A082820aEAEfD267d0e41955B79fAE18c9DE2">Remove liquidity</a></div>
+                                      <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+                                      <div class="submit">
+                                        <button class="bt bt--primary bt--block">Approve</button>
+                                      </div>
                                     </div>
                                   </div>
-                                  <div class="tabs_tabpane tabs_tabpane__active">
-                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
-                                      <div class="form_wrapper">
-                                        <div class="input_group">
-                                          <input class="form-control" value="1000" type="number" placeholder="Amount"/><span>LP</span>
-                                        </div>
-                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
-                                        <div class="actions">
-                                          <button class="bt bt--red bt--outline bt--block">Settle & Exit</button>
-                                          <button class="bt bt--orange bt--outline bt--block">Withdraw</button>
-                                        </div>
+                                </div>
+                                <div class="tabs_tabpane" toggle-id="withdraw">
+                                  <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
+                                    <div class="form_wrapper">
+                                      <div class="input_group">
+                                        <input class="form-control" value="1000" type="number" placeholder="Amount"/><span>LP</span>
+                                      </div>
+                                      <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+                                      <div class="actions">
+                                        <button class="bt bt--orange bt--outline bt--block">Withdraw</button>
                                       </div>
                                     </div>
                                   </div>
@@ -330,241 +330,23 @@
                             </div>
                           </div>
                         </div>
-                        <div class="expand_details__stake_grbe">
+                      </div>
+                      <div class="expand_details__item">
+                        <div class="item__stake_grbe">
                           <label>Your RGBE</label>
-                          <p class="description">Stake RGBE to boost your farm</p>
+                          <p class="description">Stake GRBE to boost your farm</p>
                           <div class="select_rgbe">
-                            <div class="thumbnail"><img src="./images/monsterplaceholder.svg" alt=""/></div>
-                            <div class="info">
-                              <p><i class="fas fa-fist-raised"></i><span>Boosted: ---</span></p>
-                              <button class="bt bt--primary bt--outline" popup-to="stake_your_rgbe_popup" href="javascript:;">Stake</button>
+                            <div class="thumbnail" popup-to="stake_your_rgbe_popup" href="javascript:;"><img src="./images/greenbieplaceholder.png" alt=""/>
+                              <p>Click to Stake</p>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="expand_details__right_partial">
-                        <label>Earned</label>
-                        <p class="amount"><span>0.000</span><img src="./icons/grbe.png" alt="GRBE"/></p><span class="usd-value">~$0.00</span>
-                        <div class="harvest">
-                          <button class="bt bt--primary" disable="disable">Harvest</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="farming__item">
-                <div class="collapse_header">
-                  <div class="panel__header">
-                    <div class="panel_header__multiplier">20X</div>
-                    <div class="panel_header__content--left">
-                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span></div>
-                      <div class="panel_header__token_info">
-                        <h4 class="panel_header__token_name"><span>GRBE</span></h4>
-                        <div class="wrapper"><span>Earn GRBE</span><span>Deposit Fee 0%</span></div>
-                      </div>
-                    </div>
-                    <div class="panel_header__content--right">
-                      <div class="panel_header__info_item">
-                        <label>Earned</label>
-                        <div class="values"><span>0.000</span><span class="usd-value">~$0.00</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Deposited</label>
-                        <div class="values"><span>0.000</span><span class="usd-value">~$0.00</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>GRBE boosted</label>
-                        <div class="values"><span class="nft"><img src="./icons/boot.png" alt="NFT-SMALL"/></span><span class="fire txt-orange"><i class="fas fa-fist-raised"></i></span><span class="txt-orange">0%</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Total APR</label>
-                        <div class="values"><span>361.11%</span><span><i class="fas fa-exclamation-circle"></i></span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>TVL</label>
-                        <div class="values"><span>$2.03M</span></div>
-                      </div>
-                    </div>
-                    <div class="panel_header__expand"><i class="fal fa-chevron-down"></i></div>
-                  </div>
-                </div>
-                <div class="collapse_content">
-                  <div class="collapse_content__wrapper">
-                    <div class="expand_details">
-                      <div class="expand_details__left_partial">
-                        <div class="expand_details__actions">
-                          <div class="expand_details__actions_wrapper">
-                            <div class="tabs_container">
-                              <div class="tabs_nav">
-                                <div class="tabs_nav__item active">
-                                  <div class="tabs_nav__bt">Deposit</div>
-                                </div>
-                                <div class="tabs_nav__item">
-                                  <div class="tabs_nav__bt">Withdraw</div>
-                                </div>
-                              </div>
-                              <div class="tabs_content_holder">
-                                <div class="tabs_content tabs_content_top">
-                                  <div class="tabs_tabpane tabs_tabpane__active">
-                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
-                                      <div class="form_wrapper">
-                                        <div class="input_group">
-                                          <input class="form-control" value="1000" type="number" placeholder="Amount"/><span>RGBE</span>
-                                        </div>
-                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
-                                        <div class="submit">
-                                          <button class="bt bt--primary bt--block">Approve</button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- TAB HIDDEN => IF DIV HAS CLASS ".tabs_tabpane__active" WILL SHOW-->
-                                  <div class="tabs_tabpane">
-                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
-                                      <div class="form_wrapper">
-                                        <div class="input_group">
-                                          <input class="form-control" value="1000" type="number" placeholder="Amount"/><span>LP</span>
-                                        </div>
-                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
-                                        <div class="actions">
-                                          <button class="bt bt--red bt--outline bt--block">Settle & Exit</button>
-                                          <button class="bt bt--orange bt--outline bt--block">Withdraw</button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                        <div class="item__earned">
+                          <label>Earned</label>
+                          <p class="amount"><span>0.000</span><span class="usd-value">~$0.00</span><img src="./icons/grbe.png" alt="GRBE"/></p>
+                          <div class="actions">
+                            <button class="bt bt--primary" disable="disable">Harvest</button>
                           </div>
-                        </div>
-                        <div class="expand_details__stake_grbe">
-                          <label>Your RGBE</label>
-                          <p class="description">Stake RGBE to boost your farm</p>
-                          <div class="select_rgbe">
-                            <div class="thumbnail"><img src="./images/monsterplaceholder.svg" alt=""/></div>
-                            <div class="info">
-                              <p><i class="fas fa-fist-raised"></i><span>Boosted: ---</span></p>
-                              <button class="bt bt--primary bt--outline" popup-to="stake_your_rgbe_popup" href="javascript:;">Stake</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="expand_details__right_partial">
-                        <label>Earned</label>
-                        <p class="amount"><span>0.000</span><img src="./icons/grbe.png" alt="GRBE"/></p><span class="usd-value">~$0.00</span>
-                        <div class="harvest">
-                          <button class="bt bt--primary" disable="disable">Harvest</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="farming__item">
-                <div class="collapse_header">
-                  <div class="panel__header">
-                    <div class="panel_header__multiplier">20X</div>
-                    <div class="panel_header__content--left">
-                      <div class="panel_header__logos"><span class="panel_header__logo--left"><img src="./icons/grbe.png" alt="RGBE"/></span></div>
-                      <div class="panel_header__token_info">
-                        <h4 class="panel_header__token_name"><span>GRBE</span></h4>
-                        <div class="wrapper"><span>Earn GRBE</span><span>Deposit Fee 0%</span></div>
-                      </div>
-                    </div>
-                    <div class="panel_header__content--right">
-                      <div class="panel_header__info_item">
-                        <label>Earned</label>
-                        <div class="values"><span>0.000</span><span class="usd-value">~$0.00</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Deposited</label>
-                        <div class="values"><span>0.000</span><span class="usd-value">~$0.00</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>GRBE boosted</label>
-                        <div class="values"><span class="nft"><img src="./icons/boot.png" alt="NFT-SMALL"/></span><span class="fire txt-orange"><i class="fas fa-fist-raised"></i></span><span class="txt-orange">0%</span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>Total APR</label>
-                        <div class="values"><span>361.11%</span><span><i class="fas fa-exclamation-circle"></i></span></div>
-                      </div>
-                      <div class="panel_header__info_item">
-                        <label>TVL</label>
-                        <div class="values"><span>$2.03M</span></div>
-                      </div>
-                    </div>
-                    <div class="panel_header__expand"><i class="fal fa-chevron-down"></i></div>
-                  </div>
-                </div>
-                <div class="collapse_content">
-                  <div class="collapse_content__wrapper">
-                    <div class="expand_details">
-                      <div class="expand_details__left_partial">
-                        <div class="expand_details__actions">
-                          <div class="expand_details__actions_wrapper">
-                            <div class="tabs_container">
-                              <div class="tabs_nav">
-                                <div class="tabs_nav__item">
-                                  <div class="tabs_nav__bt">Deposit</div>
-                                </div>
-                                <div class="tabs_nav__item active">
-                                  <div class="tabs_nav__bt">Withdraw</div>
-                                </div>
-                              </div>
-                              <div class="tabs_content_holder">
-                                <div class="tabs_content tabs_content_top">
-                                  <!-- TAB HIDDEN => IF DIV HAS CLASS ".tabs_tabpane__active" WILL SHOW-->
-                                  <div class="tabs_tabpane">
-                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
-                                      <div class="form_wrapper">
-                                        <div class="input_group">
-                                          <input class="form-control" value="1000" type="number" placeholder="Amount"/><span>RGBE</span>
-                                        </div>
-                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
-                                        <div class="submit">
-                                          <button class="bt bt--primary bt--block">Approve</button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="tabs_tabpane tabs_tabpane__active">
-                                    <div class="content_wrapper"><span class="available">Avail: 0.000000</span>
-                                      <div class="form_wrapper">
-                                        <div class="input_group">
-                                          <input class="form-control" value="1000" type="number" placeholder="Amount"/><span>LP</span>
-                                        </div>
-                                        <div class="select-percent"><span class="active">25%</span><span>50%</span><span>75%</span><span>100%</span></div>
-                                        <div class="actions">
-                                          <button class="bt bt--red bt--outline bt--block">Settle & Exit</button>
-                                          <button class="bt bt--orange bt--outline bt--block">Withdraw</button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="expand_details__stake_grbe">
-                          <label>Your RGBE</label>
-                          <p class="description">Stake RGBE to boost your farm</p>
-                          <div class="select_rgbe">
-                            <div class="thumbnail"><img src="./images/monsterplaceholder.svg" alt=""/></div>
-                            <div class="info">
-                              <p><i class="fas fa-fist-raised"></i><span>Boosted: ---</span></p>
-                              <button class="bt bt--primary bt--outline" popup-to="stake_your_rgbe_popup" href="javascript:;">Stake</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="expand_details__right_partial">
-                        <label>Earned</label>
-                        <p class="amount"><span>0.000</span><img src="./icons/grbe.png" alt="GRBE"/></p><span class="usd-value">~$0.00</span>
-                        <div class="harvest">
-                          <button class="bt bt--primary" disable="disable">Harvest</button>
                         </div>
                       </div>
                     </div>
