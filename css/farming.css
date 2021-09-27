@@ -25,6 +25,11 @@
   .farm_info_section__item .block span {
     font-size: 1.5rem;
     font-weight: 700; }
+    .farm_info_section__item .block span.usd-value {
+      font-size: 1rem; }
+    .farm_info_section__item .block span + span {
+      opacity: 0.8;
+      margin-left: 4px; }
   .farm_info_section__item .block + .block {
     margin-top: 16px; }
   @media (max-width: 767.98px) {
@@ -360,6 +365,7 @@
   .farming__item .expand_details__item .item__earned .amount {
     margin-bottom: 8px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
     .farming__item .expand_details__item .item__earned .amount img {

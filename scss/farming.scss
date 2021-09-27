@@ -37,7 +37,15 @@
         span {
             font-size: 1.5rem;
             font-weight: 700;
+            &.usd-value {
+                font-size: 1rem;
+            }
+            + span {
+                opacity: 0.8;
+                margin-left: 4px;
+            }
         }
+
         + .block {
             margin-top: 16px;
         }
@@ -509,6 +517,7 @@
             .amount {
                 margin-bottom: 8px;
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
                 img {
