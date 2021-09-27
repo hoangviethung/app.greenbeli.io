@@ -5,32 +5,52 @@
 }
 
 .farm_info_section__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 24px;
+    position: relative;
+    padding: 32px 0;
+    .farm_info_decorate {
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 250px;
+        &--left {
+            left: 0;
+            @media (max-width: 1024.98px) {
+                display: none;
+            }
+        }
+        &--right {
+            right: 0;
+            @media (max-width: 767.98px) {
+                display: none;
+            }
+        }
+        @media (max-width: 1199.98px) {
+            max-width: 200px;
+        }
+    }
     @media (max-width: 767.98px) {
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 16px;
+        padding: 0;
     }
 }
 
 .farm_info_section__item {
-    color: map-get($theme-colors, $key: neutral-white);
-    background: linear-gradient(
-        180deg,
-        lighten($color: map-get($theme-colors, primary), $amount: 5%),
-        lighten($color: map-get($theme-colors, primary), $amount: 10%)
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    background: lighten(
+        $color: map-get($theme-colors, primary-light),
+        $amount: 30%
     );
-    border-radius: 0.22rem;
+    border: 2px solid
+        rgba($color: map-get($theme-colors, primary-light), $alpha: 0.2);
+    border-radius: 1.22rem;
     padding: 16px;
-    .action {
-        display: flex;
-        align-items: center;
-        span {
-            margin-right: 16px;
-        }
-    }
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
     .block {
+        text-align: center;
         h4 {
             margin-bottom: 8px;
         }
@@ -45,15 +65,26 @@
                 margin-left: 4px;
             }
         }
-
-        + .block {
-            margin-top: 16px;
+        @media (max-width: 575.98px) {
+            &:first-child {
+                grid-column: span 2;
+            }
         }
     }
-    &.deposited {
-        @media (max-width: 767.98px) {
-            grid-template-columns: 1fr;
-        }
+    .action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+    }
+    @media (max-width: 1024.98px) {
+        margin-left: 0;
+    }
+    @media (max-width: 767.98px) {
+        margin-left: auto;
+    }
+    @media (max-width: 575.98px) {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -106,7 +137,7 @@
             $color: map-get($theme-colors, primary),
             $alpha: 0.2
         );
-        border-radius: 0.22rem;
+        border-radius: 1.22rem;
         margin-right: 24px;
         .tab-active {
             color: map-get($map: $theme-colors, $key: neutral-white);
@@ -171,9 +202,9 @@
 }
 
 .farming__item {
-    border: 1px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
+    border: 2px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
     background: lighten($color: map-get($theme-colors, primary), $amount: 60%);
-    border-radius: 8px;
+    border-radius: 1.22rem;
     height: fit-content;
     &.active {
         .panel_header__expand {
@@ -206,7 +237,7 @@
         height: 24px;
         color: map-get($map: $theme-colors, $key: neutral-white);
         background: map-get($theme-colors, $key: primary);
-        border-radius: 0.22rem;
+        border-radius: 1.22rem;
         transition: transform 0.3s ease-in-out;
     }
     .panel_header__content--top {
@@ -220,7 +251,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
+            width: 60px;
             height: 40px;
             color: map-get($map: $theme-colors, $key: neutral-white);
             background: linear-gradient(
@@ -229,9 +260,12 @@
                 lighten($color: map-get($theme-colors, secondary), $amount: 10%)
             );
             font-weight: 700;
-            border-radius: 0.22rem;
+            border-radius: 1.22rem;
         }
         .infomation__logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: relative;
             width: 60px;
             height: 60px;
@@ -240,6 +274,9 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+                &.staked-only {
+                    position: static;
+                }
             }
             .logo--right {
                 position: absolute;
@@ -256,7 +293,8 @@
         }
         .infomation__content {
             h4 {
-                font-size: 1rem;
+                color: map-get($map: $theme-colors, $key: primary);
+                font-size: 1.5rem;
                 font-weight: 700;
                 margin-bottom: 4px;
                 display: flex;
@@ -275,7 +313,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 8px;
         align-items: center;
-        margin-top: 16px;
+        margin-top: 8px;
         .content--bottom__item {
             label {
                 display: block;
@@ -330,9 +368,6 @@
                 $color: map-get($map: $theme-colors, $key: primary),
                 $alpha: 0.2
             );
-        @media (max-width: 375.98px) {
-            padding-top: 56px;
-        }
     }
     .expand_details {
         color: map-get($map: $theme-colors, $key: txt-body);
@@ -342,26 +377,40 @@
             background: map-get($map: $theme-colors, $key: neutral-white);
             padding: 16px;
             box-shadow: 0 0 10px -2px rgba($color: #000000, $alpha: 0.16);
-            border-radius: 0.22rem;
+            border-radius: 1.22rem;
         }
         .item__liquidity {
+            .available {
+                font-size: 1rem;
+                text-align: center;
+                color: map-get($map: $theme-colors, $key: primary-dark);
+                margin-bottom: 16px;
+            }
             .tabs_nav {
                 position: relative;
                 display: flex;
                 align-items: center;
+                justify-content: center;
+                width: fit-content;
+                margin: 0 auto 16px;
+                background-color: rgba(
+                    $color: map-get($theme-colors, primary),
+                    $alpha: 0.2
+                );
+                border-radius: 1.22rem;
             }
             .tabs_nav__item {
                 cursor: pointer;
-                font-weight: 500;
                 position: relative;
                 display: inline-flex;
                 align-items: center;
                 padding: 8px 16px;
-                border-radius: 0.22rem 0.22rem 0 0;
+                border-radius: 1.22rem;
                 &.active {
-                    background-color: rgba(
-                        $color: map-get($map: $theme-colors, $key: primary),
-                        $alpha: 0.2
+                    color: map-get($map: $theme-colors, $key: neutral-white);
+                    background-color: map-get(
+                        $map: $theme-colors,
+                        $key: primary
                     );
                 }
             }
@@ -380,28 +429,14 @@
                 width: 100%;
                 outline: none;
             }
-            .content_wrapper {
-                .available {
-                    position: absolute;
-                    top: -30px;
-                    right: 0;
-                    font-weight: 500;
-                    color: map-get($map: $theme-colors, $key: primary-dark);
-                    @media (max-width: 375.98px) {
-                        top: -80px;
-                    }
-                }
-            }
             .form_wrapper {
-                padding: 16px;
-                background-color: rgba(
-                    $color: map-get($map: $theme-colors, $key: primary),
-                    $alpha: 0.2
-                );
-                border-radius: 0 0.22rem 0.22rem 0.22rem;
-                > .input_group {
+                .block-input-action {
+                    display: flex;
+                    align-items: center;
+                    grid-gap: 16px;
+                }
+                .input_group {
                     position: relative;
-                    margin-bottom: 8px;
                     .form-control {
                         padding: 0 56px 0 16px;
                     }
@@ -413,63 +448,16 @@
                         font-weight: 700;
                     }
                 }
-                > .select-percent {
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    grid-gap: 16px;
-                    margin-bottom: 8px;
-                    > span {
-                        height: 36px;
-                        background-color: rgba(
-                            $color: map-get($map: $theme-colors, $key: primary),
-                            $alpha: 0.1
-                        );
-                        border-radius: 0.22rem;
-                        font-weight: 500;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        cursor: pointer;
-                        transition: 0.3s all ease-in-out;
-                        &:hover {
-                            background-color: rgba(
-                                $color:
-                                    map-get($map: $theme-colors, $key: primary),
-                                $alpha: 0.2
-                            );
-                        }
-                        &:active {
-                            transform: translateY(4px);
-                        }
-                        &.active {
-                            color: map-get(
-                                $map: $theme-colors,
-                                $key: neutral-white
-                            );
-                            background-color: rgba(
-                                $color:
-                                    map-get($map: $theme-colors, $key: primary),
-                                $alpha: 0.8
-                            );
-                        }
-                    }
-                }
-                > .actions {
-                    display: grid;
-                    grid-gap: 16px;
-                    grid-template-columns: repeat(1, 1fr);
-                    @media (max-width: 1199.98px) {
-                        grid-gap: 8px;
-                        > .bt {
-                            padding: 0.44rem 1rem;
-                        }
+                .actions {
+                    > .bt {
+                        height: 48px;
                     }
                 }
             }
             .liquidity {
                 display: flex;
                 justify-content: center;
-                margin-top: 16px;
+                margin-top: 24px;
                 > a {
                     font-weight: 500;
                     + a {
@@ -486,18 +474,19 @@
                 display: block;
             }
             .description {
+                font-size: 0.75rem;
                 text-align: center;
                 opacity: 0.5;
-                margin-bottom: 16px;
-                @media (max-width: 767.98px) {
-                    margin-bottom: 8px;
-                }
+                margin-bottom: 8px;
             }
             .select_rgbe {
                 .thumbnail {
                     cursor: pointer;
                     max-width: 130px;
                     margin: 0 auto;
+                    &:not(.active) {
+                        filter: grayscale(100%);
+                    }
                 }
                 p {
                     text-align: center;
@@ -536,6 +525,13 @@
                     font-size: 0.75rem;
                     color: map-get($map: $theme-colors, $key: gray-text);
                     margin-left: 4px;
+                }
+            }
+            .grbe-icon {
+                img {
+                    max-width: 120px;
+                    display: block;
+                    margin: 0 auto;
                 }
             }
             .actions {

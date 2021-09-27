@@ -17,24 +17,25 @@ block main
     section.farm_info_section
         .container
             .farm_info_section__wrapper
-                .farm_info_section__item.deposited
+                .farm_info_decorate.farm_info_decorate--left
+                    img(src="./images/farm_info_decorate_1.png", alt="")
+                .farm_info_section__item
                     .block
                         h4 You deposited
                         span $0.0
                     .block
-                        h4 Pending to harvest
-                        .action
-                            span 0
-                            button(disable).bt.bt--secondary Harvest All
-                .farm_info_section__item
-                    .block
                         h4 GRBE in wallet
                         span 0
                         span.usd-value ~$0
-                    .block
-                        h4 Click to buy GRBE
                         .action
                             a.bt.bt--secondary(href="#" target="_blank" rel="noreferrer") Buy GRBE
+                    .block
+                        h4 Pending to harvest
+                        span 0.00
+                        .action
+                            button(disable).bt.bt--secondary Harvest All
+                .farm_info_decorate.farm_info_decorate--right
+                    img(src="./images/farm_info_decorate_2.png", alt="")
     // *** FARM FILTER *** //
     section.farm_filter_section
         .container
@@ -79,23 +80,20 @@ block main
                                     .infomation__content
                                         h4
                                             span GRBE-BUSD
-                                        div
-                                            p Earn GRBE
-                                            p Deposit Fee 0%
                                 .content--top__multiplier 20X
                             .panel_header__content--bottom
                                 .content--bottom__item
-                                    label Earned
+                                    label GRBE Earned
                                     .values
                                         span 0.000
                                         span.usd-value ~$0.00
                                 .content--bottom__item
-                                    label Deposited
+                                    label Staked
                                     .values
                                         span 0.000
                                         span.usd-value ~$0.00
                                 .content--bottom__item
-                                    label GRBE boosted
+                                    label Power
                                     .values
                                         span.nft
                                             img(src="./icons/boot.png", alt="NFT-SMALL")
@@ -103,15 +101,19 @@ block main
                                             i.fas.fa-fist-raised
                                         span.txt-orange 0%
                                 .content--bottom__item
-                                    label Total APR
+                                    label APR
                                     .values
                                         span 361.11%
                                         span
                                             i.fas.fa-exclamation-circle
                                 .content--bottom__item
-                                    label TVL
+                                    label Total liquidity
                                     .values
                                         span $2.03M
+                                .content--bottom__item
+                                    label Deposit Fee
+                                    .values
+                                        span 0%
                             .panel_header__expand
                                 i.fal.fa-chevron-down
                     .collapse_content
@@ -119,58 +121,66 @@ block main
                             .expand_details
                                 .expand_details__item
                                     .item__liquidity(ex-1)
+                                        p.available Avail: 0.000000
                                         .tabs_container
                                             .tabs_nav
-                                                .tabs_nav__item(toggle-for="deposit")
-                                                    .tabs_nav__bt Deposit
-                                                .tabs_nav__item(toggle-for="withdraw")
-                                                    .tabs_nav__bt Withdraw
+                                                .tabs_nav__item(toggle-for="stake")
+                                                    .tabs_nav__bt Stake
+                                                .tabs_nav__item(toggle-for="unstake")
+                                                    .tabs_nav__bt Unstake
                                             .tabs_content_holder
                                                 .tabs_content.tabs_content_top
-                                                    .tabs_tabpane(toggle-id="deposit")
+                                                    .tabs_tabpane(toggle-id="stake")
                                                         .content_wrapper
-                                                            span.available Avail: 0.000000
                                                             .form_wrapper
-                                                                .input_group
-                                                                    input.form-control(value="1000" type="number" placeholder="Amount")
-                                                                    span LP
-                                                                .select-percent
-                                                                    span.active 25%
-                                                                    span 50%
-                                                                    span 75%
-                                                                    span 100%
-                                                                .submit
-                                                                    button.bt.bt--primary.bt--block Approve
+                                                                .block-input-action
+                                                                    .input_group
+                                                                        input.form-control(value="1000" type="number" placeholder="Amount")
+                                                                        span LP
+                                                                    .actions
+                                                                        button.bt.bt--primary.bt--block Approve
+                                                                .input-range-percent
+                                                                    .input-range
+                                                                        input(type="range" min="1" max="4" value="1" style="width:100%")
+                                                                    .percent
+                                                                        p 25%
+                                                                        p 50%
+                                                                        p 75%
+                                                                        p 100%
                                                             .liquidity
                                                                 a(target="_blank" rel="noreferrer" href="#") Add liquidity
                                                                 a.txt-danger(target="_blank" rel="noreferrer" href="#") Remove liquidity
-                                                    .tabs_tabpane(toggle-id="withdraw")
+                                                    .tabs_tabpane(toggle-id="unstake")
                                                         .content_wrapper
-                                                            span.available Avail: 0.000000
                                                             .form_wrapper
-                                                                .input_group
-                                                                    input.form-control(value="1000" type="number" placeholder="Amount")
-                                                                    span LP
-                                                                .select-percent
-                                                                    span.active 25%
-                                                                    span 50%
-                                                                    span 75%
-                                                                    span 100%
-                                                                .actions
-                                                                    button.bt.bt--orange.bt--outline.bt--block Withdraw
+                                                                .block-input-action
+                                                                    .input_group
+                                                                        input.form-control(value="1000" type="number" placeholder="Amount")
+                                                                        span LP
+                                                                    .actions
+                                                                        button.bt.bt--orange.bt--outline.bt--block Withdraw
+                                                                .input-range-percent
+                                                                    .input-range
+                                                                        input(type="range" min="1" max="4" value="1" style="width:100%")
+                                                                    .percent
+                                                                        p 25%
+                                                                        p 50%
+                                                                        p 75%
+                                                                        p 100%
                                 .expand_details__item
                                     .item__stake_grbe
-                                        label Your Geenbie
-                                        p.description Stake GRBE to boost your farm
+                                        label Green Hero
+                                        p.description Stake Green Hero to boots your farm
                                         .select_rgbe
                                             .thumbnail(popup-to="stake_your_rgbe_popup" href="javascript:;")
-                                                img(src="./images/greenbieplaceholder.png", alt="")
+                                                img(src="./images/itemproductfire.png", alt="")
                                                 p Click to Stake
                                     .item__earned
-                                        label Earned
+                                        label GRBE Earned
                                         p.amount
                                             span 0.000
                                             span.usd-value ~$0.00
+                                        .grbe-icon
                                             img(src="./icons/grbe.png", alt="GRBE")
                                         .actions
                                             button.bt.bt--primary(disable) Harvest
@@ -180,28 +190,25 @@ block main
                             .panel_header__content--top
                                 .content--top__infomation
                                     .infomation__logos
-                                        span.logo--left
+                                        span.logo--left.staked-only
                                             img(src="./icons/grbe.png", alt="RGBE")
                                     .infomation__content
                                         h4
                                             span GRBE
-                                        div
-                                            p Earn GRBE
-                                            p Deposit Fee 0%
                                 .content--top__multiplier 20X
                             .panel_header__content--bottom
                                 .content--bottom__item
-                                    label Earned
+                                    label GRBE Earned
                                     .values
                                         span 0.000
                                         span.usd-value ~$0.00
                                 .content--bottom__item
-                                    label Deposited
+                                    label Staked
                                     .values
                                         span 0.000
                                         span.usd-value ~$0.00
                                 .content--bottom__item
-                                    label GRBE boosted
+                                    label Power
                                     .values
                                         span.nft
                                             img(src="./icons/boot.png", alt="NFT-SMALL")
@@ -209,15 +216,19 @@ block main
                                             i.fas.fa-fist-raised
                                         span.txt-orange 0%
                                 .content--bottom__item
-                                    label Total APR
+                                    label APR
                                     .values
                                         span 361.11%
                                         span
                                             i.fas.fa-exclamation-circle
                                 .content--bottom__item
-                                    label TVL
+                                    label Total liquidity
                                     .values
                                         span $2.03M
+                                .content--bottom__item
+                                    label Deposit Fee
+                                    .values
+                                        span 0%
                             .panel_header__expand
                                 i.fal.fa-chevron-down
                     .collapse_content
@@ -225,55 +236,63 @@ block main
                             .expand_details
                                 .expand_details__item
                                     .item__liquidity(ex-2)
+                                        p.available Avail: 0.000000
                                         .tabs_container
                                             .tabs_nav
-                                                .tabs_nav__item(toggle-for="deposit")
-                                                    .tabs_nav__bt Deposit
-                                                .tabs_nav__item(toggle-for="withdraw")
-                                                    .tabs_nav__bt Withdraw
+                                                .tabs_nav__item(toggle-for="stake")
+                                                    .tabs_nav__bt Stake
+                                                .tabs_nav__item(toggle-for="unstake")
+                                                    .tabs_nav__bt Unstake
                                             .tabs_content_holder
                                                 .tabs_content.tabs_content_top
-                                                    .tabs_tabpane(toggle-id="deposit")
+                                                    .tabs_tabpane(toggle-id="stake")
                                                         .content_wrapper
-                                                            span.available Avail: 0.000000
                                                             .form_wrapper
-                                                                .input_group
-                                                                    input.form-control(value="1000" type="number" placeholder="Amount")
-                                                                    span LP
-                                                                .select-percent
-                                                                    span.active 25%
-                                                                    span 50%
-                                                                    span 75%
-                                                                    span 100%
-                                                                .submit
-                                                                    button.bt.bt--primary.bt--block Approve
-                                                    .tabs_tabpane(toggle-id="withdraw")
+                                                                .block-input-action
+                                                                    .input_group
+                                                                        input.form-control(value="1000" type="number" placeholder="Amount")
+                                                                        span LP
+                                                                    .actions
+                                                                        button.bt.bt--primary.bt--block Approve
+                                                                .input-range-percent
+                                                                    .input-range
+                                                                        input(type="range" min="1" max="4" value="1" style="width:100%")
+                                                                    .percent
+                                                                        p 25%
+                                                                        p 50%
+                                                                        p 75%
+                                                                        p 100%
+                                                    .tabs_tabpane(toggle-id="unstake")
                                                         .content_wrapper
-                                                            span.available Avail: 0.000000
                                                             .form_wrapper
-                                                                .input_group
-                                                                    input.form-control(value="1000" type="number" placeholder="Amount")
-                                                                    span LP
-                                                                .select-percent
-                                                                    span.active 25%
-                                                                    span 50%
-                                                                    span 75%
-                                                                    span 100%
-                                                                .actions
-                                                                    button.bt.bt--orange.bt--outline.bt--block Withdraw
+                                                                .block-input-action
+                                                                    .input_group
+                                                                        input.form-control(value="1000" type="number" placeholder="Amount")
+                                                                        span LP
+                                                                    .actions
+                                                                        button.bt.bt--orange.bt--outline.bt--block Withdraw
+                                                                .input-range-percent
+                                                                    .input-range
+                                                                        input(type="range" min="1" max="4" value="1" style="width:100%")
+                                                                    .percent
+                                                                        p 25%
+                                                                        p 50%
+                                                                        p 75%
+                                                                        p 100%
                                 .expand_details__item
                                     .item__stake_grbe
-                                        label Your Geenbie
-                                        p.description Stake GRBE to boost your farm
+                                        label Green Hero
+                                        p.description Stake Green Hero to boots your farm
                                         .select_rgbe
                                             .thumbnail(popup-to="stake_your_rgbe_popup" href="javascript:;")
-                                                img(src="./images/greenbieplaceholder.png", alt="")
+                                                img(src="./images/itemproductfire.png", alt="")
                                                 p Click to Stake
                                     .item__earned
-                                        label Earned
+                                        label GRBE Earned
                                         p.amount
                                             span 0.000
                                             span.usd-value ~$0.00
+                                        .grbe-icon
                                             img(src="./icons/grbe.png", alt="GRBE")
                                         .actions
                                             button.bt.bt--primary(disable) Harvest

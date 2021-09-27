@@ -876,7 +876,7 @@ body[style="overflow-y: hidden"] .page:before {
   padding: 0 16px;
   height: 48px;
   width: 100%;
-  border-radius: 0.22rem;
+  border-radius: 1.22rem;
   transition: 0.3s all ease-in-out; }
   .form-control:focus {
     box-shadow: #d9d9d9 0px 0px 0px 1px, rgba(217, 217, 217, 0.4) 0px 0px 0px 4px; }
@@ -1019,9 +1019,9 @@ body[style="overflow-y: hidden"] .page:before {
       transition: 0.4s;
       width: 26px; }
     .checkbox__switch .slider.round {
-      border-radius: 0.22rem; }
+      border-radius: 1.22rem; }
       .checkbox__switch .slider.round:before {
-        border-radius: 0.22rem; }
+        border-radius: 1.22rem; }
 
 .input-range-stars {
   width: 100%; }
@@ -1032,8 +1032,7 @@ body[style="overflow-y: hidden"] .page:before {
       position: relative;
       display: inline-flex;
       justify-content: center;
-      align-items: center;
-      font-weight: 500; }
+      align-items: center; }
       .input-range-stars .stars p:after {
         content: "\f005";
         font-weight: 900;
@@ -1041,10 +1040,21 @@ body[style="overflow-y: hidden"] .page:before {
         font-family: "Font Awesome 5 Pro";
         margin-left: 4px; }
 
+.input-range-percent {
+  width: 100%; }
+  .input-range-percent .percent {
+    display: flex;
+    justify-content: space-between; }
+    .input-range-percent .percent p {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center; }
+
 .input-range input[type="range"] {
-  height: 25px;
+  height: 24px;
   -webkit-appearance: none;
-  margin: 10px 0;
+  margin: 8px 0;
   width: 100%;
   background-color: transparent; }
 
@@ -1133,7 +1143,7 @@ body[style="overflow-y: hidden"] .page:before {
   align-items: center;
   justify-content: center;
   padding: 0.44rem 1.22rem;
-  border-radius: 0.22rem;
+  border-radius: 1.22rem;
   transition: 0.3s all ease-in-out; }
   .bt span {
     font-weight: 600;
@@ -14186,7 +14196,7 @@ header.header {
 .header_info__item {
   background: rgba(102, 141, 46, 0.1);
   border: 1px solid #668d2e;
-  border-radius: 0.22rem;
+  border-radius: 1.22rem;
   padding: 8px 20px;
   height: 36px; }
   .header_info__item span {

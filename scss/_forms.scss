@@ -4,7 +4,7 @@
     padding: 0 16px;
     height: 48px;
     width: 100%;
-    border-radius: 0.22rem;
+    border-radius: 1.22rem;
     transition: 0.3s all ease-in-out;
     &:focus {
         box-shadow: map-get($map: $theme-colors, $key: gray-border) 0px 0px 0px
@@ -196,9 +196,9 @@
             width: 26px;
         }
         &.round {
-            border-radius: 0.22rem;
+            border-radius: 1.22rem;
             &:before {
-                border-radius: 0.22rem;
+                border-radius: 1.22rem;
             }
         }
     }
@@ -214,7 +214,6 @@
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            font-weight: 500;
             &:after {
                 content: "\f005";
                 font-weight: 900;
@@ -226,11 +225,25 @@
     }
 }
 
+.input-range-percent {
+    width: 100%;
+    .percent {
+        display: flex;
+        justify-content: space-between;
+        p {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
 .input-range {
     input[type="range"] {
-        height: 25px;
+        height: 24px;
         -webkit-appearance: none;
-        margin: 10px 0;
+        margin: 8px 0;
         width: 100%;
         background-color: transparent;
     }
