@@ -31,11 +31,11 @@
       padding: 0; } }
 
 .farm_info_section__item {
+  color: #ffffff;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 16px;
-  border: 2px solid rgba(102, 141, 46, 0.2);
-  background: #ecf5df;
+  background: #668d2e;
   box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08);
   border-radius: 0.22rem;
   padding: 16px;

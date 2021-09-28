@@ -82,6 +82,14 @@ block main
                                         p.multiplier 20X
                             .panel_header__content--right
                                 .content--bottom__item
+                                    label Power
+                                    .values
+                                        span.nft
+                                            img(src="./icons/boot.png", alt="NFT-SMALL")
+                                        span.fire.txt-orange
+                                            i.fas.fa-fist-raised
+                                        span.txt-orange 0%
+                                .content--bottom__item
                                     label GRBE Earned
                                     .values
                                         span 0.000
@@ -91,14 +99,6 @@ block main
                                     .values
                                         span 0.000
                                         span.usd-value ~$0.00
-                                .content--bottom__item
-                                    label Power
-                                    .values
-                                        span.nft
-                                            img(src="./icons/boot.png", alt="NFT-SMALL")
-                                        span.fire.txt-orange
-                                            i.fas.fa-fist-raised
-                                        span.txt-orange 0%
                                 .content--bottom__item
                                     label APR
                                     .values
@@ -119,6 +119,14 @@ block main
                         .collapse_content__wrapper
                             .expand_details
                                 .expand_details__item
+                                    .item__stake_grbe
+                                        label Green Hero
+                                        p.description Stake Green Hero to boost your farm
+                                        .select_rgbe
+                                            .thumbnail(popup-to="stake_your_rgbe_popup" href="javascript:;")
+                                                img(src="./images/itemproductfire.png", alt="")
+                                                p Click to Stake
+                                .expand_details__item
                                     .item__earned
                                         label GRBE Earned
                                         p.amount
@@ -128,14 +136,6 @@ block main
                                             img(src="./icons/grbe.png", alt="GRBE")
                                         .actions
                                             button.bt.bt--primary(disable) Harvest
-                                .expand_details__item
-                                    .item__stake_grbe
-                                        label Green Hero
-                                        p.description Stake Green Hero to boots your farm
-                                        .select_rgbe
-                                            .thumbnail(popup-to="stake_your_rgbe_popup" href="javascript:;")
-                                                img(src="./images/itemproductfire.png", alt="")
-                                                p Click to Stake
                                 .expand_details__item
                                     .item__liquidity(ex-1)
                                         p.available Avail: 0.000000
@@ -194,8 +194,16 @@ block main
                                             img(src="./icons/grbe.png", alt="RGBE")
                                     .infomation__content
                                         h4 GRBE
-                                        p.multiplier 20X
+                                        p.multiplier 10X
                             .panel_header__content--right
+                                .content--bottom__item
+                                    label Power
+                                    .values
+                                        span.nft
+                                            img(src="./icons/boot.png", alt="NFT-SMALL")
+                                        span.fire.txt-orange
+                                            i.fas.fa-fist-raised
+                                        span.txt-orange 0%
                                 .content--bottom__item
                                     label GRBE Earned
                                     .values
@@ -206,14 +214,6 @@ block main
                                     .values
                                         span 0.000
                                         span.usd-value ~$0.00
-                                .content--bottom__item
-                                    label Power
-                                    .values
-                                        span.nft
-                                            img(src="./icons/boot.png", alt="NFT-SMALL")
-                                        span.fire.txt-orange
-                                            i.fas.fa-fist-raised
-                                        span.txt-orange 0%
                                 .content--bottom__item
                                     label APR
                                     .values
@@ -234,6 +234,24 @@ block main
                         .collapse_content__wrapper
                             .expand_details
                                 .expand_details__item
+                                    .item__stake_grbe
+                                        label Green Hero
+                                        p.description Stake Green Hero to boost your farm
+                                        .select_rgbe
+                                            .thumbnail(popup-to="stake_your_rgbe_popup" href="javascript:;")
+                                                img(src="./images/itemproductfire.png", alt="")
+                                                p Click to Stake
+                                .expand_details__item
+                                    .item__earned
+                                        label GRBE Earned
+                                        p.amount
+                                            span 0.000
+                                            span.usd-value ~$0.00
+                                        .grbe-icon
+                                            img(src="./icons/grbe.png", alt="GRBE")
+                                        .actions
+                                            button.bt.bt--primary(disable) Harvest
+                                .expand_details__item
                                     .item__liquidity(ex-2)
                                         p.available Avail: 0.000000
                                         .tabs_container
@@ -250,7 +268,7 @@ block main
                                                                 .block-input-action
                                                                     .input_group
                                                                         input.form-control(value="1000" type="number" placeholder="Amount")
-                                                                        span GRBE-BUSD
+                                                                        span GRBE
                                                                     .actions
                                                                         button.bt.bt--primary.bt--block Approve
                                                                 .input-range-percent
@@ -261,16 +279,13 @@ block main
                                                                         p 50%
                                                                         p 75%
                                                                         p 100%
-                                                            .liquidity
-                                                                a(target="_blank" rel="noreferrer" href="#") Add liquidity
-                                                                a.txt-danger(target="_blank" rel="noreferrer" href="#") Remove liquidity
                                                     .tabs_tabpane(toggle-id="unstake")
                                                         .content_wrapper
                                                             .form_wrapper
                                                                 .block-input-action
                                                                     .input_group
                                                                         input.form-control(value="1000" type="number" placeholder="Amount")
-                                                                        span GRBE-BUSD
+                                                                        span GRBE
                                                                     .actions
                                                                         button.bt.bt--orange.bt--outline.bt--block Withdraw
                                                                 .input-range-percent
@@ -281,23 +296,5 @@ block main
                                                                         p 50%
                                                                         p 75%
                                                                         p 100%
-                                .expand_details__item
-                                    .item__stake_grbe
-                                        label Green Hero
-                                        p.description Stake Green Hero to boots your farm
-                                        .select_rgbe
-                                            .thumbnail(popup-to="stake_your_rgbe_popup" href="javascript:;")
-                                                img(src="./images/itemproductfire.png", alt="")
-                                                p Click to Stake
-                                .expand_details__item
-                                    .item__earned
-                                        label GRBE Earned
-                                        p.amount
-                                            span 0.000
-                                            span.usd-value ~$0.00
-                                        .grbe-icon
-                                            img(src="./icons/grbe.png", alt="GRBE")
-                                        .actions
-                                            button.bt.bt--primary(disable) Harvest
     // *** STAKE YOUR RGBE POPUP *** //
     include ../components/stake_your_rgbe_popup

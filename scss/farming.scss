@@ -39,11 +39,11 @@
 }
 
 .farm_info_section__item {
+    color: map-get($map: $theme-colors, $key: neutral-white);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 16px;
-    border: 2px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
-    background: lighten($color: map-get($theme-colors, primary), $amount: 55%);
+    background: map-get($theme-colors, primary);
     box-shadow: 0px 3px 6px
         rgba($color: map-get($theme-colors, neutral-black), $alpha: 0.08);
     border-radius: 0.22rem;
