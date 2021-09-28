@@ -199,10 +199,12 @@
   background-size: cover;
   background-position: center center; }
 
+.nft_farmer_page .banner_section__content img {
+  max-width: 300px; }
+
 .banner_section__content {
   margin-top: 24px; }
   .banner_section__content img {
-    max-width: 200px;
     display: block;
     margin: 0 auto;
     animation: tranformItemImageBanner 8s ease-in-out infinite; }
