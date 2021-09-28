@@ -172,7 +172,7 @@
     display: flex;
     justify-content: space-between;
     height: 100%;
-    padding: 16px 40px 16px 16px; }
+    padding: 24px 40px 24px 24px; }
     @media (max-width: 767.98px) {
       .farming__item .panel__header {
         flex-direction: column; } }
@@ -292,13 +292,13 @@
       .farming__item .panel_header__content--right {
         grid-template-columns: repeat(2, 1fr); } }
   .farming__item .collapse_content {
-    padding: 16px;
+    padding: 24px;
     position: relative;
     border-top: 2px solid rgba(102, 141, 46, 0.2);
     background: #ecf5df; }
   .farming__item .expand_details {
     display: grid;
-    grid-gap: 16px;
+    grid-gap: 24px;
     grid-template-columns: 0.5fr 1fr 0.5fr; }
     @media (max-width: 1199.98px) {
       .farming__item .expand_details {
