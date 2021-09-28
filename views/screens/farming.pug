@@ -119,6 +119,24 @@ block main
                         .collapse_content__wrapper
                             .expand_details
                                 .expand_details__item
+                                    .item__earned
+                                        label GRBE Earned
+                                        p.amount
+                                            span 0.000
+                                            span.usd-value ~$0.00
+                                        .grbe-icon
+                                            img(src="./icons/grbe.png", alt="GRBE")
+                                        .actions
+                                            button.bt.bt--primary(disable) Harvest
+                                .expand_details__item
+                                    .item__stake_grbe
+                                        label Green Hero
+                                        p.description Stake Green Hero to boots your farm
+                                        .select_rgbe
+                                            .thumbnail(popup-to="stake_your_rgbe_popup" href="javascript:;")
+                                                img(src="./images/itemproductfire.png", alt="")
+                                                p Click to Stake
+                                .expand_details__item
                                     .item__liquidity(ex-1)
                                         p.available Avail: 0.000000
                                         .tabs_container
@@ -166,24 +184,6 @@ block main
                                                                         p 50%
                                                                         p 75%
                                                                         p 100%
-                                .expand_details__item
-                                    .item__stake_grbe
-                                        label Green Hero
-                                        p.description Stake Green Hero to boots your farm
-                                        .select_rgbe
-                                            .thumbnail(popup-to="stake_your_rgbe_popup" href="javascript:;")
-                                                img(src="./images/itemproductfire.png", alt="")
-                                                p Click to Stake
-                                .expand_details__item
-                                    .item__earned
-                                        label GRBE Earned
-                                        p.amount
-                                            span 0.000
-                                            span.usd-value ~$0.00
-                                        .grbe-icon
-                                            img(src="./icons/grbe.png", alt="GRBE")
-                                        .actions
-                                            button.bt.bt--primary(disable) Harvest
                 .farming__item
                     .collapse_header
                         .panel__header
