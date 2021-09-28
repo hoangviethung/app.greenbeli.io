@@ -21,19 +21,19 @@ block main
                     img(src="./images/farm_info_decorate_1.png", alt="")
                 .farm_info_section__item
                     .block
-                        h4 You deposited
+                        h4 You staked
                         span $0.0
+                    .block
+                        h4 Pending to harvest
+                        span 0.00
+                        .action
+                            button(disable).bt.bt--secondary Harvest All
                     .block
                         h4 GRBE in wallet
                         span 0
                         span.usd-value ~$0
                         .action
                             a.bt.bt--secondary(href="#" target="_blank" rel="noreferrer") Buy GRBE
-                    .block
-                        h4 Pending to harvest
-                        span 0.00
-                        .action
-                            button(disable).bt.bt--secondary Harvest All
                 .farm_info_decorate.farm_info_decorate--right
                     img(src="./images/farm_info_decorate_2.png", alt="")
     // *** FARM FILTER *** //
