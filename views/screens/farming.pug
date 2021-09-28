@@ -70,7 +70,7 @@ block main
                 .farming__item
                     .collapse_header
                         .panel__header
-                            .panel_header__content--top
+                            .panel_header__content--left
                                 .content--top__infomation
                                     .infomation__logos
                                         span.logo--left
@@ -78,10 +78,9 @@ block main
                                         span.logo--right
                                             img(src="./icons/busd.png", alt="busd")
                                     .infomation__content
-                                        h4
-                                            span GRBE-BUSD
-                                .content--top__multiplier 20X
-                            .panel_header__content--bottom
+                                        h4 GRBE-BUSD
+                                        p.multiplier 20X
+                            .panel_header__content--right
                                 .content--bottom__item
                                     label GRBE Earned
                                     .values
@@ -175,6 +174,7 @@ block main
                                             .thumbnail(popup-to="stake_your_rgbe_popup" href="javascript:;")
                                                 img(src="./images/itemproductfire.png", alt="")
                                                 p Click to Stake
+                                .expand_details__item
                                     .item__earned
                                         label GRBE Earned
                                         p.amount
@@ -187,16 +187,15 @@ block main
                 .farming__item
                     .collapse_header
                         .panel__header
-                            .panel_header__content--top
+                            .panel_header__content--left
                                 .content--top__infomation
                                     .infomation__logos
-                                        span.logo--left.staked-only
+                                        span.logo--left
                                             img(src="./icons/grbe.png", alt="RGBE")
                                     .infomation__content
-                                        h4
-                                            span GRBE
-                                .content--top__multiplier 20X
-                            .panel_header__content--bottom
+                                        h4 GRBE
+                                        p.multiplier 20X
+                            .panel_header__content--right
                                 .content--bottom__item
                                     label GRBE Earned
                                     .values
@@ -251,7 +250,7 @@ block main
                                                                 .block-input-action
                                                                     .input_group
                                                                         input.form-control(value="1000" type="number" placeholder="Amount")
-                                                                        span GRBE
+                                                                        span GRBE-BUSD
                                                                     .actions
                                                                         button.bt.bt--primary.bt--block Approve
                                                                 .input-range-percent
@@ -262,16 +261,16 @@ block main
                                                                         p 50%
                                                                         p 75%
                                                                         p 100%
-                                                                    .liquidity
-                                                                        a(target="_blank" rel="noreferrer" href="#") Add liquidity
-                                                                        a.txt-danger(target="_blank" rel="noreferrer" href="#") Remove liquidity
+                                                            .liquidity
+                                                                a(target="_blank" rel="noreferrer" href="#") Add liquidity
+                                                                a.txt-danger(target="_blank" rel="noreferrer" href="#") Remove liquidity
                                                     .tabs_tabpane(toggle-id="unstake")
                                                         .content_wrapper
                                                             .form_wrapper
                                                                 .block-input-action
                                                                     .input_group
                                                                         input.form-control(value="1000" type="number" placeholder="Amount")
-                                                                        span GRBE
+                                                                        span GRBE-BUSD
                                                                     .actions
                                                                         button.bt.bt--orange.bt--outline.bt--block Withdraw
                                                                 .input-range-percent
@@ -290,6 +289,7 @@ block main
                                             .thumbnail(popup-to="stake_your_rgbe_popup" href="javascript:;")
                                                 img(src="./images/itemproductfire.png", alt="")
                                                 p Click to Stake
+                                .expand_details__item
                                     .item__earned
                                         label GRBE Earned
                                         p.amount
