@@ -1568,7 +1568,7 @@ body[style="overflow-y: hidden"] .page:before {
     cursor: pointer; }
     .stake_your_rgbe_popup .your_rgbe__item .item__img {
       border: 2px solid #d9d9d9;
-      border-radius: 16px;
+      border-radius: 0.22rem;
       transition: 0.3s all ease-in-out; }
     .stake_your_rgbe_popup .your_rgbe__item .item__id {
       font-weight: 500;
@@ -1584,7 +1584,8 @@ body[style="overflow-y: hidden"] .page:before {
       .stake_your_rgbe_popup .your_rgbe__item .item__power span {
         font-weight: 700; }
     .stake_your_rgbe_popup .your_rgbe__item.checked .item__img {
-      border-color: #668d2e; }
+      background: #e0eecc;
+      border-color: rgba(102, 141, 46, 0.2); }
 
 .unbox_popup {
   max-width: 500px;

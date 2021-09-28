@@ -1,3 +1,6 @@
+.nft_farmer_page {
+  background-color: #f4fff8; }
+
 .farm_info_section {
   margin-top: 32px; }
 
@@ -32,7 +35,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 16px;
   border: 2px solid rgba(102, 141, 46, 0.2);
-  background: #f7fbf2;
+  background: #ecf5df;
   border-radius: 0.22rem;
   padding: 16px;
   max-width: 600px;
@@ -154,7 +157,7 @@
 
 .farming__item {
   border: 2px solid rgba(102, 141, 46, 0.2);
-  background: #f7fbf2;
+  background: #e0eecc;
   border-radius: 0.22rem;
   height: fit-content; }
   .farming__item.active .panel_header__expand {

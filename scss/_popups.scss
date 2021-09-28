@@ -463,7 +463,7 @@
         cursor: pointer;
         .item__img {
             border: 2px solid map-get($map: $theme-colors, $key: gray-border);
-            border-radius: 16px;
+            border-radius: 0.22rem;
             transition: 0.3s all ease-in-out;
         }
         .item__id {
@@ -485,7 +485,14 @@
         }
         &.checked {
             .item__img {
-                border-color: map-get($map: $theme-colors, $key: primary);
+                background: lighten(
+                    $color: map-get($theme-colors, primary),
+                    $amount: 50%
+                );
+                border-color: rgba(
+                    $color: map-get($theme-colors, primary),
+                    $alpha: 0.2
+                );
             }
         }
     }

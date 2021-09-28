@@ -1,5 +1,9 @@
 @import "_variable";
 
+.nft_farmer_page {
+    background-color: map-get($map: $theme-colors, $key: bg-lighten);
+}
+
 .farm_info_section {
     margin-top: 32px;
 }
@@ -39,7 +43,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 16px;
     border: 2px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
-    background: lighten($color: map-get($theme-colors, primary), $amount: 60%);
+    background: lighten($color: map-get($theme-colors, primary), $amount: 55%);
     border-radius: 0.22rem;
     padding: 16px;
     max-width: 600px;
@@ -199,7 +203,7 @@
 
 .farming__item {
     border: 2px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
-    background: lighten($color: map-get($theme-colors, primary), $amount: 60%);
+    background: lighten($color: map-get($theme-colors, primary), $amount: 50%);
     border-radius: 0.22rem;
     height: fit-content;
     &.active {
