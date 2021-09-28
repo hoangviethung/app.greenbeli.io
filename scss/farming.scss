@@ -40,7 +40,7 @@
     grid-gap: 16px;
     border: 2px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
     background: lighten($color: map-get($theme-colors, primary), $amount: 60%);
-    border-radius: 1.22rem;
+    border-radius: 0.22rem;
     padding: 16px;
     max-width: 600px;
     width: 100%;
@@ -133,7 +133,7 @@
             $color: map-get($theme-colors, primary),
             $alpha: 0.2
         );
-        border-radius: 1.22rem;
+        border-radius: 0.22rem;
         margin-right: 24px;
         .tab-active {
             color: map-get($map: $theme-colors, $key: neutral-white);
@@ -200,7 +200,7 @@
 .farming__item {
     border: 2px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
     background: lighten($color: map-get($theme-colors, primary), $amount: 60%);
-    border-radius: 1.22rem;
+    border-radius: 0.22rem;
     height: fit-content;
     &.active {
         .panel_header__expand {
@@ -233,7 +233,7 @@
         height: 24px;
         color: map-get($map: $theme-colors, $key: neutral-white);
         background: map-get($theme-colors, $key: primary);
-        border-radius: 1.22rem;
+        border-radius: 0.22rem;
         transition: transform 0.3s ease-in-out;
     }
     .panel_header__content--top {
@@ -256,7 +256,7 @@
                 lighten($color: map-get($theme-colors, secondary), $amount: 10%)
             );
             font-weight: 700;
-            border-radius: 1.22rem;
+            border-radius: 0.22rem;
         }
         .infomation__logos {
             display: flex;
@@ -373,7 +373,7 @@
             background: map-get($map: $theme-colors, $key: neutral-white);
             padding: 16px;
             box-shadow: 0 0 10px -2px rgba($color: #000000, $alpha: 0.16);
-            border-radius: 1.22rem;
+            border-radius: 0.22rem;
         }
         .item__liquidity {
             .available {
@@ -393,7 +393,7 @@
                     $color: map-get($theme-colors, primary),
                     $alpha: 0.2
                 );
-                border-radius: 1.22rem;
+                border-radius: 0.22rem;
             }
             .tabs_nav__item {
                 cursor: pointer;
@@ -401,7 +401,7 @@
                 display: inline-flex;
                 align-items: center;
                 padding: 8px 16px;
-                border-radius: 1.22rem;
+                border-radius: 0.22rem;
                 &.active {
                     color: map-get($map: $theme-colors, $key: neutral-white);
                     background-color: map-get(

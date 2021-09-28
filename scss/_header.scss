@@ -153,7 +153,7 @@ header.header {
 .header_info__item {
     background: rgba($color: map-get($theme-colors, primary), $alpha: 0.1);
     border: 1px solid rgba($color: map-get($theme-colors, primary), $alpha: 1);
-    border-radius: 1.22rem;
+    border-radius: 0.22rem;
     padding: 8px 20px;
     height: 36px;
     span {

@@ -33,7 +33,7 @@
   grid-gap: 16px;
   border: 2px solid rgba(102, 141, 46, 0.2);
   background: #f7fbf2;
-  border-radius: 1.22rem;
+  border-radius: 0.22rem;
   padding: 16px;
   max-width: 600px;
   width: 100%;
@@ -106,7 +106,7 @@
   align-items: center; }
   .filter_section__left_partial .tabs_row {
     background-color: rgba(102, 141, 46, 0.2);
-    border-radius: 1.22rem;
+    border-radius: 0.22rem;
     margin-right: 24px; }
     .filter_section__left_partial .tabs_row .tab-active {
       color: #ffffff;
@@ -155,7 +155,7 @@
 .farming__item {
   border: 2px solid rgba(102, 141, 46, 0.2);
   background: #f7fbf2;
-  border-radius: 1.22rem;
+  border-radius: 0.22rem;
   height: fit-content; }
   .farming__item.active .panel_header__expand {
     transform: translateX(-50%) rotate(180deg); }
@@ -180,7 +180,7 @@
     height: 24px;
     color: #ffffff;
     background: #668d2e;
-    border-radius: 1.22rem;
+    border-radius: 0.22rem;
     transition: transform 0.3s ease-in-out; }
   .farming__item .panel_header__content--top {
     display: flex;
@@ -197,7 +197,7 @@
       color: #ffffff;
       background: linear-gradient(180deg, #bf7f53, #cd9b78);
       font-weight: 700;
-      border-radius: 1.22rem; }
+      border-radius: 0.22rem; }
     .farming__item .panel_header__content--top .infomation__logos {
       display: flex;
       align-items: center;
@@ -281,7 +281,7 @@
     background: #ffffff;
     padding: 16px;
     box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.16);
-    border-radius: 1.22rem; }
+    border-radius: 0.22rem; }
   .farming__item .expand_details__item .item__liquidity .available {
     font-size: 1rem;
     text-align: center;
@@ -295,14 +295,14 @@
     width: fit-content;
     margin: 0 auto 16px;
     background-color: rgba(102, 141, 46, 0.2);
-    border-radius: 1.22rem; }
+    border-radius: 0.22rem; }
   .farming__item .expand_details__item .item__liquidity .tabs_nav__item {
     cursor: pointer;
     position: relative;
     display: inline-flex;
     align-items: center;
     padding: 8px 16px;
-    border-radius: 1.22rem; }
+    border-radius: 0.22rem; }
     .farming__item .expand_details__item .item__liquidity .tabs_nav__item.active {
       color: #ffffff;
       background-color: #668d2e; }
