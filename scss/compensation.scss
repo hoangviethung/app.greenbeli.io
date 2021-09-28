@@ -10,7 +10,7 @@
 .compensation_block {
     background: lighten($color: map-get($theme-colors, primary), $amount: 60%);
     border: 1px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
-    border-radius: 32px;
+    border-radius: 0.22rem;
     .block_head {
         padding: 24px;
         position: relative;

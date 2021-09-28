@@ -1,16 +1,20 @@
 #unbox_popup.unbox_popup(style="display:none")
     .popup_wrapper
         .popup__header.center
-            h2.popup__title.ta-c SUMMON YOUR HEROS
+            h2.popup__title.ta-c TREE SEED FOR SALE
         .popup__body
             .unbox_popup__desc
-                p The current price for summon a hero is 
-                    b 0.01 BNB.
+                p Seed price: 
+                    b 0.15 BNB
+                p Total seeds for sale: 
+                    b 20,000
                 p There is only 
-                    b 19987 
-                    | heroes left to summon.
+                    b 5,000 
+                    | seeds available form sale...
+            .unbox_popup__heading
+                h4 HOW MANY SEEBS DO YOU WANT TO BUY?
+                p (Maximum 20 seebs)
             .unbox_popup__input
-                h4 HOW MANT HEROS DO YOU WANT YO SUMMON?
                 .input-main
                     input.form-control(type="number" value="0")
                     .invalid-feedback.ta-c
@@ -24,14 +28,13 @@
                         p 75%
                         p 100%
                     .invalid-feedback.ta-c
-                .result
-                    p SUMMON 
-                        b 20 
-                        | HEROES WITH 
-                        b 0.20 BNB
             .token-name 0x4e64bd2d3c...Odf21dfd6868
             .loading
                 i.fas.fa-circle-notch.fa-spin
-            .successful-content Congratulations, you have successfully summoned 10 Heros
+            .successful-content
+                p Congratulations !!!
+                p You have successfully summoned 
+                    b 10 
+                    | Heros.
         .popup__footer.center
-            button.bt.bt--shadow.bt--md.bt--primary.js-validate-checkout CHECKOUT
+            button.bt.bt--shadow.bt--md.bt--primary.js-validate-checkout BUY

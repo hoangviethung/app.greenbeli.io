@@ -348,6 +348,10 @@
     display: flex;
     align-items: center;
     grid-gap: 16px; }
+    @media (max-width: 575.98px) {
+      .farming__item .expand_details__item .item__liquidity .form_wrapper .block-input-action {
+        flex-direction: column;
+        align-items: unset; } }
   .farming__item .expand_details__item .item__liquidity .form_wrapper .input_group {
     position: relative; }
     .farming__item .expand_details__item .item__liquidity .form_wrapper .input_group .form-control {

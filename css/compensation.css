@@ -7,7 +7,7 @@
 .compensation_block {
   background: #f7fbf2;
   border: 1px solid rgba(102, 141, 46, 0.2);
-  border-radius: 32px; }
+  border-radius: 0.22rem; }
   .compensation_block .block_head {
     padding: 24px;
     position: relative;
