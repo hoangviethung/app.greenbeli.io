@@ -357,12 +357,6 @@
                 flex-wrap: wrap;
                 align-items: center;
             }
-            @media (min-width: 1025px) {
-                &:first-child {
-                    margin-left: auto;
-                    margin-right: 16px;
-                }
-            }
         }
         @media (max-width: 1024.98px) {
             grid-template-columns: repeat(3, 1fr);

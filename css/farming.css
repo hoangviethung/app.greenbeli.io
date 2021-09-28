@@ -277,10 +277,6 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center; }
-    @media (min-width: 1025px) {
-      .farming__item .panel_header__content--right .content--bottom__item:first-child {
-        margin-left: auto;
-        margin-right: 16px; } }
     @media (max-width: 1024.98px) {
       .farming__item .panel_header__content--right {
         grid-template-columns: repeat(3, 1fr); } }
