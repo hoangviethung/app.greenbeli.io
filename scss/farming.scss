@@ -16,7 +16,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        max-width: 250px;
+        max-width: 200px;
         &--left {
             left: 0;
             @media (max-width: 1024.98px) {
@@ -353,6 +353,11 @@
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
+            }
+            &:first-child {
+                max-width: 100px;
+                margin-left: auto;
+                margin-right: 24px;
             }
         }
         @media (max-width: 1024.98px) {

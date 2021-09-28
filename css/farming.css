@@ -12,7 +12,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    max-width: 250px; }
+    max-width: 200px; }
     .farm_info_section__wrapper .farm_info_decorate--left {
       left: 0; }
       @media (max-width: 1024.98px) {
@@ -274,6 +274,10 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center; }
+    .farming__item .panel_header__content--right .content--bottom__item:first-child {
+      max-width: 100px;
+      margin-left: auto;
+      margin-right: 24px; }
     @media (max-width: 1024.98px) {
       .farming__item .panel_header__content--right {
         grid-template-columns: repeat(3, 1fr); } }
