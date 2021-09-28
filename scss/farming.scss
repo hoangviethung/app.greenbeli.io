@@ -38,12 +38,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 16px;
-    background: lighten(
-        $color: map-get($theme-colors, primary-light),
-        $amount: 30%
-    );
-    border: 2px solid
-        rgba($color: map-get($theme-colors, primary-light), $alpha: 0.2);
+    border: 2px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
+    background: lighten($color: map-get($theme-colors, primary), $amount: 60%);
     border-radius: 1.22rem;
     padding: 16px;
     max-width: 600px;

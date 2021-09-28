@@ -13,52 +13,5 @@ block js
 block main
     // *** BANNER *** //
     include ../components/banner_home
-    .statistics_section
-        .container
-            .statistics_section__wrapper
-                .statistics_section__item_partial.left
-                    .statistics_section__supply
-                        .icon
-                            img(src="./icons/grbe.png", alt="GRBE")
-                        .details
-                            .details__header
-                                .external-link
-                                    span RGBE
-                                    a(href="#", target="_blank", rel="noopener noreferrer")
-                                        i.far.fa-external-link
-                                .price-box
-                                    label Price
-                                    span.price $4.3589
-                                    a.bt.bt--primary(href="#", target="_blank", rel="noopener noreferrer") Buy
-                            .details__item_wrapper
-                                .details__item
-                                    span.title Cir.Supply
-                                    span.amount 3,508,157
-                                .details__item
-                                    span.title Total Supply
-                                    span.amount 3,989,081
-                                .details__item
-                                    span.title Market Cap
-                                    span.amount $15,291,589
-                    .statistics_section__my_grbe
-                        .statistics_section__wallet
-                            .statistics_section__grbe_in_wallet
-                                .icon
-                                    img(src="./icons/grbe.png", alt="GRBE")
-                                .detail
-                                    .title GRBE in wallet
-                                    .value
-                                        .amount 0
-                                        .usd-value $0
-                            .statistics_section__grbe_in_wallet
-                                .icon
-                                    img(src="./icons/grbe.png", alt="GRBE")
-                                .detail
-                                    .title GRBE in wallet
-                                    .value
-                                        .amount 0
-                                        .usd-value $0
-                .statistics_section__item_partial.right
-                    a.twitter-timeline(data-height='100%' data-widht="100%" href='://twitter.com/Green_Beli?ref_src=twsrc%5Etfw') Tweets by TwitterDev
     // *** POPUP UNBOX *** //
     include ../components/unbox_popup
