@@ -1,0 +1,85 @@
+extends ../layouts/layout
+
+block var
+    - pageTitle = "Compensation | Green Beli"
+    - pageName = "nft_compensation_page"
+block library-css
+block css
+    link(rel="stylesheet", href="./css/banner.css")
+    link(rel="stylesheet", href="./css/claim.css")
+block library-js
+block js
+    script(src="./js/claim.js")
+block main
+    // *** BANNER *** //
+    include ../components/banner_claim
+    // *** COMPENSATION *** //
+    section.claim_section
+        .container
+            .claim_block
+                .tab_container
+                    .tabs_nav
+                        .tabs_nav__item(toggle-for="seed-sale")
+                            h2 Seed sale
+                        .tabs_nav__item(toggle-for="private-sale")
+                            h2 Private sale
+                        .tabs_nav__item(toggle-for="airdrop")
+                            h2 Airdrop
+                    .tabs_content
+                        .block_content(toggle-id="seed-sale")
+                            b Claim token will be gradually release from: 
+                                span Sep 20th 2021, 3:00PM UTC 
+                                | to 
+                                span NOV 20th 2022, 3:00PM UTC
+                            ul
+                                li
+                                    span Total token:
+                                    span 10.0000.0000
+                                li
+                                    span You have claimed:
+                                    span 5.000.000
+                                li
+                                    span Remaining:
+                                    span 5.000.000
+                                li
+                                    span Claimable:
+                                    span 2.000.000
+                            a.bt.bt--primary-light(href="#") Claim
+                        .block_content(toggle-id="private-sale")
+                            b Claim token will be gradually release from: 
+                                span Sep 20th 2021, 3:00PM UTC 
+                                | to 
+                                span NOV 20th 2022, 3:00PM UTC
+                            ul
+                                li
+                                    span Total token:
+                                    span 10.0000.0000
+                                li
+                                    span You have claimed:
+                                    span 5.000.000
+                                li
+                                    span Remaining:
+                                    span 5.000.000
+                                li
+                                    span Claimable:
+                                    span 2.000.000
+                            a.bt.bt--primary-light(href="#") Claim
+                        .block_content(toggle-id="airdrop")
+                            b Claim token will be gradually release from: 
+                                span Sep 20th 2021, 3:00PM UTC 
+                                | to 
+                                span NOV 20th 2022, 3:00PM UTC
+                            ul
+                                li
+                                    span Total token:
+                                    span 10.0000.0000
+                                li
+                                    span You have claimed:
+                                    span 5.000.000
+                                li
+                                    span Remaining:
+                                    span 5.000.000
+                                li
+                                    span Claimable:
+                                    span 2.000.000
+                            a.bt.bt--primary-light(href="#") Claim

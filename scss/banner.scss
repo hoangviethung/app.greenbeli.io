@@ -3,6 +3,9 @@
 .banner_section {
     padding: 24px 0;
     background: lighten($color: map-get($theme-colors, primary), $amount: 60%);
+    background-image: url("../images/background-banner.png");
+    background-size: cover;
+    background-position: center center;
 }
 
 .banner_section__wrapper {
@@ -53,17 +56,8 @@
     }
 }
 
-.nft_home_page {
-    .banner_section__wrapper {
-        max-width: 500px;
-        margin: 0 auto;
-        min-height: 80vh;
-    }
-    .banner_section {
-        background-image: url("../images/background-banner.png");
-        background-size: cover;
-        background-position: center center;
-    }
+.nft_farmer_page,
+.nft_compensation_page {
     .banner_section__content {
         img {
             max-width: 300px;
@@ -71,20 +65,11 @@
     }
 }
 
-.nft_farmer_page {
-    .banner_section__wrapper {
-        max-width: 500px;
-        margin: 0 auto;
-        min-height: 450px;
-    }
-    .banner_section {
-        background-image: url("../images/background-banner.png");
-        background-size: cover;
-        background-position: center center;
-    }
+.nft_market_page,
+.nft_your_tree_page {
     .banner_section__content {
         img {
-            max-width: 300px;
+            max-width: 200px;
         }
     }
 }

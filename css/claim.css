@@ -1,0 +1,78 @@
+.claim_section {
+  padding: 44px 0; }
+  @media (max-width: 767.98px) {
+    .claim_section {
+      padding: 16px 0; } }
+
+.claim_block {
+  background: #f7fbf2;
+  border: 1px solid rgba(102, 141, 46, 0.2);
+  border-radius: 0.22rem; }
+  .claim_block .tabs_nav {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(102, 141, 46, 0.1); }
+  .claim_block .tabs_nav__item {
+    cursor: pointer;
+    padding: 24px;
+    position: relative; }
+    .claim_block .tabs_nav__item h2 {
+      font-size: 1.125rem; }
+      @media (max-width: 575.98px) {
+        .claim_block .tabs_nav__item h2 {
+          font-size: 1rem; } }
+    .claim_block .tabs_nav__item:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #668d2e; }
+    .claim_block .tabs_nav__item:not(.active):after {
+      opacity: 0;
+      visibility: hidden; }
+    @media (max-width: 575.98px) {
+      .claim_block .tabs_nav__item {
+        padding: 16px; } }
+  .claim_block .block_content {
+    padding: 24px; }
+    .claim_block .block_content ul {
+      margin-top: 16px;
+      margin-bottom: 16px; }
+    .claim_block .block_content li {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; }
+      .claim_block .block_content li span {
+        display: inline-block; }
+        .claim_block .block_content li span + span {
+          color: #3397e2;
+          margin-left: 8px;
+          font-weight: 500; }
+        .claim_block .block_content li span a {
+          color: inherit;
+          text-decoration: underline; }
+          .claim_block .block_content li span a ~ i {
+            margin-left: 4px; }
+        .claim_block .block_content li span:first-child {
+          flex: 0 0 150px;
+          max-width: 150px; }
+        .claim_block .block_content li span:last-child {
+          flex-basis: 0;
+          flex-grow: 1;
+          max-width: 100%; }
+      .claim_block .block_content li + li {
+        margin-top: 8px; }
+    .claim_block .block_content b {
+      font-weight: 600; }
+      .claim_block .block_content b span {
+        color: #bf7f53; }
+    @media (max-width: 575.98px) {
+      .claim_block .block_content {
+        padding: 16px; } }
+  .claim_block + .compensation_block {
+    margin-top: 24px; }
+  @media (max-width: 575.98px) {
+    .claim_block {
+      border-radius: 16px; } }
