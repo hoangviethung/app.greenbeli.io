@@ -1,101 +1,83 @@
 #character_detail_popup.character_detail_popup(style="display:none")
     .popup_wrapper
-        .popup__header
-            h2.popup__title Character Detail
         .popup__body
             .character_detail__wrapper
-                .left_detail
-                    .list_products__item_wrapper
-                        .list_products__item.list_products__item--fire
-                            .passive
-                                span
-                                    img(src="./icons/fire.png", alt="Fire")
-                            .list_products__thumbnail
-                                .lazyload-wrapper
-                                    img(src="./images/item-reder-demo-1.png", alt="CHARACTER")
-                .right_detail
-                    .name RGBE#45793
-                    .address ID: 144964015431745793
-                        span.copy
-                            i.fal.fa-copy
-                    .title_block Information
-                    .block_information.information_character
-                        .information__item
-                            .info_title Class
-                            .info_type
-                                img(src="./icons/fire.png", alt="Fire")
-                                span Fire
-                        .information__item
-                            .info_title Power
-                            .info_type
-                                i.fas.fa-fist-raised
-                                span 10%
-                        .information__item
-                            .info_title Star
-                            .info_type
-                                i.fas.fa-star
-                                i.fas.fa-star
-                        .information__item
-                            .info_title Genes
-                            .info_type
-                                i.fas.fa-dna
-                                span 10%
-                    .title_block Stats
-                    .block_information.stats
-                        .stats__item
-                            i.fad.fa-axe
-                            div
-                                p Intel
-                                p 48
-                        .stats__item
-                            i.fas.fa-burn
-                            div
-                                p Growth
-                                p 48
-                        .stats__item
-                            i.fas.fa-star
-                            div
-                                p Base Dmg
-                                p 31
-                        .stats__item
-                            i.fas.fa-bolt
-                            div
-                                p Crit Dmg
-                                p 31
-                        .stats__item
-                            i.fab.fa-slack
-                            div
-                                p Crit Rate
-                                p 31
-                    .title_block Body parts
-                    .block_information.skin_character
-                        .skin__item(rarity="common")
-                            img(src="./icons/face.svg", alt="SKIN-ITEM")
-                            div
-                                p Face
-                                p Level 1
-                        .skin__item(rarity="uncommon")
-                            img(src="./icons/hair.svg", alt="SKIN-ITEM")
-                            div
-                                p Hair
-                                p Level 1
-                        .skin__item(rarity="rare")
-                            img(src="./icons/body.svg", alt="SKIN-ITEM")
-                            div
-                                p Body
-                                p Level 1
-                        .skin__item(rarity="epic")
-                            img(src="./icons/hand.svg", alt="SKIN-ITEM")
-                            div
-                                p Hand
-                                p Level 1
-                        .skin__item(rarity="legendary")
-                            img(src="./icons/leg.svg", alt="SKIN-ITEM")
-                            div
-                                p Leg
-                                p Level 1
-                        .skin__item(rarity="mythical")
-                            img(src="./icons/deco.svg", alt="SKIN-ITEM")
-                            div
-                                p Deco
-                                p Level 1
+                .detail_top
+                    .top_left
+                        .character__image
+                            img(src="./images/itemproductmetal.png", alt="CHARACTER")
+                        .character__id
+                            span 144964015431745793
+                            span.copy
+                                i.fal.fa-copy
+                    .top_right
+                        .character__information
+                            .information__item
+                                span Name
+                                span RGBE#45793
+                            .information__item
+                                span Star
+                                .character__rating
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                            .information__item
+                                span Class
+                                span Metal
+                            .information__item
+                                span Power
+                                span 20%
+                            .information__item
+                                span Intel
+                                span 48
+                            .information__item
+                                span Gens
+                                span 50
+                            .information__item
+                                span Growth
+                                span 12
+                            .information__item
+                                span Base Dmg
+                                span 45
+                            .information__item
+                                span Crit Dmg
+                                span 32
+                            .information__item
+                                span Crit Rate
+                                span 56
+                .detail_bottom
+                    .bottom_item
+                        .title_block Body parts
+                        .character__skin
+                            .skin__item(rarity="common")
+                                img(src="./icons/face.svg", alt="SKIN-ITEM")
+                                div
+                                    p Face
+                                    p Level 1
+                            .skin__item(rarity="uncommon")
+                                img(src="./icons/hair.svg", alt="SKIN-ITEM")
+                                div
+                                    p Hair
+                                    p Level 1
+                            .skin__item(rarity="rare")
+                                img(src="./icons/body.svg", alt="SKIN-ITEM")
+                                div
+                                    p Body
+                                    p Level 1
+                            .skin__item(rarity="epic")
+                                img(src="./icons/hand.svg", alt="SKIN-ITEM")
+                                div
+                                    p Hand
+                                    p Level 1
+                            .skin__item(rarity="legendary")
+                                img(src="./icons/leg.svg", alt="SKIN-ITEM")
+                                div
+                                    p Leg
+                                    p Level 1
+                            .skin__item(rarity="mythical")
+                                img(src="./icons/deco.svg", alt="SKIN-ITEM")
+                                div
+                                    p Deco
+                                    p Level 1

@@ -1353,61 +1353,69 @@ body[style="overflow-y: hidden"] .page:before {
       color: #bf7f53; }
 
 .character_detail_popup {
-  max-width: 945px;
-  width: 100%; }
+  max-width: 500px;
+  width: 100%;
+  overflow: visible;
+  color: #ffffff;
+  background-color: rgba(224, 238, 204, 0.5); }
   .character_detail_popup .character_detail__wrapper {
     display: grid;
-    grid-template-columns: 312px auto;
     grid-column-gap: 24px; }
-    @media (max-width: 1024.98px) {
-      .character_detail_popup .character_detail__wrapper {
-        grid-template-columns: 250px auto; } }
-    @media (max-width: 669.98px) {
-      .character_detail_popup .character_detail__wrapper {
-        grid-template-columns: 200px auto; } }
+  .character_detail_popup .detail_top {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1.3fr 1fr; }
+    .character_detail_popup .detail_top .top_left {
+      background-color: #e0eecc;
+      border-radius: 0.22rem;
+      box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08); }
+    .character_detail_popup .detail_top .top_right {
+      padding: 16px 16px 16px 0; }
+      @media (max-width: 575.98px) {
+        .character_detail_popup .detail_top .top_right {
+          padding: 16px;
+          background-color: #e0eecc;
+          border-radius: 0.22rem;
+          box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08); } }
     @media (max-width: 575.98px) {
-      .character_detail_popup .character_detail__wrapper {
+      .character_detail_popup .detail_top {
         grid-template-columns: 1fr; } }
-  .character_detail_popup .list_products__item .passive {
-    top: 16px;
-    left: 16px;
-    z-index: 3; }
-    .character_detail_popup .list_products__item .passive span {
-      width: 36px;
-      height: 36px; }
-      @media (max-width: 669.98px) {
-        .character_detail_popup .list_products__item .passive span {
-          width: 24px;
-          height: 24px; } }
-  .character_detail_popup .list_products__item:after {
-    z-index: 1; }
-  .character_detail_popup .list_products__item--metal .list_products__thumbnail {
-    background-color: white; }
-  .character_detail_popup .list_products__item--wood .list_products__thumbnail {
-    background-color: #efffeb; }
-  .character_detail_popup .list_products__item--water .list_products__thumbnail {
-    background-color: #e3fbff; }
-  .character_detail_popup .list_products__item--fire .list_products__thumbnail {
-    background-color: #fef7f6; }
-  .character_detail_popup .list_products__item--earth .list_products__thumbnail {
-    background-color: #f6f2f0; }
-  .character_detail_popup .list_products__thumbnail {
-    position: relative;
-    height: 308px;
-    padding: 16px;
-    z-index: 2;
-    border-radius: 14px; }
-    .character_detail_popup .list_products__thumbnail .lazyload-wrapper img {
-      max-height: unset; }
-    @media (max-width: 1024.98px) {
-      .character_detail_popup .list_products__thumbnail {
-        height: 246px; } }
-    @media (max-width: 669.98px) {
-      .character_detail_popup .list_products__thumbnail {
-        height: 196px; } }
+  .character_detail_popup .character__id {
+    cursor: pointer;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 4px 8px;
+    width: fit-content;
+    margin: 0 auto 16px;
+    border-radius: 0.22rem;
+    background-color: rgba(102, 141, 46, 0.8);
+    transition: 0.3s all ease-in-out; }
+    .character_detail_popup .character__id span + span {
+      margin-left: 4px; }
+    .character_detail_popup .character__id:hover {
+      background-color: #668d2e; }
+    .character_detail_popup .character__id:active {
+      transform: translateY(2px); }
+  @media (max-width: 575.98px) {
+    .character_detail_popup .character__image {
+      max-width: 150px;
+      margin: 0 auto; } }
+  .character_detail_popup .character__information {
+    color: #ffffff; }
+    .character_detail_popup .character__information .information__item {
+      display: flex;
+      justify-content: space-between; }
+      .character_detail_popup .character__information .information__item + .information__item {
+        margin-top: 8px; }
     @media (max-width: 575.98px) {
-      .character_detail_popup .list_products__thumbnail {
-        height: 308px; } }
+      .character_detail_popup .character__information {
+        color: #212121; } }
+  .character_detail_popup .character__rating {
+    display: flex;
+    color: #ffc700; }
+    .character_detail_popup .character__rating i + i {
+      margin-left: 4px; }
   .character_detail_popup .left_detail .block_action {
     display: flex;
     justify-content: space-between;
@@ -1443,128 +1451,70 @@ body[style="overflow-y: hidden"] .page:before {
         display: block; }
         .character_detail_popup .left_detail .block_action .price {
           margin-bottom: 24px; } }
-  .character_detail_popup .right_detail .name {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 8px; }
-  .character_detail_popup .right_detail .address {
-    color: #668d2e;
-    display: flex;
-    align-items: center; }
-    .character_detail_popup .right_detail .address .copy {
-      font-size: 1rem;
-      margin-left: 12px;
-      cursor: pointer;
-      display: block;
-      transition: transform 0.3s ease-in-out; }
-      .character_detail_popup .right_detail .address .copy:active {
-        transform: translateY(4px); }
-  .character_detail_popup .right_detail .title_block {
-    color: rgba(102, 102, 102, 0.6);
-    font-size: 1rem;
-    margin-bottom: 8px;
-    font-weight: 700;
-    margin-top: 24px; }
-  .character_detail_popup .right_detail .block_information {
-    border: 1px solid #d9d9d9;
-    border-radius: 16px;
-    padding: 16px; }
-  .character_detail_popup .right_detail .information_character {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 8px; }
-    .character_detail_popup .right_detail .information_character .info_title {
-      font-weight: 400;
-      color: #666666;
-      margin-bottom: 4px; }
-    .character_detail_popup .right_detail .information_character .info_type {
-      min-height: 24px;
-      display: flex;
-      align-items: center; }
-      .character_detail_popup .right_detail .information_character .info_type img {
-        margin-right: 8px;
-        width: 24px;
-        height: 24px; }
-      .character_detail_popup .right_detail .information_character .info_type i {
-        font-size: 1rem; }
-        .character_detail_popup .right_detail .information_character .info_type i.fas.fa-star {
-          color: #ffc700; }
-        .character_detail_popup .right_detail .information_character .info_type i.fas.fa-fist-raised {
-          color: #666666;
-          margin-right: 8px; }
-        .character_detail_popup .right_detail .information_character .info_type i.fas.fa-dna {
-          color: #00c6e3;
-          margin-right: 8px; }
-        .character_detail_popup .right_detail .information_character .info_type i + i {
-          margin-left: 4px; }
-      .character_detail_popup .right_detail .information_character .info_type span {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 90px;
-        font-weight: 500; }
-    @media (max-width: 1024.98px) {
-      .character_detail_popup .right_detail .information_character {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 16px; } }
-    @media (max-width: 767.98px) {
-      .character_detail_popup .right_detail .information_character {
-        grid-template-columns: repeat(2, 1fr); } }
-  .character_detail_popup .right_detail .stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 8px; }
-    .character_detail_popup .right_detail .stats .stats__item {
-      display: flex;
-      align-items: flex-start; }
-      .character_detail_popup .right_detail .stats .stats__item > i {
-        font-size: 1.2rem;
-        margin-top: 4px; }
-      .character_detail_popup .right_detail .stats .stats__item > div {
-        margin-left: 8px; }
-        .character_detail_popup .right_detail .stats .stats__item > div p {
-          font-weight: 500;
-          max-width: 124px;
-          text-overflow: ellipsis;
-          overflow: hidden; }
-    @media (max-width: 1024.98px) {
-      .character_detail_popup .right_detail .stats {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 16px; } }
-    @media (max-width: 767.98px) {
-      .character_detail_popup .right_detail .stats {
-        grid-template-columns: repeat(2, 1fr); } }
-  .character_detail_popup .right_detail .skin_character {
+  .character_detail_popup .detail_bottom {
+    margin-top: 16px; }
+    .character_detail_popup .detail_bottom .bottom_item {
+      padding: 16px;
+      border: 2px solid #e0eecc;
+      border-radius: 0.22rem;
+      background-color: #ffffff; }
+    .character_detail_popup .detail_bottom .title_block {
+      text-align: center;
+      font-size: 1.125rem;
+      color: #668d2e;
+      padding-bottom: 16px; }
+  .character_detail_popup .character__skin {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 16px; }
-    .character_detail_popup .right_detail .skin_character .skin__item {
+    .character_detail_popup .character__skin .skin__item {
       display: flex;
       align-items: flex-start; }
-      .character_detail_popup .right_detail .skin_character .skin__item > div {
+      .character_detail_popup .character__skin .skin__item > div {
         margin-left: 8px; }
-        .character_detail_popup .right_detail .skin_character .skin__item > div p {
-          font-weight: 500;
+        .character_detail_popup .character__skin .skin__item > div p {
+          font-size: 1rem;
+          font-weight: 700;
           max-width: 124px;
           text-overflow: ellipsis;
           overflow: hidden; }
-          .character_detail_popup .right_detail .skin_character .skin__item > div p + p {
+          .character_detail_popup .character__skin .skin__item > div p + p {
+            font-size: 0.75rem;
             color: #212121;
-            font-weight: 400; }
-      .character_detail_popup .right_detail .skin_character .skin__item[rarity="common"] {
+            font-weight: 400;
+            margin-top: 4px; }
+          @media (max-width: 575.98px) {
+            .character_detail_popup .character__skin .skin__item > div p {
+              font-size: 0.75rem; } }
+      .character_detail_popup .character__skin .skin__item[rarity="common"] {
         color: #8e8e8e; }
-      .character_detail_popup .right_detail .skin_character .skin__item[rarity="uncommon"] {
+      .character_detail_popup .character__skin .skin__item[rarity="uncommon"] {
         color: #25b503; }
-      .character_detail_popup .right_detail .skin_character .skin__item[rarity="rare"] {
+      .character_detail_popup .character__skin .skin__item[rarity="rare"] {
         color: #3c78d8; }
-      .character_detail_popup .right_detail .skin_character .skin__item[rarity="epic"] {
+      .character_detail_popup .character__skin .skin__item[rarity="epic"] {
         color: #9900ff; }
-      .character_detail_popup .right_detail .skin_character .skin__item[rarity="legendary"] {
+      .character_detail_popup .character__skin .skin__item[rarity="legendary"] {
         color: #ff0000; }
-      .character_detail_popup .right_detail .skin_character .skin__item[rarity="mythical"] {
+      .character_detail_popup .character__skin .skin__item[rarity="mythical"] {
         color: #e69138; }
-    @media (max-width: 767.98px) {
-      .character_detail_popup .right_detail .skin_character {
-        grid-template-columns: repeat(2, 1fr); } }
+  .character_detail_popup .fancybox-close-small {
+    color: #212121;
+    top: -22px;
+    right: -22px;
+    background-color: #e0eecc; }
+    .character_detail_popup .fancybox-close-small:hover {
+      background-color: #c9e2a5; }
+    @media (max-width: 575.98px) {
+      .character_detail_popup .fancybox-close-small {
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%); } }
+  @media (max-width: 575.98px) {
+    .character_detail_popup {
+      margin: 56px 0; }
+      .character_detail_popup .popup__body {
+        padding: 32px 16px; } }
 
 .stake_your_rgbe_popup {
   max-width: 636px;

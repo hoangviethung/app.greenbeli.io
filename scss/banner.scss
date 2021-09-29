@@ -65,11 +65,18 @@
     }
 }
 
-.nft_market_page,
-.nft_your_tree_page {
+.nft_market_page {
     .banner_section__content {
         img {
             max-width: 200px;
+        }
+    }
+}
+
+.nft_your_tree_page {
+    .banner_section__content {
+        img {
+            max-width: 150px;
         }
     }
 }

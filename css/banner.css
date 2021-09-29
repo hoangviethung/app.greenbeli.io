@@ -49,6 +49,8 @@
 .nft_compensation_page .banner_section__content img {
   max-width: 300px; }
 
-.nft_market_page .banner_section__content img,
-.nft_your_tree_page .banner_section__content img {
+.nft_market_page .banner_section__content img {
   max-width: 200px; }
+
+.nft_your_tree_page .banner_section__content img {
+  max-width: 150px; }
