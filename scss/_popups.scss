@@ -323,8 +323,6 @@
             > div {
                 margin-left: 8px;
                 p {
-                    font-size: 1rem;
-                    font-weight: 700;
                     max-width: 124px;
                     text-overflow: ellipsis;
                     overflow: hidden;
@@ -374,15 +372,17 @@
             );
         }
         @media (max-width: 575.98px) {
+            top: unset;
             right: unset;
             left: 50%;
+            bottom: -22px;
             transform: translateX(-50%);
         }
     }
     @media (max-width: 575.98px) {
         margin: 56px 0;
         .popup__body {
-            padding: 32px 16px;
+            padding: 16px 16px 44px 16px;
         }
     }
 }

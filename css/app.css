@@ -1473,8 +1473,6 @@ body[style="overflow-y: hidden"] .page:before {
       .character_detail_popup .character__skin .skin__item > div {
         margin-left: 8px; }
         .character_detail_popup .character__skin .skin__item > div p {
-          font-size: 1rem;
-          font-weight: 700;
           max-width: 124px;
           text-overflow: ellipsis;
           overflow: hidden; }
@@ -1507,14 +1505,16 @@ body[style="overflow-y: hidden"] .page:before {
       background-color: #c9e2a5; }
     @media (max-width: 575.98px) {
       .character_detail_popup .fancybox-close-small {
+        top: unset;
         right: unset;
         left: 50%;
+        bottom: -22px;
         transform: translateX(-50%); } }
   @media (max-width: 575.98px) {
     .character_detail_popup {
       margin: 56px 0; }
       .character_detail_popup .popup__body {
-        padding: 32px 16px; } }
+        padding: 16px 16px 44px 16px; } }
 
 .stake_your_rgbe_popup {
   max-width: 636px;
