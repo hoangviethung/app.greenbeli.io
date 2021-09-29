@@ -69,12 +69,12 @@ function showFarmingItemDetail() {
     });
 }
 
-function fancyboxStakeYourRGBE() {
-    $.each($("[popup-to='stake_your_rgbe_popup']"), function (index, item) {
+function fancyboxStakeYourGRBE() {
+    $.each($("[popup-to='stake_your_grbe_popup']"), function (index, item) {
         $(item).on("click", function (e) {
             e.preventDefault();
             $.fancybox.open({
-                src: "#stake_your_rgbe_popup",
+                src: "#stake_your_grbe_popup",
                 type: "inline",
                 touch: false,
                 hash: false,
@@ -84,9 +84,9 @@ function fancyboxStakeYourRGBE() {
     });
 }
 
-function checkedStakeYourRGBE() {
-    $(".your_rgbe__list .your_rgbe__item").on("click", function () {
-        $(".your_rgbe__list .your_rgbe__item")
+function checkedStakeYourGRBE() {
+    $(".your_grbe__list .your_grbe__item").on("click", function () {
+        $(".your_grbe__list .your_grbe__item")
             .not($(this))
             .removeClass("checked");
         $(this).addClass("checked");
@@ -102,8 +102,8 @@ function activePercent() {
 
 $(function () {
     showFarmingItemDetail();
-    fancyboxStakeYourRGBE();
-    checkedStakeYourRGBE();
+    fancyboxStakeYourGRBE();
+    checkedStakeYourGRBE();
     activePercent();
     const TabLiquidityEx1 = new Tab(".item__liquidity[ex-1] .tab_container");
     const TabLiquidityEx2 = new Tab(".item__liquidity[ex-2] .tab_container");

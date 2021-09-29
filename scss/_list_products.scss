@@ -42,7 +42,7 @@
         display: flex;
         justify-content: center;
         color: map-get($map: $theme-colors, $key: additional-yellow);
-        padding-bottom: 8px;
+        padding-bottom: 16px;
         i + i {
             margin-left: 4px;
         }

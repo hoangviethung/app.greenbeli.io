@@ -32,7 +32,7 @@
     display: flex;
     justify-content: center;
     color: #ffc700;
-    padding-bottom: 8px; }
+    padding-bottom: 16px; }
     .list_products__item .character__rating i + i {
       margin-left: 4px; }
   .list_products__item .item_wrapper__bottom {
@@ -68,11 +68,10 @@
   .your_tree__filter_top .left_partial .bt-tab-name.active {
     background: #668d2e;
     color: #ffffff; }
-  .your_tree__filter_top .left_partial .total_rgbe {
+  .your_tree__filter_top .left_partial .partial__item {
     display: flex;
     justify-content: space-between;
-    font-size: 1.25rem;
-    font-weight: 500; }
+    font-size: 1.25rem; }
   @media (max-width: 1024.98px) {
     .your_tree__filter_top .left_partial {
       margin-bottom: 16px; } }

@@ -152,7 +152,7 @@
 }
 
 .character_detail_popup {
-    max-width: 500px;
+    max-width: 650px;
     width: 100%;
     overflow: visible;
     color: map-get($map: $theme-colors, $key: neutral-white);
@@ -169,6 +169,7 @@
         grid-gap: 16px;
         grid-template-columns: 1.3fr 1fr;
         .top_left {
+            position: relative;
             background-color: lighten(
                 $color: map-get($theme-colors, primary),
                 $amount: 50%
@@ -201,13 +202,16 @@
         }
     }
     .character__id {
+        font-size: 0.75rem;
+        position: absolute;
+        left: 8px;
+        top: 8px;
         cursor: pointer;
         color: map-get($map: $theme-colors, $key: neutral-white);
         display: flex;
         justify-content: center;
         padding: 4px 8px;
         width: fit-content;
-        margin: 0 auto 16px;
         border-radius: 0.22rem;
         background-color: rgba(
             $color: map-get($map: $theme-colors, $key: primary),
@@ -305,6 +309,9 @@
                 lighten($color: map-get($theme-colors, primary), $amount: 50%);
             border-radius: 0.22rem;
             background-color: map-get($map: $theme-colors, $key: neutral-white);
+            + .bottom_item {
+                margin-top: 16px;
+            }
         }
         .title_block {
             text-align: center;
@@ -319,7 +326,7 @@
         grid-gap: 16px;
         .skin__item {
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             > div {
                 margin-left: 8px;
                 p {
@@ -387,11 +394,11 @@
     }
 }
 
-.stake_your_rgbe_popup {
+.stake_your_grbe_popup {
     max-width: 636px;
     width: 100%;
     margin: 0 auto;
-    .your_rgbe__list {
+    .your_grbe__list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 16px;
@@ -399,7 +406,7 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
-    .your_rgbe__item {
+    .your_grbe__item {
         cursor: pointer;
         .item__img {
             border: 2px solid map-get($map: $theme-colors, $key: gray-border);

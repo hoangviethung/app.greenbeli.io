@@ -382,13 +382,13 @@
     text-align: center;
     opacity: 0.5;
     margin-bottom: 8px; }
-  .farming__item .expand_details__item .item__stake_grbe .select_rgbe .thumbnail {
+  .farming__item .expand_details__item .item__stake_grbe .select_grbe .thumbnail {
     cursor: pointer;
     max-width: 130px;
     margin: 0 auto; }
-    .farming__item .expand_details__item .item__stake_grbe .select_rgbe .thumbnail:not(.active) {
+    .farming__item .expand_details__item .item__stake_grbe .select_grbe .thumbnail:not(.active) {
       filter: grayscale(100%); }
-  .farming__item .expand_details__item .item__stake_grbe .select_rgbe p {
+  .farming__item .expand_details__item .item__stake_grbe .select_grbe p {
     text-align: center;
     font-size: 0.75rem;
     color: #666666;

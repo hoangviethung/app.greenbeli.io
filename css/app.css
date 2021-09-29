@@ -965,13 +965,13 @@ body[style="overflow-y: hidden"] .page:before {
     font-size: 1rem;
     appearance: none;
     border: 2px solid rgba(102, 141, 46, 0.5);
-    border-radius: 0.4rem;
+    border-radius: 0.22rem;
     outline: none;
     transition-duration: 0.3s;
     cursor: pointer; }
     .checkbox__custom input:active {
       transform: scale(1.05);
-      border-radius: 1rem; }
+      border-radius: 0.88rem; }
     .checkbox__custom input:after {
       content: "\2713";
       position: absolute;
@@ -1353,7 +1353,7 @@ body[style="overflow-y: hidden"] .page:before {
       color: #bf7f53; }
 
 .character_detail_popup {
-  max-width: 500px;
+  max-width: 650px;
   width: 100%;
   overflow: visible;
   color: #ffffff;
@@ -1366,6 +1366,7 @@ body[style="overflow-y: hidden"] .page:before {
     grid-gap: 16px;
     grid-template-columns: 1.3fr 1fr; }
     .character_detail_popup .detail_top .top_left {
+      position: relative;
       background-color: #e0eecc;
       border-radius: 0.22rem;
       box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08); }
@@ -1381,13 +1382,16 @@ body[style="overflow-y: hidden"] .page:before {
       .character_detail_popup .detail_top {
         grid-template-columns: 1fr; } }
   .character_detail_popup .character__id {
+    font-size: 0.75rem;
+    position: absolute;
+    left: 8px;
+    top: 8px;
     cursor: pointer;
     color: #ffffff;
     display: flex;
     justify-content: center;
     padding: 4px 8px;
     width: fit-content;
-    margin: 0 auto 16px;
     border-radius: 0.22rem;
     background-color: rgba(102, 141, 46, 0.8);
     transition: 0.3s all ease-in-out; }
@@ -1458,6 +1462,8 @@ body[style="overflow-y: hidden"] .page:before {
       border: 2px solid #e0eecc;
       border-radius: 0.22rem;
       background-color: #ffffff; }
+      .character_detail_popup .detail_bottom .bottom_item + .bottom_item {
+        margin-top: 16px; }
     .character_detail_popup .detail_bottom .title_block {
       text-align: center;
       font-size: 1.125rem;
@@ -1469,7 +1475,7 @@ body[style="overflow-y: hidden"] .page:before {
     grid-gap: 16px; }
     .character_detail_popup .character__skin .skin__item {
       display: flex;
-      align-items: flex-start; }
+      align-items: center; }
       .character_detail_popup .character__skin .skin__item > div {
         margin-left: 8px; }
         .character_detail_popup .character__skin .skin__item > div p {
@@ -1516,37 +1522,37 @@ body[style="overflow-y: hidden"] .page:before {
       .character_detail_popup .popup__body {
         padding: 16px 16px 44px 16px; } }
 
-.stake_your_rgbe_popup {
+.stake_your_grbe_popup {
   max-width: 636px;
   width: 100%;
   margin: 0 auto; }
-  .stake_your_rgbe_popup .your_rgbe__list {
+  .stake_your_grbe_popup .your_grbe__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 16px; }
     @media (max-width: 575.98px) {
-      .stake_your_rgbe_popup .your_rgbe__list {
+      .stake_your_grbe_popup .your_grbe__list {
         grid-template-columns: repeat(2, 1fr); } }
-  .stake_your_rgbe_popup .your_rgbe__item {
+  .stake_your_grbe_popup .your_grbe__item {
     cursor: pointer; }
-    .stake_your_rgbe_popup .your_rgbe__item .item__img {
+    .stake_your_grbe_popup .your_grbe__item .item__img {
       border: 2px solid #d9d9d9;
       border-radius: 0.22rem;
       transition: 0.3s all ease-in-out; }
-    .stake_your_rgbe_popup .your_rgbe__item .item__id {
+    .stake_your_grbe_popup .your_grbe__item .item__id {
       font-weight: 500;
       color: #666666;
       text-align: center;
       margin-top: 8px; }
-    .stake_your_rgbe_popup .your_rgbe__item .item__power {
+    .stake_your_grbe_popup .your_grbe__item .item__power {
       color: #e47900;
       text-align: center;
       margin-top: 4px; }
-      .stake_your_rgbe_popup .your_rgbe__item .item__power > i {
+      .stake_your_grbe_popup .your_grbe__item .item__power > i {
         margin-right: 4px; }
-      .stake_your_rgbe_popup .your_rgbe__item .item__power span {
+      .stake_your_grbe_popup .your_grbe__item .item__power span {
         font-weight: 700; }
-    .stake_your_rgbe_popup .your_rgbe__item.checked .item__img {
+    .stake_your_grbe_popup .your_grbe__item.checked .item__img {
       background: #e0eecc;
       border-color: rgba(102, 141, 46, 0.2); }
 

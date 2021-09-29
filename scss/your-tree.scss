@@ -22,11 +22,10 @@
                 color: map-get($map: $theme-colors, $key: neutral-white);
             }
         }
-        .total_rgbe {
+        .partial__item {
             display: flex;
             justify-content: space-between;
             font-size: 1.25rem;
-            font-weight: 500;
         }
         @media (max-width: 1024.98px) {
             margin-bottom: 16px;

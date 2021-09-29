@@ -19,6 +19,11 @@
 }
 
 .shop__fiter_left {
+    background: lighten($color: map-get($theme-colors, primary), $amount: 55%);
+    padding: 16px;
+    border-radius: 0.22rem;
+    box-shadow: 0px 3px 6px
+        rgba($color: map-get($theme-colors, neutral-black), $alpha: 0.08);
     .title {
         font-size: 1.25rem;
         font-weight: 500;
@@ -42,11 +47,13 @@
                 color: map-get($map: $theme-colors, $key: neutral-white);
             }
         }
-        .total_rgbe {
+        .partial__item {
             display: flex;
             justify-content: space-between;
             font-size: 1.25rem;
-            font-weight: 500;
+            + .partial__item {
+                margin-top: 16px;
+            }
         }
         @media (max-width: 1024.98px) {
             margin-bottom: 16px;
@@ -109,7 +116,7 @@
         grid-gap: 16px;
     }
     .filter_block__title {
-        color: map-get($map: $theme-colors, $key: gray-text);
+        color: map-get($map: $theme-colors, $key: primary-dark);
         font-weight: 500;
         margin-bottom: 12px;
     }
