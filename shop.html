@@ -66,129 +66,8 @@
         <section class="shop_section">
           <div class="container">
             <div class="shop__wrapper">
-              <aside class="shop__fiter_left">
-                <div class="title">Filter</div>
-                <div class="shop__filter_tabs_content">
-                  <div class="filter_block">
-                    <h4 class="filter_block__title">Sort By</h4>
-                    <div class="select__custom">
-                      <select>
-                        <option>Lowest Price</option>
-                        <option>Highest Price</option>
-                        <option>Lowest Productivity Price</option>
-                        <option>Highest Productivity Price</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="filter_block">
-                    <h4 class="filter_block__title">Class</h4>
-                    <div class="filter_block__wrapper">
-                      <div class="filter_block__item">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                        </label><img src="./icons/metal.png" alt="Metal"/><span>Metal</span>
-                      </div>
-                      <div class="filter_block__item">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                        </label><img src="./icons/wood.png" alt="Wood"/><span>Wood</span>
-                      </div>
-                      <div class="filter_block__item">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                        </label><img src="./icons/water.png" alt="Water"/><span>Water</span>
-                      </div>
-                      <div class="filter_block__item">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                        </label><img src="./icons/fire.png" alt="Fire"/><span>Fire</span>
-                      </div>
-                      <div class="filter_block__item">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                        </label><img src="./icons/earth.png" alt="Earth"/><span>Earth</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="filter_block">
-                    <h4 class="filter_block__title">Body Part</h4>
-                    <div class="filter_block__wrapper">
-                      <div class="filter_block__item">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                        </label><img src="./icons/face.png" alt="Face"/><span>Face</span>
-                      </div>
-                      <div class="filter_block__item">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                        </label><img src="./icons/hair.png" alt="Hair"/><span>Hair</span>
-                      </div>
-                      <div class="filter_block__item">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                        </label><img src="./icons/body.png" alt="Body"/><span>Body</span>
-                      </div>
-                      <div class="filter_block__item">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                        </label><img src="./icons/hand.png" alt="Hand"/><span>Hand</span>
-                      </div>
-                      <div class="filter_block__item">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                        </label><img src="./icons/leg.png" alt="Leg"/><span>Leg</span>
-                      </div>
-                      <div class="filter_block__item">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                        </label><img src="./icons/deco.png" alt="Deco"/><span>Deco</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="filter_block">
-                    <h4 class="filter_block__title">Star</h4>
-                    <div class="filter_block__item">
-                      <div class="input-range-stars">
-                        <div class="input-range">
-                          <input type="range" min="1" max="6" value="1" style="width:100%"/>
-                        </div>
-                        <div class="stars">
-                          <p>1</p>
-                          <p>2</p>
-                          <p>3</p>
-                          <p>4</p>
-                          <p>5</p>
-                          <p>6</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </aside>
-              <div class="shop__main_content">
-                <div class="shop__filter_top">
+              <div class="shop__filter">
+                <div class="filter__top">
                   <div class="left_partial">
                     <div class="partial__item"><span>Total Green Hero: 1106 Items</span></div>
                   </div>
@@ -201,7 +80,155 @@
                     </div>
                   </div>
                 </div>
+                <div class="filter__main">
+                  <div class="filter_block">
+                    <label class="filter_block__label">Sort By</label>
+                    <div class="select__custom">
+                      <select>
+                        <option>Lowest Price</option>
+                        <option>Highest Price</option>
+                        <option>Lowest Productivity Price</option>
+                        <option>Highest Productivity Price</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="filter_block">
+                    <label class="filter_block__label">Class</label>
+                    <div class="select__custom">
+                      <select>
+                        <option>Metal</option>
+                        <option>Wood</option>
+                        <option>Water</option>
+                        <option>Fire</option>
+                        <option>Earth</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="filter_block">
+                    <label class="filter_block__label">Body Part</label>
+                    <div class="select__custom">
+                      <select>
+                        <option>Face</option>
+                        <option>Hair</option>
+                        <option>Body</option>
+                        <option>Hand</option>
+                        <option>Leg</option>
+                        <option>Deco</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="filter_block">
+                    <label class="filter_block__label">Star</label>
+                    <div class="select__custom">
+                      <select>
+                        <option>1 Star</option>
+                        <option>2 Star</option>
+                        <option>3 Star</option>
+                        <option>4 Star</option>
+                        <option>5 Star</option>
+                        <option>6 Star</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shop__main_content">
                 <div class="list_products"><a class="list_products__item_wrapper" popup-to="character_detail_popup" href="javascript:;">
+                    <div class="list_products__item">
+                      <div class="item_wrapper__top">
+                        <div class="character__image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
+                        <div class="character__name">
+                          <h3>GRBE#95203</h3>
+                        </div>
+                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                      </div>
+                      <div class="item_wrapper__bottom">
+                        <div class="character__information">
+                          <div class="information__item"><span>Class</span><span>Metal</span></div>
+                          <div class="information__item"><span>Genes</span><span>10%</span></div>
+                          <div class="information__item"><span>Status</span><span>Farming</span></div>
+                        </div>
+                      </div>
+                      <div class="item_wrapper__action">
+                        <button class="bt bt--block bt--primary">Buy Hero</button>
+                      </div>
+                    </div></a><a class="list_products__item_wrapper" popup-to="character_detail_popup" href="javascript:;">
+                    <div class="list_products__item">
+                      <div class="item_wrapper__top">
+                        <div class="character__image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
+                        <div class="character__name">
+                          <h3>GRBE#95203</h3>
+                        </div>
+                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                      </div>
+                      <div class="item_wrapper__bottom">
+                        <div class="character__information">
+                          <div class="information__item"><span>Class</span><span>Metal</span></div>
+                          <div class="information__item"><span>Genes</span><span>10%</span></div>
+                          <div class="information__item"><span>Status</span><span>Farming</span></div>
+                        </div>
+                      </div>
+                      <div class="item_wrapper__action">
+                        <button class="bt bt--block bt--primary">Buy Hero</button>
+                      </div>
+                    </div></a><a class="list_products__item_wrapper" popup-to="character_detail_popup" href="javascript:;">
+                    <div class="list_products__item">
+                      <div class="item_wrapper__top">
+                        <div class="character__image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
+                        <div class="character__name">
+                          <h3>GRBE#95203</h3>
+                        </div>
+                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                      </div>
+                      <div class="item_wrapper__bottom">
+                        <div class="character__information">
+                          <div class="information__item"><span>Class</span><span>Metal</span></div>
+                          <div class="information__item"><span>Genes</span><span>10%</span></div>
+                          <div class="information__item"><span>Status</span><span>Farming</span></div>
+                        </div>
+                      </div>
+                      <div class="item_wrapper__action">
+                        <button class="bt bt--block bt--primary">Buy Hero</button>
+                      </div>
+                    </div></a><a class="list_products__item_wrapper" popup-to="character_detail_popup" href="javascript:;">
+                    <div class="list_products__item">
+                      <div class="item_wrapper__top">
+                        <div class="character__image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
+                        <div class="character__name">
+                          <h3>GRBE#95203</h3>
+                        </div>
+                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                      </div>
+                      <div class="item_wrapper__bottom">
+                        <div class="character__information">
+                          <div class="information__item"><span>Class</span><span>Metal</span></div>
+                          <div class="information__item"><span>Genes</span><span>10%</span></div>
+                          <div class="information__item"><span>Status</span><span>Farming</span></div>
+                        </div>
+                      </div>
+                      <div class="item_wrapper__action">
+                        <button class="bt bt--block bt--primary">Buy Hero</button>
+                      </div>
+                    </div></a><a class="list_products__item_wrapper" popup-to="character_detail_popup" href="javascript:;">
+                    <div class="list_products__item">
+                      <div class="item_wrapper__top">
+                        <div class="character__image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
+                        <div class="character__name">
+                          <h3>GRBE#95203</h3>
+                        </div>
+                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                      </div>
+                      <div class="item_wrapper__bottom">
+                        <div class="character__information">
+                          <div class="information__item"><span>Class</span><span>Metal</span></div>
+                          <div class="information__item"><span>Genes</span><span>10%</span></div>
+                          <div class="information__item"><span>Status</span><span>Farming</span></div>
+                        </div>
+                      </div>
+                      <div class="item_wrapper__action">
+                        <button class="bt bt--block bt--primary">Buy Hero</button>
+                      </div>
+                    </div></a><a class="list_products__item_wrapper" popup-to="character_detail_popup" href="javascript:;">
                     <div class="list_products__item">
                       <div class="item_wrapper__top">
                         <div class="character__image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
@@ -298,6 +325,19 @@
                       </div>
                     </div></a>
                 </div>
+                <div class="shop__pagination">
+                  <ul class="pagination">
+                    <li class="pagination-item disable"><a href="#"><i class="fal fa-chevron-left"></i></a></li>
+                    <li class="pagination-item active"><a href="#">1</a></li>
+                    <li class="pagination-item"><a href="#">2</a></li>
+                    <li class="pagination-item"><a href="#">3</a></li>
+                    <li class="pagination-item"><a href="#">4</a></li>
+                    <li class="pagination-item"><a href="#">5</a></li>
+                    <li class="pagination-item"><a href="#"><i class="far fa-ellipsis-h"></i></a></li>
+                    <li class="pagination-item"><a href="#">1424</a></li>
+                    <li class="pagination-item"><a href="#"><i class="fal fa-chevron-right"></i></a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -311,6 +351,18 @@
                   <div class="top_left">
                     <div class="character__image"><img src="./images/itemproductmetal.png" alt="CHARACTER"/></div>
                     <div class="character__id"><span>ID: 144964015431745793</span><span class="copy"><i class="fal fa-copy"></i></span></div>
+                    <div class="character__breed-count"><span>BREED: 0</span></div>
+                    <div class="left_bottom">
+                      <div class="character__price">
+                        <h2>
+                          <div class="icon"><img src="./icons/grbe.png" alt="grbe"/></div><span>7,000</span>
+                        </h2>
+                        <p>$162.759</p>
+                      </div>
+                      <div class="character__actions">
+                        <button class="bt bt--primary">Buy</button>
+                      </div>
+                    </div>
                   </div>
                   <div class="top_right">
                     <div class="character__information">
@@ -369,6 +421,107 @@
                           <p>Level 1</p>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail_bottom">
+                  <div class="bottom_item">
+                    <div class="title_block">Transaction history</div>
+                    <div class="character__transaction-history">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Event</th>
+                            <th>Price</th>
+                            <th>Currency</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Date and Time</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>BNB</td>
+                            <td>0xD41b971..2e7b2e7</td>
+                            <td>2021/9/9 21:01:31</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>BNB</td>
+                            <td>0xD41b971..2e7b2e7</td>
+                            <td>2021/9/9 21:01:31</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>BNB</td>
+                            <td>0xD41b971..2e7b2e7</td>
+                            <td>2021/9/9 21:01:31</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>BNB</td>
+                            <td>0xD41b971..2e7b2e7</td>
+                            <td>2021/9/9 21:01:31</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>BNB</td>
+                            <td>0xD41b971..2e7b2e7</td>
+                            <td>2021/9/9 21:01:31</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>BNB</td>
+                            <td>0xD41b971..2e7b2e7</td>
+                            <td>2021/9/9 21:01:31</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>BNB</td>
+                            <td>0xD41b971..2e7b2e7</td>
+                            <td>2021/9/9 21:01:31</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>BNB</td>
+                            <td>0xD41b971..2e7b2e7</td>
+                            <td>2021/9/9 21:01:31</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>BNB</td>
+                            <td>0xD41b971..2e7b2e7</td>
+                            <td>2021/9/9 21:01:31</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>BNB</td>
+                            <td>0xD41b971..2e7b2e7</td>
+                            <td>2021/9/9 21:01:31</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>

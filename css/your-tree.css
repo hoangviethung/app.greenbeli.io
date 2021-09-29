@@ -52,10 +52,83 @@
     border: 2px solid rgba(102, 141, 46, 0.5);
     transform: translateY(-2px); }
 
+.nft_your_tree_page {
+  background-color: #f4fff8; }
+
+.your_tree_info_section {
+  margin-top: 32px; }
+
+.your_tree_info_section__wrapper {
+  position: relative;
+  padding: 32px 0; }
+  .your_tree_info_section__wrapper .your_tree_info_decorate {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 200px; }
+    .your_tree_info_section__wrapper .your_tree_info_decorate--left {
+      left: 0; }
+      @media (max-width: 1024.98px) {
+        .your_tree_info_section__wrapper .your_tree_info_decorate--left {
+          display: none; } }
+    .your_tree_info_section__wrapper .your_tree_info_decorate--right {
+      right: 0; }
+      @media (max-width: 767.98px) {
+        .your_tree_info_section__wrapper .your_tree_info_decorate--right {
+          display: none; } }
+    @media (max-width: 1199.98px) {
+      .your_tree_info_section__wrapper .your_tree_info_decorate {
+        max-width: 200px; } }
+  @media (max-width: 767.98px) {
+    .your_tree_info_section__wrapper {
+      padding: 0; } }
+
+.your_tree_info_section__item {
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  background: #668d2e;
+  box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08);
+  border-radius: 0.22rem;
+  padding: 16px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto; }
+  .your_tree_info_section__item .block {
+    text-align: center; }
+    .your_tree_info_section__item .block h4 {
+      margin-bottom: 8px; }
+    .your_tree_info_section__item .block span {
+      font-size: 1.5rem;
+      font-weight: 700; }
+      .your_tree_info_section__item .block span.usd-value {
+        font-size: 1rem; }
+      .your_tree_info_section__item .block span + span {
+        opacity: 0.8;
+        margin-left: 4px; }
+    @media (max-width: 575.98px) {
+      .your_tree_info_section__item .block:first-child {
+        grid-column: span 2; } }
+  .your_tree_info_section__item .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px; }
+  @media (max-width: 1024.98px) {
+    .your_tree_info_section__item {
+      margin-left: 0; } }
+  @media (max-width: 767.98px) {
+    .your_tree_info_section__item {
+      margin-left: auto; } }
+  @media (max-width: 575.98px) {
+    .your_tree_info_section__item {
+      grid-template-columns: repeat(2, 1fr); } }
+
 .your_tree_section {
   padding-top: 48px;
-  padding-bottom: 80px;
-  background-color: #f4fff8; }
+  padding-bottom: 80px; }
   @media (max-width: 767.98px) {
     .your_tree_section {
       padding-top: 30px; } }

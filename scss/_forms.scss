@@ -93,7 +93,7 @@
         padding: 0 32px 0 16px;
         height: 36px;
         border: 1px solid map-get($map: $theme-colors, $key: gray-border);
-        border-radius: 8px;
+        border-radius: 0.22rem;
         appearance: none;
         width: 100%;
     }

@@ -1,10 +1,99 @@
 @import "_variable";
 @import "_list_products";
 
+.nft_your_tree_page {
+    background-color: map-get($map: $theme-colors, $key: bg-lighten);
+}
+
+.your_tree_info_section {
+    margin-top: 32px;
+}
+
+.your_tree_info_section__wrapper {
+    position: relative;
+    padding: 32px 0;
+    .your_tree_info_decorate {
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 200px;
+        &--left {
+            left: 0;
+            @media (max-width: 1024.98px) {
+                display: none;
+            }
+        }
+        &--right {
+            right: 0;
+            @media (max-width: 767.98px) {
+                display: none;
+            }
+        }
+        @media (max-width: 1199.98px) {
+            max-width: 200px;
+        }
+    }
+    @media (max-width: 767.98px) {
+        padding: 0;
+    }
+}
+
+.your_tree_info_section__item {
+    color: map-get($map: $theme-colors, $key: neutral-white);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    background: map-get($theme-colors, primary);
+    box-shadow: 0px 3px 6px
+        rgba($color: map-get($theme-colors, neutral-black), $alpha: 0.08);
+    border-radius: 0.22rem;
+    padding: 16px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    .block {
+        text-align: center;
+        h4 {
+            margin-bottom: 8px;
+        }
+        span {
+            font-size: 1.5rem;
+            font-weight: 700;
+            &.usd-value {
+                font-size: 1rem;
+            }
+            + span {
+                opacity: 0.8;
+                margin-left: 4px;
+            }
+        }
+        @media (max-width: 575.98px) {
+            &:first-child {
+                grid-column: span 2;
+            }
+        }
+    }
+    .action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+    }
+    @media (max-width: 1024.98px) {
+        margin-left: 0;
+    }
+    @media (max-width: 767.98px) {
+        margin-left: auto;
+    }
+    @media (max-width: 575.98px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .your_tree_section {
     padding-top: 48px;
     padding-bottom: 80px;
-    background-color: map-get($map: $theme-colors, $key: bg-lighten);
     @media (max-width: 767.98px) {
         padding-top: 30px;
     }

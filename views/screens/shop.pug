@@ -17,104 +17,8 @@ block main
     section.shop_section
         .container
             .shop__wrapper
-                aside.shop__fiter_left
-                    .title Filter
-                    .shop__filter_tabs_content
-                        .filter_block
-                            h4.filter_block__title Sort By
-                            .select__custom
-                                select
-                                    option Lowest Price
-                                    option Highest Price
-                                    option Lowest Productivity Price
-                                    option Highest Productivity Price
-                        .filter_block
-                            h4.filter_block__title Class
-                            .filter_block__wrapper
-                                .filter_block__item
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                    img(src="./icons/metal.png", alt="Metal")
-                                    span Metal
-                                .filter_block__item
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                    img(src="./icons/wood.png", alt="Wood")
-                                    span Wood
-                                .filter_block__item
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                    img(src="./icons/water.png", alt="Water")
-                                    span Water
-                                .filter_block__item
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                    img(src="./icons/fire.png", alt="Fire")
-                                    span Fire
-                                .filter_block__item
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                    img(src="./icons/earth.png", alt="Earth")
-                                    span Earth
-                        .filter_block
-                            h4.filter_block__title Body Part
-                            .filter_block__wrapper
-                                .filter_block__item
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                    img(src="./icons/face.png", alt="Face")
-                                    span Face
-                                .filter_block__item
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                    img(src="./icons/hair.png", alt="Hair")
-                                    span Hair
-                                .filter_block__item
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                    img(src="./icons/body.png", alt="Body")
-                                    span Body
-                                .filter_block__item
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                    img(src="./icons/hand.png", alt="Hand")
-                                    span Hand
-                                .filter_block__item
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                    img(src="./icons/leg.png", alt="Leg")
-                                    span Leg
-                                .filter_block__item
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                    img(src="./icons/deco.png", alt="Deco")
-                                    span Deco
-                        .filter_block
-                            h4.filter_block__title Star
-                            .filter_block__item
-                                .input-range-stars
-                                    .input-range
-                                        input(type="range" min="1" max="6" value="1" style="width:100%")
-                                    .stars
-                                        p 1
-                                        p 2
-                                        p 3
-                                        p 4
-                                        p 5
-                                        p 6
-                .shop__main_content
-                    .shop__filter_top
+                .shop__filter
+                    .filter__top
                         .left_partial
                             .partial__item
                                 span Total Green Hero: 1106 Items
@@ -124,8 +28,47 @@ block main
                                 label.checkbox__switch
                                     input(type='checkbox')
                                     .slider.round
+                    .filter__main
+                        .filter_block
+                            label.filter_block__label Sort By
+                            .select__custom
+                                select
+                                    option Lowest Price
+                                    option Highest Price
+                                    option Lowest Productivity Price
+                                    option Highest Productivity Price
+                        .filter_block
+                            label.filter_block__label Class
+                            .select__custom
+                                select
+                                    option Metal
+                                    option Wood
+                                    option Water
+                                    option Fire
+                                    option Earth
+                        .filter_block
+                            label.filter_block__label Body Part
+                            .select__custom
+                                select
+                                    option Face
+                                    option Hair
+                                    option Body
+                                    option Hand
+                                    option Leg
+                                    option Deco
+                        .filter_block
+                            label.filter_block__label Star
+                            .select__custom
+                                select
+                                    option 1 Star
+                                    option 2 Star
+                                    option 3 Star
+                                    option 4 Star
+                                    option 5 Star
+                                    option 6 Star
+                .shop__main_content
                     .list_products
-                        -for(i=0;i<5;i++)
+                        -for(i=0;i<10;i++)
                             a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
                                 .list_products__item
                                     .item_wrapper__top
@@ -152,5 +95,28 @@ block main
                                                 span Farming
                                     .item_wrapper__action
                                         button.bt.bt--block.bt--primary Buy Hero
+                    .shop__pagination
+                        ul.pagination
+                            li.pagination-item.disable
+                                a(href="#")
+                                    i.fal.fa-chevron-left
+                            li.pagination-item.active
+                                a(href="#") 1
+                            li.pagination-item
+                                a(href="#") 2
+                            li.pagination-item
+                                a(href="#") 3
+                            li.pagination-item
+                                a(href="#") 4
+                            li.pagination-item
+                                a(href="#") 5
+                            li.pagination-item
+                                a(href="#")
+                                    i.far.fa-ellipsis-h
+                            li.pagination-item
+                                a(href="#") 1424
+                            li.pagination-item
+                                a(href="#")
+                                    i.fal.fa-chevron-right
     // *** CHARACTER DETAIL POPUP *** //
     include ../components/character_detail_popup
