@@ -9,7 +9,10 @@
   transition: 0.3s all ease-in-out;
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  border: 2px solid rgba(102, 141, 46, 0.2); }
+  .list_products__item .item_wrapper__top {
+    background: #e0eecc; }
   .list_products__item .character__image {
     height: 180px;
     display: flex;
@@ -70,8 +73,9 @@
     .list_products__item .character__rating i + i {
       margin-left: 4px; }
   .list_products__item .item_wrapper__bottom {
-    padding: 16px;
-    color: #212121; }
+    color: #212121;
+    background-color: #ffffff;
+    padding: 16px; }
   .list_products__item .character__information .information__item {
     display: flex;
     justify-content: space-between; }
@@ -80,7 +84,8 @@
   .list_products__item .item_wrapper__action {
     display: flex;
     justify-content: center;
-    padding: 0 16px 16px 16px; }
+    padding: 0 16px 16px 16px;
+    background-color: #ffffff; }
   .list_products__item:hover {
     box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.16);
     transform: translateY(-2px); }
@@ -97,6 +102,9 @@
   .list_products__item[rating="6"] {
     background-image: url("./images/bg_card_item_product_rate_6.png"); }
 
+.nft_market_page {
+  background-color: #f4fff8; }
+
 .shop_section {
   padding-top: 48px;
   padding-bottom: 80px; }
@@ -107,7 +115,7 @@
 .shop__wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 16px; }
+  grid-gap: 24px; }
 
 .shop__filter {
   background: #ecf5df;
@@ -156,7 +164,8 @@
 
 .list_products {
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 16px; }
+  grid-column-gap: 16px;
+  grid-row-gap: 24px; }
   @media (max-width: 1199.98px) {
     .list_products {
       grid-template-columns: repeat(4, 1fr); } }

@@ -1,6 +1,10 @@
 @import "_variable";
 @import "list_products";
 
+.nft_market_page {
+    background-color: map-get($map: $theme-colors, $key: bg-lighten);
+}
+
 .shop_section {
     padding-top: 48px;
     padding-bottom: 80px;
@@ -12,7 +16,7 @@
 .shop__wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 16px;
+    grid-gap: 24px;
 }
 
 .shop__filter {
@@ -74,7 +78,8 @@
 
 .list_products {
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 16px;
+    grid-column-gap: 16px;
+    grid-row-gap: 24px;
     @media (max-width: 1199.98px) {
         grid-template-columns: repeat(4, 1fr);
     }

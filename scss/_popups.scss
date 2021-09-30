@@ -171,6 +171,10 @@
                     $color: map-get($theme-colors, neutral-black),
                     $alpha: 0.08
                 );
+            background-color: lighten(
+                $color: map-get($theme-colors, primary),
+                $amount: 50%
+            );
             .left_bottom {
                 padding: 16px;
             }

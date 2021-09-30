@@ -1365,7 +1365,8 @@ body[style="overflow-y: hidden"] .page:before {
     .character_detail_popup .detail_top .top_left {
       position: relative;
       border-radius: 0.22rem;
-      box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08); }
+      box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08);
+      background-color: #e0eecc; }
       .character_detail_popup .detail_top .top_left .left_bottom {
         padding: 16px; }
     .character_detail_popup .detail_top .top_right {
