@@ -68,6 +68,8 @@
       font-weight: 600; }
       .claim_block .block_content b span {
         color: #bf7f53; }
+    .claim_block .block_content .actions .bt + .bt {
+      margin-left: 16px; }
     @media (max-width: 575.98px) {
       .claim_block .block_content {
         padding: 16px; } }

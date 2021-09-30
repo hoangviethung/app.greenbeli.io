@@ -1368,9 +1368,6 @@ body[style="overflow-y: hidden"] .page:before {
       border-radius: 0.22rem;
       box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08); }
       .character_detail_popup .detail_top .top_left .left_bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding: 16px; }
     .character_detail_popup .detail_top .top_right {
       padding: 16px 16px 16px 0; }
@@ -1433,13 +1430,13 @@ body[style="overflow-y: hidden"] .page:before {
     .character_detail_popup .character__rating i + i {
       margin-left: 4px; }
   .character_detail_popup .character__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #668d2e; }
     .character_detail_popup .character__price h2 {
       display: flex;
-      font-weight: 700;
-      font-size: 2rem;
-      align-items: center;
-      margin-bottom: 4px; }
+      align-items: center; }
       .character_detail_popup .character__price h2 .icon {
         flex: 0 0 44px;
         max-width: 44px;
@@ -1447,10 +1444,26 @@ body[style="overflow-y: hidden"] .page:before {
         border-radius: 50%;
         overflow: hidden; }
       .character_detail_popup .character__price h2 span {
+        font-weight: 700;
+        font-size: 2rem;
         margin-left: 8px; }
+        @media (max-width: 767.98px) {
+          .character_detail_popup .character__price h2 span {
+            font-size: 1.5rem; } }
     .character_detail_popup .character__price p {
-      padding-left: 52px;
-      font-size: 1.125rem; }
+      color: #666666;
+      font-size: 1.125rem;
+      padding-left: 8px;
+      padding-top: 8px; }
+      @media (max-width: 767.98px) {
+        .character_detail_popup .character__price p {
+          font-size: 1rem;
+          padding-left: 4px;
+          padding-top: 4px; } }
+  .character_detail_popup .character__actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px; }
   .character_detail_popup .left_detail .block_action {
     display: flex;
     justify-content: space-between;
@@ -1544,7 +1557,6 @@ body[style="overflow-y: hidden"] .page:before {
         padding: 8px; }
     @media (max-width: 575.98px) {
       .character_detail_popup .character__transaction-history {
-        width: 300px;
         overflow-x: auto; } }
   .character_detail_popup .fancybox-close-small {
     color: #212121;

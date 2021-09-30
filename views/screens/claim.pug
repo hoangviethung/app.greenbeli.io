@@ -23,10 +23,10 @@ block main
                             h2 Seed sale
                         .tabs_nav__item(toggle-for="private-sale")
                             h2 Private sale
-                        .tabs_nav__item(toggle-for="airdrop")
-                            h2 Airdrop
-                        .tabs_nav__item(toggle-for="nft")
-                            h2 NFT
+                        .tabs_nav__item(toggle-for="airdrop-1")
+                            h2 Airdrop 1
+                        .tabs_nav__item(toggle-for="airdrop-2")
+                            h2 Airdrop 2
                     .tabs_content
                         .block_content(toggle-id="seed-sale")
                             b Claim token will be gradually release from: 
@@ -46,7 +46,8 @@ block main
                                 li
                                     span Claimable:
                                     span 2.000.000
-                            a.bt.bt--primary-light(href="#") Claim
+                            .actions
+                                a.bt.bt--primary(href="#") Claim
                         .block_content(toggle-id="private-sale")
                             b Claim token will be gradually release from: 
                                 span Sep 20th 2021, 3:00PM UTC 
@@ -65,8 +66,9 @@ block main
                                 li
                                     span Claimable:
                                     span 2.000.000
-                            a.bt.bt--primary-light(href="#") Claim
-                        .block_content(toggle-id="airdrop")
+                            .actions
+                                a.bt.bt--primary(href="#") Claim
+                        .block_content(toggle-id="airdrop-1")
                             b Claim token will be gradually release from: 
                                 span Sep 20th 2021, 3:00PM UTC 
                                 | to 
@@ -84,8 +86,10 @@ block main
                                 li
                                     span Claimable:
                                     span 2.000.000
-                            a.bt.bt--primary-light(href="#") Claim
-                        .block_content(toggle-id="nft")
+                            .actions
+                                a.bt.bt--primary(href="#") Claim GRBE
+                                a.bt.bt--secondary(href="#") Claim NFT
+                        .block_content(toggle-id="airdrop-2")
                             b Claim token will be gradually release from: 
                                 span Sep 20th 2021, 3:00PM UTC 
                                 | to 
@@ -103,4 +107,5 @@ block main
                                 li
                                     span Claimable:
                                     span 2.000.000
-                            a.bt.bt--primary-light(href="#") Claim
+                            .actions
+                                a.bt.bt--primary(href="#") Claim

@@ -90,6 +90,13 @@
                 color: map-get($map: $theme-colors, $key: secondary);
             }
         }
+        .actions {
+            .bt {
+                + .bt {
+                    margin-left: 16px;
+                }
+            }
+        }
         @media (max-width: 575.98px) {
             padding: 16px;
         }

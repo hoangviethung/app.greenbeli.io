@@ -176,9 +176,6 @@
                     $alpha: 0.08
                 );
             .left_bottom {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
                 padding: 16px;
             }
         }
@@ -273,13 +270,13 @@
         }
     }
     .character__price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: map-get($map: $theme-colors, $key: primary);
         h2 {
             display: flex;
-            font-weight: 700;
-            font-size: 2rem;
             align-items: center;
-            margin-bottom: 4px;
             .icon {
                 flex: 0 0 44px;
                 max-width: 44px;
@@ -291,13 +288,30 @@
                 overflow: hidden;
             }
             span {
+                font-weight: 700;
+                font-size: 2rem;
                 margin-left: 8px;
+                @media (max-width: 767.98px) {
+                    font-size: 1.5rem;
+                }
             }
         }
         p {
-            padding-left: 52px;
+            color: map-get($map: $theme-colors, $key: gray-text);
             font-size: 1.125rem;
+            padding-left: 8px;
+            padding-top: 8px;
+            @media (max-width: 767.98px) {
+                font-size: 1rem;
+                padding-left: 4px;
+                padding-top: 4px;
+            }
         }
+    }
+    .character__actions {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
     }
     .left_detail {
         .block_action {
@@ -418,7 +432,6 @@
             }
         }
         @media (max-width: 575.98px) {
-            width: 300px;
             overflow-x: auto;
         }
     }
