@@ -47,9 +47,9 @@ block main
                             option Farming
                             option Selling
             .list_products
-                -for(i=0;i<5;i++)
+                -for(i=1;i<7;i++)
                     a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
-                        .list_products__item
+                        .list_products__item(rating=`${i}`)
                             .item_wrapper__top
                                 .character__image
                                     img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")

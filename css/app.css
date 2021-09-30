@@ -1364,7 +1364,6 @@ body[style="overflow-y: hidden"] .page:before {
     grid-template-columns: 1fr 1fr; }
     .character_detail_popup .detail_top .top_left {
       position: relative;
-      background-color: #e0eecc;
       border-radius: 0.22rem;
       box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08); }
       .character_detail_popup .detail_top .top_left .left_bottom {
@@ -1410,10 +1409,26 @@ body[style="overflow-y: hidden"] .page:before {
     width: fit-content;
     background-color: rgba(102, 141, 46, 0.8);
     border-radius: 0.22rem; }
-  @media (max-width: 575.98px) {
-    .character_detail_popup .character__image {
-      max-width: 150px;
-      margin: 0 auto; } }
+  .character_detail_popup .character__image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+    @media (max-width: 575.98px) {
+      .character_detail_popup .character__image {
+        max-width: 150px;
+        margin: 0 auto; } }
+    .character_detail_popup .character__image[rating="1"] {
+      background-image: url("./images/bg_card_item_detail_product_rate_1.png"); }
+    .character_detail_popup .character__image[rating="2"] {
+      background-image: url("./images/bg_card_item_detail_product_rate_2.png"); }
+    .character_detail_popup .character__image[rating="3"] {
+      background-image: url("./images/bg_card_item_detail_product_rate_3.png"); }
+    .character_detail_popup .character__image[rating="4"] {
+      background-image: url("./images/bg_card_item_detail_product_rate_4.png"); }
+    .character_detail_popup .character__image[rating="5"] {
+      background-image: url("./images/bg_card_item_detail_product_rate_5.png"); }
+    .character_detail_popup .character__image[rating="6"] {
+      background-image: url("./images/bg_card_item_detail_product_rate_6.png"); }
   .character_detail_popup .character__information {
     color: #ffffff; }
     .character_detail_popup .character__information .information__item {

@@ -165,10 +165,6 @@
         grid-template-columns: 1fr 1fr;
         .top_left {
             position: relative;
-            background-color: lighten(
-                $color: map-get($theme-colors, primary),
-                $amount: 50%
-            );
             border-radius: 0.22rem;
             box-shadow: 0px 3px 6px
                 rgba(
@@ -244,9 +240,30 @@
         border-radius: 0.22rem;
     }
     .character__image {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
         @media (max-width: 575.98px) {
             max-width: 150px;
             margin: 0 auto;
+        }
+        &[rating="1"] {
+            background-image: url("./images/bg_card_item_detail_product_rate_1.png");
+        }
+        &[rating="2"] {
+            background-image: url("./images/bg_card_item_detail_product_rate_2.png");
+        }
+        &[rating="3"] {
+            background-image: url("./images/bg_card_item_detail_product_rate_3.png");
+        }
+        &[rating="4"] {
+            background-image: url("./images/bg_card_item_detail_product_rate_4.png");
+        }
+        &[rating="5"] {
+            background-image: url("./images/bg_card_item_detail_product_rate_5.png");
+        }
+        &[rating="6"] {
+            background-image: url("./images/bg_card_item_detail_product_rate_6.png");
         }
     }
     .character__information {

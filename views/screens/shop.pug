@@ -74,7 +74,7 @@ block main
                     .list_products
                         -for(i=0;i<5;i++)
                             a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
-                                .list_products__item
+                                .list_products__item(rating=`${i}`)
                                     .item_wrapper__top
                                         .character__image
                                             img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
@@ -103,7 +103,7 @@ block main
                                         button.bt.bt--primary Buy
                         -for(j=0;j<5;j++)
                             a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
-                                .list_products__item
+                                .list_products__item(rating=`${j}`)
                                     .item_wrapper__top
                                         .character__image
                                             img(src="./images/itemproductfire.png", alt="CHARACTER-FIRE")

@@ -42,7 +42,7 @@ function actionsSubmitUnbox() {
                 }, 3000);
             }
         } else {
-            location.href = "your-tree.html";
+            location.href = "inventory.html";
         }
     });
 }
