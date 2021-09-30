@@ -946,7 +946,8 @@ body[style="overflow-y: hidden"] .page:before {
     position: absolute;
     right: 16px;
     top: 50%;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    pointer-events: none; }
 
 .checkbox__custom {
   position: relative;

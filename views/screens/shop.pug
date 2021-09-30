@@ -33,6 +33,7 @@ block main
                             label.filter_block__label Sort By
                             .select__custom
                                 select
+                                    option All
                                     option Lowest Price
                                     option Highest Price
                                     option Lowest Productivity Price
@@ -41,6 +42,7 @@ block main
                             label.filter_block__label Class
                             .select__custom
                                 select
+                                    option All
                                     option Metal
                                     option Wood
                                     option Water
@@ -50,6 +52,7 @@ block main
                             label.filter_block__label Body Part
                             .select__custom
                                 select
+                                    option All
                                     option Face
                                     option Hair
                                     option Body
@@ -60,6 +63,7 @@ block main
                             label.filter_block__label Star
                             .select__custom
                                 select
+                                    option All
                                     option 1 Star
                                     option 2 Star
                                     option 3 Star
@@ -68,7 +72,7 @@ block main
                                     option 6 Star
                 .shop__main_content
                     .list_products
-                        -for(i=0;i<10;i++)
+                        -for(i=0;i<5;i++)
                             a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
                                 .list_products__item
                                     .item_wrapper__top
@@ -88,13 +92,34 @@ block main
                                                 span Class
                                                 span Metal
                                             .information__item
-                                                span Genes
+                                                span Power
                                                 span 10%
-                                            .information__item
-                                                span Status
-                                                span Farming
                                     .item_wrapper__action
-                                        button.bt.bt--block.bt--primary Buy Hero
+                                        button.bt.bt--block.bt--primary Buy
+                        -for(j=0;j<5;j++)
+                            a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
+                                .list_products__item
+                                    .item_wrapper__top
+                                        .character__image
+                                            img(src="./images/itemproductfire.png", alt="CHARACTER-FIRE")
+                                        .character__name
+                                            h3 GRBE#95203
+                                        .character__rating
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                    .item_wrapper__bottom
+                                        .character__information
+                                            .information__item
+                                                span Class
+                                                span Metal
+                                            .information__item
+                                                span Power
+                                                span 10%
+                                    .item_wrapper__action
+                                        button.bt.bt--block.bt--secondary Cancel
                     .shop__pagination
                         ul.pagination
                             li.pagination-item.disable
