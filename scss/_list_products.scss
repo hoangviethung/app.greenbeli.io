@@ -1,5 +1,20 @@
 .list_products {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 32px;
+    @media (max-width: 1199.98px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: 1024.98px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 650.98px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 450.98px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .list_products__item {
@@ -134,5 +149,37 @@
     }
     &[rating="6"] {
         background-image: url("./images/bg_card_item_product_rate_6.png");
+    }
+}
+
+.shop__pagination {
+    margin-top: 32px;
+    text-align: center;
+    .pagination-item {
+        font-weight: 500;
+        border: none;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        > a {
+            color: map-get($map: $theme-colors, $key: txt-body);
+        }
+        i {
+            font-size: 1rem;
+        }
+        &.disable {
+            > a {
+                color: map-get($map: $theme-colors, $key: disable);
+            }
+        }
+        &.active {
+            > a {
+                color: map-get($map: $theme-colors, $key: neutral-white);
+            }
+            background-color: map-get($map: $theme-colors, $key: primary);
+        }
     }
 }
