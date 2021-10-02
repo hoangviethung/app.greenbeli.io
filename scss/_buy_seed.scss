@@ -1,12 +1,14 @@
 .buy_seed_section {
     height: 90vh;
-    background-color: map-get($map: $theme-colors, $key: primary);
+    background-image: url("../images/bg_seed.jpg");
+    background-size: cover;
+    background-position: center center;
     .block-seed {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-width: 150px;
+        max-width: 240px;
         img {
             animation: tranformItemBuySeed 6s ease-in-out infinite;
         }
