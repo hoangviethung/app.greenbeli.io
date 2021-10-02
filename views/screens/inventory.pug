@@ -48,8 +48,8 @@ block main
                             option Selling
             .list_products
                 -for(i=1;i<7;i++)
-                    a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
-                        .list_products__item(rating=`${i}`)
+                    .list_products__item_wrapper
+                        a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating=`${i}`)
                             .item_wrapper__top
                                 .character__image
                                     img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
@@ -71,5 +71,7 @@ block main
                                         span 25%
                             .item_wrapper__action
                                 button.bt.bt--primary Stake
+                        .list_products__unbox
+                            img(src="./images/chest.png", alt="chest")
     // *** CHARACTER DETAIL POPUP *** //
     include ../components/character_detail_your_tree_popup

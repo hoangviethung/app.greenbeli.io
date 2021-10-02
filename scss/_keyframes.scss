@@ -47,3 +47,27 @@
         transform: scale(1) translateY(0);
     }
 }
+
+@keyframes tranformSeedUnbox {
+    0% {
+        transform: rotate(0) skew(.2deg);
+    }
+    10% {
+        transform: rotate(-5deg) skew(0.2deg);
+    }
+    20% {
+        transform: rotate(5deg) skew(0.2deg);
+    }
+    30% {
+        transform: rotate(-5deg) skew(0.2deg);
+    }
+    40% {
+        transform: rotate(5deg) skew(0.2deg);
+    }
+    50% {
+        transform: rotate(0) skew(0.2deg);
+    }
+    100% {
+        transform: rotate(0) skew(0.2deg);
+    }
+}

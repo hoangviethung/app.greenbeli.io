@@ -13,6 +13,13 @@ function fancyboxCharacterDetail() {
     });
 }
 
+function unboxSeed() {
+    $(".list_products__item_wrapper").on("click", function () {
+        $(this).addClass("opened");
+    });
+}
+
 $(function () {
     fancyboxCharacterDetail();
+    unboxSeed();
 });

@@ -73,8 +73,8 @@ block main
                 .shop__main_content
                     .list_products
                         -for(i=0;i<5;i++)
-                            a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
-                                .list_products__item(rating=`${i}`)
+                            .list_products__item_wrapper
+                                a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating=`${i}`)
                                     .item_wrapper__top
                                         .character__image
                                             img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
@@ -102,8 +102,8 @@ block main
                                     .item_wrapper__action
                                         button.bt.bt--primary Buy
                         -for(j=0;j<5;j++)
-                            a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
-                                .list_products__item(rating=`${j}`)
+                            .list_products__item_wrapper
+                                a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating=`${j}`)
                                     .item_wrapper__top
                                         .character__image
                                             img(src="./images/itemproductfire.png", alt="CHARACTER-FIRE")
@@ -131,8 +131,8 @@ block main
                                     .item_wrapper__action
                                         button.bt.bt--secondary Cancel
                         -for(x=0;x<5;x++)
-                            a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
-                                .list_products__item(rating=`${x}`)
+                            .list_products__item_wrapper
+                                a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating=`${x}`)
                                     .item_wrapper__top
                                         .character__image
                                             img(src="./images/itemproductwater.png", alt="CHARACTER-WATER")
@@ -160,8 +160,8 @@ block main
                                     .item_wrapper__action
                                         button.bt.bt--primary Buy
                         -for(z=0;z<5;z++)
-                            a.list_products__item_wrapper(popup-to="character_detail_popup" href="javascript:;")
-                                .list_products__item(rating=`${z}`)
+                            .list_products__item_wrapper
+                                a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating=`${z}`)
                                     .item_wrapper__top
                                         .character__image
                                             img(src="./images/itemproductwood.png", alt="CHARACTER-WOOD")
