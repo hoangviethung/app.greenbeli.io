@@ -2,214 +2,217 @@
 
 [hidden],
 .hidden {
-	display: none;
+    display: none;
 }
 .txt-primary {
-	color: map-get($map: $theme-colors, $key: primary);
+    color: map-get($map: $theme-colors, $key: primary);
 }
 .txt-secondary {
-	color: map-get($map: $theme-colors, $key: secondary);
+    color: map-get($map: $theme-colors, $key: secondary);
 }
 .txt-body {
-	color: map-get($map: $theme-colors, $key: txt-body);
+    color: map-get($map: $theme-colors, $key: txt-body);
 }
 .txt-light {
-	color: map-get($map: $theme-colors, $key: neutral-white);
+    color: map-get($map: $theme-colors, $key: neutral-white);
+}
+.txt-gray {
+    color: map-get($map: $theme-colors, $key: gray-text);
 }
 .txt-disable {
-	color: map-get($map: $theme-colors, $key: disable);
+    color: map-get($map: $theme-colors, $key: disable);
 }
 .txt-danger {
-	color: map-get($map: $theme-colors, $key: danger);
+    color: map-get($map: $theme-colors, $key: danger);
 }
 .txt-green {
-	color: map-get($map: $theme-colors, $key: additional-green);
+    color: map-get($map: $theme-colors, $key: additional-green);
 }
 .txt-yellow {
-	color: map-get($map: $theme-colors, $key: additional-yellow);
+    color: map-get($map: $theme-colors, $key: additional-yellow);
 }
 .txt-red {
-	color: map-get($map: $theme-colors, $key: additional-red);
+    color: map-get($map: $theme-colors, $key: additional-red);
 }
 .txt-blue {
-	color: map-get($map: $theme-colors, $key: additional-blue);
+    color: map-get($map: $theme-colors, $key: additional-blue);
 }
 .txt-orange {
-	color: map-get($map: $theme-colors, $key: additional-orange);
+    color: map-get($map: $theme-colors, $key: additional-orange);
 }
 .txt-pink {
-	color: map-get($map: $theme-colors, $key: additional-pink);
+    color: map-get($map: $theme-colors, $key: additional-pink);
 }
 .clearfix:after {
-	display: table;
-	clear: both;
-	content: "";
+    display: table;
+    clear: both;
+    content: "";
 }
 .d-none,
 [hidden] {
-	display: none !important;
+    display: none !important;
 }
 .d-g {
-	display: grid;
+    display: grid;
 }
 .d-f {
-	display: flex;
+    display: flex;
 }
 .grid-gap-16 {
-	grid-gap: 16px;
+    grid-gap: 16px;
 }
 .grid-gap-24 {
-	grid-gap: 24px;
+    grid-gap: 24px;
 }
 .pull-left {
-	float: left;
+    float: left;
 }
 .pull-right {
-	float: right;
+    float: right;
 }
 .h-100 {
-	height: 100%;
+    height: 100%;
 }
 .fw-300 {
-	font-weight: 300;
+    font-weight: 300;
 }
 .fw-400 {
-	font-weight: 400;
+    font-weight: 400;
 }
 .fw-500 {
-	font-weight: 500;
+    font-weight: 500;
 }
 .fw-600 {
-	font-weight: 600;
+    font-weight: 600;
 }
 .fw-700 {
-	font-weight: 700;
+    font-weight: 700;
 }
 .fw-800 {
-	font-weight: 800;
+    font-weight: 800;
 }
 .fw-900 {
-	font-weight: 900;
+    font-weight: 900;
 }
 .ta-c {
-	text-align: center;
+    text-align: center;
 }
 .ta-l {
-	text-align: left;
+    text-align: left;
 }
 .ta-r {
-	text-align: right;
+    text-align: right;
 }
 .ta-jus {
-	text-align: justify;
+    text-align: justify;
 }
 .ta-last-c {
-	text-align-last: center;
+    text-align-last: center;
 }
 .t-u {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 .t-up {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 .t-cap {
-	text-transform: capitalize;
+    text-transform: capitalize;
 }
 .jc-c {
-	justify-content: center;
+    justify-content: center;
 }
 .jc-e {
-	justify-content: flex-end;
+    justify-content: flex-end;
 }
 .jc-s {
-	justify-content: flex-start;
+    justify-content: flex-start;
 }
 .jc-b {
-	justify-content: space-between;
+    justify-content: space-between;
 }
 .al-c {
-	align-items: center;
+    align-items: center;
 }
 .al-e {
-	align-items: flex-end;
+    align-items: flex-end;
 }
 .al-s {
-	align-items: flex-start;
+    align-items: flex-start;
 }
 .fullsize {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .mr-at {
-	margin-right: auto;
+    margin-right: auto;
 }
 .ml-at {
-	margin-left: auto;
+    margin-left: auto;
 }
 .mx-at {
-	@extend .ml-at;
-	@extend .mr-at;
+    @extend .ml-at;
+    @extend .mr-at;
 }
 .mr-0 {
-	margin-right: 0;
+    margin-right: 0;
 }
 .ml-0 {
-	margin-left: 0;
+    margin-left: 0;
 }
 .pl-0 {
-	padding-left: 0;
+    padding-left: 0;
 }
 .pr-0 {
-	padding-right: 0;
+    padding-right: 0;
 }
 .pt-0 {
-	padding-top: 0;
+    padding-top: 0;
 }
 .pb-0 {
-	padding-bottom: 0;
+    padding-bottom: 0;
 }
 .px-0 {
-	@extend .pl-0;
-	@extend .pr-0;
+    @extend .pl-0;
+    @extend .pr-0;
 }
 .py-0 {
-	@extend .pt-0;
-	@extend .pb-0;
+    @extend .pt-0;
+    @extend .pb-0;
 }
 .obj-resize {
-	position: absolute;
-	top: 0;
-	left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .obj-cover {
-	@extend .fullsize;
-	object-fit: cover;
+    @extend .fullsize;
+    object-fit: cover;
 }
 .ov-h {
-	overflow: hidden;
+    overflow: hidden;
 }
 .obj-contain {
-	@extend .fullsize;
-	object-fit: contain;
-	position: absolute;
-	top: 0;
-	left: 0;
+    @extend .fullsize;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .flex-alc {
-	@extend.d-f;
-	@extend .al-c;
+    @extend.d-f;
+    @extend .al-c;
 }
 .flex-jcc {
-	@extend.d-f;
-	@extend .jc-c;
+    @extend.d-f;
+    @extend .jc-c;
 }
 .flex-alc-jcc {
-	@extend.d-f;
-	@extend.jc-c;
-	@extend .al-c;
+    @extend.d-f;
+    @extend.jc-c;
+    @extend .al-c;
 }
 .flex-between-alc {
-	@extend.d-f;
-	@extend .al-c;
-	@extend .jc-b;
+    @extend.d-f;
+    @extend .al-c;
+    @extend .jc-b;
 }

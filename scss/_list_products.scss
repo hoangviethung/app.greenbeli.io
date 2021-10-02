@@ -4,15 +4,12 @@
     grid-column-gap: 16px;
     grid-row-gap: 32px;
     @media (max-width: 1199.98px) {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    @media (max-width: 1024.98px) {
         grid-template-columns: repeat(3, 1fr);
     }
-    @media (max-width: 850.98px) {
+    @media (max-width: 900.98px) {
         grid-template-columns: repeat(2, 1fr);
     }
-    @media (max-width: 575.98px) {
+    @media (max-width: 600.98px) {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -40,27 +37,17 @@
     min-height: 400px;
     max-width: 280px;
     margin: 0 auto;
+    .item_wrapper__top {
+        padding: 16px 0;
+    }
     .character__image {
-        height: 248px;
+        height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 16px;
         img {
             max-height: 220px;
             width: auto;
-            @media (max-width: 1199.98px) {
-                max-height: 200px;
-            }
-        }
-        @media (max-width: 1199.98px) {
-            height: 240px;
-        }
-        @media (max-width: 1024.98px) {
-            height: 248px;
-        }
-        @media (max-width: 850.98px) {
-            height: 244px;
         }
     }
     .character__name {
@@ -127,11 +114,13 @@
     }
     .item_wrapper__bottom {
         color: map-get($map: $theme-colors, $key: txt-body);
-        max-width: 70%;
-        padding: 5% 0;
+        max-width: 80%;
         margin: 0 auto;
+        background-color: map-get($map: $theme-colors, $key: neutral-white);
+        border-radius: 0.44rem;
     }
     .character__information {
+        padding: 5%;
         .information__item {
             display: flex;
             align-items: center;
@@ -141,10 +130,13 @@
             }
         }
     }
-    .item_wrapper__action {
-        display: flex;
-        justify-content: center;
-        padding: 0 16px 16px 16px;
+    .character__status {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 900;
+        padding: 5%;
+        border-top: 1px solid map-get($map: $theme-colors, $key: gray-border);
     }
     &[rating="1"] {
         background-image: url("../images/bg_card_item_product_rate_1.png");
