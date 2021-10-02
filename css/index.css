@@ -7,3 +7,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 150px; }
+    .buy_seed_section .block-seed img {
+      animation: tranformItemBuySeed 6s ease-in-out infinite; }
