@@ -80,3 +80,18 @@
         }
     }
 }
+
+.nft_your_tree_page {
+    .banner_section {
+        background-image: url("../images/bg_inventory.png");
+    }
+    .banner_section__wrapper {
+        min-height: 500px;
+    }
+    .banner_section__content {
+        margin-top: -16px;
+        h2 {
+            margin-top: 120px;
+        }
+    }
+}

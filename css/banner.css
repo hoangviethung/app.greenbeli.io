@@ -54,3 +54,14 @@
 
 .nft_your_tree_page .banner_section__content img {
   max-width: 150px; }
+
+.nft_your_tree_page .banner_section {
+  background-image: url("../images/bg_inventory.png"); }
+
+.nft_your_tree_page .banner_section__wrapper {
+  min-height: 500px; }
+
+.nft_your_tree_page .banner_section__content {
+  margin-top: -16px; }
+  .nft_your_tree_page .banner_section__content h2 {
+    margin-top: 120px; }
