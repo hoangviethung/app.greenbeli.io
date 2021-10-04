@@ -1395,14 +1395,32 @@ body[style="overflow-y: hidden"] .page:before {
     grid-gap: 16px;
     grid-template-columns: 280px auto; }
     .character_detail_popup .detail_top .top_right {
-      padding: 16px 16px 16px 0; }
+      padding: 10px 0; }
       .character_detail_popup .detail_top .top_right .character__information {
-        color: #ffffff; }
+        font-size: 1.125rem;
+        background-color: #ffffff;
+        height: 100%;
+        padding: 16px;
+        border-radius: 1.22rem;
+        border: 2px solid #c9e2a5;
+        border-radius: 1.22rem; }
         .character_detail_popup .detail_top .top_right .character__information .information__item {
           display: flex;
           justify-content: space-between; }
           .character_detail_popup .detail_top .top_right .character__information .information__item + .information__item {
-            margin-top: 8px; }
+            margin-top: 16px; }
+          .character_detail_popup .detail_top .top_right .character__information .information__item[rarity="common"] {
+            color: #8e8e8e; }
+          .character_detail_popup .detail_top .top_right .character__information .information__item[rarity="uncommon"] {
+            color: #25b503; }
+          .character_detail_popup .detail_top .top_right .character__information .information__item[rarity="rare"] {
+            color: #3c78d8; }
+          .character_detail_popup .detail_top .top_right .character__information .information__item[rarity="epic"] {
+            color: #9900ff; }
+          .character_detail_popup .detail_top .top_right .character__information .information__item[rarity="legendary"] {
+            color: #ff0000; }
+          .character_detail_popup .detail_top .top_right .character__information .information__item[rarity="mythical"] {
+            color: #e69138; }
         @media (max-width: 575.98px) {
           .character_detail_popup .detail_top .top_right .character__information {
             color: #212121; } }
@@ -1412,7 +1430,7 @@ body[style="overflow-y: hidden"] .page:before {
           background-color: #e0eecc;
           border-radius: 0.22rem;
           box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08); } }
-    @media (max-width: 575.98px) {
+    @media (max-width: 767.98px) {
       .character_detail_popup .detail_top {
         grid-template-columns: 1fr; } }
   .character_detail_popup .character__price {
@@ -1489,14 +1507,14 @@ body[style="overflow-y: hidden"] .page:before {
     margin-top: 16px; }
     .character_detail_popup .detail_bottom .bottom_item {
       padding: 16px;
-      border: 2px solid #e0eecc;
-      border-radius: 0.22rem;
+      border: 2px solid #c9e2a5;
+      border-radius: 1.22rem;
       background-color: #ffffff; }
       .character_detail_popup .detail_bottom .bottom_item + .bottom_item {
         margin-top: 16px; }
     .character_detail_popup .detail_bottom .title_block {
       text-align: center;
-      font-size: 1.125rem;
+      font-size: 1.25rem;
       color: #668d2e;
       padding-bottom: 16px; }
   .character_detail_popup .character__skin {
@@ -1509,11 +1527,12 @@ body[style="overflow-y: hidden"] .page:before {
       .character_detail_popup .character__skin .skin__item > div {
         margin-left: 8px; }
         .character_detail_popup .character__skin .skin__item > div p {
+          font-size: 1.25rem;
           max-width: 124px;
           text-overflow: ellipsis;
           overflow: hidden; }
           .character_detail_popup .character__skin .skin__item > div p + p {
-            font-size: 0.75rem;
+            font-size: 0.875rem;
             color: #212121;
             font-weight: 400;
             margin-top: 4px; }

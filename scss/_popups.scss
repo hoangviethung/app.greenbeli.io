@@ -164,14 +164,57 @@
         grid-gap: 16px;
         grid-template-columns: 280px auto;
         .top_right {
-            padding: 16px 16px 16px 0;
+            padding: 10px 0;
             .character__information {
-                color: map-get($map: $theme-colors, $key: neutral-white);
+                font-size: 1.125rem;
+                background-color: map-get(
+                    $map: $theme-colors,
+                    $key: neutral-white
+                );
+                height: 100%;
+                padding: 16px;
+                border-radius: 1.22rem;
+                border: 2px solid
+                    lighten(
+                        $color: map-get($theme-colors, primary),
+                        $amount: 40%
+                    );
+                border-radius: 1.22rem;
                 .information__item {
                     display: flex;
                     justify-content: space-between;
                     + .information__item {
-                        margin-top: 8px;
+                        margin-top: 16px;
+                    }
+                    &[rarity="common"] {
+                        color: map-get(
+                            $map: $theme-colors,
+                            $key: rarity-common
+                        );
+                    }
+                    &[rarity="uncommon"] {
+                        color: map-get(
+                            $map: $theme-colors,
+                            $key: rarity-uncommon
+                        );
+                    }
+                    &[rarity="rare"] {
+                        color: map-get($map: $theme-colors, $key: rarity-rare);
+                    }
+                    &[rarity="epic"] {
+                        color: map-get($map: $theme-colors, $key: rarity-epic);
+                    }
+                    &[rarity="legendary"] {
+                        color: map-get(
+                            $map: $theme-colors,
+                            $key: rarity-legendary
+                        );
+                    }
+                    &[rarity="mythical"] {
+                        color: map-get(
+                            $map: $theme-colors,
+                            $key: rarity-mythical
+                        );
                     }
                 }
                 @media (max-width: 575.98px) {
@@ -192,7 +235,7 @@
                     );
             }
         }
-        @media (max-width: 575.98px) {
+        @media (max-width: 767.98px) {
             grid-template-columns: 1fr;
         }
     }
@@ -289,8 +332,8 @@
         .bottom_item {
             padding: 16px;
             border: 2px solid
-                lighten($color: map-get($theme-colors, primary), $amount: 50%);
-            border-radius: 0.22rem;
+                lighten($color: map-get($theme-colors, primary), $amount: 40%);
+            border-radius: 1.22rem;
             background-color: map-get($map: $theme-colors, $key: neutral-white);
             + .bottom_item {
                 margin-top: 16px;
@@ -298,7 +341,7 @@
         }
         .title_block {
             text-align: center;
-            font-size: 1.125rem;
+            font-size: 1.25rem;
             color: map-get($map: $theme-colors, $key: primary);
             padding-bottom: 16px;
         }
@@ -313,11 +356,12 @@
             > div {
                 margin-left: 8px;
                 p {
+                    font-size: 1.25rem;
                     max-width: 124px;
                     text-overflow: ellipsis;
                     overflow: hidden;
                     + p {
-                        font-size: 0.75rem;
+                        font-size: 0.875rem;
                         color: map-get($map: $theme-colors, $key: txt-body);
                         font-weight: 400;
                         margin-top: 4px;
