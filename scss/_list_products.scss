@@ -38,13 +38,24 @@
     max-width: 280px;
     margin: 0 auto;
     .item_wrapper__top {
-        padding: 16px 0;
+        padding: 24px 0 8px;
     }
     .character__image {
         height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
+        .image {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            background-color: map-get($map: $theme-colors, $key: neutral-white);
+            border-radius: 0.44rem;
+            height: 100%;
+            max-width: 80%;
+            width: 100%;
+        }
         img {
             max-height: 220px;
             width: auto;
@@ -59,6 +70,15 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+        }
+    }
+    .character__class {
+        width: 24px;
+        height: 24px;
+        &:before {
+            display: block;
+            width: 100%;
+            height: 100%;
         }
     }
     .character__price {
@@ -115,6 +135,7 @@
     .item_wrapper__bottom {
         color: map-get($map: $theme-colors, $key: txt-body);
         max-width: 80%;
+        width: 100%;
         margin: 0 auto;
         background-color: map-get($map: $theme-colors, $key: neutral-white);
         border-radius: 0.44rem;
@@ -155,6 +176,41 @@
     }
     &[rating="6"] {
         background-image: url("../images/bg_card_item_product_rate_6.png");
+    }
+    &[character-class="fire"] {
+        .character__class {
+            &:before {
+                content: url("../icons/fire.png");
+            }
+        }
+    }
+    &[character-class="water"] {
+        .character__class {
+            &:before {
+                content: url("../icons/water.png");
+            }
+        }
+    }
+    &[character-class="metal"] {
+        .character__class {
+            &:before {
+                content: url("../icons/metal.png");
+            }
+        }
+    }
+    &[character-class="wood"] {
+        .character__class {
+            &:before {
+                content: url("../icons/wood.png");
+            }
+        }
+    }
+    &[character-class="earth"] {
+        .character__class {
+            &:before {
+                content: url("../icons/earth.png");
+            }
+        }
     }
 }
 

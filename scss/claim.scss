@@ -90,6 +90,11 @@
                 color: map-get($map: $theme-colors, $key: secondary);
             }
         }
+        p {
+            + p {
+                margin-top: 8px;
+            }
+        }
         .actions {
             .bt {
                 + .bt {

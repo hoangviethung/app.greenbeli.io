@@ -162,25 +162,22 @@
     .detail_top {
         display: grid;
         grid-gap: 16px;
-        grid-template-columns: 1fr 1fr;
-        .top_left {
-            position: relative;
-            border-radius: 0.22rem;
-            box-shadow: 0px 3px 6px
-                rgba(
-                    $color: map-get($theme-colors, neutral-black),
-                    $alpha: 0.08
-                );
-            background-color: lighten(
-                $color: map-get($theme-colors, primary),
-                $amount: 50%
-            );
-            .left_bottom {
-                padding: 16px;
-            }
-        }
+        grid-template-columns: 280px auto;
         .top_right {
             padding: 16px 16px 16px 0;
+            .character__information {
+                color: map-get($map: $theme-colors, $key: neutral-white);
+                .information__item {
+                    display: flex;
+                    justify-content: space-between;
+                    + .information__item {
+                        margin-top: 8px;
+                    }
+                }
+                @media (max-width: 575.98px) {
+                    color: map-get($map: $theme-colors, $key: txt-body);
+                }
+            }
             @media (max-width: 575.98px) {
                 padding: 16px;
                 background-color: lighten(
@@ -197,97 +194,6 @@
         }
         @media (max-width: 575.98px) {
             grid-template-columns: 1fr;
-        }
-    }
-    .character__id {
-        font-size: 0.75rem;
-        position: absolute;
-        left: 8px;
-        top: 8px;
-        cursor: pointer;
-        color: map-get($map: $theme-colors, $key: neutral-white);
-        display: flex;
-        justify-content: center;
-        padding: 4px 8px;
-        width: fit-content;
-        border-radius: 0.22rem;
-        background-color: rgba(
-            $color: map-get($map: $theme-colors, $key: primary),
-            $alpha: 0.8
-        );
-        transition: 0.3s all ease-in-out;
-        span + span {
-            margin-left: 4px;
-        }
-        &:hover {
-            background-color: rgba(
-                $color: map-get($map: $theme-colors, $key: primary),
-                $alpha: 1
-            );
-        }
-        &:active {
-            transform: translateY(2px);
-        }
-    }
-    .character__breed-count {
-        color: map-get($map: $theme-colors, $key: neutral-white);
-        font-size: 0.75rem;
-        position: absolute;
-        right: 8px;
-        top: 8px;
-        padding: 4px 8px;
-        width: fit-content;
-        background-color: rgba(
-            $color: map-get($map: $theme-colors, $key: primary),
-            $alpha: 0.8
-        );
-        border-radius: 0.22rem;
-    }
-    .character__image {
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        @media (max-width: 575.98px) {
-            max-width: 150px;
-            margin: 0 auto;
-        }
-        &[rating="1"] {
-            background-image: url("./images/bg_card_item_detail_product_rate_1.png");
-        }
-        &[rating="2"] {
-            background-image: url("./images/bg_card_item_detail_product_rate_2.png");
-        }
-        &[rating="3"] {
-            background-image: url("./images/bg_card_item_detail_product_rate_3.png");
-        }
-        &[rating="4"] {
-            background-image: url("./images/bg_card_item_detail_product_rate_4.png");
-        }
-        &[rating="5"] {
-            background-image: url("./images/bg_card_item_detail_product_rate_5.png");
-        }
-        &[rating="6"] {
-            background-image: url("./images/bg_card_item_detail_product_rate_6.png");
-        }
-    }
-    .character__information {
-        color: map-get($map: $theme-colors, $key: neutral-white);
-        .information__item {
-            display: flex;
-            justify-content: space-between;
-            + .information__item {
-                margin-top: 8px;
-            }
-        }
-        @media (max-width: 575.98px) {
-            color: map-get($map: $theme-colors, $key: txt-body);
-        }
-    }
-    .character__rating {
-        display: flex;
-        color: map-get($map: $theme-colors, $key: additional-yellow);
-        i + i {
-            margin-left: 4px;
         }
     }
     .character__price {
@@ -418,6 +324,41 @@
                     }
                     @media (max-width: 575.98px) {
                         font-size: 0.75rem;
+                    }
+                }
+            }
+            &[body-part-class="fire"] {
+                svg {
+                    path {
+                        fill: red;
+                    }
+                }
+            }
+            &[body-part-class="water"] {
+                svg {
+                    path {
+                        fill: red;
+                    }
+                }
+            }
+            &[body-part-class="metal"] {
+                svg {
+                    path {
+                        fill: red;
+                    }
+                }
+            }
+            &[body-part-class="earth"] {
+                svg {
+                    path {
+                        fill: red;
+                    }
+                }
+            }
+            &[body-part-class="wood"] {
+                svg {
+                    path {
+                        fill: red;
                     }
                 }
             }

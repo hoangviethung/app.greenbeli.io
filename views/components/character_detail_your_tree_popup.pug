@@ -4,33 +4,34 @@
             .character_detail__wrapper
                 .detail_top
                     .top_left
-                        .character__image(rating="1")
-                            img(src="./images/itemproductmetal.png", alt="CHARACTER")
-                        .character__id
-                            span 144964015431745793
-                            span.copy
-                                i.fal.fa-copy
-                        .character__breed-count
-                            span BREED: 0
+                        .list_products__item(rating="3" character-class="fire")
+                            .item_wrapper__top
+                                .character__image
+                                    .image
+                                        img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
+                            .item_wrapper__bottom
+                                .character__information
+                                    .information__item
+                                        .character__name
+                                            h3 GRBE#95203
+                                        .character__rating
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                    .information__item
+                                        span Class
+                                        .character__class
+                                    .information__item
+                                        span Power
+                                        span 25%
+                                .character__status.txt-primary STAKING
                     .top_right
                         .character__information
                             .information__item
-                                span Name
-                                span GRBE#45793
+                                span ID
+                                span 144964015431745793
                             .information__item
-                                span Star
-                                .character__rating
-                                    i.fas.fa-star
-                                    i.fas.fa-star
-                                    i.fas.fa-star
-                                    i.fas.fa-star
-                                    i.fas.fa-star
-                            .information__item
-                                span Class
-                                span Metal
-                            .information__item
-                                span Power
-                                span 20%
+                                span Breed:
+                                span 1/5
                             .information__item
                                 span Intel
                                 span 48
@@ -53,33 +54,33 @@
                     .bottom_item
                         .title_block Body parts
                         .character__skin
-                            .skin__item(rarity="common")
-                                img(src="./icons/face.png", alt="SKIN-ITEM")
+                            .skin__item(rarity="common" body-part-class="fire")
+                                svg(width="24" height="24")
                                 div
                                     p Face
                                     p Level 1
-                            .skin__item(rarity="uncommon")
-                                img(src="./icons/hair.png", alt="SKIN-ITEM")
+                            .skin__item(rarity="uncommon" body-part-class="water")
+                                svg(width="24" height="24")
                                 div
                                     p Hair
                                     p Level 1
-                            .skin__item(rarity="rare")
-                                img(src="./icons/body.png", alt="SKIN-ITEM")
+                            .skin__item(rarity="rare" body-part-class="metal")
+                                svg(width="24" height="24")
                                 div
                                     p Body
                                     p Level 1
-                            .skin__item(rarity="epic")
-                                img(src="./icons/hand.png", alt="SKIN-ITEM")
+                            .skin__item(rarity="epic" body-part-class="earth")
+                                svg(width="24" height="24")
                                 div
                                     p Hand
                                     p Level 1
-                            .skin__item(rarity="legendary")
-                                img(src="./icons/leg.png", alt="SKIN-ITEM")
+                            .skin__item(rarity="legendary" body-part-class="wood")
+                                svg(width="24" height="24")
                                 div
                                     p Leg
                                     p Level 1
-                            .skin__item(rarity="mythical")
-                                img(src="./icons/deco.png", alt="SKIN-ITEM")
+                            .skin__item(rarity="mythical" body-part-class="fire")
+                                svg(width="24" height="24")
                                 div
                                     p Deco
                                     p Level 1

@@ -16,8 +16,6 @@ block main
     section.your_tree_info_section
         .container
             .your_tree_info_section__wrapper
-                .your_tree_info_decorate.your_tree_info_decorate--left
-                    img(src="./images/farminfodecorateleft.png", alt="")
                 .your_tree_info_section__item
                     .block
                         h4 Total Hero
@@ -32,8 +30,6 @@ block main
                         span 10
                         .action
                             button(disable).bt.bt--secondary Coming Soon
-                .your_tree_info_decorate.your_tree_info_decorate--right
-                    img(src="./images/farminfodecorateright.png", alt="")
     // *** YOUR GRBE *** //
     section.your_tree_section
         .container
@@ -48,10 +44,12 @@ block main
                             option Selling
             .list_products
                 .list_products__item_wrapper
-                    a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating="1")
+                    a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating="1" character-class="fire")
                         .item_wrapper__top
                             .character__image
-                                img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
+                                .image
+                                    .image
+                                    img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
                         .item_wrapper__bottom
                             .character__information
                                 .information__item
@@ -61,16 +59,17 @@ block main
                                         i.fas.fa-star
                                 .information__item
                                     span Class
-                                    span Metal
+                                    .character__class
                                 .information__item
                                     span Power
                                     span 25%
                             .character__status.txt-gray IDLE
                 .list_products__item_wrapper
-                    a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating="2")
+                    a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating="2" character-class="water")
                         .item_wrapper__top
                             .character__image
-                                img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
+                                .image
+                                    img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
                         .item_wrapper__bottom
                             .character__information
                                 .information__item
@@ -81,16 +80,17 @@ block main
                                         i.fas.fa-star
                                 .information__item
                                     span Class
-                                    span Metal
+                                    .character__class
                                 .information__item
                                     span Power
                                     span 25%
                             .character__status.txt-orange SELLING
                 .list_products__item_wrapper
-                    a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating="3")
+                    a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating="3" character-class="metal")
                         .item_wrapper__top
                             .character__image
-                                img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
+                                .image
+                                    img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
                         .item_wrapper__bottom
                             .character__information
                                 .information__item
@@ -101,17 +101,18 @@ block main
                                         i.fas.fa-star
                                 .information__item
                                     span Class
-                                    span Metal
+                                    .character__class
                                 .information__item
                                     span Power
                                     span 25%
                             .character__status.txt-primary STAKING
                 -for(i=4;i<7;i++)
                     .list_products__item_wrapper
-                        a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating=`${i}`)
+                        a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating=`${i}` character-class="earth")
                             .item_wrapper__top
                                 .character__image
-                                    img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
+                                    .image
+                                        img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
                             .item_wrapper__bottom
                                 .character__information
                                     .information__item
@@ -122,7 +123,7 @@ block main
                                             i.fas.fa-star
                                     .information__item
                                         span Class
-                                        span Metal
+                                        .character__class
                                     .information__item
                                         span Power
                                         span 25%
