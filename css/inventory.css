@@ -32,6 +32,7 @@
   max-width: 280px;
   margin: 0 auto; }
   .list_products__item .item_wrapper__top {
+    position: relative;
     padding: 24px 0 8px; }
   .list_products__item .character__image {
     height: 200px;
@@ -60,6 +61,14 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; }
+  .list_products__item .character__id {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    border-radius: 0.88rem;
+    font-size: 0.75rem;
+    font-weight: 600; }
   .list_products__item .character__class {
     position: relative;
     width: 24px;
@@ -129,6 +138,8 @@
       justify-content: space-between; }
       .list_products__item .character__information .information__item + .information__item {
         margin-top: 8px; }
+    .list_products__item .character__information .color-rating {
+      font-weight: 600; }
   .list_products__item .character__status {
     text-transform: uppercase;
     text-align: center;
@@ -138,16 +149,28 @@
     border-top: 1px solid #d9d9d9; }
   .list_products__item[rating="1"] {
     background-image: url("../images/bg_card_item_product_rate_1.png"); }
+    .list_products__item[rating="1"] .color-rating {
+      color: #8b8b8b; }
   .list_products__item[rating="2"] {
     background-image: url("../images/bg_card_item_product_rate_2.png"); }
+    .list_products__item[rating="2"] .color-rating {
+      color: #9bc65f; }
   .list_products__item[rating="3"] {
     background-image: url("../images/bg_card_item_product_rate_3.png"); }
+    .list_products__item[rating="3"] .color-rating {
+      color: #40b3db; }
   .list_products__item[rating="4"] {
     background-image: url("../images/bg_card_item_product_rate_4.png"); }
+    .list_products__item[rating="4"] .color-rating {
+      color: #c073f0; }
   .list_products__item[rating="5"] {
     background-image: url("../images/bg_card_item_product_rate_5.png"); }
+    .list_products__item[rating="5"] .color-rating {
+      color: #e9524c; }
   .list_products__item[rating="6"] {
     background-image: url("../images/bg_card_item_product_rate_6.png"); }
+    .list_products__item[rating="6"] .color-rating {
+      color: #f59d26; }
   .list_products__item[character-class="fire"] .character__class:before {
     background-image: url("../icons/hero-class/fire.png"); }
   .list_products__item[character-class="water"] .character__class:before {

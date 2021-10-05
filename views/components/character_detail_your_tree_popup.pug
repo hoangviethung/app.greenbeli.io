@@ -1,15 +1,18 @@
-#character_detail_popup.character_detail_popup(style="display:none")
+#character_detail_popup.character_detail_popup(rating="6" character-class="fire" style="display:none")
     .popup_wrapper
         .popup__body
             .character_detail__wrapper
                 .detail_top
                     .top_left
-                        .list_products__item(rating="3" character-class="fire")
-                            .item_wrapper__top
+                        .list_products__item
+                            .item_wrapper__top.border-rating
                                 .character__image
                                     .image
                                         img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
-                            .item_wrapper__bottom
+                                .character__id
+                                    span ID 
+                                    span 144964015431745793
+                            .item_wrapper__bottom.border-rating
                                 .character__information
                                     .information__item
                                         .character__name
@@ -22,15 +25,13 @@
                                         .character__class
                                     .information__item
                                         span Power
-                                        span 25%
+                                        span.color-rating 25%
                                 .character__status.txt-primary STAKING
                     .top_right
-                        .character__information
+                        .character__information.border-rating
+                            
                             .information__item
-                                span ID
-                                span 144964015431745793
-                            .information__item
-                                span Breed:
+                                span Breed count
                                 span 1/5
                             .information__item(rarity="common")
                                 span Intel
@@ -51,36 +52,36 @@
                                 span Crit Rate
                                 span 56
                 .detail_bottom
-                    .bottom_item
+                    .bottom_item.border-rating
                         .title_block Body parts
                         .character__skin
                             .skin__item(rarity="common" body-part-name="face" body-part-class="fire")
                                 .skin__icon
                                 div
                                     p Face
-                                    p Level 1
+                                    p LVL 1
                             .skin__item(rarity="uncommon" body-part-name="hair" body-part-class="water")
                                 .skin__icon
                                 div
                                     p Hair
-                                    p Level 1
+                                    p LVL 1
                             .skin__item(rarity="rare" body-part-name="body" body-part-class="metal")
                                 .skin__icon
                                 div
                                     p Body
-                                    p Level 1
+                                    p LVL 1
                             .skin__item(rarity="epic" body-part-name="hand" body-part-class="earth")
                                 .skin__icon
                                 div
                                     p Hand
-                                    p Level 1
+                                    p LVL 1
                             .skin__item(rarity="legendary" body-part-name="leg" body-part-class="wood")
                                 .skin__icon
                                 div
                                     p Leg
-                                    p Level 1s
+                                    p LVL 1
                             .skin__item(rarity="mythical" body-part-name="decor" body-part-class="fire")
                                 .skin__icon
                                 div
                                     p Decor
-                                    p Level 1
+                                    p LVL 1

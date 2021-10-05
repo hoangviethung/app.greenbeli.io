@@ -38,6 +38,7 @@
     max-width: 280px;
     margin: 0 auto;
     .item_wrapper__top {
+        position: relative;
         padding: 24px 0 8px;
     }
     .character__image {
@@ -71,6 +72,15 @@
             text-overflow: ellipsis;
             white-space: nowrap;
         }
+    }
+    .character__id {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        padding: 4px 8px;
+        border-radius: 0.88rem;
+        font-size: 0.75rem;
+        font-weight: 600;
     }
     .character__class {
         position: relative;
@@ -156,6 +166,9 @@
                 margin-top: 8px;
             }
         }
+        .color-rating {
+            font-weight: 600;
+        }
     }
     .character__status {
         text-transform: uppercase;
@@ -167,21 +180,39 @@
     }
     &[rating="1"] {
         background-image: url("../images/bg_card_item_product_rate_1.png");
+        .color-rating {
+            color: #8b8b8b;
+        }
     }
     &[rating="2"] {
         background-image: url("../images/bg_card_item_product_rate_2.png");
+        .color-rating {
+            color: #9bc65f;
+        }
     }
     &[rating="3"] {
         background-image: url("../images/bg_card_item_product_rate_3.png");
+        .color-rating {
+            color: #40b3db;
+        }
     }
     &[rating="4"] {
         background-image: url("../images/bg_card_item_product_rate_4.png");
+        .color-rating {
+            color: #c073f0;
+        }
     }
     &[rating="5"] {
         background-image: url("../images/bg_card_item_product_rate_5.png");
+        .color-rating {
+            color: #e9524c;
+        }
     }
     &[rating="6"] {
         background-image: url("../images/bg_card_item_product_rate_6.png");
+        .color-rating {
+            color: #f59d26;
+        }
     }
     &[character-class="fire"] {
         .character__class {

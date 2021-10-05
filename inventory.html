@@ -96,7 +96,7 @@
                   <div class="item_wrapper__top">
                     <div class="character__image">
                       <div class="image">
-                        <div class="image"></div><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/>
+                        <div class="image"></div><img src="./images/itemproductfire.png" alt="CHARACTER-METAL"/>
                       </div>
                     </div>
                   </div>
@@ -111,14 +111,14 @@
                       <div class="information__item"><span>Class</span>
                         <div class="character__class"></div>
                       </div>
-                      <div class="information__item"><span>Power</span><span>25%</span></div>
+                      <div class="information__item"><span>Power</span><span class="color-rating">25%</span></div>
                     </div>
                     <div class="character__status txt-gray">IDLE</div>
                   </div></a></div>
               <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="2" character-class="water">
                   <div class="item_wrapper__top">
                     <div class="character__image">
-                      <div class="image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
+                      <div class="image"><img src="./images/itemproductwater.png" alt="CHARACTER-METAL"/></div>
                     </div>
                   </div>
                   <div class="item_wrapper__bottom">
@@ -132,7 +132,7 @@
                       <div class="information__item"><span>Class</span>
                         <div class="character__class"></div>
                       </div>
-                      <div class="information__item"><span>Power</span><span>25%</span></div>
+                      <div class="information__item"><span>Power</span><span class="color-rating">25%</span></div>
                     </div>
                     <div class="character__status txt-orange">SELLING</div>
                   </div></a></div>
@@ -153,14 +153,14 @@
                       <div class="information__item"><span>Class</span>
                         <div class="character__class"></div>
                       </div>
-                      <div class="information__item"><span>Power</span><span>25%</span></div>
+                      <div class="information__item"><span>Power</span><span class="color-rating">25%</span></div>
                     </div>
                     <div class="character__status txt-primary">STAKING</div>
                   </div></a></div>
               <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="4" character-class="earth">
                   <div class="item_wrapper__top">
                     <div class="character__image">
-                      <div class="image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
+                      <div class="image"><img src="./images/itemproductearth.png" alt="CHARACTER-METAL"/></div>
                     </div>
                   </div>
                   <div class="item_wrapper__bottom">
@@ -174,14 +174,14 @@
                       <div class="information__item"><span>Class</span>
                         <div class="character__class"></div>
                       </div>
-                      <div class="information__item"><span>Power</span><span>25%</span></div>
+                      <div class="information__item"><span>Power</span><span class="color-rating">25%</span></div>
                     </div>
                     <div class="character__status txt-primary">STAKING</div>
                   </div></a></div>
-              <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="5" character-class="earth">
+              <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="5" character-class="wood">
                   <div class="item_wrapper__top">
                     <div class="character__image">
-                      <div class="image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
+                      <div class="image"><img src="./images/itemproductwood.png" alt="CHARACTER-METAL"/></div>
                     </div>
                   </div>
                   <div class="item_wrapper__bottom">
@@ -195,14 +195,14 @@
                       <div class="information__item"><span>Class</span>
                         <div class="character__class"></div>
                       </div>
-                      <div class="information__item"><span>Power</span><span>25%</span></div>
+                      <div class="information__item"><span>Power</span><span class="color-rating">25%</span></div>
                     </div>
                     <div class="character__status txt-primary">STAKING</div>
                   </div></a></div>
-              <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="6" character-class="earth">
+              <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="6" character-class="wood">
                   <div class="item_wrapper__top">
                     <div class="character__image">
-                      <div class="image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
+                      <div class="image"><img src="./images/itemproductwood.png" alt="CHARACTER-METAL"/></div>
                     </div>
                   </div>
                   <div class="item_wrapper__bottom">
@@ -216,7 +216,7 @@
                       <div class="information__item"><span>Class</span>
                         <div class="character__class"></div>
                       </div>
-                      <div class="information__item"><span>Power</span><span>25%</span></div>
+                      <div class="information__item"><span>Power</span><span class="color-rating">25%</span></div>
                     </div>
                     <div class="character__status txt-primary">STAKING</div>
                   </div></a></div>
@@ -224,19 +224,20 @@
           </div>
         </section>
         <!-- *** CHARACTER DETAIL POPUP *** //-->
-        <div class="character_detail_popup" id="character_detail_popup" style="display:none">
+        <div class="character_detail_popup" id="character_detail_popup" rating="6" character-class="fire" style="display:none">
           <div class="popup_wrapper">
             <div class="popup__body">
               <div class="character_detail__wrapper">
                 <div class="detail_top">
                   <div class="top_left">
-                    <div class="list_products__item" rating="3" character-class="fire">
-                      <div class="item_wrapper__top">
+                    <div class="list_products__item">
+                      <div class="item_wrapper__top border-rating">
                         <div class="character__image">
                           <div class="image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
                         </div>
+                        <div class="character__id"><span>ID </span><span>144964015431745793</span></div>
                       </div>
-                      <div class="item_wrapper__bottom">
+                      <div class="item_wrapper__bottom border-rating">
                         <div class="character__information">
                           <div class="information__item">
                             <div class="character__name">
@@ -247,16 +248,15 @@
                           <div class="information__item"><span>Class</span>
                             <div class="character__class"></div>
                           </div>
-                          <div class="information__item"><span>Power</span><span>25%</span></div>
+                          <div class="information__item"><span>Power</span><span class="color-rating">25%</span></div>
                         </div>
                         <div class="character__status txt-primary">STAKING</div>
                       </div>
                     </div>
                   </div>
                   <div class="top_right">
-                    <div class="character__information">
-                      <div class="information__item"><span>ID</span><span>144964015431745793</span></div>
-                      <div class="information__item"><span>Breed:</span><span>1/5</span></div>
+                    <div class="character__information border-rating">
+                      <div class="information__item"><span>Breed count</span><span>1/5</span></div>
                       <div class="information__item" rarity="common"><span>Intel</span><span>48</span></div>
                       <div class="information__item" rarity="uncommon"><span>Gens</span><span>50</span></div>
                       <div class="information__item" rarity="rare"><span>Growth</span><span>12</span></div>
@@ -267,49 +267,49 @@
                   </div>
                 </div>
                 <div class="detail_bottom">
-                  <div class="bottom_item">
+                  <div class="bottom_item border-rating">
                     <div class="title_block">Body parts</div>
                     <div class="character__skin">
                       <div class="skin__item" rarity="common" body-part-name="face" body-part-class="fire">
                         <div class="skin__icon"></div>
                         <div>
                           <p>Face</p>
-                          <p>Level 1</p>
+                          <p>LVL 1</p>
                         </div>
                       </div>
                       <div class="skin__item" rarity="uncommon" body-part-name="hair" body-part-class="water">
                         <div class="skin__icon"></div>
                         <div>
                           <p>Hair</p>
-                          <p>Level 1</p>
+                          <p>LVL 1</p>
                         </div>
                       </div>
                       <div class="skin__item" rarity="rare" body-part-name="body" body-part-class="metal">
                         <div class="skin__icon"></div>
                         <div>
                           <p>Body</p>
-                          <p>Level 1</p>
+                          <p>LVL 1</p>
                         </div>
                       </div>
                       <div class="skin__item" rarity="epic" body-part-name="hand" body-part-class="earth">
                         <div class="skin__icon"></div>
                         <div>
                           <p>Hand</p>
-                          <p>Level 1</p>
+                          <p>LVL 1</p>
                         </div>
                       </div>
                       <div class="skin__item" rarity="legendary" body-part-name="leg" body-part-class="wood">
                         <div class="skin__icon"></div>
                         <div>
                           <p>Leg</p>
-                          <p>Level 1s</p>
+                          <p>LVL 1</p>
                         </div>
                       </div>
                       <div class="skin__item" rarity="mythical" body-part-name="decor" body-part-class="fire">
                         <div class="skin__icon"></div>
                         <div>
                           <p>Decor</p>
-                          <p>Level 1</p>
+                          <p>LVL 1</p>
                         </div>
                       </div>
                     </div>
