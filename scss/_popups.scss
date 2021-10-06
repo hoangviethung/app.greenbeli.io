@@ -165,10 +165,7 @@
         .top_right {
             .character__information {
                 font-size: 1.125rem;
-                background-color: map-get(
-                    $map: $theme-colors,
-                    $key: neutral-white
-                );
+                background-color: #f4f9f4;
                 height: 100%;
                 padding: 16px;
                 border-radius: 1.22rem;
@@ -359,7 +356,7 @@
             border-width: 2px;
             border-style: solid;
             border-radius: 1.22rem;
-            background-color: map-get($map: $theme-colors, $key: neutral-white);
+            background-color: #f4f9f4;
             + .bottom_item {
                 margin-top: 16px;
             }

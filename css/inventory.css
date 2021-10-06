@@ -44,7 +44,7 @@
       display: flex;
       align-content: center;
       justify-content: center;
-      background-color: #ffffff;
+      background-color: #f4f9f4;
       border-radius: 0.44rem;
       height: 100%;
       max-width: 80%;
@@ -128,7 +128,7 @@
     max-width: 80%;
     width: 100%;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #f4f9f4;
     border-radius: 0.44rem; }
   .list_products__item .character__information {
     padding: 5%; }
