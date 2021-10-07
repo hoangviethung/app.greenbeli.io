@@ -1,4 +1,4 @@
-#character_detail_popup.character_detail_popup(rating="6" character-class="fire" style="display:none")
+#character_detail_popup.character_detail_popup(rating="5" character-class="fire" style="display:none")
     .popup_wrapper
         .popup__body
             .character_detail__wrapper
@@ -8,7 +8,7 @@
                             .item_wrapper__top.border-rating
                                 .character__image
                                     .image
-                                        img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
+                                        img(src="./images/itemproductfire.png", alt="CHARACTER-METAL")
                                 .character__id
                                     span ID 
                                     span 144964015431745793
@@ -24,33 +24,54 @@
                                         span Class
                                         .character__class
                                     .information__item
-                                        span Power
-                                        span.color-rating 25%
+                                        span Farming
+                                        .character__farming
+                                            span 25%
+                                            img.icon(src="./icons/farming.png", alt="")
                                 .character__status.txt-primary STAKING
-                    .top_right
-                        .character__information.border-rating
+                    .top_right.border-rating
+                        .character__information
                             
                             .information__item
-                                span Breed count
-                                span 1/5
-                            .information__item(rarity="common")
-                                span Intel
-                                span 48
-                            .information__item(rarity="uncommon")
-                                span Gens
-                                span 50
-                            .information__item(rarity="rare")
-                                span Growth
-                                span 12
-                            .information__item(rarity="epic")
-                                span Base Dmg
-                                span 45
-                            .information__item(rarity="legendary")
-                                span Crit Dmg
-                                span 32
-                            .information__item(rarity="mythical")
-                                span Crit Rate
-                                span 56
+                                label Breed count
+                                .content
+                                    span 1/6
+                            .information__item
+                                label Intel
+                                .content
+                                    .icon
+                                        img(src="./icons/intel.png", alt="")
+                                    span 48
+                            .information__item
+                                label Gens
+                                .content
+                                    .icon
+                                        img(src="./icons/gens.png", alt="")
+                                    span 50
+                            .information__item
+                                label Growth
+                                .content
+                                    .icon
+                                        img(src="./icons/growth.png", alt="")
+                                    span 50
+                            .information__item
+                                label Base Dmg
+                                .content
+                                    .icon
+                                        img(src="./icons/dmg.png", alt="")
+                                    span 50
+                            .information__item
+                                label Crit Dmg
+                                .content
+                                    .icon
+                                        img(src="./icons/crit-dmg.png", alt="")
+                                    span 50
+                            .information__item
+                                label Crit Rate
+                                .content
+                                    .icon
+                                        img(src="./icons/crit-rate.png", alt="")
+                                    span 50
                 .detail_bottom
                     .bottom_item.border-rating
                         .title_block Body parts

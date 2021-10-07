@@ -28,12 +28,12 @@
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  min-height: 400px;
+  min-height: 420px;
   max-width: 280px;
   margin: 0 auto; }
   .list_products__item .item_wrapper__top {
     position: relative;
-    padding: 24px 0 8px; }
+    padding: 32px 0 8px; }
   .list_products__item .character__image {
     height: 200px;
     display: flex;
@@ -44,11 +44,13 @@
       display: flex;
       align-content: center;
       justify-content: center;
-      background-color: #f4f9f4;
       border-radius: 0.44rem;
       height: 100%;
       max-width: 80%;
-      width: 100%; }
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; }
     .list_products__item .character__image img {
       max-height: 220px;
       width: auto; }
@@ -62,6 +64,8 @@
       text-overflow: ellipsis;
       white-space: nowrap; }
   .list_products__item .character__id {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
     position: absolute;
     top: 8px;
     left: 8px;
@@ -140,6 +144,19 @@
         margin-top: 8px; }
     .list_products__item .character__information .color-rating {
       font-weight: 600; }
+  .list_products__item .character__farming {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    .list_products__item .character__farming span {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+      padding-right: 4px; }
+    .list_products__item .character__farming .icon {
+      -ms-flex: 0 0 24px;
+      flex: 0 0 24px;
+      max-width: 24px; }
   .list_products__item .character__status {
     text-transform: uppercase;
     text-align: center;
@@ -171,14 +188,24 @@
     background-image: url("../images/bg_card_item_product_rate_6.png"); }
     .list_products__item[rating="6"] .color-rating {
       color: #f59d26; }
+  .list_products__item[character-class="fire"] .character__image .image {
+    background-image: url("../images/bg_hero_fire.png"); }
   .list_products__item[character-class="fire"] .character__class:before {
     background-image: url("../icons/hero-class/fire.png"); }
+  .list_products__item[character-class="water"] .character__image .image {
+    background-image: url("../images/bg_hero_water.png"); }
   .list_products__item[character-class="water"] .character__class:before {
     background-image: url("../icons/hero-class/water.png"); }
+  .list_products__item[character-class="metal"] .character__image .image {
+    background-image: url("../images/bg_hero_metal.png"); }
   .list_products__item[character-class="metal"] .character__class:before {
     background-image: url("../icons/hero-class/metal.png"); }
+  .list_products__item[character-class="wood"] .character__image .image {
+    background-image: url("../images/bg_hero_wood.png"); }
   .list_products__item[character-class="wood"] .character__class:before {
     background-image: url("../icons/hero-class/wood.png"); }
+  .list_products__item[character-class="earth"] .character__image .image {
+    background-image: url("../images/bg_hero_earth.png"); }
   .list_products__item[character-class="earth"] .character__class:before {
     background-image: url("../icons/hero-class/earth.png"); }
 

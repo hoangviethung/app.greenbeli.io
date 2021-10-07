@@ -34,12 +34,12 @@
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    min-height: 400px;
+    min-height: 420px;
     max-width: 280px;
     margin: 0 auto;
     .item_wrapper__top {
         position: relative;
-        padding: 24px 0 8px;
+        padding: 32px 0 8px;
     }
     .character__image {
         height: 200px;
@@ -51,11 +51,13 @@
             display: flex;
             align-content: center;
             justify-content: center;
-            background-color: #f4f9f4;
             border-radius: 0.44rem;
             height: 100%;
             max-width: 80%;
             width: 100%;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
         }
         img {
             max-height: 220px;
@@ -74,6 +76,11 @@
         }
     }
     .character__id {
+        color: map-get($map: $theme-colors, $key: neutral-white);
+        background-color: rgba(
+            $color: map-get($map: $theme-colors, $key: neutral-white),
+            $alpha: 0.3
+        );
         position: absolute;
         top: 8px;
         left: 8px;
@@ -170,6 +177,22 @@
             font-weight: 600;
         }
     }
+    .character__farming {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        span {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+            padding-right: 4px;
+        }
+        .icon {
+            -ms-flex: 0 0 24px;
+            flex: 0 0 24px;
+            max-width: 24px;
+        }
+    }
     .character__status {
         text-transform: uppercase;
         text-align: center;
@@ -215,6 +238,11 @@
         }
     }
     &[character-class="fire"] {
+        .character__image {
+            .image {
+                background-image: url("../images/bg_hero_fire.png");
+            }
+        }
         .character__class {
             &:before {
                 background-image: url("../icons/hero-class/fire.png");
@@ -222,6 +250,11 @@
         }
     }
     &[character-class="water"] {
+        .character__image {
+            .image {
+                background-image: url("../images/bg_hero_water.png");
+            }
+        }
         .character__class {
             &:before {
                 background-image: url("../icons/hero-class/water.png");
@@ -229,6 +262,11 @@
         }
     }
     &[character-class="metal"] {
+        .character__image {
+            .image {
+                background-image: url("../images/bg_hero_metal.png");
+            }
+        }
         .character__class {
             &:before {
                 background-image: url("../icons/hero-class/metal.png");
@@ -236,6 +274,11 @@
         }
     }
     &[character-class="wood"] {
+        .character__image {
+            .image {
+                background-image: url("../images/bg_hero_wood.png");
+            }
+        }
         .character__class {
             &:before {
                 background-image: url("../icons/hero-class/wood.png");
@@ -243,6 +286,11 @@
         }
     }
     &[character-class="earth"] {
+        .character__image {
+            .image {
+                background-image: url("../images/bg_hero_earth.png");
+            }
+        }
         .character__class {
             &:before {
                 background-image: url("../icons/hero-class/earth.png");
