@@ -153,11 +153,16 @@
 
 .character_detail_popup {
     max-width: 650px;
+
     width: 100%;
     overflow: visible;
     border-width: 4px;
     border-style: solid;
     border-radius: 1.22rem;
+    .popup_wrapper{
+        max-height: 80vh;
+        overflow-y: auto;
+    }
     .detail_top {
         display: grid;
         grid-gap: 16px;
@@ -690,7 +695,6 @@
         max-width: 550px;
     }
     @media (max-width: 575.98px) {
-        margin: 56px 0;
         .popup__body {
             padding: 16px 16px 44px 16px;
         }
@@ -925,6 +929,10 @@
                 );
             }
         }
+    }
+    .popup__body {
+        max-height: 50vh;
+        overflow-y: auto;
     }
 }
 

@@ -1400,6 +1400,9 @@ body[style="overflow-y: hidden"] .page:before {
   border-width: 4px;
   border-style: solid;
   border-radius: 1.22rem; }
+  .character_detail_popup .popup_wrapper {
+    max-height: 80vh;
+    overflow-y: auto; }
   .character_detail_popup .detail_top {
     display: grid;
     grid-gap: 16px;
@@ -1687,10 +1690,8 @@ body[style="overflow-y: hidden"] .page:before {
     .character_detail_popup {
       max-width: 550px; } }
   @media (max-width: 575.98px) {
-    .character_detail_popup {
-      margin: 56px 0; }
-      .character_detail_popup .popup__body {
-        padding: 16px 16px 44px 16px; } }
+    .character_detail_popup .popup__body {
+      padding: 16px 16px 44px 16px; } }
   .character_detail_popup[rating="1"] {
     border-color: #696969;
     background-color: rgba(54, 54, 54, 0.5); }
@@ -1817,6 +1818,9 @@ body[style="overflow-y: hidden"] .page:before {
     .stake_your_grbe_popup .your_grbe__item.checked .item__img {
       background: #e0eecc;
       border-color: rgba(102, 141, 46, 0.2); }
+  .stake_your_grbe_popup .popup__body {
+    max-height: 50vh;
+    overflow-y: auto; }
 
 .unbox_popup {
   max-width: 650px;
