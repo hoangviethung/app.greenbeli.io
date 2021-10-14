@@ -11,32 +11,6 @@
 
 .your_tree_info_section__wrapper {
     position: relative;
-    padding: 32px 0;
-    .your_tree_info_decorate {
-        pointer-events: none;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        max-width: 200px;
-        &--left {
-            left: 0;
-            @media (max-width: 1024.98px) {
-                display: none;
-            }
-        }
-        &--right {
-            right: 0;
-            @media (max-width: 767.98px) {
-                display: none;
-            }
-        }
-        @media (max-width: 1199.98px) {
-            max-width: 200px;
-        }
-    }
-    @media (max-width: 767.98px) {
-        padding: 0;
-    }
 }
 
 .your_tree_info_section__item {
