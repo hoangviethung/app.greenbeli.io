@@ -1,7 +1,7 @@
 extends ../layouts/layout
 
 block var
-    - pageTitle = "Compensation | Green Beli"
+    - pageTitle = "Claim | Green Beli"
     - pageName = "nft_claim_page"
 block library-css
 block css
@@ -67,45 +67,34 @@ block main
                                     span Claimable:
                                     span 2.000.000
                             .actions
-                                a.bt.bt--primary(href="#") Claim
+                                a.bt.bt--primary Claim
                         .block_content(toggle-id="airdrop-1")
-                            b Claim token will be gradually release from: 
-                                span Sep 20th 2021, 3:00PM UTC 
-                                | to 
-                                span NOV 20th 2022, 3:00PM UTC
+                            p
+                                b Congrats! you’re in the whitelist Airdrop #1
                             ul
                                 li
-                                    span Total token:
-                                    span 10.0000.0000
+                                    span Total Reward:
+                                    span 300 Green Heroes for 300 winners
                                 li
-                                    span You have claimed:
-                                    span 5.000.000
-                                li
-                                    span Remaining:
-                                    span 5.000.000
-                                li
-                                    span Claimable:
-                                    span 2.000.000
+                                    span
+                                    span 1,500,000 GRBE tokens for 7,500 winners
                             .actions
-                                a.bt.bt--primary(href="#") Claim GRBE
-                                a.bt.bt--secondary(href="#") Claim NFT
+                                a.bt.bt--primary(popup-to="claim_airdrop1_grbe_popup" href="javascript:;") Claim GRBE
+                                a.bt.bt--secondary(popup-to="claim_airdrop1_nft_popup" href="javascript:;") Claim NFT
                         .block_content(toggle-id="airdrop-2")
-                            b Claim token will be gradually release from: 
-                                span Sep 20th 2021, 3:00PM UTC 
-                                | to 
-                                span NOV 20th 2022, 3:00PM UTC
+                            p
+                                b Congrats! you’re in the whitelist Airdrop #2
+                            p
+                                b Deadline to claim your tokens: 10th October, 2021.
                             ul
                                 li
-                                    span Total token:
-                                    span 10.0000.0000
-                                li
-                                    span You have claimed:
-                                    span 5.000.000
-                                li
-                                    span Remaining:
-                                    span 5.000.000
-                                li
-                                    span Claimable:
-                                    span 2.000.000
+                                    span Total reward:
+                                    span 300,000 GRBE tokens for 1,000 winners
                             .actions
-                                a.bt.bt--primary(href="#") Claim
+                                a.bt.bt--primary(popup-to="claim_airdrop2_grbe_popup" href="javascript:;") Claim GRBE
+    //- POPUP CLAIM AIRDROP1 GRBE POPUP
+    include ../components/claim_airdrop1_grbe_popup
+    //- POPUP CLAIM AIRDROP1 NFT POPUP
+    include ../components/claim_airdrop1_nft_popup
+    //- POPUP CLAIM AIRDROP1 GRBE POPUP
+    include ../components/claim_airdrop2_grbe_popup

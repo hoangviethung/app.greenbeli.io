@@ -651,3 +651,31 @@
         }
     }
 }
+
+.claim_airdrop_popup {
+    max-width: 500px;
+    width: 100%;
+    .claim_airdrop_content_popup {
+        p {
+            text-align: center;
+            + p {
+                margin-top: 8px;
+            }
+        }
+        .time {
+            margin-top: 16px;
+            b {
+                margin: 0 4px;
+            }
+            span {
+                color: map-get($map: $theme-colors, $key: secondary);
+            }
+        }
+    }
+    .fancybox-close-small {
+        display: none;
+    }
+    .popup__footer {
+        justify-content: center;
+    }
+}

@@ -61,7 +61,54 @@ class Tab {
     }
 }
 
+function fancyboxClaimAridrop1GRBEPopup() {
+    $.each($("[popup-to='claim_airdrop1_grbe_popup']"), function (index, item) {
+        $(item).on("click", function (e) {
+            e.preventDefault();
+            $.fancybox.open({
+                src: "#claim_airdrop1_grbe_popup",
+                type: "inline",
+                touch: false,
+                hash: false,
+                closeExisting: true,
+            });
+        });
+    });
+}
+
+function fancyboxClaimAridrop1NFTPopup() {
+    $.each($("[popup-to='claim_airdrop1_nft_popup']"), function (index, item) {
+        $(item).on("click", function (e) {
+            e.preventDefault();
+            $.fancybox.open({
+                src: "#claim_airdrop1_nft_popup",
+                type: "inline",
+                touch: false,
+                hash: false,
+                closeExisting: true,
+            });
+        });
+    });
+}
+
+function fancyboxClaimAridrop2GRBEPopup() {
+    $.each($("[popup-to='claim_airdrop2_grbe_popup']"), function (index, item) {
+        $(item).on("click", function (e) {
+            e.preventDefault();
+            $.fancybox.open({
+                src: "#claim_airdrop2_grbe_popup",
+                type: "inline",
+                touch: false,
+                hash: false,
+                closeExisting: true,
+            });
+        });
+    });
+}
+
 $(function () {
     const TabClaim = new Tab(".claim_block .tab_container");
-    console.log(TabClaim);
+    fancyboxClaimAridrop1GRBEPopup();
+    fancyboxClaimAridrop1NFTPopup();
+    fancyboxClaimAridrop2GRBEPopup();
 });

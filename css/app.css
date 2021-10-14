@@ -1740,6 +1740,24 @@ body[style="overflow-y: hidden"] .page:before {
   .unbox_popup .popup__footer .bt {
     min-width: 150px; }
 
+.claim_airdrop_popup {
+  max-width: 500px;
+  width: 100%; }
+  .claim_airdrop_popup .claim_airdrop_content_popup p {
+    text-align: center; }
+    .claim_airdrop_popup .claim_airdrop_content_popup p + p {
+      margin-top: 8px; }
+  .claim_airdrop_popup .claim_airdrop_content_popup .time {
+    margin-top: 16px; }
+    .claim_airdrop_popup .claim_airdrop_content_popup .time b {
+      margin: 0 4px; }
+    .claim_airdrop_popup .claim_airdrop_content_popup .time span {
+      color: #bf7f53; }
+  .claim_airdrop_popup .fancybox-close-small {
+    display: none; }
+  .claim_airdrop_popup .popup__footer {
+    justify-content: center; }
+
 *,
 *::before,
 *::after {

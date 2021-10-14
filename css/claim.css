@@ -64,6 +64,8 @@
           max-width: 100%; }
       .claim_block .block_content li + li {
         margin-top: 8px; }
+    .claim_block .block_content p + p {
+      margin-top: 8px; }
     .claim_block .block_content b {
       font-weight: 600; }
       .claim_block .block_content b span {

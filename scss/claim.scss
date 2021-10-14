@@ -84,6 +84,11 @@
                 margin-top: 8px;
             }
         }
+        p {
+            + p {
+                margin-top: 8px;
+            }
+        }
         b {
             font-weight: 600;
             span {
