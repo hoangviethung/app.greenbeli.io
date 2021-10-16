@@ -17,7 +17,7 @@
     <!-- *** FAVICON *** //-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <!-- *** TITLE *** //-->
-    <title>Liquidity | Green Beli</title>
+    <title>Shop | Green Beli</title>
   </head>
   <body>
     <div class="page nft_market_page">
@@ -69,9 +69,7 @@
             <div class="shop__wrapper">
               <div class="shop__filter">
                 <div class="filter__top">
-                  <div class="left_partial">
-                    <div class="partial__item"><span>Total Green Hero: 1106 Items</span></div>
-                  </div>
+                  <div class="left_partial"></div>
                   <div class="right_partial">
                     <div class="input_group"><span>Owned</span>
                       <label class="checkbox__switch">
@@ -81,8 +79,172 @@
                     </div>
                   </div>
                 </div>
-                <div class="filter__main">
-                  <div class="filter_block">
+                <div class="filter__tabs">
+                  <div class="tab_container">
+                    <div class="tabs_nav">
+                      <div class="tabs_nav__item" toggle-for="class">Class</div>
+                      <div class="tabs_nav__item" toggle-for="body-part">Body Part</div>
+                      <div class="tabs_nav__item" toggle-for="star">Star</div>
+                    </div>
+                    <div class="tabs_content">
+                      <div class="filter__main" toggle-id="class">
+                        <div class="filter_block_checkbox">
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>Fire</span>
+                            </label>
+                          </div>
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>Water</span>
+                            </label>
+                          </div>
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>Metal</span>
+                            </label>
+                          </div>
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>Earth</span>
+                            </label>
+                          </div>
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>Wood</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filter__main" toggle-id="body-part">
+                        <div class="filter_block_checkbox">
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>Face</span>
+                            </label>
+                          </div>
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>Hair</span>
+                            </label>
+                          </div>
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>Body</span>
+                            </label>
+                          </div>
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>Hand</span>
+                            </label>
+                          </div>
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>Leg</span>
+                            </label>
+                          </div>
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>Deco</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filter__main" toggle-id="star">
+                        <div class="filter_block_checkbox">
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>1 Star</span>
+                            </label>
+                          </div>
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>2 Star</span>
+                            </label>
+                          </div>
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>3 Star</span>
+                            </label>
+                          </div>
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>4 Star</span>
+                            </label>
+                          </div>
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>5 Star</span>
+                            </label>
+                          </div>
+                          <div class="input_group input_group_checkbox">
+                            <label>
+                              <div class="checkbox__custom">
+                                <input type="checkbox"/>
+                              </div><span>6 Star</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__bottom">
+                  <div class="left_partial"><span>Filter (3)</span></div>
+                  <div class="right_partial">
+                    <button class="txt-secondary">Clear Filter</button>
+                  </div>
+                </div>
+                <div class="filter__history">
+                  <div class="filter_block_history">
+                    <div class="history_item"><span>Water</span>
+                      <button class="bt-remove-filter"><i class="far fa-times-circle"></i></button>
+                    </div>
+                    <div class="history_item"><span>Body</span>
+                      <button class="bt-remove-filter"><i class="far fa-times-circle"></i></button>
+                    </div>
+                    <div class="history_item"><span>2 Star</span>
+                      <button class="bt-remove-filter"><i class="far fa-times-circle"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shop__main_content">
+                <div class="shop__main_top">
+                  <div class="total-green-hero">Total Green Herro: 1000</div>
+                  <div class="sort_block">
                     <label class="filter_block__label">Sort By</label>
                     <div class="select__custom">
                       <select>
@@ -94,470 +256,139 @@
                       </select>
                     </div>
                   </div>
-                  <div class="filter_block">
-                    <label class="filter_block__label">Class</label>
-                    <div class="select__custom">
-                      <select>
-                        <option>All</option>
-                        <option>Metal</option>
-                        <option>Wood</option>
-                        <option>Water</option>
-                        <option>Fire</option>
-                        <option>Earth</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="filter_block">
-                    <label class="filter_block__label">Body Part</label>
-                    <div class="select__custom">
-                      <select>
-                        <option>All</option>
-                        <option>Face</option>
-                        <option>Hair</option>
-                        <option>Body</option>
-                        <option>Hand</option>
-                        <option>Leg</option>
-                        <option>Deco</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="filter_block">
-                    <label class="filter_block__label">Star</label>
-                    <div class="select__custom">
-                      <select>
-                        <option>All</option>
-                        <option>1 Star</option>
-                        <option>2 Star</option>
-                        <option>3 Star</option>
-                        <option>4 Star</option>
-                        <option>5 Star</option>
-                        <option>6 Star</option>
-                      </select>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <div class="shop__main_content">
                 <div class="list_products">
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="0">
+                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="5" character-class="fire">
                       <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
+                        <div class="character__image">
+                          <div class="image"><img src="./images/itemproductfire.png" alt="CHARACTER-FIRE"/></div>
                         </div>
                       </div>
                       <div class="item_wrapper__bottom">
                         <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
+                          <div class="information__item">
+                            <div class="character__name">
+                              <h3>GRBE#95203</h3>
+                            </div>
+                            <div class="character__rating"><i class="fas fa-star"></i></div>
+                          </div>
+                          <div class="information__item"><span>Class</span>
+                            <div class="character__class"></div>
+                          </div>
+                          <div class="information__item"><span>Breed count</span><span>0/6</span></div>
+                          <div class="information__item"><span>Price</span><span>$1,0000</span></div>
                         </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--primary">Buy</button>
+                        <div class="character__status txt-orange">Selling</div>
                       </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="1">
+                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="2" character-class="wood">
                       <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
+                        <div class="character__image">
+                          <div class="image"><img src="./images/itemproductwood.png" alt="CHARACTER-WOOD"/></div>
                         </div>
                       </div>
                       <div class="item_wrapper__bottom">
                         <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
+                          <div class="information__item">
+                            <div class="character__name">
+                              <h3>GRBE#95203</h3>
+                            </div>
+                            <div class="character__rating"><i class="fas fa-star"></i></div>
+                          </div>
+                          <div class="information__item"><span>Class</span>
+                            <div class="character__class"></div>
+                          </div>
+                          <div class="information__item"><span>Breed count</span><span>0/6</span></div>
+                          <div class="information__item"><span>Price</span><span>$1,0000</span></div>
                         </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--primary">Buy</button>
+                        <div class="character__status txt-orange">Selling</div>
                       </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="2">
+                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="1" character-class="metal">
                       <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
+                        <div class="character__image">
+                          <div class="image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
                         </div>
                       </div>
                       <div class="item_wrapper__bottom">
                         <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
+                          <div class="information__item">
+                            <div class="character__name">
+                              <h3>GRBE#95203</h3>
+                            </div>
+                            <div class="character__rating"><i class="fas fa-star"></i></div>
+                          </div>
+                          <div class="information__item"><span>Class</span>
+                            <div class="character__class"></div>
+                          </div>
+                          <div class="information__item"><span>Breed count</span><span>0/6</span></div>
+                          <div class="information__item"><span>Price</span><span>$1,0000</span></div>
                         </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--primary">Buy</button>
+                        <div class="character__status txt-primary">Buy</div>
                       </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="3">
+                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="3" character-class="water">
                       <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
+                        <div class="character__image">
+                          <div class="image"><img src="./images/itemproductwater.png" alt="CHARACTER-WATER"/></div>
                         </div>
                       </div>
                       <div class="item_wrapper__bottom">
                         <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
+                          <div class="information__item">
+                            <div class="character__name">
+                              <h3>GRBE#95203</h3>
+                            </div>
+                            <div class="character__rating"><i class="fas fa-star"></i></div>
+                          </div>
+                          <div class="information__item"><span>Class</span>
+                            <div class="character__class"></div>
+                          </div>
+                          <div class="information__item"><span>Breed count</span><span>0/6</span></div>
+                          <div class="information__item"><span>Price</span><span>$1,0000</span></div>
                         </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--primary">Buy</button>
+                        <div class="character__status txt-primary">Buy</div>
                       </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="4">
+                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="6" character-class="earth">
                       <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
+                        <div class="character__image">
+                          <div class="image"><img src="./images/itemproductearth.png" alt="CHARACTER-EARTH"/></div>
                         </div>
                       </div>
                       <div class="item_wrapper__bottom">
                         <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
+                          <div class="information__item">
+                            <div class="character__name">
+                              <h3>GRBE#95203</h3>
+                            </div>
+                            <div class="character__rating"><i class="fas fa-star"></i></div>
+                          </div>
+                          <div class="information__item"><span>Class</span>
+                            <div class="character__class"></div>
+                          </div>
+                          <div class="information__item"><span>Breed count</span><span>0/6</span></div>
+                          <div class="information__item"><span>Price</span><span>$1,0000</span></div>
                         </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--primary">Buy</button>
+                        <div class="character__status txt-primary">Buy</div>
                       </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="0">
+                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="4" character-class="earth">
                       <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductfire.png" alt="CHARACTER-FIRE"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
+                        <div class="character__image">
+                          <div class="image"><img src="./images/itemproductearth.png" alt="CHARACTER-EARTH"/></div>
                         </div>
                       </div>
                       <div class="item_wrapper__bottom">
                         <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
+                          <div class="information__item">
+                            <div class="character__name">
+                              <h3>GRBE#95203</h3>
+                            </div>
+                            <div class="character__rating"><i class="fas fa-star"></i></div>
+                          </div>
+                          <div class="information__item"><span>Class</span>
+                            <div class="character__class"></div>
+                          </div>
+                          <div class="information__item"><span>Breed count</span><span>0/6</span></div>
+                          <div class="information__item"><span>Price</span><span>$1,0000</span></div>
                         </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--secondary">Cancel</button>
-                      </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="1">
-                      <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductfire.png" alt="CHARACTER-FIRE"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__bottom">
-                        <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--secondary">Cancel</button>
-                      </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="2">
-                      <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductfire.png" alt="CHARACTER-FIRE"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__bottom">
-                        <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--secondary">Cancel</button>
-                      </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="3">
-                      <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductfire.png" alt="CHARACTER-FIRE"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__bottom">
-                        <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--secondary">Cancel</button>
-                      </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="4">
-                      <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductfire.png" alt="CHARACTER-FIRE"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__bottom">
-                        <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--secondary">Cancel</button>
-                      </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="0">
-                      <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductwater.png" alt="CHARACTER-WATER"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__bottom">
-                        <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--primary">Buy</button>
-                      </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="1">
-                      <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductwater.png" alt="CHARACTER-WATER"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__bottom">
-                        <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--primary">Buy</button>
-                      </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="2">
-                      <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductwater.png" alt="CHARACTER-WATER"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__bottom">
-                        <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--primary">Buy</button>
-                      </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="3">
-                      <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductwater.png" alt="CHARACTER-WATER"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__bottom">
-                        <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--primary">Buy</button>
-                      </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="4">
-                      <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductwater.png" alt="CHARACTER-WATER"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__bottom">
-                        <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--primary">Buy</button>
-                      </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="0">
-                      <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductwood.png" alt="CHARACTER-WOOD"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__bottom">
-                        <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--secondary">Cancel</button>
-                      </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="1">
-                      <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductwood.png" alt="CHARACTER-WOOD"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__bottom">
-                        <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--secondary">Cancel</button>
-                      </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="2">
-                      <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductwood.png" alt="CHARACTER-WOOD"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__bottom">
-                        <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--secondary">Cancel</button>
-                      </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="3">
-                      <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductwood.png" alt="CHARACTER-WOOD"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__bottom">
-                        <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--secondary">Cancel</button>
-                      </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup" href="javascript:;" rating="4">
-                      <div class="item_wrapper__top">
-                        <div class="character__image"><img src="./images/itemproductwood.png" alt="CHARACTER-WOOD"/></div>
-                        <div class="character__name">
-                          <h3>GRBE#95203</h3>
-                        </div>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <div class="character__price">
-                          <h2><img src="./icons/grbe.png" alt="grbe"/><span>7,000</span></h2>
-                          <p>$162.759</p>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__bottom">
-                        <div class="character__information">
-                          <div class="information__item"><span>Class</span><span>Metal</span></div>
-                          <div class="information__item"><span>Power</span><span>10%</span></div>
-                        </div>
-                      </div>
-                      <div class="item_wrapper__action">
-                        <button class="bt bt--secondary">Cancel</button>
+                        <div class="character__status txt-primary">Buy</div>
                       </div></a></div>
                 </div>
                 <div class="shop__pagination">
@@ -578,82 +409,128 @@
           </div>
         </section>
         <!-- *** CHARACTER DETAIL POPUP *** //-->
-        <div class="character_detail_popup" id="character_detail_popup" style="display:none">
+        <div class="character_detail_popup" id="character_detail_popup" rating="5" character-class="fire" style="display:none">
           <div class="popup_wrapper">
             <div class="popup__body">
               <div class="character_detail__wrapper">
                 <div class="detail_top">
                   <div class="top_left">
-                    <div class="character__image" rating="1"><img src="./images/itemproductmetal.png" alt="CHARACTER"/></div>
-                    <div class="character__id"><span>ID: 144964015431745793</span><span class="copy"><i class="fal fa-copy"></i></span></div>
-                    <div class="character__breed-count"><span>BREED: 0</span></div>
-                    <div class="left_bottom">
-                      <div class="character__price">
-                        <h2>
-                          <div class="icon"><img src="./icons/grbe.png" alt="grbe"/></div><span>7,000</span>
-                        </h2>
-                        <p>$162.759</p>
+                    <div class="list_products__item">
+                      <div class="item_wrapper__top border-rating">
+                        <div class="character__image">
+                          <div class="image"><img src="./images/itemproductfire.png" alt="CHARACTER-METAL"/></div>
+                        </div>
+                        <div class="character__id"><span>ID </span><span>144964015431745793</span></div>
                       </div>
-                      <div class="character__actions">
-                        <button class="bt bt--primary">Buy</button>
+                      <div class="item_wrapper__bottom border-rating">
+                        <div class="character__information">
+                          <div class="information__item">
+                            <div class="character__name">
+                              <h3>GRBE#95203</h3>
+                            </div>
+                            <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                          </div>
+                          <div class="information__item"><span>Class</span>
+                            <div class="character__class"></div>
+                          </div>
+                          <div class="information__item"><span>Breed count</span><span>0/6</span></div>
+                          <div class="information__item"><span>Price</span><span>$1,000</span></div>
+                        </div>
+                        <div class="character__actions"><a class="bt bt--primary" popup-to="buy_character_popup" href="javascript:;">Buy</a></div>
                       </div>
                     </div>
                   </div>
-                  <div class="top_right">
+                  <div class="top_right border-rating">
                     <div class="character__information">
-                      <div class="information__item"><span>Name</span><span>GRBE#45793</span></div>
-                      <div class="information__item"><span>Star</span>
-                        <div class="character__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                      <div class="information__item">
+                        <label>Farming</label>
+                        <div class="content">
+                          <div class="icon"><img src="./icons/farming.png" alt=""/></div><span>25%</span>
+                        </div>
                       </div>
-                      <div class="information__item"><span>Class</span><span>Metal</span></div>
-                      <div class="information__item"><span>Power</span><span>20%</span></div>
-                      <div class="information__item"><span>Intel</span><span>48</span></div>
-                      <div class="information__item"><span>Gens</span><span>50</span></div>
-                      <div class="information__item"><span>Growth</span><span>12</span></div>
-                      <div class="information__item"><span>Base Dmg</span><span>45</span></div>
-                      <div class="information__item"><span>Crit Dmg</span><span>32</span></div>
-                      <div class="information__item"><span>Crit Rate</span><span>56</span></div>
+                      <div class="information__item">
+                        <label>Intel</label>
+                        <div class="content">
+                          <div class="icon"><img src="./icons/intel.png" alt=""/></div><span>48</span>
+                        </div>
+                      </div>
+                      <div class="information__item">
+                        <label>Gens</label>
+                        <div class="content">
+                          <div class="icon"><img src="./icons/gens.png" alt=""/></div><span>50</span>
+                        </div>
+                      </div>
+                      <div class="information__item">
+                        <label>Growth</label>
+                        <div class="content">
+                          <div class="icon"><img src="./icons/growth.png" alt=""/></div><span>50</span>
+                        </div>
+                      </div>
+                      <div class="information__item">
+                        <label>Base Dmg</label>
+                        <div class="content">
+                          <div class="icon"><img src="./icons/dmg.png" alt=""/></div><span>50</span>
+                        </div>
+                      </div>
+                      <div class="information__item">
+                        <label>Crit Dmg</label>
+                        <div class="content">
+                          <div class="icon"><img src="./icons/crit-dmg.png" alt=""/></div><span>50</span>
+                        </div>
+                      </div>
+                      <div class="information__item">
+                        <label>Crit Rate</label>
+                        <div class="content">
+                          <div class="icon"><img src="./icons/crit-rate.png" alt=""/></div><span>50</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="detail_bottom">
-                  <div class="bottom_item">
+                  <div class="bottom_item border-rating">
                     <div class="title_block">Body parts</div>
                     <div class="character__skin">
-                      <div class="skin__item" rarity="common"><img src="./icons/face.png" alt="SKIN-ITEM"/>
+                      <div class="skin__item" rarity="common" body-part-name="face" body-part-class="fire">
+                        <div class="skin__icon"></div>
                         <div>
                           <p>Face</p>
-                          <p>Level 1</p>
+                          <p>LVL 1</p>
                         </div>
                       </div>
-                      <div class="skin__item" rarity="uncommon"><img src="./icons/hair.png" alt="SKIN-ITEM"/>
+                      <div class="skin__item" rarity="uncommon" body-part-name="hair" body-part-class="water">
+                        <div class="skin__icon"></div>
                         <div>
                           <p>Hair</p>
-                          <p>Level 1</p>
+                          <p>LVL 1</p>
                         </div>
                       </div>
-                      <div class="skin__item" rarity="rare"><img src="./icons/body.png" alt="SKIN-ITEM"/>
+                      <div class="skin__item" rarity="rare" body-part-name="body" body-part-class="metal">
+                        <div class="skin__icon"></div>
                         <div>
                           <p>Body</p>
-                          <p>Level 1</p>
+                          <p>LVL 1</p>
                         </div>
                       </div>
-                      <div class="skin__item" rarity="epic"><img src="./icons/hand.png" alt="SKIN-ITEM"/>
+                      <div class="skin__item" rarity="epic" body-part-name="hand" body-part-class="earth">
+                        <div class="skin__icon"></div>
                         <div>
                           <p>Hand</p>
-                          <p>Level 1</p>
+                          <p>LVL 1</p>
                         </div>
                       </div>
-                      <div class="skin__item" rarity="legendary"><img src="./icons/leg.png" alt="SKIN-ITEM"/>
+                      <div class="skin__item" rarity="legendary" body-part-name="leg" body-part-class="wood">
+                        <div class="skin__icon"></div>
                         <div>
                           <p>Leg</p>
-                          <p>Level 1</p>
+                          <p>LVL 1</p>
                         </div>
                       </div>
-                      <div class="skin__item" rarity="mythical"><img src="./icons/deco.png" alt="SKIN-ITEM"/>
+                      <div class="skin__item" rarity="mythical" body-part-name="decor" body-part-class="fire">
+                        <div class="skin__icon"></div>
                         <div>
-                          <p>Deco</p>
-                          <p>Level 1</p>
+                          <p>Decor</p>
+                          <p>LVL 1</p>
                         </div>
                       </div>
                     </div>
@@ -761,6 +638,48 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <!-- *** BUY CHARACTER POPUP *** //-->
+        <div class="buy_character_popup" id="buy_character_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Buy Hero</h2>
+            </div>
+            <div class="popup__body">
+              <div class="buy_character_content_popup">
+                <div class="content">
+                  <ul>
+                    <li>Price: 6,000 GRBE</li>
+                    <li>Fee: 300 GRBE</li>
+                    <li>Total: 6,300 GRBE</li>
+                  </ul>
+                  <p>Are you sure to buy this Green Hero with <b>6,300 GRBE?</b></p>
+                </div>
+                <div class="error"><i class="fad fa-exclamation-circle"></i>
+                  <p>No enough balance GRBE</p>
+                </div>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <button class="bt bt--primary bt--outline" data-fancybox-close="data-fancybox-close">Close</button>
+              <button class="bt bt--primary" popup-to="buy_character_success_popup" href="javascript:;">Buy</button>
+            </div>
+          </div>
+        </div>
+        <!-- *** BUY CHARACTER SUCCESS POPUP *** //-->
+        <div class="buy_character_popup buy_character_success_popup" id="buy_character_success_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__body">
+              <div class="buy_character_content_popup">
+                <div class="success">
+                  <p>Transaction submitted successfully</p>
+                </div>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <button class="bt bt--primary bt--outline" data-fancybox-close="data-fancybox-close">Close</button><a class="bt bt--primary" href="inventory.html">Go to my Green Heroes</a>
             </div>
           </div>
         </div>

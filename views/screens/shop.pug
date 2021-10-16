@@ -1,7 +1,7 @@
 extends ../layouts/layout
 
 block var
-    - pageTitle = "Liquidity | Green Beli"
+    - pageTitle = "Shop | Green Beli"
     - pageName = "nft_market_page"
 block library-css
 block css
@@ -20,16 +20,133 @@ block main
                 .shop__filter
                     .filter__top
                         .left_partial
-                            .partial__item
-                                span Total Green Hero: 1106 Items
                         .right_partial
                             .input_group
                                 span Owned
                                 label.checkbox__switch
                                     input(type='checkbox')
                                     .slider.round
-                    .filter__main
-                        .filter_block
+                    .filter__tabs
+                        .tab_container
+                            .tabs_nav
+                                .tabs_nav__item(toggle-for="class") Class
+                                .tabs_nav__item(toggle-for="body-part") Body Part
+                                .tabs_nav__item(toggle-for="star") Star
+                            .tabs_content
+                                .filter__main(toggle-id="class")
+                                    .filter_block_checkbox
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span Fire
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span Water
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span Metal
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span Earth
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span Wood
+                                .filter__main(toggle-id="body-part")
+                                    .filter_block_checkbox
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span Face
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span Hair
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span Body
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span Hand
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span Leg
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span Deco
+                                .filter__main(toggle-id="star")
+                                    .filter_block_checkbox
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span 1 Star
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span 2 Star
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span 3 Star
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span 4 Star
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span 5 Star
+                                        .input_group.input_group_checkbox
+                                            label
+                                                .checkbox__custom
+                                                    input(type="checkbox")
+                                                span 6 Star
+                    .filter__bottom
+                        .left_partial
+                            span Filter (3)
+                        .right_partial
+                            button.txt-secondary Clear Filter
+                    .filter__history
+                        .filter_block_history
+                            .history_item
+                                span Water
+                                button.bt-remove-filter
+                                    i.far.fa-times-circle
+                            .history_item
+                                span Body
+                                button.bt-remove-filter
+                                    i.far.fa-times-circle
+                            .history_item
+                                span 2 Star
+                                button.bt-remove-filter
+                                    i.far.fa-times-circle
+                .shop__main_content
+                    .shop__main_top
+                        .total-green-hero Total Green Herro: 1000
+                        .sort_block
                             label.filter_block__label Sort By
                             .select__custom
                                 select
@@ -38,156 +155,145 @@ block main
                                     option Highest Price
                                     option Lowest Productivity Price
                                     option Highest Productivity Price
-                        .filter_block
-                            label.filter_block__label Class
-                            .select__custom
-                                select
-                                    option All
-                                    option Metal
-                                    option Wood
-                                    option Water
-                                    option Fire
-                                    option Earth
-                        .filter_block
-                            label.filter_block__label Body Part
-                            .select__custom
-                                select
-                                    option All
-                                    option Face
-                                    option Hair
-                                    option Body
-                                    option Hand
-                                    option Leg
-                                    option Deco
-                        .filter_block
-                            label.filter_block__label Star
-                            .select__custom
-                                select
-                                    option All
-                                    option 1 Star
-                                    option 2 Star
-                                    option 3 Star
-                                    option 4 Star
-                                    option 5 Star
-                                    option 6 Star
-                .shop__main_content
                     .list_products
-                        -for(i=0;i<5;i++)
-                            .list_products__item_wrapper
-                                a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating=`${i}`)
-                                    .item_wrapper__top
-                                        .character__image
-                                            img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
-                                        .character__name
-                                            h3 GRBE#95203
-                                        .character__rating
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                        .character__price
-                                            h2
-                                                img(src="./icons/grbe.png", alt="grbe")
-                                                span 7,000
-                                            p $162.759
-                                    .item_wrapper__bottom
-                                        .character__information
-                                            .information__item
-                                                span Class
-                                                span Metal
-                                            .information__item
-                                                span Power
-                                                span 10%
-                                    .item_wrapper__action
-                                        button.bt.bt--primary Buy
-                        -for(j=0;j<5;j++)
-                            .list_products__item_wrapper
-                                a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating=`${j}`)
-                                    .item_wrapper__top
-                                        .character__image
+                        .list_products__item_wrapper
+                            a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating="5" character-class="fire")
+                                .item_wrapper__top
+                                    .character__image
+                                        .image
                                             img(src="./images/itemproductfire.png", alt="CHARACTER-FIRE")
-                                        .character__name
-                                            h3 GRBE#95203
-                                        .character__rating
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                        .character__price
-                                            h2
-                                                img(src="./icons/grbe.png", alt="grbe")
-                                                span 7,000
-                                            p $162.759
-                                    .item_wrapper__bottom
-                                        .character__information
-                                            .information__item
-                                                span Class
-                                                span Metal
-                                            .information__item
-                                                span Power
-                                                span 10%
-                                    .item_wrapper__action
-                                        button.bt.bt--secondary Cancel
-                        -for(x=0;x<5;x++)
-                            .list_products__item_wrapper
-                                a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating=`${x}`)
-                                    .item_wrapper__top
-                                        .character__image
-                                            img(src="./images/itemproductwater.png", alt="CHARACTER-WATER")
-                                        .character__name
-                                            h3 GRBE#95203
-                                        .character__rating
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                        .character__price
-                                            h2
-                                                img(src="./icons/grbe.png", alt="grbe")
-                                                span 7,000
-                                            p $162.759
-                                    .item_wrapper__bottom
-                                        .character__information
-                                            .information__item
-                                                span Class
-                                                span Metal
-                                            .information__item
-                                                span Power
-                                                span 10%
-                                    .item_wrapper__action
-                                        button.bt.bt--primary Buy
-                        -for(z=0;z<5;z++)
-                            .list_products__item_wrapper
-                                a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating=`${z}`)
-                                    .item_wrapper__top
-                                        .character__image
+                                .item_wrapper__bottom
+                                    .character__information
+                                        .information__item
+                                            .character__name
+                                                h3 GRBE#95203
+                                            .character__rating
+                                                i.fas.fa-star
+                                        .information__item
+                                            span Class
+                                            .character__class
+                                        .information__item
+                                            span Breed count
+                                            span 0/6
+                                        .information__item
+                                            span Price
+                                            span $1,0000
+                                    .character__status.txt-orange Selling
+                        .list_products__item_wrapper
+                            a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating="2" character-class="wood")
+                                .item_wrapper__top
+                                    .character__image
+                                        .image
                                             img(src="./images/itemproductwood.png", alt="CHARACTER-WOOD")
-                                        .character__name
-                                            h3 GRBE#95203
-                                        .character__rating
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                        .character__price
-                                            h2
-                                                img(src="./icons/grbe.png", alt="grbe")
-                                                span 7,000
-                                            p $162.759
-                                    .item_wrapper__bottom
-                                        .character__information
-                                            .information__item
-                                                span Class
-                                                span Metal
-                                            .information__item
-                                                span Power
-                                                span 10%
-                                    .item_wrapper__action
-                                        button.bt.bt--secondary Cancel
+                                .item_wrapper__bottom
+                                    .character__information
+                                        .information__item
+                                            .character__name
+                                                h3 GRBE#95203
+                                            .character__rating
+                                                i.fas.fa-star
+                                        .information__item
+                                            span Class
+                                            .character__class
+                                        .information__item
+                                            span Breed count
+                                            span 0/6
+                                        .information__item
+                                            span Price
+                                            span $1,0000
+                                    .character__status.txt-orange Selling
+                        .list_products__item_wrapper
+                            a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating="1" character-class="metal")
+                                .item_wrapper__top
+                                    .character__image
+                                        .image
+                                            img(src="./images/itemproductmetal.png", alt="CHARACTER-METAL")
+                                .item_wrapper__bottom
+                                    .character__information
+                                        .information__item
+                                            .character__name
+                                                h3 GRBE#95203
+                                            .character__rating
+                                                i.fas.fa-star
+                                        .information__item
+                                            span Class
+                                            .character__class
+                                        .information__item
+                                            span Breed count
+                                            span 0/6
+                                        .information__item
+                                            span Price
+                                            span $1,0000
+                                    .character__status.txt-primary Buy
+                        .list_products__item_wrapper
+                            a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating="3" character-class="water")
+                                .item_wrapper__top
+                                    .character__image
+                                        .image
+                                            img(src="./images/itemproductwater.png", alt="CHARACTER-WATER")
+                                .item_wrapper__bottom
+                                    .character__information
+                                        .information__item
+                                            .character__name
+                                                h3 GRBE#95203
+                                            .character__rating
+                                                i.fas.fa-star
+                                        .information__item
+                                            span Class
+                                            .character__class
+                                        .information__item
+                                            span Breed count
+                                            span 0/6
+                                        .information__item
+                                            span Price
+                                            span $1,0000
+                                    .character__status.txt-primary Buy
+                        .list_products__item_wrapper
+                            a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating="6" character-class="earth")
+                                .item_wrapper__top
+                                    .character__image
+                                        .image
+                                            img(src="./images/itemproductearth.png", alt="CHARACTER-EARTH")
+                                .item_wrapper__bottom
+                                    .character__information
+                                        .information__item
+                                            .character__name
+                                                h3 GRBE#95203
+                                            .character__rating
+                                                i.fas.fa-star
+                                        .information__item
+                                            span Class
+                                            .character__class
+                                        .information__item
+                                            span Breed count
+                                            span 0/6
+                                        .information__item
+                                            span Price
+                                            span $1,0000
+                                    .character__status.txt-primary Buy
+                        .list_products__item_wrapper
+                            a.list_products__item(popup-to="character_detail_popup" href="javascript:;" rating="4" character-class="earth")
+                                .item_wrapper__top
+                                    .character__image
+                                        .image
+                                            img(src="./images/itemproductearth.png", alt="CHARACTER-EARTH")
+                                .item_wrapper__bottom
+                                    .character__information
+                                        .information__item
+                                            .character__name
+                                                h3 GRBE#95203
+                                            .character__rating
+                                                i.fas.fa-star
+                                        .information__item
+                                            span Class
+                                            .character__class
+                                        .information__item
+                                            span Breed count
+                                            span 0/6
+                                        .information__item
+                                            span Price
+                                            span $1,0000
+                                    .character__status.txt-primary Buy
                     .shop__pagination
                         ul.pagination
                             li.pagination-item.disable
@@ -213,3 +319,7 @@ block main
                                     i.fal.fa-chevron-right
     // *** CHARACTER DETAIL POPUP *** //
     include ../components/character_detail_popup
+    // *** BUY CHARACTER POPUP *** //
+    include ../components/buy_character_popup
+    // *** BUY CHARACTER SUCCESS POPUP *** //
+    include ../components/buy_character_success_popup

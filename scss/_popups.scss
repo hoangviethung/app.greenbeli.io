@@ -159,7 +159,7 @@
     border-width: 4px;
     border-style: solid;
     border-radius: 1.22rem;
-    .popup_wrapper{
+    .popup_wrapper {
         max-height: 80vh;
         overflow-y: auto;
     }
@@ -268,6 +268,9 @@
             img {
                 max-height: 100%;
             }
+        }
+        &:hover {
+            transform: unset;
         }
     }
     .character__price {
@@ -1067,20 +1070,56 @@
                 margin-top: 8px;
             }
         }
-        .time {
-            margin-top: 16px;
-            b {
-                margin: 0 4px;
-            }
-            span {
-                color: map-get($map: $theme-colors, $key: secondary);
-            }
-        }
     }
     .fancybox-close-small {
         display: none;
     }
     .popup__footer {
         justify-content: center;
+    }
+}
+
+.buy_character_popup {
+    max-width: 650px;
+    width: 100%;
+    .buy_character_content_popup {
+        font-size: 1.125rem;
+        .content {
+            ul {
+                li {
+                    + li {
+                        margin-top: 8px;
+                    }
+                }
+            }
+            p {
+                margin-top: 16px;
+                b {
+                    color: map-get($map: $theme-colors, $key: secondary);
+                }
+            }
+        }
+        .error {
+            display: flex;
+            align-items: center;
+            color: map-get($map: $theme-colors, $key: danger);
+            margin-top: 24px;
+            > i {
+                margin-right: 4px;
+            }
+        }
+        .success {
+            color: map-get($map: $theme-colors, $key: primary);
+            text-align: center;
+        }
+    }
+    .popup__footer {
+        justify-content: center;
+    }
+    &.buy_character_success_popup {
+        max-width: 400px;
+        .fancybox-close-small {
+            display: none;
+        }
     }
 }

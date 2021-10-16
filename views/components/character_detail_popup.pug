@@ -1,97 +1,114 @@
-#character_detail_popup.character_detail_popup(style="display:none")
+#character_detail_popup.character_detail_popup(rating="5" character-class="fire" style="display:none")
     .popup_wrapper
         .popup__body
             .character_detail__wrapper
                 .detail_top
                     .top_left
-                        .character__image(rating="1")
-                            img(src="./images/itemproductmetal.png", alt="CHARACTER")
-                        .character__id
-                            span ID: 144964015431745793
-                            span.copy
-                                i.fal.fa-copy
-                        .character__breed-count
-                            span BREED: 0
-                        .left_bottom
-                            .character__price
-                                h2
-                                    .icon
-                                        img(src="./icons/grbe.png", alt="grbe")
-                                    span 7,000
-                                p $162.759
-                            .character__actions
-                                button.bt.bt--primary Buy
-                    .top_right
+                        .list_products__item
+                            .item_wrapper__top.border-rating
+                                .character__image
+                                    .image
+                                        img(src="./images/itemproductfire.png", alt="CHARACTER-METAL")
+                                .character__id
+                                    span ID 
+                                    span 144964015431745793
+                            .item_wrapper__bottom.border-rating
+                                .character__information
+                                    .information__item
+                                        .character__name
+                                            h3 GRBE#95203
+                                        .character__rating
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                    .information__item
+                                        span Class
+                                        .character__class
+                                    .information__item
+                                        span Breed count
+                                        span 0/6
+                                    .information__item
+                                        span Price
+                                        span $1,000
+                                .character__actions
+                                    a.bt.bt--primary(popup-to="buy_character_popup" href="javascript:;") Buy
+                    .top_right.border-rating
                         .character__information
                             .information__item
-                                span Name
-                                span GRBE#45793
+                                label Farming
+                                .content
+                                    .icon
+                                        img(src="./icons/farming.png", alt="")
+                                    span 25%
                             .information__item
-                                span Star
-                                .character__rating
-                                    i.fas.fa-star
-                                    i.fas.fa-star
-                                    i.fas.fa-star
-                                    i.fas.fa-star
-                                    i.fas.fa-star
+                                label Intel
+                                .content
+                                    .icon
+                                        img(src="./icons/intel.png", alt="")
+                                    span 48
                             .information__item
-                                span Class
-                                span Metal
+                                label Gens
+                                .content
+                                    .icon
+                                        img(src="./icons/gens.png", alt="")
+                                    span 50
                             .information__item
-                                span Power
-                                span 20%
+                                label Growth
+                                .content
+                                    .icon
+                                        img(src="./icons/growth.png", alt="")
+                                    span 50
                             .information__item
-                                span Intel
-                                span 48
+                                label Base Dmg
+                                .content
+                                    .icon
+                                        img(src="./icons/dmg.png", alt="")
+                                    span 50
                             .information__item
-                                span Gens
-                                span 50
+                                label Crit Dmg
+                                .content
+                                    .icon
+                                        img(src="./icons/crit-dmg.png", alt="")
+                                    span 50
                             .information__item
-                                span Growth
-                                span 12
-                            .information__item
-                                span Base Dmg
-                                span 45
-                            .information__item
-                                span Crit Dmg
-                                span 32
-                            .information__item
-                                span Crit Rate
-                                span 56
+                                label Crit Rate
+                                .content
+                                    .icon
+                                        img(src="./icons/crit-rate.png", alt="")
+                                    span 50
                 .detail_bottom
-                    .bottom_item
+                    .bottom_item.border-rating
                         .title_block Body parts
                         .character__skin
-                            .skin__item(rarity="common")
-                                img(src="./icons/face.png", alt="SKIN-ITEM")
+                            .skin__item(rarity="common" body-part-name="face" body-part-class="fire")
+                                .skin__icon
                                 div
                                     p Face
-                                    p Level 1
-                            .skin__item(rarity="uncommon")
-                                img(src="./icons/hair.png", alt="SKIN-ITEM")
+                                    p LVL 1
+                            .skin__item(rarity="uncommon" body-part-name="hair" body-part-class="water")
+                                .skin__icon
                                 div
                                     p Hair
-                                    p Level 1
-                            .skin__item(rarity="rare")
-                                img(src="./icons/body.png", alt="SKIN-ITEM")
+                                    p LVL 1
+                            .skin__item(rarity="rare" body-part-name="body" body-part-class="metal")
+                                .skin__icon
                                 div
                                     p Body
-                                    p Level 1
-                            .skin__item(rarity="epic")
-                                img(src="./icons/hand.png", alt="SKIN-ITEM")
+                                    p LVL 1
+                            .skin__item(rarity="epic" body-part-name="hand" body-part-class="earth")
+                                .skin__icon
                                 div
                                     p Hand
-                                    p Level 1
-                            .skin__item(rarity="legendary")
-                                img(src="./icons/leg.png", alt="SKIN-ITEM")
+                                    p LVL 1
+                            .skin__item(rarity="legendary" body-part-name="leg" body-part-class="wood")
+                                .skin__icon
                                 div
                                     p Leg
-                                    p Level 1
-                            .skin__item(rarity="mythical")
-                                img(src="./icons/deco.png", alt="SKIN-ITEM")
+                                    p LVL 1
+                            .skin__item(rarity="mythical" body-part-name="decor" body-part-class="fire")
+                                .skin__icon
                                 div
-                                    p Deco
-                                    p Level 1
+                                    p Decor
+                                    p LVL 1
                 .detail_bottom
                     .bottom_item
                         .title_block Transaction history

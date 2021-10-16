@@ -1,5 +1,5 @@
 .footer-main {
-    padding: 56px 0;
+    padding: 32px 0;
     background-color: map-get($map: $theme-colors, $key: primary-dark);
     border-top: 1px solid
         rgba(
@@ -8,23 +8,14 @@
         );
 }
 
-.footer-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    grid-gap: 32px;
-    @media (max-width: 575.98px) {
-        display: block;
-    }
-}
-
 .footer__logo {
     display: block;
     max-width: 150px;
     margin: 0 auto;
-}
-
-.footer-left {
+    img {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 .footer-right {

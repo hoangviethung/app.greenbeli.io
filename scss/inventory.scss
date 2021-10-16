@@ -78,22 +78,6 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 32px;
-    .left_partial {
-        .bt-tab-name {
-            &.active {
-                background: map-get($map: $theme-colors, $key: primary);
-                color: map-get($map: $theme-colors, $key: neutral-white);
-            }
-        }
-        .partial__item {
-            display: flex;
-            justify-content: space-between;
-            font-size: 1.25rem;
-        }
-        @media (max-width: 1024.98px) {
-            margin-bottom: 16px;
-        }
-    }
     .right_partial {
         display: flex;
         align-items: center;

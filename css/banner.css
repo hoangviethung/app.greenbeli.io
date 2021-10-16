@@ -46,7 +46,8 @@
     font-weight: 500; }
 
 .nft_farmer_page .banner_section__content img,
-.nft_compensation_page .banner_section__content img {
+.nft_compensation_page .banner_section__content img,
+.nft_claim_page .banner_section__content img {
   max-width: 300px; }
 
 .nft_market_page .banner_section__content img {
