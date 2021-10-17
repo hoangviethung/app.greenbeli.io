@@ -25,7 +25,7 @@
 .shop__filter {
     background: lighten($color: map-get($theme-colors, primary), $amount: 55%);
     padding: 16px;
-    border-radius: 0.22rem;
+    border-radius: 1.22rem;
     box-shadow: 0px 3px 6px
         rgba($color: map-get($theme-colors, neutral-black), $alpha: 0.08);
     border: 2px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
@@ -87,13 +87,13 @@
                 $color: map-get($theme-colors, primary),
                 $alpha: 0.2
             );
-            border-radius: 8px;
+            border-radius: 1.22rem;
         }
         .tabs_nav__item {
             cursor: pointer;
             user-select: none;
-            padding: 16px;
-            border-radius: 8px;
+            padding: 8px 16px;
+            border-radius: 1.22rem;
             transition: 0.2s all linear;
             &.active {
                 color: map-get($map: $theme-colors, $key: neutral-white);
@@ -121,7 +121,7 @@
                 $alpha: 0.2
             );
             padding: 8px 8px 8px 16px;
-            border-radius: 0.22rem;
+            border-radius: 1.22rem;
             .bt-remove-filter {
                 color: map-get($map: $theme-colors, $key: danger);
             }
@@ -155,7 +155,7 @@
     .list_products__item {
         min-height: 390px;
         .character__image {
-            height: 160px;
+            height: 140px;
         }
     }
     .list_products {

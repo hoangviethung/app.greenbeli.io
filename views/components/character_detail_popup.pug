@@ -28,7 +28,13 @@
                                         span 0/6
                                     .information__item
                                         span Price
-                                        span $1,000
+                                        .character__price
+                                            .price__wrapper
+                                                .icon
+                                                    img(src="./icons/grbe.png", alt="GRBE")
+                                                .price
+                                                    span 0.4723
+                                                    span.usd ($21.92)
                                 .character__actions
                                     a.bt.bt--primary(popup-to="buy_character_popup" href="javascript:;") Buy
                     .top_right.border-rating

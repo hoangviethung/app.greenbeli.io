@@ -2,7 +2,7 @@
 
 .fancybox-content {
     background-color: map-get($map: $theme-colors, $key: neutral-background);
-    border-radius: 0.22rem;
+    border-radius: 1.22rem;
     padding: 0;
     background-size: cover;
 }
@@ -29,7 +29,6 @@
 }
 
 .popup__header {
-    border-bottom: 1px solid map-get($map: $theme-colors, $key: gray-border);
     padding: 24px 120px 24px 24px;
     &.center {
         padding: 24px;
@@ -62,7 +61,7 @@
         rgba($color: map-get($map: $theme-colors, $key: primary), $alpha: 0.2);
     padding: 24px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     > .bt {
         + .bt {
             margin-left: 16px;
@@ -273,45 +272,6 @@
             transform: unset;
         }
     }
-    .character__price {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: map-get($map: $theme-colors, $key: primary);
-        h2 {
-            display: flex;
-            align-items: center;
-            .icon {
-                flex: 0 0 44px;
-                max-width: 44px;
-                background-color: map-get(
-                    $map: $theme-colors,
-                    $key: neutral-white
-                );
-                border-radius: 50%;
-                overflow: hidden;
-            }
-            span {
-                font-weight: 700;
-                font-size: 2rem;
-                margin-left: 8px;
-                @media (max-width: 767.98px) {
-                    font-size: 1.5rem;
-                }
-            }
-        }
-        p {
-            color: map-get($map: $theme-colors, $key: gray-text);
-            font-size: 1.125rem;
-            padding-left: 8px;
-            padding-top: 8px;
-            @media (max-width: 767.98px) {
-                font-size: 1rem;
-                padding-left: 4px;
-                padding-top: 4px;
-            }
-        }
-    }
     .left_detail {
         .block_action {
             display: flex;
@@ -385,7 +345,7 @@
             > div {
                 margin-left: 8px;
                 p {
-                    font-size: 1.25rem;
+                    font-size: 1.125rem;
                     max-width: 124px;
                     text-overflow: ellipsis;
                     overflow: hidden;
@@ -900,7 +860,7 @@
         cursor: pointer;
         .item__img {
             border: 2px solid map-get($map: $theme-colors, $key: gray-border);
-            border-radius: 0.22rem;
+            border-radius: 1.22rem;
             transition: 0.3s all ease-in-out;
         }
         .item__id {
@@ -947,13 +907,6 @@
         $color: map-get($map: $theme-colors, $key: primary),
         $amount: 50%
     );
-    .popup__header {
-        border-bottom: 1px solid
-            rgba(
-                $color: map-get($map: $theme-colors, $key: primary),
-                $alpha: 0.2
-            );
-    }
     .unbox_popup__desc {
         margin-bottom: 16px;
         p {
@@ -1020,7 +973,7 @@
             $amount: 30%
         );
         padding: 8px;
-        border-radius: 0.22rem;
+        border-radius: 1.22rem;
         max-width: 400px;
         width: 100%;
         margin: 24px auto;
@@ -1074,29 +1027,51 @@
     .fancybox-close-small {
         display: none;
     }
-    .popup__footer {
-        justify-content: center;
-    }
 }
 
 .buy_character_popup {
-    max-width: 650px;
+    max-width: 500px;
     width: 100%;
     .buy_character_content_popup {
-        font-size: 1.125rem;
+        .content__item {
+            padding: 16px;
+            border: 1px solid map-get($map: $theme-colors, $key: gray-border);
+            border-radius: 1.22rem;
+            + .content__item {
+                margin-top: 16px;
+            }
+        }
+        .note {
+            font-size: 0.625rem;
+            margin-top: 4px;
+        }
         .content {
-            ul {
-                li {
-                    + li {
-                        margin-top: 8px;
-                    }
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            label {
+                margin-bottom: 16px;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            .price-token {
+                display: flex;
+                align-items: center;
+                span {
+                    font-size: 1rem;
+                    padding-left: 4px;
                 }
             }
-            p {
-                margin-top: 16px;
-                b {
-                    color: map-get($map: $theme-colors, $key: secondary);
-                }
+            .icon {
+                width: 32px;
+                height: 32px;
+                overflow: hidden;
+                border-radius: 50%;
+                background-color: map-get(
+                    $map: $theme-colors,
+                    $key: neutral-white
+                );
             }
         }
         .error {
@@ -1113,13 +1088,83 @@
             text-align: center;
         }
     }
-    .popup__footer {
-        justify-content: center;
-    }
     &.buy_character_success_popup {
         max-width: 400px;
         .fancybox-close-small {
             display: none;
+        }
+    }
+}
+
+.sell_character_popup {
+    max-width: 500px;
+    width: 100%;
+    .popup__body {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    .sell_character_form {
+        .form__item {
+            + .form__item {
+                margin-top: 24px;
+            }
+        }
+        label {
+            margin-bottom: 8px;
+        }
+        .form-control {
+            &:not([type="date"]):not([type="datetime-local"]) {
+                padding: 0 100px 0 16px;
+            }
+        }
+        .input_group {
+            .price-token {
+                position: absolute;
+                top: 50%;
+                right: 16px;
+                transform: translateY(-50%);
+                display: flex;
+                align-items: center;
+                .icon {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background-color: map-get(
+                        $map: $theme-colors,
+                        $key: neutral-white
+                    );
+                }
+            }
+        }
+        .select_grbe {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: rgba($color: #dfdfdf, $alpha: 1);
+            border-radius: 1.22rem;
+            .thumbnail {
+                cursor: pointer;
+                max-width: 130px;
+                margin: 0 auto;
+                &:not(.active) {
+                    filter: grayscale(100%);
+                }
+            }
+            p {
+                text-align: center;
+                font-size: 0.75rem;
+                color: map-get($map: $theme-colors, $key: gray-text);
+                margin-top: 4px;
+            }
+        }
+        .note {
+            color: map-get($map: $theme-colors, $key: gray-text);
+            font-size: 0.625rem;
+            margin-top: 8px;
         }
     }
 }

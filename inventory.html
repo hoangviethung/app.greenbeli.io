@@ -69,7 +69,7 @@
                 <div class="block">
                   <h4>Ready to sell</h4><span>10</span>
                   <div class="action">
-                    <button class="bt bt--secondary" disable="disable">Coming Soon</button>
+                    <button class="bt bt--secondary" popup-to="sell_character_popup" href="javascript:;">Sell</button>
                   </div>
                 </div>
               </div>
@@ -350,6 +350,100 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <!-- *** SELL CHARACTER POPUP *** //-->
+        <div class="sell_character_popup" id="sell_character_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Set Price</h2>
+            </div>
+            <div class="popup__body">
+              <div class="sell_character_form">
+                <div class="form__item">
+                  <div class="select_grbe">
+                    <div class="thumbnail" popup-to="choose_character_sell_popup" href="javascript:;"><img src="./images/itemproductfire.png" alt=""/>
+                      <p>Add Green Hero</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__item">
+                  <label>Total Price</label>
+                  <div class="input_group">
+                    <input class="form-control" type="number" placeholder="0"/>
+                    <div class="price-token">
+                      <div class="icon"><img src="./icons/grbe.png" alt="GRBE"/></div><span>~$200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__item">
+                  <label>Fee</label>
+                  <div class="input_group">
+                    <input class="form-control" type="number" placeholder="0"/>
+                    <div class="price-token">
+                      <div class="icon"><img src="./icons/grbe.png" alt="GRBE"/></div><span>~$6</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__item">
+                  <div class="group-label">
+                    <label>The amount actually received</label>
+                    <label>Price Fee</label>
+                  </div>
+                  <div class="input_group">
+                    <input class="form-control" type="number" placeholder="0"/>
+                    <div class="price-token">
+                      <div class="icon"><img src="./icons/grbe.png" alt="GRBE"/></div><span>~$6</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__item">
+                  <label>Expirtion</label>
+                  <input class="form-control" type="datetime-local"/>
+                  <div class="note">*No more than mounth</div>
+                </div>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <button class="bt bt--primary bt--outline" data-fancybox-close="data-fancybox-close">Close</button>
+              <button class="bt bt--primary" popup-to="buy_character_success_popup" href="javascript:;">Confirm</button>
+            </div>
+          </div>
+        </div>
+        <!-- *** CHOOSE CHARACTER SELL POPUP *** //-->
+        <div class="stake_your_grbe_popup" id="choose_character_sell_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__header">
+              <h2 class="popup__title">Add Your Green Hero</h2>
+            </div>
+            <div class="popup__body">
+              <div class="your_grbe__list">
+                <div class="your_grbe__item">
+                  <div class="item__img"><img src="./images/itemproductearth.png" alt="grbe"/></div>
+                  <div class="item__id">#2312399012</div>
+                </div>
+                <div class="your_grbe__item">
+                  <div class="item__img"><img src="./images/itemproductfire.png" alt="grbe"/></div>
+                  <div class="item__id">#2312399012</div>
+                </div>
+                <div class="your_grbe__item">
+                  <div class="item__img"><img src="./images/itemproductmetal.png" alt="grbe"/></div>
+                  <div class="item__id">#2312399012</div>
+                </div>
+                <div class="your_grbe__item">
+                  <div class="item__img"><img src="./images/itemproductwater.png" alt="grbe"/></div>
+                  <div class="item__id">#2312399012</div>
+                </div>
+                <div class="your_grbe__item">
+                  <div class="item__img"><img src="./images/itemproductwood.png" alt="grbe"/></div>
+                  <div class="item__id">#2312399012</div>
+                </div>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <button class="bt bt--primary bt--outline" data-fancybox-close="data-fancybox-close">Cancel</button>
+              <button class="bt bt--primary">Confirm</button>
             </div>
           </div>
         </div>

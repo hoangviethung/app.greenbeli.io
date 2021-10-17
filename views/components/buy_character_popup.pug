@@ -4,16 +4,40 @@
             h2.popup__title Buy Hero
         .popup__body
             .buy_character_content_popup
-                .content
-                    ul
-                        li Price: 6,000 GRBE
-                        li Fee: 300 GRBE
-                        li Total: 6,300 GRBE
-                    p Are you sure to buy this Green Hero with 
-                        b 6,300 GRBE?
+                .content__item
+                    .content
+                        .left
+                            label Price Green Hero
+                            h3 100
+                        .price-token
+                            .icon
+                                img(src="./icons/grbe.png", alt="GRBE")
+                            span ~$200
+                .content__item
+                    .content
+                        .left
+                            label Fee
+                            h3 1
+                        .right
+                            .price-token
+                                .icon
+                                    img(src="./icons/grbe.png", alt="GRBE")
+                                span ~$2
+                    p.note 1% of the Green Hero Price will be paid to GreenBeli as a platform fee
+                .content__item
+                    .content
+                        .left
+                            label Total
+                            h3 101
+                        .right
+                            label Price + Fee
+                            .price-token
+                                .icon
+                                    img(src="./icons/grbe.png", alt="GRBE")
+                                span ~$200
                 .error
                     i.fad.fa-exclamation-circle
                     p No enough balance GRBE
         .popup__footer
             button(data-fancybox-close).bt.bt--primary.bt--outline Close
-            button.bt.bt--primary(popup-to="buy_character_success_popup" href="javascript:;") Buy
+            button.bt.bt--primary(popup-to="buy_character_success_popup" href="javascript:;") Confirm

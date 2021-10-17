@@ -7,7 +7,7 @@
 .claim_block {
   background: #f7fbf2;
   border: 1px solid rgba(102, 141, 46, 0.2);
-  border-radius: 0.22rem; }
+  border-radius: 1.22rem; }
   .claim_block .tabs_nav {
     display: flex;
     flex-wrap: wrap;

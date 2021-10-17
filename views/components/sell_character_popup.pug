@@ -1,0 +1,44 @@
+#sell_character_popup.sell_character_popup(style="display:none")
+    .popup_wrapper
+        .popup__header
+            h2.popup__title Set Price
+        .popup__body
+            .sell_character_form
+                .form__item
+                    .select_grbe
+                        .thumbnail(popup-to="choose_character_sell_popup" href="javascript:;")
+                            img(src="./images/itemproductfire.png", alt="")
+                            p Add Green Hero
+                .form__item
+                    label Total Price
+                    .input_group
+                        input.form-control(type="number" placeholder="0")
+                        .price-token
+                            .icon
+                                img(src="./icons/grbe.png", alt="GRBE")
+                            span ~$200
+                .form__item
+                    label Fee
+                    .input_group
+                        input.form-control(type="number" placeholder="0")
+                        .price-token
+                            .icon
+                                img(src="./icons/grbe.png", alt="GRBE")
+                            span ~$6
+                .form__item
+                    .group-label
+                        label The amount actually received
+                        label Price Fee
+                    .input_group
+                        input.form-control(type="number" placeholder="0")
+                        .price-token
+                            .icon
+                                img(src="./icons/grbe.png", alt="GRBE")
+                            span ~$6
+                .form__item
+                    label Expirtion
+                    input.form-control(type="datetime-local")
+                    .note *No more than mounth
+        .popup__footer
+            button(data-fancybox-close).bt.bt--primary.bt--outline Close
+            button.bt.bt--primary(popup-to="buy_character_success_popup" href="javascript:;") Confirm

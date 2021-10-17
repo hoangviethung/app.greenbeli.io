@@ -125,6 +125,29 @@
     border-top: 1px solid #d9d9d9; }
     .list_products__item .character__actions .bt + .bt {
       margin-left: 8px; }
+  .list_products__item .character__price {
+    color: #668d2e;
+    display: flex;
+    align-items: center; }
+    .list_products__item .character__price .price__wrapper {
+      display: flex;
+      align-items: center;
+      padding-left: 4px; }
+      .list_products__item .character__price .price__wrapper .icon {
+        width: 24px;
+        height: 24px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        overflow: hidden; }
+      .list_products__item .character__price .price__wrapper .price {
+        padding-left: 4px; }
+        .list_products__item .character__price .price__wrapper .price span {
+          display: block; }
+          .list_products__item .character__price .price__wrapper .price span:not(.usd) {
+            font-weight: 700;
+            margin-bottom: 2px; }
+          .list_products__item .character__price .price__wrapper .price span.usd {
+            font-size: 0.625rem; }
   .list_products__item:hover {
     transform: translateY(-2px); }
   .list_products__item[rating="1"] {
@@ -216,7 +239,7 @@
 .shop__filter {
   background: #ecf5df;
   padding: 16px;
-  border-radius: 0.22rem;
+  border-radius: 1.22rem;
   box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08);
   border: 2px solid rgba(102, 141, 46, 0.2);
   max-height: 500px; }
@@ -261,12 +284,12 @@
     display: flex;
     justify-content: space-between;
     background-color: rgba(102, 141, 46, 0.2);
-    border-radius: 8px; }
+    border-radius: 1.22rem; }
   .shop__filter .filter__tabs .tabs_nav__item {
     cursor: pointer;
     user-select: none;
-    padding: 16px;
-    border-radius: 8px;
+    padding: 8px 16px;
+    border-radius: 1.22rem;
     transition: 0.2s all linear; }
     .shop__filter .filter__tabs .tabs_nav__item.active {
       color: #ffffff;
@@ -286,7 +309,7 @@
       justify-content: space-between;
       background-color: rgba(102, 141, 46, 0.2);
       padding: 8px 8px 8px 16px;
-      border-radius: 0.22rem; }
+      border-radius: 1.22rem; }
       .shop__filter .filter_block_history .history_item .bt-remove-filter {
         color: #f3420c; }
 
@@ -314,7 +337,7 @@
 .shop__main_content .list_products__item {
   min-height: 390px; }
   .shop__main_content .list_products__item .character__image {
-    height: 160px; }
+    height: 140px; }
 
 .shop__main_content .list_products {
   grid-template-columns: repeat(3, 1fr); }

@@ -10,7 +10,7 @@
 .claim_block {
     background: lighten($color: map-get($theme-colors, primary), $amount: 60%);
     border: 1px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
-    border-radius: 0.22rem;
+    border-radius: 1.22rem;
     .tabs_nav {
         display: flex;
         flex-wrap: wrap;

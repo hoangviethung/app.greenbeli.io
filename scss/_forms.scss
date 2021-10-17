@@ -4,7 +4,7 @@
     padding: 0 16px;
     height: 48px;
     width: 100%;
-    border-radius: 0.22rem;
+    border-radius: 1.22rem;
     transition: 0.3s all ease-in-out;
     &:focus {
         box-shadow: map-get($map: $theme-colors, $key: gray-border) 0px 0px 0px
@@ -70,6 +70,7 @@
 }
 
 .input_group {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -105,7 +106,7 @@
         padding: 0 32px 0 16px;
         height: 36px;
         border: 1px solid map-get($map: $theme-colors, $key: gray-border);
-        border-radius: 0.22rem;
+        border-radius: 1.22rem;
         appearance: none;
         width: 100%;
     }
@@ -206,9 +207,9 @@
             width: 26px;
         }
         &.round {
-            border-radius: 0.22rem;
+            border-radius: 1.22rem;
             &:before {
-                border-radius: 0.22rem;
+                border-radius: 1.22rem;
             }
         }
     }

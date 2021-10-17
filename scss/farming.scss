@@ -46,7 +46,7 @@
     background: map-get($theme-colors, primary);
     box-shadow: 0px 3px 6px
         rgba($color: map-get($theme-colors, neutral-black), $alpha: 0.08);
-    border-radius: 0.22rem;
+    border-radius: 1.22rem;
     padding: 16px;
     max-width: 600px;
     width: 100%;
@@ -139,7 +139,7 @@
             $color: map-get($theme-colors, primary),
             $alpha: 0.2
         );
-        border-radius: 0.22rem;
+        border-radius: 1.22rem;
         margin-right: 24px;
         .tab-active {
             color: map-get($map: $theme-colors, $key: neutral-white);
@@ -203,7 +203,7 @@
 .farming__item {
     border: 2px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
     background: lighten($color: map-get($theme-colors, primary), $amount: 50%);
-    border-radius: 0.22rem;
+    border-radius: 1.22rem;
     box-shadow: 0px 3px 6px
         rgba($color: map-get($theme-colors, neutral-black), $alpha: 0.08);
     &.active {
@@ -251,7 +251,7 @@
             $color: map-get($theme-colors, $key: primary),
             $alpha: 0.5
         );
-        border-radius: 0.22rem;
+        border-radius: 1.22rem;
         transition: transform 0.3s ease-in-out;
         @media (max-width: 575.98px) {
             top: 8px;
@@ -402,7 +402,7 @@
                     $color: map-get($theme-colors, neutral-black),
                     $alpha: 0.08
                 );
-            border-radius: 0.22rem;
+            border-radius: 1.22rem;
             height: 100%;
         }
         .item__liquidity {
@@ -423,7 +423,7 @@
                     $color: map-get($theme-colors, primary),
                     $alpha: 0.2
                 );
-                border-radius: 0.22rem;
+                border-radius: 1.22rem;
             }
             .tabs_nav__item {
                 cursor: pointer;
@@ -431,7 +431,7 @@
                 display: inline-flex;
                 align-items: center;
                 padding: 8px 16px;
-                border-radius: 0.22rem;
+                border-radius: 1.22rem;
                 &.active {
                     color: map-get($map: $theme-colors, $key: neutral-white);
                     background-color: map-get(
@@ -466,9 +466,8 @@
                     }
                 }
                 .input_group {
-                    position: relative;
                     .form-control {
-                        padding: 0 56px 0 16px;
+                        padding: 0 120px 0 16px;
                     }
                     > span {
                         position: absolute;

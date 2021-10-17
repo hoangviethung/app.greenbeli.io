@@ -29,7 +29,7 @@ block main
                         h4 Ready to sell
                         span 10
                         .action
-                            button(disable).bt.bt--secondary Coming Soon
+                            button.bt.bt--secondary(popup-to="sell_character_popup" href="javascript:;") Sell
     // *** YOUR GRBE *** //
     section.your_tree_section
         .container
@@ -170,3 +170,7 @@ block main
                             .character__status.txt-primary STAKING
     // *** CHARACTER DETAIL POPUP *** //
     include ../components/character_detail_your_tree_popup
+    // *** SELL CHARACTER POPUP *** //
+    include ../components/sell_character_popup
+    // *** CHOOSE CHARACTER SELL POPUP *** //
+    include ../components/choose_character_sell_popup

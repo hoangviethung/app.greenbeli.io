@@ -37,7 +37,7 @@
   grid-gap: 16px;
   background: #668d2e;
   box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08);
-  border-radius: 0.22rem;
+  border-radius: 1.22rem;
   padding: 16px;
   max-width: 600px;
   width: 100%;
@@ -110,7 +110,7 @@
   align-items: center; }
   .filter_section__left_partial .tabs_row {
     background-color: rgba(102, 141, 46, 0.2);
-    border-radius: 0.22rem;
+    border-radius: 1.22rem;
     margin-right: 24px; }
     .filter_section__left_partial .tabs_row .tab-active {
       color: #ffffff;
@@ -156,7 +156,7 @@
 .farming__item {
   border: 2px solid rgba(102, 141, 46, 0.2);
   background: #e0eecc;
-  border-radius: 0.22rem;
+  border-radius: 1.22rem;
   box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08); }
   .farming__item.active .panel_header__expand {
     transform: translateY(-50%) rotate(180deg); }
@@ -192,7 +192,7 @@
     height: 24px;
     color: #ffffff;
     background: rgba(102, 141, 46, 0.5);
-    border-radius: 0.22rem;
+    border-radius: 1.22rem;
     transition: transform 0.3s ease-in-out; }
     @media (max-width: 575.98px) {
       .farming__item .panel_header__expand {
@@ -306,7 +306,7 @@
     background: #ffffff;
     padding: 16px;
     box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08);
-    border-radius: 0.22rem;
+    border-radius: 1.22rem;
     height: 100%; }
   .farming__item .expand_details__item .item__liquidity .available {
     font-size: 1rem;
@@ -321,14 +321,14 @@
     width: fit-content;
     margin: 0 auto 16px;
     background-color: rgba(102, 141, 46, 0.2);
-    border-radius: 0.22rem; }
+    border-radius: 1.22rem; }
   .farming__item .expand_details__item .item__liquidity .tabs_nav__item {
     cursor: pointer;
     position: relative;
     display: inline-flex;
     align-items: center;
     padding: 8px 16px;
-    border-radius: 0.22rem; }
+    border-radius: 1.22rem; }
     .farming__item .expand_details__item .item__liquidity .tabs_nav__item.active {
       color: #ffffff;
       background-color: #668d2e; }
@@ -352,16 +352,14 @@
       .farming__item .expand_details__item .item__liquidity .form_wrapper .block-input-action {
         flex-direction: column;
         align-items: unset; } }
-  .farming__item .expand_details__item .item__liquidity .form_wrapper .input_group {
-    position: relative; }
-    .farming__item .expand_details__item .item__liquidity .form_wrapper .input_group .form-control {
-      padding: 0 56px 0 16px; }
-    .farming__item .expand_details__item .item__liquidity .form_wrapper .input_group > span {
-      position: absolute;
-      right: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-weight: 700; }
+  .farming__item .expand_details__item .item__liquidity .form_wrapper .input_group .form-control {
+    padding: 0 120px 0 16px; }
+  .farming__item .expand_details__item .item__liquidity .form_wrapper .input_group > span {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 700; }
   .farming__item .expand_details__item .item__liquidity .form_wrapper .actions > .bt {
     height: 48px; }
   .farming__item .expand_details__item .item__liquidity .liquidity {
