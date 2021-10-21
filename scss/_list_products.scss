@@ -154,16 +154,14 @@
         }
     }
     .character__price {
-        color: map-get($map: $theme-colors, $key: primary);
-        display: flex;
-        align-items: center;
+        margin-top: 8px;
         .price__wrapper {
             display: flex;
+            justify-content: center;
             align-items: center;
-            padding-left: 4px;
             .icon {
-                width: 24px;
-                height: 24px;
+                width: 32px;
+                height: 32px;
                 background-color: map-get(
                     $map: $theme-colors,
                     $key: neutral-white
@@ -172,22 +170,25 @@
                 overflow: hidden;
             }
             .price {
-                padding-left: 4px;
+                color: map-get($map: $theme-colors, $key: primary);
+                padding-left: 8px;
                 span {
                     display: block;
-                    &:not(.usd) {
-                        font-weight: 700;
-                        margin-bottom: 2px;
-                    }
-                    &.usd {
-                        font-size: 0.625rem;
-                    }
+                    font-size: 24px;
+                    font-weight: 700;
                 }
             }
+        }
+        .price-usd {
+            color: map-get($map: $theme-colors, $key: gray-text);
+            text-align: center;
         }
     }
     &:hover {
         transform: translateY(-2px);
+    }
+    &[expired="true"] {
+        filter: grayscale(100%);
     }
     &[rating="1"] {
         background-image: url("../images/bg_card_item_product_rate_1.png");

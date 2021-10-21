@@ -1,4 +1,4 @@
-#character_detail_popup.character_detail_popup(rating="5" character-class="fire" style="display:none")
+#character_detail_popup_expired.character_detail_popup(rating="5" character-class="fire" style="display:none")
     .popup_wrapper
         .popup__body
             .character_detail__wrapper
@@ -26,25 +26,27 @@
                                     .information__item
                                         span Breed count
                                         span 0/6
-                                    .information__item
-                                        span Price
-                                        .character__price
-                                            .price__wrapper
-                                                .icon
-                                                    img(src="./icons/grbe.png", alt="GRBE")
-                                                .price
-                                                    span 0.4723
-                                                    span.usd ($21.92)
+                                    .character__price
+                                        .price__wrapper
+                                            .icon
+                                                img(src="./icons/grbe.png", alt="GRBE")
+                                            .price
+                                                span 0.4723
+                                        p.price-usd ($21.92)
                                 .character__actions
-                                    a.bt.bt--primary(popup-to="buy_character_popup" href="javascript:;") Buy
+                                    a.bt.bt--secondary(popup-to="claim_character_expired_success_popup" href="javascript:;") Claim
                     .top_right.border-rating
                         .character__information
                             .information__item
-                                label Farming
+                                label Power
                                 .content
                                     .icon
                                         img(src="./icons/farming.png", alt="")
                                     span 25%
+                            .information__item
+                                label Level
+                                .content
+                                    span 16/256
                             .information__item
                                 label Intel
                                 .content
@@ -52,7 +54,7 @@
                                         img(src="./icons/intel.png", alt="")
                                     span 48
                             .information__item
-                                label Gens
+                                label Genes
                                 .content
                                     .icon
                                         img(src="./icons/gens.png", alt="")

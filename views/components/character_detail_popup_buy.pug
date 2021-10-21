@@ -1,4 +1,4 @@
-#character_detail_popup.character_detail_popup(rating="5" character-class="fire" style="display:none")
+#character_detail_popup_buy.character_detail_popup(rating="5" character-class="fire" style="display:none")
     .popup_wrapper
         .popup__body
             .character_detail__wrapper
@@ -26,7 +26,15 @@
                                     .information__item
                                         span Breed count
                                         span 0/6
-                                .character__status.txt-primary STAKING
+                                    .character__price
+                                        .price__wrapper
+                                            .icon
+                                                img(src="./icons/grbe.png", alt="GRBE")
+                                            .price
+                                                span 0.4723
+                                        p.price-usd ($21.92)
+                                .character__actions
+                                    a.bt.bt--primary(popup-to="buy_character_popup" href="javascript:;") Buy
                     .top_right.border-rating
                         .character__information
                             .information__item
@@ -109,3 +117,25 @@
                                 div
                                     p Decor
                                     p LVL 1
+                .detail_bottom
+                    .bottom_item
+                        .title_block Transaction history
+                        .character__transaction-history
+                            table
+                                thead
+                                    tr
+                                        th Event
+                                        th Price
+                                        th Currency
+                                        th From
+                                        th To
+                                        th Date and Time
+                                tbody
+                                    -for(i=0;i<10;i++)
+                                        tr
+                                            td Purchased
+                                            td 320
+                                            td GRBE
+                                            td 0xD4971..2e7b2
+                                            td 0xD4971..2e7b2
+                                            td 2021/9/9

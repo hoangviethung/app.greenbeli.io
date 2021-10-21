@@ -920,6 +920,8 @@ body[style="overflow-y: hidden"] .page:before {
   transition: 0.3s all ease-in-out; }
   .form-control:focus {
     box-shadow: #d9d9d9 0px 0px 0px 1px, rgba(217, 217, 217, 0.4) 0px 0px 0px 4px; }
+  .form-control[readonly] {
+    background-color: #eeeeee; }
 
 .form-control.is-invalid,
 .was-validated .form-control:invalid {
@@ -1930,13 +1932,6 @@ body[style="overflow-y: hidden"] .page:before {
     margin-top: 24px; }
     .buy_character_popup .buy_character_content_popup .error > i {
       margin-right: 4px; }
-  .buy_character_popup .buy_character_content_popup .success {
-    color: #668d2e;
-    text-align: center; }
-  .buy_character_popup.buy_character_success_popup {
-    max-width: 400px; }
-    .buy_character_popup.buy_character_success_popup .fancybox-close-small {
-      display: none; }
 
 .sell_character_popup {
   max-width: 500px;
@@ -1987,6 +1982,24 @@ body[style="overflow-y: hidden"] .page:before {
     color: #666666;
     font-size: 0.625rem;
     margin-top: 8px; }
+  .sell_character_popup .sell_character_form .group-label {
+    display: flex;
+    justify-content: space-between; }
+
+.nofication_popup {
+  max-width: 400px;
+  width: 100%; }
+  .nofication_popup .nofication_content_popup .error {
+    display: flex;
+    align-items: center;
+    color: #f3420c; }
+    .nofication_popup .nofication_content_popup .error > i {
+      margin-right: 4px; }
+  .nofication_popup .nofication_content_popup .success {
+    color: #668d2e;
+    text-align: center; }
+  .nofication_popup.nofication_success_popup .fancybox-close-small {
+    display: none; }
 
 *,
 *::before,

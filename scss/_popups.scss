@@ -1083,16 +1083,6 @@
                 margin-right: 4px;
             }
         }
-        .success {
-            color: map-get($map: $theme-colors, $key: primary);
-            text-align: center;
-        }
-    }
-    &.buy_character_success_popup {
-        max-width: 400px;
-        .fancybox-close-small {
-            display: none;
-        }
     }
 }
 
@@ -1165,6 +1155,35 @@
             color: map-get($map: $theme-colors, $key: gray-text);
             font-size: 0.625rem;
             margin-top: 8px;
+        }
+        .group-label {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.nofication_popup {
+    max-width: 400px;
+    width: 100%;
+    .nofication_content_popup {
+        .error {
+            display: flex;
+            align-items: center;
+            color: map-get($map: $theme-colors, $key: danger);
+            > i {
+                margin-right: 4px;
+            }
+        }
+        .success {
+            color: map-get($map: $theme-colors, $key: primary);
+            text-align: center;
+        }
+    }
+
+    &.nofication_success_popup {
+        .fancybox-close-small {
+            display: none;
         }
     }
 }

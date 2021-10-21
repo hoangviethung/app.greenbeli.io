@@ -126,30 +126,31 @@
     .list_products__item .character__actions .bt + .bt {
       margin-left: 8px; }
   .list_products__item .character__price {
-    color: #668d2e;
-    display: flex;
-    align-items: center; }
+    margin-top: 8px; }
     .list_products__item .character__price .price__wrapper {
       display: flex;
-      align-items: center;
-      padding-left: 4px; }
+      justify-content: center;
+      align-items: center; }
       .list_products__item .character__price .price__wrapper .icon {
-        width: 24px;
-        height: 24px;
+        width: 32px;
+        height: 32px;
         background-color: #ffffff;
         border-radius: 50%;
         overflow: hidden; }
       .list_products__item .character__price .price__wrapper .price {
-        padding-left: 4px; }
+        color: #668d2e;
+        padding-left: 8px; }
         .list_products__item .character__price .price__wrapper .price span {
-          display: block; }
-          .list_products__item .character__price .price__wrapper .price span:not(.usd) {
-            font-weight: 700;
-            margin-bottom: 2px; }
-          .list_products__item .character__price .price__wrapper .price span.usd {
-            font-size: 0.625rem; }
+          display: block;
+          font-size: 24px;
+          font-weight: 700; }
+    .list_products__item .character__price .price-usd {
+      color: #666666;
+      text-align: center; }
   .list_products__item:hover {
     transform: translateY(-2px); }
+  .list_products__item[expired="true"] {
+    filter: grayscale(100%); }
   .list_products__item[rating="1"] {
     background-image: url("../images/bg_card_item_product_rate_1.png"); }
     .list_products__item[rating="1"] .color-rating {
@@ -230,7 +231,7 @@
 
 .shop__wrapper {
   display: grid;
-  grid-template-columns: 300px auto;
+  grid-template-columns: 1fr;
   grid-gap: 24px; }
   @media (max-width: 1024.98px) {
     .shop__wrapper {
@@ -334,13 +335,8 @@
   .shop__main_content .sort_block label {
     margin-right: 8px; }
 
-.shop__main_content .list_products__item {
-  min-height: 390px; }
-  .shop__main_content .list_products__item .character__image {
-    height: 140px; }
-
 .shop__main_content .list_products {
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(4, 1fr); }
   @media (max-width: 1199.98px) {
     .shop__main_content .list_products {
       grid-template-columns: repeat(2, 1fr); } }

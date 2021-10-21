@@ -20,7 +20,7 @@
                 .form__item
                     label Fee
                     .input_group
-                        input.form-control(type="number" placeholder="0")
+                        input.form-control(readonly type="number" placeholder="0")
                         .price-token
                             .icon
                                 img(src="./icons/grbe.png", alt="GRBE")
@@ -30,7 +30,7 @@
                         label The amount actually received
                         label Price Fee
                     .input_group
-                        input.form-control(type="number" placeholder="0")
+                        input.form-control(readonly type="number" placeholder="0")
                         .price-token
                             .icon
                                 img(src="./icons/grbe.png", alt="GRBE")
@@ -41,4 +41,4 @@
                     .note *No more than mounth
         .popup__footer
             button(data-fancybox-close).bt.bt--primary.bt--outline Close
-            button.bt.bt--primary(popup-to="buy_character_success_popup" href="javascript:;") Confirm
+            button.bt.bt--primary(popup-to="sell_character_success_popup" href="javascript:;") Confirm

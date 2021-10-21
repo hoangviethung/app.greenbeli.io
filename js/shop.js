@@ -61,19 +61,58 @@ class Tab {
     }
 }
 
-function fancyboxCharacterDetail() {
-    $.each($("[popup-to='character_detail_popup']"), function (index, item) {
-        $(item).on("click", function (e) {
-            e.preventDefault();
-            $.fancybox.open({
-                src: "#character_detail_popup",
-                type: "inline",
-                touch: false,
-                hash: false,
-                closeExisting: true,
+function fancyboxCharacterDetailBuy() {
+    $.each(
+        $("[popup-to='character_detail_popup_buy']"),
+        function (index, item) {
+            $(item).on("click", function (e) {
+                e.preventDefault();
+                $.fancybox.open({
+                    src: "#character_detail_popup_buy",
+                    type: "inline",
+                    touch: false,
+                    hash: false,
+                    closeExisting: true,
+                });
             });
-        });
-    });
+        },
+    );
+}
+
+function fancyboxCharacterDetailUnsell() {
+    $.each(
+        $("[popup-to='character_detail_popup_unsell']"),
+        function (index, item) {
+            $(item).on("click", function (e) {
+                e.preventDefault();
+                $.fancybox.open({
+                    src: "#character_detail_popup_unsell",
+                    type: "inline",
+                    touch: false,
+                    hash: false,
+                    closeExisting: true,
+                });
+            });
+        },
+    );
+}
+
+function fancyboxUnsellCharacterExpired() {
+    $.each(
+        $("[popup-to='character_detail_popup_expired']"),
+        function (index, item) {
+            $(item).on("click", function (e) {
+                e.preventDefault();
+                $.fancybox.open({
+                    src: "#character_detail_popup_expired",
+                    type: "inline",
+                    touch: false,
+                    hash: false,
+                    closeExisting: true,
+                });
+            });
+        },
+    );
 }
 
 function fancyboxBuyCharacter() {
@@ -109,9 +148,49 @@ function fancyboxBuyCharacterSuccess() {
     );
 }
 
+function fancyboxUnsellCharacterSuccess() {
+    $.each(
+        $("[popup-to='unsell_character_success_popup']"),
+        function (index, item) {
+            $(item).on("click", function (e) {
+                e.preventDefault();
+                $.fancybox.open({
+                    src: "#unsell_character_success_popup",
+                    type: "inline",
+                    touch: false,
+                    hash: false,
+                    closeExisting: true,
+                });
+            });
+        },
+    );
+}
+
+function fancyboxClaimCharacterExpiredSuccess() {
+    $.each(
+        $("[popup-to='claim_character_expired_success_popup']"),
+        function (index, item) {
+            $(item).on("click", function (e) {
+                e.preventDefault();
+                $.fancybox.open({
+                    src: "#claim_character_expired_success_popup",
+                    type: "inline",
+                    touch: false,
+                    hash: false,
+                    closeExisting: true,
+                });
+            });
+        },
+    );
+}
+
 $(function () {
-    fancyboxCharacterDetail();
+    fancyboxCharacterDetailBuy();
+    fancyboxCharacterDetailUnsell();
     fancyboxBuyCharacter();
     fancyboxBuyCharacterSuccess();
+    fancyboxUnsellCharacterSuccess();
+    fancyboxClaimCharacterExpiredSuccess();
+    fancyboxUnsellCharacterExpired();
     const TabFilter = new Tab(".shop__wrapper .tab_container");
 });

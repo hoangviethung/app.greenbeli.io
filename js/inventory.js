@@ -28,6 +28,24 @@ function fancyboxSellCharacter() {
     });
 }
 
+function fancyboxSellSuccessCharacter() {
+    $.each(
+        $("[popup-to='sell_character_success_popup']"),
+        function (index, item) {
+            $(item).on("click", function (e) {
+                e.preventDefault();
+                $.fancybox.open({
+                    src: "#sell_character_success_popup",
+                    type: "inline",
+                    touch: false,
+                    hash: false,
+                    closeExisting: true,
+                });
+            });
+        },
+    );
+}
+
 function fancyboxChooseYourGreenHeroSell() {
     $.each(
         $("[popup-to='choose_character_sell_popup']"),
@@ -59,4 +77,5 @@ $(function () {
     fancyboxSellCharacter();
     fancyboxChooseYourGreenHeroSell();
     checkedYourGreenHeroSell();
+    fancyboxSellSuccessCharacter();
 });

@@ -256,10 +256,14 @@
                   <div class="top_right border-rating">
                     <div class="character__information">
                       <div class="information__item">
-                        <label>Farming</label>
+                        <label>Power</label>
                         <div class="content">
                           <div class="icon"><img src="./icons/farming.png" alt=""/></div><span>25%</span>
                         </div>
+                      </div>
+                      <div class="information__item">
+                        <label>Level</label>
+                        <div class="content"><span>16/256</span></div>
                       </div>
                       <div class="information__item">
                         <label>Intel</label>
@@ -268,7 +272,7 @@
                         </div>
                       </div>
                       <div class="information__item">
-                        <label>Gens</label>
+                        <label>Genes</label>
                         <div class="content">
                           <div class="icon"><img src="./icons/gens.png" alt=""/></div><span>50</span>
                         </div>
@@ -380,7 +384,7 @@
                 <div class="form__item">
                   <label>Fee</label>
                   <div class="input_group">
-                    <input class="form-control" type="number" placeholder="0"/>
+                    <input class="form-control" readonly="readonly" type="number" placeholder="0"/>
                     <div class="price-token">
                       <div class="icon"><img src="./icons/grbe.png" alt="GRBE"/></div><span>~$6</span>
                     </div>
@@ -392,7 +396,7 @@
                     <label>Price Fee</label>
                   </div>
                   <div class="input_group">
-                    <input class="form-control" type="number" placeholder="0"/>
+                    <input class="form-control" readonly="readonly" type="number" placeholder="0"/>
                     <div class="price-token">
                       <div class="icon"><img src="./icons/grbe.png" alt="GRBE"/></div><span>~$6</span>
                     </div>
@@ -407,7 +411,22 @@
             </div>
             <div class="popup__footer">
               <button class="bt bt--primary bt--outline" data-fancybox-close="data-fancybox-close">Close</button>
-              <button class="bt bt--primary" popup-to="buy_character_success_popup" href="javascript:;">Confirm</button>
+              <button class="bt bt--primary" popup-to="sell_character_success_popup" href="javascript:;">Confirm</button>
+            </div>
+          </div>
+        </div>
+        <!-- *** SELL CHARACTER SUCCESS POPUP *** //-->
+        <div class="nofication_popup nofication_success_popup" id="sell_character_success_popup" style="display:none">
+          <div class="popup_wrapper">
+            <div class="popup__body">
+              <div class="nofication_content_popup">
+                <div class="success">
+                  <p>Sell Hero Successfully</p>
+                </div>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <button class="bt bt--primary bt--outline" data-fancybox-close="data-fancybox-close">Close</button><a class="bt bt--primary" href="shop.html">Go to my NFT Market</a>
             </div>
           </div>
         </div>

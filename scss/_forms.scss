@@ -15,6 +15,9 @@
                 )
                 0px 0px 0px 4px;
     }
+    &[readonly] {
+        background-color: #eeeeee;
+    }
 }
 
 .form-control.is-invalid,
