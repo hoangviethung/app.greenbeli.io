@@ -10,7 +10,7 @@
                             img(src="./images/itemproductfire.png", alt="")
                             p Add Green Hero
                 .form__item
-                    label Total Price
+                    label Set price
                     .input_group
                         input.form-control(type="number" placeholder="0")
                         .price-token
@@ -18,16 +18,17 @@
                                 img(src="./icons/grbe.png", alt="GRBE")
                             span ~$200
                 .form__item
-                    label Fee
+                    label Flatform fee if sold
                     .input_group
                         input.form-control(readonly type="number" placeholder="0")
                         .price-token
                             .icon
                                 img(src="./icons/grbe.png", alt="GRBE")
                             span ~$6
+                    .note *Seller pays 3% flatform fee on sale
                 .form__item
                     .group-label
-                        label The amount actually received
+                        label Total earnings
                         label Price Fee
                     .input_group
                         input.form-control(readonly type="number" placeholder="0")
@@ -40,5 +41,4 @@
                     input.form-control(type="datetime-local")
                     .note *No more than mounth
         .popup__footer
-            button(data-fancybox-close).bt.bt--primary.bt--outline Close
-            button.bt.bt--primary(popup-to="sell_character_success_popup" href="javascript:;") Confirm
+            button.bt.bt--primary(popup-to="sell_character_success_popup" href="javascript:;") Enable Listing

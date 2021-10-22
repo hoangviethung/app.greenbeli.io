@@ -187,9 +187,6 @@
     &:hover {
         transform: translateY(-2px);
     }
-    &[expired="true"] {
-        filter: grayscale(100%);
-    }
     &[rating="1"] {
         background-image: url("../images/bg_card_item_product_rate_1.png");
         .color-rating {

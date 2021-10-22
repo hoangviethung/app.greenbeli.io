@@ -184,6 +184,15 @@ function fancyboxClaimCharacterExpiredSuccess() {
     );
 }
 
+function toggleBlockFilter() {
+    $(".bt-open-filter-mobile").on("click", function () {
+        $(".shop__filter").addClass("active");
+    });
+    $(".bt-close-filter-mobile").on("click", function () {
+        $(".shop__filter").removeClass("active");
+    });
+}
+
 $(function () {
     fancyboxCharacterDetailBuy();
     fancyboxCharacterDetailUnsell();
@@ -192,5 +201,5 @@ $(function () {
     fancyboxUnsellCharacterSuccess();
     fancyboxClaimCharacterExpiredSuccess();
     fancyboxUnsellCharacterExpired();
-    const TabFilter = new Tab(".shop__wrapper .tab_container");
+    toggleBlockFilter();
 });

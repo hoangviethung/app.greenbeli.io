@@ -15,11 +15,20 @@
 
 .shop__wrapper {
     display: grid;
-    // grid-template-columns: 300px auto;
     grid-template-columns: 1fr;
     grid-gap: 24px;
     @media (max-width: 1024.98px) {
         grid-template-columns: 1fr;
+    }
+    .button-mobile {
+        display: none;
+        justify-content: center;
+        @media (max-width: 575.98px) {
+            display: flex;
+        }
+    }
+    @media (max-width: 575.98px) {
+        grid-gap: 16px;
     }
 }
 
@@ -30,47 +39,18 @@
     box-shadow: 0px 3px 6px
         rgba($color: map-get($theme-colors, neutral-black), $alpha: 0.08);
     border: 2px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
-    max-height: 500px;
-    .filter__top,
-    .filter__bottom {
+    .filter__top {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-    .filter__top {
-        margin-bottom: 16px;
-        .left_partial {
-            .partial__item {
-                display: flex;
-                justify-content: space-between;
-                font-size: 1.25rem;
-                @media (max-width: 575.98px) {
-                    font-size: 1rem;
-                }
-            }
-        }
-        .right_partial {
-            display: flex;
-            align-items: center;
-            .input_group {
-                > span {
-                    margin-right: 8px;
-                }
-            }
-        }
-        @media (max-width: 767.98px) {
-            align-items: flex-start;
+        h3 {
+            font-size: 1rem;
+            font-weight: 700;
         }
     }
-    .filter__bottom {
-        margin-top: 24px;
-        padding-top: 24px;
-        border-top: 2px solid
-            rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
-    }
-    .filter__main {
+    .filter__items {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 16px;
         margin-top: 24px;
         @media (max-width: 767.98px) {
@@ -80,53 +60,87 @@
             grid-template-columns: repeat(1, 1fr);
         }
     }
-    .filter__tabs {
-        .tabs_nav {
-            display: flex;
-            justify-content: space-between;
-            background-color: rgba(
-                $color: map-get($theme-colors, primary),
-                $alpha: 0.2
-            );
-            border-radius: 1.22rem;
-        }
-        .tabs_nav__item {
-            cursor: pointer;
-            user-select: none;
-            padding: 8px 16px;
-            border-radius: 1.22rem;
-            transition: 0.2s all linear;
-            &.active {
-                color: map-get($map: $theme-colors, $key: neutral-white);
-                background-color: map-get($map: $theme-colors, $key: primary);
-            }
+    .filter_block {
+        h4 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 8px;
         }
     }
     .filter_block_checkbox {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 16px;
-    }
-    .filter__history {
-        margin-top: 24px;
-    }
-    .filter_block_history {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 8px;
-        .history_item {
-            display: flex;
-            justify-content: space-between;
-            background-color: rgba(
-                $color: map-get($theme-colors, primary),
-                $alpha: 0.2
-            );
-            padding: 8px 8px 8px 16px;
-            border-radius: 1.22rem;
-            .bt-remove-filter {
-                color: map-get($map: $theme-colors, $key: danger);
+        .input_group_checkbox {
+            .icon {
+                cursor: pointer;
+                -ms-flex: 0 0 24px;
+                flex: 0 0 24px;
+                max-width: 24px;
+                height: 24px;
+                margin-left: 4px;
+            }
+            span {
+                &[rarity="common"] {
+                    color: map-get($map: $theme-colors, $key: rarity-common);
+                }
+                &[rarity="uncommon"] {
+                    color: map-get($map: $theme-colors, $key: rarity-uncommon);
+                }
+                &[rarity="rare"] {
+                    color: map-get($map: $theme-colors, $key: rarity-rare);
+                }
+                &[rarity="epic"] {
+                    color: map-get($map: $theme-colors, $key: rarity-epic);
+                }
+                &[rarity="legendary"] {
+                    color: map-get($map: $theme-colors, $key: rarity-legendary);
+                }
+                &[rarity="mythical"] {
+                    color: map-get($map: $theme-colors, $key: rarity-mythical);
+                }
             }
         }
+        @media (max-width: 1199.98px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .close-filter-mobile {
+        margin-bottom: 16px;
+        display: none;
+        @media (max-width: 575.98px) {
+            display: block;
+        }
+    }
+    .bt-close-filter-mobile {
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        margin-left: auto;
+        background-color: map-get($map: $theme-colors, $key: primary);
+        border-radius: 50%;
+    }
+    @media (max-width: 575.98px) {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 400;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        max-height: 80vh;
+        height: 100%;
+        overflow-y: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s all ease-in-out;
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
     }
 }
 
@@ -136,6 +150,16 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 24px;
+        .right {
+            display: flex;
+            align-items: center;
+            .input_group {
+                width: auto;
+                span {
+                    padding-right: 4px;
+                }
+            }
+        }
         @media (max-width: 575.98px) {
             flex-direction: column;
         }
@@ -149,12 +173,10 @@
     .sort_block {
         display: flex;
         align-items: center;
+        margin-right: 16px;
         label {
             margin-right: 8px;
         }
-    }
-    .list_products__item {
-        // min-height: 390px;
     }
     .list_products {
         grid-template-columns: repeat(4, 1fr);

@@ -17,147 +17,110 @@ block main
     section.shop_section
         .container
             .shop__wrapper
+                .button-mobile
+                    button.bt.bt--primary.bt-open-filter-mobile Filter
                 .shop__filter
+                    .close-filter-mobile
+                        .bt-close-filter-mobile
+                            i.fal.fa-times
                     .filter__top
-                        .left_partial
-                        .right_partial
+                        .left
+                            h3 Filter (2)
+                        .right
+                            a.bt.bt--secondary(href="#") Clear Filter
+                    .filter__items
+                        .filter_block
+                            h4 Class
+                            .filter_block_checkbox
+                                .input_group.input_group_checkbox
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                        .icon
+                                            img(src="./icons/hero-class/fire.png", alt="")
+                                        span Fire
+                                .input_group.input_group_checkbox
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                        .icon
+                                            img(src="./icons/hero-class/water.png", alt="")
+                                        span Water
+                                .input_group.input_group_checkbox
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                        .icon
+                                            img(src="./icons/hero-class/metal.png", alt="")
+                                        span Metal
+                                .input_group.input_group_checkbox
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                        .icon
+                                            img(src="./icons/hero-class/earth.png", alt="")
+                                        span Earth
+                                .input_group.input_group_checkbox
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                        .icon
+                                            img(src="./icons/hero-class/wood.png", alt="")
+                                        span Wood
+                        .filter_block
+                            h4 Rarity
+                            .filter_block_checkbox
+                                .input_group.input_group_checkbox
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                        span(rarity="common") Common
+                                .input_group.input_group_checkbox
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                        span(rarity="uncommon") Uncommon
+                                .input_group.input_group_checkbox
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                        span(rarity="rare") Rare
+                                .input_group.input_group_checkbox
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                        span(rarity="epic") Epic 
+                                .input_group.input_group_checkbox
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                        span(rarity="legendary") Legendary
+                                .input_group.input_group_checkbox
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                        span(rarity="mythical") Mythical
+                        .filter_block
+                            h4 Level
+                .shop__main_content
+                    .shop__main_top
+                        .left
+                            .total-green-hero 1000 Green Heroes
+                        .right
+                            .sort_block
+                                .select__custom
+                                    select
+                                        option Lowest Price
+                                        option Highest Price
+                                        option Lastest
                             .input_group
                                 span Owned
                                 label.checkbox__switch
                                     input(type='checkbox')
                                     .slider.round
-                    .filter__tabs
-                        .tab_container
-                            .tabs_nav
-                                .tabs_nav__item(toggle-for="class") Class
-                                .tabs_nav__item(toggle-for="body-part") Body Part
-                                .tabs_nav__item(toggle-for="star") Star
-                            .tabs_content
-                                .filter__main(toggle-id="class")
-                                    .filter_block_checkbox
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span Fire
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span Water
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span Metal
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span Earth
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span Wood
-                                .filter__main(toggle-id="body-part")
-                                    .filter_block_checkbox
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span Face
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span Hair
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span Body
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span Hand
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span Leg
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span Deco
-                                .filter__main(toggle-id="star")
-                                    .filter_block_checkbox
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span 1 Star
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span 2 Star
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span 3 Star
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span 4 Star
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span 5 Star
-                                        .input_group.input_group_checkbox
-                                            label
-                                                .checkbox__custom
-                                                    input(type="checkbox")
-                                                span 6 Star
-                    .filter__bottom
-                        .left_partial
-                            span Filter (3)
-                        .right_partial
-                            button.txt-secondary Clear Filter
-                    .filter__history
-                        .filter_block_history
-                            .history_item
-                                span Water
-                                button.bt-remove-filter
-                                    i.far.fa-times-circle
-                            .history_item
-                                span Body
-                                button.bt-remove-filter
-                                    i.far.fa-times-circle
-                            .history_item
-                                span 2 Star
-                                button.bt-remove-filter
-                                    i.far.fa-times-circle
-                .shop__main_content
-                    .shop__main_top
-                        .total-green-hero Total Green Herro: 1000
-                        .sort_block
-                            label.filter_block__label Sort By
-                            .select__custom
-                                select
-                                    option All
-                                    option Lowest Price
-                                    option Highest Price
-                                    option Lowest Productivity Price
-                                    option Highest Productivity Price
                     .list_products
                         .list_products__item_wrapper
-                            a.list_products__item(popup-to="character_detail_popup_unsell" href="javascript:;" rating="5" character-class="fire" expired="false")
+                            a.list_products__item(popup-to="character_detail_popup_unsell" href="javascript:;" rating="5" character-class="fire")
                                 .item_wrapper__top
                                     .character__image
                                         .image
@@ -178,7 +141,7 @@ block main
                                             p.price-usd ($21.92)
                                     .character__status.txt-orange Selling
                         .list_products__item_wrapper
-                            a.list_products__item(popup-to="character_detail_popup_unsell" href="javascript:;" rating="2" character-class="wood" expired="false")
+                            a.list_products__item(popup-to="character_detail_popup_unsell" href="javascript:;" rating="2" character-class="wood")
                                 .item_wrapper__top
                                     .character__image
                                         .image
@@ -199,7 +162,7 @@ block main
                                             p.price-usd ($21.92)
                                     .character__status.txt-orange Selling
                         .list_products__item_wrapper
-                            a.list_products__item(popup-to="character_detail_popup_buy" href="javascript:;" rating="1" character-class="metal" expired="false")
+                            a.list_products__item(popup-to="character_detail_popup_buy" href="javascript:;" rating="1" character-class="metal")
                                 .item_wrapper__top
                                     .character__image
                                         .image
@@ -220,7 +183,7 @@ block main
                                             p.price-usd ($21.92)
                                     .character__status.txt-primary Buy
                         .list_products__item_wrapper
-                            a.list_products__item(popup-to="character_detail_popup_buy" href="javascript:;" rating="3" character-class="water" expired="false")
+                            a.list_products__item(popup-to="character_detail_popup_buy" href="javascript:;" rating="3" character-class="water")
                                 .item_wrapper__top
                                     .character__image
                                         .image
@@ -241,7 +204,7 @@ block main
                                             p.price-usd ($21.92)
                                     .character__status.txt-primary Buy
                         .list_products__item_wrapper
-                            a.list_products__item(popup-to="character_detail_popup_expired" href="javascript:;" rating="6" character-class="earth" expired="true")
+                            a.list_products__item(popup-to="character_detail_popup_expired" href="javascript:;" rating="6" character-class="earth")
                                 .item_wrapper__top
                                     .character__image
                                         .image
@@ -262,7 +225,7 @@ block main
                                             p.price-usd ($21.92)
                                     .character__status.txt-gray Expired
                         .list_products__item_wrapper
-                            a.list_products__item(popup-to="character_detail_popup_expired" href="javascript:;" rating="4" character-class="earth" expired="true")
+                            a.list_products__item(popup-to="character_detail_popup_expired" href="javascript:;" rating="4" character-class="earth")
                                 .item_wrapper__top
                                     .character__image
                                         .image

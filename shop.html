@@ -67,10 +67,132 @@
         <section class="shop_section">
           <div class="container">
             <div class="shop__wrapper">
+              <div class="button-mobile">
+                <button class="bt bt--primary bt-open-filter-mobile">Filter</button>
+              </div>
               <div class="shop__filter">
+                <div class="close-filter-mobile">
+                  <div class="bt-close-filter-mobile"><i class="fal fa-times"></i></div>
+                </div>
                 <div class="filter__top">
-                  <div class="left_partial"></div>
-                  <div class="right_partial">
+                  <div class="left">
+                    <h3>Filter (2)</h3>
+                  </div>
+                  <div class="right"><a class="bt bt--secondary" href="#">Clear Filter</a></div>
+                </div>
+                <div class="filter__items">
+                  <div class="filter_block">
+                    <h4>Class</h4>
+                    <div class="filter_block_checkbox">
+                      <div class="input_group input_group_checkbox">
+                        <label>
+                          <div class="checkbox__custom">
+                            <input type="checkbox"/>
+                          </div>
+                          <div class="icon"><img src="./icons/hero-class/fire.png" alt=""/></div><span>Fire</span>
+                        </label>
+                      </div>
+                      <div class="input_group input_group_checkbox">
+                        <label>
+                          <div class="checkbox__custom">
+                            <input type="checkbox"/>
+                          </div>
+                          <div class="icon"><img src="./icons/hero-class/water.png" alt=""/></div><span>Water</span>
+                        </label>
+                      </div>
+                      <div class="input_group input_group_checkbox">
+                        <label>
+                          <div class="checkbox__custom">
+                            <input type="checkbox"/>
+                          </div>
+                          <div class="icon"><img src="./icons/hero-class/metal.png" alt=""/></div><span>Metal</span>
+                        </label>
+                      </div>
+                      <div class="input_group input_group_checkbox">
+                        <label>
+                          <div class="checkbox__custom">
+                            <input type="checkbox"/>
+                          </div>
+                          <div class="icon"><img src="./icons/hero-class/earth.png" alt=""/></div><span>Earth</span>
+                        </label>
+                      </div>
+                      <div class="input_group input_group_checkbox">
+                        <label>
+                          <div class="checkbox__custom">
+                            <input type="checkbox"/>
+                          </div>
+                          <div class="icon"><img src="./icons/hero-class/wood.png" alt=""/></div><span>Wood</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter_block">
+                    <h4>Rarity</h4>
+                    <div class="filter_block_checkbox">
+                      <div class="input_group input_group_checkbox">
+                        <label>
+                          <div class="checkbox__custom">
+                            <input type="checkbox"/>
+                          </div><span rarity="common">Common</span>
+                        </label>
+                      </div>
+                      <div class="input_group input_group_checkbox">
+                        <label>
+                          <div class="checkbox__custom">
+                            <input type="checkbox"/>
+                          </div><span rarity="uncommon">Uncommon</span>
+                        </label>
+                      </div>
+                      <div class="input_group input_group_checkbox">
+                        <label>
+                          <div class="checkbox__custom">
+                            <input type="checkbox"/>
+                          </div><span rarity="rare">Rare</span>
+                        </label>
+                      </div>
+                      <div class="input_group input_group_checkbox">
+                        <label>
+                          <div class="checkbox__custom">
+                            <input type="checkbox"/>
+                          </div><span rarity="epic">Epic </span>
+                        </label>
+                      </div>
+                      <div class="input_group input_group_checkbox">
+                        <label>
+                          <div class="checkbox__custom">
+                            <input type="checkbox"/>
+                          </div><span rarity="legendary">Legendary</span>
+                        </label>
+                      </div>
+                      <div class="input_group input_group_checkbox">
+                        <label>
+                          <div class="checkbox__custom">
+                            <input type="checkbox"/>
+                          </div><span rarity="mythical">Mythical</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter_block">
+                    <h4>Level</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="shop__main_content">
+                <div class="shop__main_top">
+                  <div class="left">
+                    <div class="total-green-hero">1000 Green Heroes</div>
+                  </div>
+                  <div class="right">
+                    <div class="sort_block">
+                      <div class="select__custom">
+                        <select>
+                          <option>Lowest Price</option>
+                          <option>Highest Price</option>
+                          <option>Lastest</option>
+                        </select>
+                      </div>
+                    </div>
                     <div class="input_group"><span>Owned</span>
                       <label class="checkbox__switch">
                         <input type="checkbox"/>
@@ -79,186 +201,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="filter__tabs">
-                  <div class="tab_container">
-                    <div class="tabs_nav">
-                      <div class="tabs_nav__item" toggle-for="class">Class</div>
-                      <div class="tabs_nav__item" toggle-for="body-part">Body Part</div>
-                      <div class="tabs_nav__item" toggle-for="star">Star</div>
-                    </div>
-                    <div class="tabs_content">
-                      <div class="filter__main" toggle-id="class">
-                        <div class="filter_block_checkbox">
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>Fire</span>
-                            </label>
-                          </div>
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>Water</span>
-                            </label>
-                          </div>
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>Metal</span>
-                            </label>
-                          </div>
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>Earth</span>
-                            </label>
-                          </div>
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>Wood</span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__main" toggle-id="body-part">
-                        <div class="filter_block_checkbox">
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>Face</span>
-                            </label>
-                          </div>
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>Hair</span>
-                            </label>
-                          </div>
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>Body</span>
-                            </label>
-                          </div>
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>Hand</span>
-                            </label>
-                          </div>
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>Leg</span>
-                            </label>
-                          </div>
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>Deco</span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__main" toggle-id="star">
-                        <div class="filter_block_checkbox">
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>1 Star</span>
-                            </label>
-                          </div>
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>2 Star</span>
-                            </label>
-                          </div>
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>3 Star</span>
-                            </label>
-                          </div>
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>4 Star</span>
-                            </label>
-                          </div>
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>5 Star</span>
-                            </label>
-                          </div>
-                          <div class="input_group input_group_checkbox">
-                            <label>
-                              <div class="checkbox__custom">
-                                <input type="checkbox"/>
-                              </div><span>6 Star</span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="filter__bottom">
-                  <div class="left_partial"><span>Filter (3)</span></div>
-                  <div class="right_partial">
-                    <button class="txt-secondary">Clear Filter</button>
-                  </div>
-                </div>
-                <div class="filter__history">
-                  <div class="filter_block_history">
-                    <div class="history_item"><span>Water</span>
-                      <button class="bt-remove-filter"><i class="far fa-times-circle"></i></button>
-                    </div>
-                    <div class="history_item"><span>Body</span>
-                      <button class="bt-remove-filter"><i class="far fa-times-circle"></i></button>
-                    </div>
-                    <div class="history_item"><span>2 Star</span>
-                      <button class="bt-remove-filter"><i class="far fa-times-circle"></i></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="shop__main_content">
-                <div class="shop__main_top">
-                  <div class="total-green-hero">Total Green Herro: 1000</div>
-                  <div class="sort_block">
-                    <label class="filter_block__label">Sort By</label>
-                    <div class="select__custom">
-                      <select>
-                        <option>All</option>
-                        <option>Lowest Price</option>
-                        <option>Highest Price</option>
-                        <option>Lowest Productivity Price</option>
-                        <option>Highest Productivity Price</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
                 <div class="list_products">
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup_unsell" href="javascript:;" rating="5" character-class="fire" expired="false">
+                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup_unsell" href="javascript:;" rating="5" character-class="fire">
                       <div class="item_wrapper__top">
                         <div class="character__image">
                           <div class="image"><img src="./images/itemproductfire.png" alt="CHARACTER-FIRE"/></div>
@@ -282,7 +226,7 @@
                         </div>
                         <div class="character__status txt-orange">Selling</div>
                       </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup_unsell" href="javascript:;" rating="2" character-class="wood" expired="false">
+                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup_unsell" href="javascript:;" rating="2" character-class="wood">
                       <div class="item_wrapper__top">
                         <div class="character__image">
                           <div class="image"><img src="./images/itemproductwood.png" alt="CHARACTER-WOOD"/></div>
@@ -306,7 +250,7 @@
                         </div>
                         <div class="character__status txt-orange">Selling</div>
                       </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup_buy" href="javascript:;" rating="1" character-class="metal" expired="false">
+                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup_buy" href="javascript:;" rating="1" character-class="metal">
                       <div class="item_wrapper__top">
                         <div class="character__image">
                           <div class="image"><img src="./images/itemproductmetal.png" alt="CHARACTER-METAL"/></div>
@@ -330,7 +274,7 @@
                         </div>
                         <div class="character__status txt-primary">Buy</div>
                       </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup_buy" href="javascript:;" rating="3" character-class="water" expired="false">
+                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup_buy" href="javascript:;" rating="3" character-class="water">
                       <div class="item_wrapper__top">
                         <div class="character__image">
                           <div class="image"><img src="./images/itemproductwater.png" alt="CHARACTER-WATER"/></div>
@@ -354,7 +298,7 @@
                         </div>
                         <div class="character__status txt-primary">Buy</div>
                       </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup_expired" href="javascript:;" rating="6" character-class="earth" expired="true">
+                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup_expired" href="javascript:;" rating="6" character-class="earth">
                       <div class="item_wrapper__top">
                         <div class="character__image">
                           <div class="image"><img src="./images/itemproductearth.png" alt="CHARACTER-EARTH"/></div>
@@ -378,7 +322,7 @@
                         </div>
                         <div class="character__status txt-gray">Expired</div>
                       </div></a></div>
-                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup_expired" href="javascript:;" rating="4" character-class="earth" expired="true">
+                  <div class="list_products__item_wrapper"><a class="list_products__item" popup-to="character_detail_popup_expired" href="javascript:;" rating="4" character-class="earth">
                       <div class="item_wrapper__top">
                         <div class="character__image">
                           <div class="image"><img src="./images/itemproductearth.png" alt="CHARACTER-EARTH"/></div>
@@ -667,48 +611,43 @@
         <div class="buy_character_popup" id="buy_character_popup" style="display:none">
           <div class="popup_wrapper">
             <div class="popup__header">
-              <h2 class="popup__title">Buy Hero</h2>
+              <h2 class="popup__title">Buy Green Hero</h2>
             </div>
             <div class="popup__body">
-              <div class="buy_character_content_popup">
-                <div class="content__item">
-                  <div class="content">
-                    <div class="left">
-                      <label>Price Green Hero</label>
-                      <h3>100</h3>
-                    </div>
+              <div class="buy_character_form">
+                <div class="form__item">
+                  <label>Green Hero Price</label>
+                  <div class="input_group">
+                    <input class="form-control" type="number" placeholder="0" value="100" readonly="readonly"/>
                     <div class="price-token">
                       <div class="icon"><img src="./icons/grbe.png" alt="GRBE"/></div><span>~$200</span>
                     </div>
                   </div>
                 </div>
-                <div class="content__item">
-                  <div class="content">
-                    <div class="left">
-                      <label>Fee</label>
-                      <h3>1</h3>
-                    </div>
-                    <div class="right">
-                      <div class="price-token">
-                        <div class="icon"><img src="./icons/grbe.png" alt="GRBE"/></div><span>~$2</span>
-                      </div>
+                <div class="form__item">
+                  <label>Tranding flatform free</label>
+                  <div class="input_group">
+                    <input class="form-control" type="number" placeholder="0" readonly="readonly"/>
+                    <div class="price-token">
+                      <div class="icon"><img src="./icons/grbe.png" alt="GRBE"/></div><span>~$6</span>
                     </div>
                   </div>
-                  <p class="note">1% of the Green Hero Price will be paid to GreenBeli as a platform fee</p>
                 </div>
-                <div class="content__item">
-                  <div class="content">
-                    <div class="left">
-                      <label>Total</label>
-                      <h3>101</h3>
-                    </div>
-                    <div class="right">
-                      <label>Price + Fee</label>
-                      <div class="price-token">
-                        <div class="icon"><img src="./icons/grbe.png" alt="GRBE"/></div><span>~$200</span>
-                      </div>
+                <div class="form__item">
+                  <div class="group-label">
+                    <label>Total payment</label>
+                    <label>Price + Fee</label>
+                  </div>
+                  <div class="input_group">
+                    <input class="form-control" type="number" placeholder="0" readonly="readonly"/>
+                    <div class="price-token">
+                      <div class="icon"><img src="./icons/grbe.png" alt="GRBE"/></div><span>~$6</span>
                     </div>
                   </div>
+                </div>
+                <div class="notification">
+                  <p>GRBE in wallet: <b class="txt-primary">500GRBE</b></p>
+                  <p>Are your sure to buy this Green Hero with 101GRBE?</p>
                 </div>
                 <div class="error"><i class="fad fa-exclamation-circle"></i>
                   <p>No enough balance GRBE</p>
@@ -716,7 +655,6 @@
               </div>
             </div>
             <div class="popup__footer">
-              <button class="bt bt--primary bt--outline" data-fancybox-close="data-fancybox-close">Close</button>
               <button class="bt bt--primary" popup-to="buy_character_success_popup" href="javascript:;">Confirm</button>
             </div>
           </div>
@@ -770,7 +708,7 @@
                             <p class="price-usd">($21.92)</p>
                           </div>
                         </div>
-                        <div class="character__actions"><a class="bt bt--orange" popup-to="unsell_character_success_popup" href="javascript:;">Unsell</a></div>
+                        <div class="character__actions"><a class="bt bt--orange" popup-to="unsell_character_success_popup" href="javascript:;">Cancel</a></div>
                       </div>
                     </div>
                   </div>
@@ -985,7 +923,7 @@
             <div class="popup__body">
               <div class="nofication_content_popup">
                 <div class="success">
-                  <p>Successfully Unsell Green Hero</p>
+                  <p>Successfully Cancelled</p>
                 </div>
               </div>
             </div>

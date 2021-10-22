@@ -916,7 +916,7 @@ body[style="overflow-y: hidden"] .page:before {
   padding: 0 16px;
   height: 48px;
   width: 100%;
-  border-radius: 1.22rem;
+  border-radius: 0.66rem;
   transition: 0.3s all ease-in-out; }
   .form-control:focus {
     box-shadow: #d9d9d9 0px 0px 0px 1px, rgba(217, 217, 217, 0.4) 0px 0px 0px 4px; }
@@ -1893,58 +1893,32 @@ body[style="overflow-y: hidden"] .page:before {
   .claim_airdrop_popup .fancybox-close-small {
     display: none; }
 
-.buy_character_popup {
-  max-width: 500px;
-  width: 100%; }
-  .buy_character_popup .buy_character_content_popup .content__item {
-    padding: 16px;
-    border: 1px solid #d9d9d9;
-    border-radius: 1.22rem; }
-    .buy_character_popup .buy_character_content_popup .content__item + .content__item {
-      margin-top: 16px; }
-  .buy_character_popup .buy_character_content_popup .note {
-    font-size: 0.625rem;
-    margin-top: 4px; }
-  .buy_character_popup .buy_character_content_popup .content {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between; }
-    .buy_character_popup .buy_character_content_popup .content label {
-      margin-bottom: 16px; }
-    .buy_character_popup .buy_character_content_popup .content h3 {
-      font-size: 1.5rem; }
-    .buy_character_popup .buy_character_content_popup .content .price-token {
-      display: flex;
-      align-items: center; }
-      .buy_character_popup .buy_character_content_popup .content .price-token span {
-        font-size: 1rem;
-        padding-left: 4px; }
-    .buy_character_popup .buy_character_content_popup .content .icon {
-      width: 32px;
-      height: 32px;
-      overflow: hidden;
-      border-radius: 50%;
-      background-color: #ffffff; }
-  .buy_character_popup .buy_character_content_popup .error {
-    display: flex;
-    align-items: center;
-    color: #f3420c;
-    margin-top: 24px; }
-    .buy_character_popup .buy_character_content_popup .error > i {
-      margin-right: 4px; }
-
+.buy_character_popup,
 .sell_character_popup {
   max-width: 500px;
   width: 100%; }
+  .buy_character_popup .popup__body,
   .sell_character_popup .popup__body {
     max-height: 80vh;
     overflow-y: auto; }
+  .buy_character_popup .buy_character_form .form__item + .form__item,
+  .buy_character_popup .sell_character_form .form__item + .form__item,
+  .sell_character_popup .buy_character_form .form__item + .form__item,
   .sell_character_popup .sell_character_form .form__item + .form__item {
     margin-top: 24px; }
+  .buy_character_popup .buy_character_form label,
+  .buy_character_popup .sell_character_form label,
+  .sell_character_popup .buy_character_form label,
   .sell_character_popup .sell_character_form label {
     margin-bottom: 8px; }
+  .buy_character_popup .buy_character_form .form-control:not([type="date"]):not([type="datetime-local"]),
+  .buy_character_popup .sell_character_form .form-control:not([type="date"]):not([type="datetime-local"]),
+  .sell_character_popup .buy_character_form .form-control:not([type="date"]):not([type="datetime-local"]),
   .sell_character_popup .sell_character_form .form-control:not([type="date"]):not([type="datetime-local"]) {
     padding: 0 100px 0 16px; }
+  .buy_character_popup .buy_character_form .input_group .price-token,
+  .buy_character_popup .sell_character_form .input_group .price-token,
+  .sell_character_popup .buy_character_form .input_group .price-token,
   .sell_character_popup .sell_character_form .input_group .price-token {
     position: absolute;
     top: 50%;
@@ -1952,12 +1926,23 @@ body[style="overflow-y: hidden"] .page:before {
     transform: translateY(-50%);
     display: flex;
     align-items: center; }
+    .buy_character_popup .buy_character_form .input_group .price-token .icon,
+    .buy_character_popup .sell_character_form .input_group .price-token .icon,
+    .sell_character_popup .buy_character_form .input_group .price-token .icon,
     .sell_character_popup .sell_character_form .input_group .price-token .icon {
       width: 24px;
       height: 24px;
       border-radius: 50%;
       overflow: hidden;
       background-color: #ffffff; }
+    .buy_character_popup .buy_character_form .input_group .price-token span,
+    .buy_character_popup .sell_character_form .input_group .price-token span,
+    .sell_character_popup .buy_character_form .input_group .price-token span,
+    .sell_character_popup .sell_character_form .input_group .price-token span {
+      padding-left: 4px; }
+  .buy_character_popup .buy_character_form .select_grbe,
+  .buy_character_popup .sell_character_form .select_grbe,
+  .sell_character_popup .buy_character_form .select_grbe,
   .sell_character_popup .sell_character_form .select_grbe {
     display: flex;
     justify-content: center;
@@ -1967,24 +1952,60 @@ body[style="overflow-y: hidden"] .page:before {
     margin: 0 auto;
     background-color: #dfdfdf;
     border-radius: 1.22rem; }
+    .buy_character_popup .buy_character_form .select_grbe .thumbnail,
+    .buy_character_popup .sell_character_form .select_grbe .thumbnail,
+    .sell_character_popup .buy_character_form .select_grbe .thumbnail,
     .sell_character_popup .sell_character_form .select_grbe .thumbnail {
       cursor: pointer;
       max-width: 130px;
       margin: 0 auto; }
+      .buy_character_popup .buy_character_form .select_grbe .thumbnail:not(.active),
+      .buy_character_popup .sell_character_form .select_grbe .thumbnail:not(.active),
+      .sell_character_popup .buy_character_form .select_grbe .thumbnail:not(.active),
       .sell_character_popup .sell_character_form .select_grbe .thumbnail:not(.active) {
         filter: grayscale(100%); }
+    .buy_character_popup .buy_character_form .select_grbe p,
+    .buy_character_popup .sell_character_form .select_grbe p,
+    .sell_character_popup .buy_character_form .select_grbe p,
     .sell_character_popup .sell_character_form .select_grbe p {
       text-align: center;
       font-size: 0.75rem;
       color: #666666;
       margin-top: 4px; }
+  .buy_character_popup .buy_character_form .note,
+  .buy_character_popup .sell_character_form .note,
+  .sell_character_popup .buy_character_form .note,
   .sell_character_popup .sell_character_form .note {
     color: #666666;
     font-size: 0.625rem;
     margin-top: 8px; }
+  .buy_character_popup .buy_character_form .group-label,
+  .buy_character_popup .sell_character_form .group-label,
+  .sell_character_popup .buy_character_form .group-label,
   .sell_character_popup .sell_character_form .group-label {
     display: flex;
     justify-content: space-between; }
+  .buy_character_popup .buy_character_form .form-control[readonly],
+  .sell_character_popup .buy_character_form .form-control[readonly] {
+    background-color: transparent; }
+  .buy_character_popup .notification,
+  .sell_character_popup .notification {
+    font-size: 16px;
+    margin-top: 24px;
+    text-align: center; }
+    .buy_character_popup .notification p + p,
+    .sell_character_popup .notification p + p {
+      margin-top: 8px; }
+  .buy_character_popup .error,
+  .sell_character_popup .error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f3420c;
+    margin-top: 24px; }
+    .buy_character_popup .error > i,
+    .sell_character_popup .error > i {
+      margin-right: 4px; }
 
 .nofication_popup {
   max-width: 400px;

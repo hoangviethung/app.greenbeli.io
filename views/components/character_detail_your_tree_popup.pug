@@ -109,3 +109,25 @@
                                 div
                                     p Decor
                                     p LVL 1
+                .detail_bottom
+                    .bottom_item
+                        .title_block Transaction history
+                        .character__transaction-history
+                            table
+                                thead
+                                    tr
+                                        th Event
+                                        th Price
+                                        th Currency
+                                        th From
+                                        th To
+                                        th Date and Time
+                                tbody
+                                    -for(i=0;i<10;i++)
+                                        tr
+                                            td Purchased
+                                            td 320
+                                            td GRBE
+                                            td 0xD4971..2e7b2
+                                            td 0xD4971..2e7b2
+                                            td 2021/9/9

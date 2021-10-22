@@ -149,8 +149,6 @@
       text-align: center; }
   .list_products__item:hover {
     transform: translateY(-2px); }
-  .list_products__item[expired="true"] {
-    filter: grayscale(100%); }
   .list_products__item[rating="1"] {
     background-image: url("../images/bg_card_item_product_rate_1.png"); }
     .list_products__item[rating="1"] .color-rating {

@@ -353,6 +353,107 @@
                     </div>
                   </div>
                 </div>
+                <div class="detail_bottom">
+                  <div class="bottom_item">
+                    <div class="title_block">Transaction history</div>
+                    <div class="character__transaction-history">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Event</th>
+                            <th>Price</th>
+                            <th>Currency</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Date and Time</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>2021/9/9</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>2021/9/9</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>2021/9/9</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>2021/9/9</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>2021/9/9</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>2021/9/9</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>2021/9/9</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>2021/9/9</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>2021/9/9</td>
+                          </tr>
+                          <tr>
+                            <td>Purchased</td>
+                            <td>320</td>
+                            <td>GRBE</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>0xD4971..2e7b2</td>
+                            <td>2021/9/9</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -373,7 +474,7 @@
                   </div>
                 </div>
                 <div class="form__item">
-                  <label>Total Price</label>
+                  <label>Set price</label>
                   <div class="input_group">
                     <input class="form-control" type="number" placeholder="0"/>
                     <div class="price-token">
@@ -382,17 +483,18 @@
                   </div>
                 </div>
                 <div class="form__item">
-                  <label>Fee</label>
+                  <label>Flatform fee if sold</label>
                   <div class="input_group">
                     <input class="form-control" readonly="readonly" type="number" placeholder="0"/>
                     <div class="price-token">
                       <div class="icon"><img src="./icons/grbe.png" alt="GRBE"/></div><span>~$6</span>
                     </div>
                   </div>
+                  <div class="note">*Seller pays 3% flatform fee on sale</div>
                 </div>
                 <div class="form__item">
                   <div class="group-label">
-                    <label>The amount actually received</label>
+                    <label>Total earnings</label>
                     <label>Price Fee</label>
                   </div>
                   <div class="input_group">
@@ -410,8 +512,7 @@
               </div>
             </div>
             <div class="popup__footer">
-              <button class="bt bt--primary bt--outline" data-fancybox-close="data-fancybox-close">Close</button>
-              <button class="bt bt--primary" popup-to="sell_character_success_popup" href="javascript:;">Confirm</button>
+              <button class="bt bt--primary" popup-to="sell_character_success_popup" href="javascript:;">Enable Listing</button>
             </div>
           </div>
         </div>
@@ -421,12 +522,12 @@
             <div class="popup__body">
               <div class="nofication_content_popup">
                 <div class="success">
-                  <p>Sell Hero Successfully</p>
+                  <p>Your items is now listed for sale</p>
                 </div>
               </div>
             </div>
             <div class="popup__footer">
-              <button class="bt bt--primary bt--outline" data-fancybox-close="data-fancybox-close">Close</button><a class="bt bt--primary" href="shop.html">Go to my NFT Market</a>
+              <button class="bt bt--primary bt--outline" data-fancybox-close="data-fancybox-close">Close</button><a class="bt bt--primary" href="shop.html">View on NFT Marketplace</a>
             </div>
           </div>
         </div>
