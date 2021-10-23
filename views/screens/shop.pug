@@ -37,8 +37,15 @@ block main
                                         .checkbox__custom
                                             input(type="checkbox")
                                         .icon
-                                            img(src="./icons/hero-class/fire.png", alt="")
-                                        span Fire
+                                            img(src="./icons/hero-class/metal.png", alt="")
+                                        span Metal
+                                .input_group.input_group_checkbox
+                                    label
+                                        .checkbox__custom
+                                            input(type="checkbox")
+                                        .icon
+                                            img(src="./icons/hero-class/wood.png", alt="")
+                                        span Wood
                                 .input_group.input_group_checkbox
                                     label
                                         .checkbox__custom
@@ -51,8 +58,8 @@ block main
                                         .checkbox__custom
                                             input(type="checkbox")
                                         .icon
-                                            img(src="./icons/hero-class/metal.png", alt="")
-                                        span Metal
+                                            img(src="./icons/hero-class/fire.png", alt="")
+                                        span Fire
                                 .input_group.input_group_checkbox
                                     label
                                         .checkbox__custom
@@ -60,13 +67,6 @@ block main
                                         .icon
                                             img(src="./icons/hero-class/earth.png", alt="")
                                         span Earth
-                                .input_group.input_group_checkbox
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                        .icon
-                                            img(src="./icons/hero-class/wood.png", alt="")
-                                        span Wood
                         .filter_block
                             h4 Rarity
                             .filter_block_checkbox
@@ -112,7 +112,7 @@ block main
                                     select
                                         option Lowest Price
                                         option Highest Price
-                                        option Lastest
+                                        option Latest
                             .input_group
                                 span Owned
                                 label.checkbox__switch
@@ -139,7 +139,7 @@ block main
                                                 .price
                                                     span 0.4723
                                             p.price-usd ($21.92)
-                                    .character__status.txt-orange Selling
+                                    .character__status.txt-orange For sale
                         .list_products__item_wrapper
                             a.list_products__item(popup-to="character_detail_popup_unsell" href="javascript:;" rating="2" character-class="wood")
                                 .item_wrapper__top
@@ -160,7 +160,7 @@ block main
                                                 .price
                                                     span 0.4723
                                             p.price-usd ($21.92)
-                                    .character__status.txt-orange Selling
+                                    .character__status.txt-orange For sale
                         .list_products__item_wrapper
                             a.list_products__item(popup-to="character_detail_popup_buy" href="javascript:;" rating="1" character-class="metal")
                                 .item_wrapper__top
@@ -181,7 +181,7 @@ block main
                                                 .price
                                                     span 0.4723
                                             p.price-usd ($21.92)
-                                    .character__status.txt-primary Buy
+                                    .character__status.txt-primary Buy now
                         .list_products__item_wrapper
                             a.list_products__item(popup-to="character_detail_popup_buy" href="javascript:;" rating="3" character-class="water")
                                 .item_wrapper__top
@@ -202,7 +202,7 @@ block main
                                                 .price
                                                     span 0.4723
                                             p.price-usd ($21.92)
-                                    .character__status.txt-primary Buy
+                                    .character__status.txt-primary Buy now
                         .list_products__item_wrapper
                             a.list_products__item(popup-to="character_detail_popup_expired" href="javascript:;" rating="6" character-class="earth")
                                 .item_wrapper__top

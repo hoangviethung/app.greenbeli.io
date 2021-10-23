@@ -22,7 +22,9 @@
     transform: translate(-50%, -50%);
     font-weight: 700;
     color: #ffd75f;
-    text-shadow: -2px 4px 6px rgba(0, 0, 0, 0.5); }
+    text-shadow: -2px 4px 6px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center; }
     @media (max-width: 575.98px) {
       .banner_section__title h1 {
         font-size: 1.5rem;

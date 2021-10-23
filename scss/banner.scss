@@ -27,6 +27,8 @@
         font-weight: 700;
         color: #ffd75f;
         text-shadow: -2px 4px 6px rgba($color: #000000, $alpha: 0.5);
+        width: 100%;
+        text-align: center;
         @media (max-width: 575.98px) {
             font-size: 1.5rem;
             top: 42%;

@@ -13,7 +13,7 @@
                                 img(src="./icons/grbe.png", alt="GRBE")
                             span ~$200
                 .form__item
-                    label Tranding Platform fee
+                    label Platform fee
                     .input_group
                         input.form-control(type="number" placeholder="0" readonly)
                         .price-token
@@ -29,12 +29,12 @@
                                 img(src="./icons/grbe.png", alt="GRBE")
                             span ~$6
                 .notification
-                    p GRBE in wallet: 
+                    p GRBE in wallet 
                         b.txt-primary 500GRBE
-                    p Are your sure to buy this Green Hero with 101GRBE?
+                    p Insufficient balance for transaction
                 .error
                     i.fad.fa-exclamation-circle
                     p No enough balance GRBE
                     a(href="#").bt.bt--secondary Buy GRBE
         .popup__footer
-            button.bt.bt--primary(popup-to="buy_character_success_popup" href="javascript:;") Confirm
+            button.bt.bt--primary(popup-to="buy_character_success_popup" href="javascript:;") Checkout
