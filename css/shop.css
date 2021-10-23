@@ -268,14 +268,22 @@
     @media (max-width: 575.98px) {
       .shop__filter .filter__items {
         grid-template-columns: repeat(1, 1fr); } }
-  .shop__filter .filter_block h4 {
-    font-size: 0.875rem;
-    font-weight: 600;
-    margin-bottom: 8px; }
+  .shop__filter .filter_block {
+    background: #d5e8b9;
+    border-radius: 8px;
+    overflow: hidden; }
+    .shop__filter .filter_block h4 {
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      background: #c9e2a5;
+      padding: 8px;
+      margin-bottom: 16px; }
   .shop__filter .filter_block_checkbox {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 16px; }
+    grid-gap: 16px;
+    padding: 0px 16px 16px 16px; }
     .shop__filter .filter_block_checkbox .input_group_checkbox .icon {
       cursor: pointer;
       -ms-flex: 0 0 24px;
@@ -283,18 +291,30 @@
       max-width: 24px;
       height: 24px;
       margin-left: 4px; }
-    .shop__filter .filter_block_checkbox .input_group_checkbox span[rarity="common"] {
-      color: #8e8e8e; }
-    .shop__filter .filter_block_checkbox .input_group_checkbox span[rarity="uncommon"] {
-      color: #25b503; }
-    .shop__filter .filter_block_checkbox .input_group_checkbox span[rarity="rare"] {
-      color: #3c78d8; }
-    .shop__filter .filter_block_checkbox .input_group_checkbox span[rarity="epic"] {
-      color: #9900ff; }
-    .shop__filter .filter_block_checkbox .input_group_checkbox span[rarity="legendary"] {
-      color: #ff0000; }
-    .shop__filter .filter_block_checkbox .input_group_checkbox span[rarity="mythical"] {
-      color: #e69138; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="common"] input {
+      border-color: #8e8e8e; }
+      .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="common"] input:checked {
+        background-color: #8e8e8e; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="uncommon"] input {
+      border-color: #25b503; }
+      .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="uncommon"] input:checked {
+        background-color: #25b503; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="rare"] input {
+      border-color: #3c78d8; }
+      .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="rare"] input:checked {
+        background-color: #3c78d8; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="epic"] input {
+      border-color: #9900ff; }
+      .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="epic"] input:checked {
+        background-color: #9900ff; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="legendary"] input {
+      border-color: #ff0000; }
+      .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="legendary"] input:checked {
+        background-color: #ff0000; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="mythical"] input {
+      border-color: #e69138; }
+      .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="mythical"] input:checked {
+        background-color: #e69138; }
     @media (max-width: 1199.98px) {
       .shop__filter .filter_block_checkbox {
         grid-template-columns: repeat(2, 1fr); } }
