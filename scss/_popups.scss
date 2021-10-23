@@ -627,6 +627,28 @@
             td {
                 padding: 8px;
             }
+            .price {
+                display: flex;
+                align-items: center;
+                .icon {
+                    -ms-flex: 0 0 24px;
+                    flex: 0 0 24px;
+                    max-width: 24px;
+                    height: 24px;
+                    background-color: map-get(
+                        $map: $theme-colors,
+                        $key: neutral-white
+                    );
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+                span {
+                    flex-basis: 0;
+                    flex-grow: 1;
+                    max-width: 100%;
+                    padding-left: 4px;
+                }
+            }
         }
         @media (max-width: 575.98px) {
             overflow-x: auto;

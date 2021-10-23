@@ -1648,6 +1648,22 @@ body[style="overflow-y: hidden"] .page:before {
       .character_detail_popup .character__transaction-history table th,
       .character_detail_popup .character__transaction-history table td {
         padding: 8px; }
+      .character_detail_popup .character__transaction-history table .price {
+        display: flex;
+        align-items: center; }
+        .character_detail_popup .character__transaction-history table .price .icon {
+          -ms-flex: 0 0 24px;
+          flex: 0 0 24px;
+          max-width: 24px;
+          height: 24px;
+          background-color: #ffffff;
+          border-radius: 50%;
+          overflow: hidden; }
+        .character_detail_popup .character__transaction-history table .price span {
+          flex-basis: 0;
+          flex-grow: 1;
+          max-width: 100%;
+          padding-left: 4px; }
     @media (max-width: 575.98px) {
       .character_detail_popup .character__transaction-history {
         overflow-x: auto; } }
