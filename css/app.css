@@ -2006,6 +2006,9 @@ body[style="overflow-y: hidden"] .page:before {
     .buy_character_popup .error > i,
     .sell_character_popup .error > i {
       margin-right: 4px; }
+    .buy_character_popup .error .bt,
+    .sell_character_popup .error .bt {
+      margin-left: 8px; }
 
 .nofication_popup {
   max-width: 400px;

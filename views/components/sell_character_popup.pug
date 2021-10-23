@@ -27,9 +27,7 @@
                             span ~$6
                     .note *Seller pays 3% flatform fee on sale
                 .form__item
-                    .group-label
-                        label Total earnings
-                        label Price Fee
+                    label Total earnings
                     .input_group
                         input.form-control(readonly type="number" placeholder="0")
                         .price-token
@@ -37,8 +35,7 @@
                                 img(src="./icons/grbe.png", alt="GRBE")
                             span ~$6
                 .form__item
-                    label Expirtion
-                    input.form-control(type="datetime-local")
-                    .note *No more than mounth
+                    label Expiration
+                    input.form-control(readonly type="datetime-local")
         .popup__footer
             button.bt.bt--primary(popup-to="sell_character_success_popup" href="javascript:;") Enable Listing
