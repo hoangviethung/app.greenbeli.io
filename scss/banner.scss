@@ -12,6 +12,9 @@
     max-width: 500px;
     margin: 0 auto;
     min-height: 450px;
+    @media (max-width: 575.98px) {
+        min-height: unset;
+    }
 }
 
 .banner_section__title {
@@ -42,6 +45,7 @@
         display: block;
         margin: 0 auto;
         animation: tranformItemImageBanner 8s ease-in-out infinite;
+        margin-bottom: 24px;
     }
     h2,
     p {
@@ -50,7 +54,6 @@
     }
     h2 {
         font-size: 1.5rem;
-        margin-top: 24px;
     }
     p {
         margin-top: 4px;
@@ -64,14 +67,6 @@
     .banner_section__content {
         img {
             max-width: 300px;
-        }
-    }
-}
-
-.nft_market_page {
-    .banner_section__content {
-        img {
-            max-width: 200px;
         }
     }
 }

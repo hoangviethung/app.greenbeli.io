@@ -9,6 +9,9 @@
   max-width: 500px;
   margin: 0 auto;
   min-height: 450px; }
+  @media (max-width: 575.98px) {
+    .banner_section__wrapper {
+      min-height: unset; } }
 
 .banner_section__title {
   position: relative;
@@ -35,14 +38,14 @@
   .banner_section__content img {
     display: block;
     margin: 0 auto;
-    animation: tranformItemImageBanner 8s ease-in-out infinite; }
+    animation: tranformItemImageBanner 8s ease-in-out infinite;
+    margin-bottom: 24px; }
   .banner_section__content h2,
   .banner_section__content p {
     color: #ffffff;
     text-align: center; }
   .banner_section__content h2 {
-    font-size: 1.5rem;
-    margin-top: 24px; }
+    font-size: 1.5rem; }
   .banner_section__content p {
     margin-top: 4px;
     font-weight: 500; }
@@ -51,9 +54,6 @@
 .nft_compensation_page .banner_section__content img,
 .nft_claim_page .banner_section__content img {
   max-width: 300px; }
-
-.nft_market_page .banner_section__content img {
-  max-width: 200px; }
 
 .nft_your_tree_page .banner_section__content img {
   max-width: 150px; }
