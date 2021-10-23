@@ -93,90 +93,63 @@
                 height: 24px;
                 margin-left: 4px;
             }
-            .checkbox__custom {
+            label {
+                &[rarity] {
+                    cursor: pointer;
+                    color: map-get($map: $theme-colors, $key: neutral-white);
+                    justify-content: center;
+                    height: 32px;
+                    background-color: #849c61;
+                    width: 100%;
+                    border-radius: 4px;
+                    transition: 0.3s all ease-in-out;
+                }
                 &[rarity="common"] {
-                    input {
-                        border-color: map-get(
+                    &.checked {
+                        background-color: map-get(
                             $map: $theme-colors,
                             $key: rarity-common
                         );
-                        &:checked {
-                            background-color: map-get(
-                                $map: $theme-colors,
-                                $key: rarity-common
-                            );
-                        }
                     }
                 }
-
                 &[rarity="uncommon"] {
-                    input {
-                        border-color: map-get(
+                    &.checked {
+                        background-color: map-get(
                             $map: $theme-colors,
                             $key: rarity-uncommon
                         );
-                        &:checked {
-                            background-color: map-get(
-                                $map: $theme-colors,
-                                $key: rarity-uncommon
-                            );
-                        }
                     }
                 }
                 &[rarity="rare"] {
-                    input {
-                        border-color: map-get(
+                    &.checked {
+                        background-color: map-get(
                             $map: $theme-colors,
                             $key: rarity-rare
                         );
-                        &:checked {
-                            background-color: map-get(
-                                $map: $theme-colors,
-                                $key: rarity-rare
-                            );
-                        }
                     }
                 }
                 &[rarity="epic"] {
-                    input {
-                        border-color: map-get(
+                    &.checked {
+                        background-color: map-get(
                             $map: $theme-colors,
                             $key: rarity-epic
                         );
-                        &:checked {
-                            background-color: map-get(
-                                $map: $theme-colors,
-                                $key: rarity-epic
-                            );
-                        }
                     }
                 }
                 &[rarity="legendary"] {
-                    input {
-                        border-color: map-get(
+                    &.checked {
+                        background-color: map-get(
                             $map: $theme-colors,
                             $key: rarity-legendary
                         );
-                        &:checked {
-                            background-color: map-get(
-                                $map: $theme-colors,
-                                $key: rarity-legendary
-                            );
-                        }
                     }
                 }
                 &[rarity="mythical"] {
-                    input {
-                        border-color: map-get(
+                    &.checked {
+                        background-color: map-get(
                             $map: $theme-colors,
                             $key: rarity-mythical
                         );
-                        &:checked {
-                            background-color: map-get(
-                                $map: $theme-colors,
-                                $key: rarity-mythical
-                            );
-                        }
                     }
                 }
             }

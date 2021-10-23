@@ -193,6 +193,16 @@ function toggleBlockFilter() {
     });
 }
 
+function toggleInputCheckedFilterShop() {
+    $(".filter_block_checkbox .input_group_checkbox label[rarity]").on(
+        "click",
+        function (e) {
+            e.preventDefault();
+            $(this).toggleClass("checked");
+        },
+    );
+}
+
 $(function () {
     fancyboxCharacterDetailBuy();
     fancyboxCharacterDetailUnsell();
@@ -202,4 +212,5 @@ $(function () {
     fancyboxClaimCharacterExpiredSuccess();
     fancyboxUnsellCharacterExpired();
     toggleBlockFilter();
+    toggleInputCheckedFilterShop();
 });

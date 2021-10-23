@@ -291,30 +291,27 @@
       max-width: 24px;
       height: 24px;
       margin-left: 4px; }
-    .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="common"] input {
-      border-color: #8e8e8e; }
-      .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="common"] input:checked {
-        background-color: #8e8e8e; }
-    .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="uncommon"] input {
-      border-color: #25b503; }
-      .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="uncommon"] input:checked {
-        background-color: #25b503; }
-    .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="rare"] input {
-      border-color: #3c78d8; }
-      .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="rare"] input:checked {
-        background-color: #3c78d8; }
-    .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="epic"] input {
-      border-color: #9900ff; }
-      .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="epic"] input:checked {
-        background-color: #9900ff; }
-    .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="legendary"] input {
-      border-color: #ff0000; }
-      .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="legendary"] input:checked {
-        background-color: #ff0000; }
-    .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="mythical"] input {
-      border-color: #e69138; }
-      .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom[rarity="mythical"] input:checked {
-        background-color: #e69138; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox label[rarity] {
+      cursor: pointer;
+      color: #ffffff;
+      justify-content: center;
+      height: 32px;
+      background-color: #849c61;
+      width: 100%;
+      border-radius: 4px;
+      transition: 0.3s all ease-in-out; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox label[rarity="common"].checked {
+      background-color: #8e8e8e; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox label[rarity="uncommon"].checked {
+      background-color: #25b503; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox label[rarity="rare"].checked {
+      background-color: #3c78d8; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox label[rarity="epic"].checked {
+      background-color: #9900ff; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox label[rarity="legendary"].checked {
+      background-color: #ff0000; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox label[rarity="mythical"].checked {
+      background-color: #e69138; }
     @media (max-width: 1199.98px) {
       .shop__filter .filter_block_checkbox {
         grid-template-columns: repeat(2, 1fr); } }
