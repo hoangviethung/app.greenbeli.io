@@ -80,89 +80,252 @@
                   </div>
                   <div class="right"><a class="bt bt--secondary" href="#">Clear Filter</a></div>
                 </div>
-                <div class="filter__items">
-                  <div class="filter_block">
-                    <h4>Class</h4>
-                    <div class="filter_block_checkbox">
-                      <div class="input_group input_group_checkbox">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                          <div class="icon"><img src="./icons/hero-class/metal.png" alt=""/></div><span>Metal</span>
-                        </label>
+                <div class="shop__filter_container">
+                  <div class="tab_container">
+                    <div class="filter__top">
+                      <div class="left">
+                        <div class="tabs_row">
+                          <button class="bt" toggle-for="general"><span>General</span></button>
+                          <button class="bt" toggle-for="parts"><span>Parts</span></button>
+                        </div>
                       </div>
-                      <div class="input_group input_group_checkbox">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                          <div class="icon"><img src="./icons/hero-class/wood.png" alt=""/></div><span>Wood</span>
-                        </label>
-                      </div>
-                      <div class="input_group input_group_checkbox">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                          <div class="icon"><img src="./icons/hero-class/water.png" alt=""/></div><span>Water</span>
-                        </label>
-                      </div>
-                      <div class="input_group input_group_checkbox">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                          <div class="icon"><img src="./icons/hero-class/fire.png" alt=""/></div><span>Fire</span>
-                        </label>
-                      </div>
-                      <div class="input_group input_group_checkbox">
-                        <label>
-                          <div class="checkbox__custom">
-                            <input type="checkbox"/>
-                          </div>
-                          <div class="icon"><img src="./icons/hero-class/earth.png" alt=""/></div><span>Earth</span>
-                        </label>
+                      <div class="right">
+                        <div class="search_block"><i class="fal fa-search"></i>
+                          <input class="form-control" placeholder="Search ID Hero"/>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="filter_block">
-                    <h4>Rarity</h4>
-                    <div class="filter_block_checkbox">
-                      <div class="input_group input_group_checkbox">
-                        <label rarity="common">
-                          <input type="checkbox" hidden="hidden"/><span>Common</span>
-                        </label>
+                    <div class="tabs_content">
+                      <div class="content" toggle-id="general">
+                        <div class="filter__items">
+                          <div class="filter_block">
+                            <h4>Class</h4>
+                            <div class="filter_block_checkbox">
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div>
+                                  <div class="icon"><img src="./icons/hero-class/metal.png" alt=""/></div><span>Metal</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div>
+                                  <div class="icon"><img src="./icons/hero-class/wood.png" alt=""/></div><span>Wood</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div>
+                                  <div class="icon"><img src="./icons/hero-class/water.png" alt=""/></div><span>Water</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div>
+                                  <div class="icon"><img src="./icons/hero-class/fire.png" alt=""/></div><span>Fire</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div>
+                                  <div class="icon"><img src="./icons/hero-class/earth.png" alt=""/></div><span>Earth</span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="filter_block">
+                            <h4>Rarity</h4>
+                            <div class="filter_block_checkbox">
+                              <div class="input_group input_group_checkbox">
+                                <label rarity="common">
+                                  <input type="checkbox" hidden="hidden"/><span>Common</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label rarity="uncommon">
+                                  <input type="checkbox" hidden="hidden"/><span>Uncommon</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label rarity="rare">
+                                  <input type="checkbox" hidden="hidden"/><span>Rare</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label rarity="epic">
+                                  <input type="checkbox" hidden="hidden"/><span>Epic</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label rarity="legendary">
+                                  <input type="checkbox" hidden="hidden"/><span>Legendary</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label rarity="mythical">
+                                  <input type="checkbox" hidden="hidden"/><span>Mythical</span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="filter_block">
+                            <h4>Star</h4>
+                            <div class="filter_block_checkbox">
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div><span>1</span>
+                                  <div class="icon icon-star"><i class="fas fa-star"></i></div>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div><span>2</span>
+                                  <div class="icon icon-star"><i class="fas fa-star"></i></div>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div><span>3</span>
+                                  <div class="icon icon-star"><i class="fas fa-star"></i></div>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div><span>4</span>
+                                  <div class="icon icon-star"><i class="fas fa-star"></i></div>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div><span>5</span>
+                                  <div class="icon icon-star"><i class="fas fa-star"></i></div>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div><span>6</span>
+                                  <div class="icon icon-star"><i class="fas fa-star"></i></div>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div class="input_group input_group_checkbox">
-                        <label rarity="uncommon">
-                          <input type="checkbox" hidden="hidden"/><span>Uncommon</span>
-                        </label>
-                      </div>
-                      <div class="input_group input_group_checkbox">
-                        <label rarity="rare">
-                          <input type="checkbox" hidden="hidden"/><span>Rare</span>
-                        </label>
-                      </div>
-                      <div class="input_group input_group_checkbox">
-                        <label rarity="epic">
-                          <input type="checkbox" hidden="hidden"/><span>Epic</span>
-                        </label>
-                      </div>
-                      <div class="input_group input_group_checkbox">
-                        <label rarity="legendary">
-                          <input type="checkbox" hidden="hidden"/><span>Legendary</span>
-                        </label>
-                      </div>
-                      <div class="input_group input_group_checkbox">
-                        <label rarity="mythical">
-                          <input type="checkbox" hidden="hidden"/><span>Mythical</span>
-                        </label>
+                      <div class="content" toggle-id="parts">
+                        <div class="filter__items">
+                          <div class="filter_block">
+                            <h4>Body Parts</h4>
+                            <div class="filter_block_checkbox">
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div>
+                                  <div class="icon"><img src="./icons/face/wood.png" alt=""/></div><span>Face</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div>
+                                  <div class="icon"><img src="./icons/hair/wood.png" alt=""/></div><span>Hair</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div>
+                                  <div class="icon"><img src="./icons/body/wood.png" alt=""/></div><span>Body</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div>
+                                  <div class="icon"><img src="./icons/hand/wood.png" alt=""/></div><span>Hand</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div>
+                                  <div class="icon"><img src="./icons/leg/wood.png" alt=""/></div><span>Leg</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label>
+                                  <div class="checkbox__custom">
+                                    <input type="checkbox"/>
+                                  </div>
+                                  <div class="icon"><img src="./icons/decor/wood.png" alt=""/></div><span>Decor</span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="filter_block">
+                            <h4>Rarity</h4>
+                            <div class="filter_block_checkbox">
+                              <div class="input_group input_group_checkbox">
+                                <label rarity="common">
+                                  <input type="checkbox" hidden="hidden"/><span>Common</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label rarity="uncommon">
+                                  <input type="checkbox" hidden="hidden"/><span>Uncommon</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label rarity="rare">
+                                  <input type="checkbox" hidden="hidden"/><span>Rare</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label rarity="epic">
+                                  <input type="checkbox" hidden="hidden"/><span>Epic</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label rarity="legendary">
+                                  <input type="checkbox" hidden="hidden"/><span>Legendary</span>
+                                </label>
+                              </div>
+                              <div class="input_group input_group_checkbox">
+                                <label rarity="mythical">
+                                  <input type="checkbox" hidden="hidden"/><span>Mythical</span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="filter_block">
-                    <h4>Star</h4>
                   </div>
                 </div>
               </div>
@@ -175,7 +338,7 @@
                     <div class="sort_block">
                       <div class="select__custom">
                         <select>
-                          <option>Lowest Price</option>
+                          <option>Recently listed</option>
                           <option>Highest Price</option>
                           <option>Latest</option>
                         </select>

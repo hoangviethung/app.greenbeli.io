@@ -28,74 +28,206 @@ block main
                             h3 Filter (2)
                         .right
                             a.bt.bt--secondary(href="#") Clear Filter
-                    .filter__items
-                        .filter_block
-                            h4 Class
-                            .filter_block_checkbox
-                                .input_group.input_group_checkbox
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                        .icon
-                                            img(src="./icons/hero-class/metal.png", alt="")
-                                        span Metal
-                                .input_group.input_group_checkbox
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                        .icon
-                                            img(src="./icons/hero-class/wood.png", alt="")
-                                        span Wood
-                                .input_group.input_group_checkbox
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                        .icon
-                                            img(src="./icons/hero-class/water.png", alt="")
-                                        span Water
-                                .input_group.input_group_checkbox
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                        .icon
-                                            img(src="./icons/hero-class/fire.png", alt="")
-                                        span Fire
-                                .input_group.input_group_checkbox
-                                    label
-                                        .checkbox__custom
-                                            input(type="checkbox")
-                                        .icon
-                                            img(src="./icons/hero-class/earth.png", alt="")
-                                        span Earth
-                        .filter_block
-                            h4 Rarity
-                            .filter_block_checkbox
-                                .input_group.input_group_checkbox
-                                    label(rarity="common")
-                                        input(type="checkbox" hidden)
-                                        span Common
-                                .input_group.input_group_checkbox
-                                    label(rarity="uncommon")
-                                        input(type="checkbox" hidden)
-                                        span Uncommon
-                                .input_group.input_group_checkbox
-                                    label(rarity="rare")
-                                        input(type="checkbox" hidden)
-                                        span Rare
-                                .input_group.input_group_checkbox
-                                    label(rarity="epic")
-                                        input(type="checkbox" hidden)
-                                        span Epic
-                                .input_group.input_group_checkbox
-                                    label(rarity="legendary")
-                                        input(type="checkbox" hidden)
-                                        span Legendary
-                                .input_group.input_group_checkbox
-                                    label(rarity="mythical")
-                                        input(type="checkbox" hidden)
-                                        span Mythical
-                        .filter_block
-                            h4 Star
+                    .shop__filter_container
+                        .tab_container
+                            .filter__top
+                                .left
+                                    .tabs_row
+                                        button.bt(toggle-for="general")
+                                            span General
+                                        button.bt(toggle-for="parts")
+                                            span Parts
+                                .right
+                                    .search_block
+                                        i.fal.fa-search
+                                        input.form-control(placeholder="Search ID Hero")
+                            .tabs_content
+                                .content(toggle-id="general")
+                                    .filter__items
+                                        .filter_block
+                                            h4 Class
+                                            .filter_block_checkbox
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        .icon
+                                                            img(src="./icons/hero-class/metal.png", alt="")
+                                                        span Metal
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        .icon
+                                                            img(src="./icons/hero-class/wood.png", alt="")
+                                                        span Wood
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        .icon
+                                                            img(src="./icons/hero-class/water.png", alt="")
+                                                        span Water
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        .icon
+                                                            img(src="./icons/hero-class/fire.png", alt="")
+                                                        span Fire
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        .icon
+                                                            img(src="./icons/hero-class/earth.png", alt="")
+                                                        span Earth
+                                        .filter_block
+                                            h4 Rarity
+                                            .filter_block_checkbox
+                                                .input_group.input_group_checkbox
+                                                    label(rarity="common")
+                                                        input(type="checkbox" hidden)
+                                                        span Common
+                                                .input_group.input_group_checkbox
+                                                    label(rarity="uncommon")
+                                                        input(type="checkbox" hidden)
+                                                        span Uncommon
+                                                .input_group.input_group_checkbox
+                                                    label(rarity="rare")
+                                                        input(type="checkbox" hidden)
+                                                        span Rare
+                                                .input_group.input_group_checkbox
+                                                    label(rarity="epic")
+                                                        input(type="checkbox" hidden)
+                                                        span Epic
+                                                .input_group.input_group_checkbox
+                                                    label(rarity="legendary")
+                                                        input(type="checkbox" hidden)
+                                                        span Legendary
+                                                .input_group.input_group_checkbox
+                                                    label(rarity="mythical")
+                                                        input(type="checkbox" hidden)
+                                                        span Mythical
+                                        .filter_block
+                                            h4 Star
+                                            .filter_block_checkbox
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        span 1
+                                                        .icon.icon-star
+                                                            i.fas.fa-star
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        span 2
+                                                        .icon.icon-star
+                                                            i.fas.fa-star
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        span 3
+                                                        .icon.icon-star
+                                                            i.fas.fa-star
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        span 4
+                                                        .icon.icon-star
+                                                            i.fas.fa-star
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        span 5
+                                                        .icon.icon-star
+                                                            i.fas.fa-star
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        span 6
+                                                        .icon.icon-star
+                                                            i.fas.fa-star
+                                .content(toggle-id="parts")
+                                    .filter__items
+                                        .filter_block
+                                            h4 Body Parts
+                                            .filter_block_checkbox
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        .icon
+                                                            img(src="./icons/face/wood.png", alt="")
+                                                        span Face
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        .icon
+                                                            img(src="./icons/hair/wood.png", alt="")
+                                                        span Hair
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        .icon
+                                                            img(src="./icons/body/wood.png", alt="")
+                                                        span Body
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        .icon
+                                                            img(src="./icons/hand/wood.png", alt="")
+                                                        span Hand
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        .icon
+                                                            img(src="./icons/leg/wood.png", alt="")
+                                                        span Leg
+                                                .input_group.input_group_checkbox
+                                                    label
+                                                        .checkbox__custom
+                                                            input(type="checkbox")
+                                                        .icon
+                                                            img(src="./icons/decor/wood.png", alt="")
+                                                        span Decor
+                                        .filter_block
+                                            h4 Rarity
+                                            .filter_block_checkbox
+                                                .input_group.input_group_checkbox
+                                                    label(rarity="common")
+                                                        input(type="checkbox" hidden)
+                                                        span Common
+                                                .input_group.input_group_checkbox
+                                                    label(rarity="uncommon")
+                                                        input(type="checkbox" hidden)
+                                                        span Uncommon
+                                                .input_group.input_group_checkbox
+                                                    label(rarity="rare")
+                                                        input(type="checkbox" hidden)
+                                                        span Rare
+                                                .input_group.input_group_checkbox
+                                                    label(rarity="epic")
+                                                        input(type="checkbox" hidden)
+                                                        span Epic
+                                                .input_group.input_group_checkbox
+                                                    label(rarity="legendary")
+                                                        input(type="checkbox" hidden)
+                                                        span Legendary
+                                                .input_group.input_group_checkbox
+                                                    label(rarity="mythical")
+                                                        input(type="checkbox" hidden)
+                                                        span Mythical
                 .shop__main_content
                     .shop__main_top
                         .left
@@ -104,7 +236,7 @@ block main
                             .sort_block
                                 .select__custom
                                     select
-                                        option Lowest Price
+                                        option Recently listed
                                         option Highest Price
                                         option Latest
                             .input_group

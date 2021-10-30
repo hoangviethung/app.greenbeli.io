@@ -1189,6 +1189,19 @@ body[style="overflow-y: hidden"] .page:before {
 .input-range input[type="range"]:focus::-ms-fill-upper {
   background: #668d2e; }
 
+.search_block {
+  position: relative; }
+  .search_block .form-control {
+    padding-left: 36px; }
+  .search_block > i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px; }
+  @media (max-width: 767.98px) {
+    .search_block {
+      width: 100%; } }
+
 .bt {
   display: inline-flex;
   align-items: center;

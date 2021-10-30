@@ -85,13 +85,24 @@
         grid-gap: 16px;
         padding: 0px 16px 16px 16px;
         .input_group_checkbox {
+            .checkbox__custom {
+                -ms-flex: 0 0 24px;
+                flex: 0 0 24px;
+                max-width: 24px;
+                margin-right: 4px;
+            }
+            .icon-star {
+                color: map-get($map: $theme-colors, $key: additional-yellow);
+            }
             .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 cursor: pointer;
                 -ms-flex: 0 0 24px;
                 flex: 0 0 24px;
                 max-width: 24px;
                 height: 24px;
-                margin-left: 4px;
             }
             label {
                 &[rarity] {
@@ -176,6 +187,27 @@
         background-color: map-get($map: $theme-colors, $key: primary);
         border-radius: 50%;
     }
+    .shop__filter_container {
+        margin-top: 24px;
+        .tabs_row {
+            background-color: rgba(
+                $color: map-get($theme-colors, primary),
+                $alpha: 0.2
+            );
+            border-radius: 1.22rem;
+            display: inline-flex;
+            .bt {
+                &.active {
+                    color: map-get($map: $theme-colors, $key: neutral-white);
+                    background-color: map-get(
+                        $map: $theme-colors,
+                        $key: primary
+                    );
+                }
+            }
+        }
+    }
+
     @media (max-width: 575.98px) {
         position: fixed;
         bottom: 0;

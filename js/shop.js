@@ -213,4 +213,5 @@ $(function () {
     fancyboxUnsellCharacterExpired();
     toggleBlockFilter();
     toggleInputCheckedFilterShop();
+    const TabFilter = new Tab(".shop__filter_container .tab_container");
 });

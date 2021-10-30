@@ -171,24 +171,6 @@
     }
 }
 
-.filter_section__right_partial {
-    .search_block {
-        position: relative;
-        .form-control {
-            padding-left: 36px;
-        }
-        > i {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 16px;
-        }
-        @media (max-width: 767.98px) {
-            width: 100%;
-        }
-    }
-}
-
 .farming_section {
     padding-top: 16px;
     padding-bottom: 80px;

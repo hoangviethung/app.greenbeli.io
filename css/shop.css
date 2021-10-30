@@ -284,13 +284,22 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 16px;
     padding: 0px 16px 16px 16px; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox .checkbox__custom {
+      -ms-flex: 0 0 24px;
+      flex: 0 0 24px;
+      max-width: 24px;
+      margin-right: 4px; }
+    .shop__filter .filter_block_checkbox .input_group_checkbox .icon-star {
+      color: #ffc700; }
     .shop__filter .filter_block_checkbox .input_group_checkbox .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       cursor: pointer;
       -ms-flex: 0 0 24px;
       flex: 0 0 24px;
       max-width: 24px;
-      height: 24px;
-      margin-left: 4px; }
+      height: 24px; }
     .shop__filter .filter_block_checkbox .input_group_checkbox label[rarity] {
       cursor: pointer;
       color: #ffffff;
@@ -331,6 +340,15 @@
     margin-left: auto;
     background-color: #668d2e;
     border-radius: 50%; }
+  .shop__filter .shop__filter_container {
+    margin-top: 24px; }
+    .shop__filter .shop__filter_container .tabs_row {
+      background-color: rgba(102, 141, 46, 0.2);
+      border-radius: 1.22rem;
+      display: inline-flex; }
+      .shop__filter .shop__filter_container .tabs_row .bt.active {
+        color: #ffffff;
+        background-color: #668d2e; }
   @media (max-width: 575.98px) {
     .shop__filter {
       position: fixed;
