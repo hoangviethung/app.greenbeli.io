@@ -254,6 +254,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    .shop__filter .filter__top .left {
+      padding-right: 24px; }
     .shop__filter .filter__top h3 {
       font-size: 1rem;
       font-weight: 700; }
