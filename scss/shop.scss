@@ -172,6 +172,29 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
+    .filter_block_price {
+        padding: 0px 16px 16px 16px;
+        .input-price {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 8px;
+            .price-block {
+                position: relative;
+                .form-control {
+                    padding-left: 36px;
+                }
+                > i {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 16px;
+                }
+                @media (max-width: 767.98px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
     .close-filter-mobile {
         margin-bottom: 16px;
         display: none;

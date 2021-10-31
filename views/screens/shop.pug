@@ -164,42 +164,42 @@ block main
                                                         .checkbox__custom
                                                             input(type="checkbox")
                                                         .icon
-                                                            img(src="./icons/face/wood.png", alt="")
+                                                            img(src="./icons/face/default.png", alt="")
                                                         span Face
                                                 .input_group.input_group_checkbox
                                                     label
                                                         .checkbox__custom
                                                             input(type="checkbox")
                                                         .icon
-                                                            img(src="./icons/hair/wood.png", alt="")
+                                                            img(src="./icons/hair/default.png", alt="")
                                                         span Hair
                                                 .input_group.input_group_checkbox
                                                     label
                                                         .checkbox__custom
                                                             input(type="checkbox")
                                                         .icon
-                                                            img(src="./icons/body/wood.png", alt="")
+                                                            img(src="./icons/body/default.png", alt="")
                                                         span Body
                                                 .input_group.input_group_checkbox
                                                     label
                                                         .checkbox__custom
                                                             input(type="checkbox")
                                                         .icon
-                                                            img(src="./icons/hand/wood.png", alt="")
+                                                            img(src="./icons/hand/default.png", alt="")
                                                         span Hand
                                                 .input_group.input_group_checkbox
                                                     label
                                                         .checkbox__custom
                                                             input(type="checkbox")
                                                         .icon
-                                                            img(src="./icons/leg/wood.png", alt="")
+                                                            img(src="./icons/leg/default.png", alt="")
                                                         span Leg
                                                 .input_group.input_group_checkbox
                                                     label
                                                         .checkbox__custom
                                                             input(type="checkbox")
                                                         .icon
-                                                            img(src="./icons/decor/wood.png", alt="")
+                                                            img(src="./icons/decor/default.png", alt="")
                                                         span Decor
                                         .filter_block
                                             h4 Rarity
@@ -228,6 +228,19 @@ block main
                                                     label(rarity="mythical")
                                                         input(type="checkbox" hidden)
                                                         span Mythical
+                                        .filter_block
+                                            h4 Price
+                                            .filter_block_price
+                                                .input-percent
+                                                    .input-range
+                                                        input(type="range" min="1" max="5" value="1" style="width:100%")
+                                                .input-price
+                                                    .price-block
+                                                        i.far.fa-dollar-sign
+                                                        input.form-control(type="text" value="500")
+                                                    .price-block
+                                                        i.far.fa-dollar-sign
+                                                        input.form-control(type="text" value="1000")
                 .shop__main_content
                     .shop__main_top
                         .left

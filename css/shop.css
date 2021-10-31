@@ -326,6 +326,24 @@
     @media (max-width: 1199.98px) {
       .shop__filter .filter_block_checkbox {
         grid-template-columns: repeat(2, 1fr); } }
+  .shop__filter .filter_block_price {
+    padding: 0px 16px 16px 16px; }
+    .shop__filter .filter_block_price .input-price {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 8px; }
+      .shop__filter .filter_block_price .input-price .price-block {
+        position: relative; }
+        .shop__filter .filter_block_price .input-price .price-block .form-control {
+          padding-left: 36px; }
+        .shop__filter .filter_block_price .input-price .price-block > i {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 16px; }
+        @media (max-width: 767.98px) {
+          .shop__filter .filter_block_price .input-price .price-block {
+            width: 100%; } }
   .shop__filter .close-filter-mobile {
     margin-bottom: 16px;
     display: none; }
