@@ -33,10 +33,9 @@
       text-align: center;
       background: #c9e2a5;
       padding: 8px;
-      margin-bottom: 16px;
       font-weight: 400; }
     .probabily_items .probabily .probabily_value {
-      padding: 0 16px 16px 16px; }
+      padding: 16px; }
       .probabily_items .probabily .probabily_value input {
         width: 100%;
         text-align: center;
@@ -225,3 +224,58 @@
     margin-top: 24px; }
     .calculate_build_team_wrapper .listing__actions .bt + .bt {
       margin-left: 16px; }
+
+.calculate_your_roi {
+  background: #ecf5df;
+  padding: 16px;
+  border-radius: 1.22rem;
+  box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08);
+  border: 2px solid rgba(102, 141, 46, 0.2);
+  margin-top: 24px; }
+  .calculate_your_roi .table_profit {
+    background: #d5e8b9;
+    border-radius: 8px;
+    border: 1px solid #c9e2a5;
+    overflow: hidden;
+    margin-top: 24px; }
+    .calculate_your_roi .table_profit table {
+      width: 100%; }
+      .calculate_your_roi .table_profit table th,
+      .calculate_your_roi .table_profit table td {
+        font-size: 12px;
+        width: 33.33333%;
+        padding: 8px;
+        border: 1px solid #c9e2a5; }
+
+.calculate_your_roi_title {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 24px; }
+
+.calculate_your_roi_total {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  background: #dbb69d;
+  border: 1px solid #c68d66;
+  border-radius: 8px;
+  overflow: hidden; }
+  .calculate_your_roi_total h3 {
+    font-size: 0.875rem;
+    text-align: center;
+    background: #d4a88b;
+    padding: 8px;
+    font-weight: 400;
+    border-bottom: 1px solid #c68d66; }
+  .calculate_your_roi_total .total_value {
+    align-items: center;
+    padding: 16px; }
+    .calculate_your_roi_total .total_value span {
+      color: #6b4328;
+      font-size: 1rem;
+      display: block;
+      text-align: center;
+      font-weight: 700; }
+      .calculate_your_roi_total .total_value span + span {
+        margin-top: 16px; }
