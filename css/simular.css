@@ -1,0 +1,227 @@
+.simular_page {
+  background-color: #f4fff8; }
+
+.simular_section {
+  padding-top: 48px;
+  padding-bottom: 80px; }
+  @media (max-width: 767.98px) {
+    .simular_section {
+      padding-top: 30px; } }
+
+.mint_probabily {
+  background: #ecf5df;
+  padding: 16px;
+  border-radius: 1.22rem;
+  box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08);
+  border: 2px solid rgba(102, 141, 46, 0.2); }
+
+.probabily_title {
+  font-size: 1rem;
+  font-weight: 700; }
+
+.probabily_items {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 8px;
+  margin-top: 24px; }
+  .probabily_items .probabily {
+    background: #d5e8b9;
+    border-radius: 8px;
+    overflow: hidden; }
+    .probabily_items .probabily h4 {
+      font-size: 0.875rem;
+      text-align: center;
+      background: #c9e2a5;
+      padding: 8px;
+      margin-bottom: 16px;
+      font-weight: 400; }
+    .probabily_items .probabily .probabily_value {
+      padding: 0 16px 16px 16px; }
+      .probabily_items .probabily .probabily_value input {
+        width: 100%;
+        text-align: center;
+        background-color: transparent;
+        border: 0;
+        font-size: 1rem;
+        font-weight: 700; }
+
+.calculate_build_team {
+  background: #ecf5df;
+  padding: 16px;
+  border-radius: 1.22rem;
+  box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08);
+  border: 2px solid rgba(102, 141, 46, 0.2);
+  margin-top: 24px; }
+
+.calculate_build_team_title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 24px; }
+
+.calculate_build_team_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px; }
+  .calculate_build_team_wrapper .hero_information_form_group_top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px; }
+  .calculate_build_team_wrapper .hero_information_form_group_bottom {
+    margin-top: 16px;
+    grid-gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart {
+      background: #d5e8b9;
+      border-radius: 8px;
+      border: 1px solid #c9e2a5;
+      overflow: hidden; }
+      .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table {
+        width: 100%; }
+        .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table th,
+        .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table td {
+          font-size: 12px;
+          width: 33.33333%;
+          padding: 8px;
+          border: 1px solid #c9e2a5; }
+        .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table select {
+          cursor: pointer;
+          background-color: transparent;
+          border: 0;
+          width: 100%; }
+        .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table input {
+          width: 100%;
+          background-color: #c9e2a5;
+          padding: 4px 8px;
+          border: 0;
+          border-radius: 4px; }
+    .calculate_build_team_wrapper .hero_information_form_group_bottom .stats {
+      display: grid;
+      grid-gap: 16px;
+      grid-template-columns: 1fr 1fr;
+      height: fit-content; }
+    .calculate_build_team_wrapper .hero_information_form_group_bottom .stat__item label {
+      margin-bottom: 8px; }
+    .calculate_build_team_wrapper .hero_information_form_group_bottom .stat__item .content {
+      display: flex;
+      align-items: center; }
+      .calculate_build_team_wrapper .hero_information_form_group_bottom .stat__item .content .icon {
+        -ms-flex: 0 0 24px;
+        flex: 0 0 24px;
+        max-width: 24px;
+        height: 24px; }
+      .calculate_build_team_wrapper .hero_information_form_group_bottom .stat__item .content .value {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+        padding-left: 8px; }
+        .calculate_build_team_wrapper .hero_information_form_group_bottom .stat__item .content .value input {
+          width: 100%;
+          background-color: #d5e8b9;
+          padding: 4px 8px;
+          border: 0;
+          border-radius: 4px; }
+    .calculate_build_team_wrapper .hero_information_form_group_bottom .results {
+      display: grid;
+      grid-gap: 16px;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 16px; }
+      .calculate_build_team_wrapper .hero_information_form_group_bottom .results .result__item {
+        background: #d5e8b9;
+        border-radius: 8px;
+        overflow: hidden; }
+        .calculate_build_team_wrapper .hero_information_form_group_bottom .results .result__item .head {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 8px;
+          background: #c9e2a5; }
+        .calculate_build_team_wrapper .hero_information_form_group_bottom .results .result__item label {
+          padding-left: 4px; }
+        .calculate_build_team_wrapper .hero_information_form_group_bottom .results .result__item .icon {
+          -ms-flex: 0 0 24px;
+          flex: 0 0 24px;
+          max-width: 24px;
+          height: 24px; }
+        .calculate_build_team_wrapper .hero_information_form_group_bottom .results .result__item .value {
+          -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          max-width: 100%;
+          padding: 8px; }
+          .calculate_build_team_wrapper .hero_information_form_group_bottom .results .result__item .value input {
+            font-size: 1.125rem;
+            width: 100%;
+            padding: 4px 8px;
+            border: 0;
+            border-radius: 4px;
+            text-align: center;
+            background-color: transparent; }
+  .calculate_build_team_wrapper .singleHero {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 4px 16px;
+    background: #d5e8b9;
+    border: 1px solid #c9e2a5;
+    opacity: 0.8;
+    transition: 0.3s all ease-in-out;
+    border-radius: 32px; }
+    .calculate_build_team_wrapper .singleHero .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -ms-flex: 0 0 16px;
+      flex: 0 0 16px;
+      max-width: 16px;
+      height: 16px; }
+    .calculate_build_team_wrapper .singleHero input {
+      width: fit-content;
+      background-color: transparent;
+      border: 0; }
+    .calculate_build_team_wrapper .singleHero .hero__image {
+      max-width: 44px; }
+    .calculate_build_team_wrapper .singleHero .hero__id {
+      padding-right: 8px; }
+    .calculate_build_team_wrapper .singleHero .hero__stats {
+      display: flex;
+      align-items: center;
+      padding: 4px 12px;
+      background: #c9e2a5;
+      border-radius: 8px; }
+    .calculate_build_team_wrapper .singleHero .stat__item {
+      display: flex;
+      align-items: center; }
+      .calculate_build_team_wrapper .singleHero .stat__item .value {
+        padding-left: 4px; }
+      .calculate_build_team_wrapper .singleHero .stat__item + .stat__item {
+        padding-left: 16px; }
+    .calculate_build_team_wrapper .singleHero + .singleHero {
+      margin-top: 16px; }
+    .calculate_build_team_wrapper .singleHero .hero__status {
+      font-size: 0.75rem;
+      margin-left: auto;
+      padding: 4px 8px;
+      border-radius: 16px;
+      background: #fab39e;
+      border: 1px solid #f77b55; }
+    .calculate_build_team_wrapper .singleHero:first-child .hero__status {
+      background: #b2d57f;
+      border-color: #8fc245; }
+    .calculate_build_team_wrapper .singleHero:nth-child(2) .hero__status, .calculate_build_team_wrapper .singleHero:nth-child(3) .hero__status {
+      background: #b9dbf5;
+      border-color: #76b9ec; }
+    .calculate_build_team_wrapper .singleHero.active {
+      opacity: 1;
+      border: 1px solid #668d2e;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
+    .calculate_build_team_wrapper .singleHero:hover {
+      opacity: 1; }
+  .calculate_build_team_wrapper .listing__actions {
+    display: flex;
+    margin-top: 24px; }
+    .calculate_build_team_wrapper .listing__actions .bt + .bt {
+      margin-left: 16px; }

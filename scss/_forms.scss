@@ -2,9 +2,9 @@
     box-shadow: unset;
     border: 2px solid map-get($map: $theme-colors, $key: gray-border);
     padding: 0 16px;
-    height: 48px;
+    height: 36px;
     width: 100%;
-    border-radius: 0.66rem;
+    border-radius: 1.22rem;
     transition: 0.3s all ease-in-out;
     &:focus {
         box-shadow: map-get($map: $theme-colors, $key: gray-border) 0px 0px 0px

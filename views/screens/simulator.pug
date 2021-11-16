@@ -1,0 +1,287 @@
+extends ../layouts/layout
+
+block var
+    - pageTitle = "Simular | Green Beli"
+    - pageName = "simular_page"
+block library-css
+block css
+    link(rel="stylesheet", href="./css/banner.css")
+    link(rel="stylesheet", href="./css/simular.css")
+block library-js
+block js
+block main
+    // *** BANNER *** //
+    include ../components/banner_simular
+    // *** SIMULAR ** //
+    section.simular_section
+        .container
+            .mint_probabily
+                .probabily_wrapper
+                    .probabily_title Raritys (%)
+                    .probabily_items
+                        .probabily
+                            h4 Common
+                            .probabily_value
+                                input(type="text" value="82.87%" readonly)
+                        .probabily
+                            h4 Uncommon
+                            .probabily_value
+                                input(type="text" value="10.36%" readonly)
+                        .probabily
+                            h4 Rare
+                            .probabily_value
+                                input(type="text" value="5.18%" readonly)
+                        .probabily
+                            h4 Epic
+                            .probabily_value
+                                input(type="text" value="1.04%" readonly)
+                        .probabily
+                            h4 Ledengary
+                            .probabily_value
+                                input(type="text" value="0.52%" readonly)
+                        .probabily
+                            h4 Mythical
+                            .probabily_value
+                                input(type="text" value="0.04%" readonly)
+            .calculate_build_team
+                .calculate_build_team_wrapper
+                    .hero
+                        .calculate_build_team_title ID Green Hero
+                        .hero_information_form_group_top
+                            .form_group_top__item
+                                .select__custom
+                                    select
+                                        option Rarity
+                                        option Common
+                                        option Uncommon
+                                        option Rare
+                                        option Epic
+                                        option Ledengary
+                                        option Mythical
+                            .form_group_top__item
+                            .form_group_top__item
+                                .select__custom
+                                    select
+                                        option Class
+                                        option Fire
+                                        option Water
+                                        option Metal
+                                        option Earth
+                            .form_group_top__item
+                                .select__custom
+                                    select
+                                        option Star
+                                        option 1
+                                        option 2
+                                        option 3
+                                        option 4
+                                        option 5
+                                        option 6
+                            .form_group_top__item
+                                input.form-control(type="number" placeholder="Level Green Hero")
+                            .form_group_top__item
+                                input.form-control(type="number" placeholder="Genes")
+                        .hero_information_form_group_bottom
+                            .table_bodypart
+                                table
+                                    thead
+                                        tr
+                                            th Bodypart
+                                            th Rarity
+                                            th Level
+                                    tbody
+                                        tr
+                                            td Face
+                                            td
+                                                select
+                                                    option Common
+                                                    option Uncommon
+                                                    option Rare
+                                                    option Epic
+                                                    option Ledengary
+                                                    option Mythical
+                                            td
+                                                input(type="number" value="1")
+                                        tr
+                                            td Body
+                                            td
+                                                select
+                                                    option Common
+                                                    option Uncommon
+                                                    option Rare
+                                                    option Epic
+                                                    option Ledengary
+                                                    option Mythical
+                                            td
+                                                input(type="number" value="1")
+                                        tr
+                                            td Leg
+                                            td
+                                                select
+                                                    option Common
+                                                    option Uncommon
+                                                    option Rare
+                                                    option Epic
+                                                    option Ledengary
+                                                    option Mythical
+                                            td
+                                                input(type="number" value="1")
+                                        tr
+                                            td Decor
+                                            td
+                                                select
+                                                    option Common
+                                                    option Uncommon
+                                                    option Rare
+                                                    option Epic
+                                                    option Ledengary
+                                                    option Mythical
+                                            td
+                                                input(type="number" value="1")
+                                        tr
+                                            td Hand
+                                            td
+                                                select
+                                                    option Common
+                                                    option Uncommon
+                                                    option Rare
+                                                    option Epic
+                                                    option Ledengary
+                                                    option Mythical
+                                            td
+                                                input(type="number" value="1")
+                            .left
+                                .stats
+                                    .stat__item
+                                        label Intel
+                                        .content
+                                            .icon
+                                                img(src="./icons/intel.png", alt="")
+                                            .value
+                                                input(type="text" value="48") 
+                                    .stat__item
+                                        label Base Dmg
+                                        .content
+                                            .icon
+                                                img(src="./icons/dmg.png", alt="")
+                                            .value
+                                                input(type="text" value="50") 
+                                    .stat__item
+                                        label Crit Dmg
+                                        .content
+                                            .icon
+                                                img(src="./icons/crit-dmg.png", alt="")
+                                            .value
+                                                input(type="text" value="50") 
+                                    .stat__item
+                                        label Crit Rate
+                                        .content
+                                            .icon
+                                                img(src="./icons/crit-rate.png", alt="")
+                                            .value
+                                                input(type="text" value="50")
+                                    .stat__item
+                                        label Genes
+                                        .content
+                                            .icon
+                                                img(src="./icons/gens.png", alt="")
+                                            .value
+                                                input(type="text" value="50") 
+                                    .stat__item
+                                        label Growth
+                                        .content
+                                            .icon
+                                                img(src="./icons/growth.png", alt="")
+                                            .value
+                                                input(type="text" value="50") 
+                                .results
+                                    .result__item
+                                        .head
+                                            .icon
+                                                img(src="./icons/farming.png", alt="")
+                                            label Power
+                                        .value
+                                            input(type="text" value="50" readonly)
+                                    .result__item
+                                        .head
+                                            .icon
+                                                img(src="./icons/farming.png", alt="")
+                                            label Final Dmg
+                                        .value
+                                            input(type="text" value="50" readonly)
+                    .listing
+                        .calculate_build_team_title Greem Hero List
+                        #heroList
+                            .singleHero.active
+                                .hero__id #1
+                                .hero__image
+                                    img(src="./images/itemproductfire.png", alt="")
+                                .hero__stats
+                                    .stat__item
+                                        .icon
+                                            img(src="./icons/farming.png", alt="")
+                                        .value 100
+                                    .stat__item
+                                        .icon
+                                            img(src="./icons/farming.png", alt="")
+                                        .value 100
+                                .hero__status Main
+                            .singleHero
+                                .hero__id #2
+                                .hero__image
+                                    img(src="./images/itemproductwater.png", alt="")
+                                .hero__stats
+                                    .stat__item
+                                        .icon
+                                            img(src="./icons/farming.png", alt="")
+                                        .value 100
+                                    .stat__item
+                                        .icon
+                                            img(src="./icons/farming.png", alt="")
+                                        .value 100
+                                .hero__status Suport
+                            .singleHero
+                                .hero__id #3
+                                .hero__image
+                                    img(src="./images/itemproductmetal.png", alt="")
+                                .hero__stats
+                                    .stat__item
+                                        .icon
+                                            img(src="./icons/farming.png", alt="")
+                                        .value 100
+                                    .stat__item
+                                        .icon
+                                            img(src="./icons/farming.png", alt="")
+                                        .value 100
+                                .hero__status Suport
+                            .singleHero
+                                .hero__id #4
+                                .hero__image
+                                    img(src="./images/itemproductearth.png", alt="")
+                                .hero__stats
+                                    .stat__item
+                                        .icon
+                                            img(src="./icons/farming.png", alt="")
+                                        .value 100
+                                    .stat__item
+                                        .icon
+                                            img(src="./icons/farming.png", alt="")
+                                        .value 100
+                                .hero__status Pending
+                            .singleHero
+                                .hero__id #5
+                                .hero__image
+                                    img(src="./images/itemproductwood.png", alt="")
+                                .hero__stats
+                                    .stat__item
+                                        .icon
+                                            img(src="./icons/farming.png", alt="")
+                                        .value 100
+                                    .stat__item
+                                        .icon
+                                            img(src="./icons/farming.png", alt="")
+                                        .value 100
+                                .hero__status Pending
+                        .listing__actions
+                            button.bt.bt--primary ADD HERO
+                            button.bt.bt--secondary RESET

@@ -914,9 +914,9 @@ body[style="overflow-y: hidden"] .page:before {
   box-shadow: unset;
   border: 2px solid #d9d9d9;
   padding: 0 16px;
-  height: 48px;
+  height: 36px;
   width: 100%;
-  border-radius: 0.66rem;
+  border-radius: 1.22rem;
   transition: 0.3s all ease-in-out; }
   .form-control:focus {
     box-shadow: #d9d9d9 0px 0px 0px 1px, rgba(217, 217, 217, 0.4) 0px 0px 0px 4px; }

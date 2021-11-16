@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- *** META *** //-->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- *** VENDORS CSS *** //-->
+    <link rel="stylesheet" href="./vendors/fancybox/jquery.fancybox.css"/>
+    <!-- *** CSS *** //-->
+    <link rel="stylesheet" href="./css/app.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/banner.css"/>
+    <link rel="stylesheet" href="./css/simular.css"/>
+    <!-- *** FAVICON *** //-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <!-- *** TITLE *** //-->
+    <title>Simular | Green Beli</title>
+  </head>
+  <body>
+    <div class="page simular_page">
+      <!-- *** HEADER *** //-->
+      <header class="header">
+        <div class="container-fluid h-100">
+          <div class="header__wrapper">
+            <div class="bt-burger"><i class="fas fa-align-left"></i></div><a class="header__logo" href="index.html"><img src="./images/logo.png" alt="GREEN-BELI"/></a>
+            <div class="header__menu">
+              <div class="bt-close"><i class="fal fa-times"></i></div>
+              <ul>
+                <li class="header_menu__item active"><a href="index.html">Home</a></li>
+                <li class="header_menu__item"><a href="farming.html">Farming</a></li>
+                <li class="header_menu__item"><a href="claim.html">Claim</a></li>
+                <li class="header_menu__item"><a href="shop.html">NFT Market</a></li>
+                <li class="header_menu__item"><a href="inventory.html">Inventory</a></li>
+                <li class="header_menu__item"><a href="simulator.html">Simulator</a></li>
+                <li class="header_menu__item"><a href="comming-soon.html">Coming Soon</a></li>
+                <li class="header_menu__item"><a href="https://greenbeli.gitbook.io/green-beli/" target="_blank" rel="noreferrer">Documentations</a></li>
+              </ul>
+            </div>
+            <div class="header__info">
+              <div class="header_info__items">
+                <div class="header_info__item"><span>TVL:</span><span>$12,717,432</span></div>
+                <div class="header_info__item"><a href="#" target="_blank" rel="noreferrer"><span>GRBE:</span><span>$4.3158</span></a></div>
+              </div><a class="bt bt--secondary" href="#"><span>Play Now</span></a><a class="bt bt--primary unlock-wallet" href="#"><span>Connect Wallet</span></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- *** MAIN *** //-->
+      <main>
+        <!-- *** BANNER *** //-->
+        <section class="banner_section">
+          <div class="container">
+            <div class="banner_section__wrapper">
+              <div class="banner_section__title"><img src="./images/block-title-banner.png" alt="BLOCK-TITLE"/>
+                <h1>Simular</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- *** SIMULAR ** //-->
+        <section class="simular_section">
+          <div class="container">
+            <div class="mint_probabily">
+              <div class="probabily_wrapper">
+                <div class="probabily_title">Raritys (%)</div>
+                <div class="probabily_items">
+                  <div class="probabily">
+                    <h4>Common</h4>
+                    <div class="probabily_value">
+                      <input type="text" value="82.87%" readonly="readonly"/>
+                    </div>
+                  </div>
+                  <div class="probabily">
+                    <h4>Uncommon</h4>
+                    <div class="probabily_value">
+                      <input type="text" value="10.36%" readonly="readonly"/>
+                    </div>
+                  </div>
+                  <div class="probabily">
+                    <h4>Rare</h4>
+                    <div class="probabily_value">
+                      <input type="text" value="5.18%" readonly="readonly"/>
+                    </div>
+                  </div>
+                  <div class="probabily">
+                    <h4>Epic</h4>
+                    <div class="probabily_value">
+                      <input type="text" value="1.04%" readonly="readonly"/>
+                    </div>
+                  </div>
+                  <div class="probabily">
+                    <h4>Ledengary</h4>
+                    <div class="probabily_value">
+                      <input type="text" value="0.52%" readonly="readonly"/>
+                    </div>
+                  </div>
+                  <div class="probabily">
+                    <h4>Mythical</h4>
+                    <div class="probabily_value">
+                      <input type="text" value="0.04%" readonly="readonly"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculate_build_team">
+              <div class="calculate_build_team_wrapper">
+                <div class="hero">
+                  <div class="calculate_build_team_title">ID Green Hero</div>
+                  <div class="hero_information_form_group_top">
+                    <div class="form_group_top__item">
+                      <div class="select__custom">
+                        <select>
+                          <option>Rarity</option>
+                          <option>Common</option>
+                          <option>Uncommon</option>
+                          <option>Rare</option>
+                          <option>Epic</option>
+                          <option>Ledengary</option>
+                          <option>Mythical</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form_group_top__item"></div>
+                    <div class="form_group_top__item">
+                      <div class="select__custom">
+                        <select>
+                          <option>Class</option>
+                          <option>Fire</option>
+                          <option>Water</option>
+                          <option>Metal</option>
+                          <option>Earth</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form_group_top__item">
+                      <div class="select__custom">
+                        <select>
+                          <option>Star</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form_group_top__item">
+                      <input class="form-control" type="number" placeholder="Level Green Hero"/>
+                    </div>
+                    <div class="form_group_top__item">
+                      <input class="form-control" type="number" placeholder="Genes"/>
+                    </div>
+                  </div>
+                  <div class="hero_information_form_group_bottom">
+                    <div class="table_bodypart">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Bodypart</th>
+                            <th>Rarity</th>
+                            <th>Level</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Face</td>
+                            <td>
+                              <select>
+                                <option>Common</option>
+                                <option>Uncommon</option>
+                                <option>Rare</option>
+                                <option>Epic</option>
+                                <option>Ledengary</option>
+                                <option>Mythical</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="number" value="1"/>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Body</td>
+                            <td>
+                              <select>
+                                <option>Common</option>
+                                <option>Uncommon</option>
+                                <option>Rare</option>
+                                <option>Epic</option>
+                                <option>Ledengary</option>
+                                <option>Mythical</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="number" value="1"/>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Leg</td>
+                            <td>
+                              <select>
+                                <option>Common</option>
+                                <option>Uncommon</option>
+                                <option>Rare</option>
+                                <option>Epic</option>
+                                <option>Ledengary</option>
+                                <option>Mythical</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="number" value="1"/>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Decor</td>
+                            <td>
+                              <select>
+                                <option>Common</option>
+                                <option>Uncommon</option>
+                                <option>Rare</option>
+                                <option>Epic</option>
+                                <option>Ledengary</option>
+                                <option>Mythical</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="number" value="1"/>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Hand</td>
+                            <td>
+                              <select>
+                                <option>Common</option>
+                                <option>Uncommon</option>
+                                <option>Rare</option>
+                                <option>Epic</option>
+                                <option>Ledengary</option>
+                                <option>Mythical</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="number" value="1"/>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="left">
+                      <div class="stats">
+                        <div class="stat__item">
+                          <label>Intel</label>
+                          <div class="content">
+                            <div class="icon"><img src="./icons/intel.png" alt=""/></div>
+                            <div class="value">
+                              <input type="text" value="48"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="stat__item">
+                          <label>Base Dmg</label>
+                          <div class="content">
+                            <div class="icon"><img src="./icons/dmg.png" alt=""/></div>
+                            <div class="value">
+                              <input type="text" value="50"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="stat__item">
+                          <label>Crit Dmg</label>
+                          <div class="content">
+                            <div class="icon"><img src="./icons/crit-dmg.png" alt=""/></div>
+                            <div class="value">
+                              <input type="text" value="50"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="stat__item">
+                          <label>Crit Rate</label>
+                          <div class="content">
+                            <div class="icon"><img src="./icons/crit-rate.png" alt=""/></div>
+                            <div class="value">
+                              <input type="text" value="50"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="stat__item">
+                          <label>Genes</label>
+                          <div class="content">
+                            <div class="icon"><img src="./icons/gens.png" alt=""/></div>
+                            <div class="value">
+                              <input type="text" value="50"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="stat__item">
+                          <label>Growth</label>
+                          <div class="content">
+                            <div class="icon"><img src="./icons/growth.png" alt=""/></div>
+                            <div class="value">
+                              <input type="text" value="50"/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="results">
+                        <div class="result__item">
+                          <div class="head">
+                            <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                            <label>Power</label>
+                          </div>
+                          <div class="value">
+                            <input type="text" value="50" readonly="readonly"/>
+                          </div>
+                        </div>
+                        <div class="result__item">
+                          <div class="head">
+                            <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                            <label>Final Dmg</label>
+                          </div>
+                          <div class="value">
+                            <input type="text" value="50" readonly="readonly"/>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="listing">
+                  <div class="calculate_build_team_title">Greem Hero List</div>
+                  <div id="heroList">
+                    <div class="singleHero active">
+                      <div class="hero__id">#1</div>
+                      <div class="hero__image"><img src="./images/itemproductfire.png" alt=""/></div>
+                      <div class="hero__stats">
+                        <div class="stat__item">
+                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="value">100</div>
+                        </div>
+                        <div class="stat__item">
+                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="value">100</div>
+                        </div>
+                      </div>
+                      <div class="hero__status">Main</div>
+                    </div>
+                    <div class="singleHero">
+                      <div class="hero__id">#2</div>
+                      <div class="hero__image"><img src="./images/itemproductwater.png" alt=""/></div>
+                      <div class="hero__stats">
+                        <div class="stat__item">
+                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="value">100</div>
+                        </div>
+                        <div class="stat__item">
+                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="value">100</div>
+                        </div>
+                      </div>
+                      <div class="hero__status">Suport</div>
+                    </div>
+                    <div class="singleHero">
+                      <div class="hero__id">#3</div>
+                      <div class="hero__image"><img src="./images/itemproductmetal.png" alt=""/></div>
+                      <div class="hero__stats">
+                        <div class="stat__item">
+                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="value">100</div>
+                        </div>
+                        <div class="stat__item">
+                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="value">100</div>
+                        </div>
+                      </div>
+                      <div class="hero__status">Suport</div>
+                    </div>
+                    <div class="singleHero">
+                      <div class="hero__id">#4</div>
+                      <div class="hero__image"><img src="./images/itemproductearth.png" alt=""/></div>
+                      <div class="hero__stats">
+                        <div class="stat__item">
+                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="value">100</div>
+                        </div>
+                        <div class="stat__item">
+                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="value">100</div>
+                        </div>
+                      </div>
+                      <div class="hero__status">Pending</div>
+                    </div>
+                    <div class="singleHero">
+                      <div class="hero__id">#5</div>
+                      <div class="hero__image"><img src="./images/itemproductwood.png" alt=""/></div>
+                      <div class="hero__stats">
+                        <div class="stat__item">
+                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="value">100</div>
+                        </div>
+                        <div class="stat__item">
+                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="value">100</div>
+                        </div>
+                      </div>
+                      <div class="hero__status">Pending</div>
+                    </div>
+                  </div>
+                  <div class="listing__actions">
+                    <button class="bt bt--primary">ADD HERO</button>
+                    <button class="bt bt--secondary">RESET</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- *** FOOTER *** //-->
+    <footer class="footer-main">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-left"><a class="footer__logo" href="index.html"><img src="./images/logo.png" alt="LOGO-GREEN-BELI-NFT"/></a>
+            <div class="footer__nav"><a class="bt bt--secondary" href="https://greenbeli.gitbook.io/green-beli/" target="_blank" rel="noopener noreferrer">Documents</a></div>
+          </div>
+          <div class="footer-right">
+            <h3 class="footer__title">JOIN OUR COMMUNITIES</h3>
+            <div class="footer__socials"><a href="https://twitter.com/Green_Beli" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a><a href="https://t.me/GreenBeli" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram-plane"></i></a><a href="https://medium.com/@greenbeli" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium-m"></i></a><a href="https://discord.com/invite/6zpDcmxEpZ" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a><a href="https://www.reddit.com/user/Green_Beli" target="_blank" rel="noopener noreferrer"><i class="fab fa-reddit"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- *** VENDORS JS *** //-->
+    <script src="./vendors/jquery/jquery.js"></script>
+    <script src="./vendors/fancybox/jquery.fancybox.js"></script>
+    <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!-- *** JS *** //-->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
