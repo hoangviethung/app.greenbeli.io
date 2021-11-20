@@ -1223,6 +1223,9 @@ body[style="overflow-y: hidden"] .page:before {
     .bt--primary.bt--outline {
       color: #668d2e;
       border: 1px solid #668d2e; }
+      .bt--primary.bt--outline:hover {
+        color: #ffffff;
+        background-color: #668d2e; }
   .bt--primary-dark {
     color: #ffffff;
     background-color: #00332c; }
@@ -1277,6 +1280,9 @@ body[style="overflow-y: hidden"] .page:before {
     margin-bottom: 6px; }
     .bt--shadow:active {
       transform: translateY(4px); }
+  .bt--sm {
+    font-size: 0.75rem;
+    padding: 0.44rem 0.88rem; }
   .bt--md {
     font-size: 1rem;
     padding: 0.88rem 1.88rem; }

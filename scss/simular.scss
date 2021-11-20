@@ -5,11 +5,7 @@
 }
 
 .simular_section {
-    padding-top: 48px;
-    padding-bottom: 80px;
-    @media (max-width: 767.98px) {
-        padding-top: 30px;
-    }
+    padding: 48px 0;
 }
 
 .mint_probabily {
@@ -86,6 +82,11 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 8px;
+    }
+    .total_hero {
+        font-size: 0.75rem;
+        margin-bottom: 16px;
+        text-align: right;
     }
     .hero_information_form_group_bottom {
         margin-top: 16px;
@@ -291,6 +292,33 @@
             border: 1px solid
                 lighten($color: map-get($theme-colors, danger), $amount: 15%);
         }
+        .hero__remove {
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            border-radius: 16px;
+            color: lighten(
+                $color: map-get($theme-colors, danger),
+                $amount: 25%
+            );
+            background: lighten(
+                $color: map-get($theme-colors, danger),
+                $amount: 40%
+            );
+            border: 1px solid
+                lighten($color: map-get($theme-colors, danger), $amount: 25%);
+            margin-left: 16px;
+            transition: 0.3s all ease-in-out;
+            &:hover {
+                color: lighten(
+                    $color: map-get($theme-colors, danger),
+                    $amount: 10%
+                );
+                background: lighten(
+                    $color: map-get($theme-colors, danger),
+                    $amount: 35%
+                );
+            }
+        }
         &:first-child {
             .hero__status {
                 background: lighten(
@@ -325,8 +353,16 @@
             opacity: 1;
         }
     }
+    .listing {
+        .calculate_build_team_title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
     .listing__actions {
         display: flex;
+        justify-content: flex-end;
         margin-top: 24px;
         .bt {
             + .bt {
@@ -344,7 +380,14 @@
         rgba($color: map-get($theme-colors, neutral-black), $alpha: 0.08);
     border: 2px solid rgba($color: map-get($theme-colors, primary), $alpha: 0.2);
     margin-top: 24px;
-    .table_profit {
+}
+
+.calculate_your_roi_tables {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    margin-top: 24px;
+    .table__item {
         background: lighten(
             $color: map-get($theme-colors, primary),
             $amount: 45%
@@ -353,7 +396,6 @@
         border: 1px solid
             lighten($color: map-get($theme-colors, primary), $amount: 40%);
         overflow: hidden;
-        margin-top: 24px;
         table {
             width: 100%;
             th,

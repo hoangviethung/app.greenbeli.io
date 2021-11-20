@@ -124,18 +124,6 @@
                         </select>
                       </div>
                     </div>
-                    <div class="form_group_top__item"></div>
-                    <div class="form_group_top__item">
-                      <div class="select__custom">
-                        <select>
-                          <option>Class</option>
-                          <option>Fire</option>
-                          <option>Water</option>
-                          <option>Metal</option>
-                          <option>Earth</option>
-                        </select>
-                      </div>
-                    </div>
                     <div class="form_group_top__item">
                       <div class="select__custom">
                         <select>
@@ -150,10 +138,18 @@
                       </div>
                     </div>
                     <div class="form_group_top__item">
-                      <input class="form-control" type="number" placeholder="Level Green Hero"/>
+                      <div class="select__custom">
+                        <select>
+                          <option>Class</option>
+                          <option>Fire</option>
+                          <option>Water</option>
+                          <option>Metal</option>
+                          <option>Earth</option>
+                        </select>
+                      </div>
                     </div>
                     <div class="form_group_top__item">
-                      <input class="form-control" type="number" placeholder="Genes"/>
+                      <input class="form-control" type="number" placeholder="Level Green Hero"/>
                     </div>
                   </div>
                   <div class="hero_information_form_group_bottom">
@@ -257,7 +253,7 @@
                           <div class="content">
                             <div class="icon"><img src="./icons/intel.png" alt=""/></div>
                             <div class="value">
-                              <input type="text" value="48"/>
+                              <input type="number" value="48"/>
                             </div>
                           </div>
                         </div>
@@ -266,7 +262,7 @@
                           <div class="content">
                             <div class="icon"><img src="./icons/dmg.png" alt=""/></div>
                             <div class="value">
-                              <input type="text" value="50"/>
+                              <input type="number" value="50"/>
                             </div>
                           </div>
                         </div>
@@ -275,7 +271,7 @@
                           <div class="content">
                             <div class="icon"><img src="./icons/crit-dmg.png" alt=""/></div>
                             <div class="value">
-                              <input type="text" value="50"/>
+                              <input type="number" value="50"/>
                             </div>
                           </div>
                         </div>
@@ -284,7 +280,7 @@
                           <div class="content">
                             <div class="icon"><img src="./icons/crit-rate.png" alt=""/></div>
                             <div class="value">
-                              <input type="text" value="50"/>
+                              <input type="number" value="50"/>
                             </div>
                           </div>
                         </div>
@@ -293,7 +289,7 @@
                           <div class="content">
                             <div class="icon"><img src="./icons/gens.png" alt=""/></div>
                             <div class="value">
-                              <input type="text" value="50"/>
+                              <input type="number" value="50"/>
                             </div>
                           </div>
                         </div>
@@ -302,7 +298,7 @@
                           <div class="content">
                             <div class="icon"><img src="./icons/growth.png" alt=""/></div>
                             <div class="value">
-                              <input type="text" value="50"/>
+                              <input type="number" value="50"/>
                             </div>
                           </div>
                         </div>
@@ -314,16 +310,16 @@
                             <label>Power</label>
                           </div>
                           <div class="value">
-                            <input type="text" value="50" readonly="readonly"/>
+                            <input type="number" value="50" readonly="readonly"/>
                           </div>
                         </div>
                         <div class="result__item">
                           <div class="head">
-                            <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                            <div class="icon"><img src="./icons/dmg.png" alt=""/></div>
                             <label>Final Dmg</label>
                           </div>
                           <div class="value">
-                            <input type="text" value="50" readonly="readonly"/>
+                            <input type="number" value="50" readonly="readonly"/>
                           </div>
                         </div>
                       </div>
@@ -331,7 +327,10 @@
                   </div>
                 </div>
                 <div class="listing">
-                  <div class="calculate_build_team_title">Greem Hero List</div>
+                  <div class="calculate_build_team_title"><span>Greem Hero List</span>
+                    <button class="bt bt--sm bt--outline bt--primary">Export</button>
+                  </div>
+                  <div class="total_hero">5 Green Heroes</div>
                   <div id="heroList">
                     <div class="singleHero active">
                       <div class="hero__id">#1</div>
@@ -342,11 +341,11 @@
                           <div class="value">100</div>
                         </div>
                         <div class="stat__item">
-                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="icon"><img src="./icons/dmg.png" alt=""/></div>
                           <div class="value">100</div>
                         </div>
                       </div>
-                      <div class="hero__status">Main</div>
+                      <div class="hero__status">Main</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
                     </div>
                     <div class="singleHero">
                       <div class="hero__id">#2</div>
@@ -357,11 +356,11 @@
                           <div class="value">100</div>
                         </div>
                         <div class="stat__item">
-                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="icon"><img src="./icons/dmg.png" alt=""/></div>
                           <div class="value">100</div>
                         </div>
                       </div>
-                      <div class="hero__status">Suport</div>
+                      <div class="hero__status">Suport</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
                     </div>
                     <div class="singleHero">
                       <div class="hero__id">#3</div>
@@ -372,11 +371,11 @@
                           <div class="value">100</div>
                         </div>
                         <div class="stat__item">
-                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="icon"><img src="./icons/dmg.png" alt=""/></div>
                           <div class="value">100</div>
                         </div>
                       </div>
-                      <div class="hero__status">Suport</div>
+                      <div class="hero__status">Suport</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
                     </div>
                     <div class="singleHero">
                       <div class="hero__id">#4</div>
@@ -387,11 +386,11 @@
                           <div class="value">100</div>
                         </div>
                         <div class="stat__item">
-                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="icon"><img src="./icons/dmg.png" alt=""/></div>
                           <div class="value">100</div>
                         </div>
                       </div>
-                      <div class="hero__status">Pending</div>
+                      <div class="hero__status">Pending</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
                     </div>
                     <div class="singleHero">
                       <div class="hero__id">#5</div>
@@ -402,11 +401,11 @@
                           <div class="value">100</div>
                         </div>
                         <div class="stat__item">
-                          <div class="icon"><img src="./icons/farming.png" alt=""/></div>
+                          <div class="icon"><img src="./icons/dmg.png" alt=""/></div>
                           <div class="value">100</div>
                         </div>
                       </div>
-                      <div class="hero__status">Pending</div>
+                      <div class="hero__status">Pending</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
                     </div>
                   </div>
                   <div class="listing__actions">
@@ -422,43 +421,68 @@
                 <h3>Total Investment</h3>
                 <div class="total_value"><span>1.000 GRBE</span><span>2.000 GFRUIT</span></div>
               </div>
-              <div class="table_profit">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Time</th>
-                      <th>Min Profit</th>
-                      <th>Max Profit</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>7 Days</td>
-                      <td>500 GFRUIT</td>
-                      <td>500 GFRUIT</td>
-                    </tr>
-                    <tr>
-                      <td>1 Month</td>
-                      <td>500 GFRUIT</td>
-                      <td>500 GFRUIT</td>
-                    </tr>
-                    <tr>
-                      <td>3 Months</td>
-                      <td>500 GFRUIT</td>
-                      <td>500 GFRUIT</td>
-                    </tr>
-                    <tr>
-                      <td>6 Months</td>
-                      <td>500 GFRUIT</td>
-                      <td>500 GFRUIT</td>
-                    </tr>
-                    <tr>
-                      <td>1 Year</td>
-                      <td>500 GFRUIT</td>
-                      <td>500 GFRUIT</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="calculate_your_roi_tables">
+                <div class="table__item">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Days Left </th>
+                        <th>Min Reward Daily</th>
+                        <th>Max Reward Daily</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>3 Days</td>
+                        <td>0</td>
+                        <td>500 GFRUIT</td>
+                      </tr>
+                      <tr>
+                        <td>5 Days</td>
+                        <td>200 GFRUIT</td>
+                        <td>0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="table__item">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Time</th>
+                        <th>Min Profit</th>
+                        <th>Max Profit</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>7 Days</td>
+                        <td>500 GFRUIT</td>
+                        <td>500 GFRUIT</td>
+                      </tr>
+                      <tr>
+                        <td>1 Month</td>
+                        <td>500 GFRUIT</td>
+                        <td>500 GFRUIT</td>
+                      </tr>
+                      <tr>
+                        <td>3 Months</td>
+                        <td>500 GFRUIT</td>
+                        <td>500 GFRUIT</td>
+                      </tr>
+                      <tr>
+                        <td>6 Months</td>
+                        <td>500 GFRUIT</td>
+                        <td>500 GFRUIT</td>
+                      </tr>
+                      <tr>
+                        <td>1 Year</td>
+                        <td>500 GFRUIT</td>
+                        <td>500 GFRUIT</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>

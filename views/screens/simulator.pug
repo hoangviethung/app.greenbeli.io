@@ -59,15 +59,6 @@ block main
                                         option Ledengary
                                         option Mythical
                             .form_group_top__item
-                            .form_group_top__item
-                                .select__custom
-                                    select
-                                        option Class
-                                        option Fire
-                                        option Water
-                                        option Metal
-                                        option Earth
-                            .form_group_top__item
                                 .select__custom
                                     select
                                         option Star
@@ -78,9 +69,15 @@ block main
                                         option 5
                                         option 6
                             .form_group_top__item
-                                input.form-control(type="number" placeholder="Level Green Hero")
+                                .select__custom
+                                    select
+                                        option Class
+                                        option Fire
+                                        option Water
+                                        option Metal
+                                        option Earth
                             .form_group_top__item
-                                input.form-control(type="number" placeholder="Genes")
+                                input.form-control(type="number" placeholder="Level Green Hero")
                         .hero_information_form_group_bottom
                             .table_bodypart
                                 table
@@ -158,42 +155,42 @@ block main
                                             .icon
                                                 img(src="./icons/intel.png", alt="")
                                             .value
-                                                input(type="text" value="48") 
+                                                input(type="number" value="48") 
                                     .stat__item
                                         label Base Dmg
                                         .content
                                             .icon
                                                 img(src="./icons/dmg.png", alt="")
                                             .value
-                                                input(type="text" value="50") 
+                                                input(type="number" value="50") 
                                     .stat__item
                                         label Crit Dmg
                                         .content
                                             .icon
                                                 img(src="./icons/crit-dmg.png", alt="")
                                             .value
-                                                input(type="text" value="50") 
+                                                input(type="number" value="50") 
                                     .stat__item
                                         label Crit Rate
                                         .content
                                             .icon
                                                 img(src="./icons/crit-rate.png", alt="")
                                             .value
-                                                input(type="text" value="50")
+                                                input(type="number" value="50")
                                     .stat__item
                                         label Genes
                                         .content
                                             .icon
                                                 img(src="./icons/gens.png", alt="")
                                             .value
-                                                input(type="text" value="50") 
+                                                input(type="number" value="50") 
                                     .stat__item
                                         label Growth
                                         .content
                                             .icon
                                                 img(src="./icons/growth.png", alt="")
                                             .value
-                                                input(type="text" value="50") 
+                                                input(type="number" value="50") 
                                 .results
                                     .result__item
                                         .head
@@ -201,16 +198,19 @@ block main
                                                 img(src="./icons/farming.png", alt="")
                                             label Power
                                         .value
-                                            input(type="text" value="50" readonly)
+                                            input(type="number" value="50" readonly)
                                     .result__item
                                         .head
                                             .icon
-                                                img(src="./icons/farming.png", alt="")
+                                                img(src="./icons/dmg.png", alt="")
                                             label Final Dmg
                                         .value
-                                            input(type="text" value="50" readonly)
+                                            input(type="number" value="50" readonly)
                     .listing
-                        .calculate_build_team_title Greem Hero List
+                        .calculate_build_team_title
+                            span Greem Hero List
+                            button.bt.bt--sm.bt--outline.bt--primary Export
+                        .total_hero 5 Green Heroes
                         #heroList
                             .singleHero.active
                                 .hero__id #1
@@ -223,9 +223,11 @@ block main
                                         .value 100
                                     .stat__item
                                         .icon
-                                            img(src="./icons/farming.png", alt="")
+                                            img(src="./icons/dmg.png", alt="")
                                         .value 100
                                 .hero__status Main
+                                a(href="#").hero__remove
+                                    i.fas.fa-trash
                             .singleHero
                                 .hero__id #2
                                 .hero__image
@@ -237,9 +239,11 @@ block main
                                         .value 100
                                     .stat__item
                                         .icon
-                                            img(src="./icons/farming.png", alt="")
+                                            img(src="./icons/dmg.png", alt="")
                                         .value 100
                                 .hero__status Suport
+                                a(href="#").hero__remove
+                                    i.fas.fa-trash
                             .singleHero
                                 .hero__id #3
                                 .hero__image
@@ -251,9 +255,11 @@ block main
                                         .value 100
                                     .stat__item
                                         .icon
-                                            img(src="./icons/farming.png", alt="")
+                                            img(src="./icons/dmg.png", alt="")
                                         .value 100
                                 .hero__status Suport
+                                a(href="#").hero__remove
+                                    i.fas.fa-trash
                             .singleHero
                                 .hero__id #4
                                 .hero__image
@@ -265,9 +271,11 @@ block main
                                         .value 100
                                     .stat__item
                                         .icon
-                                            img(src="./icons/farming.png", alt="")
+                                            img(src="./icons/dmg.png", alt="")
                                         .value 100
                                 .hero__status Pending
+                                a(href="#").hero__remove
+                                    i.fas.fa-trash
                             .singleHero
                                 .hero__id #5
                                 .hero__image
@@ -279,9 +287,11 @@ block main
                                         .value 100
                                     .stat__item
                                         .icon
-                                            img(src="./icons/farming.png", alt="")
+                                            img(src="./icons/dmg.png", alt="")
                                         .value 100
                                 .hero__status Pending
+                                a(href="#").hero__remove
+                                    i.fas.fa-trash
                         .listing__actions
                             button.bt.bt--primary ADD HERO
                             button.bt.bt--secondary RESET
@@ -292,31 +302,48 @@ block main
                     .total_value
                         span 1.000 GRBE
                         span 2.000 GFRUIT
-                .table_profit
-                    table
-                        thead
-                            tr
-                                th Time
-                                th Min Profit
-                                th Max Profit
-                        tbody
-                            tr
-                                td 7 Days
-                                td 500 GFRUIT
-                                td 500 GFRUIT
-                            tr
-                                td 1 Month
-                                td 500 GFRUIT
-                                td 500 GFRUIT
-                            tr
-                                td 3 Months
-                                td 500 GFRUIT
-                                td 500 GFRUIT
-                            tr
-                                td 6 Months
-                                td 500 GFRUIT
-                                td 500 GFRUIT
-                            tr
-                                td 1 Year
-                                td 500 GFRUIT
-                                td 500 GFRUIT
+                .calculate_your_roi_tables
+                    .table__item
+                        table
+                            thead
+                                tr
+                                    th Days Left 
+                                    th Min Reward Daily
+                                    th Max Reward Daily
+                            tbody
+                                tr
+                                    td 3 Days
+                                    td 0
+                                    td 500 GFRUIT
+                                tr
+                                    td 5 Days
+                                    td 200 GFRUIT
+                                    td 0
+                    .table__item
+                        table
+                            thead
+                                tr
+                                    th Time
+                                    th Min Profit
+                                    th Max Profit
+                            tbody
+                                tr
+                                    td 7 Days
+                                    td 500 GFRUIT
+                                    td 500 GFRUIT
+                                tr
+                                    td 1 Month
+                                    td 500 GFRUIT
+                                    td 500 GFRUIT
+                                tr
+                                    td 3 Months
+                                    td 500 GFRUIT
+                                    td 500 GFRUIT
+                                tr
+                                    td 6 Months
+                                    td 500 GFRUIT
+                                    td 500 GFRUIT
+                                tr
+                                    td 1 Year
+                                    td 500 GFRUIT
+                                    td 500 GFRUIT

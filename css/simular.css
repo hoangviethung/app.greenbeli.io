@@ -2,11 +2,7 @@
   background-color: #f4fff8; }
 
 .simular_section {
-  padding-top: 48px;
-  padding-bottom: 80px; }
-  @media (max-width: 767.98px) {
-    .simular_section {
-      padding-top: 30px; } }
+  padding: 48px 0; }
 
 .mint_probabily {
   background: #ecf5df;
@@ -65,6 +61,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 8px; }
+  .calculate_build_team_wrapper .total_hero {
+    font-size: 0.75rem;
+    margin-bottom: 16px;
+    text-align: right; }
   .calculate_build_team_wrapper .hero_information_form_group_bottom {
     margin-top: 16px;
     grid-gap: 16px;
@@ -207,6 +207,18 @@
       border-radius: 16px;
       background: #fab39e;
       border: 1px solid #f77b55; }
+    .calculate_build_team_wrapper .singleHero .hero__remove {
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      border-radius: 16px;
+      color: #f9a186;
+      background: #fdd9ce;
+      border: 1px solid #f9a186;
+      margin-left: 16px;
+      transition: 0.3s all ease-in-out; }
+      .calculate_build_team_wrapper .singleHero .hero__remove:hover {
+        color: #f5683d;
+        background: #fbc6b6; }
     .calculate_build_team_wrapper .singleHero:first-child .hero__status {
       background: #b2d57f;
       border-color: #8fc245; }
@@ -219,8 +231,13 @@
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
     .calculate_build_team_wrapper .singleHero:hover {
       opacity: 1; }
+  .calculate_build_team_wrapper .listing .calculate_build_team_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
   .calculate_build_team_wrapper .listing__actions {
     display: flex;
+    justify-content: flex-end;
     margin-top: 24px; }
     .calculate_build_team_wrapper .listing__actions .bt + .bt {
       margin-left: 16px; }
@@ -232,16 +249,21 @@
   box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.08);
   border: 2px solid rgba(102, 141, 46, 0.2);
   margin-top: 24px; }
-  .calculate_your_roi .table_profit {
+
+.calculate_your_roi_tables {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  margin-top: 24px; }
+  .calculate_your_roi_tables .table__item {
     background: #d5e8b9;
     border-radius: 8px;
     border: 1px solid #c9e2a5;
-    overflow: hidden;
-    margin-top: 24px; }
-    .calculate_your_roi .table_profit table {
+    overflow: hidden; }
+    .calculate_your_roi_tables .table__item table {
       width: 100%; }
-      .calculate_your_roi .table_profit table th,
-      .calculate_your_roi .table_profit table td {
+      .calculate_your_roi_tables .table__item table th,
+      .calculate_your_roi_tables .table__item table td {
         font-size: 12px;
         width: 33.33333%;
         padding: 8px;
