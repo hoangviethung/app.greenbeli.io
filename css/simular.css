@@ -55,11 +55,11 @@
 
 .calculate_build_team_wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-column-gap: 16px; }
   .calculate_build_team_wrapper .hero_information_form_group_top {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 8px; }
   .calculate_build_team_wrapper .total_hero {
     font-size: 0.75rem;
@@ -69,31 +69,32 @@
     margin-top: 16px;
     grid-gap: 16px;
     display: grid;
-    grid-template-columns: 1fr 1fr; }
-    .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart {
-      background: #d5e8b9;
-      border-radius: 8px;
-      border: 1px solid #c9e2a5;
-      overflow: hidden; }
-      .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table {
-        width: 100%; }
-        .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table th,
-        .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table td {
-          font-size: 12px;
-          width: 33.33333%;
-          padding: 8px;
-          border: 1px solid #c9e2a5; }
-        .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table select {
-          cursor: pointer;
-          background-color: transparent;
-          border: 0;
-          width: 100%; }
-        .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table input {
-          width: 100%;
-          background-color: #c9e2a5;
-          padding: 4px 8px;
-          border: 0;
-          border-radius: 4px; }
+    grid-template-columns: 1.5fr 1fr; }
+    .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table {
+      width: 100%;
+      height: 100%;
+      background: #e0eecc; }
+      .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table th,
+      .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table td {
+        font-size: 12px;
+        width: 33.33333%;
+        padding: 8px;
+        border: 1px solid #c9e2a5; }
+      .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table .select__custom:after {
+        right: 8px; }
+      .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table .select__custom select {
+        cursor: pointer;
+        border: 0;
+        width: 100%;
+        padding: 0px 8px;
+        height: 24px; }
+      .calculate_build_team_wrapper .hero_information_form_group_bottom .table_bodypart table input {
+        width: 100%;
+        background-color: #ffffff;
+        padding: 0px 8px;
+        height: 24px;
+        border: 0;
+        border-radius: 1.22rem; }
     .calculate_build_team_wrapper .hero_information_form_group_bottom .stats {
       display: grid;
       grid-gap: 16px;
@@ -118,8 +119,8 @@
         padding-left: 8px; }
         .calculate_build_team_wrapper .hero_information_form_group_bottom .stat__item .content .value input {
           width: 100%;
-          background-color: #d5e8b9;
-          padding: 4px 8px;
+          background-color: transparent;
+          padding: 0;
           border: 0;
           border-radius: 4px; }
     .calculate_build_team_wrapper .hero_information_form_group_bottom .results {
@@ -163,8 +164,8 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 4px 16px;
-    background: #d5e8b9;
+    padding: 8px 16px;
+    background: #c9e2a5;
     border: 1px solid #c9e2a5;
     opacity: 0.8;
     transition: 0.3s all ease-in-out;
@@ -182,15 +183,13 @@
       background-color: transparent;
       border: 0; }
     .calculate_build_team_wrapper .singleHero .hero__image {
-      max-width: 44px; }
+      max-width: 24px;
+      margin-right: 8px; }
     .calculate_build_team_wrapper .singleHero .hero__id {
       padding-right: 8px; }
     .calculate_build_team_wrapper .singleHero .hero__stats {
       display: flex;
-      align-items: center;
-      padding: 4px 12px;
-      background: #c9e2a5;
-      border-radius: 8px; }
+      align-items: center; }
     .calculate_build_team_wrapper .singleHero .stat__item {
       display: flex;
       align-items: center; }
@@ -227,14 +226,19 @@
       border-color: #76b9ec; }
     .calculate_build_team_wrapper .singleHero.active {
       opacity: 1;
-      border: 1px solid #668d2e;
+      border: 1px solid rgba(102, 141, 46, 0.5);
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
     .calculate_build_team_wrapper .singleHero:hover {
       opacity: 1; }
-  .calculate_build_team_wrapper .listing .calculate_build_team_title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
+  .calculate_build_team_wrapper .listing {
+    padding: 16px;
+    background: #e0eecc;
+    border-radius: 16px;
+    border: 1px solid #c9e2a5; }
+    .calculate_build_team_wrapper .listing .calculate_build_team_title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
   .calculate_build_team_wrapper .listing__actions {
     display: flex;
     justify-content: flex-end;
@@ -252,22 +256,20 @@
 
 .calculate_your_roi_tables {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 16px;
   margin-top: 24px; }
-  .calculate_your_roi_tables .table__item {
-    background: #d5e8b9;
-    border-radius: 8px;
-    border: 1px solid #c9e2a5;
-    overflow: hidden; }
-    .calculate_your_roi_tables .table__item table {
-      width: 100%; }
-      .calculate_your_roi_tables .table__item table th,
-      .calculate_your_roi_tables .table__item table td {
-        font-size: 12px;
-        width: 33.33333%;
-        padding: 8px;
-        border: 1px solid #c9e2a5; }
+  .calculate_your_roi_tables .table__item table {
+    width: 100%;
+    height: 100%;
+    background: #e0eecc;
+    border: 1px solid #c9e2a5; }
+    .calculate_your_roi_tables .table__item table th,
+    .calculate_your_roi_tables .table__item table td {
+      font-size: 12px;
+      width: 33.33333%;
+      padding: 8px;
+      border: 1px solid #c9e2a5; }
 
 .calculate_your_roi_title {
   font-size: 1rem;
@@ -275,7 +277,15 @@
   font-weight: 700;
   margin-bottom: 24px; }
 
-.calculate_your_roi_total {
+.calculate_your_roi_total h3 {
+  font-size: 0.875rem;
+  text-align: center;
+  background: #d4a88b;
+  padding: 8px;
+  font-weight: 400;
+  border-bottom: 1px solid #c68d66; }
+
+.calculate_your_roi_total .total_form {
   max-width: 300px;
   width: 100%;
   margin: 0 auto;
@@ -283,21 +293,31 @@
   border: 1px solid #c68d66;
   border-radius: 8px;
   overflow: hidden; }
-  .calculate_your_roi_total h3 {
-    font-size: 0.875rem;
-    text-align: center;
-    background: #d4a88b;
-    padding: 8px;
-    font-weight: 400;
-    border-bottom: 1px solid #c68d66; }
-  .calculate_your_roi_total .total_value {
-    align-items: center;
+  .calculate_your_roi_total .total_form .form-wrapper {
     padding: 16px; }
-    .calculate_your_roi_total .total_value span {
-      color: #6b4328;
-      font-size: 1rem;
-      display: block;
-      text-align: center;
+    .calculate_your_roi_total .total_form .form-wrapper .input_group .form-control {
+      padding: 0 72px 0 16px; }
+    .calculate_your_roi_total .total_form .form-wrapper .input_group > span {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
       font-weight: 700; }
-      .calculate_your_roi_total .total_value span + span {
-        margin-top: 16px; }
+    .calculate_your_roi_total .total_form .form-wrapper .input_group + .input_group {
+      margin-top: 16px; }
+
+.calculate_your_roi_total .total_table {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  background: #dbb69d;
+  margin-top: 16px; }
+  .calculate_your_roi_total .total_table table {
+    width: 100%;
+    height: 100%; }
+    .calculate_your_roi_total .total_table table th,
+    .calculate_your_roi_total .total_table table td {
+      font-size: 12px;
+      width: 33.33333%;
+      padding: 8px;
+      border: 1px solid rgba(191, 127, 83, 0.5); }
