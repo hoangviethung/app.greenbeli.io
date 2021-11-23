@@ -6,6 +6,9 @@
 
 .simular_section {
     padding: 48px 0;
+    @media (max-width: 575.98px) {
+        padding: 24px 0;
+    }
 }
 
 .mint_probabily {
@@ -56,6 +59,9 @@
             }
         }
     }
+    @media (max-width: 767.98px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .calculate_build_team {
@@ -76,12 +82,15 @@
 
 .calculate_build_team_wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-column-gap: 16px;
     .hero_information_form_group_top {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 8px;
+        @media (max-width: 575.98px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
     .total_hero {
         font-size: 0.75rem;
@@ -140,8 +149,11 @@
         .stats {
             display: grid;
             grid-gap: 16px;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
             height: fit-content;
+            @media (max-width: 767.98px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
         .stat__item {
             label {
@@ -223,10 +235,15 @@
                 }
             }
         }
+        @media (max-width: 767.98px) {
+            grid-template-columns: 1fr;
+            grid-gap: 24px;
+        }
     }
     .singleHero {
         cursor: pointer;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         padding: 8px 16px;
         background: lighten(
@@ -261,7 +278,11 @@
         }
         .hero__stats {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
+            @media (max-width: 575.98px) {
+                margin-left: auto;
+            }
         }
         .stat__item {
             display: flex;
@@ -276,9 +297,21 @@
         + .singleHero {
             margin-top: 16px;
         }
+        .right_block {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            @media (max-width: 575.98px) {
+                margin-left: 0;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-top: 16px;
+                justify-content: space-between;
+            }
+        }
         .hero__status {
             font-size: 0.75rem;
-            margin-left: auto;
             padding: 4px 8px;
             border-radius: 16px;
             background: lighten(
@@ -349,6 +382,9 @@
         &:hover {
             opacity: 1;
         }
+        @media (max-width: 575.98px) {
+            border-radius: 8px;
+        }
     }
     .listing {
         padding: 16px;
@@ -374,6 +410,16 @@
                 margin-left: 16px;
             }
         }
+        @media (max-width: 1024.98px) {
+            justify-content: center;
+        }
+    }
+    @media (max-width: 1199.98px) {
+        grid-template-columns: 1.3fr 1fr;
+    }
+    @media (max-width: 1024.98px) {
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
     }
 }
 

@@ -3,6 +3,9 @@
 
 .simular_section {
   padding: 48px 0; }
+  @media (max-width: 575.98px) {
+    .simular_section {
+      padding: 24px 0; } }
 
 .mint_probabily {
   background: #ecf5df;
@@ -39,6 +42,9 @@
         border: 0;
         font-size: 1rem;
         font-weight: 700; }
+  @media (max-width: 767.98px) {
+    .probabily_items {
+      grid-template-columns: repeat(3, 1fr); } }
 
 .calculate_build_team {
   background: #ecf5df;
@@ -55,12 +61,15 @@
 
 .calculate_build_team_wrapper {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   grid-column-gap: 16px; }
   .calculate_build_team_wrapper .hero_information_form_group_top {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 8px; }
+    @media (max-width: 575.98px) {
+      .calculate_build_team_wrapper .hero_information_form_group_top {
+        grid-template-columns: repeat(1, 1fr); } }
   .calculate_build_team_wrapper .total_hero {
     font-size: 0.75rem;
     margin-bottom: 16px;
@@ -98,8 +107,11 @@
     .calculate_build_team_wrapper .hero_information_form_group_bottom .stats {
       display: grid;
       grid-gap: 16px;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       height: fit-content; }
+      @media (max-width: 767.98px) {
+        .calculate_build_team_wrapper .hero_information_form_group_bottom .stats {
+          grid-template-columns: repeat(3, 1fr); } }
     .calculate_build_team_wrapper .hero_information_form_group_bottom .stat__item label {
       margin-bottom: 8px; }
     .calculate_build_team_wrapper .hero_information_form_group_bottom .stat__item .content {
@@ -160,9 +172,14 @@
             border-radius: 4px;
             text-align: center;
             background-color: transparent; }
+    @media (max-width: 767.98px) {
+      .calculate_build_team_wrapper .hero_information_form_group_bottom {
+        grid-template-columns: 1fr;
+        grid-gap: 24px; } }
   .calculate_build_team_wrapper .singleHero {
     cursor: pointer;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 8px 16px;
     background: #c9e2a5;
@@ -189,7 +206,11 @@
       padding-right: 8px; }
     .calculate_build_team_wrapper .singleHero .hero__stats {
       display: flex;
+      flex-wrap: wrap;
       align-items: center; }
+      @media (max-width: 575.98px) {
+        .calculate_build_team_wrapper .singleHero .hero__stats {
+          margin-left: auto; } }
     .calculate_build_team_wrapper .singleHero .stat__item {
       display: flex;
       align-items: center; }
@@ -199,9 +220,20 @@
         padding-left: 16px; }
     .calculate_build_team_wrapper .singleHero + .singleHero {
       margin-top: 16px; }
+    .calculate_build_team_wrapper .singleHero .right_block {
+      display: flex;
+      align-items: center;
+      margin-left: auto; }
+      @media (max-width: 575.98px) {
+        .calculate_build_team_wrapper .singleHero .right_block {
+          margin-left: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-top: 16px;
+          justify-content: space-between; } }
     .calculate_build_team_wrapper .singleHero .hero__status {
       font-size: 0.75rem;
-      margin-left: auto;
       padding: 4px 8px;
       border-radius: 16px;
       background: #fab39e;
@@ -230,6 +262,9 @@
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
     .calculate_build_team_wrapper .singleHero:hover {
       opacity: 1; }
+    @media (max-width: 575.98px) {
+      .calculate_build_team_wrapper .singleHero {
+        border-radius: 8px; } }
   .calculate_build_team_wrapper .listing {
     padding: 16px;
     background: #e0eecc;
@@ -245,6 +280,16 @@
     margin-top: 24px; }
     .calculate_build_team_wrapper .listing__actions .bt + .bt {
       margin-left: 16px; }
+    @media (max-width: 1024.98px) {
+      .calculate_build_team_wrapper .listing__actions {
+        justify-content: center; } }
+  @media (max-width: 1199.98px) {
+    .calculate_build_team_wrapper {
+      grid-template-columns: 1.3fr 1fr; } }
+  @media (max-width: 1024.98px) {
+    .calculate_build_team_wrapper {
+      grid-template-columns: 1fr;
+      grid-gap: 24px; } }
 
 .calculate_your_roi {
   background: #ecf5df;

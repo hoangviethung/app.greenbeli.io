@@ -55,7 +55,7 @@
           <div class="container">
             <div class="banner_section__wrapper">
               <div class="banner_section__title"><img src="./images/block-title-banner.png" alt="BLOCK-TITLE"/>
-                <h1>Simular</h1>
+                <h1>Simulator</h1>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@
                       <input class="form-control" type="number" placeholder="Level Green Hero"/>
                     </div>
                     <div class="form_group_top__item">
-                      <input class="form-control" type="number" placeholder="Gens"/>
+                      <input class="form-control" type="number" placeholder="Genes"/>
                     </div>
                     <div class="form_group_top__item">
                       <div class="select__custom">
@@ -127,7 +127,7 @@
                           <option>Uncommon</option>
                           <option>Rare</option>
                           <option>Epic</option>
-                          <option>Ledengary</option>
+                          <option>Legendary</option>
                           <option>Mythical</option>
                         </select>
                       </div>
@@ -153,6 +153,7 @@
                           <option>Water</option>
                           <option>Metal</option>
                           <option>Earth</option>
+                          <option>Wood</option>
                         </select>
                       </div>
                     </div>
@@ -177,7 +178,7 @@
                                   <option>Uncommon</option>
                                   <option>Rare</option>
                                   <option>Epic</option>
-                                  <option>Ledengary</option>
+                                  <option>Legendary</option>
                                   <option>Mythical</option>
                                 </select>
                               </div>
@@ -195,7 +196,7 @@
                                   <option>Uncommon</option>
                                   <option>Rare</option>
                                   <option>Epic</option>
-                                  <option>Ledengary</option>
+                                  <option>Legendary</option>
                                   <option>Mythical</option>
                                 </select>
                               </div>
@@ -213,7 +214,7 @@
                                   <option>Uncommon</option>
                                   <option>Rare</option>
                                   <option>Epic</option>
-                                  <option>Ledengary</option>
+                                  <option>Legendary</option>
                                   <option>Mythical</option>
                                 </select>
                               </div>
@@ -231,7 +232,7 @@
                                   <option>Uncommon</option>
                                   <option>Rare</option>
                                   <option>Epic</option>
-                                  <option>Ledengary</option>
+                                  <option>Legendary</option>
                                   <option>Mythical</option>
                                 </select>
                               </div>
@@ -249,7 +250,7 @@
                                   <option>Uncommon</option>
                                   <option>Rare</option>
                                   <option>Epic</option>
-                                  <option>Ledengary</option>
+                                  <option>Legendary</option>
                                   <option>Mythical</option>
                                 </select>
                               </div>
@@ -264,6 +265,15 @@
                     <div class="left">
                       <div class="stats">
                         <div class="stat__item">
+                          <label>Staking</label>
+                          <div class="content">
+                            <div class="icon"><img src="./icons/gens.png"/></div>
+                            <div class="value">
+                              <input type="number" value="50" readonly="readonly"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="stat__item">
                           <label>Intel</label>
                           <div class="content">
                             <div class="icon"><img src="./icons/intel.png"/></div>
@@ -273,9 +283,9 @@
                           </div>
                         </div>
                         <div class="stat__item">
-                          <label>Base Dmg</label>
+                          <label>Growth</label>
                           <div class="content">
-                            <div class="icon"><img src="./icons/dmg.png"/></div>
+                            <div class="icon"><img src="./icons/growth.png"/></div>
                             <div class="value">
                               <input type="number" value="50" readonly="readonly"/>
                             </div>
@@ -291,27 +301,18 @@
                           </div>
                         </div>
                         <div class="stat__item">
+                          <label>Base Dmg</label>
+                          <div class="content">
+                            <div class="icon"><img src="./icons/dmg.png"/></div>
+                            <div class="value">
+                              <input type="number" value="50" readonly="readonly"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="stat__item">
                           <label>Crit Rate</label>
                           <div class="content">
                             <div class="icon"><img src="./icons/crit-rate.png"/></div>
-                            <div class="value">
-                              <input type="number" value="50" readonly="readonly"/>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="stat__item">
-                          <label>Staking</label>
-                          <div class="content">
-                            <div class="icon"><img src="./icons/gens.png"/></div>
-                            <div class="value">
-                              <input type="number" value="50" readonly="readonly"/>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="stat__item">
-                          <label>Growth</label>
-                          <div class="content">
-                            <div class="icon"><img src="./icons/growth.png"/></div>
                             <div class="value">
                               <input type="number" value="50" readonly="readonly"/>
                             </div>
@@ -348,7 +349,7 @@
                   <div class="total_hero">5 Green Heroes</div>
                   <div id="heroList">
                     <div class="singleHero active">
-                      <div class="hero__id">#1</div>
+                      <div class="hero__id">GH#32421</div>
                       <div class="hero__image"><img src="./icons/hero-class/fire.png"/></div>
                       <div class="hero__stats">
                         <div class="stat__item">
@@ -360,10 +361,12 @@
                           <div class="value">100</div>
                         </div>
                       </div>
-                      <div class="hero__status">Main</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
+                      <div class="right_block">
+                        <div class="hero__status">Main</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
+                      </div>
                     </div>
                     <div class="singleHero">
-                      <div class="hero__id">#2</div>
+                      <div class="hero__id">GH#32421</div>
                       <div class="hero__image"><img src="./icons/hero-class/water.png"/></div>
                       <div class="hero__stats">
                         <div class="stat__item">
@@ -375,10 +378,12 @@
                           <div class="value">100</div>
                         </div>
                       </div>
-                      <div class="hero__status">Suport</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
+                      <div class="right_block">
+                        <div class="hero__status">Suport</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
+                      </div>
                     </div>
                     <div class="singleHero">
-                      <div class="hero__id">#3</div>
+                      <div class="hero__id">GH#32421</div>
                       <div class="hero__image"><img src="./icons/hero-class/metal.png"/></div>
                       <div class="hero__stats">
                         <div class="stat__item">
@@ -390,10 +395,12 @@
                           <div class="value">100</div>
                         </div>
                       </div>
-                      <div class="hero__status">Suport</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
+                      <div class="right_block">
+                        <div class="hero__status">Suport</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
+                      </div>
                     </div>
                     <div class="singleHero">
-                      <div class="hero__id">#4</div>
+                      <div class="hero__id">GH#32421</div>
                       <div class="hero__image"><img src="./icons/hero-class/wood.png"/></div>
                       <div class="hero__stats">
                         <div class="stat__item">
@@ -405,10 +412,12 @@
                           <div class="value">100</div>
                         </div>
                       </div>
-                      <div class="hero__status">Pending</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
+                      <div class="right_block">
+                        <div class="hero__status">Pending</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
+                      </div>
                     </div>
                     <div class="singleHero">
-                      <div class="hero__id">#5</div>
+                      <div class="hero__id">GH#32421</div>
                       <div class="hero__image"><img src="./icons/hero-class/earth.png"/></div>
                       <div class="hero__stats">
                         <div class="stat__item">
@@ -420,7 +429,9 @@
                           <div class="value">100</div>
                         </div>
                       </div>
-                      <div class="hero__status">Pending</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
+                      <div class="right_block">
+                        <div class="hero__status">Pending</div><a class="hero__remove" href="#"><i class="fas fa-trash"></i></a>
+                      </div>
                     </div>
                   </div>
                   <div class="listing__actions">
@@ -449,21 +460,21 @@
                     <table>
                       <thead>
                         <tr>
-                          <th>Min Reward Daily</th>
-                          <th>Max Reward Daily</th>
-                          <th>Days Left </th>
+                          <th></th>
+                          <th>Min Daily</th>
+                          <th>Max Daily</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>100</td>
+                          <td>Reward</td>
+                          <td>100 GFRUIT</td>
                           <td>500 GFRUIT</td>
-                          <td>3 Days</td>
                         </tr>
                         <tr>
-                          <td>200 GFRUIT</td>
-                          <td>400 GFRUIT</td>
-                          <td>5 Days</td>
+                          <td>Days left</td>
+                          <td>5 days</td>
+                          <td>3 days</td>
                         </tr>
                       </tbody>
                     </table>

@@ -52,7 +52,7 @@ block main
                             .form_group_top__item
                                 input.form-control(type="number" placeholder="Level Green Hero")
                             .form_group_top__item
-                                input.form-control(type="number" placeholder="Gens")
+                                input.form-control(type="number" placeholder="Genes")
                             .form_group_top__item
                                 .select__custom
                                     select
@@ -61,7 +61,7 @@ block main
                                         option Uncommon
                                         option Rare
                                         option Epic
-                                        option Ledengary
+                                        option Legendary
                                         option Mythical
                             .form_group_top__item
                                 .select__custom
@@ -81,6 +81,7 @@ block main
                                         option Water
                                         option Metal
                                         option Earth
+                                        option Wood
                         .hero_information_form_group_bottom
                             .table_bodypart
                                 table
@@ -99,7 +100,7 @@ block main
                                                         option Uncommon
                                                         option Rare
                                                         option Epic
-                                                        option Ledengary
+                                                        option Legendary
                                                         option Mythical
                                             td
                                                 input(type="number" value="1")
@@ -112,7 +113,7 @@ block main
                                                         option Uncommon
                                                         option Rare
                                                         option Epic
-                                                        option Ledengary
+                                                        option Legendary
                                                         option Mythical
                                             td
                                                 input(type="number" value="1")
@@ -125,7 +126,7 @@ block main
                                                         option Uncommon
                                                         option Rare
                                                         option Epic
-                                                        option Ledengary
+                                                        option Legendary
                                                         option Mythical
                                             td
                                                 input(type="number" value="1")
@@ -138,7 +139,7 @@ block main
                                                         option Uncommon
                                                         option Rare
                                                         option Epic
-                                                        option Ledengary
+                                                        option Legendary
                                                         option Mythical
                                             td
                                                 input(type="number" value="1")
@@ -151,12 +152,19 @@ block main
                                                         option Uncommon
                                                         option Rare
                                                         option Epic
-                                                        option Ledengary
+                                                        option Legendary
                                                         option Mythical
                                             td
                                                 input(type="number" value="1")
                             .left
                                 .stats
+                                    .stat__item
+                                        label Staking
+                                        .content
+                                            .icon
+                                                img(src="./icons/gens.png")
+                                            .value
+                                                input(type="number" value="50" readonly)
                                     .stat__item
                                         label Intel
                                         .content
@@ -165,19 +173,26 @@ block main
                                             .value
                                                 input(type="number" value="48" readonly) 
                                     .stat__item
-                                        label Base Dmg
+                                        label Growth
                                         .content
                                             .icon
-                                                img(src="./icons/dmg.png")
+                                                img(src="./icons/growth.png")
                                             .value
-                                                input(type="number" value="50" readonly) 
+                                                input(type="number" value="50" readonly)
                                     .stat__item
                                         label Crit Dmg
                                         .content
                                             .icon
                                                 img(src="./icons/crit-dmg.png")
                                             .value
-                                                input(type="number" value="50" readonly) 
+                                                input(type="number" value="50" readonly)
+                                    .stat__item
+                                        label Base Dmg
+                                        .content
+                                            .icon
+                                                img(src="./icons/dmg.png")
+                                            .value
+                                                input(type="number" value="50" readonly)
                                     .stat__item
                                         label Crit Rate
                                         .content
@@ -185,20 +200,6 @@ block main
                                                 img(src="./icons/crit-rate.png")
                                             .value
                                                 input(type="number" value="50" readonly)
-                                    .stat__item
-                                        label Staking
-                                        .content
-                                            .icon
-                                                img(src="./icons/gens.png")
-                                            .value
-                                                input(type="number" value="50" readonly) 
-                                    .stat__item
-                                        label Growth
-                                        .content
-                                            .icon
-                                                img(src="./icons/growth.png")
-                                            .value
-                                                input(type="number" value="50" readonly) 
                                 .results
                                     .result__item
                                         .head
@@ -221,7 +222,7 @@ block main
                         .total_hero 5 Green Heroes
                         #heroList
                             .singleHero.active
-                                .hero__id #1
+                                .hero__id GH#32421
                                 .hero__image
                                     img(src="./icons/hero-class/fire.png")
                                 .hero__stats
@@ -233,11 +234,12 @@ block main
                                         .icon
                                             img(src="./icons/dmg.png")
                                         .value 100
-                                .hero__status Main
-                                a(href="#").hero__remove
-                                    i.fas.fa-trash
+                                .right_block
+                                    .hero__status Main
+                                    a(href="#").hero__remove
+                                        i.fas.fa-trash
                             .singleHero
-                                .hero__id #2
+                                .hero__id GH#32421
                                 .hero__image
                                     img(src="./icons/hero-class/water.png")
                                 .hero__stats
@@ -249,11 +251,12 @@ block main
                                         .icon
                                             img(src="./icons/dmg.png")
                                         .value 100
-                                .hero__status Suport
-                                a(href="#").hero__remove
-                                    i.fas.fa-trash
+                                .right_block
+                                    .hero__status Suport
+                                    a(href="#").hero__remove
+                                        i.fas.fa-trash
                             .singleHero
-                                .hero__id #3
+                                .hero__id GH#32421
                                 .hero__image
                                     img(src="./icons/hero-class/metal.png")
                                 .hero__stats
@@ -265,11 +268,12 @@ block main
                                         .icon
                                             img(src="./icons/dmg.png")
                                         .value 100
-                                .hero__status Suport
-                                a(href="#").hero__remove
-                                    i.fas.fa-trash
+                                .right_block
+                                    .hero__status Suport
+                                    a(href="#").hero__remove
+                                        i.fas.fa-trash
                             .singleHero
-                                .hero__id #4
+                                .hero__id GH#32421
                                 .hero__image
                                     img(src="./icons/hero-class/wood.png")
                                 .hero__stats
@@ -281,11 +285,12 @@ block main
                                         .icon
                                             img(src="./icons/dmg.png")
                                         .value 100
-                                .hero__status Pending
-                                a(href="#").hero__remove
-                                    i.fas.fa-trash
+                                .right_block
+                                    .hero__status Pending
+                                    a(href="#").hero__remove
+                                        i.fas.fa-trash
                             .singleHero
-                                .hero__id #5
+                                .hero__id GH#32421
                                 .hero__image
                                     img(src="./icons/hero-class/earth.png")
                                 .hero__stats
@@ -297,9 +302,10 @@ block main
                                         .icon
                                             img(src="./icons/dmg.png")
                                         .value 100
-                                .hero__status Pending
-                                a(href="#").hero__remove
-                                    i.fas.fa-trash
+                                .right_block
+                                    .hero__status Pending
+                                    a(href="#").hero__remove
+                                        i.fas.fa-trash
                         .listing__actions
                             button.bt.bt--primary ADD HERO
                             button.bt.bt--secondary RESET
@@ -320,18 +326,18 @@ block main
                             table
                                 thead
                                     tr
-                                        th Min Reward Daily
-                                        th Max Reward Daily
-                                        th Days Left 
+                                        th
+                                        th Min Daily
+                                        th Max Daily
                                 tbody
                                     tr
-                                        td 100
+                                        td Reward
+                                        td 100 GFRUIT
                                         td 500 GFRUIT
-                                        td 3 Days
                                     tr
-                                        td 200 GFRUIT
-                                        td 400 GFRUIT
-                                        td 5 Days
+                                        td Days left
+                                        td 5 days
+                                        td 3 days
                 .calculate_your_roi_tables
                     .table__item
                         table
