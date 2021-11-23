@@ -177,6 +177,7 @@
         grid-template-columns: 1fr;
         grid-gap: 24px; } }
   .calculate_build_team_wrapper .singleHero {
+    font-size: 0.75rem;
     cursor: pointer;
     display: flex;
     flex-wrap: wrap;
